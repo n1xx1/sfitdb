@@ -1,0 +1,7 @@
+{{- $category := .Get 0 -}}
+{{- $traits := (site.GetPage "/tratti").Pages -}}
+<div class="flex flex-wrap gap-2">
+  {{- range where $traits "Params.categories" "intersect" (slice $category) -}}
+    {{- partialCached "traitFromPage" . . -}}
+  {{- end -}}
+</div>

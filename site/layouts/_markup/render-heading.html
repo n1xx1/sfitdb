@@ -1,0 +1,61 @@
+{{- $anchor := .Anchor | replaceRE `---.*?(-\d+)?$` "$1" | safeURL -}}
+{{- $text := split .Text " - " -}}
+
+{{- $index := -1 }}
+{{- if isset .Attributes "index" -}}
+  {{- $index = int .Attributes.index }}
+{{- else -}}
+  {{- $headings := partialCached "utils/headingsFlatList" .PageInner.Fragments .PageInner.Path -}}
+  {{- range $i, $h := $headings -}}
+    {{- if eq $h.ID $.Anchor -}}
+      {{- $index = $i -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $included := not (.PageInner.Eq .Page) }}
+{{- $isTitle := or (eq .Attributes.title 1) (eq $index 0) -}}
+{{- $isStatblock := partial "utils/isStatblock" .PageInner -}}
+{{- $isInnerStatblock := eq .PageInner.Type "pfmonster" -}}
+
+{{- $originalLevel := .Attributes.level | default .Level | int -}}
+
+{{- $appendSource := and (not $included) $isTitle -}}
+{{- $appendTraits := cond $isInnerStatblock (eq $originalLevel 2) $isTitle -}}
+
+{{- $sbHeading := cond $isStatblock $isTitle (cond $isInnerStatblock (eq $originalLevel 2) false) -}}
+
+{{- $class := "flex" }}
+{{- if $sbHeading -}}
+  {{- $class = add $class " statblock-title" -}}
+{{- end -}}
+{{- with .Attributes.class -}}
+  {{- $class = add $class " " . -}}
+{{- end -}}
+
+<h{{ .Level }} class="{{ $class }}">
+  <span class="absolute -mt-20" id="{{ $anchor }}"></span>
+  <span class="flex items-center flex-1">
+    {{- if and $isTitle $included -}}
+      {{- $url := .PageInner.Params.canonicalURL | default .PageInner.RelPermalink -}}
+      <a href="{{ $url }}" class="no-underline hover:underline{{ if not $sbHeading }} !font-bold{{ end }}">
+    {{- end -}}
+    {{- (index $text 0) | safeHTML -}}
+    {{- if eq .Level 1 -}}
+      </a>
+    {{- end -}}
+    <a href="#{{ $anchor }}" class="not-prose heading-anchor"></a>
+  </span>
+  </span>
+  {{- if gt (len $text) 1 -}}
+    <span>{{ index $text 1 }}</span>
+  {{- end -}}
+</h{{ .Level }}>
+
+{{- if $appendTraits -}}
+  {{- partialCached "traits" .PageInner.Params.traits .PageInner.Params.traits -}}
+{{- end -}}
+
+{{- if $appendSource -}}
+  {{- partial "source" .PageInner -}}
+{{- end -}}

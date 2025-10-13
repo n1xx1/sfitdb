@@ -1,0 +1,72 @@
+{{- $breadcrumbs := partial "breadcrumbList" (dict "page" . "depth" 0 "slice" slice) -}}
+<ol
+  class="mt-1.5 mb-4 h-6 flex items-center gap-1 overflow-hidden text-sm text-muted-foreground contrast-more:text-current"
+>
+  {{- range $i, $b := $breadcrumbs -}}
+    {{- $current := eq $b.page $ -}}
+    <li {{ if $current }}aria-current="page"{{ end }}>
+      <div class="flex items-center whitespace-nowrap">
+        {{- if gt $i 0 -}}
+          {{- partial "utils/svg" (slice "images/arrow-right.svg" `class="w-6 h-6 text-muted-foreground" ` ) -}}
+        {{- end -}}
+        {{- if not $b.page -}}
+          <span
+            class="flex items-center ml-1 md:ml-2 text-sm font-medium text-muted-foreground"
+          >
+            ...
+          </span>
+        {{- else if $current -}}
+          <span
+            class="flex items-center {{ if $b.page.Parent }}
+              ml-1 md:ml-2
+            {{ end }}text-sm font-medium text-muted-foreground"
+          >
+            {{- if $b.page.IsHome -}}
+              {{- partial "utils/svg" (slice "images/home.svg" `class="w-4 h-4"` ) -}}
+            {{- else -}}
+              {{- $b.name | partial "icons" -}}
+            {{- end -}}
+          </span>
+        {{- else -}}
+          <a
+            href="{{ $b.page.RelPermalink | replaceRE `/$` `` }}"
+            class="flex items-center {{ if $b.page.Parent }}
+              ml-1 md:ml-2
+            {{ end }}text-sm font-medium text-foreground hover:text-accent-foreground"
+          >
+            {{- if $b.page.IsHome -}}
+              {{- partial "utils/svg" (slice "images/home.svg" `class="w-4 h-4"` ) -}}
+            {{- else -}}
+              {{- $b.name | partial "icons" -}}
+            {{- end -}}
+          </a>
+        {{- end -}}
+      </div>
+    </li>
+  {{- end -}}
+</ol>
+{{- define "partials/breadcrumbList" -}}
+  {{- $maxDepth := 2 -}}
+  {{- $ret := .slice -}}
+  {{- if and .page.Parent (or .page.Parent.IsHome (le .depth $maxDepth)) -}}
+    {{- $ret = partial "breadcrumbList" (dict
+      "page" .page.Parent
+      "depth" (add .depth 1)
+      "slice" $ret
+      )
+    -}}
+  {{- else if not .page.IsHome -}}
+    {{- $ret = partial "breadcrumbList" (dict
+      "page" .page.Site.Home
+      "depth" (add .depth 1)
+      "slice" $ret
+      )
+    -}}
+    {{- $ret = $ret | append (dict "page" (default nil nil)) -}}
+  {{- end -}}
+  {{- $title := partialCached "utils/title" .page .page.Path -}}
+  {{- if $title.name -}}
+    {{- $ret = $ret | append (dict "page" .page "name" $title.name) -}}
+  {{- end -}}
+  {{- return $ret -}}
+{{- end -}}

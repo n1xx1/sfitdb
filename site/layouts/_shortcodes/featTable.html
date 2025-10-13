@@ -1,0 +1,70 @@
+{{- $paramTraits := slice -}}
+{{- with .Get "traits" -}}
+  {{- $paramTraits = split . "," -}}
+{{- end -}}
+{{- $paramPath := slice -}}
+{{- with .Get "path" -}}
+  {{- $paramPath = . -}}
+{{- end -}}
+{{- $paramExcludeTraits := slice -}}
+{{- with .Get "excludeTraits" -}}
+  {{- $paramExcludeTraits = split . "," -}}
+{{- end -}}
+{{- $paramRequireAllTraits := false -}}
+{{- with .Get "requireAllTraits" -}}
+  {{- $paramRequireAllTraits = . -}}
+{{- end -}}
+{{- $pages := slice -}}
+{{- range site.AllPages -}}
+  {{- if or (ne .Type "pffeat") (hasPrefix .Path "/regole/") -}}
+    {{- continue -}}
+  {{- end -}}
+  {{- $title := partialCached "utils/title" . .Path -}}
+  {{- $traits := partialCached "pf/getTraits" . .Path -}}
+  {{- if ne (len (intersect $traits.all $paramTraits)) (len $paramTraits) -}}
+    {{- continue -}}
+  {{- end -}}
+  {{- if gt (len (intersect $traits.all $paramExcludeTraits)) 0 -}}
+    {{- continue -}}
+  {{- end -}}
+  {{- if and $paramPath (not (hasPrefix .Path $paramPath)) -}}
+    {{- continue -}}
+  {{- end -}}
+  {{- $el := dict
+    "title" $title
+    "page" .
+    "traits" $traits
+    "sorter" (printf "%02d_%s" $title.level $title.name)
+  -}}
+  {{- $pages = $pages | append $el -}}
+{{- end -}}
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Origine</th>
+      <th>Rarità</th>
+      <th>Tratti</th>
+      <th>Livello</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{- range sort $pages "sorter" "asc" -}}
+      <tr>
+        <td>
+          <a href="{{- .page.RelPermalink | replaceRE `/$` `` -}}">
+            {{- .title.name -}}
+          </a>
+        </td>
+        <td>{{ .page.Params.source }}</td>
+        <td>
+          {{- partialCached "trait" .traits.rarity .traits.rarity -}}
+        </td>
+        <td>
+          {{- partialCached "traits" .traits.traits .traits.traits -}}
+        </td>
+        <td>{{ .title.level }}</td>
+      </tr>
+    {{- end -}}
+  </tbody>
+</table>

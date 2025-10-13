@@ -1,0 +1,12 @@
+{{- range . -}}
+  <li>
+    {{- if .Title -}}
+      <a href="#{{- .ID -}}">{{- .Title | safeHTML -}}</a>
+    {{- end -}}
+    {{- if .Headings -}}
+      <ul>
+        {{- partial "utils/pageToc" .Headings -}}
+      </ul>
+    {{- end -}}
+  </li>
+{{- end -}}

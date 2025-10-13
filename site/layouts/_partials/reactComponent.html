@@ -1,0 +1,44 @@
+{{- $path := path.Join "js" .path -}}
+{{- $instanceID := .id -}}
+{{- $group := .page.Path | anchorize | default "home" -}}
+{{- $props := .params | default dict -}}
+{{- $export := .export | default "default" -}}
+{{- $inner := .inner -}}
+
+{{- $resource := resources.Get $path -}}
+{{- if not $resource -}}
+  {{- errorf "resource not found: %s" $path -}}
+{{- end -}}
+{{- $batch := (js.Batch "js/bundle") -}}
+{{- $scriptID := $path | anchorize -}}
+{{- with $inner -}}
+  {{- $inner := . | strings.TrimSpace | $.page.RenderString -}}
+  {{- $props = $props | merge (dict "inner" $inner) -}}
+{{- end -}}
+{{- with $batch.Group $group -}}
+  {{- with .Runner "create-elements" -}}
+    {{- .SetOptions (dict "resource" (resources.Get "js/lib/react-hydrate.ts")) -}}
+  {{- end -}}
+  {{- with .Script $scriptID -}}
+    {{- .SetOptions (dict
+      "resource" $resource
+      "export" $export )
+    -}}
+  {{- end -}}
+  {{- with .Instance $scriptID $instanceID -}}
+    {{- .SetOptions (dict "params" $props) -}}
+  {{- end -}}
+{{- end -}}
+{{- $executedCode := printf `
+  import { renderToString } from '@/lib/react-render';
+  import Component from "%s";
+  __RUN__ = function () {
+  const props = %s;
+  return renderToString(<Component {...props} />)
+  };` $path ($props | jsonify)
+-}}
+
+
+<div id="react-{{ $scriptID }}-{{ $instanceID }}" class="contents">
+  {{- partial "utils/execJs" $executedCode | safeHTML -}}
+</div>

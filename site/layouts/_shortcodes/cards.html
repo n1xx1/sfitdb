@@ -1,0 +1,4 @@
+{{- $cols := .Get "cols" | default "3" -}}
+<div class="hextra-cards mt-4 gap-4 grid" style="--cols: {{ $cols }};">
+  {{- .Inner -}}
+</div>

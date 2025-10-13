@@ -1,0 +1,12 @@
+public/
+node_modules/
+.hugo_build.lock
+resources/_gen
+.vscode/
+hugo_stats.json
+.vercel
+.tmp
+.vercel
+database.db
+
+.vercel

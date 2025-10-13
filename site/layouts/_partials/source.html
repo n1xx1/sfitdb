@@ -1,0 +1,28 @@
+{{- $source := .Params.source -}}
+{{- $originalSrd := index .Params "original-srd" -}}
+{{- if or $source $originalSrd -}}
+  <p
+    class="text-muted-foreground border-l-gray-200 dark:border-l-gray-700 border-l-4 pl-2"
+  >
+    {{- if $source -}}
+      <em>{{ $source }}</em>
+    {{- end -}}
+    {{- if and $source $originalSrd }}{{ " - " }}{{ end -}}
+    {{- if $originalSrd -}}
+      {{- $href := $originalSrd -}}
+      {{- if strings.Contains $href "?" -}}
+        {{- $href = printf "%s&NoRedirect=1" $href -}}
+      {{- else -}}
+        {{- $href = printf "%s?NoRedirect=1" $href -}}
+      {{- end }}
+      <a href="{{ $href }}" class="text-muted-foreground">
+        <img
+          class="inline-block w-5 h-5 m-0 pr-1 box-content opacity-70 not-prose"
+          src="https://2e.aonprd.com/Images/NethysMask.png"
+        />
+        {{- index .Params "original-name" | default (partialCached "utils/title" . .Path).name -}}
+      </a>
+    {{- end -}}
+  </p>
+  {{ "\n" }}
+{{- end -}}

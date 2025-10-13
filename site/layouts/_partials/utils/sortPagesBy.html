@@ -1,0 +1,21 @@
+{{- $pages := slice -}}
+{{- range $.pages -}}
+  {{- $title := partialCached "utils/title" . .Path -}}
+  {{- $elSorter := "" -}}
+  {{- if eq $.sorter "level" -}}
+    {{- $elSorter = printf "%d_%s" $title.level $title.name -}}
+  {{- else -}}
+    {{- $elSorter = $title.name -}}
+  {{- end -}}
+  {{- $el := dict
+    "sorter" $elSorter
+    "page" .
+  -}}
+  {{- $pages = $pages | append $el -}}
+{{- end -}}
+{{- $pages = sort $pages ".sorter" "asc" -}}
+{{- $ret := slice -}}
+{{- range $pages -}}
+  {{- $ret = $ret | append .page -}}
+{{- end -}}
+{{- return $ret -}}

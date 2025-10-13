@@ -1,0 +1,30 @@
+{{- $url := urls.Parse .Destination -}}
+{{- if $url.IsAbs -}}
+  <a
+    href="{{ .Destination | safeURL }}"
+    {{- with .Title }}title="{{ . }}"{{ end }}
+    rel="external"
+    target="_blank"
+  >
+    {{- with .Text | safeHTML }}{{ . }}{{ end -}}
+  </a>
+{{- else -}}
+  {{- $page := site.GetPage $url.Path -}}
+  {{- $href := "" -}}
+  {{- if not $page -}}
+    {{- partial "debug/unresolvedLink" (dict "page" .Page "target" .Destination) -}}
+    {{- $href = printf "/pagina-mancante#%s" $url.Path -}}
+  {{- else -}}
+    {{- $href = $page.RelPermalink | replaceRE "/$" "" -}}
+    {{- with $url.Fragment -}}
+      {{- $href = add $href "#" $url.Fragment -}}
+    {{- end -}}
+  {{- end -}}
+  <a
+    href="{{ $href | safeURL }}"
+    {{- with .Title }}title="{{ . }}"{{ end }}
+    {{- if not $page }}class="text-red-500"{{ end }}
+  >
+    {{- with .Text | safeHTML }}{{ . }}{{ end -}}
+  </a>
+{{- end -}}

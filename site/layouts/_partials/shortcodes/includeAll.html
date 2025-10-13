@@ -1,0 +1,21 @@
+{{- $pages := partialCached "pf/getPages" (dict
+  "context" .context
+  "source" .source
+  "filter" .filter
+  "sort" .sort
+  ) .context.Path .source .filter .sort
+-}}
+{{- range $pages -}}
+  {{- if $.space -}}{{ "\n\n<div class=\"my-4\">" | safeHTML }}{{- end -}}
+  {{- "\n\n" -}}
+  {{- partial "shortcodes/include" (dict
+    "page" .
+    "context" $.context
+    "level" $.level
+    "template" $.template
+    "templateData" $.templateData
+    )
+  -}}
+  {{- if $.space -}}{{ "\n\n</div>" | safeHTML }}{{- end -}}
+  {{- "\n\n" -}}
+{{- end -}}

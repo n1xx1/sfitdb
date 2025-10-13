@@ -1,0 +1,56 @@
+{{- $pages := slice -}}
+{{- $section := .Page -}}
+{{- $pagePath := .Page.Path }}
+{{- with .Get 0 -}}
+  {{- $pagePath = . -}}
+  {{- if not (hasPrefix $pagePath "/") -}}
+    {{ $pagePath = path.Join $section.Path $pagePath }}
+  {{- end -}}
+  {{- $section = $.Site.GetPage $pagePath }}
+{{- end -}}
+{{- with $section -}}
+  {{- range .Pages -}}
+    {{- $title := partialCached "utils/title" . .Path -}}
+    {{- $traits := partialCached "pf/getTraits" . .Path -}}
+    {{- $el := dict
+      "title" $title.name
+      "level" $title.level
+      "page" .
+      "traits" $traits
+      "sorter" (printf "%02d_%s" $title.level $title.name)
+    -}}
+    {{- $pages = $pages | append $el -}}
+  {{- end -}}
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Origine</th>
+        <th>Rarità</th>
+        <th>Tratti</th>
+        <th>Livello</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{- range sort $pages "sorter" "asc" -}}
+        <tr>
+          <td>
+            <a href="{{ .page.RelPermalink | replaceRE `/$` `` }}">
+              {{- .title -}}
+            </a>
+          </td>
+          <td>{{ index .page.Params "source" }}</td>
+          <td>
+            {{- partialCached "trait" .traits.rarity .traits.rarity -}}
+          </td>
+          <td>
+            {{- partialCached "traits" .traits.traits .traits.traits -}}
+          </td>
+          <td>{{ .level }}</td>
+        </tr>
+      {{- end -}}
+    </tbody>
+  </table>
+{{- else -}}
+  <div class="p-2 my-4 bg-red-300">missing section: {{ $pagePath }}</div>
+{{- end -}}

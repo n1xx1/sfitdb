@@ -1,0 +1,65 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  {{- $buildOpts := dict
+    "targetPath" "js/main.js"
+    "minify" (not hugo.IsDevelopment)
+    "format" "esm"
+  }}
+  {{- $built := resources.Get "js/main.ts" | js.Build $buildOpts -}}
+  {{- printf `<script type="module" src="%s"></script>` $built.RelPermalink | safeHTML -}}
+
+  {{- with (templates.Defer (dict "key" "global")) -}}
+    {{ with resources.Get "css/main.css" }}
+      {{ $opts := dict
+        "minify" hugo.IsProduction
+        "inlineImports" true
+      }}
+      {{ with . | css.TailwindCSS $opts }}
+        {{ if hugo.IsProduction }}
+          {{ with . | fingerprint }}
+            <link
+              rel="stylesheet"
+              href="{{ .RelPermalink }}"
+              integrity="{{ .Data.Integrity }}"
+              crossorigin="anonymous"
+            />
+          {{ end }}
+        {{ else }}
+          <link rel="stylesheet" href="{{ .RelPermalink }}" />
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{- end -}}
+
+  {{- with (js.Batch "js/bundle").Config -}}
+    {{- .SetOptions (dict
+      "minify" (not hugo.IsDevelopment)
+      "format" "esm"
+      "JSX" "automatic"
+      "JSXImportSource" "react"
+      )
+    -}}
+  {{- end -}}
+
+  {{- $title := partialCached "utils/title" . .Path }}
+  <title>{{ $title.name | replaceRE ":(1|2|3|G|R):" "" }}</title>
+
+  {{- $group := $.Path | anchorize | default "home" -}}
+  {{- with (templates.Defer (dict "key" $group "data" $group)) -}}
+    {{- with js.Batch "js/bundle" -}}
+      {{- with .Build -}}
+        {{- range index .Groups $ -}}
+          {{- $resource := . -}}
+          {{ if eq $resource.MediaType.SubType "css" }}
+            <link href="{{ $resource.RelPermalink }}" rel="stylesheet" />
+          {{ else }}
+            <script src="{{ $resource.RelPermalink }}" type="module"></script>
+          {{ end }}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+</head>

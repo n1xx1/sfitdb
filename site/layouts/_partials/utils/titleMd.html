@@ -1,0 +1,43 @@
+{{- $contents := .content }}
+{{- if .path -}}
+  {{- $hasInclude := index (index (findRESubmatch "(?:^|---\n\n\\s*)\\{\\{%\\s*include\\s+(.*?)\\s*%\\}\\}" $contents 1) 0) 1 -}}
+  {{- if $hasInclude -}}
+    {{- $page := $contents | replaceRE `^(?:|.*page=)"(.*?)"[\s\S]*$` "$1" -}}
+    {{- if not (hasPrefix $page "/") -}}
+      {{ $page = path.Join .path $page }}
+    {{- end -}}
+    {{- $contents = (site.GetPage $page).RawContent -}}
+  {{- end -}}
+{{- end -}}
+{{- $pageTitle := (index (findRE "(^|\n)#(.*)\n" $contents 1) 0) | replaceRE "(^|\n)# |\n" "" -}}
+{{- $partsText := replaceRE "^(.+?)(?: - (.+?)(?: (\\d+))?)?$" "$1;$2;$3" $pageTitle -}}
+{{- $parts := split $partsText ";" -}}
+{{- $name := index $parts 0 | replaceRE "\\\\" "" -}}
+{{- $typeText := index $parts 1 -}}
+{{- $levelText := index $parts 2 -}}
+
+{{- $type := (default nil nil) -}}
+{{- $typeWithLevel := (default nil nil) -}}
+{{- if $typeText -}}
+  {{- $type = $typeText -}}
+  {{- $typeWithLevel = $type -}}
+{{- end -}}
+
+{{- $level := (default nil nil) -}}
+{{- if $levelText -}}
+  {{- $level = int $levelText -}}
+  {{- if $type -}}
+    {{- $typeWithLevel = printf "%s %d" $type $level -}}
+  {{- else -}}
+    {{- $typeWithLevel = printf "%d" $level -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return (dict
+  "name" (.overrideTitle | default $name)
+  "type" $type
+  "typeLower" (strings.ToLower $type)
+  "level" $level
+  "typeWithLevel" $typeWithLevel
+  )
+-}}

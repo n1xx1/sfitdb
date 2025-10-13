@@ -1,0 +1,10 @@
+{{- $traits := partialCached "pf/getTraitsData" (slice .) (slice .) -}}
+{{- with index $traits 0 -}}
+  {{- $url := .url | default (printf "/pagina-mancante#/tratti/%s" .id) -}}
+  <a
+    href="{{ $url | safeURL }}"
+    class="{{ .color }} p-1 text-sm rounded-md no-underline whitespace-nowrap"
+  >
+    {{- .name -}}
+  </a>
+{{- end -}}

@@ -1,0 +1,208 @@
+{{ $globs := slice }}
+{{ range resources.Match "sources/*/defs.json" }}
+  {{ $path := .String }}
+  {{ $book := index (index (findRESubmatch `^/sources/([a-z\-]+)/` $path 1) 0) 1 }}
+  {{ range $type, $v := (transform.Unmarshal .) }}
+    {{ range $v }}
+      {{ $glob := printf "regole/%s/%s" $book . }}
+      {{ $regex := partial "utils/globToRegex" $glob }}
+      {{ $globs = $globs | append (dict
+        "glob" $glob
+        "regex" $regex
+        "type" $type
+        )
+      }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ range $globs }}
+  {{/* warnf "%s %q %q" .type .glob .regex */}}
+{{ end }}
+
+{{ $addedResources := dict }}
+
+{{ range resources.Match "sources/**/*.md" }}
+  {{ $path := .String | replaceRE `(\.md$|/_index\.md$)` "" | replaceRE `^/sources/` "regole/" }}
+  {{ $book := index (index (findRESubmatch `^regole/([a-z\-]+)/` $path 1) 0) 1 }}
+
+  {{ $splitContent := findRESubmatch `^(?:---\r?\n\s*([\s\S]*?)\s*\r?\n---\r?\n)?\s*([\s\S]*)$` .Content 1 }}
+  {{ $rawFrontmatter := (index (index $splitContent 0) 1) }}
+  {{ $content := (index (index $splitContent 0) 2) }}
+
+  {{ $frontmatter := transform.Unmarshal (dict "format" "yaml") $rawFrontmatter }}
+
+  {{ $editURL := "https://github.com/n1xx1/pfitdb/blob/main" }}
+  {{ $editURL = urls.JoinPath $editURL $path }}
+
+  {{ $params := merge $frontmatter (dict "editURL" .String) }}
+
+  {{ $title := partial "utils/titleMd" (dict "content" $content) }}
+  {{ $kind := cond (hasSuffix .String "_index.md") "section" "page" }}
+  {{ $pftype := default nil nil }}
+  {{ $type := "page" }}
+
+  {{ range $globs }}
+    {{ if findRE .regex $path }}
+      {{ $pftype = .type }}
+      {{ $type = print "pf" .type }}
+      {{ break }}
+    {{ end }}
+  {{ end }}
+
+  {{ $params = merge $params (dict "parsedTitle" $title) }}
+
+  {{ $canonicalPath := partial "contentAdapterPathByType" (dict "path" $path "type" $pftype) }}
+  {{ if $canonicalPath }}
+    {{ if isset $params "slug" }}
+      {{ $pathDir := path.Dir $canonicalPath }}
+      {{ $canonicalPath = path.Join $pathDir $params.slug }}
+    {{ end }}
+    {{ $params = merge $params (dict "canonicalURL" $canonicalPath) }}
+  {{ end }}
+
+  {{ partial "contentAdapter/addPage" (dict
+    "context" $
+    "content" $content
+    "kind" $kind
+    "type" $type
+    "path" $path
+    "params" $params
+    )
+  }}
+
+  {{ if $canonicalPath }}
+    {{ $variants := index $addedResources $canonicalPath | default (slice) }}
+    {{ $variant := dict
+      "original" (dict "path" $path)
+      "path" $canonicalPath
+      "type" $pftype
+      "content" $content
+      "params" $params
+      "title" $title
+    }}
+    {{ $variants := $variants | append $variant }}
+    {{ $addedResources = merge $addedResources (dict $canonicalPath $variants) }}
+  {{ end }}
+{{ end }}
+
+{{ range $k, $v := $addedResources }}
+  {{ if gt (len $v) 1 }}
+    {{ warnf "duplicate page: %q" $k }}
+    {{ range $v }}
+      {{ warnf "- %q" .original.path }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ range $k, $v := $addedResources }}
+  {{ with index $v 0 }}
+    {{ $content := .content }}
+
+    {{ if eq .type "ancestry" }}
+      {{ $content = printf "%s\n%s" $content (partial "contentAdapterAncestryAppend" .path) }}
+    {{ end }}
+
+    {{ partial "contentAdapter/addPage" (dict
+      "context" $
+      "content" $content
+      "kind" "section"
+      "type" (print "pf" .type)
+      "path" .path
+      "params" .params
+      )
+    }}
+
+    {{ if eq .type "ancestry" }}
+      {{ $featTraits := .params.featTraits | default .params.traits | default (slice) }}
+      {{ $contentFeats := partial "contentAdapterAncestryFeats" (dict "title" .title.name "traits" (delimit $featTraits ",") ) }}
+
+      {{ partial "contentAdapter/addPage" (dict
+        "context" $
+        "content" $contentFeats
+        "kind" "page"
+        "path" (printf "%s/talenti" .path)
+        )
+      }}
+
+      {{ $contentHeritages := partial "contentAdapterAncestryHeritages" (dict "title" .title.name) }}
+      {{ partial "contentAdapter/addPage" (dict
+        "context" $
+        "content" $contentHeritages
+        "kind" "section"
+        "path" (printf "%s/lignaggi" .path)
+        )
+      }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ define "partials/contentAdapterPathByType" }}
+  {{ $base := replaceRE `^.*/([a-z\-]+)$` "$1" .path }}
+  {{ $path := "" }}
+  {{ if eq .type "ancestry" }}
+    {{ $path = printf "stirpi/%s" $base }}
+  {{ else if eq .type "background" }}
+    {{ $path = printf "background/%s" $base }}
+  {{ else if eq .type "class" }}
+    {{ $path = printf "classi/%s" $base }}
+  {{ else if eq .type "feat" }}
+    {{ $path = printf "talenti/%s" $base }}
+  {{ else if eq .type "heritage" }}
+    {{ $match := findRESubmatch `([^/]+)/lignaggi` .path 1 }}
+    {{ with index $match 0 }}
+      {{ $path = printf "stirpi/%s/lignaggi/%s" (index . 1) $base }}
+    {{ end }}
+  {{ else if eq .type "action" }}
+    {{ $path = printf "azioni/%s" $base }}
+  {{ else if eq .type "trait" }}
+    {{ $path = printf "tratti/%s" $base }}
+  {{ end }}
+  {{ return $path }}
+{{ end }}
+
+{{ define "partials/contentAdapterConvertGlob" }}
+  {{ return (. | replaceRE `\*\*` ".+?" | replaceRE `\*` "[^/]+?" ) }}
+{{ end }}
+
+{{ define "partials/contentAdapter/addPage" }}
+  {{ $addedPage := dict
+    "content" (dict "mediaType" "text/markdown" "value" .content)
+    "kind" .kind
+    "type" (.type | default "page")
+    "path" .path
+    "params" (.params | default dict)
+    "outputs" (slice "html" "json")
+  }}
+  {{ .context.AddPage $addedPage }}
+{{ end }}
+
+{{/* "url" (printf "%s.html" .path) */}}
+
+{{/* prettier-ignore-start */}}
+
+{{ define "partials/contentAdapterAncestryAppend" }}
+
+{{"{{%"}} include page="/{{.}}/lignaggi" {{"%}}"}}
+
+{{"{{%"}} include page="/{{.}}/talenti" {{"%}}"}}
+
+{{ end }}
+
+{{ define "partials/contentAdapterAncestryFeats" -}}
+
+# Talenti {{ .title }}
+
+TODO
+
+{{ end }}
+
+{{ define "partials/contentAdapterAncestryHeritages" -}}
+
+# Lignaggi {{ .title }}
+
+TODO
+
+{{ end }}
+
+{{/* prettier-ignore-end */}}

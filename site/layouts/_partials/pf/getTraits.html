@@ -1,0 +1,16 @@
+{{- $dataTraits := .Params.traits | default slice -}}
+{{- $rarity := "comune" -}}
+{{- $traits := slice -}}
+{{- range $dataTraits -}}
+  {{- if and (ne . "non comune") (ne . "raro") (ne . "unico") -}}
+    {{- $traits = $traits | append . -}}
+  {{- else -}}
+    {{- $rarity = . -}}
+  {{ end }}
+{{- end -}}
+{{- return (dict
+  "rarity" $rarity
+  "traits" $traits
+  "all" (slice | append $rarity | append $traits)
+  )
+-}}

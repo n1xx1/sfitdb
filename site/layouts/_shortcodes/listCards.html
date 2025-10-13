@@ -1,0 +1,5 @@
+{{- $params := dict }}
+{{- if .IsNamedParams -}}
+  {{- $params = .Params -}}
+{{- end -}}
+{{- partialCached "shortcodes/listCards" (dict "context" .Page "params" $params) .Page.Path $params -}}

@@ -1,0 +1,32 @@
+{{- $level := 1 -}}
+{{- $type := "" -}}
+
+{{- if not .IsNamedParams -}}
+  {{- errorf "require named parameters" -}}
+{{- end -}}
+
+{{- with .Get "type" -}}
+  {{- $type = printf "pf%s" . -}}
+{{- else -}}
+  {{- errorf "missing value for param 'type': %s" .Position -}}
+{{- end -}}
+{{- if isset .Params "level" -}}
+  {{- $level = .Get "level" -}}
+{{- end -}}
+
+{{- $pages := slice -}}
+{{- range .Site.Pages -}}
+  {{- if ne .Type $type -}}
+    {{- continue -}}
+  {{- end -}}
+  {{- if hasPrefix $.Page.Path "/regole" -}}
+    {{- if not (hasPrefix .Page.Path $.Page.Path ) -}}
+      {{- continue -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $pages = $pages | append . -}}
+{{- end -}}
+{{- $pages = partial "utils/sortPagesBy" (dict "pages" $pages "sorter" "name") -}}
+{{- range $pages -}}
+  {{ partial "shortcodes/include" (dict "page" . "level" $level) }}
+{{- end -}}

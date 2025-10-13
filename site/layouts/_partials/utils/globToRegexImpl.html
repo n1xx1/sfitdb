@@ -1,0 +1,93 @@
+{{ $regex := "" }}
+{{ $inGroup := false }}
+{{ $inClass := false }}
+{{ $firstIndexInClass := -1 }}
+{{ $arr := split . "" }}
+{{ $arrLen := len $arr }}
+{{ $i := 0 }}
+
+{{ range seq 0 $arrLen }}
+  {{ if ge $i $arrLen }}
+    {{ break }}
+  {{ end }}
+  {{ $ch := index $arr $i }}
+  {{ if eq $ch "\\" }}
+    {{ $i = add $i 1 }}
+    {{ if ge $i $arrLen }}
+      {{ $regex = add $regex "\\" }}
+    {{ else }}
+      {{ $next := index $arr $i }}
+      {{ if eq $next "," }}
+      {{ else if eq $next "Q" "E" }}
+        {{ $regex = add $regex "\\\\" }}
+      {{ else }}
+        {{ $regex = add $regex "\\" }}
+      {{ end }}
+      {{ $regex = add $regex $next }}
+    {{ end }}
+  {{ else if eq $ch "." "(" ")" "+" "|" "^" "$" "@" "%" }}
+    {{ if or (not $inClass) (and (eq $firstIndexInClass $i) (eq $ch "^")) }}
+      {{ $regex = add $regex "\\" $ch }}
+    {{ else }}
+      {{ $regex = add $regex $ch }}
+    {{ end }}
+  {{ else if eq $ch "?" }}
+    {{ $regex = add $regex "[^/]" $ch }}
+  {{ else if eq $ch "[" }}
+    {{ if not $inClass }}
+      {{ $firstIndexInClass = add $i 1 }}
+    {{ end }}
+    {{ $regex = add $regex "[" }}
+    {{ $inClass = true }}
+  {{ else if eq $ch "]" }}
+    {{ $regex = add $regex "[" }}
+    {{ $inClass = false }}
+  {{ else if eq $ch "!" }}
+    {{ if eq $firstIndexInClass $i }}
+      {{ $regex = add $regex "^" }}
+    {{ else }}
+      {{ $regex = add $regex "!" }}
+    {{ end }}
+  {{ else if eq $ch "{" }}
+    {{ $regex = add $regex "(" }}
+    {{ $inGroup = true }}
+  {{ else if eq $ch "}" }}
+    {{ $regex = add $regex ")" }}
+    {{ $inGroup = false }}
+  {{ else if eq $ch "," }}
+    {{ if $inGroup }}
+      {{ $regex = add $regex "|" }}
+    {{ else }}
+      {{ $regex = add $regex "," }}
+    {{ end }}
+  {{ else if eq $ch "*" }}
+    {{ $prevChar := "" }}
+    {{ $nextChar := "" }}
+    {{ if gt $i 0 }}
+      {{ $prevChar = index $arr (sub $i 1) }}
+    {{ end }}
+    {{ $starCount := 1 }}
+    {{ range seq (add $i 1) (sub $arrLen 1) }}
+      {{ if ne (index $arr .) "*" }}
+        {{ break }}
+      {{ end }}
+      {{ $i = add $i 1 }}
+      {{ $starCount = add $starCount 1 }}
+    {{ end }}
+    {{ if lt $i (sub $arrLen 1) }}
+      {{ $nextChar = index $arr (add $i 1) }}
+    {{ end }}
+    {{ $isGlobstar := and (gt $starCount 1) (eq $prevChar "/" "") (eq $nextChar "/" "") }}
+    {{ if $isGlobstar }}
+      {{ $regex = add $regex "(([^/]*(\\/|$))*)" }}
+      {{ $i = add $i 1 }}
+    {{ else }}
+      {{ $regex = add $regex "([^/]*)" }}
+    {{ end }}
+  {{ else }}
+    {{ $regex = add $regex $ch }}
+  {{ end }}
+  {{ $i = add $i 1 }}
+{{ end }}
+{{ $regex = add "^" $regex "$" }}
+{{ return $regex }}

@@ -1,0 +1,13 @@
+{{ $ret := default nil nil }}
+{{ $pages := partial "pf/allPagesSorted" nil }}
+{{ $index := -1 }}
+{{ range $i, $page := $pages }}
+  {{ if $.Eq $page }}
+    {{ $index = add $i 1 }}
+    {{ break }}
+  {{ end }}
+{{ end }}
+{{ if and (lt $index (len $pages)) (ge $index 0) }}
+  {{ $ret = index $pages $index }}
+{{ end }}
+{{ return $ret }}

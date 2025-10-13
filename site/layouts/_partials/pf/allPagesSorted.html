@@ -1,0 +1,23 @@
+{{ return (partialCached "pf/allPagesSorted/impl" nil) }}
+
+{{ define "partials/pf/allPagesSorted/impl" }}
+  {{ $result := slice }}
+  {{ $opts := dict "filter" (dict "hasTitle" true) "sort" (slice "navigation" "name") }}
+  {{ $stack := slice site.Home }}
+
+  {{ range site.AllPages }}
+    {{ if eq (len $stack) 0 }}
+      {{ break }}
+    {{ end }}
+    {{ $cur := index (last 1 $stack) 0 }}
+    {{ $stack = first (sub (len $stack) 1) $stack }}
+
+    {{ $result = $result | append $cur }}
+    {{ $pages := partialCached "pf/getPages" (merge (dict "section" $cur) $opts) $cur $opts }}
+    {{ if gt (len $pages) 0 }}
+      {{ $stack = $stack | append (collections.Reverse $pages) }}
+    {{ end }}
+  {{ end }}
+
+  {{ return $result }}
+{{ end }}

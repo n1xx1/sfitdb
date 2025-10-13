@@ -1,0 +1,62 @@
+baseURL: http://sfitdb.n1xx1.me/
+languageCode: it-it
+title: Starfinder Italian Database
+menus:
+  main: []
+build:
+  buildStats:
+    enable: true
+  cachebusters:
+    - source: assets/notwatching/hugo_stats\.json
+      target: css
+    - source: assets/.*\.(js|ts|jsx|tsx)
+      target: js
+  noJSConfigInAssets: true
+enableInlineShortcodes: true
+taxonomies:
+markup:
+  tableOfContents:
+    startLevel: 1
+  goldmark:
+    parser:
+      attribute:
+        block: true
+        title: true
+      autoHeadingIDType: github-ascii
+    renderer:
+      unsafe: true
+timeout: 3000
+module:
+  mounts:
+    - source: site/content
+      target: content
+    - source: site/assets
+      target: assets
+    - source: site/layouts
+      target: layouts
+    - source: site/static
+      target: static
+    - source: sources
+      target: assets/sources
+    - source: hugo_stats.json
+      target: assets/notwatching/hugo_stats.json
+      disableWatch: true
+ignoreLogs:
+  - warning-rendershortcodes-in-html
+outputs:
+  home:
+    - html
+  page:
+    - html
+  section:
+    - html
+  taxonomy:
+    - html
+  term:
+    - html
+server:
+  redirects:
+    - fromre: "^(.*[^/])$"
+      to: "$1/"
+      status: 200
+      force: true

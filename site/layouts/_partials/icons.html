@@ -1,0 +1,8 @@
+{{- .
+  | replaceRE "\\:a\\:" "<span class=\"pf2-icon\">1</span>"
+  | replaceRE "\\:aa\\:" "<span class=\"pf2-icon\">2</span>"
+  | replaceRE "\\:aaa\\:" "<span class=\"pf2-icon\">3</span>"
+  | replaceRE "\\:f\\:" "<span class=\"pf2-icon\">4</span>"
+  | replaceRE "\\:r\\:" "<span class=\"pf2-icon\">5</span>"
+  | safeHTML
+-}}

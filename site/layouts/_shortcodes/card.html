@@ -1,0 +1,12 @@
+{{- partial "shortcodes/card" (dict
+  "link" (.Get "link")
+  "title" (.Get "title")
+  "icon" (.Get "icon")
+  "lines" (.Get "lines" | default nil)
+  "image" (.Get "image")
+  "subtitle" (default (.Get "subtitle") .Inner)
+  "imageStyle" (.Get "imageStyle")
+  "method" (.Get "method")
+  "options" (.Get "options")
+  )
+-}}

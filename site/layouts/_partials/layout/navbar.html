@@ -1,0 +1,74 @@
+{{- $navWidth := "max-w-[90rem]" -}}
+<div class="nav-container sticky top-0 z-20 w-full bg-transparent print:hidden">
+  <div
+    class="backdrop-blur-md bg-background/70 pointer-events-none absolute z-[-1] h-full w-full border-b"
+  ></div>
+
+  <nav
+    class="mx-auto flex items-center justify-end gap-2 h-16 px-6 {{ $navWidth }}"
+  >
+    <a
+      class="flex items-center hover:opacity-75 ltr:mr-auto rtl:ml-auto"
+      href="{{ .Site.Home.RelPermalink }}"
+    >
+      <span
+        class="mx-2 font-extrabold inline select-none"
+        title="{{ .Site.Title }}"
+        >{{- .Site.Title -}}</span
+      >
+    </a>
+    {{- $currentPage := . -}}
+    {{- range .Site.Menus.main -}}
+      {{- if eq .Params.type "search" -}}
+        {{- partial "search.html" (dict "params" .Params) -}}
+      {{- else -}}
+        {{- $link := .URL -}}
+        {{- $external := strings.HasPrefix $link "http" -}}
+        {{- with .PageRef -}}
+          {{- if hasPrefix . "/" -}}
+            {{- $link = relLangURL (strings.TrimPrefix "/" .) -}}
+          {{- end -}}
+        {{- end -}}
+        {{- if .Params.icon -}}
+          <a
+            class="p-2 text-current"
+            {{ if $external }}target="_blank" rel="noreferer"{{ end }}
+            href="{{ $link }}"
+            title="{{ or (T .Identifier) .Name | safeHTML }}"
+          >
+            {{- partial "utils/icon.html" (dict "name" .Params.icon "attributes" "height=24") -}}
+            <span class="sr-only"
+              >{{ or (T .Identifier) .Name | safeHTML }}</span
+            >
+          </a>
+        {{- else -}}
+          {{- $active := or ($currentPage.HasMenuCurrent "main" .) ($currentPage.IsMenuCurrent "main" .) -}}
+          {{- $activeClass := cond $active "font-medium" "text-gray-600 hover:text-gray-800" -}}
+          <a
+            title="{{ or (T .Identifier) .Name | safeHTML }}"
+            href="{{ $link }}"
+            {{ if $external }}target="_blank" rel="noreferer"{{ end }}
+            class="text-sm contrast-more:text-gray-700 relative -ml-2 hidden whitespace-nowrap p-2 md:inline-block {{ $activeClass }}"
+          >
+            <span class="text-center"
+              >{{ or (T .Identifier) .Name | safeHTML }}</span
+            >
+          </a>
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+    {{- partial "reactComponent" (dict
+      "path" "components/theme-select.tsx"
+      "id" "sidebar"
+      "page" .Page
+      )
+    -}}
+    <button
+      type="button"
+      aria-label="Menu"
+      class="hamburger-menu -mr-2 rounded-sm p-2 active:bg-foreground/20 md:hidden"
+    >
+      {{- partial "utils/svg" (slice "images/hamburger.svg" `class="w-6 h-6"`) -}}
+    </button>
+  </nav>
+</div>

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "hugo",
+  "devCommand": "cross-env PORT=$PORT npm run dev:all",
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
+  "trailingSlash": false,
+  "functions": {
+    "api/*.ts": {
+      "memory": 512,
+      "maxDuration": 30,
+      "includeFiles": "./database.db"
+    }
+  }
+}

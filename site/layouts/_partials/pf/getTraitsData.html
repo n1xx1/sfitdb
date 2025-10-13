@@ -1,0 +1,68 @@
+{{ $result := slice }}
+{{ range . }}
+  {{ $trait := . }}
+  {{ $traitNameParts := split (replace $trait " " "-" | replaceRE `^(.*?)(?:-(\d+))?$` "$1;$2") ";" }}
+  {{ $traitName := index $traitNameParts 0 }}
+  {{ $number := index $traitNameParts 1 }}
+
+  {{ $isSize := false }}
+  {{ $isRarity := false }}
+  {{ $isNotFound := false }}
+
+  {{ $traitPath := path.Join "tratti" $traitName }}
+  {{ $displayName := $trait }}
+  {{ $url := "" }}
+  {{ with site.GetPage $traitPath }}
+    {{ $title := partialCached "utils/title" . .Path }}
+    {{ $displayName = $title.name }}
+    {{- if $number -}}
+      {{- $displayName = printf "%s %s" $displayName $number -}}
+    {{- end -}}
+    {{ $url = .RelPermalink | replaceRE "/$" "" }}
+  {{ else }}
+    {{ $displayName = strings.FirstUpper $trait }}
+  {{ end }}
+
+  {{ $color := "bg-gray-300 dark:bg-gray-600" }}
+  {{ if eq $trait "minuscola" "piccola" "media" "grande" "enorme" "mastodontica" }}
+    {{ $color = "bg-green-400 dark:bg-green-800" }}
+    {{ $isSize = true }}
+  {{ else if eq $trait "non comune" }}
+    {{ $color = "bg-orange-300 dark:bg-orange-800" }}
+    {{ $isRarity = true }}
+  {{ else if eq $trait "raro" }}
+    {{ $color = "bg-blue-400 dark:bg-blue-800" }}
+    {{ $isRarity = true }}
+  {{ else if eq $trait "unico" }}
+    {{ $color = "bg-purple-400 dark:bg-purple-800" }}
+    {{ $isRarity = true }}
+  {{ else if not $url }}
+    {{ $color = "bg-red-500 dark:bg-red-700" }}
+    {{ $isNotFound = true }}
+  {{ end }}
+
+  {{ $entry := dict
+    "trait" $trait
+    "id" $traitName
+    "name" $displayName
+    "color" $color
+  }}
+  {{ if $url }}
+    {{ $entry = $entry | merge (dict "url" $url) }}
+  {{ end }}
+  {{ if $number }}
+    {{ $entry = $entry | merge (dict "number" ($number | int)) }}
+  {{ end }}
+  {{ if $isSize }}
+    {{ $entry = $entry | merge (dict "size" true) }}
+  {{ end }}
+  {{ if $isRarity }}
+    {{ $entry = $entry | merge (dict "rarity" true) }}
+  {{ end }}
+  {{ if $isNotFound }}
+    {{ $entry = $entry | merge (dict "notFound" true) }}
+  {{ end }}
+
+  {{ $result = $result | append $entry }}
+{{ end }}
+{{ return $result }}

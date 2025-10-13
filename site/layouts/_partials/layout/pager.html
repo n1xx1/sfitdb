@@ -1,0 +1,26 @@
+{{- $prev := partial "utils/getPrevPage" . -}}
+{{- $next := partial "utils/getNextPage" . -}}
+{{- if or $prev $next -}}
+  <div class="mb-8 flex items-center border-t pt-8 print:hidden">
+    {{- with $prev }}
+      {{- $title := partialCached "utils/title" . .Path -}}
+      <a
+        href="{{ .RelPermalink | replaceRE `/$` `` }}"
+        class="text-muted-foreground hover:text-foreground flex max-w-[50%] items-center gap-1 py-4 text-base font-medium transition-colors [word-break:break-word] md:text-lg ltr:pr-4 rtl:pl-4"
+      >
+        {{- partial "utils/svg" (slice "images/arrow-right.svg" `class="inline h-5 shrink-0 ltr:rotate-180" ` ) -}}
+        {{- $title.name | partial "icons" -}}
+      </a>
+    {{- end -}}
+    {{- with $next }}
+      {{- $title := partialCached "utils/title" . .Path -}}
+      <a
+        href="{{ .RelPermalink | replaceRE `/$` `` }}"
+        class="text-muted-foreground hover:text-foreground flex max-w-[50%] items-center gap-1 py-4 text-base font-medium transition-colors [word-break:break-word] md:text-lg ltr:ml-auto ltr:pl-4 ltr:text-right rtl:mr-auto rtl:pr-4 rtl:text-left"
+      >
+        {{- $title.name | partial "icons" -}}
+        {{- partial "utils/svg" (slice "images/arrow-right.svg" `class="inline h-5 shrink-0 rtl:rotate-180" ` ) -}}
+      </a>
+    {{- end -}}
+  </div>
+{{- end -}}

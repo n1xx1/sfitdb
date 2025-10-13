@@ -1,0 +1,47 @@
+{{- $pages := slice -}}
+{{- range .Site.Pages -}}
+  {{- if findRE ($.Get 0) (.RelPermalink | replaceRE `/$` ``) -}}
+    {{- range .Pages -}}
+      {{- $title := partialCached "utils/title" . .Path -}}
+      {{- $traits := partialCached "pf/getTraits" . .Path -}}
+      {{- $el := dict
+        "title" $title.name
+        "level" $title.level
+        "page" .
+        "traits" $traits
+        "sorter" (printf "%02d_%s" $title.level $title.name)
+      -}}
+      {{- $pages = $pages | append $el -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Origine</th>
+      <th>Rarità</th>
+      <th>Tratti</th>
+      <th>Livello</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{- range sort $pages "sorter" "asc" -}}
+      <tr>
+        <td>
+          <a href="{{ .page.RelPermalink  | replaceRE `/$` `` }}">
+            {{- .title -}}
+          </a>
+        </td>
+        <td>{{ index .page.Params "source" }}</td>
+        <td>
+          {{- partialCached "trait" .traits.rarity .traits.rarity -}}
+        </td>
+        <td>
+          {{- partialCached "traits" .traits.traits .traits.traits -}}
+        </td>
+        <td>{{ .level }}</td>
+      </tr>
+    {{- end -}}
+  </tbody>
+</table>

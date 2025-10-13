@@ -1,0 +1,21 @@
+{{- $pages := slice -}}
+{{- range . -}}
+  {{- if .Param "navigation-hide" -}}
+    {{- continue -}}
+  {{- end -}}
+  {{- $title := partialCached "utils/title" . .Path -}}
+  {{- if not $title.name -}}
+    {{- continue -}}
+  {{- end -}}
+  {{- $order := .Param "navigation-order" | default 0 -}}
+  {{- $pages = $pages | append (dict
+    "page" .
+    "weight" (printf "%010d__%010d__%s" $order $title.level $title.name)
+    )
+  -}}
+{{- end -}}
+{{- $ret := slice -}}
+{{- range sort $pages "weight" "asc" -}}
+  {{- $ret = $ret | append .page -}}
+{{- end -}}
+{{- return $ret -}}

@@ -1,0 +1,71 @@
+{{- $paramTraits := slice -}}
+{{- with .Get "traits" -}}
+  {{- $paramTraits = split . "," -}}
+{{- end -}}
+{{- $paramPath := "" -}}
+{{- with .Get "path" -}}
+  {{- $paramPath = . -}}
+{{- end -}}
+{{- $paramNoTraits := slice -}}
+{{- with .Get "notraits" -}}
+  {{- $paramNoTraits = split . "," -}}
+{{- end -}}
+{{- $pages := slice -}}
+{{- range site.AllPages -}}
+  {{- if ne .Type "pfbackground" -}}
+    {{- continue -}}
+  {{- end -}}
+  {{- if and (not $paramPath) (hasPrefix .Path "/regole/") -}}
+    {{- continue -}}
+  {{- end -}}
+  {{- $title := partialCached "utils/title" . .Path -}}
+  {{- $traits := partialCached "pf/getTraits" . . -}}
+  {{- if ne (len (intersect $traits.all $paramTraits)) (len $paramTraits) -}}
+    {{- continue -}}
+  {{- end -}}
+  {{- if gt (len (intersect $traits.all $paramNoTraits)) 0 -}}
+    {{- continue -}}
+  {{- end -}}
+  {{- if and $paramPath (not (hasPrefix .Path $paramPath)) -}}
+    {{- continue -}}
+  {{- end -}}
+  {{- $desc := .RawContent | replaceRE `(?:^|[\s\S]*\n)# .*\n\n([\s\S]+?)\n\n[\s\S]*` `${1}` -}}
+  {{- $el := dict
+    "title" $title.name
+    "desc" $desc
+    "page" .
+    "traits" $traits
+    "sorter" (printf "%s" $title.name)
+  -}}
+  {{- $pages = $pages | append $el -}}
+{{- end -}}
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Rarità</th>
+      <th width="50%">Descrizione</th>
+      <th>Origine</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{- range sort $pages "sorter" "asc" -}}
+      <tr>
+        <td>
+          <a href="{{- .page.RelPermalink | replaceRE `/$` `` -}}">
+            {{- .title -}}
+          </a>
+        </td>
+        <td>
+          {{- partialCached "trait" .traits.rarity .traits.rarity -}}
+        </td>
+        <td>
+          <div class="line-clamp-3">
+            {{- .desc | $.Page.RenderString -}}
+          </div>
+        </td>
+        <td>{{ index .page.Params "source" }}</td>
+      </tr>
+    {{- end -}}
+  </tbody>
+</table>

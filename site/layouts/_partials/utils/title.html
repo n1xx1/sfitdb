@@ -1,0 +1,6 @@
+{{ return (partial "utils/titleMd" (dict
+  "content" .RawContent
+  "path" .Path
+  "overrideTitle" (index .Params "title")
+  ))
+-}}

@@ -1,0 +1,28 @@
+{{- $source := "~" -}}
+{{- if isset .params "source" -}}
+  {{- $source = transform.Unmarshal (dict "format" "yaml") .params.source -}}
+{{- end -}}
+{{- $filter := dict -}}
+{{- if isset .params "filter" -}}
+  {{- $filter = transform.Unmarshal (dict "format" "yaml") .params.filter -}}
+{{- end -}}
+{{- $sort := slice "name" -}}
+{{- if isset .params "sort" -}}
+  {{- $sort = transform.Unmarshal (dict "format" "yaml") .params.sort -}}
+{{- end -}}
+{{- $pages := partialCached "pf/getPages" (dict
+  "context" .context
+  "source" $source
+  "filter" $filter
+  "sort" $sort
+  ) .context.Path $source $filter $sort
+-}}
+{{- range $pages -}}
+  {{- $title := partialCached "utils/title" . .Path -}}
+  {{- partial "shortcodes/card" (dict
+    "title" $title.name
+    "subtitle" (.Params.shortDescription | default "")
+    "link" (.RelPermalink | replaceRE "/$" "")
+    )
+  -}}
+{{- end -}}

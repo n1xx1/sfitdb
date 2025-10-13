@@ -1,0 +1,9 @@
+{{- partial "reactComponent" (dict
+  "path" (.Get "path")
+  "id" (.Ordinal | string)
+  "page" .Page
+  "props" .Params
+  "export" (.Get "export")
+  "inner" .Inner
+  )
+-}}

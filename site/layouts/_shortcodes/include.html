@@ -1,0 +1,51 @@
+{{- $page := "" -}}
+{{- $level := 1 -}}
+{{- $template := "" }}
+{{- $tempalteData := dict }}
+{{- $title := "" }}
+{{- if .IsNamedParams -}}
+  {{- with .Get "page" -}}
+    {{- $page = . -}}
+  {{- else -}}
+    {{- errorf "missing value for param 'page': %s" .Position -}}
+  {{- end -}}
+  {{- if isset .Params "level" -}}
+    {{- $level = .Get "level" -}}
+  {{- end -}}
+  {{- if isset .Params "template" -}}
+    {{- $template = .Get "template" -}}
+  {{- end -}}
+  {{- if isset .Params "templateData" -}}
+    {{- $templateData = transform.Unmarshal (dict "format" "yaml") .Params.templateData -}}
+  {{- end -}}
+  {{- if isset .Params "title" -}}
+    {{- $title = .Get "title" -}}
+  {{- end -}}
+{{- else -}}
+  {{- if len .Params | lt 0 -}}
+    {{- $page = .Get 0 -}}
+  {{- else -}}
+    {{- errorf "missing value for param 'page' index 0: %s" .Position -}}
+  {{- end -}}
+  {{- if len .Params | lt 1 -}}
+    {{- $level = .Get 1 -}}
+  {{- end -}}
+{{- end -}}
+{{- if not (hasPrefix $page "/") -}}
+  {{- $page = path.Join .Page.Path $page -}}
+{{- end -}}
+{{- with .Site.GetPage $page -}}
+  {{- partial "shortcodes/include" (dict
+    "page" .
+    "level" $level
+    "context" $.Page
+    "template" $template
+    "title" $title
+    )
+  -}}
+{{- else -}}
+  <div class="p-2 my-4 bg-red-300 dark:bg-red-900">
+    missing page:
+    {{ $page }}
+  </div>
+{{- end -}}

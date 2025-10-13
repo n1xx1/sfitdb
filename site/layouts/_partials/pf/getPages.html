@@ -1,0 +1,213 @@
+{{ $pages := slice }}
+{{ $context := .context | default (page) }}
+
+{{/* source is a string array:
+  - "*"    -> `site.AllPages`
+  - "~"    -> `page.Pages`
+  - "path" -> (site.GetPage "path").Pages
+*/}}
+{{ $source := .source }}
+{{ with $source }}
+  {{ if not (reflect.IsSlice $source) }}
+    {{ $source = slice $source }}
+  {{ end }}
+  {{ range $source }}
+    {{ if eq . "*" }}
+      {{ $pages = $pages | append site.AllPages }}
+    {{ else if eq . "~" }}
+      {{ $pages = $pages | append $context.Pages }}
+    {{ else }}
+      {{ $page := . }}
+      {{ if not (hasPrefix $page "/") }}
+        {{ $page = path.Join $context.Path $page }}
+      {{ end }}
+      {{ $section := site.GetPage $page }}
+      {{ if not $section }}
+        {{ warnf "section not found %q (context: %q, path: %q)" $page $context.Path . }}
+      {{ end }}
+      {{ $pages = $pages | append $section.Pages }}
+    {{ end }}
+  {{ end }}
+{{ else }}
+  {{ if .pages }}
+    {{ $pages = .pages }}
+  {{ else if .section }}
+    {{ $pages = .section.Pages }}
+  {{ else if .sections }}
+    {{ range .sections }}
+      {{ $pages = $pages append (slice .Pages) }}
+    {{ end }}
+  {{ else }}
+    {{ $pages = site.AllPages }}
+  {{ end }}
+{{ end }}
+
+{{ $filterType := default nil nil }}
+{{ $filterTraits := default nil nil }}
+{{ $filterExcludeTraits := default nil nil }}
+{{ $filterPath := default nil nil }}
+{{ $filterLevel := default nil nil }}
+{{ $filterHasTitle := false }}
+{{ $filterNavigable := false }}
+{{ $filterParams := default nil nil }}
+{{ $filterTitleType := "" }}
+
+{{ with .filter }}
+  {{ if isset . "type" }}
+    {{ $filterType = add "pf" .type }}
+  {{ end }}
+  {{ if .traits }}
+    {{ $filterTraits = .traits }}
+  {{ end }}
+  {{ if .excludeTraits }}
+    {{ $filterExcludeTraits = .excludeTraits }}
+  {{ end }}
+  {{ if isset . "path" }}
+    {{ $filterPath = .path }}
+  {{ end }}
+  {{ if isset . "level" }}
+    {{ $filterLevel = int .level }}
+  {{ end }}
+  {{ if isset . "hasTitle" }}
+    {{ $filterHasTitle = true }}
+  {{ end }}
+  {{ if isset . "navigable" }}
+    {{ $filterNavigable = true }}
+  {{ end }}
+  {{ if isset . "params" }}
+    {{ $filterParams = .params }}
+  {{ end }}
+  {{ $filterTitleType = .titleType | default "" }}
+{{ end }}
+
+{{/* name, level, source, navigation */}}
+{{/* default: level, name */}}
+{{ $defaultSortForamt := "%02[2]d__%[1]s" }}
+{{ $sortFormat := "" }}
+{{ range .sort }}
+  {{ $pattern := "" }}
+  {{ if eq . "name" }}
+    {{ $pattern = "%[1]s" }}
+  {{ else if eq . "level" }}
+    {{ $pattern = "%02[2]d" }}
+  {{ else if eq . "source" }}
+    {{ $pattern = "%[3]s" }}
+  {{ else if eq . "navigation" }}
+    {{ $pattern = "%04[4]d" }}
+  {{ end }}
+  {{ with $pattern }}
+    {{ if gt (len $sortFormat) 0 }}
+      {{ $sortFormat = add $sortFormat "__" }}
+    {{ end }}
+    {{ $sortFormat = add $sortFormat $pattern }}
+  {{ end }}
+{{ end }}
+{{ if not $sortFormat }}
+  {{ $sortFormat = $defaultSortForamt }}
+{{ end }}
+
+{{ $pagesFiltered := slice }}
+{{ range $pages }}
+  {{ $page := . }}
+  {{ $title := partialCached "utils/title" . .Path }}
+  {{ $source := .Params.source | default "" }}
+  {{ $navigation := index .Params "navigation-order" | default 0 | int }}
+  {{ $navigationHide := index .Params "navigation-hide" | default false }}
+
+  {{ if and $filterNavigable $navigationHide }}
+    {{ continue }}
+  {{ end }}
+
+  {{ if and $filterHasTitle (not $title.name) }}
+    {{ continue }}
+  {{ end }}
+
+  {{ if and (ne $filterType nil) (ne $filterType .Type) }}
+    {{ continue }}
+  {{ end }}
+
+  {{ if and (ne $filterLevel nil) (ne $filterLevel $title.level) }}
+    {{ continue }}
+  {{ end }}
+
+  {{ if and (ne $filterPath nil) (not (hasPrefix .Path $filterPath)) }}
+    {{ continue }}
+  {{ end }}
+
+  {{ if $filterTraits }}
+    {{ $traits := partialCached "pf/getTraits" . . }}
+    {{ if ne (len (intersect $traits.all $filterTraits)) (len $filterTraits) }}
+      {{ continue }}
+    {{ end }}
+  {{ end }}
+
+  {{ if $filterExcludeTraits }}
+    {{ $traits := partialCached "pf/getTraits" . . }}
+    {{ if gt (len (intersect $traits.all $filterExcludeTraits)) 0 }}
+      {{ continue }}
+    {{ end }}
+  {{ end }}
+
+  {{ if reflect.IsSlice $filterTitleType }}
+    {{ $found := false }}
+    {{ range $filterTitleType }}
+      {{ if eq $filterTitleType $title.type }}
+        {{ $found = true }}
+        {{ break }}
+      {{ end }}
+    {{ end }}
+    {{ if not $found }}
+      {{ continue }}
+    {{ end }}
+  {{ else if and $filterTitleType (ne $title.type $filterTitleType) }}
+    {{ continue }}
+  {{ end }}
+
+  {{ if $filterParams }}
+    {{ $failed := false }}
+    {{ range $key, $value := merge (dict) $filterParams }}
+      {{ $keyPath := strings.Split $key "." }}
+      {{ $param := index $page.Params $keyPath }}
+
+      {{ if and (reflect.IsMap $value) (isset $value "$or") }}
+        {{ $values := index $value "$or" }}
+        {{ $found := false }}
+        {{ range $v := $values }}
+          {{ if eq $param $v }}
+            {{ $found = true }}
+            {{ break }}
+          {{ end }}
+        {{ end }}
+        {{ if not $found }}
+          {{ $failed = true }}
+          {{ break }}
+        {{ end }}
+      {{ else if and (reflect.IsMap $value) (isset $value "$contains") }}
+        {{ $contained := index $value "$contains" }}
+        {{ if not (collections.In $param $contained) }}
+          {{ $failed = true }}
+          {{ break }}
+        {{ end }}
+      {{ else }}
+        {{ if ne $param $value }}
+          {{ $failed = true }}
+          {{ break }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    {{ if $failed }}
+      {{ continue }}
+    {{ end }}
+  {{ end }}
+
+  {{ $sorter := printf $sortFormat $title.name $title.level $source $navigation }}
+  {{ $el := dict "page" . "sorter" $sorter }}
+  {{ $pagesFiltered = $pagesFiltered | append $el }}
+{{ end }}
+
+{{ $returned := slice }}
+{{ range sort $pagesFiltered "sorter" "asc" }}
+  {{ $returned = $returned | append .page }}
+{{ end }}
+
+{{ return $returned }}

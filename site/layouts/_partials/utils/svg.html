@@ -1,0 +1,15 @@
+{{- $file := . -}}
+{{- $attrs := "" -}}
+{{- if reflect.IsSlice $file -}}
+  {{- $file = index . 0 -}}
+  {{- if gt (len .) 1 -}}
+    {{- $attrs = index . 1 -}}
+  {{- end -}}
+{{- end -}}
+{{- with resources.Get $file -}}
+  {{- .Content
+    | replaceRE "<\\?xml.*?\\?>" ""
+    | replaceRE "(<svg\\s)" (printf "$1 %s" $attrs)
+    | safeHTML
+  -}}
+{{- end -}}

@@ -1,0 +1,17 @@
+{{ "\n" }}
+{{- if . -}}
+  <div class="flex flex-wrap gap-2">
+    {{- $traits := partialCached "pf/getTraitsData" . . -}}
+    {{- range $traits -}}
+      {{- $url := .url | default (printf "/pagina-mancante#/tratti/%s" .id) -}}
+      <a
+        href="{{ $url | safeURL }}"
+        class="{{ .color }} p-1 text-sm rounded-md no-underline whitespace-nowrap"
+      >
+        {{- .name -}}
+      </a>
+      {{ "\n" }}
+    {{- end -}}
+  </div>
+{{- end -}}
+{{ "\n" }}

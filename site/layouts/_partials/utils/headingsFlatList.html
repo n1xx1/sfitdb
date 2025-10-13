@@ -1,0 +1,18 @@
+{{ $result := slice }}
+{{ $stack := slice (index .Headings 0) }}
+
+{{ range .HeadingsMap }}
+  {{ if eq (len $stack) 0 }}
+    {{ break }}
+  {{ end }}
+  {{ $cur := index (last 1 $stack) 0 }}
+  {{ $stack = first (sub (len $stack) 1) $stack }}
+
+  {{ $result = $result | append $cur }}
+  {{ $headings := $cur.Headings }}
+  {{ if gt (len $headings) 0 }}
+    {{ $stack = $stack | append (collections.Reverse $headings) }}
+  {{ end }}
+{{ end }}
+
+{{ return $result }}

@@ -1,0 +1,94 @@
+<div
+  class="mobile-menu-overlay transition-colors duration-800 fixed inset-0 z-10 bg-black/80 dark:bg-black/60 hidden"
+></div>
+
+<aside
+  class="sidebar-container flex flex-col print:hidden md:top-16 md:shrink-0 md:w-64 md:self-start max-md:[transform:translate3d(0,-100%,0)] md:sticky"
+>
+  <div
+    class="hextra-scrollbar overflow-y-auto overflow-x-hidden p-4 grow md:h-[calc(100vh-var(--navbar-height)-var(--menu-height))]"
+  >
+    <ul class="flex flex-col gap-1">
+      {{- $pages := partial "utils/sortedPages" .Site.Home.Pages -}}
+      {{- template "sidebar-tree" (dict "page" .Site.Home "pages" $pages "current" . "depth" 0) -}}
+    </ul>
+  </div>
+</aside>
+
+{{- define "sidebar-tree" -}}
+  {{- range .pages -}}
+    {{- template "sidebar-item" (dict "item" . "current" $.current "depth" $.depth) -}}
+  {{- else -}}
+    {{- if .current.IsDescendant .page -}}
+      <li>
+        {{- template "sidebar-toc" (dict "page" .) -}}
+      </li>
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- define "sidebar-item" -}}
+  {{- with .item -}}
+    <li>
+      {{- $navDisable := index .Params "navigation-disable" -}}
+      {{- $activeDescendant := $.current.IsDescendant . -}}
+      {{- $activeThis := eq $.current . -}}
+      {{- $title := partialCached "utils/title" . .Path -}}
+      <a
+        href="{{- .RelPermalink | replaceRE `/$` `` -}}"
+        class="flex items-center justify-between gap-2 cursor-pointer rounded-sm px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+        {{ if or $activeThis $activeDescendant -}}
+          sidebar-active-item font-semibold bg-primary/30
+          text-sidebar-foreground hover:bg-primary/50
+        {{ else -}}
+          text-sidebar-foreground hover:bg-accent hover:text-accent-foreground
+        {{- end -}}
+        "
+      >
+        {{- $title.name | partial "icons" -}}
+      </a>
+      {{- $pages := partial "utils/sortedPages" .Pages -}}
+      {{- if or $activeThis (and (not $pages) ($.current.IsDescendant $.item)) -}}
+        {{- template "sidebar-toc" (dict "page" .) -}}
+      {{- end -}}
+      {{- if and (or $activeThis $activeDescendant) (not $navDisable) $pages -}}
+        <div class="ltr:pr-0 overflow-hidden">
+          <ul
+            class='relative flex flex-col gap-1 py-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] ltr:ml-3 ltr:pl-3 ltr:before:left-0 rtl:mr-3 rtl:pr-3 rtl:before:right-0 dark:before:bg-neutral-800'
+          >
+            {{- template "sidebar-tree" (dict "page" $.item "pages" .Pages "current" $.current) -}}
+          </ul>
+        </div>
+      {{- end -}}
+    </li>
+  {{- end -}}
+{{- end -}}
+
+{{- define "sidebar-toc" -}}
+  {{- $page := .page -}}
+  {{- with $page.Fragments.Headings -}}
+    <ul
+      class='md:hidden flex flex-col gap-1 relative py-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] dark:before:bg-neutral-800 ltr:pl-3 ltr:before:left-0 rtl:pr-3 rtl:before:right-0 ltr:ml-3 rtl:mr-3'
+    >
+      {{- range . -}}
+        {{- with .Headings -}}
+          {{- range . -}}
+            {{- $title := .Title | safeHTML | plainify | htmlUnescape -}}
+            {{- $title = $title | replaceRE ` - .*$` "" -}}
+            {{- if $title }}
+              {{- $anchor := (anchorize .ID) | replaceRE `---.*?(-\d+)?$` "$1" | safeURL -}}
+              <li>
+                <a
+                  class="flex rounded-sm px-2 py-1.5 text-sm transition-colors [word-break:break-word] cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:border gap-2 before:opacity-25 before:content-['#'] text-muted-foreground hover:bg-foreground/30 hover:text-foreground"
+                  href="#{{ $anchor }}"
+                >
+                  {{- $title | partial "icons" }}
+                </a>
+              </li>
+            {{- end -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+    </ul>
+  {{- end -}}
+{{- end -}}

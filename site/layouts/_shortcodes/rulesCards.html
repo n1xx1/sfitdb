@@ -1,0 +1,31 @@
+{{- $cols := .Get "cols" | default "2" -}}
+{{- $pages := slice -}}
+{{- $section := .Page -}}
+{{- with .Get 0 -}}
+  {{- $section = $.Site.GetPage . }}
+{{- end -}}
+{{- with $section -}}
+  {{- range .Pages -}}
+    {{- $title := partialCached "utils/title" . .Path -}}
+    {{- $el := dict
+      "title" $title.name
+      "page" .
+      "sorter" (printf "%s" $title.name)
+    -}}
+    {{- $pages = $pages | append $el -}}
+  {{- end -}}
+{{- end -}}
+<div
+  class="hextra-cards mt-4 gap-4 grid not-prose"
+  style="--cols: {{ $cols }};"
+>
+  {{- range sort $pages "sorter" "asc" -}}
+    {{- partial "shortcodes/card" (dict
+      "title" .title
+      "subtitle" (.page.Params.shortDescription | default "")
+      "link" (.page.RelPermalink | replaceRE `/$` ``)
+      "lines" "50"
+      )
+    -}}
+  {{- end -}}
+</div>
