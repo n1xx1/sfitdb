@@ -1,5 +1,9 @@
 {
   "ancestry": ["stirpi-e-background/stirpi/*"],
   "heritage": ["stirpi-e-background/stirpi/*/lignaggi/*"],
-  "background": ["stirpi-e-background/background/*"]
+  "background": ["stirpi-e-background/background/*"],
+  "class": ["classi/classi/*"],
+  "action": ["classi/classi/*/azioni/*"],
+  "leadershipstyle": ["classi/classi/emissario/stili-di-leadership/*"],
+  "subclass": ["classi/classi/{emissario/stili-di-leadership}"]
 }

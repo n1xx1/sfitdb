@@ -40,7 +40,7 @@
       {{- $url := .PageInner.Params.canonicalURL | default .PageInner.RelPermalink -}}
       <a href="{{ $url }}" class="no-underline hover:underline{{ if not $sbHeading }} !font-bold{{ end }}">
     {{- end -}}
-    {{- (index $text 0) | safeHTML -}}
+    <span>{{- (index $text 0) | safeHTML -}}</span>
     {{- if eq .Level 1 -}}
       </a>
     {{- end -}}

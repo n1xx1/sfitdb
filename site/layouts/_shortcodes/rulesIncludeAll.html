@@ -23,6 +23,10 @@
     {{- if not (hasPrefix .Page.Path $.Page.Path ) -}}
       {{- continue -}}
     {{- end -}}
+  {{- else -}}
+    {{- if hasPrefix .Page.Path "/regole" -}}
+      {{- continue -}}
+    {{- end -}}
   {{- end -}}
   {{- $pages = $pages | append . -}}
 {{- end -}}

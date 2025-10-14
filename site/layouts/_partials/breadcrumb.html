@@ -24,7 +24,7 @@
             {{- if $b.page.IsHome -}}
               {{- partial "utils/svg" (slice "images/home.svg" `class="w-4 h-4"` ) -}}
             {{- else -}}
-              {{- $b.name | partial "icons" -}}
+              <span>{{- $b.name | partial "icons" -}}</span>
             {{- end -}}
           </span>
         {{- else -}}

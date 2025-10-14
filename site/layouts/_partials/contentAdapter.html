@@ -50,8 +50,6 @@
     {{ end }}
   {{ end }}
 
-  {{ $params = merge $params (dict "parsedTitle" $title) }}
-
   {{ $canonicalPath := partial "contentAdapterPathByType" (dict "path" $path "type" $pftype) }}
   {{ if $canonicalPath }}
     {{ if isset $params "slug" }}
@@ -60,6 +58,12 @@
     {{ end }}
     {{ $params = merge $params (dict "canonicalURL" $canonicalPath) }}
   {{ end }}
+
+  {{/* if $pftype }}
+    {{ warnf "%s %s" $path $canonicalPath }}
+  {{ end */}}
+
+  {{ $params = merge $params (dict "parsedTitle" $title) }}
 
   {{ partial "contentAdapter/addPage" (dict
     "context" $
@@ -141,22 +145,33 @@
   {{ $base := replaceRE `^.*/([a-z\-]+)$` "$1" .path }}
   {{ $path := "" }}
   {{ if eq .type "ancestry" }}
-    {{ $path = printf "stirpi/%s" $base }}
+    {{ $path = printf "/stirpi/%s" $base }}
   {{ else if eq .type "background" }}
-    {{ $path = printf "background/%s" $base }}
+    {{ $path = printf "/background/%s" $base }}
   {{ else if eq .type "class" }}
-    {{ $path = printf "classi/%s" $base }}
+    {{ $path = printf "/classi/%s" $base }}
   {{ else if eq .type "feat" }}
-    {{ $path = printf "talenti/%s" $base }}
+    {{ $path = printf "/talenti/%s" $base }}
   {{ else if eq .type "heritage" }}
     {{ $match := findRESubmatch `([^/]+)/lignaggi` .path 1 }}
     {{ with index $match 0 }}
-      {{ $path = printf "stirpi/%s/lignaggi/%s" (index . 1) $base }}
+      {{ $path = printf "/stirpi/%s/lignaggi/%s" (index . 1) $base }}
+    {{ end }}
+  {{ else if eq .type "subclass" }}
+    {{ $match := findRESubmatch `([^/]+)/([^/]+)$` .path 1 }}
+    {{ warnf "%v" $match }}
+    {{ with index $match 0 }}
+      {{ $path = printf "/classi/%s/%s" (index . 1) (index . 2) }}
+    {{ end }}
+  {{ else if eq .type "leadershipstyle" }}
+    {{ $match := findRESubmatch `([^/]+)/stili-di-leadership` .path 1 }}
+    {{ with index $match 0 }}
+      {{ $path = printf "/classi/%s/stili-di-leadership/%s" (index . 1) $base }}
     {{ end }}
   {{ else if eq .type "action" }}
-    {{ $path = printf "azioni/%s" $base }}
+    {{ $path = printf "/azioni/%s" $base }}
   {{ else if eq .type "trait" }}
-    {{ $path = printf "tratti/%s" $base }}
+    {{ $path = printf "/tratti/%s" $base }}
   {{ end }}
   {{ return $path }}
 {{ end }}
