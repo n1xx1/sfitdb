@@ -1,29 +1,29 @@
 {{- $source := "~" -}}
-{{- if isset .Params "source" -}}
+{{- if and .IsNamedParams (isset .Params "source") -}}
   {{- $source = transform.Unmarshal (dict "format" "yaml") .Params.source -}}
 {{- end -}}
 {{- $filter := dict -}}
-{{- if isset .Params "filter" -}}
+{{- if and .IsNamedParams (isset .Params "filter") -}}
   {{- $filter = transform.Unmarshal (dict "format" "yaml") .Params.filter -}}
 {{- end -}}
 {{- $sort := slice -}}
-{{- if isset .Params "sort" -}}
+{{- if and .IsNamedParams (isset .Params "sort") -}}
   {{- $sort = transform.Unmarshal (dict "format" "yaml") .Params.sort -}}
 {{- end -}}
 {{- $level := 1 -}}
-{{- if isset .Params "level" -}}
+{{- if and .IsNamedParams (isset .Params "level") -}}
   {{- $level = int .Params.level -}}
 {{- end -}}
 {{- $space := false -}}
-{{- if isset .Params "space" -}}
+{{- if and .IsNamedParams (isset .Params "space") -}}
   {{- $space = true -}}
 {{- end -}}
 {{- $template := "" -}}
-{{- if isset .Params "template" -}}
+{{- if and .IsNamedParams (isset .Params "template") -}}
   {{- $template = .Params.template -}}
 {{- end -}}
 {{- $templateData := dict -}}
-{{- if isset .Params "templateData" -}}
+{{- if and .IsNamedParams (isset .Params "templateData") -}}
   {{- $templateData = transform.Unmarshal (dict "format" "yaml") .Params.templateData -}}
 {{- end -}}
 {{- partial "shortcodes/includeAll" (dict

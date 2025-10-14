@@ -7,12 +7,10 @@
   {{- if not $title.name -}}
     {{- continue -}}
   {{- end -}}
-  {{- $order := .Param "navigation-order" | default 0 -}}
-  {{- $pages = $pages | append (dict
-    "page" .
-    "weight" (printf "%010d__%010d__%s" $order $title.level $title.name)
-    )
-  -}}
+  {{- $order := add (.Param "navigation-order" | default 0) 50000 -}}
+  {{- $level := add ($title.level | default 0) 500 -}}
+  {{- $weight := printf "%05d__%03d__%s" $order $level $title.name -}}
+  {{- $pages = $pages | append (dict "page" . "weight" $weight) -}}
 {{- end -}}
 {{- $ret := slice -}}
 {{- range sort $pages "weight" "asc" -}}

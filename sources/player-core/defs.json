@@ -1,1 +1,4 @@
-{}
+{
+  "ancestry": ["ancestries-backgrounds/ancestries/*"],
+  "heritage": ["ancestries-backgrounds/ancestries/*/heritages/*"]
+}
