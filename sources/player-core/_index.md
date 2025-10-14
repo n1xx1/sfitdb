@@ -11,6 +11,6 @@ navigation-order: 1
 
 {{< card link="/regole/player-core/introduction" title="Introduzione" />}}
 
-{{< card link="/regole/player-core/ancestries-backgrounds" title="Introduzione" />}}
+{{< card link="/regole/player-core/ancestries-backgrounds" title="Stirpi e Background" />}}
 
 {{< /cards >}}
