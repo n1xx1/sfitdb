@@ -9,8 +9,10 @@ navigation-order: 1
 
 {{< cards cols=1 >}}
 
-{{< card link="/regole/player-core/introduction" title="Introduzione" />}}
+{{< card link="/regole/player-core/introduzione" title="Introduzione" />}}
 
-{{< card link="/regole/player-core/ancestries-backgrounds" title="Stirpi e Background" />}}
+{{< card link="/regole/player-core/stirpi-e-background" title="Stirpi e Background" />}}
+
+{{< card link="/regole/player-core/classi" title="Classi" />}}
 
 {{< /cards >}}

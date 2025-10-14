@@ -2,6 +2,7 @@
 source: Player Core (Eng), pag. 41
 original-name: Ancestry Entries
 original-srd: https://2e.aonsrd.com/rules/114-ancestry-entries
+navigation-order: 1
 ---
 
 # Voci delle Stirpi

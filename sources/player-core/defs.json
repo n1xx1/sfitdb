@@ -1,4 +1,5 @@
 {
-  "ancestry": ["ancestries-backgrounds/ancestries/*"],
-  "heritage": ["ancestries-backgrounds/ancestries/*/heritages/*"]
+  "ancestry": ["stirpi-e-background/stirpi/*"],
+  "heritage": ["stirpi-e-background/stirpi/*/lignaggi/*"],
+  "background": ["stirpi-e-background/background/*"]
 }

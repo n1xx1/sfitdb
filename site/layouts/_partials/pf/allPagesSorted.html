@@ -12,7 +12,10 @@
     {{ $cur := index (last 1 $stack) 0 }}
     {{ $stack = first (sub (len $stack) 1) $stack }}
 
-    {{ $result = $result | append $cur }}
+    {{ if not (or (index $cur.Params "navigation-hide") (and $cur.Parent (index $cur.Parent.Params "navigation-sub-hide"))) }}
+      {{ $result = $result | append $cur }}
+    {{ end }}
+
     {{ $pages := partialCached "pf/getPages" (merge (dict "section" $cur) $opts) $cur $opts }}
     {{ if gt (len $pages) 0 }}
       {{ $stack = $stack | append (collections.Reverse $pages) }}

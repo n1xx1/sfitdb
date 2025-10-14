@@ -4,6 +4,7 @@ original-name: "Chapter 2: Ancestries & Backgrounds"
 original-srd: https://2e.aonsrd.com/rules/113-chapter-2-ancestries-backgrounds
 navigation-order: 2
 navigation-disable: true
+navigation-sub-hide: true
 ---
 
 # Capitolo 2: Stirpi e Background
@@ -39,10 +40,4 @@ Questo capitolo è diviso in tre parti:
 - Le lingue, consentono al tuo personaggio di comunicare con persone e creature
   della galassia.
 
-{{% include "/regole/player-core/ancestries-backgrounds/ancestry-entries" %}}
-
-{{% include "/regole/player-core/ancestries-backgrounds/ancestries" %}}
-
-{{% include "/regole/player-core/ancestries-backgrounds/backgrounds" %}}
-
-{{% include "/regole/player-core/ancestries-backgrounds/languages" %}}
+{{% includeAll sort="[navigation, name]" %}}
