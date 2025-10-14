@@ -32,10 +32,10 @@
 
   {{ $frontmatter := transform.Unmarshal (dict "format" "yaml") $rawFrontmatter }}
 
-  {{ $editURL := "https://github.com/n1xx1/pfitdb/blob/main" }}
-  {{ $editURL = urls.JoinPath $editURL $path }}
+  {{ $editURL := "https://github.com/n1xx1/sfitdb/blob/main" }}
+  {{ $editURL = urls.JoinPath $editURL .String }}
 
-  {{ $params := merge $frontmatter (dict "editURL" .String) }}
+  {{ $params := merge $frontmatter (dict "editURL" $editURL) }}
 
   {{ $title := partial "utils/titleMd" (dict "content" $content) }}
   {{ $kind := cond (hasSuffix .String "_index.md") "section" "page" }}

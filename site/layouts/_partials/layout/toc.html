@@ -20,11 +20,13 @@
         </ul>
       {{- end -}}
       <div class="grid gap-2 py-4 mx-4 border-t">
-        {{- $editURL := "https://github.com/n1xx1/pfitdb/blob/main" -}}
+        {{- $editURL := "https://github.com/n1xx1/sfitdb/blob/main" -}}
         {{- with .File -}}
           {{ $editURL = urls.JoinPath $editURL (replace .Path "\\" "/") }}
         {{- end -}}
-        {{- with .Params.editURL -}}{{ $editURL = . }}{{- end -}}
+        {{- with .Params.editURL -}}
+          {{- $editURL = . -}}
+        {{- end -}}
         <a
           class="text-xs font-medium text-muted-foreground hover:text-foreground"
           href="{{ $editURL }}"
