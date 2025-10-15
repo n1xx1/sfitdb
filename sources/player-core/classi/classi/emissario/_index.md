@@ -256,7 +256,7 @@ esperto.
 
 Hai imparato qualche trucco con le tue armi. Il tuo grado di competenza per armi
 semplici, armi da guerra e attacchi senz'armi aumenta a esperto. Ogni volta che
-attacchi il bersaglio del tuo [Prendilo!](/azioni/prendilo), ottieni accesso
+attacchi il bersaglio del tuo [Prendetelo!](/azioni/prendetelo), ottieni accesso
 agli effetti di specializzazione del critico di tutte le armi per le quali
 possiedi il grado esperto.
 

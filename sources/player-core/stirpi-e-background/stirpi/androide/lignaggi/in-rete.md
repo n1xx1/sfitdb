@@ -2,6 +2,7 @@
 source: Player Core (Eng), pag. 43
 original-name: Networked Android
 original-srd: https://2e.aonsrd.com/ancestries/7-android/heritages/33-networked-android
+ancestry: androide
 ---
 
 # Androide in Rete

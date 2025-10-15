@@ -1,0 +1,25 @@
+types:
+  ancestry:
+    path: "/stirpi/{{ .base }}"
+  heritage:
+    path: "/stirpi/{{ .params.ancestry }}/lignaggi/{{ .base }}"
+  background:
+    path: "/background/{{ .base }}"
+    statblock: true
+  class:
+    path: "/classi/{{ .base }}"
+  classfeature:
+    path: "/classi/{{ .params.class }}/{{ .base }}"
+  leadershipstyle:
+    path: "/classi/emissario/stili-di-leadership/{{ .base }}"
+  feat:
+    path: "/talenti/{{ .base }}"
+    statblock: true
+  action:
+    path: "/azioni/{{ .base }}"
+    statblock: true
+  trait:
+    path: "/tratti/{{ .base }}"
+
+repoURL: https://github.com/n1xx1/sfitdb
+repoBranch: main

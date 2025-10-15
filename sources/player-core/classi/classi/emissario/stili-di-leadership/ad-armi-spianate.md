@@ -16,4 +16,6 @@ esplosiva è supportata da una raffica di proiettili, e spari sempre per primo.
 
 **Direttiva di Leadership** [Preparate le Armi!](/azioni/preparate-le-armi)
 
+---
+
 {{% include page="/azioni/preparate-le-armi" %}}

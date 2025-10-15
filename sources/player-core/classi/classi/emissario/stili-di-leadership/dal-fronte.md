@@ -20,4 +20,6 @@ il grado maestro con le armature medie.
 
 **Direttiva di Leadership** [In Posizione!](/azioni/in-posizione)
 
+---
+
 {{% include page="/azioni/in-posizione" %}}

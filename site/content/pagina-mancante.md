@@ -7,6 +7,6 @@ navigation-hide: true
 La pagina richiesta non è stata ancora aggiunta. Se pensi sia un errore puoi
 segnalarlo qua:
 
-[Github](https://github.com/n1xx1/pfitdb/issues)
+[Github](https://github.com/n1xx1/sfitdb/issues)
 
 {{< reactComponent path="components/pagina-mancante.tsx" />}}

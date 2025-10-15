@@ -2,7 +2,10 @@
 source: Player Core (Eng), pag. 104
 original-name: Leadership Styles
 original-srd: https://2e.aonsrd.com/classes/1-envoy/leadership-styles
+navigation-order: 1
 navigation-disable: true
+navigation-sub-hide: true
+class: emissario
 ---
 
 # Stile di Leadership

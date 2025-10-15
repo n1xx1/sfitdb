@@ -1,5 +1,5 @@
 {{ $globs := slice }}
-{{ range resources.Match "sources/*/defs.json" }}
+{{ range resources.Match "sources/*/defs.{yaml,json}" }}
   {{ $path := .String }}
   {{ $book := index (index (findRESubmatch `^/sources/([a-z\-]+)/` $path 1) 0) 1 }}
   {{ range $type, $v := (transform.Unmarshal .) }}
@@ -32,7 +32,8 @@
 
   {{ $frontmatter := transform.Unmarshal (dict "format" "yaml") $rawFrontmatter }}
 
-  {{ $editURL := "https://github.com/n1xx1/sfitdb/blob/main" }}
+  {{ $config := (partialCached "config" "") }}
+  {{ $editURL := printf "%s/blob/%s" $config.repoURL $config.repoBranch }}
   {{ $editURL = urls.JoinPath $editURL .String }}
 
   {{ $params := merge $frontmatter (dict "editURL" $editURL) }}
@@ -50,7 +51,7 @@
     {{ end }}
   {{ end }}
 
-  {{ $canonicalPath := partial "contentAdapterPathByType" (dict "path" $path "type" $pftype) }}
+  {{ $canonicalPath := partial "contentAdapterPathByType" (dict "path" $path "type" $pftype "params" $params) }}
   {{ if $canonicalPath }}
     {{ if isset $params "slug" }}
       {{ $pathDir := path.Dir $canonicalPath }}
@@ -144,34 +145,15 @@
 {{ define "partials/contentAdapterPathByType" }}
   {{ $base := replaceRE `^.*/([a-z\-]+)$` "$1" .path }}
   {{ $path := "" }}
-  {{ if eq .type "ancestry" }}
-    {{ $path = printf "/stirpi/%s" $base }}
-  {{ else if eq .type "background" }}
-    {{ $path = printf "/background/%s" $base }}
-  {{ else if eq .type "class" }}
-    {{ $path = printf "/classi/%s" $base }}
-  {{ else if eq .type "feat" }}
-    {{ $path = printf "/talenti/%s" $base }}
-  {{ else if eq .type "heritage" }}
-    {{ $match := findRESubmatch `([^/]+)/lignaggi` .path 1 }}
-    {{ with index $match 0 }}
-      {{ $path = printf "/stirpi/%s/lignaggi/%s" (index . 1) $base }}
+  {{ if .type }}
+    {{ $pathTemplate := (index (partialCached "config" "").types .type).path }}
+    {{ if not $pathTemplate }}
+      {{ errorf "type %v not found in config.yaml" .type }}
     {{ end }}
-  {{ else if eq .type "subclass" }}
-    {{ $match := findRESubmatch `([^/]+)/([^/]+)$` .path 1 }}
-    {{ warnf "%v" $match }}
-    {{ with index $match 0 }}
-      {{ $path = printf "/classi/%s/%s" (index . 1) (index . 2) }}
-    {{ end }}
-  {{ else if eq .type "leadershipstyle" }}
-    {{ $match := findRESubmatch `([^/]+)/stili-di-leadership` .path 1 }}
-    {{ with index $match 0 }}
-      {{ $path = printf "/classi/%s/stili-di-leadership/%s" (index . 1) $base }}
-    {{ end }}
-  {{ else if eq .type "action" }}
-    {{ $path = printf "/azioni/%s" $base }}
-  {{ else if eq .type "trait" }}
-    {{ $path = printf "/tratti/%s" $base }}
+
+    {{ $context := (dict "base" $base "params" .params) }}
+    {{ $pathExecuted := printf "%s/%s.txt" .path .type }}
+    {{ $path = (resources.FromString .type $pathTemplate | resources.ExecuteAsTemplate $pathExecuted $context).Content }}
   {{ end }}
   {{ return $path }}
 {{ end }}

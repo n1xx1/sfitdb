@@ -16,4 +16,6 @@ corpo o supportare il gruppo da una distanza sicura.
 
 **Direttiva di Leadership** [Imboscata Coordinata](/azioni/imboscata-coordinata)
 
+---
+
 {{% include page="/azioni/imboscata-coordinata" %}}

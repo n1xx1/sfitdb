@@ -1,7 +1,7 @@
 ---
 source: Player Core (Eng), pag. 105
 original-name: In the Spotlight
-original-srd: https://2e.aonsrd.com/classes/1-envoy/leadership-styles/4-in-the-spotlight
+original-srd: https://2e.aonsrd.com/classes/1-envoy/leadership-styles/5-infosphere-director
 ---
 
 # Direttore dell'Infosfera
@@ -18,5 +18,7 @@ telepatica.
 
 **Direttiva di Leadership**
 [Valutazione Digitale!](/azioni/valutazione-digitale)
+
+---
 
 {{% include page="/azioni/valutazione-digitale" %}}

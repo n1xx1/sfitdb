@@ -2,6 +2,7 @@
 source: Player Core (Eng), pag. 44
 original-name: Renewed Android
 original-srd: https://2e.aonsrd.com/ancestries/7-android/heritages/34-renewed-android
+ancestry: androide
 ---
 
 # Androide Rinnovato

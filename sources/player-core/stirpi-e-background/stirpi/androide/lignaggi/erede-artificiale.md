@@ -2,6 +2,7 @@
 source: Player Core (Eng), pag. 43
 original-name: Artificial Scion Android
 original-srd: https://2e.aonsrd.com/ancestries/7-android/heritages/31-artificial-scion-android
+ancestry: androide
 ---
 
 # Androide Erede Artificiale

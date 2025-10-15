@@ -2,6 +2,7 @@
 source: Player Core (Eng), pag. 43
 original-name: Mod Fanatic Android
 original-srd: https://2e.aonsrd.com/ancestries/7-android/heritages/32-mod-fanatic-android
+ancestry: androide
 ---
 
 # Androide Fanatico delle Mod
