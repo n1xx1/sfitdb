@@ -7,7 +7,7 @@
   "feat": ["classi/classi/*/talenti/*"],
   "leadershipstyle": ["classi/classi/emissario/stili-di-leadership/*"],
   "connection": ["classi/classi/mistico/connessioni/*"],
-  "specializazion": ["classi/classi/operativo/specializzazioni/*"],
+  "specialization": ["classi/classi/operativo/specializzazioni/*"],
   "classfeature": [
     "classi/classi/emissario/stili-di-leadership",
     "classi/classi/mistico/connessioni",
