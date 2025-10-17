@@ -1,0 +1,9 @@
+{{ $ret := false }}
+{{ range $k, $v := (partialCached "config" "" "").types }}
+  {{ $reg := printf "^%s$" (replaceRE `\{\{\s*\..+\s*\}\}` `[0-9a-z\-]+` $v.path) }}
+  {{ if findRE $reg $ }}
+    {{ $ret = $v.italic }}
+    {{ break }}
+  {{ end }}
+{{ end }}
+{{ return $ret }}

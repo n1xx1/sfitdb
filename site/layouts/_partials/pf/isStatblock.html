@@ -1,0 +1,9 @@
+{{ $ret := false }}
+{{ if hasPrefix .Type "pf" }}
+  {{ with index (partialCached "config" "").types (substr .Type 2) }}
+    {{ if .statblock }}
+      {{ $ret = true }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ return $ret }}

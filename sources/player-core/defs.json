@@ -6,5 +6,9 @@
   "action": ["classi/classi/*/azioni/*"],
   "feat": ["classi/classi/*/talenti/*"],
   "leadershipstyle": ["classi/classi/emissario/stili-di-leadership/*"],
-  "classfeature": ["classi/classi/emissario/stili-di-leadership"]
+  "connection": ["classi/classi/mistico/connessioni/*"],
+  "classfeature": [
+    "classi/classi/emissario/stili-di-leadership",
+    "classi/classi/mistico/connessioni"
+  ]
 }

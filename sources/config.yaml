@@ -12,6 +12,8 @@ types:
     path: "/classi/{{ .params.class }}/{{ .base }}"
   leadershipstyle:
     path: "/classi/emissario/stili-di-leadership/{{ .base }}"
+  connection:
+    path: "/classi/mistico/connessioni/{{ .base }}"
   feat:
     path: "/talenti/{{ .base }}"
     statblock: true
@@ -20,6 +22,12 @@ types:
     statblock: true
   trait:
     path: "/tratti/{{ .base }}"
+  spell:
+    path: "/incantesimi/{{ .base }}"
+    italic: true
+  equipment:
+    path: "/equipaggiamento/{{ .base }}"
+    italic: true
 
 repoURL: https://github.com/n1xx1/sfitdb
 repoBranch: main
