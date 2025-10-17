@@ -112,30 +112,30 @@ In quanto mistico, acquisisci i seguenti privilegi di classe. Le capacità
 ottenute ai livelli superiori riportano, accanto ai rispettivi nomi, i livelli
 richiesti per acquisirle.
 
-### Avanzamento dell'Emissario
+### Avanzamento dell'Mistico
 
-| Il tuo Livello | Privilegi di Classe                                                                                                                                     |
-| :------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|       1        | Aumenti di attributo, competenze iniziali, connessione, lanciare incantesimi da mistico, legame mistico, repertorio degli incantesimi, rete di vitalità |
-|       2        | Talento da mistico, talento di abilità                                                                                                                  |
-|       3        | Chat di gruppo, incantesimi distintivi, incremento di abilità, reflex expertise, talento generico                                                       |
-|       4        | Talento da mistico, talento di abilità                                                                                                                  |
-|       5        | Aumenti di attributo, fortitude expertise, incremento di abilità, talento di stirpe                                                                     |
-|       6        | Talento da mistico, talento di abilità                                                                                                                  |
-|       7        | Incantatore esperto, incremento di abilità, talento generico                                                                                            |
-|       8        | Talento da mistico, talento di abilità                                                                                                                  |
-|       9        | Anima resistente, incremento di abilità, talento di stirpe                                                                                              |
-|       10       | Aumenti di attributo, talento da mistico, talento di abilità                                                                                            |
-|       11       | Esperienza con le armi, incremento di abilità, perception expertise, talento generico                                                                   |
-|       12       | Talento da mistico, talento di abilità                                                                                                                  |
-|       13       | Esperienza con le armature, incremento di abilità, specializzazione con le armi, talento di stirpe                                                      |
-|       14       | Talento da mistico, talento di abilità                                                                                                                  |
-|       15       | Aumenti di attributo, incantatore magistrale, incremento di abilità, talento generico                                                                   |
-|       16       | Talento da mistico, talento di abilità                                                                                                                  |
-|       17       | Incremento di abilità, talento di stirpe                                                                                                                |
-|       18       | Talento da mistico, talento di abilità                                                                                                                  |
-|       19       | Armonia perfetta, incantatore leggendario, incremento di abilità, talento generico, trascendenza                                                        |
-|       20       | Aumenti di attributo, talento da mistico, talento di abilità                                                                                            |
+| Il tuo Livello | Privilegi di Classe                                                                                                                                                          |
+| :------------: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|       1        | Aumenti di attributo, competenze iniziali, connessione, lanciare incantesimi da mistico, legame mistico, repertorio degli incantesimi, rete di vitalità, stirpe e background |
+|       2        | Talento da mistico, talento di abilità                                                                                                                                       |
+|       3        | Chat di gruppo, incantesimi distintivi, incremento di abilità, reflex expertise, talento generico                                                                            |
+|       4        | Talento da mistico, talento di abilità                                                                                                                                       |
+|       5        | Aumenti di attributo, fortitude expertise, incremento di abilità, talento di stirpe                                                                                          |
+|       6        | Talento da mistico, talento di abilità                                                                                                                                       |
+|       7        | Incantatore esperto, incremento di abilità, talento generico                                                                                                                 |
+|       8        | Talento da mistico, talento di abilità                                                                                                                                       |
+|       9        | Anima resistente, incremento di abilità, talento di stirpe                                                                                                                   |
+|       10       | Aumenti di attributo, talento da mistico, talento di abilità                                                                                                                 |
+|       11       | Esperienza con le armi, incremento di abilità, perception expertise, talento generico                                                                                        |
+|       12       | Talento da mistico, talento di abilità                                                                                                                                       |
+|       13       | Esperienza con le armature, incremento di abilità, specializzazione con le armi, talento di stirpe                                                                           |
+|       14       | Talento da mistico, talento di abilità                                                                                                                                       |
+|       15       | Aumenti di attributo, incantatore magistrale, incremento di abilità, talento generico                                                                                        |
+|       16       | Talento da mistico, talento di abilità                                                                                                                                       |
+|       17       | Incremento di abilità, talento di stirpe                                                                                                                                     |
+|       18       | Talento da mistico, talento di abilità                                                                                                                                       |
+|       19       | Armonia perfetta, incantatore leggendario, incremento di abilità, talento generico, trascendenza                                                                             |
+|       20       | Aumenti di attributo, talento da mistico, talento di abilità                                                                                                                 |
 
 ### Aumenti di Attributo
 
@@ -329,10 +329,15 @@ suoi Punti Ferita.
 
 {{% include page="/azioni/trasferisci-vitalita" level=4 %}}
 
+### Stirpe e Background
+
+Oltre alle capacità conferite dalla tua classe al 1° livello, ottieni i benefici
+della Stirpe e del Background che hai scelto.
+
 ### Talenti da Mistico - 2°
 
 Al 2° livello, e successivamente ad ogni livello pari, ottieni un talento da
-emissario.
+mistico.
 
 ### Talenti di Abilità - 2°
 

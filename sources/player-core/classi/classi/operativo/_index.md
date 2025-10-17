@@ -138,25 +138,83 @@ richiesti per acquisirle.
 
 ### Avanzamento dell'Emissario
 
-| Il tuo Livello | Privilegi di Classe |
-| :------------: | ------------------- |
-|       1        |                     |
-|       2        |                     |
-|       3        |                     |
-|       4        |                     |
-|       5        |                     |
-|       6        |                     |
-|       7        |                     |
-|       8        |                     |
-|       9        |                     |
-|       10       |                     |
-|       11       |                     |
-|       12       |                     |
-|       13       |                     |
-|       14       |                     |
-|       15       |                     |
-|       16       |                     |
-|       17       |                     |
-|       18       |                     |
-|       19       |                     |
-|       20       |                     |
+| Il tuo Livello | Privilegi di Classe                                                                                                                                |
+| :------------: | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+|       1        | aumenti di attributo, competenze iniziali, Mirare 1d4, specializzazione dell'operativo, stirpe e background, tiratore scelto, talento da operativo |
+|       2        | talento da operativo, talento di abilità                                                                                                           |
+|       3        | concentrato, incremento di abilità, insieme di abilità specializzate, talento generico                                                             |
+|       4        | talento da operativo, talento di abilità                                                                                                           |
+|       5        | aumenti di attributo, incremento di abilità, Mirare 2d4                                                                                            |
+|       6        | talento da operativo, talento di abilità                                                                                                           |
+|       7        | incremento di abilità, insieme di abilità specializzate, talento generico                                                                          |
+|       8        | talento da operativo, talento di abilità                                                                                                           |
+|       9        | incremento di abilità                                                                                                                              |
+|       10       | aumenti di attributo, talento da operativo, talento di abilità                                                                                     |
+|       11       | incremento di abilità, Mirare 3d4, talento generico                                                                                                |
+|       12       | talento da operativo, talento di abilità                                                                                                           |
+|       13       | incremento di abilità                                                                                                                              |
+|       14       | talento da operativo, talento di abilità                                                                                                           |
+|       15       | aumenti di attributo, insieme di abilità specializzate, incremento di abilità, talento generico                                                    |
+|       16       | talento da operativo, talento di abilità                                                                                                           |
+|       17       | incremento di abilità, Mirare 4d4                                                                                                                  |
+|       18       | talento da operativo, talento di abilità                                                                                                           |
+|       19       | incremento di abilità, talento generico                                                                                                            |
+|       20       | aumenti di attributo, talento da operativo, talento di abilità                                                                                     |
+
+### Aumenti di Attributo
+
+In aggiunta a quello che ottiene dalla tua classe al 1° livello, hai quattro
+aumenti liberi a modificatori di attributo diversi.
+
+Al 5° livello, e successivamente ogni 5 livelli, hai quattro aumenti liberi a
+modificatori di attributo diversi. Se un modificatore di attributo è già +4 o
+superiore, necessita di due aumenti per incrementarlo; ottieni un incremento
+parziale e devi aumentare quell'attributo nuovamente a un livello successivo per
+incrementarlo di 1.
+
+### Competenze Iniziali
+
+Al 1° livello ottieni un certo numero di competenze che rappresentano il tuo
+addestramento di base, indicate all'inizio della descrizione della classe.
+
+### Specializzazione dell'Operativo
+
+### Stirpe e Background
+
+Oltre alle capacità conferite dalla tua classe al 1° livello, ottieni i benefici
+della Stirpe e del Background che hai scelto.
+
+### Tiratore Scelto
+
+### Talenti da Operativo
+
+Al 1° livello, e successivamente ad ogni livello pari, ottieni un talento da
+mistico.
+
+### Talenti di Abilità - 2°
+
+Al 2° livello, e successivamente ogni 2 livelli, ottieni un talento di abilità.
+Per selezionarne uno devi essere almeno addestrato nell'abilità corrispondente.
+
+### Concentrato - 3°
+
+### Incrementi di Abilità - 3°
+
+Al 3° livello, e successivamente ogni 2 livelli, ottieni un incremento di
+abilità. Puoi utilizzarlo per aumentare ad addestrato il tuo grado di competenza
+in un'abilità in cui sei aenza addestramento, o per aumentarlo a esperto in
+un'abilità in cui sei già addestrato.
+
+Al 7° livello, puoi impiegare gli incrementi di abilità per aumentare a maestro
+il tuo grado di competenza in un'abilità in cui sei già esperto, mentre al 15°
+livello puoi utilizzarli per aumentare a leggendario il tuo grado di competenza
+in un'abilità in cui sei già maestro.
+
+### Talenti Generici - 3°
+
+Al 3° livello, e successivamente ogni 4 livelli, ottieni un talento generico.
+
+### Insieme di Abilità Specializzate - 3°
+
+Al 3°, 7° e 15° livello, ottieni un talento di abilità. Questo talento deve
+essere per un'abilità addestrata dal tua specializzazione dell'operativo.

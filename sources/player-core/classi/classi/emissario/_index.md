@@ -181,6 +181,11 @@ di guidare gli altri. Al 1° livello, scegli uno
 nell'abilità di leadership indicata, ottieni il vantaggio di leadership
 corrispondente e conosci la direttiva di leadership associata.
 
+### Stirpe e Background
+
+Oltre alle capacità conferite dalla tua classe al 1° livello, ottieni i benefici
+della Stirpe e del Background che hai scelto.
+
 ### Talenti da Emissario
 
 Al 1° livello, e successivamente ad ogni livello pari, ottieni un talento da

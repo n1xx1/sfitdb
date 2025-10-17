@@ -22,6 +22,8 @@
 | &nbsp; Epiphany         | Epifania                | us    |              |
 | Operative               | Operativo               | gu sf |              |
 | &nbsp; Specialization   | Specializzazione        | gu sf |              |
+| &nbsp; Sharpshooter     | Tiratore Scelto         | us    |              |
+| &nbsp; Focused          | Concentrato             | us    |              |
 
 ### Abilità
 
