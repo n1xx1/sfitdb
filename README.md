@@ -2,98 +2,111 @@
 
 ## Glossario
 
-| en                      | it                      | da    | note     |
-| ----------------------- | ----------------------- | ----- | -------- |
-| Daily Preparations      | Preparativi Giornalieri | GU pf |          |
-| Level                   | Livello                 | GU pf |          |
-| Rank                    | Grado                   | GU pf | remaster |
-| Perception Expertise    |                         |       | remaster |
-| Fortitude Expertise     |                         |       | remaster |
-| Reflex Expertise        |                         |       | remaster |
-| Envoy                   | Emissario               | GU sf |          |
-| &nbsp; Leadership Style | Stile di Leadership     | US    |          |
-| Mystic                  | Mistico                 | GU sf |          |
-| &nbsp; Connection       | Connessione             | GU sf |          |
-| &nbsp; Bond             | Legame                  | US    |          |
-| &nbsp; Harmony          | Armonia                 | US    |          |
-| &nbsp; Epiphany         | Epifania                | US    |          |
+| en                      | it                      | da    | note         |
+| ----------------------- | ----------------------- | ----- | ------------ |
+| line of sight           | linea visiva?           | ?     | non uniforme |
+| line of effect          | linea di effetto        | ?     | non uniforme |
+| Daily Preparations      | Preparativi Giornalieri | gu pf |              |
+| Level                   | Livello                 | gu pf |              |
+| Rank                    | Grado                   | gu pf | remaster     |
+| Netherworld             | Aldilà                  | gu pf | remaster     |
+| Perception Expertise    |                         |       | remaster     |
+| Fortitude Expertise     |                         |       | remaster     |
+| Reflex Expertise        |                         |       | remaster     |
+| Envoy                   | Emissario               | gu sf |              |
+| &nbsp; Leadership Style | Stile di Leadership     | us    |              |
+| Mystic                  | Mistico                 | gu sf |              |
+| &nbsp; Connection       | Connessione             | gu sf |              |
+| &nbsp; Bond             | Legame                  | us    |              |
+| &nbsp; Harmony          | Armonia                 | us    |              |
+| &nbsp; Epiphany         | Epifania                | us    |              |
+| Operative               | Operativo               | gu sf |              |
+| &nbsp; Specialization   | Specializzazione        | gu sf |              |
 
 ### Abilità
 
 | en           | it            | da    | note |
 | ------------ | ------------- | ----- | ---- |
-| Acrobatics   | Acrobazia     | GU pf |      |
-| Arcana       | Arcano        | GU pf |      |
-| Athletics    | Atletica      | GU pf |      |
-| Computers    | Computer      | GU sf |      |
-| Crafting     | Artigianato   | GU pf |      |
-| Deception    | Inganno       | GU pf |      |
-| Diplomacy    | Diplomazia    | GU pf |      |
-| Intimidation | Indimidazione | GU pf |      |
-| Lore         | Sapienza      | GU pf |      |
-| Medicine     | Medicina      | GU pf |      |
-| Nature       | Natura        | GU pf |      |
-| Occultism    | Occultismo    | GU pf |      |
-| Performance  | Esibizione    | GU pf |      |
-| Piloting     | Pilotare      | GU sf |      |
-| Religion     | Religione     | GU pf |      |
-| Society      | Società       | GU pf |      |
-| Stealth      | Furtività     | GU pf |      |
-| Survival     | Sopravvivenza | GU pf |      |
-| Thievery     | Furto         | GU pf |      |
+| Acrobatics   | Acrobazia     | gu pf |      |
+| Arcana       | Arcano        | gu pf |      |
+| Athletics    | Atletica      | gu pf |      |
+| Computers    | Computer      | gu sf |      |
+| Crafting     | Artigianato   | gu pf |      |
+| Deception    | Inganno       | gu pf |      |
+| Diplomacy    | Diplomazia    | gu pf |      |
+| Intimidation | Indimidazione | gu pf |      |
+| Lore         | Sapienza      | gu pf |      |
+| Medicine     | Medicina      | gu pf |      |
+| Nature       | Natura        | gu pf |      |
+| Occultism    | Occultismo    | gu pf |      |
+| Performance  | Esibizione    | gu pf |      |
+| Piloting     | Pilotare      | gu sf |      |
+| Religion     | Religione     | gu pf |      |
+| Society      | Società       | gu pf |      |
+| Stealth      | Furtività     | gu pf |      |
+| Survival     | Sopravvivenza | gu pf |      |
+| Thievery     | Furto         | gu pf |      |
 
 ### Condizioni
 
 | en          | it             | da    | note |
 | ----------- | -------------- | ----- | ---- |
-| Blinded     | Accecato       | GU pf |      |
-| Clumsy      | Maldestro      | GU pf |      |
-| Dazzled     | Abbagliato     | GU pf |      |
-| Deafened    | Assordato      | GU pf |      |
-| Doomed      | Condannato     | GU pf |      |
-| Drained     | Risucchiato    | GU pf |      |
-| Dying       | Morente        | GU pf |      |
-| Enfeebled   | Indebolito     | GU pf |      |
-| Paralyzed   | Paralizzato    | GU pf |      |
-| Sickened    | Nauseato       | GU pf |      |
-| Stunned     | Stordito       | GU pf |      |
-| Unconscious | Privo di Sensi | GU pf |      |
+| Blinded     | Accecato       | gu pf |      |
+| Clumsy      | Maldestro      | gu pf |      |
+| Concealed   | Occultato      | gu pf |      |
+| Dazzled     | Abbagliato     | gu pf |      |
+| Deafened    | Assordato      | gu pf |      |
+| Doomed      | Condannato     | gu pf |      |
+| Drained     | Risucchiato    | gu pf |      |
+| Dying       | Morente        | gu pf |      |
+| Enfeebled   | Indebolito     | gu pf |      |
+| Paralyzed   | Paralizzato    | gu pf |      |
+| Sickened    | Nauseato       | gu pf |      |
+| Stunned     | Stordito       | gu pf |      |
+| Unconscious | Privo di Sensi | gu pf |      |
 
 ### Tratti
 
 | en        | it              | da    | note |
 | --------- | --------------- | ----- | ---- |
-| Air       | Aria            | GU pf |      |
-| Auditory  | Uditivo         | GU pf |      |
-| Earth     | Terra           | GU pf |      |
-| Fire      | Fuoco           | GU pf |      |
-| Metal     | Metallo         | GU pf |      |
-| Traversal | Attraversamento | US    |      |
-| Visual    | Visivo          | GU pf |      |
-| Water     | Acqua           | GU pf |      |
-| Wood      | Legno           | GU pf |      |
+| Air       | Aria            | gu pf |      |
+| Auditory  | Uditivo         | gu pf |      |
+| Earth     | Terra           | gu pf |      |
+| Fire      | Fuoco           | gu pf |      |
+| Flourish  | Ostentazione    | gu pf |      |
+| Metal     | Metallo         | gu pf |      |
+| Shadow    | Ombra           | gu pf |      |
+| Traversal | Attraversamento | us    |      |
+| Teleport  | Teletrasporto   | gu pf |      |
+| Visual    | Visivo          | gu pf |      |
+| Water     | Acqua           | gu pf |      |
+| Wood      | Legno           | gu pf |      |
 
 ### Azioni
 
 | en                 | it                       | da    | note |
 | ------------------ | ------------------------ | ----- | ---- |
 |                    |                          |       |      |
-| Gather Information | Raccogliere Informazioni | GU pf |      |
-| Get 'Em            | Prendeteli               | US    |      |
+| Gather Information | Raccogliere Informazioni | gu pf |      |
+| Get 'Em            | Prendeteli               | us    |      |
 |                    |                          |       |      |
-| Improvised Mastery | Maestria Improvvisata    | US    |      |
+| Hide               | Nascondersi              | gu pf |      |
 |                    |                          |       |      |
-| Network Spell      | Incantesimo di Rete      | US    |      |
+| Improvised Mastery | Maestria Improvvisata    | us    |      |
 |                    |                          |       |      |
-| Recall Knowledge   | Ricordare Conoscenze     | GU pf |      |
-| Refocus            | Rifocalizzare            | GU pf |      |
+| Network Spell      | Incantesimo di Rete      | us    |      |
 |                    |                          |       |      |
-| Sense Motive       | Intuire                  | GU pf |      |
-| Steel Yourselves!  | Preparatevi!             | US    |      |
-| Stride             | Avanzare                 | GU pf |      |
-| Strike             | Colpo                    | GU pf |      |
+| Recall Knowledge   | Ricordare Conoscenze     | gu pf |      |
+| Refocus            | Rifocalizzare            | gu pf |      |
 |                    |                          |       |      |
-| Transfer Vitality  | Trasferisci Vitalità     | US    |      |
+| Sense Motive       | Intuire                  | gu pf |      |
+| Steel Yourselves!  | Preparatevi!             | us    |      |
+| Stride             | Avanzare                 | gu pf |      |
+| Strike             | Colpo                    | gu pf |      |
+|                    |                          |       |      |
+| Transfer Vitality  | Trasferisci Vitalità     | us    |      |
+|                    |                          |       |      |
+| Umbral Stride      | Avanzata Ombratile       | us    |      |
 |                    |                          |       |      |
 
 ### Talenti
@@ -101,7 +114,7 @@
 | en           | it         | da    | note |
 | ------------ | ---------- | ----- | ---- |
 |              |            |       |      |
-| Multilingual | Poliglotta | GU pf |      |
+| Multilingual | Poliglotta | gu pf |      |
 |              |            |       |      |
 
 ### Incantesimi
@@ -109,76 +122,89 @@
 | en                      | it                         | da    | note                            |
 | ----------------------- | -------------------------- | ----- | ------------------------------- |
 |                         |                            |       |                                 |
-| Absolute Zero           | Zero Assoluto              | US    |                                 |
-| Akashic Assistant;      | Assistente Akashico        | US    |                                 |
-| Akashic Download        | Download Akashico          | US    |                                 |
-| Akashic Fount           | Sorgente Akashica          | US    |                                 |
-| Akashic Revival         | Reviviscenza Akashica      | US    |                                 |
-| Anthem                  | Inno                       | US    | remaster,magari come inno bardo |
+| Absolute Zero           | Zero Assoluto              | us    |                                 |
+| Akashic Assistant;      | Assistente Akashico        | us    |                                 |
+| Akashic Download        | Download Akashico          | us    |                                 |
+| Akashic Fount           | Sorgente Akashica          | us    |                                 |
+| Akashic Revival         | Reviviscenza Akashica      | us    |                                 |
+| Anthem                  | Inno                       | us    | remaster,magari come inno bardo |
 |                         |                            |       |                                 |
-| Battle Sonata           | Melodia di Battaglia       | US    |                                 |
-| Breath of Life          | Respiro di Vita            | GU pf |                                 |
+| Battle Sonata           | Melodia di Battaglia       | us    |                                 |
+| Breath of Life          | Respiro di Vita            | gu pf |                                 |
 |                         |                            |       |                                 |
-| Clairvoyance            | Chiaroveggenza             | GU pf |                                 |
+| Clairvoyance            | Chiaroveggenza             | gu pf |                                 |
+| Cloying Shadow          | Ombra Stucchevole          | us    |                                 |
 |                         |                            |       |                                 |
-| Data Drain              | Drenaggio Dati             | US    |                                 |
-| Death Sentence          | Condanna a Morte           | US    |                                 |
+| Data Drain              | Drenaggio Dati             | us    |                                 |
+| Death Sentence          | Condanna a Morte           | us    |                                 |
+| Disappearance           | Sparizione                 | gu pf |                                 |
 |                         |                            |       |                                 |
-| Earthquake              | Terremoto                  | GU pf |                                 |
-| Elemental Barrier       | Barriera Elementale        | US    |                                 |
-| Elemental Form          | Forma Elementale           | GU pf |                                 |
-| Elemental Nova          | Nova Elementale            | US    |                                 |
-| Elemental Weapon        | Arma Elementale            | US    |                                 |
-| Entropy Strike          | Colpo Entropico            | US    |                                 |
+| Earthquake              | Terremoto                  | gu pf |                                 |
+| Eclipse Burst           | Esplosione Oscurante       | gu pf |                                 |
+| Elemental Barrier       | Barriera Elementale        | us    |                                 |
+| Elemental Form          | Forma Elementale           | gu pf |                                 |
+| Elemental Nova          | Nova Elementale            | us    |                                 |
+| Elemental Weapon        | Arma Elementale            | us    |                                 |
+| Entropy Strike          | Colpo Entropico            | us    |                                 |
 | Execute                 |                            |       | remaster                        |
 |                         |                            |       |                                 |
-| Falling Sky             | Clielo in Caduta           | GU pf |                                 |
+| Falling Sky             | Clielo in Caduta           | gu pf |                                 |
 | False Vitality          |                            |       | remaster                        |
-| Foresight               | Previsione                 | GU pf |                                 |
+| Figment                 | Figmento                   | gu pf | remaster                        |
+| Flicker                 | Sfarfallio                 | us    | feat pf2                        |
+| Foresight               | Previsione                 | gu pf |                                 |
 |                         |                            |       |                                 |
-| Genetic Regeneration    | Rigenerazione Genetica     | US    |                                 |
+| Genetic Regeneration    | Rigenerazione Genetica     | us    |                                 |
+| Grim Tendrils           | Rampicanti Macabri         | gu pf |                                 |
 |                         |                            |       |                                 |
-| Heal                    | Guarire                    | GU pf |                                 |
-| Howl                    | Ululare                    | US    |                                 |
-| Hypercognition          | Ipercognizione             | GU pf |                                 |
-| Hypnotize               | Ipnotizzare                | US    | remaster                        |
+| Heal                    | Guarire                    | gu pf |                                 |
+| Howl                    | Ululare                    | us    |                                 |
+| Hypercognition          | Ipercognizione             | gu pf |                                 |
+| Hypnotize               | Ipnotizzare                | us    | remaster                        |
 |                         |                            |       |                                 |
-| Infusion                | Infusione                  | US    |                                 |
-| Instant Virus           | Virus Istantaneo           | GU sf |                                 |
+| Infusion                | Infusione                  | us    |                                 |
+| Invisibility            | Invisibilità               | gu pf |                                 |
+| Instant Virus           | Virus Istantaneo           | gu sf |                                 |
 |                         |                            |       |                                 |
-| Levitate                | Levitazione                | GU pf |                                 |
+| Levitate                | Levitazione                | gu pf |                                 |
 |                         |                            |       |                                 |
-| Massacre                | Massacro                   | GU pf |                                 |
-| Moment of Renewal       | Momento di Risanamento     | GU pf |                                 |
-| Motivating Ringtone     | Suoneria Motivante         | US    |                                 |
+| Massacre                | Massacro                   | gu pf |                                 |
+| Mislead                 | Fuorviare                  | gu pf |                                 |
+| Moment of Renewal       | Momento di Risanamento     | gu pf |                                 |
+| Motivating Ringtone     | Suoneria Motivante         | us    |                                 |
 |                         |                            |       |                                 |
 | Noise Blast             |                            |       | remaster                        |
 |                         |                            |       |                                 |
-| Planar Palace           | Palazzo Planare            | GU pf | remaster                        |
-| Promession              | Promessione                | US    |                                 |
+| Phantasmagoria          |                            |       | remaster "fatale"               |
+| Planar Palace           | Palazzo Planare            | gu pf | remaster                        |
+| Promession              | Promessione                | us    |                                 |
 |                         |                            |       |                                 |
-| Recharge Weapon         | Ricaricare Arma            | US    |                                 |
-| Remix                   | Remix                      | US    |                                 |
+| Recharge Weapon         | Ricaricare Arma            | us    |                                 |
+| Remix                   | Remix                      | us    |                                 |
 | Resist Energy           | Resistere all'Energia      |       |                                 |
 |                         |                            |       |                                 |
-| Scan Envrironment       | Scansione Ambientale       | GU sf |                                 |
-| Shifting Surge          | Ondata Mutevole            | US    |                                 |
-| Shuffle Repeat          | Ripetizione Casuale        | US    | forse casuale ripetizione       |
-| Silver Tongue           | Parlantina Sciolta         | US    |                                 |
-| Stabilize               | Stabilizzare               | GU pf |                                 |
-| Summon Instrument       | Evoca Strumento            | GU pf |                                 |
-| Synaptic Pulse          | Impulso Sinaptico          | GU sf |                                 |
+| Scan Envrironment       | Scansione Ambientale       | gu sf |                                 |
+| Shadow Blast            | Esplosione d'Ombra         | gu pf |                                 |
+| Shadow Prison           | Prigione d'Ombra           | us    |                                 |
+| Shadow Snap             | Schiocco d'Ombra           | us    |                                 |
+| Shifting Surge          | Ondata Mutevole            | us    |                                 |
+| Shuffle Repeat          | Ripetizione Casuale        | us    | forse casuale ripetizione       |
+| Silver Tongue           | Parlantina Sciolta         | us    |                                 |
+| Slow                    | Lentezza                   | gu pf |                                 |
+| Stabilize               | Stabilizzare               | gu pf |                                 |
+| Summon Instrument       | Evoca Strumento            | gu pf |                                 |
+| Synaptic Pulse          | Impulso Sinaptico          | gu sf |                                 |
 |                         |                            |       |                                 |
-| Truesight               | Visione del Vero           | GU pf |                                 |
+| Truesight               | Visione del Vero           | gu pf |                                 |
 |                         |                            |       |                                 |
-| Vampiric Exsanguination | Dissanguamento del Vampiro | GU pf |                                 |
-| Vital Rebirth           | Rinascita Vitale           | US    |                                 |
-| Vibrant Pattern         | Trama Vibrante             | GU pf |                                 |
-| Vitality Nova           | Nova di Vitalità           | US    |                                 |
+| Vampiric Exsanguination | Dissanguamento del Vampiro | gu pf |                                 |
+| Vital Rebirth           | Rinascita Vitale           | us    |                                 |
+| Vibrant Pattern         | Trama Vibrante             | gu pf |                                 |
+| Vitality Nova           | Nova di Vitalità           | us    |                                 |
 |                         |                            |       |                                 |
-| Uncontrollable Dance    | Danza Irrefrenabile        | GU pf |                                 |
-| Unfathomable Song       | Canzone Incomprensibile    | GU pf |                                 |
+| Uncontrollable Dance    | Danza Irrefrenabile        | gu pf |                                 |
+| Unfathomable Song       | Canzone Incomprensibile    | gu pf |                                 |
 |                         |                            |       |                                 |
-| Wall of Fire            | Muro di Fuoco              | GU pf |                                 |
-| Wave of Warning         | Onda di Avvertimento       | US    |                                 |
+| Wall of Fire            | Muro di Fuoco              | gu pf |                                 |
+| Wave of Warning         | Onda di Avvertimento       | us    |                                 |
 |                         |                            |       |                                 |

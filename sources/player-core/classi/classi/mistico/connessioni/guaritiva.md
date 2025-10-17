@@ -26,7 +26,7 @@ incantesimi che curano i tuoi alleati e danneggiano i tuoi nemici.
 [massacro](/incantesimi/massacro)
 
 **Incantesimi di Epifania** iniziale: [infusione](/incantesimi/infusione);
-avanzata: [nova di vitalità](/incantesimi/nova-di-vitalita); maggiore:
+avanzato: [nova di vitalità](/incantesimi/nova-di-vitalita); maggiore:
 [rinascita vitale](/incantesimi/rinascita-vitale)
 
 **Armonia** Quando Trasferisci Vitalità, tenta di contrastare un’afflizione che

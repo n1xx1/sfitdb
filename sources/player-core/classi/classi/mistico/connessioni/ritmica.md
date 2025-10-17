@@ -1,7 +1,7 @@
 ---
 source: Player Core (Eng), pag. 120
-original-name: Healing
-original-srd: https://2e.aonsrd.com/classes/2-mystic/connections/3-healing
+original-name: Rhythm
+original-srd: https://2e.aonsrd.com/classes/2-mystic/connections/4-rhythm
 ---
 
 # Ritmica
