@@ -14,6 +14,8 @@ types:
     path: "/classi/emissario/stili-di-leadership/{{ .base }}"
   connection:
     path: "/classi/mistico/connessioni/{{ .base }}"
+  specialization:
+    path: "/classi/operativo/specializzazioni/{{ .base }}"
   feat:
     path: "/talenti/{{ .base }}"
     statblock: true

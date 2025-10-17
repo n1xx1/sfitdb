@@ -88,7 +88,7 @@ esercitazioni tattiche per gli scontri futuri.
 > **Arma Balistica:** Qualsiasi arma a distanza con il tratto analogico o
 > tecnologico.
 >
-> **Designato:** Il bersaglio della tua azione Mirare.
+> **Vittima:** Il bersaglio della tua azione Mirare.
 
 ## Competenze Iniziali
 
@@ -179,12 +179,27 @@ addestramento di base, indicate all'inizio della descrizione della classe.
 
 ### Specializzazione dell'Operativo
 
+Come operativo, possiedi un insieme particolare di abilità basate sul tuo stile
+tattico. Queste diverse specializzazioni aiutano a definire il tuo personaggio e
+l’approccio che adotti nella maggior parte delle situazioni. Scegli una
+[specializzazione dell'operativo](/classi/operativo/specializzazioni). Questa
+specializzazione ti concede addestramento in un’abilità, un talento per quella
+abilità e un exploit. Al 9° livello, ottieni l’exploit potenziato concesso dalla
+tua specializzazione. Le specializzazioni presentate in questo manuale sono le
+seguenti.
+
 ### Stirpe e Background
 
 Oltre alle capacità conferite dalla tua classe al 1° livello, ottieni i benefici
 della Stirpe e del Background che hai scelto.
 
 ### Tiratore Scelto
+
+Puoi individuare i punti deboli di un bersaglio, permettendoti di infliggere
+danni di precisione aggiuntivi con la maggior parte delle armi a distanza.
+Ottieni l’azione [Mirare](/azioni/mirare).
+
+{{% include page="/azioni/mirare" level=4 %}}
 
 ### Talenti da Operativo
 

@@ -51,26 +51,29 @@
 
 ### Condizioni
 
-| en          | it             | da    | note |
-| ----------- | -------------- | ----- | ---- |
-| Blinded     | Accecato       | gu pf |      |
-| Clumsy      | Maldestro      | gu pf |      |
-| Concealed   | Occultato      | gu pf |      |
-| Dazzled     | Abbagliato     | gu pf |      |
-| Deafened    | Assordato      | gu pf |      |
-| Doomed      | Condannato     | gu pf |      |
-| Drained     | Risucchiato    | gu pf |      |
-| Dying       | Morente        | gu pf |      |
-| Enfeebled   | Indebolito     | gu pf |      |
-| Paralyzed   | Paralizzato    | gu pf |      |
-| Sickened    | Nauseato       | gu pf |      |
-| Stunned     | Stordito       | gu pf |      |
-| Unconscious | Privo di Sensi | gu pf |      |
+| en          | it              | da    | note |
+| ----------- | --------------- | ----- | ---- |
+| Blinded     | Accecato        | gu pf |      |
+| Clumsy      | Maldestro       | gu pf |      |
+| Concealed   | Occultato       | gu pf |      |
+| Dazzled     | Abbagliato      | gu pf |      |
+| Deafened    | Assordato       | gu pf |      |
+| Doomed      | Condannato      | gu pf |      |
+| Drained     | Risucchiato     | gu pf |      |
+| Dying       | Morente         | gu pf |      |
+| Enfeebled   | Indebolito      | gu pf |      |
+| Hidden      | Nascosto        | gu pf |      |
+| Paralyzed   | Paralizzato     | gu pf |      |
+| Sickened    | Nauseato        | gu pf |      |
+| Stunned     | Stordito        | gu pf |      |
+| Unconscious | Privo di Sensi  | gu pf |      |
+| Undetected  | Non Individuato | gu pf |      |
 
 ### Tratti
 
 | en        | it              | da    | note |
 | --------- | --------------- | ----- | ---- |
+| Area      | Area            | us    |      |
 | Air       | Aria            | gu pf |      |
 | Auditory  | Uditivo         | gu pf |      |
 | Earth     | Terra           | gu pf |      |
@@ -86,30 +89,31 @@
 
 ### Azioni
 
-| en                 | it                       | da    | note |
-| ------------------ | ------------------------ | ----- | ---- |
-|                    |                          |       |      |
-| Gather Information | Raccogliere Informazioni | gu pf |      |
-| Get 'Em            | Prendeteli               | us    |      |
-|                    |                          |       |      |
-| Hide               | Nascondersi              | gu pf |      |
-|                    |                          |       |      |
-| Improvised Mastery | Maestria Improvvisata    | us    |      |
-|                    |                          |       |      |
-| Network Spell      | Incantesimo di Rete      | us    |      |
-|                    |                          |       |      |
-| Recall Knowledge   | Ricordare Conoscenze     | gu pf |      |
-| Refocus            | Rifocalizzare            | gu pf |      |
-|                    |                          |       |      |
-| Sense Motive       | Intuire                  | gu pf |      |
-| Steel Yourselves!  | Preparatevi!             | us    |      |
-| Stride             | Avanzare                 | gu pf |      |
-| Strike             | Colpo                    | gu pf |      |
-|                    |                          |       |      |
-| Transfer Vitality  | Trasferisci Vitalità     | us    |      |
-|                    |                          |       |      |
-| Umbral Stride      | Avanzata Ombratile       | us    |      |
-|                    |                          |       |      |
+| en                 | it                       | da    | note     |
+| ------------------ | ------------------------ | ----- | -------- |
+|                    |                          |       |          |
+| Gather Information | Raccogliere Informazioni | gu pf |          |
+| Get 'Em            | Prendeteli               | us    |          |
+| Ghost Tap          | Colpetto Fantasma        | us    | rivedere |
+|                    |                          |       |          |
+| Hide               | Nascondersi              | gu pf |          |
+|                    |                          |       |          |
+| Improvised Mastery | Maestria Improvvisata    | us    |          |
+|                    |                          |       |          |
+| Network Spell      | Incantesimo di Rete      | us    |          |
+|                    |                          |       |          |
+| Recall Knowledge   | Ricordare Conoscenze     | gu pf |          |
+| Refocus            | Rifocalizzare            | gu pf |          |
+|                    |                          |       |          |
+| Sense Motive       | Intuire                  | gu pf |          |
+| Steel Yourselves!  | Preparatevi!             | us    |          |
+| Stride             | Avanzare                 | gu pf |          |
+| Strike             | Colpo                    | gu pf |          |
+|                    |                          |       |          |
+| Transfer Vitality  | Trasferisci Vitalità     | us    |          |
+|                    |                          |       |          |
+| Umbral Stride      | Avanzata Ombratile       | us    |          |
+|                    |                          |       |          |
 
 ### Talenti
 
