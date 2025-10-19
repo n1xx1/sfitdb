@@ -93,7 +93,7 @@
 | ------------------ | ------------------------ | ----- | -------- |
 |                    |                          |       |          |
 | Gather Information | Raccogliere Informazioni | gu pf |          |
-| Get 'Em            | Prendeteli               | us    |          |
+| Get 'Em            | Prendetelo               | us    |          |
 | Ghost Tap          | Colpetto Fantasma        | us    | rivedere |
 |                    |                          |       |          |
 | Hide               | Nascondersi              | gu pf |          |

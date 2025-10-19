@@ -6,7 +6,7 @@ original-srd: https://2e.aonsrd.com/actions/122-get-em
 navigation-hide: true
 ---
 
-# Prendeteli :a: o :aa:
+# Prendetelo! :a: o :aa:
 
 ---
 

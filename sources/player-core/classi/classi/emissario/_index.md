@@ -169,9 +169,9 @@ Puoi impartire una direttiva per turno. Se non diversamente indicato, una
 direttiva di un emissario e i benefici che essa concede durano fino all'inizio
 del tuo turno successivo.
 
-Ottieni la direttiva da emissario [Prendeteli](/azioni/prendeteli)
+Ottieni la direttiva da emissario [Prendetelo](/azioni/prendetelo)
 
-{{% include page="/azioni/prendeteli" level=4 %}}
+{{% include page="/azioni/prendetelo" level=4 %}}
 
 ### Stile di Leadership
 
@@ -261,7 +261,7 @@ esperto.
 
 Hai imparato qualche trucco con le tue armi. Il tuo grado di competenza per armi
 semplici, armi da guerra e attacchi senz'armi aumenta a esperto. Ogni volta che
-attacchi il bersaglio del tuo [Prendeteli](/azioni/prendeteli), ottieni accesso
+attacchi il bersaglio del tuo [Prendetelo](/azioni/prendetelo), ottieni accesso
 agli effetti di specializzazione del critico di tutte le armi per le quali
 possiedi il grado esperto.
 
