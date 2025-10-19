@@ -21,5 +21,5 @@ minuto.
 
 **Dare l'Esempio** Se spendi due azioni, ti Prepari all’Impatto. Tu e qualsiasi
 alleato che si Prepari all’Impatto prima dell’inizio del tuo prossimo turno
-guadagnate anche un bonus di stato +1 ai tiri salvezza contro effetti che
+guadagnate anche un bonus di status +1 ai tiri salvezza contro effetti che
 infliggono danni per 1 minuto.

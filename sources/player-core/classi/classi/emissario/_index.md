@@ -213,9 +213,9 @@ Per selezionarne uno devi essere almeno addestrato nell'abilità corrispondente.
 
 Usare le parole per influenzare gli altri è ciò che fai, e riconosci facilmente
 quando altri cercano di usare le stesse tattiche contro di te. Ottieni un bonus
-di stato +1 alla tua CD di Percezione contro i tentativi di Fintare o Mentire
+di status +1 alla tua CD di Percezione contro i tentativi di Fintare o Mentire
 nei tuoi confronti e contro i tentativi di distrarti con Creare un Diversivo, e
-un bonus di stato +1 alla tua CD di Volontà contro gli effetti emotivi.
+un bonus di status +1 alla tua CD di Volontà contro gli effetti emotivi.
 
 ### Dote Adattiva - 3°
 
@@ -284,7 +284,7 @@ Hai imparato a infliggere ferite più gravi con le armi che conosci meglio.
 Infliggi 2 danni aggiuntivi con armi e attacchi senz'armi in cui sei esperto.
 Questi danni aumentano a 3 se sei maestro e a 4 se sei leggendario.
 
-### Esperienza con l'Emissario - 9°
+### Esperienza dell'Emissario - 9°
 
 Hai fatto molta esperienza e le tue capacità pratiche sono migliorate. Il tuo
 grado di competenza nella CD di classe dell'emissario aumenta a esperto.
@@ -316,9 +316,9 @@ ai dettagli. Il tuo grado di competenza in Percezione aumenta a maestro.
 ### Risolutezza - 11°
 
 Hai rafforzato la mente con una riserva interiore di determinazione. Il tuo
-grado di competenza nei tiri salvezza di Volontà aumenta a maestro. Il tuo grado
-di competenza nei tiri salvezza su Volontà aumenta a maestro. Quando ottieni un
-successo in un tiri salvezza su Volontà, lo consideri un successo critico.
+grado di competenza nei tiri salvezza di Volontà aumenta a maestro. Quando
+ottieni un successo in un tiri salvezza su Volontà, lo consideri un successo
+critico.
 
 ### Esperienza con le Armature Leggere - 13°
 

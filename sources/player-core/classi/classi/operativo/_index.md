@@ -136,30 +136,30 @@ In quanto operativo, acquisisci i seguenti privilegi di classe. Le capacità
 ottenute ai livelli superiori riportano, accanto ai rispettivi nomi, i livelli
 richiesti per acquisirle.
 
-### Avanzamento dell'Emissario
+### Avanzamento dell'Operativo
 
-| Il tuo Livello | Privilegi di Classe                                                                                                                                |
-| :------------: | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-|       1        | aumenti di attributo, competenze iniziali, Mirare 1d4, specializzazione dell'operativo, stirpe e background, tiratore scelto, talento da operativo |
-|       2        | talento da operativo, talento di abilità                                                                                                           |
-|       3        | concentrato, incremento di abilità, insieme di abilità specializzate, talento generico                                                             |
-|       4        | talento da operativo, talento di abilità                                                                                                           |
-|       5        | aumenti di attributo, incremento di abilità, Mirare 2d4                                                                                            |
-|       6        | talento da operativo, talento di abilità                                                                                                           |
-|       7        | incremento di abilità, insieme di abilità specializzate, talento generico                                                                          |
-|       8        | talento da operativo, talento di abilità                                                                                                           |
-|       9        | incremento di abilità                                                                                                                              |
-|       10       | aumenti di attributo, talento da operativo, talento di abilità                                                                                     |
-|       11       | incremento di abilità, Mirare 3d4, talento generico                                                                                                |
-|       12       | talento da operativo, talento di abilità                                                                                                           |
-|       13       | incremento di abilità                                                                                                                              |
-|       14       | talento da operativo, talento di abilità                                                                                                           |
-|       15       | aumenti di attributo, insieme di abilità specializzate, incremento di abilità, talento generico                                                    |
-|       16       | talento da operativo, talento di abilità                                                                                                           |
-|       17       | incremento di abilità, Mirare 4d4                                                                                                                  |
-|       18       | talento da operativo, talento di abilità                                                                                                           |
-|       19       | incremento di abilità, talento generico                                                                                                            |
-|       20       | aumenti di attributo, talento da operativo, talento di abilità                                                                                     |
+| Il tuo Livello | Privilegi di Classe                                                                                                                                                           |
+| :------------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|       1        | aumenti di attributo, competenze iniziali, Mirare 1d4, specializzazione dell'operativo, stirpe e background, tiratore scelto, talento da operativo                            |
+|       2        | talento da operativo, talento di abilità                                                                                                                                      |
+|       3        | concentrato, incremento di abilità, insieme di abilità specializzate, talento generico                                                                                        |
+|       4        | talento da operativo, talento di abilità                                                                                                                                      |
+|       5        | aumenti di attributo, incremento di abilità, mastro artigliere, Mirare 2d4, operatore urbano, talento di stirpe                                                               |
+|       6        | talento da operativo, talento di abilità                                                                                                                                      |
+|       7        | incremento di abilità, insieme di abilità specializzate, reflex mastery, specializzazione con le armi, talento generico, vantaggio dell'operativo                             |
+|       8        | talento da operativo, talento di abilità                                                                                                                                      |
+|       9        | incremento di abilità, resilienza dell’operativo, talento di stirpe                                                                                                           |
+|       10       | aumenti di attributo, talento da operativo, talento di abilità                                                                                                                |
+|       11       | in movimento, incremento di abilità, Mirare 3d4, talento generico                                                                                                             |
+|       12       | talento da operativo, talento di abilità                                                                                                                                      |
+|       13       | incremento di abilità, esperienza con le armature leggere, esperienza dell'operativo, talento di stirpe                                                                       |
+|       14       | talento da operativo, talento di abilità                                                                                                                                      |
+|       15       | artigliere leggendario, aumenti di attributo, insieme di abilità specializzate, incremento di abilità, mira critica, specializzazione con le armi superiore, talento generico |
+|       16       | talento da operativo, talento di abilità                                                                                                                                      |
+|       17       | incremento di abilità, Mirare 4d4, raffica tattica, risolutezza, talento di stirpe                                                                                            |
+|       18       | talento da operativo, talento di abilità                                                                                                                                      |
+|       19       | fama galattica, incremento di abilità, meastria con le armature leggere, sensi incredibili, talento generico                                                                  |
+|       20       | aumenti di attributo, talento da operativo, talento di abilità                                                                                                                |
 
 ### Aumenti di Attributo
 
@@ -204,7 +204,7 @@ Ottieni l’azione [Mirare](/azioni/mirare).
 ### Talenti da Operativo
 
 Al 1° livello, e successivamente ad ogni livello pari, ottieni un talento da
-mistico.
+operativo.
 
 ### Talenti di Abilità - 2°
 
@@ -212,6 +212,10 @@ Al 2° livello, e successivamente ogni 2 livelli, ottieni un talento di abilità
 Per selezionarne uno devi essere almeno addestrato nell'abilità corrispondente.
 
 ### Concentrato - 3°
+
+Sei estremamente concentrato sul tuo bersaglio e capace di prevederne le mosse.
+Quando ottieni un successo in un tiro salvezza su Riflessi contro la tua
+vittima, lo consideri come un successo critico.
 
 ### Incrementi di Abilità - 3°
 
@@ -233,3 +237,118 @@ Al 3° livello, e successivamente ogni 4 livelli, ottieni un talento generico.
 
 Al 3°, 7° e 15° livello, ottieni un talento di abilità. Questo talento deve
 essere per un'abilità addestrata dal tua specializzazione dell'operativo.
+
+### Maestro Artigliere - 5°
+
+Sei un tiratore scelto altamente qualificato e non vai mai da nessuna parte
+senza la tua arma. Il tuo grado di competenza con le armi balistiche semplici e
+da guerra aumenta a maestro, e il tuo grado di competenza con le armi balistiche
+avanzate aumenta a esperto. Hai accesso agli effetti di specializzazione del
+critico di tutte le armi con cui hai competenza esperto.
+
+### Operatore Urbano - 5°
+
+Sei abituato agli ambienti urbani e ti muovi rapidamente tra la folla cittadina.
+Ignori il terreno difficile negli ambienti urbani e per te il terreno difficile
+superiore dovuto ad ambienti urbani conta come terreno difficile.
+
+### Talenti di Stirpe - 5°
+
+Al 5° livello e successivamente ogni 4 livelli, in aggiunta al talento di stirpe
+iniziale, ne ottieni uno. La lista dei talenti di stirpe a tua disposizione
+viene presentata nella descrizione della stirpe del tuo personaggio.
+
+### Vantaggio dell’Operativo - 7°
+
+Hai sviluppato una percezione acuta e attenzione ai dettagli. Il tuo grado di
+competenza in Percezione aumenta a maestro. Inoltre, ottieni un bonus di
+circostanza +2 ai tiri di iniziativa, che ti rende più rapido a reagire in
+combattimento. Se possiedi il talento
+[Iniziativa Incredibile](/talenti/iniziativa-incredibile), il tuo bonus di
+circostanza ai tiri di iniziativa diventa +3.
+
+### Reflex Mastery - 7°
+
+Hai imparato a muoverti velocemente per evitare esplosioni, torrette e non solo.
+Aumenti a maestro il tuo grado di competenza nei tiri salvezza su Riflessi.
+Quando ottieni un successo in un tiro salvezza su Riflessi, consideri il
+risultato un successo critico.
+
+### Specializzazione con le Armi - 7°
+
+Hai imparato a infliggere ferite più gravi con le armi che conosci meglio.
+Infliggi 2 danni aggiuntivi con armi e attacchi senz'armi in cui sei esperto.
+Questi danni aumentano a 3 se sei maestro e a 4 se sei leggendario.
+
+### Resilienza dell’Operativo - 9°
+
+Il tuo fisico è straordinariamente robusto. Il tuo grado di competenza nei Tiri
+Salvezza su Tempra aumenta a Esperto.
+
+### In Movimento - 11°
+
+Ottieni un bonus di status +1,5 metri alla tua Velocità. Questo bonus aumenta a
++3 metri al 16° livello.
+
+### Esperienza dell'Operativo - 11°
+
+Le tue tecniche diventano più difficili da contrastare. Il tuo grado di
+competenza nella CD di classe dell'operativo aumenta a esperto.
+
+### Esperienza con le Armature Leggere - 13°
+
+Hai imparato a schivare mentre indossi un'armatura leggera o sei privo
+d'armatura. Il tuo grado di competenza con le armature leggere e nella difesa
+senz'armatura aumenta a esperto.
+
+### Artigliere Leggendario - 15°
+
+Sei una leggenda locale, conosciuto per la tua abilità con le armi. Il tuo grado
+di competenza con le armi balistiche semplici e da guerra aumenta a leggendario,
+e il tuo grado di competenza con le armi balistiche avanzate aumenta a maestro.
+Il tuo grado di competenza con le armi semplici, da guerra e con gli attacchi
+senz’armi aumenta a esperto.
+
+### Mira Critica - 15°
+
+La prima volta in ogni round in cui [Miri](/azioni/mirare) e hai successo un
+Colpo a distanza contro la tua vittima, aggiungi l’effetto di specializzazione
+del critico della tua arma all’attacco, anche se non hai ottenuto un colpo
+critico.
+
+### Specializzazione con le Armi Superiore - 15°
+
+I danni derivanti da specializzazione con le armi aumentano a 4 se utilizzi armi
+o attacchi senz'armi in cui sei esperto, a 6 se sei maestro e a 8 se sei
+leggendario.
+
+### Raffica Tattica - 17°
+
+Scateni una devastante raffica di attacchi contro la tua vittima. La tua
+penalità da attacchi multipli contro la tua vittima è –3 (–2 con un’arma agile)
+per il secondo attacco del turno invece di –5, e –6 (–4 con un’arma agile) per
+il terzo o successivi attacchi del turno, invece di –10.
+
+### Risolutezza - 17°
+
+Hai rafforzato la mente con una riserva interiore di determinazione. Il tuo
+grado di competenza nei tiri salvezza di Volontà aumenta a maestro. Quando
+ottieni un successo in un tiri salvezza su Volontà, lo consideri un successo
+critico.
+
+### Fama Galattica - 19°
+
+La tua reputazione di tiratore ti precede ovunque nella galassia. Il tuo grado
+di competenza aumenta a leggendario con le armi da fuoco avanzate. Il tuo grado
+di competenza nella CD di classe dell'operativo aumenta a maestro.
+
+### Maestria con le Armature Leggere - 19°
+
+Una maggiore abilità nell'usare l'armatura ti permette di evitare più colpi. Il
+tuo grado di competenza con le armature leggere e nella difesa senz'armatura
+aumenta a maestro.
+
+### Sensi Incredibili - 19°
+
+I tuoi occhi sono incredibilmente acuti, anche senza mirino. Il tuo grado di
+competenza in Percezione aumenta a leggendario.
