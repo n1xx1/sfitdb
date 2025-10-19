@@ -9,7 +9,7 @@
     "format" "esm"
   }}
   {{- $built := resources.Get "js/main.ts" | js.Build $buildOpts -}}
-  {{- printf `<script type="module" src="%s"></script>` $built.RelPermalink | safeHTML -}}
+  {{- printf `<script src="%s"></script>` $built.RelPermalink | safeHTML -}}
 
   {{- with (templates.Defer (dict "key" "global")) -}}
     {{ with resources.Get "css/main.css" }}
