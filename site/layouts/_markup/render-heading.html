@@ -15,7 +15,7 @@
 
 {{- $included := not (.PageInner.Eq .Page) }}
 {{- $isTitle := or (eq .Attributes.title 1) (eq $index 0) -}}
-{{- $isStatblock := partial "pf/isStatblock" .PageInner -}}
+{{- $isStatblock := partialCached "pf/isStatblock" .PageInner.Type .PageInner.Type -}}
 {{- $isInnerStatblock := eq .PageInner.Type "pfmonster" -}}
 
 {{- $originalLevel := .Attributes.level | default .Level | int -}}

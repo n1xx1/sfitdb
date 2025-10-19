@@ -2,7 +2,8 @@
 source: Player Core (Eng), pag. 99
 original-name: Reading Class Entries
 original-srd: https://2e.aonsrd.com/rules/139-reading-class-entries
-navigation-order: 1
+navigation-order: -10
+navigation-hide: true
 ---
 
 # Leggere le Descrizioni delle Classi
@@ -122,7 +123,7 @@ A meno che non sia esplicitamente indicato altrimenti, queste decisioni possono
 essere modificate solo tramite
 [riaddestramento](/regole/player-core/giocare#riaddestramento).
 
-## Talenti di Classe
+### Talenti di Classe
 
 Questa sezione indica a quali livelli il tuo personaggio acquisisce i talenti di
 classe, ossia dei talenti speciali disponibili solo per i membri di quella
@@ -130,7 +131,7 @@ classe. È possibile acquisirli a partire dal 1° o dal 2° livello, a seconda
 della classe. I talenti specifici di ciascuna classe vengono presentati al
 termine della sua descrizione.
 
-## Talenti di Abilità
+### Talenti di Abilità
 
 Questa sezione indica a quali livelli il tuo personaggio acquisisce i talenti
 con il tratto abilità, denominati talenti di abilità e presentati nel
@@ -140,7 +141,7 @@ abilità, sebbene le canaglie li ottengano prima e più spesso. Per acquisire un
 talento di abilità, il tuo personaggio deve essere addestrato nell’abilità
 corrispondente.
 
-## Talenti Generici
+### Talenti Generici
 
 Questa sezione indica a quali livelli il tuo personaggio acquisisce i talenti
 generici. Gran parte delle classi conferisce un talento generico al 3° livello e
@@ -149,7 +150,7 @@ qualsiasi talento generico (compresi quelli di abilità), purché il tuo
 personaggio ne soddisfi i prerequisiti. Per maggiori informazioni vedi il
 [Capitolo 5: Talenti](/regole/player-core/talenti).
 
-## Incrementi di Abilità
+### Incrementi di Abilità
 
 Questa voce indica a quali livelli il tuo personaggio può incrementare il suo
 grado di competenza in un’abilità. Al 3° livello e quindi ogni 2 livelli, gran
@@ -163,7 +164,7 @@ per diventare maestro in un’abilità in cui è già esperto. Se è almeno del 
 livello, può impiegare un incremento per diventare leggendario in un’abilità in
 cui è già maestro.
 
-## Aumenti di Attributo
+### Aumenti di Attributo
 
 Al 5° livello e successivamente ogni 5 livelli, il tuo personaggio aumenta
 quattro diversi modificatori di attributo. Questo è descritto brevemente nella
@@ -171,7 +172,7 @@ sezione della classe. Per i dettagli completi sui modificatori di attributo e su
 come applicarli durante la creazione del personaggio, consulta il
 [Passaggio 6: Determina i Modificatori di Attributo](/regole/player-core/introduzione).
 
-## Talenti di Stirpe
+### Talenti di Stirpe
 
 Questa sezione serve da promemoria per i talenti di stirpe acquisiti dal tuo
 personaggio al 5°, 9°, 13° e 17° livello. Questi talenti vengono presentati

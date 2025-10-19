@@ -3,7 +3,6 @@ source: Player Core (Eng), pag. 41
 original-name: "Chapter 2: Ancestries & Backgrounds"
 original-srd: https://2e.aonsrd.com/rules/113-chapter-2-ancestries-backgrounds
 navigation-order: 2
-navigation-disable: true
 navigation-sub-hide: true
 ---
 

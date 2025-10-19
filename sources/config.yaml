@@ -16,6 +16,8 @@ types:
     path: "/classi/mistico/connessioni/{{ .base }}"
   specialization:
     path: "/classi/operativo/specializzazioni/{{ .base }}"
+  archetype:
+    path: "/archetipi/{{ .base }}"
   feat:
     path: "/talenti/{{ .base }}"
     statblock: true

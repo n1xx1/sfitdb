@@ -3,6 +3,7 @@ source: Player Core (Eng), pag. 92
 original-name: Backgrounds
 original-srd: https://2e.aonsrd.com/backgrounds
 navigation-order: 3
+navigation-disable: true
 ---
 
 # Background

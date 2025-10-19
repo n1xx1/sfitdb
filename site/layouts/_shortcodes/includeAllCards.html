@@ -1,0 +1,24 @@
+{{- $source := "~" -}}
+{{- if and .IsNamedParams (isset .Params "source") -}}
+  {{- $source = transform.Unmarshal (dict "format" "yaml") .Params.source -}}
+{{- end -}}
+{{- $filter := dict -}}
+{{- if and .IsNamedParams (isset .Params "filter") -}}
+  {{- $filter = transform.Unmarshal (dict "format" "yaml") .Params.filter -}}
+{{- end -}}
+{{- $sort := slice -}}
+{{- if and .IsNamedParams (isset .Params "sort") -}}
+  {{- $sort = transform.Unmarshal (dict "format" "yaml") .Params.sort -}}
+{{- end -}}
+{{- $cols := "2" -}}
+{{- if and .IsNamedParams (isset .Params "cols") -}}
+  {{- $cols = .Params.cols -}}
+{{- end -}}
+{{- partial "shortcodes/includeAllCards" (dict
+  "context" .Page
+  "source" $source
+  "filter" $filter
+  "sort" $sort
+  "cols" $cols
+  ) | replaceRE "\n+" " " | safeHTML
+-}}

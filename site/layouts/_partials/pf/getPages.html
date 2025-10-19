@@ -135,14 +135,14 @@
   {{ end }}
 
   {{ if $filterTraits }}
-    {{ $traits := partialCached "pf/getTraits" . . }}
+    {{ $traits := partialCached "pf/getTraits" $page $page.Path }}
     {{ if ne (len (intersect $traits.all $filterTraits)) (len $filterTraits) }}
       {{ continue }}
     {{ end }}
   {{ end }}
 
   {{ if $filterExcludeTraits }}
-    {{ $traits := partialCached "pf/getTraits" . . }}
+    {{ $traits := partialCached "pf/getTraits" $page $page.Path }}
     {{ if gt (len (intersect $traits.all $filterExcludeTraits)) 0 }}
       {{ continue }}
     {{ end }}

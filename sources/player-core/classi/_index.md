@@ -3,8 +3,6 @@ source: Player Core (Eng), pag. 99
 original-name: "Chapter 3: Classes"
 original-srd: https://2e.aonsrd.com/rules/138-chapter-3-classes
 navigation-order: 3
-navigation-disable: true
-navigation-sub-hide: true
 ---
 
 # Capitolo 3: Classi
@@ -47,4 +45,8 @@ capacità del personaggio. Sebbene queste regole non siano adatte ai
 principianti, gli archetipi presentati in questo manuale ti permetteranno di
 acquisire capacità di altre classi a partire dal 2° livello.
 
-{{% includeAll sort="[navigation, name]" %}}
+{{% include page="./leggere-le-descrizioni-delle-classi" %}}
+
+# Classi
+
+{{% includeAllCards cols=1 filter=`{type: class}` %}}

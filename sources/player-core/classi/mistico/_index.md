@@ -1,5 +1,5 @@
 ---
-source: Player Core (Eng), pag. 102
+source: Player Core (Eng), pag. 114
 original-name: Mystic
 original-srd: https://2e.aonsrd.com/classes/2-mystic
 shortDescription:

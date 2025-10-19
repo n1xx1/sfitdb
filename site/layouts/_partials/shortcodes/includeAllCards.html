@@ -1,0 +1,22 @@
+{{- $pages := partialCached "pf/getPages" (dict
+  "context" .context
+  "source" .source
+  "filter" .filter
+  "sort" .sort
+  ) .context.Path .source .filter .sort
+-}}
+<div
+  class="hextra-cards mt-4 gap-4 grid not-prose"
+  style="--cols: {{ .cols }};"
+>
+  {{- range $pages -}}
+    {{- $title := partialCached "utils/title" . .Path -}}
+    {{- partial "shortcodes/card" (dict
+      "title" $title.name
+      "subtitle" (.Params.shortDescription | default "")
+      "link" (.RelPermalink | replaceRE `/$` ``)
+      "lines" "50"
+      )
+    -}}
+  {{- end -}}
+</div>

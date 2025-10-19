@@ -43,11 +43,16 @@
   {{ $pftype := default nil nil }}
   {{ $type := "page" }}
 
-  {{ range $globs }}
-    {{ if findRE .regex $path }}
-      {{ $pftype = .type }}
-      {{ $type = print "pf" .type }}
-      {{ break }}
+  {{ if isset $params "type" }}
+    {{ $pftype = $params.type }}
+    {{ $type = print "pf" .type }}
+  {{ else }}
+    {{ range $globs }}
+      {{ if findRE .regex $path }}
+        {{ $pftype = .type }}
+        {{ $type = print "pf" .type }}
+        {{ break }}
+      {{ end }}
     {{ end }}
   {{ end }}
 

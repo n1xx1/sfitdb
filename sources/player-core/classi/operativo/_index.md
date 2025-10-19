@@ -1,7 +1,7 @@
 ---
-source: Player Core (Eng), pag. 102
-original-name: Mystic
-original-srd: https://2e.aonsrd.com/classes/2-mystic
+source: Player Core (Eng), pag. 126
+original-name: Operative
+original-srd: https://2e.aonsrd.com/classes/3-operative
 shortDescription:
   L’operativo porta precisione e addestramento tattico in ogni situazione. In
   battaglia, usa l’azione Mirare per ridurre la copertura dei nemici e

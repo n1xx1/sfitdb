@@ -19,7 +19,7 @@
     {{- continue -}}
   {{- end -}}
   {{- $title := partialCached "utils/title" . .Path -}}
-  {{- $traits := partialCached "pf/getTraits" . . -}}
+  {{- $traits := partialCached "pf/getTraits" . .Path -}}
   {{- if ne (len (intersect $traits.all $paramTraits)) (len $paramTraits) -}}
     {{- continue -}}
   {{- end -}}

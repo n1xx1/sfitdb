@@ -2,15 +2,24 @@
   "ancestry": ["stirpi-e-background/stirpi/*"],
   "heritage": ["stirpi-e-background/stirpi/*/lignaggi/*"],
   "background": ["stirpi-e-background/background/*"],
-  "class": ["classi/classi/*"],
-  "action": ["classi/classi/*/azioni/*"],
-  "feat": ["classi/classi/*/talenti/*"],
-  "leadershipstyle": ["classi/classi/emissario/stili-di-leadership/*"],
-  "connection": ["classi/classi/mistico/connessioni/*"],
-  "specialization": ["classi/classi/operativo/specializzazioni/*"],
+  "class": [
+    "classi/{emissario,mistico,operativo,solarian,soldato,stregone-del-velo}"
+  ],
+  "archetype": [
+    "classi/archetipi/{emissario,mistico,operativo,solarian,soldato,stregone-del-velo}"
+  ],
+  "action": [
+    "classi/{emissario,mistico,operativo,solarian,soldato,stregone-del-velo}/azioni/*"
+  ],
+  "feat": [
+    "classi/{emissario,mistico,operativo,solarian,soldato,stregone-del-velo}/talenti/*"
+  ],
+  "leadershipstyle": ["classi/emissario/stili-di-leadership/*"],
+  "connection": ["classi/mistico/connessioni/*"],
+  "specialization": ["classi/operativo/specializzazioni/*"],
   "classfeature": [
-    "classi/classi/emissario/stili-di-leadership",
-    "classi/classi/mistico/connessioni",
-    "classi/classi/operativo/specializzazioni"
+    "classi/emissario/stili-di-leadership",
+    "classi/mistico/connessioni",
+    "classi/operativo/specializzazioni"
   ]
 }
