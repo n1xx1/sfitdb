@@ -3,13 +3,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  {{- $buildOpts := dict
-    "targetPath" "js/main.js"
-    "minify" (not hugo.IsDevelopment)
-    "format" "esm"
-  }}
-  {{- $built := resources.Get "js/main.ts" | js.Build $buildOpts -}}
-  {{- printf `<script src="%s"></script>` $built.RelPermalink | safeHTML -}}
+  {{- partialCached "utils/jsBuild" (dict "script" "js/dark-mode.ts" "inline" true "options" (dict "format" "iife")) "dark-mode" -}}
+  {{- partialCached "utils/jsBuild" (dict "script" "js/main.ts" "options" (dict "format" "esm")) "main" -}}
 
   {{- with (templates.Defer (dict "key" "global")) -}}
     {{ with resources.Get "css/main.css" }}

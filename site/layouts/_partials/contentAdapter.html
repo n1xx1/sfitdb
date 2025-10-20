@@ -20,7 +20,8 @@
   {{/* warnf "%s %q %q" .type .glob .regex */}}
 {{ end }}
 
-{{ $addedResources := dict }}
+{{ $addedPages := collections.NewScratch }}
+{{ $addedResources := collections.NewScratch }}
 
 {{ range resources.Match "sources/**/*.md" }}
   {{ $path := .String | replaceRE `(\.md$|/_index\.md$)` "" | replaceRE `^/sources/` "regole/" }}
@@ -73,6 +74,7 @@
 
   {{ partial "contentAdapter/addPage" (dict
     "context" $
+    "addedPages" $addedPages
     "content" $content
     "kind" $kind
     "type" $type
@@ -82,21 +84,22 @@
   }}
 
   {{ if $canonicalPath }}
-    {{ $variants := index $addedResources $canonicalPath | default (slice) }}
+    {{ $variants := $addedResources.Get $canonicalPath | default (slice) }}
     {{ $variant := dict
       "original" (dict "path" $path)
       "path" $canonicalPath
       "type" $pftype
+      "kind" $kind
       "content" $content
       "params" $params
       "title" $title
     }}
     {{ $variants := $variants | append $variant }}
-    {{ $addedResources = merge $addedResources (dict $canonicalPath $variants) }}
+    {{ $addedResources.Set $canonicalPath $variants }}
   {{ end }}
 {{ end }}
 
-{{ range $k, $v := $addedResources }}
+{{ range $k, $v := $addedResources.Values }}
   {{ if gt (len $v) 1 }}
     {{ warnf "duplicate page: %q" $k }}
     {{ range $v }}
@@ -105,44 +108,83 @@
   {{ end }}
 {{ end }}
 
-{{ range $k, $v := $addedResources }}
+{{ range $k, $v := $addedResources.Values }}
   {{ with index $v 0 }}
     {{ $content := .content }}
 
-    {{ if eq .type "ancestry" }}
-      {{ $content = printf "%s\n%s" $content (partial "contentAdapterAncestryAppend" .path) }}
-    {{ end }}
-
     {{ partial "contentAdapter/addPage" (dict
       "context" $
+      "addedPages" $addedPages
       "content" $content
-      "kind" "section"
+      "kind" .kind
       "type" (print "pf" .type)
       "path" .path
       "params" .params
       )
     }}
 
-    {{ if eq .type "ancestry" }}
-      {{ $featTraits := .params.featTraits | default .params.traits | default (slice) }}
-      {{ $contentFeats := partial "contentAdapterAncestryFeats" (dict "title" .title.name "traits" (delimit $featTraits ",") ) }}
+    {{ if eq .type "class" }}
+      {{ $featsPage := $addedPages.Get (printf "%s/talenti" .original.path) }}
+      {{ if $featsPage }}
+        {{ $class := index (split .path "/" | last 1) 0 }}
+        {{ $featsPageContent := $featsPage.content.value }}
+        {{ $replacement := printf `$1 featTable traits="%s" $2` $class }}
+        {{ $featsPageContent = $featsPageContent |
+          replaceRE `(\{\{<)\s*rulesFeatTable\s*(>\}\})` $replacement
+        }}
+        {{ partial "contentAdapter/addPage" (dict
+          "context" $
+          "addedPages" $addedPages
+          "content" $featsPageContent
+          "kind" $featsPage.kind
+          "type" $featsPage.type
+          "path" (printf "%s/talenti" .path)
+          "params" $featsPage.params
+          )
+        }}
+      {{ end }}
+    {{ else if eq .type "ancestry" }}
+      {{ $featsPage := $addedPages.Get (printf "%s/talenti" .original.path) }}
+      {{ if $featsPage }}
+        {{ $featTraits := .params.featTraits | default .params.traits | default (slice) }}
+        {{ $featsPageContent := $featsPage.content.value }}
+        {{ $replacement := printf `$1 featTable traits="%s" $2` (delimit $featTraits ",") }}
+        {{ $featsPageContent = $featsPageContent |
+          replaceRE `(\{\{<)\s*rulesFeatTable\s*(>\}\})` $replacement
+        }}
 
-      {{ partial "contentAdapter/addPage" (dict
-        "context" $
-        "content" $contentFeats
-        "kind" "page"
-        "path" (printf "%s/talenti" .path)
-        )
-      }}
+        {{ partial "contentAdapter/addPage" (dict
+          "context" $
+          "addedPages" $addedPages
+          "content" $featsPageContent
+          "kind" $featsPage.kind
+          "type" $featsPage.type
+          "path" (printf "%s/talenti" .path)
+          "params" $featsPage.params
+          )
+        }}
+      {{ end }}
 
-      {{ $contentHeritages := partial "contentAdapterAncestryHeritages" (dict "title" .title.name) }}
-      {{ partial "contentAdapter/addPage" (dict
-        "context" $
-        "content" $contentHeritages
-        "kind" "section"
-        "path" (printf "%s/lignaggi" .path)
-        )
-      }}
+      {{ $heritagesPage := $addedPages.Get (printf "%s/lignaggi" .original.path) }}
+      {{ if $heritagesPage }}
+        {{ $featTraits := .params.featTraits | default .params.traits | default (slice) }}
+        {{ $heritagesPageContent := $heritagesPage.content.value }}
+        {{ $replacement := printf `$1 featTable traits="%s" $2` (delimit $featTraits ",") }}
+        {{ $heritagesPageContent = $heritagesPageContent |
+          replaceRE `(\{\{<)\s*rulesFeatTable\s*(>\}\})` $replacement
+        }}
+
+        {{ partial "contentAdapter/addPage" (dict
+          "context" $
+          "addedPages" $addedPages
+          "content" $heritagesPageContent
+          "kind" $heritagesPage.kind
+          "type" $heritagesPage.type
+          "path" (printf "%s/lignaggi" .path)
+          "params" $heritagesPage.params
+          )
+        }}
+      {{ end }}
     {{ end }}
   {{ end }}
 {{ end }}
@@ -168,7 +210,7 @@
 {{ end }}
 
 {{ define "partials/contentAdapter/addPage" }}
-  {{ $addedPage := dict
+  {{ $newPage := dict
     "content" (dict "mediaType" "text/markdown" "value" .content)
     "kind" .kind
     "type" (.type | default "page")
@@ -176,35 +218,6 @@
     "params" (.params | default dict)
     "outputs" (slice "html" "json")
   }}
-  {{ .context.AddPage $addedPage }}
+  {{ .addedPages.Set .path $newPage }}
+  {{ .context.AddPage $newPage }}
 {{ end }}
-
-{{/* "url" (printf "%s.html" .path) */}}
-
-{{/* prettier-ignore-start */}}
-
-{{ define "partials/contentAdapterAncestryAppend" }}
-
-{{"{{%"}} include page="/{{.}}/lignaggi" {{"%}}"}}
-
-{{"{{%"}} include page="/{{.}}/talenti" {{"%}}"}}
-
-{{ end }}
-
-{{ define "partials/contentAdapterAncestryFeats" -}}
-
-# Talenti {{ .title }}
-
-TODO
-
-{{ end }}
-
-{{ define "partials/contentAdapterAncestryHeritages" -}}
-
-# Lignaggi {{ .title }}
-
-TODO
-
-{{ end }}
-
-{{/* prettier-ignore-end */}}
