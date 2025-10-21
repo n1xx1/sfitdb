@@ -9,9 +9,11 @@
     "classi/archetipi/{emissario,mistico,operativo,solarian,soldato,stregone-del-velo}"
   ],
   "action": [
+    "stirpi-e-background/stirpi/*/azioni/*",
     "classi/{emissario,mistico,operativo,solarian,soldato,stregone-del-velo}/azioni/*"
   ],
   "feat": [
+    "stirpi-e-background/stirpi/*/talenti/*",
     "classi/{emissario,mistico,operativo,solarian,soldato,stregone-del-velo}/talenti/*"
   ],
   "leadershipstyle": ["classi/emissario/stili-di-leadership/*"],
@@ -21,5 +23,6 @@
     "classi/emissario/stili-di-leadership",
     "classi/mistico/connessioni",
     "classi/operativo/specializzazioni"
-  ]
+  ],
+  "trait": ["glossario-e-indice/tratti/*"]
 }

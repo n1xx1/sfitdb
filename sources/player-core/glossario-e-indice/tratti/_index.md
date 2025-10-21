@@ -1,0 +1,3 @@
+---
+navigation-sub-hide: true
+---

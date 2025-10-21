@@ -1,12 +1,12 @@
-{{- $contents := .content }}
+{{- $contents := .content | replaceRE `^---\r?\n\s*([\s\S]*?)\s*\r?\n---\r?\n\s*` "" }}
 {{- if .path -}}
-  {{- $hasInclude := index (index (findRESubmatch "(?:^|---\n\n\\s*)\\{\\{%\\s*include\\s+(.*?)\\s*%\\}\\}" $contents 1) 0) 1 -}}
+  {{- $hasInclude := index (index (findRESubmatch `^\{\{%\s*include\s+(.*?)\s*%\}\}` $contents 1) 0) 1 -}}
   {{- if $hasInclude -}}
     {{- $page := $contents | replaceRE `^(?:|.*page=)"(.*?)"[\s\S]*$` "$1" -}}
     {{- if not (hasPrefix $page "/") -}}
       {{ $page = path.Join .path $page }}
     {{- end -}}
-    {{- $contents = (site.GetPage $page).RawContent -}}
+    {{- $contents = (site.GetPage $page).RawContent | replaceRE `^---\r?\n\s*([\s\S]*?)\s*\r?\n---\r?\n\s*` "" -}}
   {{- end -}}
 {{- end -}}
 {{- $pageTitle := (index (findRE "(^|\n)#(.*)\n" $contents 1) 0) | replaceRE "(^|\n)# |\n" "" -}}

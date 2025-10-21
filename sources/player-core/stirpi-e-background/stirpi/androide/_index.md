@@ -3,6 +3,7 @@ source: Player Core (Eng), pag. 42
 original-name: Android
 original-srd: https://2e.aonsrd.com/ancestries/7-android
 traits: [androide, umanoide]
+featTraits: [androide]
 ---
 
 # Androide
@@ -20,7 +21,7 @@ differenza di molti altri costrutti tecnologici, gli androidi sono più che
 organi sintetici complessi e sofisticati programmi: ciascuno di essi possiede
 un’anima propria.
 
-## Meccaniche Androidi
+---
 
 **Punti Ferita**  
 8
@@ -49,10 +50,13 @@ accesso (per esempio le lingue prevalenti nel tuo pianeta natale).
 Riesci a vedere in condizioni di luce fioca come se fosse luce intensa, per cui
 ignori la condizione [occultato](/condizioni/occultato) dovuta alla luce fioca.
 
-**Costrutto** Il tuo corpo sintetico resiste ai malanni meglio di quelli degli
-organismi puramente biologici. Ottieni bonus di circostanza +1 ai tiri salvezza
-contro malattie, veleni e radiazioni. Hai sempre protezioni embientali base
-(pag. 268)
+**Costrutto**  
+Il tuo corpo sintetico resiste ai malanni meglio di quelli degli organismi
+puramente biologici. Ottieni bonus di circostanza +1 ai tiri salvezza contro
+malattie, veleni e radiazioni. Hai sempre
+[protezioni ambientali base](/regole/TODO).
+
+---
 
 > ## Potresti...
 >

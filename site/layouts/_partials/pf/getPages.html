@@ -2,9 +2,10 @@
 {{ $context := .context | default (page) }}
 
 {{/* source is a string array:
-  - "*"    -> `site.AllPages`
-  - "~"    -> `page.Pages`
-  - "path" -> (site.GetPage "path").Pages
+  - "*"     -> site.AllPages
+  - "~"     -> page.Pages
+  - "path"  -> (site.GetPage "<context-path>/path").Pages
+  - "/path" -> (site.GetPage "/path").Pages
 */}}
 {{ $source := .source }}
 {{ with $source }}

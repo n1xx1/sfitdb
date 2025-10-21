@@ -13,6 +13,10 @@
 {{- if isset .Params "level" -}}
   {{- $level = .Get "level" -}}
 {{- end -}}
+{{- $template := "" -}}
+{{- if and .IsNamedParams (isset .Params "template") -}}
+  {{- $template = .Params.template -}}
+{{- end -}}
 
 {{- $pages := slice -}}
 {{- range .Site.Pages -}}
@@ -32,5 +36,5 @@
 {{- end -}}
 {{- $pages = partial "utils/sortPagesBy" (dict "pages" $pages "sorter" "name") -}}
 {{- range $pages -}}
-  {{ partial "shortcodes/include" (dict "page" . "level" $level) }}
+  {{ partial "shortcodes/include" (dict "page" . "level" $level "template" $template) }}
 {{- end -}}
