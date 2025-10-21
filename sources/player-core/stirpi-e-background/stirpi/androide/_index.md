@@ -4,6 +4,8 @@ original-name: Android
 original-srd: https://2e.aonsrd.com/ancestries/7-android
 traits: [androide, umanoide]
 featTraits: [androide]
+shortDescription:
+  Gli androidi sono esseri sintetici costruiti, dalle forme e origini più varie.
 ---
 
 # Androide

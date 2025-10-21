@@ -4,6 +4,9 @@ original-name: Human
 original-srd: https://2e.aonsrd.com/ancestries/9-human
 traits: [umano, umanoide]
 featTraits: [umano]
+shortDescription:
+  Gli umani sono una specie altamente adattabile e versatile, presente su quasi
+  ogni mondo.
 ---
 
 # Umano
