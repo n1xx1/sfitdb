@@ -22,7 +22,7 @@ terribili a tuo piacimento.
 [fuorviare](/incantesimi/fuorviare); 7°:
 [esplosione oscurante](/incantesimi/esplosione-oscurante); 8°:
 [sparizione](/incantesimi/sparizione); 9°:
-[phantasmagoria](/incantesimi/phantasmagoria)
+[fantasmagoria](/incantesimi/fantasmagoria)
 
 **Incantesimi di Epifania** iniziale:
 [schiocco d'ombra](/incantesimi/schiocco-d-ombra); avanzato:

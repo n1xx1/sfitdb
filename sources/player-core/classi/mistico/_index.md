@@ -118,15 +118,15 @@ richiesti per acquisirle.
 | :------------: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |       1        | Aumenti di attributo, competenze iniziali, connessione, lanciare incantesimi da mistico, legame mistico, repertorio degli incantesimi, rete di vitalità, stirpe e background |
 |       2        | Talento da mistico, talento di abilità                                                                                                                                       |
-|       3        | Chat di gruppo, incantesimi distintivi, incremento di abilità, reflex expertise, talento generico                                                                            |
+|       3        | Chat di gruppo, incantesimi distintivi, incremento di abilità, riflessi esperti, talento generico                                                                            |
 |       4        | Talento da mistico, talento di abilità                                                                                                                                       |
-|       5        | Aumenti di attributo, fortitude expertise, incremento di abilità, talento di stirpe                                                                                          |
+|       5        | Aumenti di attributo, tempra esperta, incremento di abilità, talento di stirpe                                                                                               |
 |       6        | Talento da mistico, talento di abilità                                                                                                                                       |
 |       7        | Incantatore esperto, incremento di abilità, talento generico                                                                                                                 |
 |       8        | Talento da mistico, talento di abilità                                                                                                                                       |
 |       9        | Anima resistente, incremento di abilità, talento di stirpe                                                                                                                   |
 |       10       | Aumenti di attributo, talento da mistico, talento di abilità                                                                                                                 |
-|       11       | Esperienza con le armi, incremento di abilità, perception expertise, talento generico                                                                                        |
+|       11       | Esperienza con le armi, incremento di abilità, percezione esperta, talento generico                                                                                          |
 |       12       | Talento da mistico, talento di abilità                                                                                                                                       |
 |       13       | Esperienza con le armature, incremento di abilità, specializzazione con le armi, talento di stirpe                                                                           |
 |       14       | Talento da mistico, talento di abilità                                                                                                                                       |
@@ -360,7 +360,7 @@ cosciente, [priva di sensi](/condizioni/privo-di-sensi),
 
 {{% include page="/azioni/incantesimo-di-rete" level=4 %}}
 
-### Reflex Expertise - 3°
+### Riflessi Esperti - 3°
 
 La tua connessione ti dona intuizione che ti aiuta a schivare il pericolo. Il
 tuo grado di competenza nei tiri salvezza su Riflessi aumenta a esperto.
@@ -398,7 +398,7 @@ Al 5° livello e successivamente ogni 4 livelli, in aggiunta al talento di stirp
 iniziale, ne ottieni uno. La lista dei talenti di stirpe a tua disposizione
 viene presentata nella descrizione della stirpe del tuo personaggio.
 
-### Fortitude Expertise - 5°
+### Tempra Esperta - 5°
 
 Il tuo fisico è diventato più resistente grazie alle tue avventure. Il tuo grado
 di competenza nei tiri salvezza su Tempra aumenta a esperto.
@@ -421,7 +421,7 @@ consideri un successo critico.
 Vinici battaglie con armi semplici. Il tuo grado di competenza con armi semplici
 e attacchi senz'armi aumenta a esperto.
 
-### Perception Expertise - 11°
+### Percezione Esperta - 11°
 
 Rimani vigile rispetto alle minacce intorno a te. Il tuo grado di competenza in
 Percezione aumenta a esperto.

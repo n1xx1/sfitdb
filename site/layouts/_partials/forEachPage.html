@@ -1,9 +1,8 @@
 {{ if .IsHome }}
   {{ $output := slice }}
   {{ range site.AllPages }}
-    {{ $permalink := .RelPermalink | replaceRE "^/|/$" "" }}
+    {{ $permalink := .RelPermalink | replaceRE "/$" "" }}
     {{ if and .Params.canonicalURL (ne $permalink .Params.canonicalURL) }}
-      {{/* {{ warnf "%v %v" $permalink .Params.canonicalURL }} */}}
       {{ continue }}
     {{ end }}
 

@@ -116,28 +116,28 @@ richiesti per acquisirle.
 
 ### Avanzamento dell'Emissario
 
-| Il tuo Livello | Privilegi di Classe                                                                                                                 |
-| :------------: | ----------------------------------------------------------------------------------------------------------------------------------- |
-|       1        | Aumenti di attributo, competenze iniziali, direttive dell'emissario, stile di leadership, stirpe e background, talento da emissario |
-|       2        | Incremento di abilità, talento da emissario, talento di abilità                                                                     |
-|       3        | Astuto nel gioco, dote adattiva, incremento di abilità, talento generico                                                            |
-|       4        | Talento da emissario, incremento di abilità, talento di abilità                                                                     |
-|       5        | Aumenti di attributo, esperienza con le armi, incremento di abilità, maestria improvvisata, perception expertise, talento di stirpe |
-|       6        | Incremento di abilità, talento da emissario, talento di abilità                                                                     |
-|       7        | Fiducia del leader, fortitude expertise, Incremento di abilità, specializzazione con le armi                                        |
-|       8        | Incremento di abilità, talento da emissario, talento di abilità                                                                     |
-|       9        | Esperienza con l'emissario, incremento di abilità, secondo fine, talento di stirpe                                                  |
-|       10       | Aumenti di attributo, incremento di abilità, talento da emissario, talento di abilità                                               |
-|       11       | Impovvisatore astuto, incremento di abilità, perception mastery, risolutezza                                                        |
-|       12       | Incremento di abilità, talento da emissario, talento di abilità                                                                     |
-|       13       | Esperienza con le armature leggere, incremento di abilità, maestria con le armi, stratega, talento di stirpe                        |
-|       14       | Incremento di abilità, talento da emissario, talento di abilità                                                                     |
-|       15       | Aumenti di attributo, improvvisazione leggendaria, incremento di abilità, reflex mastery, specializzazione con le armi superiore    |
-|       16       | Incremento di abilità, talento da emissario, talento di abilità                                                                     |
-|       17       | Imperscrutabile, incremento di abilità, talento di stirpe, risolutezza superiore, sensi incredibili                                 |
-|       18       | Incremento di abilità, talento da emissario, talento di abilità                                                                     |
-|       19       | Incremento di abilità, maestria con le armature leggere, parlantina sciolta                                                         |
-|       20       | Aumenti di attributo, incremento di abilità, talento da emissario, talento di abilità                                               |
+| Il tuo Livello | Privilegi di Classe                                                                                                                   |
+| :------------: | ------------------------------------------------------------------------------------------------------------------------------------- |
+|       1        | Aumenti di attributo, competenze iniziali, direttive dell'emissario, stile di leadership, stirpe e background, talento da emissario   |
+|       2        | Incremento di abilità, talento da emissario, talento di abilità                                                                       |
+|       3        | Astuto nel gioco, dote adattiva, incremento di abilità, talento generico                                                              |
+|       4        | Talento da emissario, incremento di abilità, talento di abilità                                                                       |
+|       5        | Aumenti di attributo, esperienza con le armi, incremento di abilità, maestria improvvisata, percezione esperta, talento di stirpe     |
+|       6        | Incremento di abilità, talento da emissario, talento di abilità                                                                       |
+|       7        | Fiducia del leader, tempra esperta, Incremento di abilità, specializzazione con le armi                                               |
+|       8        | Incremento di abilità, talento da emissario, talento di abilità                                                                       |
+|       9        | Esperienza con l'emissario, incremento di abilità, secondo fine, talento di stirpe                                                    |
+|       10       | Aumenti di attributo, incremento di abilità, talento da emissario, talento di abilità                                                 |
+|       11       | Impovvisatore astuto, incremento di abilità, percezione magistrale, risolutezza                                                       |
+|       12       | Incremento di abilità, talento da emissario, talento di abilità                                                                       |
+|       13       | Esperienza con le armature leggere, incremento di abilità, maestria con le armi, stratega, talento di stirpe                          |
+|       14       | Incremento di abilità, talento da emissario, talento di abilità                                                                       |
+|       15       | Aumenti di attributo, improvvisazione leggendaria, incremento di abilità, riflessi magistrali, specializzazione con le armi superiore |
+|       16       | Incremento di abilità, talento da emissario, talento di abilità                                                                       |
+|       17       | Imperscrutabile, incremento di abilità, talento di stirpe, risolutezza superiore, sensi incredibili                                   |
+|       18       | Incremento di abilità, talento da emissario, talento di abilità                                                                       |
+|       19       | Incremento di abilità, maestria con le armature leggere, parlantina sciolta                                                           |
+|       20       | Aumenti di attributo, incremento di abilità, talento da emissario, talento di abilità                                                 |
 
 ### Aumenti di Attributo
 
@@ -251,7 +251,7 @@ Ottieni l'azione [Maestria Improvvisata](/azioni/maestria-improvvisata).
 
 {{% include page="/azioni/maestria-improvvisata" level=4 %}}
 
-### Perception Expertise - 5°
+### Percezione Esperta - 5°
 
 Hai un occhio attento ai dettagli e riesci sempre a rimanere vigile rispetto
 alle minacce intorno a te. Il tuo grado di competenza in Percezione aumenta a
@@ -265,7 +265,7 @@ attacchi il bersaglio del tuo [Prendetelo](/azioni/prendetelo), ottieni accesso
 agli effetti di specializzazione del critico di tutte le armi per le quali
 possiedi il grado esperto.
 
-### Fortitude Expertise - 7°
+### Tempra Esperta - 7°
 
 Il tuo fisico è incredibilmente resistente. Il tuo grado di competenza nei tiri
 salvezza su Tempra aumenta a esperto.
@@ -308,7 +308,7 @@ giorno che ottieni un 1 naturale su una prova di [Inganno](/abilita/inganno),
 riduci automaticamente il grado di successo (ottieni un fallimento critico solo
 se il risultato è inferiore di 10 alla CD).
 
-### Perception Mastery - 11°
+### Percezione Magistrale - 11°
 
 Attraverso le tue avventure, hai sviluppato grande consapevolezza e attenzione
 ai dettagli. Il tuo grado di competenza in Percezione aumenta a maestro.
@@ -346,12 +346,12 @@ abilità che usano un’abilità in cui non possiedi il grado leggendario anzich
 maestro, e ti concede il grado leggendario per la prova innescante invece del
 grado maestro.
 
-### Reflex Mastery - 15°
+### Riflessi Magistrali - 15°
 
-Hai imparato a muoverti velocemente per evitare esplosioni, soffi di drago e non
-solo. Il tuo grado di competenza nei tiri salvezza su Riflessi aumenta a
-maestro. Quando ottieni un successo in un tiro salvezza su Riflessi, consideri
-il risultato un successo critico.
+Hai imparato a muoverti velocemente per evitare esplosioni, torrette e non solo.
+Il tuo grado di competenza nei tiri salvezza su Riflessi aumenta a maestro.
+Quando ottieni un successo in un tiro salvezza su Riflessi, consideri il
+risultato un successo critico.
 
 ### Specializzazione con le Armi Superiore - 15°
 

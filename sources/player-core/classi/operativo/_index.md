@@ -146,7 +146,7 @@ richiesti per acquisirle.
 |       4        | talento da operativo, talento di abilità                                                                                                                                      |
 |       5        | aumenti di attributo, incremento di abilità, mastro artigliere, Mirare 2d4, operatore urbano, talento di stirpe                                                               |
 |       6        | talento da operativo, talento di abilità                                                                                                                                      |
-|       7        | incremento di abilità, insieme di abilità specializzate, reflex mastery, specializzazione con le armi, talento generico, vantaggio dell'operativo                             |
+|       7        | incremento di abilità, insieme di abilità specializzate, riflessi magistrali, specializzazione con le armi, talento generico, vantaggio dell'operativo                        |
 |       8        | talento da operativo, talento di abilità                                                                                                                                      |
 |       9        | incremento di abilità, resilienza dell’operativo, talento di stirpe                                                                                                           |
 |       10       | aumenti di attributo, talento da operativo, talento di abilità                                                                                                                |
@@ -267,7 +267,7 @@ combattimento. Se possiedi il talento
 [Iniziativa Incredibile](/talenti/iniziativa-incredibile), il tuo bonus di
 circostanza ai tiri di iniziativa diventa +3.
 
-### Reflex Mastery - 7°
+### Riflessi Magistrali - 7°
 
 Hai imparato a muoverti velocemente per evitare esplosioni, torrette e non solo.
 Aumenti a maestro il tuo grado di competenza nei tiri salvezza su Riflessi.

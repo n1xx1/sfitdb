@@ -18,7 +18,7 @@ bisogno di condividere, iniziando con gli alleati legati al tuo vincolo.
 **Incantesimi della Connessione** trucchetto:
 [evoca strumento](/incantesimi/evoca-strumento); 1°:
 [suoneria motivante](/incantesimi/suoneria-motivante); 2°:
-[noise blast](/incantesimi/noise-blast); 3°:
+[frastuono](/incantesimi/frastuono); 3°:
 [ipnotizzare](/incantesimi/ipnotizzare); 4°:
 [melodia di battaglia](/incantesimi/melodia-di-battaglia); 5°:
 [impulso sinaptico](/incantesimi/impulso-sinaptico); 6°:

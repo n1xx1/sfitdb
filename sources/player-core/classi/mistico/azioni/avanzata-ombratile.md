@@ -16,4 +16,4 @@ navigation-hide: true
 
 Ti muovi tra le ombre come se facessi un passo normale. Ti teletrasporti fino a
 9 metri. La destinazione deve trovarsi in luce fioca o oscurità, e deve essere
-nella tua linea visiva e linea di effetto.
+nella tua linea di vista e linea di effetto.
