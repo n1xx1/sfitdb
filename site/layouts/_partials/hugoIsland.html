@@ -1,0 +1,99 @@
+{{- $batch := js.Batch "js/bundle" -}}
+
+{{- $rendererId := xxhash .rendererPath -}}
+{{- $rendererResource := resources.FromString
+  (printf "%s_r.js" $rendererId)
+  (printf `export * from "%[1]s"; export { default } from "%[1]s"; export const __hugo_runner = true;` .rendererPath)
+-}}
+{{- with $batch.Group $rendererId -}}
+  {{- with .Runner "_" -}}
+    {{- .SetOptions (dict "resource" $rendererResource "export" "__hugo_runner") -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $componentId := xxhash .componentPath -}}
+{{- $componentResource := resources.FromString
+  (printf "%s_r.js" $componentId)
+  (printf `export * from "%[1]s"; export { default } from "%[1]s"; export const __hugo_runner = true;` .componentPath)
+-}}
+{{- with $batch.Group $componentId -}}
+  {{- with .Runner "_" -}}
+    {{- .SetOptions (dict "resource" $componentResource "export" "__hugo_runner") -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $counter := .context.Store.Get "hugoIslandCounter" | default 0 -}}
+{{- $counter = add $counter 1 -}}
+{{- .context.Store.Set "hugoIslandCounter" $counter -}}
+
+{{- $uid := xxhash (printf "%s-%s-%d" $rendererId $componentId $counter) -}}
+{{- $jsonProps := .props | jsonify -}}
+{{- $jsonExport := "default" | jsonify -}}
+{{- $jsonChildren := .inner | jsonify -}}
+{{- $jsonContext := dict "uid" $uid | jsonify -}}
+
+{{- $renderedContentCode := printf `
+  import { renderToStaticMarkup } from "%[1]s";
+  import * as componentModule from "%[2]s";
+  export default function() {
+  return renderToStaticMarkup({
+  Component: componentModule[__EXPORT__],
+  props: __PROPS__,
+  children: __CHILDREN__,
+  context: __CONTEXT__,
+  });
+  }`
+  .serverRendererPath
+  .componentPath
+-}}
+{{- $renderedResult := partialCached "utils/execJs" (dict
+  "code" $renderedContentCode
+  "define" (dict
+  "__EXPORT__" $jsonExport
+  "__PROPS__" $jsonProps
+  "__CHILDREN__" $jsonChildren
+  "__CONTEXT__" $jsonContext
+  )) $renderedContentCode $jsonExport $jsonProps $jsonChildren $jsonContext
+-}}
+
+{{- $renderedAttrs := printf ` %s="%s"` "props" (htmlEscape $jsonProps) -}}
+{{- range $k, $v := $renderedResult.attrs -}}
+  {{- $renderedAttrs = add $renderedAttrs (printf ` %s="%s"` $k (htmlEscape $v)) -}}
+{{- end -}}
+
+{{- $deferKey := printf "%s-%d" (anchorize .context.Path) $counter -}}
+{{- $deferData := dict
+  "rendererId" $rendererId
+  "componentId" $componentId
+  "renderedContent" $renderedResult.html
+  "renderedAttrs" $renderedAttrs
+-}}
+
+{{- with (templates.Defer (dict "key" $deferKey "data" $deferData)) -}}
+  {{- $rendererUrl := "" -}}
+  {{- $componentUrl := "" -}}
+
+  {{- $data := . -}}
+  {{- $batch := js.Batch "js/bundle" -}}
+  {{- with $batch.Build -}}
+    {{- range index .Groups $data.rendererId -}}
+      {{- if hasSuffix .Name "_runner.js" -}}
+        {{- $rendererUrl = .RelPermalink -}}
+      {{- end -}}
+    {{- end -}}
+    {{- range index .Groups $data.componentId -}}
+      {{- if hasSuffix .Name "_runner.js" -}}
+        {{- $componentUrl = .RelPermalink -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+
+
+  <hugo-island
+    renderer-url="{{ $rendererUrl }}"
+    component-url="{{ $componentUrl }}"
+    {{ .renderedAttrs | safeHTMLAttr }}
+  >
+    {{- .renderedContent | safeHTML -}}
+  </hugo-island>
+{{- end -}}

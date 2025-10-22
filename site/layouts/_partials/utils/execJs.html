@@ -1,17 +1,10 @@
-{{ $resourceBundle := resources.FromString
-  (printf "execute-js-%d.jsx" math.Counter)
-  .
-}}
-{{ $resourceBundle = $resourceBundle | js.Build (dict
-  "minify" (not hugo.IsDevelopment)
-  "format" "esm"
-  "JSX" "automatic"
-  "JSXImportSource" "react"
-  )
-}}
+{{ $bundledCode := partialCached "utils/execJsBundle" .code .code }}
+{{ range $k, $v := .define }}
+  {{ $bundledCode = replace $bundledCode $k $v }}
+{{ end }}
 {{ $resourceCode := resources.FromString
   (printf "execute-js-%d.css" math.Counter)
-  (printf "data: %s" (jsonify $resourceBundle.Content))
+  (printf "code: %s;\ntimeout: 3;\n" (jsonify $bundledCode))
 }}
 
 {{ $pluginPath := path.Join (path.Dir templates.Current.Filename) "execJs-plugin.cjs" }}
@@ -24,18 +17,18 @@
   `--EVAL-LOGS-BEGIN--([\s\S]+)--EVAL-LOGS-END--`
   $resourceCode.Content) 0) 1
 }}
-
 {{ $result := index (index (findRESubmatch
   `--EVAL-RESULT-BEGIN--([\s\S]+)--EVAL-RESULT-END--`
   $resourceCode.Content) 0) 1
 }}
 {{ $result = transform.Unmarshal (dict "format" "json") $result }}
-{{ if $result.error }}
-  {{ errorf "error executing js: %v" $result.message }}
-{{ end }}
 
 {{ with strings.TrimSpace $logs }}
   {{ warnf "executeJs logs: %v" . }}
+{{ end }}
+
+{{ if $result.error }}
+  {{ errorf "error executing js: %v" $result.message }}
 {{ end }}
 
 {{ return $result.result }}

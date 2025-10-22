@@ -29,9 +29,14 @@
     {{ end }}
   {{- end -}}
 
-  {{- with (js.Batch "js/bundle").Config -}}
+  {{- $title := partialCached "utils/title" . .Path }}
+  <title>{{ $title.name | replaceRE ":(1|2|3|G|R):" "" }}</title>
+
+  {{- $bundle := js.Batch "js/bundle" -}}
+  {{- with $bundle.Config -}}
     {{- .SetOptions (dict
       "minify" (not hugo.IsDevelopment)
+      "target" "esnext"
       "format" "esm"
       "JSX" "automatic"
       "JSXImportSource" "react"
@@ -39,21 +44,27 @@
     -}}
   {{- end -}}
 
-  {{- $title := partialCached "utils/title" . .Path }}
-  <title>{{ $title.name | replaceRE ":(1|2|3|G|R):" "" }}</title>
+  {{- $islandRuntimePath := "js/island-runtime.ts" -}}
+  {{- $islandRuntimeResource := resources.Get $islandRuntimePath -}}
+  {{- if not $islandRuntimeResource -}}
+    {{- errorf "resource not found: %s" $islandRuntimePath -}}
+  {{- end -}}
 
-  {{- $group := $.Path | anchorize | default "home" -}}
-  {{- with (templates.Defer (dict "key" $group "data" $group)) -}}
-    {{- with js.Batch "js/bundle" -}}
-      {{- with .Build -}}
-        {{- range index .Groups $ -}}
-          {{- $resource := . -}}
-          {{ if eq $resource.MediaType.SubType "css" }}
-            <link href="{{ $resource.RelPermalink }}" rel="stylesheet" />
-          {{ else }}
-            <script src="{{ $resource.RelPermalink }}" type="module"></script>
-          {{ end }}
-        {{- end -}}
+  {{- with $bundle.Group "main" -}}
+    {{- with .Script "main" -}}
+      {{- .SetOptions (dict "resource" $islandRuntimeResource) -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- with (templates.Defer (dict "key" "global")) -}}
+    {{- $bundle := js.Batch "js/bundle" -}}
+    {{- with $bundle.Build -}}
+      {{- range index .Groups "main" -}}
+        {{ if eq .MediaType.SubType "css" }}
+          <link href="{{ .RelPermalink }}" rel="stylesheet" />
+        {{ else }}
+          <script src="{{ .RelPermalink }}" type="module"></script>
+        {{ end }}
       {{- end -}}
     {{- end -}}
   {{- end -}}

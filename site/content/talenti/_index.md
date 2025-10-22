@@ -6,4 +6,4 @@ navigation-disable: true
 
 # Talenti
 
-{{< reactComponent path="components/feats.tsx" />}}
+{{< reactComponent path="@/components/feats.tsx" />}}

@@ -7,43 +7,43 @@
     {{ end }}
 
     {{ $title := partialCached "utils/title" . .Path }}
-    {{ $outDict := dict
-      "name" $title.name
-      "url" (.RelPermalink | replaceRE `/$` ``)
-      "content" (.Content | partial "icons" | transform.HTMLUnescape)
-    }}
+    {{ $outDict := collections.NewScratch }}
+    {{ $outDict.Set "name" $title.name }}
+    {{ $outDict.Set "url" (.RelPermalink | replaceRE `/$` ``) }}
+    {{ $outDict.Set "content" (.Content | partial "icons" | transform.HTMLUnescape) }}
+
     {{ if hasPrefix .Type "pf" }}
       {{ $kind := .Type | replaceRE "^pf" "" }}
-      {{ $outDict = $outDict | merge (dict "kind" $kind) }}
+      {{ $outDict.Set "kind" $kind }}
     {{ else if hasPrefix .Path "/regole/" }}
-      {{ $outDict = $outDict | merge (dict "kind" "rule") }}
+      {{ $outDict.Set "kind" "rule" }}
     {{ else }}
       {{ continue }}
     {{ end }}
 
     {{ if .Params.traits }}
       {{ $traits := partialCached "pf/getTraitsData" .Params.traits .Params.traits }}
-      {{ $outDict = $outDict | merge (dict "traits" $traits) }}
+      {{ $outDict.Set "traits" $traits }}
     {{ end }}
     {{ if $title.level }}
-      {{ $outDict = $outDict | merge (dict "level" $title.level) }}
+      {{ $outDict.Set "level" $title.level }}
     {{ end }}
     {{ if $title.typeLower }}
-      {{ $outDict = $outDict | merge (dict "type" $title.typeLower) }}
+      {{ $outDict.Set "type" $title.typeLower }}
     {{ end }}
     {{ if .Params.source }}
-      {{ $outDict = $outDict | merge (dict "source" .Params.source) }}
+      {{ $outDict.Set "source" .Params.source }}
     {{ end }}
     {{ if .Params.background }}
-      {{ $outDict = $outDict | merge (dict "background" .Params.background) }}
+      {{ $outDict.Set "background" .Params.background }}
     {{ end }}
     {{ if eq .Type "pfheritage" }}
       {{ $match := findRESubmatch `([^/]+)/lignaggi` .Path 1 }}
       {{ with index $match 0 }}
-        {{ $outDict = $outDict | merge (dict "heritageAncestry" (index . 1)) }}
+        {{ $outDict.Set "heritageAncestry" (index . 1) }}
       {{ end }}
     {{ end }}
-    {{ $output = $output | append $outDict }}
+    {{ $output = $output | append $outDict.Values }}
   {{ end }}
 
   {{ $outPath := printf "data/database.json" }}

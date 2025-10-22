@@ -32,6 +32,8 @@ module:
       target: content
     - source: site/assets
       target: assets
+    - source: package.json
+      target: assets/internal/package.json
     - source: site/layouts
       target: layouts
     - source: site/static

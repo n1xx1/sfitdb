@@ -9,4 +9,4 @@ segnalarlo qua:
 
 [Github](https://github.com/n1xx1/sfitdb/issues)
 
-{{< reactComponent path="components/pagina-mancante.tsx" />}}
+{{< reactComponent path="@/components/pagina-mancante.tsx" />}}

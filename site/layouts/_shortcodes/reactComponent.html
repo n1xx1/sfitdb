@@ -1,9 +1,13 @@
-{{- partial "reactComponent" (dict
-  "path" (.Get "path")
-  "id" (.Ordinal | string)
-  "page" .Page
+{{- $inner := "" -}}
+{{- with .InnerDeindent | strings.TrimSpace -}}
+  {{- $inner = . | $.Page.RenderString -}}
+{{- end -}}
+{{- $opts := dict
+  "rendererPath" "@/react/client.ts"
+  "serverRendererPath" "@/react/server.ts"
+  "componentPath" .Params.path
+  "context" .Page
   "props" .Params
-  "export" (.Get "export")
-  "inner" .Inner
-  )
+  "inner" $inner
 -}}
+{{- partial "hugoIsland" $opts -}}
