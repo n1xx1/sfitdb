@@ -12,4 +12,5 @@ un’intelligenza artificiale potente ti ha generato per interfacciarti con altr
 macchine. La tua fisiologia è quasi identica a quella di altri androidi, ma
 dettagli inquietanti tradiscono le tue origini non standard (ad esempio,
 potresti avere tratti incredibilmente simmetrici, dita extra o pupille doppie).
-Diventi addestrato in Computer e ottieni il talento di abilità Phreaker.
+Diventi addestrato in Computer e ottieni il talento di abilità
+[Phreaker](/talenti/phreaker).

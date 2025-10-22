@@ -88,7 +88,7 @@ Esperto in Volontà
 
 ### Abilità
 
-Addestrato in una abilità in base alla tua connessione  
+Addestrato in un'abilità determinata dalla tua connessione  
 Addestrato in un numero di abilità aggiuntive pari a 3 più il tuo modificatore
 di Intelligenza
 

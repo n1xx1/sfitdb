@@ -89,7 +89,7 @@ Esperto in Volontà
 
 Addestrato in una delle seguenti abilità a tua scelta: Inganno, Diplomazia,
 Intimidazione  
-Addestrato in una abilità in base al tuo stile di leadership  
+Addestrato in un'abilità determinata dal tuo stile di leadership  
 Addestrato in un numero di abilità aggiuntive pari a 6 più il tuo modificatore
 di Intelligenza
 

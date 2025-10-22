@@ -119,11 +119,32 @@
 
 ### Talenti
 
-| en           | it         | da    | note |
-| ------------ | ---------- | ----- | ---- |
-|              |            |       |      |
-| Multilingual | Poliglotta | gu pf |      |
-|              |            |       |      |
+| en                  | it                       | da    | note                  |
+| ------------------- | ------------------------ | ----- | --------------------- |
+|                     |                          |       |                       |
+| Barricade           | Barricare                | us    |                       |
+|                     |                          |       |                       |
+| Deadlift            | Stacco                   | us    | forse Stacco da Terra |
+|                     |                          |       |                       |
+| Experienced Tracker | Segugio Esperto          | gu pf |                       |
+|                     |                          |       |                       |
+| Face in the Crowd   | Volto tra la Folla       | us    |                       |
+|                     |                          |       |                       |
+| Hologram Skeptic    | Scettico sugli Ologrammi | us    |                       |
+|                     |                          |       |                       |
+| Intimidating Shot   | Sparo Intimidatorio      | us    |                       |
+|                     |                          |       |                       |
+| Just Kidding!       | Stava Scherzando!        | us    |                       |
+|                     |                          |       |                       |
+| Management Material | Stoffa da Dirigente      | us    |                       |
+| Multilingual        | Poliglotta               | gu pf |                       |
+|                     |                          |       |                       |
+| Quick Install       | Installazione Rapida     | us    |                       |
+|                     |                          |       |                       |
+| Religious Talisman  | Talismano Religioso      | us    |                       |
+|                     |                          |       |                       |
+| Without a Trace     | Senza Lasciare Traccia   | us    |                       |
+|                     |                          |       |                       |
 
 ### Incantesimi
 
