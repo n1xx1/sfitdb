@@ -143,6 +143,8 @@
 |                     |                          |       |                       |
 | Religious Talisman  | Talismano Religioso      | us    |                       |
 |                     |                          |       |                       |
+| Shield Block        | Parare con lo Scudo      | gu pf |                       |
+|                     |                          |       |                       |
 | Without a Trace     | Senza Lasciare Traccia   | us    |                       |
 |                     |                          |       |                       |
 

@@ -304,7 +304,7 @@ arma solare, infliggi danni da fuoco aggiuntivi pari a metà del tuo livello
 (arrotondati per eccesso). La tua arma solare emette luce intensa in un raggio
 di 1,5 metri (e luce fioca per i successivi 1,5 metri).
 
-{{% include page="/azioni/riforgiare-l-arma-solare" level=5 %}}
+{{% include page="/azioni/riforgiare-arma-solare" level=5 %}}
 
 ### Stirpe e Background
 
