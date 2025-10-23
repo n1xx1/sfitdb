@@ -8,7 +8,7 @@ navigation-hide: true
 
 # Avanzata Ombratile :a:
 
-**Frequenza**: una volta per round
+**Frequenza** una volta per round
 
 **Requisiti** Ti trovi in luce fioca o oscurità
 

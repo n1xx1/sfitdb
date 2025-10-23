@@ -70,18 +70,18 @@ esercitazioni tattiche per gli scontri futuri.
   violenza metodica.
 - Vogliono assumerti come guardia del corpo o mercenario.
 
-> ### Termini Chiave
+> ## Termini Chiave
 >
 > Troverai i seguenti termini chiave in molti privilegi di classe
 > dell’operativo.
 >
-> **[Mirare](/azioni/mirare):** Un’azione usata per concentrarsi su un bersaglio
-> e infliggere danni di precisione aggiuntivi.
+> [**Mirare**](/azioni/mirare)**:** Un’azione usata per concentrarsi su un
+> bersaglio e infliggere danni di precisione aggiuntivi.
 >
 > **Dispendio:** Il numero di cariche o munizioni che un’arma a distanza
 > utilizza ogni volta che viene sparata.
 >
-> **[Ostentazione](/tratti/ostentazione):** Le azioni con questo tratto sono
+> [**Ostentazione**](/tratti/ostentazione)**:** Le azioni con questo tratto sono
 > azioni che richiedono uno sforzo eccessivo per eseguirne un numero elevato di
 > seguito. Puoi usare solo 1 azione con il tratto ostentazione per turno.
 >
