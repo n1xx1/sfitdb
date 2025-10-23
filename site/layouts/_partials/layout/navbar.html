@@ -11,11 +11,17 @@
       class="flex items-center hover:opacity-75 ltr:mr-auto rtl:ml-auto"
       href="{{ .Site.Home.RelPermalink }}"
     >
-      <span
-        class="mx-2 font-extrabold inline select-none"
-        title="{{ .Site.Title }}"
-        >{{- .Site.Title -}}</span
-      >
+      {{- $logo := resources.Get "images/sf2.webp" -}}
+      <img
+        class="h-12 w-auto"
+        src="{{ $logo.RelPermalink }}"
+        width="{{ $logo.Width }}"
+        height="{{ $logo.Height }}"
+        alt="Starfinder"
+      />
+      <span class="mx-2 font-extrabold inline select-none">
+        Italian Database
+      </span>
     </a>
     {{- $currentPage := . -}}
     {{- range .Site.Menus.main -}}
