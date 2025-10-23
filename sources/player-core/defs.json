@@ -17,12 +17,14 @@
     "classi/{emissario,mistico,operativo,solarian,soldato,stregone-del-velo}/talenti/*"
   ],
   "leadershipstyle": ["classi/emissario/stili-di-leadership/*"],
+  "fightingstyle": ["classi/soldato/stili-di-combattimento/*"],
   "connection": ["classi/mistico/connessioni/*"],
   "specialization": ["classi/operativo/specializzazioni/*"],
   "classfeature": [
     "classi/emissario/stili-di-leadership",
     "classi/mistico/connessioni",
-    "classi/operativo/specializzazioni"
+    "classi/operativo/specializzazioni",
+    "classi/soldato/stili-di-combattimento"
   ],
   "trait": ["glossario-e-indice/tratti/*"]
 }

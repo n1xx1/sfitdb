@@ -10,7 +10,7 @@ original-srd: https://2e.aonsrd.com/feats/442-pardon-me
 **Prerequisiti** addestrato in Intimidazione
 
 **Innesco** una creatura entro 9 metri subisce danni da un
-[Colpo](/azioni/colpo) di un alleato.
+[Colpo](/azioni/colpire) di un alleato.
 
 ---
 

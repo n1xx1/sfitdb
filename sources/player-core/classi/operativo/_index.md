@@ -140,26 +140,26 @@ richiesti per acquisirle.
 
 | Il tuo Livello | Privilegi di Classe                                                                                                                                                           |
 | :------------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|       1        | aumenti di attributo, competenze iniziali, Mirare 1d4, specializzazione dell'operativo, stirpe e background, tiratore scelto, talento da operativo                            |
-|       2        | talento da operativo, talento di abilità                                                                                                                                      |
-|       3        | concentrato, incremento di abilità, insieme di abilità specializzate, talento generico                                                                                        |
-|       4        | talento da operativo, talento di abilità                                                                                                                                      |
-|       5        | aumenti di attributo, incremento di abilità, mastro artigliere, Mirare 2d4, operatore urbano, talento di stirpe                                                               |
-|       6        | talento da operativo, talento di abilità                                                                                                                                      |
-|       7        | incremento di abilità, insieme di abilità specializzate, riflessi magistrali, specializzazione con le armi, talento generico, vantaggio dell'operativo                        |
-|       8        | talento da operativo, talento di abilità                                                                                                                                      |
-|       9        | incremento di abilità, resilienza dell’operativo, talento di stirpe                                                                                                           |
-|       10       | aumenti di attributo, talento da operativo, talento di abilità                                                                                                                |
-|       11       | in movimento, incremento di abilità, Mirare 3d4, talento generico                                                                                                             |
-|       12       | talento da operativo, talento di abilità                                                                                                                                      |
-|       13       | incremento di abilità, esperienza con le armature leggere, esperienza dell'operativo, talento di stirpe                                                                       |
-|       14       | talento da operativo, talento di abilità                                                                                                                                      |
-|       15       | artigliere leggendario, aumenti di attributo, insieme di abilità specializzate, incremento di abilità, mira critica, specializzazione con le armi superiore, talento generico |
-|       16       | talento da operativo, talento di abilità                                                                                                                                      |
-|       17       | incremento di abilità, Mirare 4d4, raffica tattica, risolutezza, talento di stirpe                                                                                            |
-|       18       | talento da operativo, talento di abilità                                                                                                                                      |
-|       19       | fama galattica, incremento di abilità, meastria con le armature leggere, sensi incredibili, talento generico                                                                  |
-|       20       | aumenti di attributo, talento da operativo, talento di abilità                                                                                                                |
+|       1        | Aumenti di attributo, competenze iniziali, Mirare 1d4, specializzazione dell'operativo, stirpe e background, tiratore scelto, talento da operativo                            |
+|       2        | Talento da operativo, talento di abilità                                                                                                                                      |
+|       3        | Concentrato, incremento di abilità, insieme di abilità specializzate, talento generico                                                                                        |
+|       4        | Talento da operativo, talento di abilità                                                                                                                                      |
+|       5        | Aumenti di attributo, incremento di abilità, mastro artigliere, Mirare 2d4, operatore urbano, talento di stirpe                                                               |
+|       6        | Talento da operativo, talento di abilità                                                                                                                                      |
+|       7        | Incremento di abilità, insieme di abilità specializzate, riflessi magistrali, specializzazione con le armi, talento generico, vantaggio dell'operativo                        |
+|       8        | Talento da operativo, talento di abilità                                                                                                                                      |
+|       9        | Incremento di abilità, resilienza dell’operativo, talento di stirpe                                                                                                           |
+|       10       | Aumenti di attributo, talento da operativo, talento di abilità                                                                                                                |
+|       11       | In movimento, incremento di abilità, Mirare 3d4, talento generico                                                                                                             |
+|       12       | Talento da operativo, talento di abilità                                                                                                                                      |
+|       13       | Incremento di abilità, esperienza con le armature leggere, esperienza dell'operativo, talento di stirpe                                                                       |
+|       14       | Talento da operativo, talento di abilità                                                                                                                                      |
+|       15       | Artigliere leggendario, aumenti di attributo, insieme di abilità specializzate, incremento di abilità, mira critica, specializzazione con le armi superiore, talento generico |
+|       16       | Talento da operativo, talento di abilità                                                                                                                                      |
+|       17       | Incremento di abilità, Mirare 4d4, raffica tattica, risolutezza, talento di stirpe                                                                                            |
+|       18       | Talento da operativo, talento di abilità                                                                                                                                      |
+|       19       | Fama galattica, incremento di abilità, meastria con le armature leggere, sensi incredibili, talento generico                                                                  |
+|       20       | Aumenti di attributo, talento da operativo, talento di abilità                                                                                                                |
 
 ### Aumenti di Attributo
 

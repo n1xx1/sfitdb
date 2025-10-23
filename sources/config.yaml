@@ -16,6 +16,8 @@ types:
     path: "/classi/mistico/connessioni/{{ .base }}"
   specialization:
     path: "/classi/operativo/specializzazioni/{{ .base }}"
+  fightingstyle:
+    path: "/classi/soldato/stili-di-combattimento/{{ .base }}"
   archetype:
     path: "/archetipi/{{ .base }}"
   feat:

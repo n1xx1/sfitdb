@@ -56,28 +56,57 @@
 | en          | it              | da    | note |
 | ----------- | --------------- | ----- | ---- |
 | Blinded     | Accecato        | gu pf |      |
+| Broken      | Root            | gu pf |      |
 | Clumsy      | Maldestro       | gu pf |      |
 | Concealed   | Occultato       | gu pf |      |
+| Confused    | Confuso         | gu pf |      |
+| Controlled  | Controllato     | gu pf |      |
 | Dazzled     | Abbagliato      | gu pf |      |
 | Deafened    | Assordato       | gu pf |      |
 | Doomed      | Condannato      | gu pf |      |
 | Drained     | Risucchiato     | gu pf |      |
 | Dying       | Morente         | gu pf |      |
+| Encumbered  | Ingombrato      | gu pf |      |
 | Enfeebled   | Indebolito      | gu pf |      |
+| Fascinated  | Affascinato     | gu pf |      |
+| Fatigued    | Affaticato      | gu pf |      |
+| Fleeing     | In Fuga         | gu pf |      |
+| Friendly    | Amichevole      | gu pf |      |
+| Frightened  | Spaventato      | gu pf |      |
+| Glitching   |                 |       |      |
+| Grabbed     | Afferrato       |       |      |
+| Helpful     | Collaborativo   |       |      |
 | Hidden      | Nascosto        | gu pf |      |
+| Hostile     | Ostile          | gu pf |      |
+| Immobilized | Immobilizzato   | gu pf |      |
+| Indifferent | Indifferente    | gu pf |      |
+| Invisible   | Invisibile      | gu pf |      |
+| Observed    | Osservato       | gu pf |      |
+| Off-Guard   | Impreparato     | gu pf |      |
 | Paralyzed   | Paralizzato     | gu pf |      |
+| Petrified   | Pietrificato    | gu pf |      |
+| Prone       | Prono           | gu pf |      |
+| Quickened   | Accelerato      | gu pf |      |
 | Sickened    | Nauseato        | gu pf |      |
+| Slowed      | Rallentato      | gu pf |      |
 | Stunned     | Stordito        | gu pf |      |
+| Stupefied   | Sbigottito      | gu pf |      |
+| Suppressed  | Soppresso       | us    |      |
 | Unconscious | Privo di Sensi  | gu pf |      |
 | Undetected  | Non Individuato | gu pf |      |
+| Unfriendly  | Maldisposto     | gu pf |      |
+| Unnoticed   | Inosservato     | gu pf |      |
+| Untethered  | Slegato         | us    | ???? |
+| Wounded     | Ferito          | us    | ???? |
 
 ### Tratti
 
 | en        | it              | da    | note |
 | --------- | --------------- | ----- | ---- |
-| Area      | Area            | us    |      |
 | Air       | Aria            | gu pf |      |
+| Area      | Area            | us    | ???? |
 | Auditory  | Uditivo         | gu pf |      |
+| Automatic | Automatico      | us    | ???? |
 | Earth     | Terra           | gu pf |      |
 | Fire      | Fuoco           | gu pf |      |
 | Flourish  | Ostentazione    | gu pf |      |
@@ -91,31 +120,35 @@
 
 ### Azioni
 
-| en                 | it                       | da    | note     |
-| ------------------ | ------------------------ | ----- | -------- |
-|                    |                          |       |          |
-| Gather Information | Raccogliere Informazioni | gu pf |          |
-| Get 'Em            | Prendetelo               | us    |          |
-| Ghost Tap          | Colpetto Fantasma        | us    | rivedere |
-|                    |                          |       |          |
-| Hide               | Nascondersi              | gu pf |          |
-|                    |                          |       |          |
-| Improvised Mastery | Maestria Improvvisata    | us    |          |
-|                    |                          |       |          |
-| Network Spell      | Incantesimo di Rete      | us    |          |
-|                    |                          |       |          |
-| Recall Knowledge   | Ricordare Conoscenze     | gu pf |          |
-| Refocus            | Rifocalizzare            | gu pf |          |
-|                    |                          |       |          |
-| Sense Motive       | Intuire                  | gu pf |          |
-| Steel Yourselves!  | Preparatevi!             | us    |          |
-| Stride             | Avanzare                 | gu pf |          |
-| Strike             | Colpo                    | gu pf |          |
-|                    |                          |       |          |
-| Transfer Vitality  | Trasferisci Vitalità     | us    |          |
-|                    |                          |       |          |
-| Umbral Stride      | Avanzata Ombratile       | us    |          |
-|                    |                          |       |          |
+| en                 | it                       | da    | note |
+| ------------------ | ------------------------ | ----- | ---- |
+|                    |                          |       |      |
+| Area Fire          | Fuoco ad Area            | us    | ???? |
+| Auto-Fire          | Fuoco Automatico         | us    | ???? |
+|                    |                          |       |      |
+| Gather Information | Raccogliere Informazioni | gu pf |      |
+| Get 'Em            | Prendetelo               | us    |      |
+| Ghost Tap          | Colpetto Fantasma        | us    | ???? |
+|                    |                          |       |      |
+| Hide               | Nascondersi              | gu pf |      |
+|                    |                          |       |      |
+| Improvised Mastery | Maestria Improvvisata    | us    |      |
+|                    |                          |       |      |
+| Network Spell      | Incantesimo di Rete      | us    |      |
+|                    |                          |       |      |
+| Recall Knowledge   | Ricordare Conoscenze     | gu pf |      |
+| Refocus            | Rifocalizzare            | gu pf |      |
+|                    |                          |       |      |
+| Sense Motive       | Intuire                  | gu pf |      |
+| Steel Yourselves!  | Preparatevi!             | us    |      |
+| Stride             | Avanzare                 | gu pf |      |
+| Strike             | Colpo                    | gu pf |      |
+| Switch Hands       | Cambiare Mani            | us    | ???? |
+|                    |                          |       |      |
+| Transfer Vitality  | Trasferisci Vitalità     | us    |      |
+|                    |                          |       |      |
+| Umbral Stride      | Avanzata Ombratile       | us    |      |
+|                    |                          |       |      |
 
 ### Talenti
 

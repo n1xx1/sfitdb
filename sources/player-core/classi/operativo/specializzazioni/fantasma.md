@@ -1,6 +1,6 @@
 ---
 source: Player Core (Eng), pag. 128
-original-name: Fantasma
+original-name: Ghost
 original-srd: https://2e.aonsrd.com/classes/3-operative/specializations/1-ghost
 ---
 
