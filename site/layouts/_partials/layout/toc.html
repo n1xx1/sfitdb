@@ -43,29 +43,28 @@
 {{- define "toc-subheading" -}}
   {{- $headings := .headings -}}
   {{- $level := .level -}}
-  {{- if ge $level 6 -}}
-    {{ return }}
-  {{- end -}}
 
-  {{- $padding := mul (math.Max (sub $level 1) 0) 2 | int -}}
-  {{- $class := cond (eq $level 0) "font-semibold" (printf "ltr:pl-%d rtl:pr-%d" $padding $padding) -}}
+  {{- if lt $level 6 -}}
+    {{- $padding := mul (math.Max (sub $level 1) 0) 2 | int -}}
+    {{- $class := cond (eq $level 0) "font-semibold" (printf "ltr:pl-%d rtl:pr-%d" $padding $padding) -}}
 
-  {{- range $headings }}
-    {{- $title := .Title | safeHTML | plainify | htmlUnescape -}}
-    {{- $title = $title | replaceRE ` - .*$` "" -}}
-    {{- if $title }}
-      {{- $anchor := (anchorize .ID) | replaceRE `---.*?(-\d+)?$` "$1" | safeURL -}}
-      <li class="my-2 scroll-my-6 scroll-py-6">
-        <a
-          class="{{ $class }} inline-block text-muted-foreground hover:text-foreground w-full break-words"
-          href="#{{ $anchor }}"
-        >
-          {{- $title | partial "icons" }}
-        </a>
-      </li>
-    {{- end -}}
-    {{- with .Headings -}}
-      {{ template "toc-subheading" (dict "headings" . "level" (add $level 1)) }}
+    {{- range $headings }}
+      {{- $title := .Title | safeHTML | plainify | htmlUnescape -}}
+      {{- $title = $title | replaceRE ` - .*$` "" -}}
+      {{- if $title }}
+        {{- $anchor := (anchorize .ID) | replaceRE `---.*?(-\d+)?$` "$1" | safeURL -}}
+        <li class="my-2 scroll-my-6 scroll-py-6">
+          <a
+            class="{{ $class }} inline-block text-muted-foreground hover:text-foreground w-full break-words"
+            href="#{{ $anchor }}"
+          >
+            {{- $title | partial "icons" }}
+          </a>
+        </li>
+      {{- end -}}
+      {{- with .Headings -}}
+        {{ template "toc-subheading" (dict "headings" . "level" (add $level 1)) }}
+      {{- end -}}
     {{- end -}}
   {{- end -}}
 {{- end -}}

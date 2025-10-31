@@ -1,0 +1,61 @@
+{{ $pages := partialCached "pf/getPages" (dict
+  "context" .context
+  "source" .source
+  ) "rulesClassFeatures" .context.Path .source
+}}
+
+{{ $features := collections.NewScratch }}
+{{ range $i := 20 }}
+  {{ $features.Set (string (add $i 1)) slice }}
+{{ end }}
+
+{{ range $pages }}
+  {{ $title := partialCached "utils/title" . .Path }}
+  {{ $name := index .Params "table-name" | default $title.name }}
+  {{ $anchor := anchorize $title.name }}
+  {{ with .Params.levels }}
+    {{ range $i, $level := . }}
+      {{ $entry := dict "name" (lower $name) "link" (cond (eq $i 0) $anchor "") }}
+      {{ $list := $features.Get (string $level) }}
+      {{ $features.Set (string $level) (append $list (slice $entry)) }}
+    {{ end }}
+  {{ else }}
+    {{ $level := string ($title.level | default 1) }}
+    {{ $entry := dict "name" (lower $name) "link" $anchor }}
+    {{ $list := $features.Get $level }}
+    {{ $features.Set $level (append $list (slice $entry)) }}
+  {{ end }}
+
+  {{ with index .Params "sub-features" }}
+    {{ range $level, $name := . }}
+      {{ $entry := dict "name" $name "link" "" }}
+      {{ $list := $features.Get $level }}
+      {{ $features.Set $level (append $list (slice $entry)) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $rows := slice }}
+{{ range $level, $entries := $features.Values }}
+  {{ $row := "" }}
+  {{ range $i, $entry := collections.Sort $entries "name" }}
+    {{ $entryValue := cond (eq $i 0) (strings.FirstUpper $entry.name) $entry.name }}
+    {{ if $entry.link }}
+      {{ $entryValue = printf "[%s](#%s)" $entryValue $entry.link }}
+    {{ end }}
+    {{ if gt $i 0 }}
+      {{ $row = add $row ", " }}
+    {{ end }}
+    {{ $row = add $row $entryValue }}
+  {{ end }}
+  {{ $rows = $rows | append (slice (dict "level" $level "value" $row )) }}
+{{ end }}
+
+{{ $out := "" }}
+{{ $out = add $out "| Il tuo Livello | Privilegi di Classe |\n" }}
+{{ $out = add $out "| :-: | - |\n" }}
+{{ range $i, $row := collections.Sort $rows "level" }}
+  {{ $out = add $out (printf "| %d° | %s |\n" (add $i 1) $row.value) }}
+{{ end }}
+
+{{ return $out }}

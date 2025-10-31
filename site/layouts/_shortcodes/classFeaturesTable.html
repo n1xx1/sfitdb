@@ -1,0 +1,14 @@
+{{- $source := "" -}}
+{{- if and .IsNamedParams (isset .Params "source") -}}
+  {{- $source = transform.Unmarshal (dict "format" "yaml") .Params.source -}}
+{{- end -}}
+
+{{- if not $source -}}
+  {{- errorf "missing value for param 'source': %s" .Position -}}
+{{- end -}}
+
+{{- partial "shortcodes/classFeaturesTable" (dict
+  "context" .Page
+  "source" $source
+  )
+-}}

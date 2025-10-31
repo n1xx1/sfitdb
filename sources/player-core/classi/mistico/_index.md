@@ -204,11 +204,11 @@ Avanzando di livello come mistico aumenta anche il tuo numero di incantesimi
 giornalieri, così come il grado massimo di incantesimi che puoi lanciare, come
 indicato nella tabella Incantesimi Giornalieri del Mistico.
 
-Alcuni incantesimi richiedono un tiro per colpire con incantesimo per verificare
-quanto siano efficaci, oppure impongono ai nemici di tirare contro la tua CD di
-incantesimo (solitamente effettuando un tiro salvezza). Poiché la tua
-caratteristica chiave è la Saggezza, i tiri per colpire con incantesimo e le CD
-di incantesimo utilizzano il tuo modificatore di Saggezza.
+Alcuni dei tuoi incantesimi richiedono un tiro per colpire con incantesimo per
+stabilire quanto siano efficaci, oppure impongono ai tuoi nemici di tirare
+contro la tua CD di incantesimo (solitamente effettuando un tiro salvezza). Dato
+che la tua il tuo attributo chiave è Saggezza, questi tiri per colpire con
+incantesimo e le CD di incantesimo utilizzano il tuo modificatore di Saggezza.
 
 #### Intensificare gli Incantesimi
 
@@ -258,7 +258,8 @@ mistico di 5° sono di 3° grado.
 |       20       |     5      |  4  |  4  |  4  |  4  |  4  |  4  |  4  |  4  |  4  | 1\* |
 
 \* Il privilegio di classe trascendenza ti conferisce uno slot incantesimo di
-10° grado che funziona in maniera leggermente diversa dagli altri slot.
+10° grado che funziona in maniera leggermente diversa dagli altri slot
+incantesimo.
 
 ### Legame Mistico
 

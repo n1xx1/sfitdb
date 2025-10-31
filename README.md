@@ -26,6 +26,7 @@
 | &nbsp; Specialization   | Specializzazione        | gu sf |          |
 | &nbsp; Sharpshooter     | Tiratore Scelto         | us    |          |
 | &nbsp; Focused          | Concentrato             | us    |          |
+| Witchwarper             | Stregone del Velo       | gu sf |          |
 
 ### Abilità
 
@@ -117,6 +118,7 @@
 | Visual    | Visivo          | gu pf |      |
 | Water     | Acqua           | gu pf |      |
 | Wood      | Legno           | gu pf |      |
+| Unwieldy  | Ingombrante     | gu sf |      |
 
 ### Azioni
 
@@ -139,6 +141,7 @@
 | Recall Knowledge   | Ricordare Conoscenze     | gu pf |      |
 | Refocus            | Rifocalizzare            | gu pf |      |
 |                    |                          |       |      |
+| Seek               | Individuare              | gu pf |      |
 | Sense Motive       | Intuire                  | gu pf |      |
 | Steel Yourselves!  | Preparatevi!             | us    |      |
 | Stride             | Avanzare                 | gu pf |      |
@@ -191,7 +194,9 @@
 | Akashic Download        | Download Akashico          | us    |                           |
 | Akashic Fount           | Sorgente Akashica          | us    |                           |
 | Akashic Revival         | Reviviscenza Akashica      | us    |                           |
-| Anthem                  | Inno                       | us    | remaster                  |
+| Alternate Outcome       | Esito Alternativo          | us    |                           |
+| Analyze Target          | Analizza Bersaglio         | us    |                           |
+| Anthem                  | Inno                       | us    |                           |
 |                         |                            |       |                           |
 | Battle Sonata           | Melodia di Battaglia       | us    |                           |
 | Breath of Life          | Respiro di Vita            | gu pf |                           |
@@ -245,8 +250,11 @@
 | Planar Palace           | Palazzo Planare            | gu pf | remaster                  |
 | Promession              | Promessione                | us    |                           |
 |                         |                            |       |                           |
+| Quantum Analysis        | Analisi Quantistica        | us    |                           |
+|                         |                            |       |                           |
 | Recharge Weapon         | Ricaricare Arma            | us    |                           |
 | Remix                   | Remix                      | us    |                           |
+| Retrocognition          | Retrocognizione            | gu pf |                           |
 | Resist Energy           | Resistere all'Energia      |       |                           |
 |                         |                            |       |                           |
 | Scan Envrironment       | Scansione Ambientale       | gu sf |                           |
@@ -255,12 +263,16 @@
 | Shadow Snap             | Schiocco d'Ombra           | us    |                           |
 | Shifting Surge          | Ondata Mutevole            | us    |                           |
 | Shuffle Repeat          | Ripetizione Casuale        | us    | forse casuale ripetizione |
+| Sift the Sphere         | Setaccia la Sfera          | us    |                           |
 | Silver Tongue           | Parlantina Sciolta         | us    |                           |
 | Slow                    | Lentezza                   | gu pf |                           |
 | Stabilize               | Stabilizzare               | gu pf |                           |
+| Subjective Reality      | Realtà Soggettiva          | gu sf |                           |
 | Summon Instrument       | Evoca Strumento            | gu pf |                           |
 | Synaptic Pulse          | Impulso Sinaptico          | gu sf |                           |
 |                         |                            |       |                           |
+| Translocate             | Traslocazione              | gu pf |                           |
+| True Strike             | Colpo Accurato             | gu pf |                           |
 | Truesight               | Visione del Vero           | gu pf |                           |
 |                         |                            |       |                           |
 | Vampiric Exsanguination | Dissanguamento del Vampiro | gu pf |                           |
@@ -275,4 +287,5 @@
 |                         |                            |       |                           |
 | Wall of Fire            | Muro di Fuoco              | gu pf |                           |
 | Wave of Warning         | Onda di Avvertimento       | us    |                           |
+| Warp Probability        | Distorci Probabilità       |       |                           |
 |                         |                            |       |                           |

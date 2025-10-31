@@ -201,7 +201,7 @@
     {{ end }}
   {{ end }}
 
-  {{ $sorter := printf $sortFormat $title.name $title.level $source $navigation }}
+  {{ $sorter := printf $sortFormat $title.name ($title.level | default 0) $source $navigation }}
   {{ $el := dict "page" . "sorter" $sorter }}
   {{ $pagesFiltered = $pagesFiltered | append $el }}
 {{ end }}

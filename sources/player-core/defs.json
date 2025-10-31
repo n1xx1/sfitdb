@@ -20,11 +20,15 @@
   "fightingstyle": ["classi/soldato/stili-di-combattimento/*"],
   "connection": ["classi/mistico/connessioni/*"],
   "specialization": ["classi/operativo/specializzazioni/*"],
+  "anchor": ["classi/stregone-del-velo/ancore/*"],
+  "paradox": ["classi/stregone-del-velo/paradossi/*"],
   "classfeature": [
     "classi/emissario/stili-di-leadership",
     "classi/mistico/connessioni",
     "classi/operativo/specializzazioni",
-    "classi/soldato/stili-di-combattimento"
+    "classi/soldato/stili-di-combattimento",
+    "classi/stregone-del-velo/ancore",
+    "classi/stregone-del-velo/paradossi"
   ],
   "trait": ["glossario-e-indice/tratti/*"]
 }

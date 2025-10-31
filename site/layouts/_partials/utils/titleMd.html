@@ -10,7 +10,7 @@
   {{- end -}}
 {{- end -}}
 {{- $pageTitle := (index (findRE "(^|\n)#(.*)\n" $contents 1) 0) | replaceRE "(^|\n)# |\n" "" -}}
-{{- $partsText := replaceRE "^(.+?)(?: - (.+?)(?: (\\d+))?)?$" "$1;$2;$3" $pageTitle -}}
+{{- $partsText := replaceRE `^(.+?)(?: - (?:(\d+)°?|(.+?)(?: (\d+))?))?$` "$1;$3;$2$4" $pageTitle -}}
 {{- $parts := split $partsText ";" -}}
 {{- $name := index $parts 0 | replaceRE "\\\\" "" -}}
 {{- $typeText := index $parts 1 -}}

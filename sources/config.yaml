@@ -18,6 +18,10 @@ types:
     path: "/classi/operativo/specializzazioni/{{ .base }}"
   fightingstyle:
     path: "/classi/soldato/stili-di-combattimento/{{ .base }}"
+  anchor:
+    path: "/classi/stregone-del-velo/ancore/{{ .base }}"
+  paradox:
+    path: "/classi/stregone-del-velo/paradossi/{{ .base }}"
   archetype:
     path: "/archetipi/{{ .base }}"
   feat:

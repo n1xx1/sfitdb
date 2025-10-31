@@ -184,7 +184,7 @@ corrispondente e conosci la direttiva di leadership associata.
 ### Stirpe e Background
 
 Oltre alle capacità conferite dalla tua classe al 1° livello, ottieni i benefici
-della Stirpe e del Background che hai scelto.
+della stirpe e del background che hai scelto.
 
 ### Talenti da Emissario
 
