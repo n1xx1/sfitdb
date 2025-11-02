@@ -128,14 +128,4 @@ Addestrato nella difesa senz'armatura
 
 Addestrato nella CD di classe del soldato
 
-## Privilegi di Classe
-
-In quanto soldato, acquisisci i seguenti privilegi di classe. Le capacità
-ottenute ai livelli superiori riportano, accanto ai rispettivi nomi, i livelli
-richiesti per acquisirle.
-
-### Avanzamento del Soldato
-
-{{% classFeaturesTable source="/regole/player-core/classi/soldato/privilegi" %}}
-
-{{% includeAll  source="/regole/player-core/classi/soldato/privilegi" level=2 %}}
+{{% include page="/regole/player-core/classi/soldato/privilegi" %}}
