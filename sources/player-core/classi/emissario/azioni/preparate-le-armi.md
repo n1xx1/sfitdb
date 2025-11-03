@@ -12,7 +12,7 @@ navigation-hide: true
 
 Con comandi rapidi, spingi i tuoi alleati a preparare l’equipaggiamento. Tu e
 tutti gli alleati entro 9 metri potete Interagire per estrarre,
-[Cambiare Mano](/azioni/cambiare-mano) o scambiare armi come reazione.
+[Cambiare Mani](/azioni/cambiare-mani) o scambiare armi come reazione.
 
 **Dare l'Esempio** Se usi due azioni, puoi [Colpire](/azioni/colpire), usare
 [Fuoco ad Area](/azioni/fuoco-ad-area) o
