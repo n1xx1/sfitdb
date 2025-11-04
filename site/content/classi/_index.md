@@ -1,7 +1,6 @@
 ---
-source: Manuale di Gioco, pag. 69
 original-name: Classes
-original-srd: https://2e.aonprd.com/Classes.aspx
+original-srd: https://2e.aonsrd.com/classes
 navigation-order: -50
 ---
 

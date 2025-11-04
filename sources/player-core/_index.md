@@ -15,4 +15,6 @@ navigation-order: 1
 
 {{< card link="/regole/player-core/classi" title="Classi" />}}
 
+{{< card link="/regole/player-core/abilita" title="Abilità" />}}
+
 {{< /cards >}}

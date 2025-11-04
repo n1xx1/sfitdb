@@ -63,18 +63,20 @@
   {{- if .subtitle -}}
     {{- $padding = "pt-4 px-4" -}}
   {{- end -}}
-  <a
-    {{ if .link -}}
-      href="{{ $href }}"
-      {{ with $external }}target="_blank" rel="noreferrer"{{ end -}}
-    {{- end }}
-    class="hextra-linkbox-overlay flex not-prose font-semibold items-start gap-2 {{ $padding }} text-card-foreground"
-  >
-    {{- with .icon }}
-      {{ partial "utils/icon.html" (dict "name" .) -}}
-    {{- end -}}
-    {{- .title -}}
-  </a>
+  {{- if .title -}}
+    <a
+      {{ if .link -}}
+        href="{{ $href }}"
+        {{ with $external }}target="_blank" rel="noreferrer"{{ end -}}
+      {{- end }}
+      class="hextra-linkbox-overlay flex not-prose font-semibold items-start gap-2 {{ $padding }} text-card-foreground"
+    >
+      {{- with .icon }}
+        {{ partial "utils/icon.html" (dict "name" .) -}}
+      {{- end -}}
+      {{- .title -}}
+    </a>
+  {{- end -}}
   {{- with .subtitle -}}
     <div
       class="{{ if $lines -}}

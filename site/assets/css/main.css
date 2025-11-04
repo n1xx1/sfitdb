@@ -162,7 +162,7 @@ html {
 
 .pf2-icon {
   display: inline-block;
-  margin-left: 0.2rem;
+  /* margin-left: 0.2rem; */
   font-family: "pf2a";
   font-weight: normal;
   line-height: 0.9;

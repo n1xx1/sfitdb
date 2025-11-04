@@ -18,6 +18,12 @@ markup:
   tableOfContents:
     startLevel: 1
   goldmark:
+    extensions:
+      extras:
+        superscript:
+          enable: true
+        subscript:
+          enable: true
     parser:
       attribute:
         block: true

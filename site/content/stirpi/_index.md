@@ -1,7 +1,6 @@
 ---
-source: Manuale di Gioco, pag. 33
 original-name: Ancestries
-original-srd: https://2e.aonprd.com/Ancestries.aspx
+original-srd: https://2e.aonsrd.com/ancestries
 navigation-order: -30
 navigation-disable: true
 ---
