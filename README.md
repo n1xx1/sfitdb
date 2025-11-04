@@ -157,6 +157,8 @@
 
 | en                  | it                       | da    | note                  |
 | ------------------- | ------------------------ | ----- | --------------------- |
+| Additional Lore     | Sapienza Aggiuntiva      | gu pf |                       |
+| Assurance           | Garanzia                 | gu pf |                       |
 |                     |                          |       |                       |
 | Barricade           | Barricare                | us    |                       |
 |                     |                          |       |                       |
@@ -165,6 +167,7 @@
 | Experienced Tracker | Segugio Esperto          | gu pf |                       |
 |                     |                          |       |                       |
 | Face in the Crowd   | Volto tra la Folla       | us    |                       |
+| Feather Step        | Passo Morbido            | gu pf |                       |
 |                     |                          |       |                       |
 | Hologram Skeptic    | Scettico sugli Ologrammi | us    |                       |
 |                     |                          |       |                       |
@@ -176,10 +179,14 @@
 | Multilingual        | Poliglotta               | gu pf |                       |
 |                     |                          |       |                       |
 | Quick Install       | Installazione Rapida     | us    |                       |
+| Quick Jump          | Salto Rapido             | gu pf |                       |
 |                     |                          |       |                       |
 | Religious Talisman  | Talismano Religioso      | us    |                       |
 |                     |                          |       |                       |
 | Shield Block        | Parare con lo Scudo      | gu pf |                       |
+| Streetwise          | Scaltrezza Urbana        | gu pf |                       |
+|                     |                          |       |                       |
+| Titan Wrestler      | Lottatore Titanico       | gu pf |                       |
 |                     |                          |       |                       |
 | Without a Trace     | Senza Lasciare Traccia   | us    |                       |
 |                     |                          |       |                       |
@@ -288,4 +295,16 @@
 | Wall of Fire            | Muro di Fuoco              | gu pf |                           |
 | Wave of Warning         | Onda di Avvertimento       | us    |                           |
 | Warp Probability        | Distorci Probabilità       |       |                           |
-|                         |                            |       |                           |
+
+### Equipaggiamento
+
+| en              | it                   | da    | note |
+| --------------- | -------------------- | ----- | ---- |
+|                 |                      |       |      |
+| Dueling Sword   | Spada da Duello      | us    |      |
+|                 |                      |       |      |
+| Shock Truncheon | Manganello Elettrico | gu sf |      |
+| Singing Spear   | Lancia Corale        | gu sf |      |
+|                 |                      |       |      |
+| Plasma Sword    | Spada Plasma         | gu sf |      |
+|                 |                      |       |      |

@@ -3,6 +3,7 @@ source: Player Core (Eng), pag. 43
 original-name: Android Heritages
 original-srd: https://2e.aonsrd.com/ancestries/7-android/heritages
 navigation-order: 1
+navigation-disable: true
 navigation-sub-hide: true
 ---
 

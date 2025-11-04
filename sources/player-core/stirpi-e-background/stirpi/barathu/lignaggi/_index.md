@@ -3,6 +3,7 @@ source: Player Core (Eng), pag. 47
 original-name: Barathu Heritages
 original-srd: https://2e.aonsrd.com/ancestries/8-barathu/heritages
 navigation-order: 1
+navigation-disable: true
 navigation-sub-hide: true
 ---
 

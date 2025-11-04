@@ -3,6 +3,7 @@ source: Player Core (Eng), pag. 75
 original-name: Vesk Heritages
 original-srd: https://2e.aonsrd.com/ancestries/15-vesk/heritages
 navigation-order: 1
+navigation-disable: true
 navigation-sub-hide: true
 ---
 

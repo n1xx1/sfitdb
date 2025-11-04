@@ -40,11 +40,11 @@ descrizioni. Le lingue rare o segrete possono essere scoperta solo giocando.
 
 ### Lingue Comuni delle Stirpi
 
-| Lingua  | Parlanti                                                  |
-| ------- | --------------------------------------------------------- |
-| Comune  | Umani, la maggior parte dei cittadini dei Mondi del Patto |
-| Kasatha | [Kasatha](/stirpi/kasatha), abitanti di Kasath o l'Idari  |
-| Pahtra  | Pahtra                                                    |
+| Lingua  | Parlanti                                                   |
+| ------- | ---------------------------------------------------------- |
+| Comune  | Umani, la maggior parte dei cittadini dei Mondi del Patto  |
+| Kasatha | [Kasatha](/stirpi/kasatha), abitanti di Kasath o l'_Idari_ |
+| Pahtra  | Pahtra                                                     |
 
 ### Lingue Comuni Regionali
 

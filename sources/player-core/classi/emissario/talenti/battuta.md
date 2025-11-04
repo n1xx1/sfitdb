@@ -7,7 +7,7 @@ original-srd: https://2e.aonsrd.com/feats/442-pardon-me
 
 # Battuta :r: - Talento 1
 
-**Prerequisiti** addestrato in Intimidazione
+**Prerequisiti** addestrato in [Intimidazione](/abilita/intimidazione)
 
 **Innesco** una creatura entro 9 metri subisce danni da un
 [Colpo](/azioni/colpire) di un alleato.

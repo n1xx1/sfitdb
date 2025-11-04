@@ -3,6 +3,7 @@ source: Player Core (Eng), pag. 51
 original-name: Human Heritages
 original-srd: https://2e.aonsrd.com/ancestries/9-human/heritages
 navigation-order: 1
+navigation-disable: true
 navigation-sub-hide: true
 ---
 

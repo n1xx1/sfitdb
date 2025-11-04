@@ -3,6 +3,7 @@ source: Player Core (Eng), pag. 67
 original-name: Shirren Heritages
 original-srd: https://2e.aonsrd.com/ancestries/13-shirren/heritages
 navigation-order: 1
+navigation-disable: true
 navigation-sub-hide: true
 ---
 

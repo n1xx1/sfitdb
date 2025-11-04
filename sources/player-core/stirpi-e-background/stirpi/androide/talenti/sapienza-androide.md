@@ -9,10 +9,10 @@ original-srd: https://2e.aonsrd.com/feats/242-android-lore
 
 Hai un vivo interesse per le origini della tua specie. Ottieni il grado di
 competenza addestrato in [Artigianato](/abilita/artigianato) e
-[Furto](/abilita/furto). Se diventi automaticamente addestrato in una di quelle
+[Furto](/abilita/furto). Se diventi automaticamente addestrato in una di queste
 abilità (per esempio grazie al tuo background o alla tua classe), diventi invece
 addestrato in un'abilità a tua scelta.
 
-Ottieni inoltre il talento generico
+Ottieni anche il talento generico
 [Sapienza Aggiuntiva](/talenti/sapienza-aggiuntiva) per le
 [Sapienza sugli Androidi](/abilita/sapienza).

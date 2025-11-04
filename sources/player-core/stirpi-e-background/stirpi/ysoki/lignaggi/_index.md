@@ -3,6 +3,7 @@ source: Player Core (Eng), pag. 79
 original-name: Ysoki Heritages
 original-srd: https://2e.aonsrd.com/ancestries/14-ysoki/heritages
 navigation-order: 1
+navigation-disable: true
 navigation-sub-hide: true
 ---
 
