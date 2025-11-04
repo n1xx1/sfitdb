@@ -6,9 +6,10 @@ navigation-order: 1
 navigation-sub-hide: true
 ---
 
-# Lignaggi dei Frenetimandra
+# Lignaggi delle Frenetimandre
 
-Il lignaggio di un frenetimandra è influenzato dall’ambiente in cui è cresciuto
-o dal clima a cui si è adattato.
+Il lignaggio di una frenetimandra è influenzato dall’ambiente in cui è cresciuta
+o dal clima a cui si è adattata. Al 1° livello scegli uno dei seguenti lignaggi
+delle frenetimandre.
 
 {{% includeAll %}}

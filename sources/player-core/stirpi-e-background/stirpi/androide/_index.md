@@ -112,7 +112,7 @@ altro androide, sapendo che ciò porrebbe fine non solo a una vita, ma
 cancellerebbe anche le innumerevoli anime che un giorno potrebbero abitare quel
 corpo.
 
-**Nomi Tipici** Asha, Blue-17, Celita, Daniv, Emene-3, Era-4, Flick, Garro,
+**Esempi di Nomi** Asha, Blue-17, Celita, Daniv, Emene-3, Era-4, Flick, Garro,
 Historia-6, Hope-1, Iseph, Melody, Naga, Olas, Omen, Prime, Ruby-17, Stringer,
 Twenty Six, Urdun, Verity-3, Yose.
 

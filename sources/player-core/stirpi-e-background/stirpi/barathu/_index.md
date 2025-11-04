@@ -109,8 +109,8 @@ Quando corpo e memoria iniziano a svanire con l’età, molti scelgono di fonder
 definitivamente in un conglomerato, abbandonando il proprio sé individuale per
 unirsi a una coscienza e a un’esistenza più grandi.
 
-**Nomi Tipici** Atarassia, Brezza, Bolla in Volo, Dololola, Gleelee, Armonia dei
-Molti, Ixeelu, Canto Ondeggiante, Sospiro, Tempesta Decupla, Unità di Scopo,
+**Esempi di Nomi** Atarassia, Brezza, Bolla in Volo, Dololola, Gleelee, Armonia
+dei Molti, Ixeelu, Canto Ondeggiante, Sospiro, Tempesta Decupla, Unità di Scopo,
 Vortice, Meraviglia tra le Nuvole Iridescenti, Xonswe e Y.
 
 ## Credenze
@@ -123,7 +123,7 @@ chiunque tranne altri Sognatori. La visione del mondo e la religione di un
 barathu cambiano nel tempo man mano che si fonde con altri e amplia
 letteralmente la propria mente.
 
-**Editti popolari** adattarsi a nuove situazioni, modellare il corpo nella forma
+**Editti Popolari** adattarsi a nuove situazioni, modellare il corpo nella forma
 desiderata, collaborare per risolvere problemi.
 
-**Anatemi popolari** affrontare i problemi da soli.
+**Anatemi Popolari** affrontare i problemi da soli.
