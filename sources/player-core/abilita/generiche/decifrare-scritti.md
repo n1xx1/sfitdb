@@ -2,7 +2,6 @@
 source: Player Core (Eng), pag. 186
 original-name: Decipher Writing (Trained)
 original-srd: https://2e.aonsrd.com/skill-general-actions/1-decipher-writing
-navigation-order: 1
 ---
 
 # Decifrare Scritti (Addestrato)
@@ -27,3 +26,15 @@ decifrano sono:
   aliene
 
 {{% include page="/azioni/decifrare-scritti" %}}
+
+> ### Esempi di Compiti di Decifrare
+>
+> **Addestrato** un trattato base di filosofia
+>
+> **Esperto** un codice complesso, ad esempio un messaggio cifrato
+>
+> **Maestro** il cifrario di un maestro delle spie o appunti su ricerche
+> avanzate
+>
+> **Leggendario** un testo planare esoterico scritto sotto forma di metafore da
+> un essere extraplanare
