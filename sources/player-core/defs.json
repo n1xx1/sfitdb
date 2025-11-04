@@ -10,7 +10,8 @@
   ],
   "action": [
     "stirpi-e-background/stirpi/*/azioni/*",
-    "classi/{emissario,mistico,operativo,solarian,soldato,stregone-del-velo}/azioni/*"
+    "classi/{emissario,mistico,operativo,solarian,soldato,stregone-del-velo}/azioni/*",
+    "abilita/azioni/*"
   ],
   "feat": [
     "stirpi-e-background/stirpi/*/talenti/*",

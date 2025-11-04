@@ -128,6 +128,8 @@
 | Area Fire          | Fuoco ad Area            | us    | ???? |
 | Auto-Fire          | Fuoco Automatico         | us    | ???? |
 |                    |                          |       |      |
+| Drive              | Guidare                  | gu pf |      |
+|                    |                          |       |      |
 | Gather Information | Raccogliere Informazioni | gu pf |      |
 | Get 'Em            | Prendetelo               | us    |      |
 | Ghost Tap          | Colpetto Fantasma        | us    | ???? |
@@ -136,7 +138,10 @@
 |                    |                          |       |      |
 | Improvised Mastery | Maestria Improvvisata    | us    |      |
 |                    |                          |       |      |
+| Navigate           | Navigare                 | gu sf |      |
 | Network Spell      | Incantesimo di Rete      | us    |      |
+|                    |                          |       |      |
+| Plot Course        | Tracciare Rotta          | us    |      |
 |                    |                          |       |      |
 | Recall Knowledge   | Ricordare Conoscenze     | gu pf |      |
 | Refocus            | Rifocalizzare            | gu pf |      |

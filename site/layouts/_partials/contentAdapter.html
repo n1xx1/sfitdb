@@ -3,22 +3,38 @@
   {{ $path := .String }}
   {{ $book := index (index (findRESubmatch `^/sources/([a-z\-]+)/` $path 1) 0) 1 }}
   {{ range $type, $v := (transform.Unmarshal .) }}
+    {{ $typeGlobs := slice }}
     {{ range $v }}
-      {{ $glob := printf "regole/%s/%s" $book . }}
+      {{ $glob := "" }}
+      {{ $negate := false }}
+      {{ if hasPrefix . "!" }}
+        {{ $glob = printf "regole/%s/%s" $book (substr . 1) }}
+        {{ $negate = true }}
+      {{ else }}
+        {{ $glob = printf "regole/%s/%s" $book . }}
+      {{ end }}
       {{ $regex := partial "utils/globToRegex" $glob }}
-      {{ $globs = $globs | append (dict
-        "glob" $glob
+      {{ $typeGlobs = $typeGlobs | append (dict
+        "glob" .
         "regex" $regex
-        "type" $type
+        "negate" $negate
         )
       }}
     {{ end }}
+    {{ $globs = $globs | append (dict
+      "type" $type
+      "globs" (sort $typeGlobs "negate" "desc")
+      )
+    }}
   {{ end }}
 {{ end }}
 
-{{ range $globs }}
-  {{/* warnf "%s %q %q" .type .glob .regex */}}
-{{ end }}
+{{/*  {{ range $globs }}
+  {{ warnf "%s:" .type }}
+  {{ range .globs }}
+    {{ warnf " - %s %s %v" .glob .regex .negate }}
+  {{ end }}
+{{ end }}  */}}
 
 {{ $addedPages := collections.NewScratch }}
 {{ $addedResources := collections.NewScratch }}
@@ -48,10 +64,18 @@
     {{ $pftype = $params.type }}
     {{ $type = print "pf" .type }}
   {{ else }}
-    {{ range $globs }}
-      {{ if findRE .regex $path }}
-        {{ $pftype = .type }}
-        {{ $type = print "pf" .type }}
+    {{ range $g := $globs }}
+      {{ range $g.globs }}
+        {{ if findRE .regex $path }}
+          {{ if .negate }}
+            {{ break }}
+          {{ end }}
+          {{ $pftype = $g.type }}
+          {{ $type = print "pf" $g.type }}
+          {{ break }}
+        {{ end }}
+      {{ end }}
+      {{ if $type }}
         {{ break }}
       {{ end }}
     {{ end }}
