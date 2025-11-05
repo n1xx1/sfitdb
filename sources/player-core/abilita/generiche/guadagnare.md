@@ -34,24 +34,6 @@ essere parecchio superiore.
 
 {{% include page="/azioni/guadagnare" %}}
 
-> ## Esempi di Compiti di Guadagnare
->
-> Questi esempi utilizzano Pilotare per lavorare come pilota o Sapienza Legale
-> per svolgere lavori legali.
->
-> **Addestrato** consegnare rapidamente commissioni sul tuo enerciclo, svolgere
-> ricerche legali
->
-> **Esperto** pilotare una piccola nave da recupero, presentare casi minori in
-> tribunale
->
-> **Maestro** pilotare una grande nave da ricerca o un cargo, presentare cause
-> importanti in tribunale
->
-> **Leggendario** dirigere un programma di addestramento interplanetario per
-> piloti, discutere una causa contro un Embri Portavoce e la sua cerchia nel
-> loro stesso tribunale
-
 ## Mettere in Scena uno Spettacolo (Esibizione)
 
 Ti esibisci di fronte a un pubblico per denaro. Il pubblico disponibile

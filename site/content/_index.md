@@ -25,6 +25,20 @@ warranties are disclaimed as set forth therein.
 - [**Starfinder GM Core**](https://paizo.com/products/btq0bt09) © 2025 Paizo
   Inc., Authors: Jessica Catalan, Thurston Hillman. Jenny Jarzabski, Mike
   Kimmel, and Dustin Knight.
+- [**Starfinder Alien Core**](https://paizo.com/products/btq0ayxb) © 2025 Paizo
+  Inc. Authors: Kate Baker, Lau Bannenberg, Rigby Bendele, Vishesh Bhartiya,
+  Joseph Blomquist, Jeremy Blum, Tineke Bolleman, Brent Bowser, Michael Bramnik,
+  Patrick Brennan, Charlie Brooks, Jessica Catalan, Brite Cheney, Jeremy Corff,
+  Caryn DiMarco, Anthony Dollinger, Steve Fidler, Kim Frandsen, Andrew D. Geels,
+  Basheer Ghouse, Sen H.H.S., Katrina Hennessy, Thurston Hillman, Joan Hong,
+  Jenny Jarzabski, Sara Jeffers, Mikko Kallio, Lysle Kapp, Mike Kimmel, Dustin
+  Knight, Cole Kronewitter, Mahpiya, Letterio Mammoliti, Randal Meyer, Jacob W.
+  Michaels, Matt Morris, Dennis Muldoon, Quinn Murphy, Elizabeth V Nold, Chesley
+  Oxendine, Emily Parks, Glen Parnell, Randy Price, Kyle T. Raes, Jessica
+  Redekop, Erin Roberts, James Rodehaver, David N. Ross, Pidj Sorensen, Joel
+  Southall, Kendra Leigh Speedling, Drew Taylor, Sam W Tennyson, Jalen Todd,
+  Ruvaid Virk, Viditya Voleti, Christopher Wasko, Nicholas Wasko, Jackson Wery,
+  Shan Wolf, and Basil Wright.
 - [**Starfinder Murder in Metal City Deluxe Adventure**](https://paizo.com/products/btq09jzk)
   © 2025 Paizo Inc., Author: Jenny Jarzabski.
 

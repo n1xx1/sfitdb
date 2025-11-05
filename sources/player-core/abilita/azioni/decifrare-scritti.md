@@ -28,3 +28,15 @@ ulteriori prove per decifrarlo.
 
 **Fallimento Critico** Pensi di aver compreso il testo sulla pagina, ma in
 realtà lo hai frainteso
+
+> ## Esempi di Compiti di Decifrare
+>
+> **Addestrato** un trattato base di filosofia
+>
+> **Esperto** un codice complesso, ad esempio un messaggio cifrato
+>
+> **Maestro** il cifrario di un maestro delle spie o appunti su ricerche
+> avanzate
+>
+> **Leggendario** un testo planare esoterico scritto sotto forma di metafore da
+> un essere extraplanare

@@ -31,5 +31,6 @@
     "classi/stregone-del-velo/ancore",
     "classi/stregone-del-velo/paradossi"
   ],
-  "trait": ["glossario-e-indice/tratti/*"]
+  "trait": ["glossario-e-indice/tratti/*"],
+  "skill": ["abilita/abilita/*"]
 }

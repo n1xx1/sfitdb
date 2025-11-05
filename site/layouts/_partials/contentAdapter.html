@@ -29,12 +29,12 @@
   {{ end }}
 {{ end }}
 
-{{/*  {{ range $globs }}
+{{/* {{ range $globs }}
   {{ warnf "%s:" .type }}
   {{ range .globs }}
     {{ warnf " - %s %s %v" .glob .regex .negate }}
   {{ end }}
-{{ end }}  */}}
+{{ end }} */}}
 
 {{ $addedPages := collections.NewScratch }}
 {{ $addedResources := collections.NewScratch }}
@@ -64,18 +64,20 @@
     {{ $pftype = $params.type }}
     {{ $type = print "pf" .type }}
   {{ else }}
+    {{ $found := false }}
     {{ range $g := $globs }}
       {{ range $g.globs }}
         {{ if findRE .regex $path }}
           {{ if .negate }}
             {{ break }}
           {{ end }}
+          {{ $found = true }}
           {{ $pftype = $g.type }}
           {{ $type = print "pf" $g.type }}
           {{ break }}
         {{ end }}
       {{ end }}
-      {{ if $type }}
+      {{ if $found }}
         {{ break }}
       {{ end }}
     {{ end }}

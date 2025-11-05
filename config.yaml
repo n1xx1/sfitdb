@@ -3,6 +3,51 @@ languageCode: it-it
 title: Starfinder Italian Database
 menus:
   main: []
+  sidebar:
+    - name: Creazione del Personaggio
+      weight: 1
+    - name: Stirpi
+      pageRef: /stirpi
+      parent: Creazione del Personaggio
+      weight: 1
+    - name: Background
+      pageRef: /background
+      parent: Creazione del Personaggio
+      weight: 2
+    - name: Classi
+      pageRef: /classi
+      parent: Creazione del Personaggio
+      weight: 3
+    - name: Archetipi
+      pageRef: /archetipi
+      parent: Creazione del Personaggio
+      weight: 4
+    - name: Abilità
+      pageRef: /abilita
+      parent: Creazione del Personaggio
+      weight: 5
+
+    - name: Equipaggiamento
+      pageRef: /equipaggiamento
+      weight: 2
+
+    - name: Talenti
+      pageRef: /talenti
+      weight: 3
+
+    - name: Game Master
+      weight: 4
+
+    - name: Ambientazione
+      weight: 5
+
+    - name: Magia
+      weight: 6
+
+    - name: Regole
+      pageRef: /regole
+      weight: 10
+
 build:
   buildStats:
     enable: true

@@ -38,6 +38,8 @@ types:
   equipment:
     path: "/equipaggiamento/{{ .base }}"
     italic: true
+  skill:
+    path: "/abilita/{{ .base }}"
 
 repoURL: https://github.com/n1xx1/sfitdb
 repoBranch: main

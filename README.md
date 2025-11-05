@@ -167,6 +167,8 @@
 |                     |                          |       |                       |
 | Barricade           | Barricare                | us    |                       |
 |                     |                          |       |                       |
+| Continual Recovery  | Guarigione Ininterrotta  | gu pf |                       |
+|                     |                          |       |                       |
 | Deadlift            | Stacco                   | us    | forse Stacco da Terra |
 |                     |                          |       |                       |
 | Experienced Tracker | Segugio Esperto          | gu pf |                       |
@@ -193,6 +195,7 @@
 |                     |                          |       |                       |
 | Titan Wrestler      | Lottatore Titanico       | gu pf |                       |
 |                     |                          |       |                       |
+| Ward Medic          | Medico di Reparto        | gu pf |                       |
 | Without a Trace     | Senza Lasciare Traccia   | us    |                       |
 |                     |                          |       |                       |
 

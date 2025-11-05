@@ -42,7 +42,7 @@ immediatamente licenziato. Non puoi continuare il compito. La tua reputazione ne
 risente, e in futuro potrebbe esserti difficile trovare impieghi ben pagati in
 quella comunità.
 
-### Guadagni
+## Guadagni
 
 | Livello del Compito | Fallimento | Addestrato  | Esperto     | Maestro       | Leggendario   |
 | ------------------- | ---------- | ----------- | ----------- | ------------- | ------------- |
@@ -68,3 +68,21 @@ quella comunità.
 | 19                  | 60 crediti | 300 crediti | 600 crediti | 1,000 crediti | 1,300 crediti |
 | 20                  | 80 crediti | 400 crediti | 750 crediti | 1,500 crediti | 2,000 crediti |
 | 20 (critico)        | —          | 500 crediti | 900 crediti | 1,750 crediti | 3,000 crediti |
+
+> ## Esempi di Compiti di Guadagnare
+>
+> Questi esempi utilizzano Pilotare per lavorare come pilota o Sapienza Legale
+> per svolgere lavori legali.
+>
+> **Addestrato** consegnare rapidamente commissioni sul tuo enerciclo, svolgere
+> ricerche legali
+>
+> **Esperto** pilotare una piccola nave da recupero, presentare casi minori in
+> tribunale
+>
+> **Maestro** pilotare una grande nave da ricerca o un cargo, presentare cause
+> importanti in tribunale
+>
+> **Leggendario** dirigere un programma di addestramento interplanetario per
+> piloti, discutere una causa contro un Embri Portavoce e la sua cerchia nel
+> loro stesso tribunale

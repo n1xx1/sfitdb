@@ -27,22 +27,3 @@ la causa della morte, potresti dover condurre un esame forense prima di tentare
 di Richiamare Conoscenze.
 
 {{% include page="/azioni/ricordare-conoscenze" %}}
-
-> ## Esempi di Compiti di Ricordare Conoscenze
->
-> Gli esempi seguenti usano Sapienza Aziendale o Religione.
->
-> **Non Addestrato** nome di un amministratore delegato o di una divinità
-> principale
->
-> **Addestrato** nomi dei membri del consiglio di amministrazione di un’azienda,
-> dottrine principali di una divinità
->
-> **Esperto** gerarchia dei dipendenti di un’azienda, insegnamenti di una setta
-> religiosa antica
->
-> **Maestro** strutture segrete e rotte commerciali di una corporazione
-> interplanetaria, principali templi di una divinità nello Spazio Vicino
->
-> **Leggendario** basi segrete di un produttore elusivo di armi biologiche,
-> dottrine riservate di una religione, luoghi sacri remoti nell'Immensità
