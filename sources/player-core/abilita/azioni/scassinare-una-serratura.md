@@ -15,7 +15,7 @@ original-srd: https://2e.aonsrd.com/actions/109-pick-a-lock
 Aprire una serratura o un lucchetto senza averne la chiave è simile a
 [Disattivare un Congegno](/azioni/disattivare-un-congegno), ma la CD della prova
 dipende da com’è costruito e da quant’è complesso il lucchetto
-([<span class="no-underline">i lucchetti e le loro CD</span>](/equipaggiamento/lucchetto)).
+(<span class="*:not-italic!">[i lucchetti e le loro CD](/equipaggiamento/lucchetto)</span>).
 Le serrature (o lucchetti) di qualità superiore potrebbero richiedere più di un
 successo per essere scassinate. Se non hai gli strumenti adatti, il GM potrebbe
 permetterti di usare dei grimaldelli improvvisati, che sono considerati come
