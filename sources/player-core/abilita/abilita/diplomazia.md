@@ -15,7 +15,7 @@ chiacchierando amichevolmente.
 
 {{% include page="/azioni/richiedere" %}}
 
-> ## Cambiare Atteggiamento
+> ## Cambiare Atteggiamenti
 >
 > La tua influenza su un PNG è misurata da un insieme di atteggiamenti che
 > riflettono come esso vede il tuo personaggio. Quanto segue è solo un breve

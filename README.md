@@ -160,44 +160,47 @@
 
 ### Talenti
 
-| en                  | it                       | da    | note                  |
-| ------------------- | ------------------------ | ----- | --------------------- |
-| Additional Lore     | Sapienza Aggiuntiva      | gu pf |                       |
-| Assurance           | Garanzia                 | gu pf |                       |
-|                     |                          |       |                       |
-| Barricade           | Barricare                | us    |                       |
-|                     |                          |       |                       |
-| Continual Recovery  | Guarigione Ininterrotta  | gu pf |                       |
-|                     |                          |       |                       |
-| Deadlift            | Stacco                   | us    | forse Stacco da Terra |
-|                     |                          |       |                       |
-| Experienced Tracker | Segugio Esperto          | gu pf |                       |
-|                     |                          |       |                       |
-| Face in the Crowd   | Volto tra la Folla       | us    |                       |
-| Feather Step        | Passo Morbido            | gu pf |                       |
-|                     |                          |       |                       |
-| Hologram Skeptic    | Scettico sugli Ologrammi | us    |                       |
-|                     |                          |       |                       |
-| Intimidating Shot   | Sparo Intimidatorio      | us    |                       |
-|                     |                          |       |                       |
-| Just Kidding!       | Stava Scherzando!        | us    |                       |
-|                     |                          |       |                       |
-| Management Material | Stoffa da Dirigente      | us    |                       |
-| Multilingual        | Poliglotta               | gu pf |                       |
-|                     |                          |       |                       |
-| Quick Install       | Installazione Rapida     | us    |                       |
-| Quick Jump          | Salto Rapido             | gu pf |                       |
-|                     |                          |       |                       |
-| Religious Talisman  | Talismano Religioso      | us    |                       |
-|                     |                          |       |                       |
-| Shield Block        | Parare con lo Scudo      | gu pf |                       |
-| Streetwise          | Scaltrezza Urbana        | gu pf |                       |
-|                     |                          |       |                       |
-| Titan Wrestler      | Lottatore Titanico       | gu pf |                       |
-|                     |                          |       |                       |
-| Ward Medic          | Medico di Reparto        | gu pf |                       |
-| Without a Trace     | Senza Lasciare Traccia   | us    |                       |
-|                     |                          |       |                       |
+| en                  | it                             | da    | note                  |
+| ------------------- | ------------------------------ | ----- | --------------------- |
+| Additional Lore     | Sapienza Aggiuntiva            | gu pf |                       |
+| Assurance           | Garanzia                       | gu pf |                       |
+|                     |                                |       |                       |
+| Barricade           | Barricare                      | us    |                       |
+|                     |                                |       |                       |
+| Continual Recovery  | Guarigione Ininterrotta        | gu pf |                       |
+|                     |                                |       |                       |
+| Deadlift            | Stacco                         | us    | forse Stacco da Terra |
+|                     |                                |       |                       |
+| Experienced Tracker | Segugio Esperto                | gu pf |                       |
+|                     |                                |       |                       |
+| Face in the Crowd   | Volto tra la Folla             | us    |                       |
+| Feather Step        | Passo Morbido                  | gu pf |                       |
+|                     |                                |       |                       |
+| Hologram Skeptic    | Scettico sugli Ologrammi       | us    |                       |
+|                     |                                |       |                       |
+| Intimidating Shot   | Sparo Intimidatorio            | us    |                       |
+|                     |                                |       |                       |
+| Just Kidding!       | Stava Scherzando!              | us    |                       |
+|                     |                                |       |                       |
+| Magical Crafting    | Fabbricare Oggetti Magici      | gu pf |                       |
+| Management Material | Stoffa da Dirigente            | us    |                       |
+| Multilingual        | Poliglotta                     | gu pf |                       |
+|                     |                                |       |                       |
+| Quick Install       | Installazione Rapida           | us    |                       |
+| Quick Jump          | Salto Rapido                   | gu pf |                       |
+|                     |                                |       |                       |
+| Religious Talisman  | Talismano Religioso            | us    |                       |
+|                     |                                |       |                       |
+| Serum Crafting      | Fabbricare Sieri               | us    |                       |
+| Shield Block        | Parare con lo Scudo            | gu pf |                       |
+| Streetwise          | Scaltrezza Urbana              | gu pf |                       |
+|                     |                                |       |                       |
+| Tech Crafting       | Fabbricare Oggetti Tecnologici | us    |                       |
+| Titan Wrestler      | Lottatore Titanico             | gu pf |                       |
+|                     |                                |       |                       |
+| Ward Medic          | Medico di Reparto              | gu pf |                       |
+| Without a Trace     | Senza Lasciare Traccia         | us    |                       |
+|                     |                                |       |                       |
 
 ### Incantesimi
 
