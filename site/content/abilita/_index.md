@@ -21,28 +21,20 @@ con nuove abilità e nuovi usi per le abilità esistenti.
 
 {{< card link="/abilita/generiche" title="Abilità Generiche" >}}
 
-[Decifrare Scritti](/azioni/decifrare-scritti)
-
-[Guadagnare](/azioni/guadagnare)
-
-[Identificare Magia](/azioni/identificare-magia)
-
-[Imparare un Incantesimo](/azioni/imparare-un-incantesimo)
-
-[Ricordare Conoscenze :a:](/azioni/ricordare-conoscenze)
-
+[Decifrare Scritti](/azioni/decifrare-scritti),
+[Guadagnare](/azioni/guadagnare),
+[Identificare Magia](/azioni/identificare-magia),
+[Imparare un Incantesimo](/azioni/imparare-un-incantesimo),
+[Ricordare Conoscenze :a:](/azioni/ricordare-conoscenze),
 [Sopravvivere](/azioni/sopravvivere)
 
 {{< /card >}}
 
 {{< card link="/abilita/acrobazia" title="Acrobazia (Des)" >}}
 
-[Bilanciarsi :a:](/azioni/bilanciarsi)
-
-[Destreggiarsi :a:](/azioni/destreggiarsi)
-
-[Manovrare in Volo :a:](/azioni/manovrare-in-volo)
-
+[Bilanciarsi :a:](/azioni/bilanciarsi),
+[Destreggiarsi :a:](/azioni/destreggiarsi),
+[Manovrare in Volo :a:](/azioni/manovrare-in-volo),
 [Stringersi](/azioni/stringersi)
 
 {{< /card >}}
@@ -55,54 +47,35 @@ con nuove abilità e nuovi usi per le abilità esistenti.
 
 {{< card link="/abilita/artigianato" title="Artigianato (Int)" >}}
 
-[Riparare :a:](/azioni/riparare)
-
-[Fabbricare](/azioni/fabbricare)
+[Riparare :a:](/azioni/riparare), [Fabbricare](/azioni/fabbricare)
 
 {{< /card >}}
 
 {{< card link="/abilita/atletica" title="Atletica (For)" >}}
 
-[Disarmare :a:](/azioni/disarmare)
-
-[Forzare :a:](/azioni/forzare)
-
-[Lottare :a:](/azioni/lottare)
-
-[Nuotare :a:](/azioni/nuotare)
-
-[Riposizionare :a:](/azioni/riposizionare)
-
-[Salto in Alto :aa:](/azioni/salto-in-alto)
-
-[Salto in Lungo :aa:](/azioni/salto-in-lungo)
-
-[Sbilanciare :a:](/azioni/sbilanciare)
-
-[Scalare :a:](/azioni/scalare)
-
+[Disarmare :a:](/azioni/disarmare), [Forzare :a:](/azioni/forzare),
+[Lottare :a:](/azioni/lottare), [Nuotare :a:](/azioni/nuotare),
+[Riposizionare :a:](/azioni/riposizionare),
+[Salto in Alto :aa:](/azioni/salto-in-alto),
+[Salto in Lungo :aa:](/azioni/salto-in-lungo),
+[Sbilanciare :a:](/azioni/sbilanciare), [Scalare :a:](/azioni/scalare),
 [Spingere :a:](/azioni/spingere)
 
 {{< /card >}}
 
 {{< card link="/abilita/computer" title="Computer (Int)" >}}
 
-[Accedere all'Infosfera](/azioni/accedere-all-infosfera)
-
-[Disattivare un Congegno :aa:](/azioni/disattivare-un-congegno)
-
-[Hackerare](/azioni/hackerare)
-
+[Accedere all'Infosfera](/azioni/accedere-all-infosfera),
+[Disattivare un Congegno :aa:](/azioni/disattivare-un-congegno),
+[Hackerare](/azioni/hackerare),
 [Operare Dispositivo](/azioni/operare-dispositivo)
 
 {{< /card >}}
 
 {{< card link="/abilita/diplomazia" title="Diplomazia (Car)" >}}
 
-[Impressionare](/azioni/impressionare)
-
-[Raccogliere Informazioni](/azioni/raccogliere-informazioni)
-
+[Impressionare](/azioni/impressionare),
+[Raccogliere Informazioni](/azioni/raccogliere-informazioni),
 [Richiedere :a:](/azioni/richiedere)
 
 {{< /card >}}
@@ -115,54 +88,40 @@ con nuove abilità e nuovi usi per le abilità esistenti.
 
 {{< card link="/abilita/furtivita" title="Furtività (Des)" >}}
 
-[Muoversi Furtivamente :a:](/azioni/muoversi-furtivamente)
-
-[Nascondere un Oggetto :a:](/azioni/nascondere-un-oggetto)
-
+[Muoversi Furtivamente :a:](/azioni/muoversi-furtivamente),
+[Nascondere un Oggetto :a:](/azioni/nascondere-un-oggetto),
 [Nascondersi :a:](/azioni/nascondersi)
 
 {{< /card >}}
 
 {{< card link="/abilita/furto" title="Furto (Des)" >}}
 
-[Disattivare un Congegno :aa:](/azioni/disattivare-un-congegno)
-
-[Nascondere nella Mano :a:](/azioni/nascondere-nella-mano)
-
-[Rubare :a:](/azioni/rubare)
-
+[Disattivare un Congegno :aa:](/azioni/disattivare-un-congegno),
+[Nascondere nella Mano :a:](/azioni/nascondere-nella-mano),
+[Rubare :a:](/azioni/rubare),
 [Scassinare una Serratura :aa:](/azioni/scassinare-una-serratura)
 
 {{< /card >}}
 
 {{< card link="/abilita/inganno" title="Inganno (Car)" >}}
 
-[Creare un Diversivo :a:](/azioni/creare-un-diversivo)
-
-[Fintare :a:](/azioni/fintare)
-
-[Impersonare](/azioni/impersonare)
-
+[Creare un Diversivo :a:](/azioni/creare-un-diversivo),
+[Fintare :a:](/azioni/fintare), [Impersonare](/azioni/impersonare),
 [Mentire](/azioni/mentire)
 
 {{< /card >}}
 
 {{< card link="/abilita/intimidazione" title="Intimidazione (Car)" >}}
 
-[Costringere](/azioni/costringere)
-
-[Demoralizzare :a:](/azioni/demoralizzare)
+[Costringere](/azioni/costringere), [Demoralizzare :a:](/azioni/demoralizzare)
 
 {{< /card >}}
 
 {{< card link="/abilita/medicina" title="Medicina (Sag)" >}}
 
-[Curare Ferite](/azioni/curare-ferite)
-
-[Curare Malattia](/azioni/curare-malattia)
-
-[Curare Veleno :a:](/azioni/curare-veleno)
-
+[Curare Ferite](/azioni/curare-ferite),
+[Curare Malattia](/azioni/curare-malattia),
+[Curare Veleno :a:](/azioni/curare-veleno),
 [Prestare Primo Soccorso :aa:](/azioni/prestare-primo-soccorso)
 
 {{< /card >}}
@@ -177,18 +136,11 @@ con nuove abilità e nuovi usi per le abilità esistenti.
 
 {{< card link="/abilita/pilotare" title="Pilotare (Des)" >}}
 
-[Fermarsi :a:](/azioni/fermarsi)
-
-[Guidare :a: a :aaa:](/azioni/guidare)
-
-[Investire :aaa:](/azioni/investire)
-
-[Manovra Azzardata :a:](/azioni/manovra-azzardata)
-
-[Navigare](/azioni/navigare)
-
-[Prendere il Controllo :a:](/azioni/prendere-il-controllo)
-
+[Fermarsi :a:](/azioni/fermarsi), [Guidare :a: a :aaa:](/azioni/guidare),
+[Investire :aaa:](/azioni/investire),
+[Manovra Azzardata :a:](/azioni/manovra-azzardata),
+[Navigare](/azioni/navigare),
+[Prendere il Controllo :a:](/azioni/prendere-il-controllo),
 [Tracciare Rotta](/azioni/tracciare-rotta)
 
 {{< /card >}}
@@ -205,10 +157,8 @@ con nuove abilità e nuovi usi per le abilità esistenti.
 
 {{< card link="/abilita/sopravvivenza" title="Sopravvivenza (Sag)" >}}
 
-[Trovare la Direzione](/azioni/trovare-la-direzione)
-
-[Coprire Tracce](/azioni/coprire-tracce)
-
+[Trovare la Direzione](/azioni/trovare-la-direzione),
+[Coprire Tracce](/azioni/coprire-tracce),
 [Seguire Tracce](/azioni/seguire-tracce)
 
 {{< /card >}}

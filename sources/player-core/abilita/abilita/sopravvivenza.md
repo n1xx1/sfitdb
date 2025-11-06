@@ -16,6 +16,17 @@ per Sopravvivere.
 
 {{% include page="/azioni/trovare-la-direzione" %}}
 
+> ## Attraversare nella Giungla di Neon
+>
+> Le città possono essere difficili da attraversare, anche con l’uso di mappe
+> digitali. Costruzioni, demolizioni, deviazioni e traffico sono comuni negli
+> insediamenti densamente popolati, come una stazione spaziale affollata in un
+> sistema molto frequentato o una colonia mineraria remota su un pianeta
+> pericoloso con un’atmosfera tossica. Un navigatore digitale aggiornato può
+> bastare per una navigazione semplice, ma probabilmente non rileverà tutti i
+> percorsi e scorciatoie che richiedono una prova di Senso dell’Orientamento per
+> essere trovati senza una guida locale.
+
 ## Azioni con Addestramento di Sopravvivenza
 
 {{% include page="/azioni/coprire-tracce" %}}

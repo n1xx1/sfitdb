@@ -39,7 +39,7 @@ Ad esempio, mentre si trova a bordo di un’astronave diretta verso un mondo
 lontano, il tuo personaggio potrebbe individuare una rotta più rapida attraverso
 un campo di asteroidi inesplorato. Decidi di tentare, ma il GM dichiara che si
 tratta di un compito pericoloso e ti chiede di effettuare una prova di abilità
-di Pilotaggio (poiché la navigazione rientra in questa abilità). Consultando la
+di Pilotare (poiché la navigazione rientra in questa abilità). Consultando la
 scheda, scopri che il tuo PG ha modificatore +8 a questo tipo di prova. Tiri il
 d20 ed ottieni 18, per un totale di 26. Il GM confronta il risultato con la CD
 della prova (che era 16) e scopre che hai ottenuto un successo critico (perché
