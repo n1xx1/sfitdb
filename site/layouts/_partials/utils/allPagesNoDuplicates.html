@@ -1,0 +1,9 @@
+{{- $pages := slice -}}
+{{- range site.AllPages -}}
+  {{ $permalink := .RelPermalink | replaceRE "/$" "" }}
+  {{ if and .Params.canonicalURL (ne $permalink .Params.canonicalURL) }}
+    {{ continue }}
+  {{ end }}
+  {{- $pages = $pages | append . -}}
+{{- end -}}
+{{- return $pages -}}

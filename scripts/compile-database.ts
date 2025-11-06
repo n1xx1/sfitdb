@@ -50,7 +50,24 @@ function startWatcher() {
   });
 }
 
+let rebuildingPromise: Promise<void> | null = null;
+
 async function rebuildDatabase() {
+  if (rebuildingPromise) {
+    await rebuildingPromise;
+  }
+
+  await (rebuildingPromise = (async () => {
+    try {
+      await rebuildDatabaseImpl();
+    } catch (e) {
+      console.warn("Rebuild failed");
+      console.warn(e);
+    }
+  })());
+}
+
+async function rebuildDatabaseImpl() {
   console.log(`Rebuilding database...`);
 
   await unlink("./database.db").catch(() => Promise.resolve());

@@ -15,7 +15,8 @@
   ],
   "feat": [
     "2-stirpi-e-background/stirpi/*/talenti/*",
-    "3-classi/{emissario,mistico,operativo,solarian,soldato,stregone-del-velo}/talenti/*"
+    "3-classi/{emissario,mistico,operativo,solarian,soldato,stregone-del-velo}/talenti/*",
+    "5-talenti/*/*"
   ],
   "leadershipstyle": ["3-classi/emissario/stili-di-leadership/*"],
   "fightingstyle": ["3-classi/soldato/stili-di-combattimento/*"],

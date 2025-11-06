@@ -1,0 +1,32 @@
+{{- $pages := partialCached "pf/getPages" (dict
+  "context" .context
+  "source" .source
+  "filter" .filter
+  "sort" .sort
+  ) .context.Path .source .filter .sort
+-}}
+<table>
+  <thead>
+    <tr>
+      <th>{{ .title }}</th>
+      <th class="text-center">Liv.</th>
+      <th>Prerequisiti</th>
+      <th>Benefici</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{- range $pages -}}
+      {{- $title := partialCached "utils/title" . .Path -}}
+      <tr>
+        <td>
+          <a href="{{ .RelPermalink | replaceRE `/$` `` }}">
+            {{- $title.name | partial "icons" -}}
+          </a>
+        </td>
+        <td class="text-center">{{ $title.level }}</td>
+        <td>{{ .Params.featPrerequisites }}</td>
+        <td>{{ .Params.shortDescription }}</td>
+      </tr>
+    {{- end -}}
+  </tbody>
+</table>

@@ -153,6 +153,7 @@
 | Strike             | Colpo                    | gu pf |      |
 | Switch Hands       | Cambiare Mani            | us    | ???? |
 |                    |                          |       |      |
+| Take Cover         | Andare in Copertura      | gu pf |      |
 | Transfer Vitality  | Trasferisci Vitalità     | us    |      |
 |                    |                          |       |      |
 | Umbral Stride      | Avanzata Ombratile       | us    |      |
@@ -164,6 +165,7 @@
 | ------------------- | ------------------------------ | ----- | --------------------- |
 | Additional Lore     | Sapienza Aggiuntiva            | gu pf |                       |
 | Assurance           | Garanzia                       | gu pf |                       |
+| Augmented Body      | Corpo Impiantato               | us    | ???                   |
 |                     |                                |       |                       |
 | Barricade           | Barricare                      | us    |                       |
 |                     |                                |       |                       |

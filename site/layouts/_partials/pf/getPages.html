@@ -14,7 +14,8 @@
   {{ end }}
   {{ range $source }}
     {{ if eq . "*" }}
-      {{ $pages = $pages | append site.AllPages }}
+      {{ $allPages := partialCached "utils/allPagesNoDuplicates" "" "" }}
+      {{ $pages = $pages | append $allPages }}
     {{ else if eq . "~" }}
       {{ $pages = $pages | append $context.Pages }}
     {{ else }}

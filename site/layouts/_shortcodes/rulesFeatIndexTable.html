@@ -1,0 +1,24 @@
+{{- $title := "Talento" -}}
+{{- if and .IsNamedParams (isset .Params "title") -}}
+  {{- $title = .Params.title -}}
+{{- end -}}
+{{- $source := "~" -}}
+{{- if and .IsNamedParams (isset .Params "source") -}}
+  {{- $source = transform.Unmarshal (dict "format" "yaml") .Params.source -}}
+{{- end -}}
+{{- $filter := dict -}}
+{{- if and .IsNamedParams (isset .Params "filter") -}}
+  {{- $filter = transform.Unmarshal (dict "format" "yaml") .Params.filter -}}
+{{- end -}}
+{{- $sort := slice -}}
+{{- if and .IsNamedParams (isset .Params "sort") -}}
+  {{- $sort = transform.Unmarshal (dict "format" "yaml") .Params.sort -}}
+{{- end -}}
+{{- partial "shortcodes/rulesFeatIndexTable" (dict
+  "context" .Page
+  "title" $title
+  "source" $source
+  "filter" $filter
+  "sort" $sort
+  )
+-}}
