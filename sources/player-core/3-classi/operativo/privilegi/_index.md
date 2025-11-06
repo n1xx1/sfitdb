@@ -12,6 +12,6 @@ richiesti per acquisirle.
 
 ## Avanzamento del Operativo
 
-{{% classFeaturesTable source="/regole/player-core/classi/operativo/privilegi" %}}
+{{% classFeaturesTable source="/regole/player-core/3-classi/operativo/privilegi" %}}
 
-{{% includeAll source="/regole/player-core/classi/operativo/privilegi" %}}
+{{% includeAll source="/regole/player-core/3-classi/operativo/privilegi" %}}

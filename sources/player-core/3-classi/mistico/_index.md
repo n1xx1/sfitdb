@@ -120,4 +120,4 @@ Addestrato nella difesa senz'armatura
 
 Addestrato nella CD di classe del mistico
 
-{{% include page="/regole/player-core/classi/mistico/privilegi" %}}
+{{% include page="/regole/player-core/3-classi/mistico/privilegi" %}}

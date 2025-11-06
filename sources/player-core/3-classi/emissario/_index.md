@@ -123,4 +123,4 @@ Addestrato nella difesa senz'armatura
 
 Addestrato nella CD di classe dell'emissario
 
-{{% include page="/regole/player-core/classi/emissario/privilegi" %}}
+{{% include page="/regole/player-core/3-classi/emissario/privilegi" %}}

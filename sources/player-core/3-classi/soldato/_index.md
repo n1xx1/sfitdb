@@ -128,4 +128,4 @@ Addestrato nella difesa senz'armatura
 
 Addestrato nella CD di classe del soldato
 
-{{% include page="/regole/player-core/classi/soldato/privilegi" %}}
+{{% include page="/regole/player-core/3-classi/soldato/privilegi" %}}

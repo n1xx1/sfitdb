@@ -6,4 +6,4 @@ original-srd: https://2e.aonsrd.com/skill-general-actions
 
 # Abilità Generiche
 
-{{% includeAll source="/regole/player-core/abilita/generiche" %}}
+{{% includeAll source="/regole/player-core/4-abilita/generiche" %}}

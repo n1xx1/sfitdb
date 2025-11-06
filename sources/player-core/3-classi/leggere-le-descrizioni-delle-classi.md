@@ -45,7 +45,7 @@ velo può scegliere tra Intelligenza e Carisma come attributo chiave.
 Inoltre, quando scegli la classe del personaggio, questi ottiene un aumento del
 suo modificatore di attributo chiave, che viene incrementato di 1. Per maggiori
 dettagli sugli aumenti di attributo, vedi
-[Passaggio 6: Determina i Modificatori di Attributo](/regole/player-core/introduzione)
+[Passaggio 6: Determina i Modificatori di Attributo](/regole/player-core/1-introduzione)
 
 ## Punti Ferita
 
@@ -62,7 +62,7 @@ Ogni volta che avanza di livello, un personaggio somma ai propri Punti Ferita
 massimi il valore riportato in questa voce. Per maggiori informazioni su come
 calcolare il modificatore di Costituzione del personaggio e determinare i suoi
 Punti Ferita, vedi
-[Passaggio 7: Registra i Dettagli della Classe](/regole/player-core/introduzione).
+[Passaggio 7: Registra i Dettagli della Classe](/regole/player-core/1-introduzione).
 
 ## Competenze Iniziali
 
@@ -90,7 +90,7 @@ personaggio è addestrato in Percezione, un tiro salvezza o un’altra statistic
 ottiene bonus di competenza pari al suo livello +2, mentre se ha il grado
 esperto, ottiene bonus pari al suo livello +4. Per maggiori informazioni sui
 gradi di competenza, vedi
-[Passaggio 9: Calcola i Modificatori](/regole/player-core/introduzione).
+[Passaggio 9: Calcola i Modificatori](/regole/player-core/1-introduzione).
 
 Le classi degli incantatori conferiscono un grado di competenza con tiri per
 colpire con incantesimo e CD di incantesimo; troverai maggiori informazioni in
@@ -121,7 +121,7 @@ sono comuni a tutte le classi, ma ciascuna presenta anche speciali capacità
 esclusive. Molti privilegi di classe richiedono di scegliere tra varie opzioni.
 A meno che non sia esplicitamente indicato altrimenti, queste decisioni possono
 essere modificate solo tramite
-[riaddestramento](/regole/player-core/giocare#riaddestramento).
+[riaddestramento](/regole/player-core/8-giocare#riaddestramento).
 
 ### Talenti di Classe
 
@@ -135,7 +135,7 @@ termine della sua descrizione.
 
 Questa sezione indica a quali livelli il tuo personaggio acquisisce i talenti
 con il tratto abilità, denominati talenti di abilità e presentati nel
-[Capitolo 5: Talenti](/regole/player-core/talenti). Al 2° livello, e
+[Capitolo 5: Talenti](/regole/player-core/5-talenti). Al 2° livello, e
 successivamente ogni 2 livelli, gran parte delle classi conferisce un talento di
 abilità, sebbene le canaglie li ottengano prima e più spesso. Per acquisire un
 talento di abilità, il tuo personaggio deve essere addestrato nell’abilità
@@ -148,7 +148,7 @@ generici. Gran parte delle classi conferisce un talento generico al 3° livello 
 quindi ogni 4 livelli. Quando raggiungi uno di questi livelli, puoi selezionare
 qualsiasi talento generico (compresi quelli di abilità), purché il tuo
 personaggio ne soddisfi i prerequisiti. Per maggiori informazioni vedi il
-[Capitolo 5: Talenti](/regole/player-core/talenti).
+[Capitolo 5: Talenti](/regole/player-core/5-talenti).
 
 ### Incrementi di Abilità
 
@@ -170,7 +170,7 @@ Al 5° livello e successivamente ogni 5 livelli, il tuo personaggio aumenta
 quattro diversi modificatori di attributo. Questo è descritto brevemente nella
 sezione della classe. Per i dettagli completi sui modificatori di attributo e su
 come applicarli durante la creazione del personaggio, consulta il
-[Passaggio 6: Determina i Modificatori di Attributo](/regole/player-core/introduzione).
+[Passaggio 6: Determina i Modificatori di Attributo](/regole/player-core/1-introduzione).
 
 ### Talenti di Stirpe
 

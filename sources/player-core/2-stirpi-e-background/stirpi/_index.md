@@ -15,6 +15,6 @@ lontani!
 
 {{< cards cols=2 >}}
 
-{{% listCards source=`/regole/player-core/stirpi-e-background/stirpi` %}}
+{{% listCards source=`/regole/player-core/2-stirpi-e-background/stirpi` %}}
 
 {{< /cards >}}

@@ -134,6 +134,6 @@ livelli richiesti per acquisirle.
 
 ### Avanzamento dello Stregone del Velo
 
-{{% classFeaturesTable source="/regole/player-core/classi/stregone-del-velo/privilegi" %}}
+{{% classFeaturesTable source="/regole/player-core/3-classi/stregone-del-velo/privilegi" %}}
 
-{{% includeAll  source="/regole/player-core/classi/stregone-del-velo/privilegi" level=2 %}}
+{{% includeAll  source="/regole/player-core/3-classi/stregone-del-velo/privilegi" level=2 %}}

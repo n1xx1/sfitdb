@@ -12,6 +12,6 @@ richiesti per acquisirle.
 
 ## Avanzamento del Solarian
 
-{{% classFeaturesTable source="/regole/player-core/classi/solarian/privilegi" %}}
+{{% classFeaturesTable source="/regole/player-core/3-classi/solarian/privilegi" %}}
 
-{{% includeAll source="/regole/player-core/classi/solarian/privilegi" %}}
+{{% includeAll source="/regole/player-core/3-classi/solarian/privilegi" %}}

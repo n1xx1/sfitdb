@@ -130,4 +130,4 @@ Addestrato nella difesa senz'armatura
 
 Addestrato nella CD di classe dell'operativo
 
-{{% include page="/regole/player-core/classi/operativo/privilegi" %}}
+{{% include page="/regole/player-core/3-classi/operativo/privilegi" %}}

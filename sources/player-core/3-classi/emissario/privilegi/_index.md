@@ -12,6 +12,6 @@ richiesti per acquisirle.
 
 ## Avanzamento dell'Emissario
 
-{{% classFeaturesTable source="/regole/player-core/classi/emissario/privilegi" %}}
+{{% classFeaturesTable source="/regole/player-core/3-classi/emissario/privilegi" %}}
 
-{{% includeAll source="/regole/player-core/classi/emissario/privilegi" %}}
+{{% includeAll source="/regole/player-core/3-classi/emissario/privilegi" %}}

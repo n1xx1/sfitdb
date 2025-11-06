@@ -15,7 +15,7 @@ tuo personaggio in esse dipende da vari fattori, come il suo background e la sua
 classe. In questo capitolo scoprirai le nuove opzioni di abilità in Starfinder,
 con nuove abilità e nuovi usi per le abilità esistenti.
 
-[Regole complete per le abilità](/regole/player-core/abilita).
+[Regole complete per le abilità](/regole/player-core/4-abilita).
 
 {{< cards cols=1 >}}
 

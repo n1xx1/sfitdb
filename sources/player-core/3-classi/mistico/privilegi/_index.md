@@ -12,6 +12,6 @@ richiesti per acquisirle.
 
 ### Avanzamento del Mistico
 
-{{% classFeaturesTable source="/regole/player-core/classi/mistico/privilegi" %}}
+{{% classFeaturesTable source="/regole/player-core/3-classi/mistico/privilegi" %}}
 
-{{% includeAll source="/regole/player-core/classi/mistico/privilegi" %}}
+{{% includeAll source="/regole/player-core/3-classi/mistico/privilegi" %}}

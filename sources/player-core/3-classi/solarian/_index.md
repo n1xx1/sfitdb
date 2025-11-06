@@ -149,4 +149,4 @@ Addestrato nella CD di classe del solarian
 > migliorano o modificano le tue manifestazioni solari (brillamento, nembo, e
 > arma) o ti permettono di crearne di nuove.
 
-{{% include page="/regole/player-core/classi/solarian/privilegi" %}}
+{{% include page="/regole/player-core/3-classi/solarian/privilegi" %}}

@@ -12,6 +12,6 @@ richiesti per acquisirle.
 
 ## Avanzamento del Soldato
 
-{{% classFeaturesTable source="/regole/player-core/classi/soldato/privilegi" %}}
+{{% classFeaturesTable source="/regole/player-core/3-classi/soldato/privilegi" %}}
 
-{{% includeAll  source="/regole/player-core/classi/soldato/privilegi" level=2 %}}
+{{% includeAll  source="/regole/player-core/3-classi/soldato/privilegi" level=2 %}}

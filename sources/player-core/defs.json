@@ -1,36 +1,36 @@
 {
-  "ancestry": ["stirpi-e-background/stirpi/*"],
-  "heritage": ["stirpi-e-background/stirpi/*/lignaggi/*"],
-  "background": ["stirpi-e-background/background/*"],
+  "ancestry": ["2-stirpi-e-background/stirpi/*"],
+  "heritage": ["2-stirpi-e-background/stirpi/*/lignaggi/*"],
+  "background": ["2-stirpi-e-background/background/*"],
   "class": [
-    "classi/{emissario,mistico,operativo,solarian,soldato,stregone-del-velo}"
+    "3-classi/{emissario,mistico,operativo,solarian,soldato,stregone-del-velo}"
   ],
   "archetype": [
-    "classi/archetipi/{emissario,mistico,operativo,solarian,soldato,stregone-del-velo}"
+    "3-classi/archetipi/{emissario,mistico,operativo,solarian,soldato,stregone-del-velo}"
   ],
   "action": [
-    "stirpi-e-background/stirpi/*/azioni/*",
-    "classi/{emissario,mistico,operativo,solarian,soldato,stregone-del-velo}/azioni/*",
-    "abilita/azioni/*"
+    "2-stirpi-e-background/stirpi/*/azioni/*",
+    "3-classi/{emissario,mistico,operativo,solarian,soldato,stregone-del-velo}/azioni/*",
+    "4-abilita/azioni/*"
   ],
   "feat": [
-    "stirpi-e-background/stirpi/*/talenti/*",
-    "classi/{emissario,mistico,operativo,solarian,soldato,stregone-del-velo}/talenti/*"
+    "2-stirpi-e-background/stirpi/*/talenti/*",
+    "3-classi/{emissario,mistico,operativo,solarian,soldato,stregone-del-velo}/talenti/*"
   ],
-  "leadershipstyle": ["classi/emissario/stili-di-leadership/*"],
-  "fightingstyle": ["classi/soldato/stili-di-combattimento/*"],
-  "connection": ["classi/mistico/connessioni/*"],
-  "specialization": ["classi/operativo/specializzazioni/*"],
-  "anchor": ["classi/stregone-del-velo/ancore/*"],
-  "paradox": ["classi/stregone-del-velo/paradossi/*"],
+  "leadershipstyle": ["3-classi/emissario/stili-di-leadership/*"],
+  "fightingstyle": ["3-classi/soldato/stili-di-combattimento/*"],
+  "connection": ["3-classi/mistico/connessioni/*"],
+  "specialization": ["3-classi/operativo/specializzazioni/*"],
+  "anchor": ["3-classi/stregone-del-velo/ancore/*"],
+  "paradox": ["3-classi/stregone-del-velo/paradossi/*"],
   "classfeature": [
-    "classi/emissario/stili-di-leadership",
-    "classi/mistico/connessioni",
-    "classi/operativo/specializzazioni",
-    "classi/soldato/stili-di-combattimento",
-    "classi/stregone-del-velo/ancore",
-    "classi/stregone-del-velo/paradossi"
+    "3-classi/emissario/stili-di-leadership",
+    "3-classi/mistico/connessioni",
+    "3-classi/operativo/specializzazioni",
+    "3-classi/soldato/stili-di-combattimento",
+    "3-classi/stregone-del-velo/ancore",
+    "3-classi/stregone-del-velo/paradossi"
   ],
   "trait": ["glossario-e-indice/tratti/*"],
-  "skill": ["abilita/abilita/*"]
+  "skill": ["4-abilita/abilita/*"]
 }
