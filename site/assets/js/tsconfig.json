@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
     "target": "es2022",
-    "module": "nodenext",
-    "moduleResolution": "nodenext",
+    "module": "es2022",
+    "moduleResolution": "bundler",
     "jsx": "react-jsx",
     "skipLibCheck": true,
     "strict": true,
     "allowSyntheticDefaultImports": true,
     "paths": {
-      "@/*": ["./site/assets/js/*"]
+      "@/*": ["./js/*"]
     }
   },
   "exclude": ["node_modules"]

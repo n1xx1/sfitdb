@@ -15,5 +15,5 @@ Scegli due aumenti di attributo. Uno deve essere a **Destrezza** o
 **Intelligenza** e uno è un aumento di attributo libero.
 
 Sei addestrato nell'abilità [Medicina](/abilita/medicina) e nell'abilità
-[Sapienza sulle Scienze Naturali](/abilita/sapienza). Ottieni il talento di
+[Sapienza sulla Scienza Biologica](/abilita/sapienza). Ottieni il talento di
 abilità [Medicina di Combattimento](/talenti/medicina-di-combattimento).

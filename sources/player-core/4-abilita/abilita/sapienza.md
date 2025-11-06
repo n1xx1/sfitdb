@@ -70,8 +70,8 @@ Conoscenze.
 > - Sapienza Piratesca
 > - Sapienza sulla Psicologia
 > - Sapienza da Rigattiere
-> - Sapienza sulle Scienze Naturali
-> - Sapienza sulle Scienze Fisiche
+> - Sapienza sulla Scienza Biologica
+> - Sapienza sulla Scienze Fisica
 > - Sapienza Sportiva
 > - Sapienza Tecnologica
 > - Sapienza sui Viaggi

@@ -1,4 +1,5 @@
-import sql, { Database } from "@radically-straightforward/sqlite";
+import { waddler } from "waddler/better-sqlite3";
+import Client from "better-sqlite3";
 import z from "zod";
 
 export async function GET(request: Request) {
@@ -27,7 +28,9 @@ export async function GET(request: Request) {
       })
       .parse(searchParams);
 
-    const db = new Database("./database.db", { readonly: true });
+    const sql = waddler({
+      client: new Client("./database.db", { readonly: true }),
+    });
 
     const offset = (params.page - 1) * params.perPage;
     let joins = sql``;
@@ -36,32 +39,29 @@ export async function GET(request: Request) {
     if (params.name) {
       const text = params.name.replaceAll('"', '""');
       const query = `(name: "${text}")`;
-      joins = sql`$${joins} join entry_fts on entry_fts.rowid = entry.id and entry_fts match ${query}`;
+      joins = sql`${joins} join entry_fts on entry_fts.rowid = entry.id and entry_fts match ${query}`;
     }
 
     if (typeof params.level === "number") {
-      where = sql`$${where} and entry.data ->> 'level' = ${params.level}`;
+      where = sql`${where} and entry.data ->> 'level' = ${params.level}`;
     } else if (Array.isArray(params.level)) {
-      where = sql`$${where} and entry.data ->> 'level' between ${params.level[0]} and ${params.level[1]}`;
+      where = sql`${where} and entry.data ->> 'level' between ${params.level[0]} and ${params.level[1]}`;
     }
 
-    const count = db.get<{ c: number }>(sql`
+    const [count] = await sql<{ c: number }>`
 select count(*) c
   from entry
-  $${joins}
-  where $${where}
-      `);
+  ${joins}
+  where ${where}`;
 
-    const result = db.all<{ id: number; data: string }>(
-      sql`
+    const result = await sql<{ id: number; data: string }>`
 select entry.id id, json(entry.data) data
   from entry
-  $${joins}
-  where $${where}
+  ${joins}
+  where ${where}
   order by entry.id
   limit ${params.perPage} offset ${offset}
-  `,
-    );
+  `;
 
     const data = result.map((r) => {
       const data = JSON.parse(r.data);

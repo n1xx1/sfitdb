@@ -124,6 +124,6 @@ barathu cambiano nel tempo man mano che si fonde con altri e amplia
 letteralmente la propria mente.
 
 **Editti Popolari** adattarsi a nuove situazioni, modellare il corpo nella forma
-desiderata, collaborare per risolvere problemi.
+desiderata, collaborare per risolvere problemi
 
-**Anatemi Popolari** affrontare i problemi da soli.
+**Anatemi Popolari** affrontare i problemi da soli

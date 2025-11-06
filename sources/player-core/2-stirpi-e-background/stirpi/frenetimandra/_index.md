@@ -135,7 +135,7 @@ tramandare le proprie credenze e valori attraverso storie, canzoni e arte. Molte
 si considerano atee.
 
 **Editti Popolari** essere gentili, aiutare gli altri, rispettare e proteggere
-gli esseri viventi.
+gli esseri viventi
 
 **Anatemi Popolari** causare danni intenzionali senza motivo, inquinare
-l’ambiente, rifiutarsi di aiutare chi è in grave difficoltà.
+l’ambiente, rifiutarsi di aiutare chi è in grave difficoltà

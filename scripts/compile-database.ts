@@ -1,4 +1,4 @@
-import sql, { Database } from "@radically-straightforward/sqlite";
+import { BetterSqlite3SQLTemplate, waddler } from "waddler/better-sqlite3";
 import { readFile, unlink } from "fs/promises";
 import stripTags from "striptags";
 import { watch as chokidarWatch } from "chokidar";
@@ -72,7 +72,7 @@ async function rebuildDatabaseImpl() {
 
   await unlink("./database.db").catch(() => Promise.resolve());
 
-  const db = new Database("./database.db", { fileMustExist: false });
+  const sql = waddler("./database.db");
 
   const file = await readFile("./public/data/database.json", "utf-8");
   const data: {
@@ -96,42 +96,39 @@ async function rebuildDatabaseImpl() {
     heritageAncestry?: string;
   }[] = JSON.parse(file);
 
-  db.executeTransaction(() => {
-    db.run(sql`drop table if exists entry_fts`);
-    db.run(sql`drop table if exists entry`);
-    db.run(sql`create table entry (id integer primary key, data blob) strict`);
-    db.run(
-      sql`create virtual table entry_fts using fts5(
+  await exec(sql`drop table if exists entry_fts`);
+  await exec(sql`drop table if exists entry`);
+  await exec(
+    sql`create table entry (id integer primary key, data blob) strict`,
+  );
+  await exec(sql`create virtual table entry_fts using fts5(
         name, text,
         content=entry, content_rowid=id,
         tokenize="trigram remove_diacritics 1"
-      )`,
+      )`);
+
+  await exec(
+    sql`insert into entry_fts(entry_fts, rank) values ('automerge', 0);`,
+  );
+
+  for (const entry of data) {
+    const data = JSON.stringify(entry);
+
+    const { name } = entry;
+    const content = stripTags(entry.content, undefined)
+      .replace(/\s+/g, " ")
+      .trim();
+
+    const { lastInsertRowid: rowid } = await exec(
+      sql`insert into entry(data) values (jsonb(${data}))`,
     );
-
-    db.run(
-      sql`insert into entry_fts(entry_fts, rank) values ('automerge', 0);`,
+    await exec(
+      sql`insert into entry_fts(rowid, name, text) values(${rowid}, ${name}, ${content})`,
     );
+  }
 
-    for (const entry of data) {
-      const data = JSON.stringify(entry);
+  await exec(sql`insert into entry_fts(entry_fts) values ('optimize');`);
 
-      const { name } = entry;
-      const content = stripTags(entry.content, undefined)
-        .replace(/\s+/g, " ")
-        .trim();
-
-      const { lastInsertRowid: rowid } = db.run(
-        sql`insert into entry(data) values (jsonb(${data}))`,
-      );
-      db.run(
-        sql`insert into entry_fts(rowid, name, text) values(${rowid}, ${name}, ${content}) `,
-      );
-    }
-
-    db.run(sql`insert into entry_fts(entry_fts) values ('optimize');`);
-  });
-
-  db.close();
   console.log(`Done.`);
 
   //   const text = "alchimia rapida".replaceAll('"', '""');
@@ -146,6 +143,12 @@ async function rebuildDatabaseImpl() {
   // `,
   //   );
   //   console.log(result.map((r) => ({ ...JSON.parse(r.data), rank: r.rank })));
+}
+
+async function exec(
+  sql: BetterSqlite3SQLTemplate<any>,
+): Promise<{ lastInsertRowid: number }> {
+  return (await sql.run().execute()) as any;
 }
 
 const argv = yargs(hideBin(process.argv))
