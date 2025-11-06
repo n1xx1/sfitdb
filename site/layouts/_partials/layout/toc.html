@@ -23,7 +23,7 @@
         {{- $config := (partialCached "config" "") -}}
         {{- $editURL := printf "%s/blob/%s" $config.repoURL $config.repoBranch -}}
         {{- with .File -}}
-          {{ $editURL = urls.JoinPath $editURL (replace .Path "\\" "/") }}
+          {{ $editURL = urls.JoinPath $editURL "site/content" (replace .Path "\\" "/") }}
         {{- end -}}
         {{- with .Params.editURL -}}
           {{- $editURL = . -}}
