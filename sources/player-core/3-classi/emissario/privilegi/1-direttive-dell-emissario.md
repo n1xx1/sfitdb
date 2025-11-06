@@ -20,4 +20,4 @@ del tuo turno successivo.
 
 Ottieni la direttiva da emissario [Prendetelo](/azioni/prendetelo)
 
-{{% include page="/azioni/prendetelo" level=4 %}}
+{{% include page="/azioni/prendetelo" %}}

@@ -124,7 +124,7 @@ aiutano il Veskarium quando ne hanno voglia, ma non riconoscono alcuna autorità
 o governo vesk. Poiché le frenetimandre non praticano la resistenza militare, il
 Veskarium tollera volentieri questa situazione.
 
-**Esempi di Nomi** Ayoka, Baazo, Bixby, Dakoyo, Fipzul, Gazigaz, Jomp, Kayoko,
+**Esempi di Nomi:** Ayoka, Baazo, Bixby, Dakoyo, Fipzul, Gazigaz, Jomp, Kayoko,
 Kimikim, Mimzy, Nako, Prismacora, Quonx, Rudfuz, Sprax, Timinim, Tipps, Tonkona,
 Viverivim
 

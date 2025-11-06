@@ -14,5 +14,5 @@ abilità (per esempio grazie al tuo background o alla tua classe), diventi invec
 addestrato in un'abilità a tua scelta.
 
 Ottieni anche il talento generico
-[Sapienza Aggiuntiva](/talenti/sapienza-aggiuntiva) per le
+[Sapienza Aggiuntiva](/talenti/sapienza-aggiuntiva) per la
 [Sapienza sugli Androidi](/abilita/sapienza).

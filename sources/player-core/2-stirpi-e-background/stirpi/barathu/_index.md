@@ -109,7 +109,7 @@ Quando corpo e memoria iniziano a svanire con l’età, molti scelgono di fonder
 definitivamente in un conglomerato, abbandonando il proprio sé individuale per
 unirsi a una coscienza e a un’esistenza più grandi.
 
-**Esempi di Nomi** Atarassia, Brezza, Bolla in Volo, Dololola, Gleelee, Armonia
+**Esempi di Nomi:** Atarassia, Brezza, Bolla in Volo, Dololola, Gleelee, Armonia
 dei Molti, Ixeelu, Canto Ondeggiante, Sospiro, Tempesta Decupla, Unità di Scopo,
 Vortice, Meraviglia tra le Nuvole Iridescenti, Xonswe e Y.
 

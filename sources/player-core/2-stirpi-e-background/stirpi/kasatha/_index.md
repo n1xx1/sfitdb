@@ -93,7 +93,7 @@ incoraggiato a mettere alla prova i propri limiti, apprendere da culture diverse
 e rinunciare temporaneamente ai costumi familiari, per comprendere in prima
 persona l’importanza della stabilità e della tradizione.
 
-**Esempi di Nomi** Altronus, Barasul, Ehu, Esar, Gorsen, Hadif, Jahir, Kala,
+**Esempi di Nomi:** Altronus, Barasul, Ehu, Esar, Gorsen, Hadif, Jahir, Kala,
 Khsutil, Maeda, Metweska, Ninura, Remu, Senesel, Tolar, Umana, Voloteo, Zye
 
 ## Credenze
