@@ -130,7 +130,7 @@ Eloritu, Ibra o Yaraesa. Altri lashunta rifiutano del tutto la religione,
 preferendo abbracciare una filosofia come il Ciclo o la Fede Verde, onorare un
 leader statale o seguire le tradizioni storiche della propria comunità.
 
-**Editti Popolari** diventare la migliore versione di te stesso, non smettere
+**Editti Popolari** diventare la migliore versione di se stessi, non smettere
 mai di imparare, allenare la mente o il corpo ogni giorno
 
-**Anatemi Popolari** trascurare i tuoi obiettivi, crogiolarti nel fallimento
+**Anatemi Popolari** trascurare i propri obiettivi, crogiolarsi nel fallimento

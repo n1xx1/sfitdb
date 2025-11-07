@@ -1,9 +1,9 @@
 ---
-traits: [lashunta]
-source: Player Core (Eng), pag. 60
+traits: [shirren]
+source: Player Core (Eng), pag. 68
 original-name: Psychic Talent
 original-srd: https://2e.aonsrd.com/feats/315-psychic-talent
-slug: talento-psichico-lashunta
+slug: talento-psichico-shirren
 ---
 
 # Talento Psichico - Talento 1
