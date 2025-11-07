@@ -65,7 +65,7 @@ discorso.
 >   menti.
 > - Ti idealizzano o ti etichettano in base alla tua espressione genetica.
 
-I lashunta sono psionici naturali con una genetica adattiva che tradizionalmente
+I lashunta sono psichici naturali con una genetica adattiva che tradizionalmente
 si sviluppa in una delle due lignaggi durante la pubertà: damaya o korasha.
 Hanno una solida reputazione di essere carismatici, determinati e riflessivi,
 con un costante desiderio di crescita: sia in termini di progresso personale che
@@ -87,11 +87,11 @@ abilità psichiche innate, dovresti giocare un lashunta.
 I damaya tendono a essere alti e aggraziati, con lineamenti delicati, e vengono
 tradizionalmente indirizzati verso carriere artistiche, intellettuali o
 politiche. I korasha sono più bassi, muscolosi e attratti dal servizio militare,
-dal lavoro manuale e dai ruoli di comando in guerra. Indipendentemente dalla
+dal lavoro manuale e dai ruoli di comando in guerra. Indipendentemente dal
 lignaggio, tutti i lashunta hanno corte antenne sulla fronte che concentrano la
 loro telepatia, con protuberanze e segni facciali colorati unici per ciascun
 individuo. I lashunta producono feromoni che trasmettono sottilmente i loro
-stati d’animo in modi che altre lignaggi possono trovare affascinanti o
+stati d’animo in modi che altre stirpi possono trovare affascinanti o
 inquietanti.
 
 Durante la pubertà, i lashunta scelgono tradizionalmente se esprimere la
@@ -101,10 +101,10 @@ attraverso una combinazione di rituali psichici e terapia genetica. Oggi, molti
 giovani lashunta hanno scelto di seguire il proprio percorso e di astenersi da
 questa scelta, diventando invece “non vincolati”. I lashunta non vincolati
 sfidano ruoli e etichette tradizionali e possono mostrare tratti e inclinazioni
-comuni a entrambe le lignaggi o a nessuna delle due. Una minoranza crescente di
+comuni a entrambe i lignaggi o a nessuno dei due. Una minoranza crescente di
 lashunta spinge inoltre verso un’ulteriore diversificazione genetica, cercando
-di esprimere varianti genetiche uniche o da tempo sopite, dando origine a nuove
-lignaggi scelte. Resta da vedere se tali sperimentazioni porteranno frutti.
+di esprimere varianti genetiche uniche o da tempo sopite, dando origine a nuovi
+lignaggi. Resta da vedere se tali sperimentazioni porteranno frutti.
 
 ## Società
 
@@ -112,7 +112,7 @@ Da tempi immemorabili, i lashunta abitano vaste e pittoresche città lungo le
 coste e nelle giungle di Castrovel, un mondo rigoglioso e selvaggio popolato da
 predatori pericolosi e soggetto a condizioni climatiche estreme. Questi
 insediamenti indipendenti sono protetti da una potente casta militare di
-guerrieri psionici, difese tecnologiche e contromisure magiche. I più iconici
+guerrieri psichici, difese tecnologiche e contromisure magiche. I più iconici
 tra questi soldati sono i cavalieri shotalashu, leggeri combattenti che formano
 legami telepatici con le loro cavalcature sauriane, dalle quali prendono anche
 il nome.
