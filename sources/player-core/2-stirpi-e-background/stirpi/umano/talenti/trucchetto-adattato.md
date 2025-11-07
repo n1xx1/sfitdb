@@ -9,6 +9,8 @@ original-srd: https://2e.aonsrd.com/feats/277-adapted-cantrip
 
 **Prerequisiti** privilegio di classe lanciare incantesimi
 
+---
+
 Attraverso lo studio di varie tradizioni magiche, hai modificato un incantesimo
 in modo che si adattasse al tuo stile di lancio degli incantesimi. Scegli un
 trucchetto da una tradizione magica diversa dalla tua. Se prepari gli
