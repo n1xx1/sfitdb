@@ -10,7 +10,12 @@
     {{- if and $source $originalSrd }}{{ " - " }}{{ end -}}
     {{- if $originalSrd -}}
       {{- $href := $originalSrd -}}
-      <a href="{{ $href }}" class="text-muted-foreground">
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="{{ $href }}"
+        class="text-muted-foreground"
+      >
         <img
           class="inline-block w-5 h-5 m-0 pr-1 box-content opacity-70 not-prose"
           src="https://2e.aonprd.com/Images/NethysMask.png"
