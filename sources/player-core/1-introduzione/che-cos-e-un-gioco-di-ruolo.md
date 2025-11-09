@@ -2,7 +2,7 @@
 source: Player Core (Eng), pag. 5
 original-name: What is a Roleplaying Game?
 original-srd: https://2e.aonsrd.com/rules/2-what-is-a-roleplaying-game
-navigation-order: 1
+navigation-hide: true
 ---
 
 # Che Cos’è un Gioco di Ruolo?

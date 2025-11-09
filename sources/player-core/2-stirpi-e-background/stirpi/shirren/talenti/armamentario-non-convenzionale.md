@@ -3,6 +3,7 @@ traits: [shirren]
 source: Player Core (Eng), pag. 69
 original-name: Unconventional Weaponry
 original-srd: https://2e.aonsrd.com/feats/282-unconventional-weaponry
+slug: armamentario-non-convenzionale-shirren
 ---
 
 # Armamentario Non Convenzionale - Talento 1

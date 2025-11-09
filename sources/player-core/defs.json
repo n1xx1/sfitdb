@@ -1,5 +1,5 @@
 {
-  "ancestry": ["2-stirpi-e-background/stirpi/*"],
+  "ancestry": ["2-stirpi-e-background/stirpi/*/stirpe"],
   "heritage": ["2-stirpi-e-background/stirpi/*/lignaggi/*"],
   "background": ["2-stirpi-e-background/background/*"],
   "class": [

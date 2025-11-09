@@ -57,6 +57,7 @@
 
   {{ $title := partial "utils/titleMd" (dict "content" $content) }}
   {{ $kind := cond (hasSuffix .String "_index.md") "section" "page" }}
+  {{ $kind = "section" }}
   {{ $pftype := default nil nil }}
   {{ $type := "page" }}
 
@@ -150,7 +151,7 @@
     }}
 
     {{ if eq .type "class" }}
-      {{ $featsPage := $addedPages.Get (printf "%s/talenti" .original.path) }}
+      {{ $featsPage := $addedPages.Get (path.Join .original.path "talenti" .original.path) }}
       {{ if $featsPage }}
         {{ $class := index (split .path "/" | last 1) 0 }}
         {{ $featsPageContent := $featsPage.content.value }}
@@ -170,13 +171,13 @@
         }}
       {{ end }}
     {{ else if eq .type "ancestry" }}
-      {{ $featsPage := $addedPages.Get (printf "%s/talenti" .original.path) }}
+      {{ $featsPage := $addedPages.Get (path.Join .original.path "../talenti") }}
       {{ if $featsPage }}
         {{ $featTraits := .params.featTraits | default .params.traits | default (slice) }}
         {{ $featsPageContent := $featsPage.content.value }}
         {{ $replacement := printf `$1 featTable traits="%s" $2` (delimit $featTraits ",") }}
         {{ $featsPageContent = $featsPageContent |
-          replaceRE `(\{\{<)\s*rulesFeatTable\s*(>\}\})` $replacement
+          replaceRE `(\{\{%)\s*rulesFeatList\s*(%\}\})` $replacement
         }}
 
         {{ partial "contentAdapter/addPage" (dict
@@ -185,13 +186,15 @@
           "content" $featsPageContent
           "kind" $featsPage.kind
           "type" $featsPage.type
-          "path" (printf "%s/talenti" .path)
+          "path" (path.Join .path "talenti")
           "params" $featsPage.params
           )
         }}
+      {{ else }}
+        {{ warnf "missing feats page for ancestry at %v" .path }}
       {{ end }}
 
-      {{ $heritagesPage := $addedPages.Get (printf "%s/lignaggi" .original.path) }}
+      {{ $heritagesPage := $addedPages.Get (path.Join .original.path "../lignaggi") }}
       {{ if $heritagesPage }}
         {{ $featTraits := .params.featTraits | default .params.traits | default (slice) }}
         {{ $heritagesPageContent := $heritagesPage.content.value }}
@@ -206,10 +209,12 @@
           "content" $heritagesPageContent
           "kind" $heritagesPage.kind
           "type" $heritagesPage.type
-          "path" (printf "%s/lignaggi" .path)
+          "path" (path.Join .path "lignaggi")
           "params" $heritagesPage.params
           )
         }}
+      {{ else }}
+        {{ warnf "missing heritage page for ancestry at %v" .path }}
       {{ end }}
     {{ end }}
   {{ end }}

@@ -210,7 +210,7 @@
 | ----------------------- | -------------------------- | ----- | ------------------------- |
 |                         |                            |       |                           |
 | Absolute Zero           | Zero Assoluto              | us    |                           |
-| Akashic Assistant;      | Assistente Akashico        | us    |                           |
+| Akashic Assistant       | Assistente Akashico        | us    |                           |
 | Akashic Download        | Download Akashico          | us    |                           |
 | Akashic Fount           | Sorgente Akashica          | us    |                           |
 | Akashic Revival         | Reviviscenza Akashica      | us    |                           |
@@ -235,12 +235,12 @@
 | Elemental Nova          | Nova Elementale            | us    |                           |
 | Elemental Weapon        | Arma Elementale            | us    |                           |
 | Entropy Strike          | Colpo Entropico            | us    |                           |
-| Execute                 | Esecuzione                 | gu pf | remaster                  |
+| Execute                 | Esecuzione                 | gu pf |                           |
 |                         |                            |       |                           |
 | Falling Sky             | Clielo in Caduta           | gu pf |                           |
-| False Vitality          |                            |       | remaster                  |
-| Figment                 | Figmento                   | gu pf | remaster                  |
-| Flicker                 | Sfarfallio                 | us    | feat pf2                  |
+| False Vitality          | Vitalità Falsa             | gu pf |                           |
+| Figment                 | Figmento                   | gu pf |                           |
+| Flicker                 | Sfarfallio                 | gu pf |                           |
 | Foresight               | Previsione                 | gu pf |                           |
 |                         |                            |       |                           |
 | Genetic Regeneration    | Rigenerazione Genetica     | us    |                           |
@@ -249,7 +249,8 @@
 | Heal                    | Guarire                    | gu pf |                           |
 | Howl                    | Ululare                    | us    |                           |
 | Hypercognition          | Ipercognizione             | gu pf |                           |
-| Hypnotize               | Ipnotizzare                | us    | remaster                  |
+| Hypnotize               | Ipnotizzare                | gu pf |                           |
+| Hydraulic Push          | Spinta Idraulica           | gu pf |                           |
 |                         |                            |       |                           |
 | Infusion                | Infusione                  | us    |                           |
 | Invisibility            | Invisibilità               | gu pf |                           |
@@ -263,11 +264,12 @@
 | Moment of Renewal       | Momento di Risanamento     | gu pf |                           |
 | Motivating Ringtone     | Suoneria Motivante         | us    |                           |
 |                         |                            |       |                           |
-| Noise Blast             | Frastuono                  | gu pf | remaster                  |
+| Noise Blast             | Frastuono                  | gu pf |                           |
 |                         |                            |       |                           |
-| Phantasmagoria          | Fantasmagoria              | gu pf | remaster                  |
+| Personal Gravity        | Gravità Personale          | gu sf |                           |
+| Phantasmagoria          | Fantasmagoria              | gu pf |                           |
 | Phantasmal Fleet        | Flotta Fantasma            | us    |                           |
-| Planar Palace           | Palazzo Planare            | gu pf | remaster                  |
+| Planar Palace           | Palazzo Planare            | gu pf |                           |
 | Promession              | Promessione                | us    |                           |
 |                         |                            |       |                           |
 | Quantum Analysis        | Analisi Quantistica        | us    |                           |
@@ -276,8 +278,10 @@
 | Remix                   | Remix                      | us    |                           |
 | Retrocognition          | Retrocognizione            | gu pf |                           |
 | Resist Energy           | Resistere all'Energia      |       |                           |
+| Rocket Dash             | Scatto Propulsivo          | us    |                           |
 |                         |                            |       |                           |
 | Scan Envrironment       | Scansione Ambientale       | gu sf |                           |
+| Scrying                 | Scrutare                   | gu pf |                           |
 | Shadow Blast            | Esplosione d'Ombra         | gu pf |                           |
 | Shadow Prison           | Prigione d'Ombra           | us    |                           |
 | Shadow Snap             | Schiocco d'Ombra           | us    |                           |
@@ -289,6 +293,7 @@
 | Stabilize               | Stabilizzare               | gu pf |                           |
 | Subjective Reality      | Realtà Soggettiva          | gu sf |                           |
 | Summon Instrument       | Evoca Strumento            | gu pf |                           |
+| Supercharge Weapon      | Sovraccaricare Arma        | gu sf |                           |
 | Synaptic Pulse          | Impulso Sinaptico          | gu sf |                           |
 |                         |                            |       |                           |
 | Translocate             | Traslocazione              | gu pf |                           |
@@ -314,6 +319,10 @@
 | en              | it                   | da    | note |
 | --------------- | -------------------- | ----- | ---- |
 |                 |                      |       |      |
+| Breaching Gun   | Fucile da Breccia    | gu sf |      |
+|                 |                      |       |      |
+| Crossbolter     | Fucile Balestra      | gu sf |      |
+|                 |                      |       |      |
 | Dueling Sword   | Spada da Duello      | us    |      |
 |                 |                      |       |      |
 | Shock Truncheon | Manganello Elettrico | gu sf |      |
@@ -321,3 +330,22 @@
 |                 |                      |       |      |
 | Plasma Sword    | Spada Plasma         | gu sf |      |
 |                 |                      |       |      |
+
+### Domini
+
+| en          | it          | da    | note |
+| ----------- | ----------- | ----- | ---- |
+|             |             |       |      |
+| Cities      | Città       | gu pf |      |
+| Destruction | Distruzione | gu pf |      |
+| Duty        | Dovere      | gu pf |      |
+| Earth       | Terra       | gu pf |      |
+| Knowledge   | Conoscenza  | gu pf |      |
+| Magic       | Magia       | gu pf |      |
+| Secrecy     | Segretezza  | gu pf |      |
+| Tyranny     | Tirannia    | gu pf |      |
+| Travel      | Viaggio     | gu pf |      |
+| Trickery    | Raggiro     | gu pf |      |
+| Truth       | Verità      | gu pf |      |
+| Water       | Acqua       | gu pf |      |
+| Wealth      | Ricchezza   | gu pf |      |

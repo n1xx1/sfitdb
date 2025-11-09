@@ -2,7 +2,7 @@
 {{- if .path -}}
   {{- $hasInclude := index (index (findRESubmatch `^\{\{%\s*include\s+(.*?)\s*%\}\}` $contents 1) 0) 1 -}}
   {{- if $hasInclude -}}
-    {{- $page := $contents | replaceRE `^(?:|.*page=)"(.*?)"[\s\S]*$` "$1" -}}
+    {{- $page := $hasInclude | replaceRE `^(?:|[\s\S]*page=)"(.*?)"[\s\S]*$` "$1" -}}
     {{- if not (hasPrefix $page "/") -}}
       {{ $page = path.Join .path $page }}
     {{- end -}}

@@ -20,20 +20,22 @@ non potranno essere modificati.
 
 Questo capitolo è diviso in tre parti:
 
-- Le stirpi incarnano la cultura da cui proviene il tuo personaggio. All’interno
-  di molte stirpi sono presenti dei lignaggi: sottogruppi che possiedono
-  caratteristiche proprie. Una stirpe fornisce aumenti di attributo (e magari
-  anche difetti di attributo), Punti Ferita, talenti di stirpe e talora capacità
-  aggiuntive.
+- Le **stirpi** incarnano la cultura da cui proviene il tuo personaggio.
+  All’interno di molte stirpi sono presenti dei lignaggi: sottogruppi che
+  possiedono caratteristiche proprie. Una stirpe fornisce aumenti di attributo
+  (e magari anche difetti di attributo), Punti Ferita, talenti di stirpe e
+  talora capacità aggiuntive.
 
-- I lignaggi versatili, sono lignaggi disponibili a tutte le stirpi per una
+- I **lignaggi versatili**, sono lignaggi disponibili a tutte le stirpi per una
   personalizzazione aggiuntiva, ad esempio per i personaggi con un'origine più
   unica o insolita. Sono selezionate al posto di un lignaggio standard.
 
-- I background, descrivono l’addestramento o le situazioni che il tuo
+- I **background**, descrivono l’addestramento o le situazioni che il tuo
   personaggio ha sperimentato prima di diventare un avventuriero. Il background
   del tuo personaggio fornisce aumenti di Caratteristica, addestramento nelle
   abilità e un talento di abilità.
 
-- Le lingue, consentono al tuo personaggio di comunicare con persone e creature
-  della galassia.
+- Le **lingue**, consentono al tuo personaggio di comunicare con persone e
+  creature della galassia.
+
+{{% include page="./voci-delle-stirpi" %}}

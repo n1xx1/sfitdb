@@ -1,8 +1,8 @@
 ---
-source: Player Core (Eng), pag. 5
-original-name: What is a Roleplaying Game?
-original-srd: https://2e.aonsrd.com/rules/2-what-is-a-roleplaying-game
-navigation-order: 2
+source: Player Core (Eng), pag. 6
+original-name: Basics of Play
+original-srd: https://2e.aonsrd.com/rules/8-basics-of-play
+navigation-hide: true
 ---
 
 # Le Basi del Gioco

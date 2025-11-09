@@ -25,6 +25,21 @@
 
 {{- $sbHeading := cond $isStatblock $isTitle (cond $isInnerStatblock (eq $originalLevel 2) false) -}}
 
+{{- if and $included $isTitle -}}
+  {{- $parentContents := .Page.RawContent | replaceRE `^---\r?\n\s*([\s\S]*?)\s*\r?\n---\r?\n\s*` "" }}
+  {{- $hasInclude := index (index (findRESubmatch `^\{\{%\s*include\s+(.*?)\s*%\}\}` $parentContents 1) 0) 1 -}}
+  {{- if $hasInclude -}}
+    {{- $page := $hasInclude | replaceRE `^(?:|[\s\S]*page=)"(.*?)"[\s\S]*$` "$1" -}}
+    {{- if not (hasPrefix $page "/") -}}
+      {{ $page = path.Join .Page.Path $page }}
+    {{- end -}}
+    {{- $titlePage := site.GetPage $page -}}
+    {{- if eq $titlePage.Path .PageInner.Path -}}
+      {{- $appendSource = true -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
 {{- $class := "flex" }}
 {{- if $sbHeading -}}
   {{- $class = add $class " statblock-title" -}}
@@ -37,7 +52,7 @@
   <span class="absolute -mt-20" id="{{ $anchor }}"></span>
   <span class="flex items-center flex-1">
     {{- if and $isTitle $included -}}
-      {{- $url := .PageInner.Params.canonicalURL | default .PageInner.RelPermalink -}}
+      {{- $url := .PageInner.Params.canonicalURL | default .PageInner.RelPermalink | replaceRE "/$" "" -}}
       <a href="{{ $url }}" class="no-underline hover:underline{{ if not $sbHeading }} !font-bold{{ end }}">
     {{- end -}}
     <span>{{- (index $text 0) | safeHTML -}}</span>

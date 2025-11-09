@@ -3,6 +3,7 @@ traits: [umano]
 source: Player Core (Eng), pag. 52
 original-name: Unconventional Weaponry
 original-srd: https://2e.aonsrd.com/feats/282-unconventional-weaponry
+slug: armamentario-non-convenzionale-umano
 ---
 
 # Armamentario Non Convenzionale - Talento 1

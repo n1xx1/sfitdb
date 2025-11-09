@@ -2,11 +2,12 @@
 source: Player Core (Eng), pag. 74
 original-name: Vesk
 original-srd: https://2e.aonsrd.com/ancestries/15-vesk
-traits: [umanoide, vesk]
-featTraits: [vesk]
-shortDescription:
-  I vesk sono fieri conquistatori rettiliani, mossi da un forte desiderio di
-  dimostrare il proprio valore in modo onorevole.
+navigation-sub-hide: true
+navigation-disable: true
 ---
 
-# Vesk
+{{% include page="./stirpe" level=0 %}}
+
+{{% include page="./lignaggi" level=0 %}}
+
+{{% include page="./talenti"  level=0 %}}

@@ -16,12 +16,12 @@ incantesimi che curano i tuoi alleati e danneggiano i tuoi nemici.
 
 **Incantesimi della Connessione** trucchetto:
 [stabilizzare](/incantesimi/stabilizzare); 1°: [guarire](/incantesimi/guarire);
-2°: [false vitality](/incantesimi/false-vitality); 3°:
+2°: [vitalità falsa](/incantesimi/vitalita-falsa); 3°:
 [colpo entropico](/incantesimi/colpo-entropico); 4°:
 [rigenerazione genetica](/incantesimi/rigenerazione-genetica); 5°:
 [respiro di vita](/incantesimi/respiro-di-vita); 6°:
 [dissanguamento del vampiro](/incantensimi/dissanguamento-del-vampiro); 7°:
-[execute](/incantesimi/execute); 8°:
+[esecuzione](/incantesimi/esecuzione); 8°:
 [momento di risanamento](/incantesimi/momento-di-risanamento); 9°:
 [massacro](/incantesimi/massacro)
 
