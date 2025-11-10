@@ -97,7 +97,7 @@
 | Undetected  | Non Individuato | gu pf |      |
 | Unfriendly  | Maldisposto     | gu pf |      |
 | Unnoticed   | Inosservato     | gu pf |      |
-| Untethered  | Slegato         | us    | ???? |
+| Untethered  | Sganciato       | us    | ???? |
 | Wounded     | Ferito          | us    | ???? |
 
 ### Tratti
@@ -108,7 +108,9 @@
 | Area      | Area            | us    | ???? |
 | Auditory  | Uditivo         | gu pf |      |
 | Automatic | Automatico      | us    | ???? |
+| Bulwark   | Baluardo        | gu pf |      |
 | Earth     | Terra           | gu pf |      |
+| Exposed   | Esposto         | us    | ???? |
 | Fire      | Fuoco           | gu pf |      |
 | Flourish  | Ostentazione    | gu pf |      |
 | Metal     | Metallo         | gu pf |      |
@@ -142,6 +144,7 @@
 | Network Spell      | Incantesimo di Rete      | us    |      |
 |                    |                          |       |      |
 | Plot Course        | Tracciare Rotta          | us    |      |
+| Push Off           | Spingersi                | us    |      |
 |                    |                          |       |      |
 | Recall Knowledge   | Ricordare Conoscenze     | gu pf |      |
 | Refocus            | Rifocalizzare            | gu pf |      |
@@ -225,6 +228,7 @@
 | Cloying Shadow          | Ombra Stucchevole          | us    |                           |
 |                         |                            |       |                           |
 | Data Drain              | Drenaggio Dati             | us    |                           |
+| Daze                    | Frastornare                | gu pf |                           |
 | Death Sentence          | Condanna a Morte           | us    |                           |
 | Disappearance           | Sparizione                 | gu pf |                           |
 |                         |                            |       |                           |
@@ -324,6 +328,8 @@
 | Crossbolter     | Fucile Balestra      | gu sf |      |
 |                 |                      |       |      |
 | Dueling Sword   | Spada da Duello      | us    |      |
+|                 |                      |       |      |
+| Flight Suit     | Tuta da Volo         | gu sf |      |
 |                 |                      |       |      |
 | Shock Truncheon | Manganello Elettrico | gu sf |      |
 | Singing Spear   | Lancia Corale        | gu sf |      |

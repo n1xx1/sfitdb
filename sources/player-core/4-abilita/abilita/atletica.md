@@ -34,9 +34,9 @@ combattimento (Disarmare, Lottare, Riposizionare, Sbilanciare e Spingere).
 > doppio della tua Velocità). Spingere e Riposizionare muovono i bersagli per il
 > doppio della loro velocità normale e ne cambiano la direzione verso la quale
 > fluttuano. Far cadere a terra fa cambiare direzione al bersaglio in caso di
-> successo e lo rende [slegato](/condizioni/slegato) in caso di successo
+> successo e lo rende [sganciato](/condizioni/sganciato) in caso di successo
 > critico. La condizione [afferrato](/condizioni/afferrato) rimuove la
-> condizione slegato, a meno che tutte le creature coinvolte nella presa non
+> condizione sganciato, a meno che tutte le creature coinvolte nella presa non
 > siano slegate; in tal caso, la direzione in cui le creature fluttuano segue
 > solitamente quella della creatura che afferra.
 
