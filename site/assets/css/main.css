@@ -210,6 +210,13 @@ html {
   }
   .statblock-title + & {
     --h-margin: --spacing(1);
+    @apply border-b border-(--tw-prose-hr) pb-1;
+  }
+  &:empty {
+    @apply mb-0! mt-0! pb-0!;
+    .statblock-title + & {
+      @apply -mt-1! mb-1!;
+    }
   }
 }
 

@@ -67,9 +67,11 @@
   {{- end -}}
 </h{{ .Level }}>
 
-{{- if and $appendTraits .PageInner.Params.traits -}}
+{{- if $appendTraits -}}
   <div class="title-traits">
-    {{- partialCached "traits" .PageInner.Params.traits .PageInner.Params.traits -}}
+    {{- if .PageInner.Params.traits -}}
+      {{- partialCached "traits" .PageInner.Params.traits .PageInner.Params.traits -}}
+    {{- end -}}
   </div>
 {{- end -}}
 
