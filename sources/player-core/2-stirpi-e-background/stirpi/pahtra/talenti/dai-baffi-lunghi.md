@@ -9,7 +9,7 @@ original-srd: https://2e.aonsrd.com/feats/329-long-whiskered
 
 I tue baffi funzionano come elettrorecettori avanzati, permettendoti di
 orientarti più facilmente. Alla fine di ogni round in cui sei
-[slegato](/condizioni/slegato), effettua una prova piatta con CD 15. Con un
+[sganciato](/condizioni/sganciato), effettua una prova piatta con CD 15. Con un
 successo, ignori le condizioni [impreparato](/condizioni/impreparato) e
 [maldestro](/condizioni/maldestro) imposte dall’essere in gravità zero per 1
 minuto.

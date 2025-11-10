@@ -13,11 +13,11 @@ scelta un attacco senz’armi con gli artigli o un attacco senz’armi con le fa
 Entrambi questi attacchi appartengono al gruppo di armi da lotta.
 
 Un attacco senz’armi con gli artigli infligge 1d6 danni taglienti e ha i tratti
-[accurata](/tratti/accurata), [agile](/tratti/agile),
+[accurato](/tratti/accurato), [agile](/tratti/agile),
 [disarmato](/tratti/disarmato) e [pahtra](/tratti/pahtra).
 
 Un attacco senz’armi con le fauci infligge 1d6 danni perforanti e ha i tratti
-accurata, disarmato, [lotta](/tratti/lotta) e pahtra.
+accurato, disarmato, [lotta](/tratti/lotta) e pahtra.
 
 Al 5° livello, ogni volta che infliggi un colpo critico con uno di questi
 attacchi, ottieni il suo effetto di specializzazione critica.
