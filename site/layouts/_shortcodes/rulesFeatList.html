@@ -21,20 +21,21 @@
 {{- end -}}
 
 {{- range collections.Sort $rows "level" -}}
-  <div class="bg-primary/50 px-2 py-1 rounded-t-md font-bold">
-    {{ .level }}° Livello
-  </div>
-  <hr class="border-primary/50 mt-[2px]!" />
+  {{- "\n\n" -}}
+  {{- printf `## %s° Livello%s{.level-header}` .level "\n" -}}
+  {{- "\n\n" -}}
+  <div class="border-primary/50 border-b mt-0.5!"></div>
+  {{- "\n\n" -}}
   {{- range .value -}}
-    {{- "\n\n" -}}
+    {{ "\n\n<div class=\"my-5\">\n\n" | safeHTML }}
     {{- partial "shortcodes/include" (dict
       "page" .page
       "context" $.Page
-      "level" 1
+      "level" 2
       "template" ""
       "title" ""
       )
     -}}
-    {{- "\n\n" -}}
+    {{ "\n\n</div>\n\n" | safeHTML }}
   {{- end -}}
 {{- end -}}

@@ -5,6 +5,8 @@ original-srd: https://2e.aonsrd.com/ancestries/9-human
 traits: [umano, umanoide]
 featTraits: [umano]
 slug: umano
+heritagesPage: ../lignaggi
+featsPage: ../talenti
 shortDescription:
   Gli umani sono una specie altamente adattabile e versatile, presente su quasi
   ogni mondo.

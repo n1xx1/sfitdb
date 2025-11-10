@@ -5,6 +5,8 @@ original-srd: https://2e.aonsrd.com/ancestries/10-kasatha
 traits: [kasatha, umanoide]
 featTraits: [kasatha]
 slug: kasatha
+heritagesPage: ../lignaggi
+featsPage: ../talenti
 shortDescription:
   I kasatha sono migranti a quattro braccia provenienti da un mondo morente, che
   valorizzano l’equilibrio cosmico e la tradizione.

@@ -5,6 +5,8 @@ original-srd: https://2e.aonsrd.com/ancestries/8-barathu
 traits: [aberrazione, barathu]
 featTraits: [barathu]
 slug: barathu
+heritagesPage: ../lignaggi
+featsPage: ../talenti
 shortDescription:
   I barathu sono nativi fluttuanti simili a meduse di un gigante gassoso, capaci
   di riscrivere il proprio codice genetico a volontà.

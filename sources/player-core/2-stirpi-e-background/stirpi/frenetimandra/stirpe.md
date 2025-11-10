@@ -5,6 +5,8 @@ original-srd: https://2e.aonsrd.com/ancestries/14-skittermander
 traits: [frenetimandra, umanoide]
 featTraits: [frenetimandra]
 slug: frenetimandra
+heritagesPage: ../lignaggi
+featsPage: ../talenti
 shortDescription:
   I frenetimandra sono aiutanti impulsivi per natura, desiderosi di affrontare
   tutto ciò che le loro sei braccia possono gestire.

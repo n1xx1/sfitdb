@@ -151,7 +151,11 @@
     }}
 
     {{ if eq .type "class" }}
-      {{ $featsPage := $addedPages.Get (path.Join .original.path "talenti" .original.path) }}
+      {{ $featsPagePath := path.Join .original.path "talenti" }}
+      {{ if .params.featsPage }}
+        {{ $featsPagePath = cond (hasPrefix .params.featsPage "/") .params.featsPage (path.Join .original.path .params.featsPage) }}
+      {{ end }}
+      {{ $featsPage := $addedPages.Get $featsPagePath }}
       {{ if $featsPage }}
         {{ $class := index (split .path "/" | last 1) 0 }}
         {{ $featsPageContent := $featsPage.content.value }}
@@ -169,9 +173,15 @@
           "params" $featsPage.params
           )
         }}
+      {{ else }}
+        {{ warnf "missing feats page for class at %v (%v)" .path $featsPagePath }}
       {{ end }}
     {{ else if eq .type "ancestry" }}
-      {{ $featsPage := $addedPages.Get (path.Join .original.path "../talenti") }}
+      {{ $featsPagePath := path.Join .original.path "talenti" }}
+      {{ if .params.featsPage }}
+        {{ $featsPagePath = cond (hasPrefix .params.featsPage "/") .params.featsPage (path.Join .original.path .params.featsPage) }}
+      {{ end }}
+      {{ $featsPage := $addedPages.Get $featsPagePath }}
       {{ if $featsPage }}
         {{ $featTraits := .params.featTraits | default .params.traits | default (slice) }}
         {{ $featsPageContent := $featsPage.content.value }}
@@ -191,22 +201,19 @@
           )
         }}
       {{ else }}
-        {{ warnf "missing feats page for ancestry at %v" .path }}
+        {{ warnf "missing feats page for ancestry at %v (%v)" .path $featsPagePath }}
       {{ end }}
 
-      {{ $heritagesPage := $addedPages.Get (path.Join .original.path "../lignaggi") }}
+      {{ $heritagesPagePath := path.Join .original.path "lignaggi" }}
+      {{ if .params.heritagesPage }}
+        {{ $heritagesPagePath = cond (hasPrefix .params.heritagesPage "/") .params.heritagesPage (path.Join .original.path .params.heritagesPage) }}
+      {{ end }}
+      {{ $heritagesPage := $addedPages.Get $heritagesPagePath }}
       {{ if $heritagesPage }}
-        {{ $featTraits := .params.featTraits | default .params.traits | default (slice) }}
-        {{ $heritagesPageContent := $heritagesPage.content.value }}
-        {{ $replacement := printf `$1 featTable traits="%s" $2` (delimit $featTraits ",") }}
-        {{ $heritagesPageContent = $heritagesPageContent |
-          replaceRE `(\{\{<)\s*rulesFeatTable\s*(>\}\})` $replacement
-        }}
-
         {{ partial "contentAdapter/addPage" (dict
           "context" $
           "addedPages" $addedPages
-          "content" $heritagesPageContent
+          "content" $heritagesPage.content.value
           "kind" $heritagesPage.kind
           "type" $heritagesPage.type
           "path" (path.Join .path "lignaggi")
@@ -214,7 +221,7 @@
           )
         }}
       {{ else }}
-        {{ warnf "missing heritage page for ancestry at %v" .path }}
+        {{ warnf "missing heritage page for ancestry at %v (%v)" .path $heritagesPagePath }}
       {{ end }}
     {{ end }}
   {{ end }}

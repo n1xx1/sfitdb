@@ -1,9 +1,7 @@
 {{- $source := .Params.source -}}
 {{- $originalSrd := index .Params "original-srd" -}}
 {{- if or $source $originalSrd -}}
-  <p
-    class="text-muted-foreground border-l-gray-200 dark:border-l-gray-700 border-l-4 pl-2"
-  >
+  <div class="source">
     {{- if $source -}}
       <em>{{ $source }}</em>
     {{- end -}}
@@ -23,6 +21,6 @@
         {{- index .Params "original-name" | default (partialCached "utils/title" . .Path).name -}}
       </a>
     {{- end -}}
-  </p>
+  </div>
   {{ "\n" }}
 {{- end -}}

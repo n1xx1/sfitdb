@@ -34,4 +34,4 @@ Sapienza che sono adatte alla maggior parte delle campagne. I
 [talenti di abilità](/talenti/abilita) espandono le funzionalità delle tue
 abilità.
 
-{{< backgroundTable path="/regole/player-core/2-stirpi-e-background/background" >}}
+{{% includeAll space=true  %}}

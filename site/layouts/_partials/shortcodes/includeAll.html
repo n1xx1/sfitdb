@@ -6,7 +6,7 @@
   ) .context.Path .source .filter .sort
 -}}
 {{- range $pages -}}
-  {{- if $.space -}}{{ "\n\n<div class=\"my-4\">" | safeHTML }}{{- end -}}
+  {{- if $.space -}}{{ "\n\n<div class=\"my-6\">" | safeHTML }}{{- end -}}
   {{- "\n\n" -}}
   {{- partial "shortcodes/include" (dict
     "page" .

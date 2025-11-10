@@ -5,6 +5,8 @@ original-srd: https://2e.aonsrd.com/ancestries/7-android
 traits: [androide, umanoide]
 featTraits: [androide]
 slug: androide
+heritagesPage: ../lignaggi
+featsPage: ../talenti
 shortDescription:
   Gli androidi sono esseri sintetici costruiti, dalle forme e origini più varie.
 ---

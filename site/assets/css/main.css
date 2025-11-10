@@ -186,9 +186,55 @@ html {
 }
 
 .level-header {
-  @apply bg-blue-500/20 py-1 px-2 rounded-t-2xl;
+  @apply bg-primary/50 px-2 py-1 rounded-t-md font-bold m-0! text-lg!;
 }
 
 .statblock-title {
-  @apply !text-xl !uppercase !mt-4 !mb-1 !font-normal;
+  @apply text-xl! uppercase! mt-4! mb-1! font-normal!;
+}
+
+.title-traits {
+  @apply mb-(--h-margin,0.4em) mt-[calc(0.4em-var(--h-margin,0em))];
+
+  h1 + & {
+    --h-margin: 2.4em;
+  }
+  h2 + & {
+    --h-margin: 1.5em;
+  }
+  h3 + & {
+    --h-margin: 0.69em;
+  }
+  h4 + & {
+    --h-margin: 0.5em;
+  }
+  .statblock-title + & {
+    --h-margin: --spacing(1);
+  }
+}
+
+.source {
+  @apply text-muted-foreground border-l-gray-200 dark:border-l-gray-700 border-l-4 pl-2;
+  @apply mb-(--h-margin,0.4em) mt-[calc(0.4em-var(--h-margin,0em))];
+
+  h1 + &,
+  h1 + .title-traits + & {
+    --h-margin: 2.4em;
+  }
+  h2 + &,
+  h2 + .title-traits + & {
+    --h-margin: 1.5em;
+  }
+  h3 + &,
+  h3 + .title-traits + & {
+    --h-margin: 0.69em;
+  }
+  h4 + &,
+  h4 + .title-traits + & {
+    --h-margin: 0.5em;
+  }
+  .statblock-title + &,
+  .statblock-title + .title-traits + & {
+    --h-margin: --spacing(1);
+  }
 }

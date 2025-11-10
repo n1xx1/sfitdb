@@ -5,6 +5,8 @@ original-srd: https://2e.aonsrd.com/ancestries/12-pahtra
 traits: [pahtra, umanoide]
 featTraits: [pahtra]
 slug: pahtra
+heritagesPage: ../lignaggi
+featsPage: ../talenti
 shortDescription:
   I pahtra sono competitivi e aggraziati, e danno grande valore alla
   competizione, alla musica e alla propria libertà.

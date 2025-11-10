@@ -5,6 +5,8 @@ original-srd: https://2e.aonsrd.com/ancestries/11-lashunta
 traits: [lashunta, umanoide]
 featTraits: [lashunta]
 slug: lashunta
+heritagesPage: ../lignaggi
+featsPage: ../talenti
 shortDescription:
   I lashunta sono telepati affascinanti originari di Castrovel, noti per il loro
   peculiare dimorfismo.

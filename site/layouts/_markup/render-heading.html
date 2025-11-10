@@ -20,7 +20,7 @@
 
 {{- $originalLevel := .Attributes.level | default .Level | int -}}
 
-{{- $appendSource := and (not $included) $isTitle -}}
+{{- $appendSource := and (or (not $included) $isStatblock) $isTitle -}}
 {{- $appendTraits := cond $isInnerStatblock (eq $originalLevel 2) $isTitle -}}
 
 {{- $sbHeading := cond $isStatblock $isTitle (cond $isInnerStatblock (eq $originalLevel 2) false) -}}
@@ -67,8 +67,10 @@
   {{- end -}}
 </h{{ .Level }}>
 
-{{- if $appendTraits -}}
-  {{- partialCached "traits" .PageInner.Params.traits .PageInner.Params.traits -}}
+{{- if and $appendTraits .PageInner.Params.traits -}}
+  <div class="title-traits">
+    {{- partialCached "traits" .PageInner.Params.traits .PageInner.Params.traits -}}
+  </div>
 {{- end -}}
 
 {{- if $appendSource -}}
