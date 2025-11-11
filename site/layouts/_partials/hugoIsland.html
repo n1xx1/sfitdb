@@ -22,11 +22,7 @@
   {{- end -}}
 {{- end -}}
 
-{{- $counter := .context.Store.Get "hugoIslandCounter" | default 0 -}}
-{{- $counter = add $counter 1 -}}
-{{- .context.Store.Set "hugoIslandCounter" $counter -}}
-
-{{- $uid := xxhash (printf "%s-%s-%d" $rendererId $componentId $counter) -}}
+{{- $uid := xxhash (printf "%s-%s-%d" $rendererId $componentId .uid) -}}
 {{- $jsonProps := .props | jsonify -}}
 {{- $jsonExport := "default" | jsonify -}}
 {{- $jsonChildren := .inner | jsonify -}}
@@ -61,7 +57,7 @@
   {{- $renderedAttrs = add $renderedAttrs (printf ` %s="%s"` $k (htmlEscape $v)) -}}
 {{- end -}}
 
-{{- $deferKey := printf "%s-%d" (anchorize .context.Path) $counter -}}
+{{- $deferKey := xxhash (printf "%s-%s" $rendererId $componentId) -}}
 {{- $deferData := dict
   "rendererId" $rendererId
   "componentId" $componentId
@@ -87,8 +83,6 @@
       {{- end -}}
     {{- end -}}
   {{- end -}}
-
-
   <hugo-island
     renderer-url="{{ $rendererUrl }}"
     component-url="{{ $componentUrl }}"

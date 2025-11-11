@@ -2,29 +2,44 @@
 {{ range $k, $v := .define }}
   {{ $bundledCode = replace $bundledCode $k $v }}
 {{ end }}
-{{ $resourceCode := resources.FromString
-  (printf "execute-js-%d.css" math.Counter)
-  (printf "code: %s;\ntimeout: 3;\n" (jsonify $bundledCode))
-}}
+{{ $result := default nil nil }}
 
-{{ $pluginPath := path.Join (path.Dir templates.Current.Filename) "execJs-plugin.cjs" }}
-{{ if findRE "^[A-Z]+:" $pluginPath }}
-  {{ $pluginPath = printf "file:///%s" (replace (replace $pluginPath "\\" "/") " " "%20") }}
-{{ end }}
-{{ $resourceCode = $resourceCode | postCSS (dict "use" $pluginPath) }}
+{{ if hugo.IsDevelopment }}
+  {{ $body := jsonify (dict "code" $bundledCode "timeout" 100) }}
+  {{ with try (resources.GetRemote "http://localhost:23123/js" (dict "body" $body "method" "post" "key" (printf "execjs-%v-%d" $bundledCode math.Counter))) }}
+    {{ with .Err }}
+      {{ errorf "%s" . }}
+    {{ else with .Value }}
+      {{ $result = . | transform.Unmarshal (dict "format" "json") }}
+    {{ else }}
+      {{ errorf "Unable to get remote resource  %q" "http://localhost:23123/js" }}
+    {{ end }}
+  {{ end }}
+{{ else }}
+  {{ $resourceCode := resources.FromString
+    (printf "execute-js-%d.css" math.Counter)
+    (printf "code: %s;\ntimeout: 3;\n" (jsonify $bundledCode))
+  }}
 
-{{ $logs := index (index (findRESubmatch
-  `--EVAL-LOGS-BEGIN--([\s\S]+)--EVAL-LOGS-END--`
-  $resourceCode.Content) 0) 1
-}}
-{{ $result := index (index (findRESubmatch
-  `--EVAL-RESULT-BEGIN--([\s\S]+)--EVAL-RESULT-END--`
-  $resourceCode.Content) 0) 1
-}}
-{{ $result = transform.Unmarshal (dict "format" "json") $result }}
+  {{ $pluginPath := path.Join (path.Dir templates.Current.Filename) "execJs-plugin.cjs" }}
+  {{ if findRE "^[A-Z]+:" $pluginPath }}
+    {{ $pluginPath = printf "file:///%s" (replace (replace $pluginPath "\\" "/") " " "%20") }}
+  {{ end }}
+  {{ $resourceCode = $resourceCode | postCSS (dict "use" $pluginPath) }}
 
-{{ with strings.TrimSpace $logs }}
-  {{ warnf "executeJs logs: %v" . }}
+  {{ $logs := index (index (findRESubmatch
+    `--EVAL-LOGS-BEGIN--([\s\S]+)--EVAL-LOGS-END--`
+    $resourceCode.Content) 0) 1
+  }}
+  {{ $result := index (index (findRESubmatch
+    `--EVAL-RESULT-BEGIN--([\s\S]+)--EVAL-RESULT-END--`
+    $resourceCode.Content) 0) 1
+  }}
+  {{ $result = transform.Unmarshal (dict "format" "json") $result }}
+
+  {{ with strings.TrimSpace $logs }}
+    {{ warnf "executeJs logs: %v" . }}
+  {{ end }}
 {{ end }}
 
 {{ if $result.error }}

@@ -1,5 +1,5 @@
 {{ $ret := default nil nil }}
-{{ $pages := partial "pf/allPagesSorted" nil }}
+{{ $pages := partialCached "pf/allPagesSorted" "" "" }}
 {{ $index := -1 }}
 {{ range $i, $page := $pages }}
   {{ if $.Eq $page }}

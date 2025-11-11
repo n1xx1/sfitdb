@@ -1,40 +1,53 @@
-{{- $level := 1 -}}
-{{- $type := "" -}}
-
 {{- if not .IsNamedParams -}}
   {{- errorf "require named parameters" -}}
 {{- end -}}
 
-{{- with .Get "type" -}}
-  {{- $type = printf "pf%s" . -}}
-{{- else -}}
-  {{- errorf "missing value for param 'type': %s" .Position -}}
+{{- $source := default nil nil -}}
+{{- if and .IsNamedParams (isset .Params "source") -}}
+  {{- $source = transform.Unmarshal (dict "format" "yaml") .Params.source -}}
 {{- end -}}
+
+{{- $rulesSource := default nil nil -}}
+{{- if and .IsNamedParams (isset .Params "rulesSource") -}}
+  {{- $rulesSource = transform.Unmarshal (dict "format" "yaml") .Params.rulesSource -}}
+{{- end -}}
+
+{{- $level := 1 -}}
 {{- if isset .Params "level" -}}
   {{- $level = .Get "level" -}}
 {{- end -}}
+
 {{- $template := "" -}}
 {{- if and .IsNamedParams (isset .Params "template") -}}
   {{- $template = .Params.template -}}
 {{- end -}}
 
-{{- $pages := slice -}}
-{{- range .Site.Pages -}}
-  {{- if ne .Type $type -}}
-    {{- continue -}}
+{{- if hasPrefix .Page.Path "/regole" -}}
+  {{- if $rulesSource -}}
+    {{- partial "shortcodes/includeAll" (dict
+      "context" .Page
+      "source" $rulesSource
+      "filter" dict
+      "sort" slice
+      "level" $level
+      "space" false
+      "template" $template
+      "templateData" dict
+      )
+    -}}
   {{- end -}}
-  {{- if hasPrefix $.Page.Path "/regole" -}}
-    {{- if not (hasPrefix .Page.Path $.Page.Path ) -}}
-      {{- continue -}}
-    {{- end -}}
-  {{- else -}}
-    {{- if hasPrefix .Page.Path "/regole" -}}
-      {{- continue -}}
-    {{- end -}}
+{{- else -}}
+  {{- if $source -}}
+    {{- partial "shortcodes/includeAll" (dict
+      "context" .Page
+      "source" $source
+      "filter" dict
+      "sort" slice
+      "level" $level
+      "space" false
+      "template" $template
+      "templateData" dict
+      )
+    -}}
   {{- end -}}
-  {{- $pages = $pages | append . -}}
-{{- end -}}
-{{- $pages = partial "utils/sortPagesBy" (dict "pages" $pages "sorter" "name") -}}
-{{- range $pages -}}
-  {{ partial "shortcodes/include" (dict "page" . "level" $level "template" $template) }}
 {{- end -}}

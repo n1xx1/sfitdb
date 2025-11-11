@@ -5,10 +5,10 @@
 {{ $packageJson := resources.Get "internal/package.json" | transform.Unmarshal }}
 {{ $externals := slice }}
 {{ range $k, $v := $packageJson.devDependencies }}
-  {{ $externals = $externals | append $k }}
+  {{/* {{ $externals = $externals | append $k }} */}}
 {{ end }}
 {{ range $k, $v := $packageJson.dependencies }}
-  {{ $externals = $externals | append $k }}
+  {{/* {{ $externals = $externals | append $k }} */}}
 {{ end }}
 {{ $resourceBundle = $resourceBundle | js.Build (dict
   "minify" true

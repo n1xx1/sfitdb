@@ -161,7 +161,7 @@
         {{ $featsPageContent := $featsPage.content.value }}
         {{ $replacement := printf `$1 featTable traits="%s" $2` $class }}
         {{ $featsPageContent = $featsPageContent |
-          replaceRE `(\{\{<)\s*rulesFeatTable\s*(>\}\})` $replacement
+          replaceRE `(\{\{%)\s*rulesFeatList\s*(%\}\})` $replacement
         }}
         {{ partial "contentAdapter/addPage" (dict
           "context" $

@@ -1,14 +1,33 @@
-import { BetterSqlite3SQLTemplate, waddler } from "waddler/better-sqlite3";
-import { readFile, unlink } from "fs/promises";
-import stripTags from "striptags";
 import { watch as chokidarWatch } from "chokidar";
+import { readFile, unlink } from "node:fs/promises";
 import {
   join as pathJoin,
   normalize as pathNormalize,
   sep as pathSep,
-} from "path";
+} from "node:path";
+import stripTags from "striptags";
+import { BetterSqlite3SQLTemplate, waddler } from "waddler/better-sqlite3";
 import yargs from "yargs";
 import { hideBin } from "yargs/helpers";
+import { Hono } from "hono";
+import z from "zod";
+import { serve } from "@hono/node-server";
+import { performance } from "node:perf_hooks";
+import { createRequire } from "node:module";
+
+const require = createRequire(import.meta.url);
+
+const requireCached = (() => {
+  const cache = new Map<string, any>();
+  return (id: string) => {
+    let cached = cache.get(id);
+    if (!cached) {
+      cached = require(id);
+      cache.set(id, cached);
+    }
+    return cached;
+  };
+})();
 
 function startWatcher() {
   console.log(`Starting watcher...`);
@@ -47,6 +66,79 @@ function startWatcher() {
 
   process.on("SIGINT", () => {
     watcher.close();
+  });
+}
+
+const AsyncFunction: typeof Function = async function () {}.constructor as any;
+
+function startJsCompiler() {
+  const app = new Hono({});
+  app.post("/js", async (c) => {
+    const rawBody = await c.req.json();
+    const body = z
+      .object({ code: z.string(), timeout: z.number().default(0) })
+      .parse(rawBody);
+
+    let ret: any = {};
+    const startTime = performance.now();
+    try {
+      console.time("compile");
+      const fn = new AsyncFunction(
+        "require",
+        `const module = {};\n\n${body.code};\n\nreturn module.exports`,
+      );
+      console.timeEnd("compile");
+      // console.log(body.code);
+
+      console.time("createRunner");
+      const mod = fn((id: string) => {
+        const timer = `require ${id}`;
+        console.time(timer);
+        const mod = requireCached(id);
+        console.timeEnd(timer);
+        return mod;
+      });
+      console.timeEnd("createRunner");
+
+      console.time("awaitRunner");
+      const { default: runner } = await mod;
+      console.timeEnd("awaitRunner");
+
+      if (typeof runner !== "function") {
+        throw new Error("module did not export a function");
+      }
+
+      const timeoutPromise =
+        body.timeout > 0 &&
+        new Promise((_ful, rej) =>
+          setTimeout(() => rej(new Error("timeout")), body.timeout * 1000),
+        );
+
+      console.time("exec");
+      const result = await Promise.race([
+        runner(),
+        ...(timeoutPromise ? [timeoutPromise] : []),
+      ]);
+      console.timeEnd("exec");
+
+      ret = { result };
+    } catch (e) {
+      ret = { error: true, message: `${e}` };
+    }
+
+    const durationMs = performance.now() - startTime;
+    console.log(`executed js in ${durationMs}ms`);
+
+    return c.json(ret);
+  });
+
+  const server = serve({
+    fetch: app.fetch,
+    port: 23123,
+  });
+
+  process.on("SIGINT", () => {
+    server.close();
   });
 }
 
@@ -130,19 +222,6 @@ async function rebuildDatabaseImpl() {
   await exec(sql`insert into entry_fts(entry_fts) values ('optimize');`);
 
   console.log(`Done.`);
-
-  //   const text = "alchimia rapida".replaceAll('"', '""');
-  //   const query = `(name: "${text}") OR (text: NEAR("${text}"))`;
-  //   const result = db.all<{ data: string; rank: number }>(
-  //     sql`
-  // select json(feats.data) data, feats_fts.rank rank
-  //   from feats
-  //   join feats_fts on feats_fts.rowid = feats.id
-  //   where feats_fts match ${query}
-  //   order by feats_fts.rank
-  // `,
-  //   );
-  //   console.log(result.map((r) => ({ ...JSON.parse(r.data), rank: r.rank })));
 }
 
 async function exec(
@@ -160,6 +239,7 @@ const argv = yargs(hideBin(process.argv))
 
 if (argv.watch) {
   startWatcher();
+  startJsCompiler();
 } else {
   rebuildDatabase();
 }

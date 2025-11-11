@@ -1,26 +1,22 @@
-{{ return (partialCached "pf/allPagesSorted/impl" nil) }}
+{{ $result := slice }}
+{{ $opts := dict "filter" (dict "hasTitle" true) "sort" (slice "navigation" "name") }}
+{{ $stack := slice site.Home }}
 
-{{ define "partials/pf/allPagesSorted/impl" }}
-  {{ $result := slice }}
-  {{ $opts := dict "filter" (dict "hasTitle" true) "sort" (slice "navigation" "name") }}
-  {{ $stack := slice site.Home }}
+{{ range (len site.AllPages) }}
+  {{ if eq (len $stack) 0 }}
+    {{ break }}
+  {{ end }}
+  {{ $cur := index (last 1 $stack) 0 }}
+  {{ $stack = first (sub (len $stack) 1) $stack }}
 
-  {{ range site.AllPages }}
-    {{ if eq (len $stack) 0 }}
-      {{ break }}
-    {{ end }}
-    {{ $cur := index (last 1 $stack) 0 }}
-    {{ $stack = first (sub (len $stack) 1) $stack }}
-
-    {{ if not (or (index $cur.Params "navigation-hide") (and $cur.Parent (index $cur.Parent.Params "navigation-sub-hide"))) }}
-      {{ $result = $result | append $cur }}
-    {{ end }}
-
-    {{ $pages := partialCached "pf/getPages" (merge (dict "section" $cur) $opts) $cur $opts }}
-    {{ if gt (len $pages) 0 }}
-      {{ $stack = $stack | append (collections.Reverse $pages) }}
-    {{ end }}
+  {{ if not (or (index $cur.Params "navigation-hide") (and $cur.Parent (index $cur.Parent.Params "navigation-sub-hide"))) }}
+    {{ $result = $result | append $cur }}
   {{ end }}
 
-  {{ return $result }}
+  {{ $pages := partialCached "pf/getPages" (merge (dict "section" $cur) $opts) $cur $opts }}
+  {{ if gt (len $pages) 0 }}
+    {{ $stack = $stack | append (collections.Reverse $pages) }}
+  {{ end }}
 {{ end }}
+
+{{ return $result }}

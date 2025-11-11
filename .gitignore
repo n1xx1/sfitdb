@@ -6,7 +6,6 @@ resources/_gen
 hugo_stats.json
 .vercel
 .tmp
-.vercel
+.cache
 database.db
-
-.vercel
+database.db-journal

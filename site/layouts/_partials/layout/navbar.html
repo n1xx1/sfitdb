@@ -67,10 +67,10 @@
         {{- end -}}
       {{- end -}}
     {{- end -}}
-    {{- partial "reactComponent" (dict
+    {{- partialCached "reactComponent" (dict
       "path" "@/components/theme-select.tsx"
-      "context" .Page
-      )
+      "uid" "global-theme-select"
+      ) "global-theme-select"
     -}}
     <a
       href="{{ (partialCached `config` ``).repoURL }}"

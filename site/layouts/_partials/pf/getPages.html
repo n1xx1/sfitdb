@@ -86,25 +86,26 @@
 {{/* default: level, name */}}
 {{ $defaultSortForamt := "%02[2]d__%[1]s" }}
 {{ $sortFormat := "" }}
-{{ range .sort }}
-  {{ $pattern := "" }}
-  {{ if eq . "name" }}
-    {{ $pattern = "%[1]s" }}
-  {{ else if eq . "level" }}
-    {{ $pattern = "%02[2]d" }}
-  {{ else if eq . "source" }}
-    {{ $pattern = "%[3]s" }}
-  {{ else if eq . "navigation" }}
-    {{ $pattern = "%04[4]d" }}
-  {{ end }}
-  {{ with $pattern }}
-    {{ if gt (len $sortFormat) 0 }}
-      {{ $sortFormat = add $sortFormat "__" }}
+{{ if .sort }}
+  {{ range .sort }}
+    {{ $pattern := "" }}
+    {{ if eq . "name" }}
+      {{ $pattern = "%[1]s" }}
+    {{ else if eq . "level" }}
+      {{ $pattern = "%02[2]d" }}
+    {{ else if eq . "source" }}
+      {{ $pattern = "%[3]s" }}
+    {{ else if eq . "navigation" }}
+      {{ $pattern = "%04[4]d" }}
     {{ end }}
-    {{ $sortFormat = add $sortFormat $pattern }}
+    {{ with $pattern }}
+      {{ if gt (len $sortFormat) 0 }}
+        {{ $sortFormat = add $sortFormat "__" }}
+      {{ end }}
+      {{ $sortFormat = add $sortFormat $pattern }}
+    {{ end }}
   {{ end }}
-{{ end }}
-{{ if not $sortFormat }}
+{{ else }}
   {{ $sortFormat = $defaultSortForamt }}
 {{ end }}
 

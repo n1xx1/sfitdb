@@ -2,11 +2,16 @@
 {{- with .InnerDeindent | strings.TrimSpace -}}
   {{- $inner = . | $.Page.RenderString -}}
 {{- end -}}
+
+{{- $counter := .Page.Store.Get "reactComponentCounter" | default 0 -}}
+{{- $counter = add $counter 1 -}}
+{{- .Page.Store.Set "reactComponentCounter" $counter -}}
+
 {{- $opts := dict
   "rendererPath" "@/react/client.ts"
   "serverRendererPath" "@/react/server.ts"
   "componentPath" .Params.path
-  "context" .Page
+  "uid" (printf "%d-%s" $counter (anchorize .Page.Path))
   "props" .Params
   "inner" $inner
 -}}
