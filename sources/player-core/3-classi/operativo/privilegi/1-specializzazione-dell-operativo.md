@@ -14,3 +14,5 @@ specializzazione ti concede addestramento in un’abilità, un talento per quell
 abilità e un exploit. Al 9° livello, ottieni l’exploit potenziato concesso dalla
 tua specializzazione. Le specializzazioni presentate in questo manuale sono le
 seguenti.
+
+{{% rulesIncludeAll rulesSource="../../specializzazioni" %}}

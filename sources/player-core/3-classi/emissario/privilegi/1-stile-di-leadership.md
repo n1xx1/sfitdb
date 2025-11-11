@@ -11,3 +11,5 @@ di guidare gli altri. Al 1° livello, scegli uno
 [stile di leadership](/classi/emissario/stili-di-leadership). Diventi addestrato
 nell'abilità di leadership indicata, ottieni il vantaggio di leadership
 corrispondente e conosci la direttiva di leadership associata.
+
+{{% rulesIncludeAll rulesSource="../../stili-di-leadership" %}}

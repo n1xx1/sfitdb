@@ -8,8 +8,6 @@ navigation-hide: true
 
 # Imboscata Coordinata :a: o :aa:
 
----
-
 Con tempismo perfetto, chiami gli alleati nascosti per abbattere un bersaglio
 ignaro. Designa una creatura nemica entro 18 metri e un alleato entro 18 metri.
 Se l’alleato è [nascosto](/condizioni/nascosto),

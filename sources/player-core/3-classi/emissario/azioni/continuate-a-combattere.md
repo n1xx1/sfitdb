@@ -8,8 +8,6 @@ navigation-hide: true
 
 # Continuate a Combattere! :a: o :aa:
 
----
-
 Spingi i tuoi alleati a continuare a combattere nonostante le ferite. Seleziona
 un alleato entro 9 metri. Fino all’inizio del tuo prossimo turno, quell’alleato
 aumenta la prossima guarigione che riceve di un ammontare pari al tuo

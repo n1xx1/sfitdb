@@ -8,5 +8,5 @@ levels: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 
 # Talenti da Mistico
 
-Al 2° livello, e successivamente ad ogni livello pari, ottieni un talento da
-mistico.
+Al 2° livello, e successivamente ad ogni livello pari, ottieni un
+[talento da mistico](/classi/mistico/talenti).

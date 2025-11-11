@@ -2,6 +2,7 @@
 source: Player Core (Eng), pag. 127
 original-name: Class Features
 original-srd: https://2e.aonsrd.com/classes/3-operative
+navigation-sub-hide: true
 ---
 
 # Privilegi di Classe

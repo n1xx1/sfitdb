@@ -2,6 +2,7 @@
 source: Player Core (Eng), pag. 151
 original-name: Class Features
 original-srd: https://2e.aonsrd.com/classes/5-soldier
+navigation-sub-hide: true
 ---
 
 # Privilegi di Classe

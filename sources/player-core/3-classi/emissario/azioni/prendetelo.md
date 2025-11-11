@@ -8,8 +8,6 @@ navigation-hide: true
 
 # Prendetelo! :a: o :aa:
 
----
-
 Indichi un nemico su cui tu e i tuoi alleati dovete concentrare i vostri
 attacchi. Seleziona un nemico entro 18 metri che puoi vedere. Tu e i tuoi
 alleati ottenete un bonus di status di +1 ai tiri per colpire contro quel

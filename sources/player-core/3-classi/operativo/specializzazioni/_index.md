@@ -18,4 +18,4 @@ addestramento in un’abilità, un talento per quella abilità e un exploit. Al 
 livello, ottieni l’exploit potenziato concesso dalla tua specializzazione. Le
 specializzazioni presentate in questo manuale sono le seguenti.
 
-{{% rulesIncludeAll type="specialization" %}}
+{{% rulesIncludeAll rulesSource="~" source="/classi/operativo/specializzazioni" %}}

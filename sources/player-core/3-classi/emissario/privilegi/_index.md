@@ -2,6 +2,7 @@
 source: Player Core (Eng), pag. 103
 original-name: Class Features
 original-srd: https://2e.aonsrd.com/classes/1-envoy
+navigation-sub-hide: true
 ---
 
 # Privilegi di Classe

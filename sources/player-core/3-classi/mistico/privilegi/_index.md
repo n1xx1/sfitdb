@@ -2,6 +2,7 @@
 source: Player Core (Eng), pag. 115
 original-name: Class Features
 original-srd: https://2e.aonsrd.com/classes/2-mystic
+navigation-sub-hide: true
 ---
 
 # Privilegi di Classe

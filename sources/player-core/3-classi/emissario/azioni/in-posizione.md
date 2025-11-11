@@ -8,8 +8,6 @@ navigation-hide: true
 
 # In Posizione! :a: o :aa:
 
----
-
 Chiami gli alleati a uscire dall’area di minaccia o ad avvicinarsi a una
 minaccia. Seleziona un nemico entro 18 metri. Gli alleati entro la portata del
 bersaglio possono effettuare un Passo come reazione. Gli alleati entro 9 metri

@@ -8,5 +8,5 @@ levels: [1, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 
 # Talenti da Solarian
 
-Al 1° livello, e successivamente ad ogni livello pari, ottieni un talento da
-solarian.
+Al 1° livello, e successivamente ad ogni livello pari, ottieni un
+[talento da solarian](/classi/solarian/talenti).

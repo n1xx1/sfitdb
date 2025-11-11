@@ -8,8 +8,6 @@ navigation-hide: true
 
 # Valutazione Digitale! :a: o :aa:
 
----
-
 Un rapido controllo dei tuoi archivi e dell'infosfera locale ti consente di
 diffondere velocemente informazioni ai tuoi alleati. Scegli una creatura entro
 30 metri e [Ricordare Conoscenze](/azioni/ricordare-conoscenze) su di essa.

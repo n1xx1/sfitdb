@@ -8,5 +8,5 @@ levels: [1, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 
 # Talenti da Operativo
 
-Al 1° livello, e successivamente ad ogni livello pari, ottieni un talento da
-operativo.
+Al 1° livello, e successivamente ad ogni livello pari, ottieni un
+[talento da operativo](/classi/operativo/talenti).

@@ -8,8 +8,6 @@ navigation-hide: true
 
 # Compagni di Danza! :a: o :aa:
 
----
-
 Ogni buon artista ha bisogno di un accompagnatore. Nomina te stesso e un alleato
 entro 10 piedi. [Avanza](/azioni/avanzare) o fai un [Passo](/azioni/passo), poi
 il tuo alleato può [Avanzare](/azioni/avanzare) o fare un [Passo](/azioni/passo)

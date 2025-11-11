@@ -21,4 +21,4 @@ talenti [Distorsione Avanzata](/talenti/distorsione-avanzata) e
 [Distorsione Superiore](/talenti/distorsione-superiore). Il tuo campo quantico
 ottiene l’effetto unico elencato.
 
-{{% rulesIncludeAll type="paradox" %}}
+{{% rulesIncludeAll rulesSource="~" source="/classi/stregone-del-velo/paradossi" %}}

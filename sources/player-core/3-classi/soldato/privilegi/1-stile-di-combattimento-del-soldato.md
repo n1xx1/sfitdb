@@ -10,3 +10,5 @@ Come soldato, ti alleni seguendo uno stile di combattimento specifico. Il tuo
 stile determina il tuo approccio alla battaglia e spesso influenza il modo in
 cui sfrutti la tua capacità di sopprimere i bersagli. Scegli uno
 [stile di combattimento del soldato](/classi/soldato/stili-di-combattimento).
+
+{{% rulesIncludeAll rulesSource="../../stili-di-combattimento" %}}

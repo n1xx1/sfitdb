@@ -2,9 +2,7 @@
   "ancestry": ["2-stirpi-e-background/stirpi/*/stirpe"],
   "heritage": ["2-stirpi-e-background/stirpi/*/lignaggi/*"],
   "background": ["2-stirpi-e-background/background/*"],
-  "class": [
-    "3-classi/{emissario,mistico,operativo,solarian,soldato,stregone-del-velo}"
-  ],
+  "class": ["3-classi/*/classe"],
   "archetype": [
     "3-classi/archetipi/{emissario,mistico,operativo,solarian,soldato,stregone-del-velo}"
   ],

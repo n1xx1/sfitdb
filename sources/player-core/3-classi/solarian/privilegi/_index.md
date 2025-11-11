@@ -2,6 +2,7 @@
 source: Player Core (Eng), pag. 139
 original-name: Class Features
 original-srd: https://2e.aonsrd.com/classes/4-solarian
+navigation-sub-hide: true
 ---
 
 # Privilegi di Classe

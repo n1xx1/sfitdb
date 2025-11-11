@@ -15,4 +15,4 @@ stile determina il tuo approccio alla battaglia e spesso influenza il modo in
 cui sfrutti la tua capacità di sopprimere i bersagli. Scegli uno stile di
 combattimento del soldato.
 
-{{% rulesIncludeAll type="fightingstyle" %}}
+{{% rulesIncludeAll rulesSource="~" source="/classi/soldato/stili-di-combattimento" %}}
