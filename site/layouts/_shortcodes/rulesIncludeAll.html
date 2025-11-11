@@ -22,7 +22,9 @@
   {{- $template = .Params.template -}}
 {{- end -}}
 
-{{- if hasPrefix .Page.Path "/regole" -}}
+{{- $originalPage := index (.Page.Store.Get "includeContext") 0 | default .Page }}
+
+{{- if hasPrefix $originalPage.Path "/regole" -}}
   {{- if $rulesSource -}}
     {{- partial "shortcodes/includeAll" (dict
       "context" .Page
