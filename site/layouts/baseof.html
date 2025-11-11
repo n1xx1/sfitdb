@@ -19,9 +19,7 @@
     >
       <main class="w-full min-w-0 max-w-6xl px-6 pt-4 lg:px-8">
         {{- partial "breadcrumb.html" . -}}
-        <div
-          class="prose prose-gray dark:prose-invert max-w-none prose-hr:my-4 prose-a:font-normal prose-h1:font-bold prose-h2:font-bold prose-h3:font-bold prose-h4:font-bold prose-h5:font-bold"
-        >
+        <div class="prose sf-prose">
           {{- partialCached "renderPage" . . -}}
         </div>
         <div class="mt-16"></div>

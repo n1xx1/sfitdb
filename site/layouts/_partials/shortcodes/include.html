@@ -64,4 +64,10 @@
     }}
   {{ end }}
 {{ end }}
+
+{{ $isStatblock := partialCached "pf/isStatblock" .page.Type .page.Type }}
+{{ if $isStatblock }}
+  {{ $content = printf "<div class=\"prose sf-prose px-4 py-1 bg-card my-5\">\n\n%s\n\n</div>" $content }}
+{{ end }}
+
 {{ return ($content | safeHTML) }}
