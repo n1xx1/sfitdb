@@ -74,7 +74,7 @@
 | Fleeing     | In Fuga         | gu pf |      |
 | Friendly    | Amichevole      | gu pf |      |
 | Frightened  | Spaventato      | gu pf |      |
-| Glitching   |                 |       |      |
+| Glitching   | Difettoso       | gu sf |      |
 | Grabbed     | Afferrato       |       |      |
 | Helpful     | Collaborativo   |       |      |
 | Hidden      | Nascosto        | gu pf |      |
@@ -115,12 +115,20 @@
 | Flourish  | Ostentazione    | gu pf |      |
 | Metal     | Metallo         | gu pf |      |
 | Shadow    | Ombra           | gu pf |      |
-| Traversal | Attraversamento | us    |      |
+| Tech      | Tecnologico     | us    |      |
 | Teleport  | Teletrasporto   | gu pf |      |
+| Traversal | Attraversamento | us    |      |
 | Visual    | Visivo          | gu pf |      |
+| Volley    | Parabola        | gu pf |      |
 | Water     | Acqua           | gu pf |      |
 | Wood      | Legno           | gu pf |      |
 | Unwieldy  | Ingombrante     | gu sf |      |
+
+### Gruppi Armi
+
+| en     | it            | da    | note |
+| ------ | ------------- | ----- | ---- |
+| Sniper | Di Precisione | gu sf |      |
 
 ### Azioni
 

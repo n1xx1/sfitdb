@@ -14,6 +14,6 @@ original-srd: https://2e.aonsrd.com/feats/528-weakening-shot
 Miri agli arti o alle appendici portanti del nemico per indebolirlo.
 [Miri](/azioni/mirare) e poi effettui un [Colpo](/azioni/colpire) a distanza
 contro la tua vittima. Se il Colpo va a segno, la creatura diventa a tua scelta
-[maldestra 1](/tratti/maldestro) o [indebolita 1](/tratti/indebolito) fino alla
+[maldestra](/tratti/maldestro) 1 o [indebolita](/tratti/indebolito) 1 fino alla
 fine del tuo prossimo turno (maldestra 2 o indebolita 2 in caso di colpo
 critico).

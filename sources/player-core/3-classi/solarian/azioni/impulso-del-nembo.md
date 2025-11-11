@@ -21,8 +21,8 @@ penalità non si applica a questo Colpo.
 
 **Armonizzato al Gravitone** se il Colpo è un successo critico, il bersaglio
 deve superare un tiro salvezza su Tempra contro la tua CD di classe o diventa
-[indebolito 1](/condizioni/indebolito) fino alla fine del suo turno.
+[indebolito](/condizioni/indebolito) 1 fino alla fine del suo turno.
 
 **Armonizzato al Fotone** se il Colpo è un successo critico, il bersaglio deve
 superare un tiro salvezza su Tempra contro la tua CD di classe o diventa
-[maldestro 1](/condizioni/maldestro) fino all’inizio del suo turno.
+[maldestro](/condizioni/maldestro) 1 fino all’inizio del suo turno.
