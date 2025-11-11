@@ -82,27 +82,17 @@ function startJsCompiler() {
     let ret: any = {};
     const startTime = performance.now();
     try {
-      console.time("compile");
       const fn = new AsyncFunction(
         "require",
         `const module = {};\n\n${body.code};\n\nreturn module.exports`,
       );
-      console.timeEnd("compile");
-      // console.log(body.code);
 
-      console.time("createRunner");
       const mod = fn((id: string) => {
-        const timer = `require ${id}`;
-        console.time(timer);
         const mod = requireCached(id);
-        console.timeEnd(timer);
         return mod;
       });
-      console.timeEnd("createRunner");
 
-      console.time("awaitRunner");
       const { default: runner } = await mod;
-      console.timeEnd("awaitRunner");
 
       if (typeof runner !== "function") {
         throw new Error("module did not export a function");
@@ -114,12 +104,10 @@ function startJsCompiler() {
           setTimeout(() => rej(new Error("timeout")), body.timeout * 1000),
         );
 
-      console.time("exec");
       const result = await Promise.race([
         runner(),
         ...(timeoutPromise ? [timeoutPromise] : []),
       ]);
-      console.timeEnd("exec");
 
       ret = { result };
     } catch (e) {
