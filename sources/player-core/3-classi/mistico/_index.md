@@ -8,6 +8,6 @@ navigation-disable: true
 
 {{% include page="./classe" level=0 %}}
 
-{{% include page="./connessioni" level=0 %}}
+{{% include page="./connessioni" %}}
 
-{{% include page="./talenti" level=0 %}}
+{{% include page="./talenti" %}}

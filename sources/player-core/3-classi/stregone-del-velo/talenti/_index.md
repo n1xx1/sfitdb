@@ -12,4 +12,4 @@ A ogni livello in cui ottieni un talento da stregone del velo, puoi sceglierne
 uno tra i seguenti. Devi soddisfare tutti i prerequisiti prima di selezionare il
 talento.
 
-{{< rulesFeatTable >}}
+{{% rulesFeatList %}}

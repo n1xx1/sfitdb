@@ -8,8 +8,8 @@ navigation-disable: true
 
 {{% include page="./classe" level=0 %}}
 
-{{% include page="./ancore" level=0 %}}
+{{% include page="./paradossi" %}}
 
-{{% include page="./paradossi" level=0 %}}
+{{% include page="./ancore" %}}
 
-{{% include page="./talenti" level=0 %}}
+{{% include page="./talenti" %}}

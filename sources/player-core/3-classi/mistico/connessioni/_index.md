@@ -22,4 +22,4 @@ e Epifania Maggiore. Al 1° livello ottieni l’armonia della connessione scelta
 che si attiva ogni volta che Trasferisci Vitalità, e al 19° livello ottieni
 l’armonia perfetta della connessione.
 
-{{% rulesIncludeAll rulesSource="~" source="/classi/mistico/connessioni" %}}
+{{% rulesIncludeAll rulesSource=`"~"` source="/classi/mistico/connessioni" %}}

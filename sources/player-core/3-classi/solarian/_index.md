@@ -8,4 +8,4 @@ navigation-disable: true
 
 {{% include page="./classe" level=0 %}}
 
-{{% include page="./talenti" level=0 %}}
+{{% include page="./talenti" %}}

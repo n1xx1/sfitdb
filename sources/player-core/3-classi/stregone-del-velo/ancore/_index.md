@@ -17,4 +17,4 @@ beneficio e un effetto di ancoraggio che si attiva quando
 [Mantieni](/azioni/mantenere) il tuo campo quantico, incluse le abilità con il
 tratto [ancoraggio](/tratti/ancoraggio).
 
-{{% rulesIncludeAll rulesSource="~" source="/classi/stregone-del-velo/ancore" %}}
+{{% rulesIncludeAll rulesSource=`"~"` source="/classi/stregone-del-velo/ancore" %}}

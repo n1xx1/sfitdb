@@ -8,12 +8,11 @@
   {{ $h1 := strings.Repeat (add 1 $.level | math.Min 6 | int) "#" }}
 
   {{ $prevIncludeContext := .Store.Get "includeContext" }}
-
   {{ $includeContext := $.context.Store.Get "includeContext" | default slice }}
   {{ $newIncludeContext := slice | append $includeContext | append (slice $.context) }}
+
   {{ .Store.Set "includeContext" $newIncludeContext }}
   {{ $content = .RenderShortcodes }}
-
   {{ .Store.Set "includeContext" $prevIncludeContext }}
 
   {{ if $.title }}

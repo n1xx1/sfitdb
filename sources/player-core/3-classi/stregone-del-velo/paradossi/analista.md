@@ -11,7 +11,7 @@ concentrando il tuo intelletto puoi connetterti a esso e vederne le equazioni.
 
 **Tradizione** Arcana
 
-**Abilità del Paradosso** Computer
+**Abilità del Paradosso** [Computer](/abilita/computer)
 
 **Incantesimi del Paradosso** trucchetto:
 [analizza bersaglio](/incantesimi/analizza-bersaglio); 1°:
@@ -26,7 +26,7 @@ concentrando il tuo intelletto puoi connetterti a esso e vederne le equazioni.
 [previsione](/incantesimi/previsione);
 
 **Incantesimi di Distorsione** iniziale:
-[distorci probabilità](/incantesimi/distorci-probabilita); avanzato:
+[distorcere probabilità](/incantesimi/distorcere-probabilita); avanzato:
 [esito alternativo](/incantesimi/esito-alternativo); superiore:
 [analisi quantistica](/incantesimi/analisi-quantistica)
 

@@ -221,6 +221,7 @@
 | ----------------------- | -------------------------- | ----- | ------------------------- |
 |                         |                            |       |                           |
 | Absolute Zero           | Zero Assoluto              | us    |                           |
+| Accelerate              | Accelerare                 | us    |                           |
 | Akashic Assistant       | Assistente Akashico        | us    |                           |
 | Akashic Download        | Download Akashico          | us    |                           |
 | Akashic Fount           | Sorgente Akashica          | us    |                           |
@@ -232,13 +233,18 @@
 | Battle Sonata           | Melodia di Battaglia       | us    |                           |
 | Breath of Life          | Respiro di Vita            | gu pf |                           |
 |                         |                            |       |                           |
+| Call Cosmos             | Richiamo del Cosmo         | gu sf |                           |
+| Chrono Push             | Crono-Spinta               | us    | ????                      |
 | Clairvoyance            | Chiaroveggenza             | gu pf |                           |
 | Cloying Shadow          | Ombra Stucchevole          | us    |                           |
+| Confusion               | Confusione                 | gu pf |                           |
 |                         |                            |       |                           |
 | Data Drain              | Drenaggio Dati             | us    |                           |
 | Daze                    | Frastornare                | gu pf |                           |
 | Death Sentence          | Condanna a Morte           | us    |                           |
+| Delete                  | Eliminare                  | us    |                           |
 | Disappearance           | Sparizione                 | gu pf |                           |
+| Dispel Magic            | Dissolvi Magie             | gu pf |                           |
 |                         |                            |       |                           |
 | Earthquake              | Terremoto                  | gu pf |                           |
 | Eclipse Burst           | Esplosione Oscurante       | gu pf |                           |
@@ -252,8 +258,10 @@
 | Falling Sky             | Clielo in Caduta           | gu pf |                           |
 | False Vitality          | Vitalità Falsa             | gu pf |                           |
 | Figment                 | Figmento                   | gu pf |                           |
+| Fleet Step              | Passo Rapido               | gu pf |                           |
 | Flicker                 | Sfarfallio                 | gu pf |                           |
 | Foresight               | Previsione                 | gu pf |                           |
+| Forget                  | Dimenticare                | us    |                           |
 |                         |                            |       |                           |
 | Genetic Regeneration    | Rigenerazione Genetica     | us    |                           |
 | Grim Tendrils           | Rampicanti Macabri         | gu pf |                           |
@@ -265,6 +273,7 @@
 | Hydraulic Push          | Spinta Idraulica           | gu pf |                           |
 |                         |                            |       |                           |
 | Infusion                | Infusione                  | us    |                           |
+| Injury Echo             | Eco di Ferita              | us    |                           |
 | Invisibility            | Invisibilità               | gu pf |                           |
 | Instant Virus           | Virus Istantaneo           | gu sf |                           |
 |                         |                            |       |                           |
@@ -278,16 +287,20 @@
 |                         |                            |       |                           |
 | Noise Blast             | Frastuono                  | gu pf |                           |
 |                         |                            |       |                           |
+| Parallel Forms          | Forme Parallele            | us    |                           |
 | Personal Gravity        | Gravità Personale          | gu sf |                           |
 | Phantasmagoria          | Fantasmagoria              | gu pf |                           |
+| Phantasmal Calamity     | Allucinazione Catastrofica | gu pf |                           |
 | Phantasmal Fleet        | Flotta Fantasma            | us    |                           |
 | Planar Palace           | Palazzo Planare            | gu pf |                           |
 | Promession              | Promessione                | us    |                           |
 |                         |                            |       |                           |
 | Quantum Analysis        | Analisi Quantistica        | us    |                           |
 |                         |                            |       |                           |
+| Reality Wipe            | Cancellare Realtà          | us    | ????                      |
 | Recharge Weapon         | Ricaricare Arma            | us    |                           |
 | Remix                   | Remix                      | us    |                           |
+| Repulsion               | Repulsione                 | gu pf |                           |
 | Retrocognition          | Retrocognizione            | gu pf |                           |
 | Resist Energy           | Resistere all'Energia      |       |                           |
 | Rocket Dash             | Scatto Propulsivo          | us    |                           |
@@ -298,18 +311,24 @@
 | Shadow Prison           | Prigione d'Ombra           | us    |                           |
 | Shadow Snap             | Schiocco d'Ombra           | us    |                           |
 | Shifting Surge          | Ondata Mutevole            | us    |                           |
-| Shuffle Repeat          | Ripetizione Casuale        | us    | forse casuale ripetizione |
+| Shuffle Repeat          | Ripetizione Casuale        | us    | forse Casuale Ripetizione |
 | Sift the Sphere         | Setaccia la Sfera          | us    |                           |
 | Silver Tongue           | Parlantina Sciolta         | us    |                           |
+| Slice Reality           | Fendere la Realtà          | gu sf |                           |
 | Slow                    | Lentezza                   | gu pf |                           |
 | Stabilize               | Stabilizzare               | gu pf |                           |
+| Stumble                 | Inciampare                 | us    |                           |
 | Subjective Reality      | Realtà Soggettiva          | gu sf |                           |
 | Summon Instrument       | Evoca Strumento            | gu pf |                           |
 | Supercharge Weapon      | Sovraccaricare Arma        | gu sf |                           |
 | Synaptic Pulse          | Impulso Sinaptico          | gu sf |                           |
 |                         |                            |       |                           |
+| Temporal Bullets        | Proiettili Temporali       | us    |                           |
+| Time's Edge             | Lama del Tempo             | us    |                           |
+| Time Loop               | Loop Temporale             | us    |                           |
 | Translocate             | Traslocazione              | gu pf |                           |
 | True Strike             | Colpo Accurato             | gu pf |                           |
+| True Target             | Bersaglio Accurato         | gu pf |                           |
 | Truesight               | Visione del Vero           | gu pf |                           |
 |                         |                            |       |                           |
 | Vampiric Exsanguination | Dissanguamento del Vampiro | gu pf |                           |
@@ -318,13 +337,22 @@
 | Vital Rebirth           | Rinascita Vitale           | us    |                           |
 | Vibrant Pattern         | Trama Vibrante             | gu pf |                           |
 | Vitality Nova           | Nova di Vitalità           | us    |                           |
+| Void Vessel             | Nave Vacua                 |       | ????                      |
+| Void Whispers           | Sussurri dal Vuoto         | us    |                           |
 |                         |                            |       |                           |
 | Uncontrollable Dance    | Danza Irrefrenabile        | gu pf |                           |
 | Unfathomable Song       | Canzone Incomprensibile    | gu pf |                           |
 |                         |                            |       |                           |
 | Wall of Fire            | Muro di Fuoco              | gu pf |                           |
+| Wall of Stone           | Muro di Pietra             | gu pf |                           |
 | Wave of Warning         | Onda di Avvertimento       | us    |                           |
-| Warp Probability        | Distorci Probabilità       |       |                           |
+| Warp Mind               | Distorcere Mente           | gu pf |                           |
+| Warp Presence           | Presenza Distorta          | us    |                           |
+| Warp Probability        | Distorcere Probabilità     | us    |                           |
+| Warp Terrain            | Distorcere Terreno         | us    |                           |
+| Warp Time               | Distorcere Tempo           | us    |                           |
+| Warp World              | Distorcere Mondo           | us    |                           |
+| Weight of Ages          | Peso dell'Età              | us    | ????                      |
 
 ### Equipaggiamento
 
