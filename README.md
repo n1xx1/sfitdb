@@ -342,6 +342,7 @@
 | Shock Truncheon | Manganello Elettrico | gu sf |      |
 | Singing Spear   | Lancia Corale        | gu sf |      |
 |                 |                      |       |      |
+| Painglaive      | Dolorfalcione        | us    | ???? |
 | Plasma Sword    | Spada Plasma         | gu sf |      |
 |                 |                      |       |      |
 
