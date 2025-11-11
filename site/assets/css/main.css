@@ -185,8 +185,22 @@ html {
   @apply hidden;
 }
 
-.sf-prose {
-  @apply prose-gray dark:prose-invert max-w-none prose-hr:my-4 prose-a:font-normal prose-h1:font-bold prose-h2:font-bold prose-h3:font-bold prose-h4:font-bold prose-h5:font-bold;
+@layer utilities {
+  .sf-prose {
+    @apply prose-gray dark:prose-invert max-w-none;
+    @apply prose-hr:my-4;
+    @apply prose-a:font-normal;
+    @apply prose-h1:font-bold prose-h1:text-[3em] prose-h1:mt-[0.75em] prose-h1:mb-[0.5em];
+    @apply prose-h2:font-bold prose-h2:text-[1.75em] prose-h2:mt-[0.75em] prose-h2:mb-[0.5em];
+    @apply prose-h3:font-bold prose-h3:text-[1.5em] prose-h3:mt-[0.75em] prose-h3:mb-[0.5em];
+    @apply prose-h4:font-normal prose-h4:text-[1.4em] prose-h4:mt-[0.6em] prose-h4:mb-[0.4em];
+
+    :where(.prose.sf-prose > :first-child):not(
+      :where([class~="not-prose"], [class~="not-prose"] *)
+    ) {
+      @apply mt-0;
+    }
+  }
 }
 
 .level-header {
@@ -207,16 +221,16 @@ html {
   @apply mb-(--h-margin,0.4em) mt-[calc(0.4em-var(--h-margin,0em))];
 
   h1 + & {
-    --h-margin: 2.4em;
+    --h-margin: calc(0.5 * 3em);
   }
   h2 + & {
-    --h-margin: 1.5em;
+    --h-margin: calc(0.5 * 2em);
   }
   h3 + & {
-    --h-margin: 0.69em;
+    --h-margin: calc(0.5 * 1.75em);
   }
   h4 + & {
-    --h-margin: 0.5em;
+    --h-margin: calc(0.5 * 1.5em);
   }
   .statblock-title + & {
     --h-margin: --spacing(1);
@@ -236,19 +250,19 @@ html {
 
   h1 + &,
   h1 + .title-traits + & {
-    --h-margin: 2.4em;
+    --h-margin: calc(0.5 * 3em);
   }
   h2 + &,
   h2 + .title-traits + & {
-    --h-margin: 1.5em;
+    --h-margin: calc(0.5 * 2em);
   }
   h3 + &,
   h3 + .title-traits + & {
-    --h-margin: 0.69em;
+    --h-margin: calc(0.5 * 1.75em);
   }
   h4 + &,
   h4 + .title-traits + & {
-    --h-margin: 0.5em;
+    --h-margin: calc(0.5 * 1.5em);
   }
   .statblock-title + &,
   .statblock-title + .title-traits + & {
