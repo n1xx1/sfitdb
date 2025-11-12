@@ -16,6 +16,14 @@
     {{ if eq . "*" }}
       {{ $allPages := partialCached "utils/allPagesNoDuplicates" "" "" }}
       {{ $pages = $pages | append $allPages }}
+    {{ else if strings.Contains . "*" }}
+      {{ $allPages := site.AllPages }}
+      {{ $regex := partial "utils/globToRegex" . }}
+      {{ range $allPages }}
+        {{ if findRE $regex .Path }}
+          {{ $pages = $pages | append . }}
+        {{ end }}
+      {{ end }}
     {{ else if eq . "~" }}
       {{ $pages = $pages | append $context.Pages }}
     {{ else }}

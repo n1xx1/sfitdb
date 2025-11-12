@@ -17,9 +17,10 @@
   <tbody>
     {{- range $pages -}}
       {{- $title := partialCached "utils/title" . .Path -}}
+      {{- $anchor := $title.full | anchorize | replaceRE `---.*?(-\d+)?$` "$1" | safeURL }}
       <tr>
         <td>
-          <a href="{{ .RelPermalink | replaceRE `/$` `` }}">
+          <a href="#{{ $anchor }}">
             {{- $title.name | partial "icons" -}}
           </a>
         </td>

@@ -72,3 +72,5 @@ alcuni che sono legati a varie abilità o persino a tutte le abilità, come
 {{% rulesFeatIndexTable source=`/regole/player-core/5-talenti/societa` title=`Talenti di Abilità di Società` %}}
 
 {{% rulesFeatIndexTable source=`/regole/player-core/5-talenti/sopravvivenza` title=`Talenti di Abilità di Sopravvivenza` %}}
+
+{{% includeAll source=`/regole/player-core/5-talenti/*/*` sort=`[name]` %}}
