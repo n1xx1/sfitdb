@@ -4,7 +4,7 @@ original-name: Rhythm
 original-srd: https://2e.aonsrd.com/classes/2-mystic/connections/4-rhythm
 ---
 
-# Ritmica
+# Ritmico
 
 Senti la canzone che muove le stelle e canalizzi questo battito cosmico
 attraverso il potere del ritmo udibile e delle vibrazioni universali note come

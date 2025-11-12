@@ -4,7 +4,7 @@ original-name: Healing
 original-srd: https://2e.aonsrd.com/classes/2-mystic/connections/3-healing
 ---
 
-# Guaritiva
+# Guaritivo
 
 Sei connesso alla fonte di energia della vitalità e del vuoto che scorre
 attraverso tutti gli esseri viventi di ogni mondo. Intrecci queste energie in

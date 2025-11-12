@@ -1,0 +1,3 @@
+{{- $name := printf "images/%s.svg" (index .Params 0) -}}
+{{- $attrs := index .Params 1 | default "" -}}
+{{- partial "utils/svg" (slice $name $attrs) -}}

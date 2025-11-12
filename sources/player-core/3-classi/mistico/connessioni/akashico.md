@@ -4,7 +4,7 @@ original-name: Akashic
 original-srd: https://2e.aonsrd.com/classes/2-mystic/connections/1-akashic
 ---
 
-# Akashica
+# Akashico
 
 Mantieni un legame psichico permanente con gli Archivi Akashici, il deposito
 soprannaturale di tutta la conoscenza del multiverso. Questa connessione ti

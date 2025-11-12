@@ -356,23 +356,31 @@
 
 ### Equipaggiamento
 
-| en              | it                   | da    | note |
-| --------------- | -------------------- | ----- | ---- |
-|                 |                      |       |      |
-| Breaching Gun   | Fucile da Breccia    | gu sf |      |
-|                 |                      |       |      |
-| Crossbolter     | Fucile Balestra      | gu sf |      |
-|                 |                      |       |      |
-| Dueling Sword   | Spada da Duello      | us    |      |
-|                 |                      |       |      |
-| Flight Suit     | Tuta da Volo         | gu sf |      |
-|                 |                      |       |      |
-| Shock Truncheon | Manganello Elettrico | gu sf |      |
-| Singing Spear   | Lancia Corale        | gu sf |      |
-|                 |                      |       |      |
-| Painglaive      | Dolorfalcione        | us    | ???? |
-| Plasma Sword    | Spada Plasma         | gu sf |      |
-|                 |                      |       |      |
+| en                 | it                   | da    | note |
+| ------------------ | -------------------- | ----- | ---- |
+|                    |                      |       |      |
+| Battleglove        | Guanto da Battaglia  | gu sf |      |
+| Breaching Gun      | Fucile da Breccia    | gu sf |      |
+|                    |                      |       |      |
+| Compact Shield     | Scudo Compatto       | us    | ???? |
+| Crossbolter        | Fucile Balestra      | gu sf |      |
+|                    |                      |       |      |
+| Dueling Sword      | Spada da Duello      | us    |      |
+|                    |                      |       |      |
+| Flight Suit        | Tuta da Volo         | gu sf |      |
+|                    |                      |       |      |
+| Laser Rifle        | Fucile Laser         | gu sf |      |
+|                    |                      |       |      |
+| Medpatch           | Cerotto Medico       | gu sf |      |
+|                    |                      |       |      |
+| Seeker Rifle       | Fucile a Ricerca     | gu sf |      |
+| Shock Truncheon    | Manganello Elettrico | gu sf |      |
+| Singing Spear      | Lancia Corale        | gu sf |      |
+|                    |                      |       |      |
+| Painglaive         | Dolorfalcione        | us    | ???? |
+| Plasma Sword       | Spada Plasma         | gu sf |      |
+|                    |                      |       |      |
+| Retinal Reflectors | Riflettori Retinali  | gu sf |      |
 
 ### Domini
 

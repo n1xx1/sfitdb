@@ -56,3 +56,47 @@ prepararti per la prossima avventura. Le regole per la pausa sono
 [qua](/regole/player-core/8-giocare/modalita-pausa).
 
 ## Compiere Scelte
+
+Nel corso del gioco il GM descrive cosa sta succedendo nel mondo e poi chiede ai
+giocatori: “dunque, cosa fate?”. Le scelte che effettui e il modo in cui il GM
+risponde a queste ultime vanno a costruire una narrativa unica. Ogni esperienza
+di gioco è differente, poiché capita di rado che vari gruppi prendano le
+medesime decisioni. Ciò vale anche per il GM: scenari e incontri della stessa
+avventura, presentati da due GM differenti, avranno enfasi e abbellimenti
+totalmente diversi.
+
+Spesso le tue scelte non comporteranno conseguenze o rischi immediati. Se stai
+seguendo un sentiero in una foresta e giungi a un bivio, il GM chiederà: “da che
+parte vai?”. Puoi scegliere di andare a destra o a sinistra, abbandonare il
+sentiero o anche tornare in paese. Compiuta la scelta, il GM rivela cosa accade
+dopo. Con il tempo, quella scelta può avere un impatto sugli incontri che
+avverranno, ma in molti casi nulla di pericoloso accade immediatamente. A volte,
+però, l’esito delle tue scelte non è così certo. In questi casi dovrai
+effettuare una prova, come descritto [qua](/regole/player-core/8-giocare/prove).
+
+## Linee Guida di Starfinder
+
+Probabilmente il tuo gruppo parlerà del tipo di contenuto che volete nella
+vostra partita prima dell’inizio della campagna. Di seguito vengono elencate
+alcune assunzioni di base valide per molti gruppi. Il GM può trovare ulteriori
+linee guida nel _GM Core_.
+
+- Spargimenti di sangue, ferite e persino smembramenti potrebbero essere
+  descritti. Tuttavia, descrizioni eccessivamente truculente e di crudeltà
+  estrema dovrebbero essere evitate.
+- Nel gioco possono svilupparsi relazioni sentimentali e sessuali, ma i
+  giocatori dovrebbero evitare di essere troppo allusivi. Il sesso si svolge
+  “dietro le quinte”. Bisognerebbe evitare che PG provi a dare inizio a una
+  relazione con un altro.
+- Descrizioni eccessivamente disgustose o volgari andrebbero evitate.
+
+I personaggi giocanti non dovrebbero compiere gli atti seguenti:
+
+- Torturare
+- Stuprare, avere contatti sessuali non consenzienti, fare minacce sessuali
+- Ferire i bambini, inclusi abusi sessuali
+- Possedere schiavi o trarre profitto dallo schiavismo
+- Usare la magia di controllo mentale in modi riprovevol
+
+Gli antagonisti potrebbero compiere atti del genere “dietro le quinte”, ma molti
+gruppi scelgono di non far compiere azioni simili nemmeno agli antagonisti.

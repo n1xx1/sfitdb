@@ -4,7 +4,7 @@ original-name: Shadow
 original-srd: https://2e.aonsrd.com/classes/2-mystic/connections/5-shadow
 ---
 
-# Ombrosa
+# Ombroso
 
 Sai che ogni ombra è un portale per l'Aldilà, e come un artista che modella
 l’argilla, plasmi la sostanza oscura di quel reame in forme meravigliose o
