@@ -2,38 +2,70 @@
 
 ## Glossario
 
-| en                      | it                      | da    | note     |
-| ----------------------- | ----------------------- | ----- | -------- |
-| line of sight           | linea di vista          | gu pf |          |
-| line of effect          | linea di effetto        | gu pf |          |
-| Daily Preparations      | Preparativi Giornalieri | gu pf |          |
-| Level                   | Livello                 | gu pf |          |
-| Rank                    | Grado                   | gu pf | remaster |
-| Netherworld             | Aldilà                  | gu pf | remaster |
-| Perception Expertise    | Percezione Esperta      | gu pf | remaster |
-| Fortitude Expertise     | Tempra Esperta          | gu pf | remaster |
-| Reflex Expertise        | Riflessi Esperti        | gu pf | remaster |
-| Perception Mastery      | Percezione Magistrale   | gu pf | remaster |
-| Reflex Mastery          | Riflessi Magistrali     | gu pf | remaster |
-| Envoy                   | Emissario               | gu sf |          |
-| &nbsp; Leadership Style | Stile di Leadership     | us    |          |
-| Mystic                  | Mistico                 | gu sf |          |
-| &nbsp; Connection       | Connessione             | gu sf |          |
-| &nbsp; Bond             | Legame                  | us    |          |
-| &nbsp; Harmony          | Armonia                 | us    |          |
-| &nbsp; Epiphany         | Epifania                | us    |          |
-| Operative               | Operativo               | gu sf |          |
-| &nbsp; Specialization   | Specializzazione        | gu sf |          |
-| &nbsp; Sharpshooter     | Tiratore Scelto         | us    |          |
-| &nbsp; Focused          | Concentrato             | us    |          |
-| Witchwarper             | Stregone del Velo       | gu sf |          |
-| Commercial              | Commerciale             | us    |          |
-| Tactical                | Tattico                 | us    |          |
-| Advanced                | Avanzato                | us    |          |
-| Superior                | Superiore               | us    |          |
-| Elite                   | D'Élite                 | us    |          |
-| Ultimate                | Definitivo              | us    |          |
-| Paragon                 | Ineguagliabile          | us    |          |
+| en                              | it                             | da    | note                    |
+| ------------------------------- | ------------------------------ | ----- | ----------------------- |
+| line of sight                   | linea di vista                 | gu pf |                         |
+| line of effect                  | linea di effetto               | gu pf |                         |
+| Daily Preparations              | Preparativi Giornalieri        | gu pf |                         |
+| Level                           | Livello                        | gu pf |                         |
+| Rank                            | Grado                          | gu pf | remaster                |
+| Netherworld                     | Aldilà                         | gu pf | remaster                |
+| Perception Expertise            | Percezione Esperta             | gu pf | remaster                |
+| Fortitude Expertise             | Tempra Esperta                 | gu pf | remaster                |
+| Reflex Expertise                | Riflessi Esperti               | gu pf | remaster                |
+| Perception Mastery              | Percezione Magistrale          | gu pf | remaster                |
+| Reflex Mastery                  | Riflessi Magistrali            | gu pf | remaster                |
+| Envoy                           | Emissario                      | gu sf |                         |
+| &nbsp; Leadership Style         | Stile di Leadership            | us    |                         |
+| Mystic                          | Mistico                        | gu sf |                         |
+| &nbsp; Connection               | Connessione                    | gu sf |                         |
+| &nbsp; Bond                     | Legame                         | us    |                         |
+| &nbsp; Harmony                  | Armonia                        | us    |                         |
+| &nbsp; Epiphany                 | Epifania                       | us    |                         |
+| Operative                       | Operativo                      | gu sf |                         |
+| &nbsp; Specialization           | Specializzazione               | gu sf |                         |
+| &nbsp; Sharpshooter             | Tiratore Scelto                | us    |                         |
+| &nbsp; Focused                  | Concentrato                    | us    |                         |
+| Witchwarper                     | Stregone del Velo              | gu sf |                         |
+| Commercial                      | Commerciale                    | us    |                         |
+| Tactical                        | Tattico                        | us    |                         |
+| Advanced                        | Avanzato                       | us    |                         |
+| Superior                        | Superiore                      | us    |                         |
+| Elite                           | D'Élite                        | us    |                         |
+| Ultimate                        | Definitivo                     | us    |                         |
+| Paragon                         | Ineguagliabile                 | us    |                         |
+| Desna's Path                    | Sentiero di Desna              | us    |                         |
+| The Gap                         | L'Intervallo                   | gu sf |                         |
+| Pact Worlds                     | Mondi del Patto                | gu sf |                         |
+| The Drift                       | La Deriva                      | gu sf |                         |
+| Near Space                      | Spazio Vicino                  | gu sf |                         |
+| The Vast                        | L'Immensità                    | gu sf |                         |
+| Magitech                        | Tecnomagico                    | gu sf |                         |
+| Drift beacon                    | Faro di Deriva                 | gu sf |                         |
+| Drift engine                    | Motore Deriva                  | gu sf |                         |
+| Drift lane                      | Corsia di Deriva               | us    | ????                    |
+| Drift Crisis                    | Crisi della Deriva             | us    | ????                    |
+| Gelid Edge                      | Margine Gelido                 | us    | ????                    |
+| Marixah Republic                | Repubblica di Marixah          |       | gu Spazio Vicino        |
+| Gideron Authority               | Autorità di Gideron            |       | gu Spazio Vicino        |
+| Szandite Collective             | Collettivo Szandita            |       | gu Spazio Vicino        |
+| Kreiholm Freehold               | Libero Dominio di Kreiholm     | us    | ????                    |
+| Scoured Stars                   | Stelle Abbandonate             | gu sf |                         |
+| Azlanti Star Empire             | Impero Stellare Azlanti        | gu sf |                         |
+| Kazmurg's Absurdity             | Assurdità di Kazmurg           | us    | ????                    |
+| Ghost Levels                    | Livelli Spettrali              | us    | ????                    |
+| Bluerise Tower                  | Torre Azzurrovertice           | us    | ????                    |
+| Cosmonastery of the Empty Orbit | Cosmonastero dell’Orbita Vuota |       | gu Spazio Vicino        |
+| Horse Eye Orbital Plate         |                                |       | gu Spazio Vicino        |
+| Automatrix                      |                                |       | gu Spazio Vicino        |
+| Eternity                        | Eternità                       |       | gu Spazio Vicino        |
+| Sea of Glass                    | Mare di Vetro                  |       | gu Spazio Vicino        |
+| Midnight Trenches               | Midnight Trenches              |       | gu Spazio Vicino        |
+| Ice Wells                       | Pozzi di Ghiaccio              |       | gu Spazio Vicino        |
+| Shefis                          | Shefis                         | us    | ????                    |
+| Asana                           | Asana                          |       | gu Spazio Vicino        |
+| Queensrock                      | Queensrock                     |       | gu Il Tempio dei Dodici |
+| Ukulam                          | Ukulam                         |       | gu Spazio Vicino        |
 
 ### Abilità
 
@@ -363,37 +395,39 @@
 
 ### Equipaggiamento
 
-| en                 | it                   | da    | note |
-| ------------------ | -------------------- | ----- | ---- |
-| Aucturnite         | Aucturnite           | us    |      |
-|                    |                      |       |      |
-| Battleglove        | Guanto da Battaglia  | gu sf |      |
-| Breaching Gun      | Fucile da Breccia    | gu sf |      |
-|                    |                      |       |      |
-| Compact Shield     | Scudo Compatto       | us    | ???? |
-| Crossbolter        | Fucile Balestra      | gu sf |      |
-|                    |                      |       |      |
-| Doshko             | Doshko               | gu sf |      |
-| Dueling Sword      | Spada da Duello      | us    |      |
-|                    |                      |       |      |
-| Flight Suit        | Tuta da Volo         | gu sf |      |
-|                    |                      |       |      |
-| Ghost Killer       | Sterminaspettri      | gu sf |      |
-|                    |                      |       |      |
-| Laser Rifle        | Fucile Laser         | gu sf |      |
-|                    |                      |       |      |
-| Machine Gun        | Mitragliatrice       | gu sf |      |
-| Medpatch           | Cerotto Medico       | gu sf |      |
-|                    |                      |       |      |
-| Seeker Rifle       | Fucile a Ricerca     | gu sf |      |
-| Shock Truncheon    | Manganello Elettrico | gu sf |      |
-| Singing Spear      | Lancia Corale        | gu sf |      |
-|                    |                      |       |      |
-| Painglaive         | Dolorfalcione        | us    | ???? |
-| Plasma Doshko      | Doshko Plasma        | gu sf |      |
-| Plasma Sword       | Spada Plasma         | gu sf |      |
-|                    |                      |       |      |
-| Retinal Reflectors | Riflettori Retinali  | gu sf |      |
+| en                 | it                     | da    | note |
+| ------------------ | ---------------------- | ----- | ---- |
+| Aucturnite         | Aucturnite             | us    |      |
+|                    |                        |       |      |
+| Battleglove        | Guanto da Battaglia    | gu sf |      |
+| Breaching Gun      | Fucile da Breccia      | gu sf |      |
+|                    |                        |       |      |
+| Comm Unit          | Unità di Comunicazione | gu sf |      |
+| Compact Shield     | Scudo Compatto         | us    | ???? |
+| Crossbolter        | Fucile Balestra        | gu sf |      |
+|                    |                        |       |      |
+| Doshko             | Doshko                 | gu sf |      |
+| Dueling Sword      | Spada da Duello        | us    |      |
+|                    |                        |       |      |
+| Flight Suit        | Tuta da Volo           | gu sf |      |
+|                    |                        |       |      |
+| Ghost Killer       | Sterminaspettri        | gu sf |      |
+|                    |                        |       |      |
+| Laser Rifle        | Fucile Laser           | gu sf |      |
+|                    |                        |       |      |
+| Machine Gun        | Mitragliatrice         | gu sf |      |
+| Medpatch           | Cerotto Medico         | gu sf |      |
+|                    |                        |       |      |
+| Seeker Rifle       | Fucile a Ricerca       | gu sf |      |
+| Shock Truncheon    | Manganello Elettrico   | gu sf |      |
+| Singing Spear      | Lancia Corale          | gu sf |      |
+|                    |                        |       |      |
+| Painglaive         | Dolorfalcione          | us    | ???? |
+| Plasma Doshko      | Doshko Plasma          | gu sf |      |
+| Plasma Sword       | Spada Plasma           | gu sf |      |
+|                    |                        |       |      |
+| Retinal Reflectors | Riflettori Retinali    | gu sf |      |
+|                    |                        |       |      |
 
 ### Domini
 
@@ -420,4 +454,5 @@
 | --------------- | --------------------- | ----- | ---- |
 |                 |                       |       |      |
 | Hardlight Scamp | Mefite di Luce Solida | us    |      |
+| Shotalashu      | Shotalashu            | gu sf |      |
 | Squox           | Volpiattolo           | gu sf |      |

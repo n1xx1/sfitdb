@@ -31,5 +31,6 @@
     "3-classi/stregone-del-velo/paradossi"
   ],
   "trait": ["glossario-e-indice/tratti/*"],
-  "skill": ["4-abilita/abilita/*"]
+  "skill": ["4-abilita/abilita/*"],
+  "planet": ["1-introduzione/esplorare-la-galassia/pianeti/*"]
 }
