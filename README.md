@@ -27,6 +27,13 @@
 | &nbsp; Sharpshooter     | Tiratore Scelto         | us    |          |
 | &nbsp; Focused          | Concentrato             | us    |          |
 | Witchwarper             | Stregone del Velo       | gu sf |          |
+| Commercial              | Commerciale             | us    |          |
+| Tactical                | Tattico                 | us    |          |
+| Advanced                | Avanzato                | us    |          |
+| Superior                | Superiore               | us    |          |
+| Elite                   | D'Élite                 | us    |          |
+| Ultimate                | Definitivo              | us    |          |
+| Paragon                 | Ineguagliabile          | us    |          |
 
 ### Abilità
 
@@ -358,6 +365,7 @@
 
 | en                 | it                   | da    | note |
 | ------------------ | -------------------- | ----- | ---- |
+| Aucturnite         | Aucturnite           | us    |      |
 |                    |                      |       |      |
 | Battleglove        | Guanto da Battaglia  | gu sf |      |
 | Breaching Gun      | Fucile da Breccia    | gu sf |      |
@@ -365,12 +373,16 @@
 | Compact Shield     | Scudo Compatto       | us    | ???? |
 | Crossbolter        | Fucile Balestra      | gu sf |      |
 |                    |                      |       |      |
+| Doshko             | Doshko               | gu sf |      |
 | Dueling Sword      | Spada da Duello      | us    |      |
 |                    |                      |       |      |
 | Flight Suit        | Tuta da Volo         | gu sf |      |
 |                    |                      |       |      |
+| Ghost Killer       | Sterminaspettri      | gu sf |      |
+|                    |                      |       |      |
 | Laser Rifle        | Fucile Laser         | gu sf |      |
 |                    |                      |       |      |
+| Machine Gun        | Mitragliatrice       | gu sf |      |
 | Medpatch           | Cerotto Medico       | gu sf |      |
 |                    |                      |       |      |
 | Seeker Rifle       | Fucile a Ricerca     | gu sf |      |
@@ -378,6 +390,7 @@
 | Singing Spear      | Lancia Corale        | gu sf |      |
 |                    |                      |       |      |
 | Painglaive         | Dolorfalcione        | us    | ???? |
+| Plasma Doshko      | Doshko Plasma        | gu sf |      |
 | Plasma Sword       | Spada Plasma         | gu sf |      |
 |                    |                      |       |      |
 | Retinal Reflectors | Riflettori Retinali  | gu sf |      |
@@ -400,3 +413,11 @@
 | Truth       | Verità      | gu pf |      |
 | Water       | Acqua       | gu pf |      |
 | Wealth      | Ricchezza   | gu pf |      |
+
+### Creature
+
+| en              | it                    | da    | note |
+| --------------- | --------------------- | ----- | ---- |
+|                 |                       |       |      |
+| Hardlight Scamp | Mefite di Luce Solida | us    |      |
+| Squox           | Volpiattolo           | gu sf |      |

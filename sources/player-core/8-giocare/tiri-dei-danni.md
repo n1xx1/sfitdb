@@ -86,7 +86,7 @@ normale dado di danno dell’arma o dell’attacco senz’armi.
 
 Gli effetti basati sul numero di dadi di danno di un’arma includono solo il dado
 di danno dell’arma più qualsiasi dado aggiuntivo derivante dal tipo dell'arma
-(tattica, avanzata, superiore, d'elité, definitiva e ineguagliabile). Ai fini di
+(tattico, avanzato, superiore, d'elité, definitivo e ineguagliabile). Ai fini di
 questi effetti non contano i dadi aggiuntivi che provengono da capacità, effetti
 di specializzazione del critico, tratti delle armi e così via.
 
