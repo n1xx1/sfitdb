@@ -25,6 +25,6 @@ passivi di riconoscerne la falsità (ma vedi
 **Fallimento** Il falso ha qualche palese segno di contraffazione, che permette
 anche agli osservatori passivi di riconoscerlo. Ogni volta che un osservatore
 passivo vede il documento, il GM confronta il risultato della tua prova alla più
-altra tra la CD di Percezione o di Società dell’osservatore. Se il tuo risultato
+alta tra la CD di Percezione o di Società dell’osservatore. Se il tuo risultato
 non supera la CD di un osservatore passivo, quest’ultimo si accorge che il
 documento è contraffatto.

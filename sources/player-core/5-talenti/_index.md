@@ -47,6 +47,8 @@ alcuni che sono legati a varie abilità o persino a tutte le abilità, come
 
 {{% rulesFeatIndexTable source=`/regole/player-core/5-talenti/atletica` title=`Talenti di Abilità di Atletica` %}}
 
+{{% rulesFeatIndexTable source=`/regole/player-core/5-talenti/computer` title=`Talenti di Abilità di Computer` %}}
+
 {{% rulesFeatIndexTable source=`/regole/player-core/5-talenti/diplomazia` title=`Talenti di Abilità di Diplomazia` %}}
 
 {{% rulesFeatIndexTable source=`/regole/player-core/5-talenti/esibizione` title=`Talenti di Abilità di Esibizione` %}}
@@ -64,6 +66,8 @@ alcuni che sono legati a varie abilità o persino a tutte le abilità, come
 {{% rulesFeatIndexTable source=`/regole/player-core/5-talenti/natura` title=`Talenti di Abilità di Natura` %}}
 
 {{% rulesFeatIndexTable source=`/regole/player-core/5-talenti/occultismo` title=`Talenti di Abilità di Occultismo` %}}
+
+{{% rulesFeatIndexTable source=`/regole/player-core/5-talenti/pilotare` title=`Talenti di Abilità di Pilotare` %}}
 
 {{% rulesFeatIndexTable source=`/regole/player-core/5-talenti/religione` title=`Talenti di Abilità di Religione` %}}
 
