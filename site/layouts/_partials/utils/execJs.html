@@ -31,11 +31,11 @@
     `--EVAL-LOGS-BEGIN--([\s\S]+)--EVAL-LOGS-END--`
     $resourceCode.Content) 0) 1
   }}
-  {{ $result := index (index (findRESubmatch
+  {{ $resultRaw := index (index (findRESubmatch
     `--EVAL-RESULT-BEGIN--([\s\S]+)--EVAL-RESULT-END--`
     $resourceCode.Content) 0) 1
   }}
-  {{ $result = transform.Unmarshal (dict "format" "json") $result }}
+  {{ $result = transform.Unmarshal (dict "format" "json") $resultRaw }}
 
   {{ with strings.TrimSpace $logs }}
     {{ warnf "executeJs logs: %v" . }}
