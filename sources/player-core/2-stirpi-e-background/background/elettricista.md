@@ -16,5 +16,5 @@ Scegli due aumenti di attributo. Uno deve essere a **Costituzione** o
 **Intelligenza** e uno è un aumento di attributo libero.
 
 Sei addestrato nell'abilità [Artigianato](/abilita/artigianato) e nell'abilità
-[Sapienza sulla Scienze Fisica](/abilita/sapienza). Ottieni il talento di
+[Sapienza sulla Scienze Fisiche](/abilita/sapienza). Ottieni il talento di
 abilità [Ingegnere Elettrico](/talenti/ingegnere-elettrico).

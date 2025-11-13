@@ -9,4 +9,4 @@ original-srd: https://2e.aonsrd.com/feats/526-scope-sight
 
 Osservare i tuoi bersagli attraverso un mirino è istintivo come aprire gli
 occhi. Ogni volta che [Miri](/azioni/mirare), puoi
-[Interagire](/azioni/interagire) per Attivare un miglioramento mirino dell’arma.
+[Interagire](/azioni/interagire) per Attivare una miglioria mirino dell’arma.

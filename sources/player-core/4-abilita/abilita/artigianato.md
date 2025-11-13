@@ -13,9 +13,9 @@ Ricordare Conoscenze anche se sei senza addestramento.
   degli oggetti, equipaggiamento tecnologico, ingegneria, materiali insoliti e
   creature tecnologiche.
 
-> ## Consumabili e Munizioni
+> ## Monouso e Munizioni
 >
-> Puoi creare oggetti con il tratto consumabile in lotti, realizzandone fino a
+> Puoi creare oggetti con il tratto monouso in lotti, realizzandone fino a
 > quattro uguali in un’unica prova. Devi però fornire fin dall’inizio i
 > materiali grezzi per tutti gli oggetti del lotto e completarne la creazione
 > tutta in una volta. Puoi anche creare munizioni non magiche in lotti,

@@ -114,8 +114,8 @@
 | Friendly    | Amichevole      | gu pf |      |
 | Frightened  | Spaventato      | gu pf |      |
 | Glitching   | Difettoso       | gu sf |      |
-| Grabbed     | Afferrato       |       |      |
-| Helpful     | Collaborativo   |       |      |
+| Grabbed     | Afferrato       | gu pf |      |
+| Helpful     | Collaborativo   | gu pf |      |
 | Hidden      | Nascosto        | gu pf |      |
 | Hostile     | Ostile          | gu pf |      |
 | Immobilized | Immobilizzato   | gu pf |      |
@@ -186,6 +186,7 @@
 | Hide               | Nascondersi              | gu pf |      |
 |                    |                          |       |      |
 | Improvised Mastery | Maestria Improvvisata    | us    |      |
+| Install Upgrade    | Installare Miglioria     | us    |      |
 |                    |                          |       |      |
 | Navigate           | Navigare                 | gu sf |      |
 | Network Spell      | Incantesimo di Rete      | us    |      |
@@ -234,6 +235,7 @@
 |                     |                                |       |                       |
 | Just Kidding!       | Stava Scherzando!              | us    |                       |
 |                     |                                |       |                       |
+| Machine Magic       | Magia delle Macchine           |       | playtest              |
 | Magical Crafting    | Fabbricare Oggetti Magici      | gu pf |                       |
 | Management Material | Stoffa da Dirigente            | us    |                       |
 | Multilingual        | Poliglotta                     | gu pf |                       |
@@ -395,39 +397,40 @@
 
 ### Equipaggiamento
 
-| en                 | it                     | da    | note |
-| ------------------ | ---------------------- | ----- | ---- |
-| Aucturnite         | Aucturnite             | us    |      |
-|                    |                        |       |      |
-| Battleglove        | Guanto da Battaglia    | gu sf |      |
-| Breaching Gun      | Fucile da Breccia      | gu sf |      |
-|                    |                        |       |      |
-| Comm Unit          | Unità di Comunicazione | gu sf |      |
-| Compact Shield     | Scudo Compatto         | us    | ???? |
-| Crossbolter        | Fucile Balestra        | gu sf |      |
-|                    |                        |       |      |
-| Doshko             | Doshko                 | gu sf |      |
-| Dueling Sword      | Spada da Duello        | us    |      |
-|                    |                        |       |      |
-| Flight Suit        | Tuta da Volo           | gu sf |      |
-|                    |                        |       |      |
-| Ghost Killer       | Sterminaspettri        | gu sf |      |
-|                    |                        |       |      |
-| Laser Rifle        | Fucile Laser           | gu sf |      |
-|                    |                        |       |      |
-| Machine Gun        | Mitragliatrice         | gu sf |      |
-| Medpatch           | Cerotto Medico         | gu sf |      |
-|                    |                        |       |      |
-| Seeker Rifle       | Fucile a Ricerca       | gu sf |      |
-| Shock Truncheon    | Manganello Elettrico   | gu sf |      |
-| Singing Spear      | Lancia Corale          | gu sf |      |
-|                    |                        |       |      |
-| Painglaive         | Dolorfalcione          | us    | ???? |
-| Plasma Doshko      | Doshko Plasma          | gu sf |      |
-| Plasma Sword       | Spada Plasma           | gu sf |      |
-|                    |                        |       |      |
-| Retinal Reflectors | Riflettori Retinali    | gu sf |      |
-|                    |                        |       |      |
+| en                     | it                            | da    | note |
+| ---------------------- | ----------------------------- | ----- | ---- |
+| Abadarcorp Travel Suit | Vestito da Viaggio AbadarCorp | gu sf |      |
+| Aucturnite             | Aucturnite                    | us    |      |
+|                        |                               |       |      |
+| Battleglove            | Guanto da Battaglia           | gu sf |      |
+| Breaching Gun          | Fucile da Breccia             | gu sf |      |
+|                        |                               |       |      |
+| Comm Unit              | Unità di Comunicazione        | gu sf |      |
+| Compact Shield         | Scudo Compatto                | us    | ???? |
+| Crossbolter            | Fucile Balestra               | gu sf |      |
+|                        |                               |       |      |
+| Doshko                 | Doshko                        | gu sf |      |
+| Dueling Sword          | Spada da Duello               | us    |      |
+|                        |                               |       |      |
+| Flight Suit            | Tuta da Volo                  | gu sf |      |
+|                        |                               |       |      |
+| Ghost Killer           | Sterminaspettri               | gu sf |      |
+|                        |                               |       |      |
+| Laser Rifle            | Fucile Laser                  | gu sf |      |
+|                        |                               |       |      |
+| Machine Gun            | Mitragliatrice                | gu sf |      |
+| Medpatch               | Cerotto Medico                | gu sf |      |
+|                        |                               |       |      |
+| Seeker Rifle           | Fucile a Ricerca              | gu sf |      |
+| Shock Truncheon        | Manganello Elettrico          | gu sf |      |
+| Singing Spear          | Lancia Corale                 | gu sf |      |
+|                        |                               |       |      |
+| Painglaive             | Dolorfalcione                 | us    | ???? |
+| Plasma Doshko          | Doshko Plasma                 | gu sf |      |
+| Plasma Sword           | Spada Plasma                  | gu sf |      |
+|                        |                               |       |      |
+| Retinal Reflectors     | Riflettori Retinali           | gu sf |      |
+|                        |                               |       |      |
 
 ### Domini
 
