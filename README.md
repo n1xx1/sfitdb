@@ -225,6 +225,7 @@
 | Continual Recovery  | Guarigione Ininterrotta        | gu pf |                       |
 |                     |                                |       |                       |
 | Deadlift            | Stacco                         | us    | forse Stacco da Terra |
+| Double Tap          | Doppio Colpo                   | us    | sembra 2 Strike       |
 |                     |                                |       |                       |
 | Experienced Tracker | Segugio Esperto                | gu pf |                       |
 |                     |                                |       |                       |

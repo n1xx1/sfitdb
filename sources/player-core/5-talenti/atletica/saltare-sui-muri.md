@@ -14,8 +14,8 @@ featPrerequisites: Maestro in Atletica
 ---
 
 Puoi sfruttare lo slancio di un salto per spingerti via da un muro. Se alla fine
-di un [Salto](/azioni/salto), di un [Salto in Alto](/azioni/salto-in-alto) o di
-[Salto in Lungo](/azioni/salto-in-lungo) sei adiacente a un muro, non cadi, a
+di un [Salto](/azioni/saltare), di un [Salto in Alto](/azioni/salto-in-alto) o
+di [Salto in Lungo](/azioni/salto-in-lungo) sei adiacente a un muro, non cadi, a
 condizione che la tua azione successiva sia un altro salto. Poiché sfrutti lo
 slancio del salto precedente, puoi usare Salto in Alto e in Lungo come azione
 singola, e non devi [Avanzare](/azioni/avanzare) come parte dell'attività.

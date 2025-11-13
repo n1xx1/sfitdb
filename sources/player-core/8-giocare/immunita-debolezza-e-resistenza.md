@@ -6,7 +6,7 @@ navigation-order: 4
 TODO: finire link
 ---
 
-# Immunità, Debolezza E Resistenza
+# Immunità, Debolezza e Resistenza
 
 ---
 
