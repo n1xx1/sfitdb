@@ -19,10 +19,10 @@ shefis.
 
 Le regioni di Castrovel includono Asana e il suo principale spazioporto Qabarat,
 un magnifico monumento vivente con antiche mura di conchiglie frantumate che
-racchiudono una moderna metropoli; l’imponente città-alveare di Queensrock e
-altre colonie formian; le giungle primordiali di Ukulam, protette da comunità di
-khizar simili a piante e dai loro alleati Xenoguardiani; e le guglie di
-Sovyrian, una nazione di città surrealiste scolpite dalla magia elfica. Le
+racchiudono una moderna metropoli; l’imponente città formicaio di Roccia delle
+Regine e altre colonie formian; le giungle primordiali di Ukulam, protette da
+comunità di khizar simili a piante e dai loro alleati Xenoguardiani; e le guglie
+di Sovyrian, una nazione di città surrealiste scolpite dalla magia elfica. Le
 regioni selvagge di Castrovel sono praticamente incontaminate poiché l’industria
 del pianeta si concentra sulla luna superinquinata Elindrae.
 
@@ -32,5 +32,5 @@ del pianeta si concentra sulla luna superinquinata Elindrae.
   shotalashu che si è affezionato a te.
 - Un giovane ambasciatore elfico che vive per la prima volta al di fuori della
   sua città ancestrale cinta da mura.
-- Un coraggioso guardiano dell’alveare formian che combatte contro i gusci
+- Un coraggioso guardiano del formicaio formian che combatte contro i gusci
   corrotti emersi dal sottosuolo per attaccare la tua comunità.

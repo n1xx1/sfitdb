@@ -21,17 +21,17 @@ cui androidi e altri esseri sintetici sono accolti come fratelli.
 
 La più grande comunità su Aballon è Impegno, una megacittà operosa che contiene
 una rete neurale estesa a tutta la città, sacra a Triune. Altre regioni
-includono la città-forgia industriale Automatrix; l’immensa fabbrica orbitante
-galleggiante Horse Eye Orbital Plate; le vaste rovine tecnologiche di Eternità e
+includono la città-forgia industriale Automatrix; l’immensa fabbrica volante
+Piattaforma Orbitale Occhio Equino; le vaste rovine tecnologiche di Eternità e
 altre città dei Primevi meticolosamente conservate; il Mare di Vetro incrostato
-di gemme; e le Midnight Trenches, ricche di minerali.
+di gemme; e le Fosse di Mezzanotte, ricche di minerali.
 
 ## Esempi di Personaggi
 
 - Un Cercastelle che esplora le rovine magitecnologiche lasciate dai Primevi,
   rischiando incontri con trappole mortali e sentinelle terrificanti.
-- Uno Xenoguardiano che coltiva flora e fauna bizzarre nel profondo dei Pozzi di
-  Ghiaccio isolati, ostacolando l’industria locale.
+- Uno Xenoguardiano che coltiva flora e fauna bizzarre nel profondo dei Pozzi
+  Ghiacciati isolati, ostacolando l’industria locale.
 - Un sacerdote di Triune che viaggia attraverso la galassia installando e
   riparando fari di Deriva, ricevendo download sacri dalla rete neurale
   consacrata di Impegno.

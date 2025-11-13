@@ -9,10 +9,10 @@ navigation-order: 3
 
 **Nesso Commerciale Galattico**
 
-Fluttuante nell’orbita vuota del perduto Golarion, questa vivace stazione
-spaziale è il centro del commercio interstellare e del governo nei Mondi del
-Patto. Nessuno sa chi abbia costruito la Stazione Absalom, poiché è apparsa in
-un momento imprecisato durante l'Intervallo. I suoi antichi reattori tecnomagici
+Sospesa nell’orbita vuota del perduto Golarion, questa vivace stazione spaziale
+è il centro del commercio interstellare e del governo nei Mondi del Patto.
+Nessuno sa chi abbia costruito la Stazione Absalom, poiché è apparsa in un
+momento imprecisato durante l'Intervallo. I suoi antichi reattori tecnomagici
 sono alimentati dalla leggendaria _Pietrastella_, che opera anche come il più
 potente faro di Deriva, attirando turisti e immigrati da mondi lontani.
 Centinaia di aziende e ambasciate hanno qui la loro sede principale, e una

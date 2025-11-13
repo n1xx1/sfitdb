@@ -2,70 +2,72 @@
 
 ## Glossario
 
-| en                              | it                             | da    | note                    |
-| ------------------------------- | ------------------------------ | ----- | ----------------------- |
-| line of sight                   | linea di vista                 | gu pf |                         |
-| line of effect                  | linea di effetto               | gu pf |                         |
-| Daily Preparations              | Preparativi Giornalieri        | gu pf |                         |
-| Level                           | Livello                        | gu pf |                         |
-| Rank                            | Grado                          | gu pf | remaster                |
-| Netherworld                     | Aldilà                         | gu pf | remaster                |
-| Perception Expertise            | Percezione Esperta             | gu pf | remaster                |
-| Fortitude Expertise             | Tempra Esperta                 | gu pf | remaster                |
-| Reflex Expertise                | Riflessi Esperti               | gu pf | remaster                |
-| Perception Mastery              | Percezione Magistrale          | gu pf | remaster                |
-| Reflex Mastery                  | Riflessi Magistrali            | gu pf | remaster                |
-| Envoy                           | Emissario                      | gu sf |                         |
-| &nbsp; Leadership Style         | Stile di Leadership            | us    |                         |
-| Mystic                          | Mistico                        | gu sf |                         |
-| &nbsp; Connection               | Connessione                    | gu sf |                         |
-| &nbsp; Bond                     | Legame                         | us    |                         |
-| &nbsp; Harmony                  | Armonia                        | us    |                         |
-| &nbsp; Epiphany                 | Epifania                       | us    |                         |
-| Operative                       | Operativo                      | gu sf |                         |
-| &nbsp; Specialization           | Specializzazione               | gu sf |                         |
-| &nbsp; Sharpshooter             | Tiratore Scelto                | us    |                         |
-| &nbsp; Focused                  | Concentrato                    | us    |                         |
-| Witchwarper                     | Stregone del Velo              | gu sf |                         |
-| Commercial                      | Commerciale                    | us    |                         |
-| Tactical                        | Tattico                        | us    |                         |
-| Advanced                        | Avanzato                       | us    |                         |
-| Superior                        | Superiore                      | us    |                         |
-| Elite                           | D'Élite                        | us    |                         |
-| Ultimate                        | Definitivo                     | us    |                         |
-| Paragon                         | Ineguagliabile                 | us    |                         |
-| Desna's Path                    | Sentiero di Desna              | us    |                         |
-| The Gap                         | L'Intervallo                   | gu sf |                         |
-| Pact Worlds                     | Mondi del Patto                | gu sf |                         |
-| The Drift                       | La Deriva                      | gu sf |                         |
-| Near Space                      | Spazio Vicino                  | gu sf |                         |
-| The Vast                        | L'Immensità                    | gu sf |                         |
-| Magitech                        | Tecnomagico                    | gu sf |                         |
-| Drift beacon                    | Faro di Deriva                 | gu sf |                         |
-| Drift engine                    | Motore Deriva                  | gu sf |                         |
-| Drift lane                      | Corsia di Deriva               | us    | ????                    |
-| Drift Crisis                    | Crisi della Deriva             | us    | ????                    |
-| Gelid Edge                      | Margine Gelido                 | us    | ????                    |
-| Marixah Republic                | Repubblica di Marixah          |       | gu Spazio Vicino        |
-| Gideron Authority               | Autorità di Gideron            |       | gu Spazio Vicino        |
-| Szandite Collective             | Collettivo Szandita            |       | gu Spazio Vicino        |
-| Kreiholm Freehold               | Libero Dominio di Kreiholm     | us    | ????                    |
-| Scoured Stars                   | Stelle Abbandonate             | gu sf |                         |
-| Azlanti Star Empire             | Impero Stellare Azlanti        | gu sf |                         |
-| Kazmurg's Absurdity             | Assurdità di Kazmurg           | us    | ????                    |
-| Ghost Levels                    | Livelli Spettrali              | us    | ????                    |
-| Bluerise Tower                  | Torre Azzurrovertice           | us    | ????                    |
-| Cosmonastery of the Empty Orbit | Cosmonastero dell’Orbita Vuota |       | gu Spazio Vicino        |
-| Horse Eye Orbital Plate         |                                |       | gu Spazio Vicino        |
-| Automatrix                      |                                |       | gu Spazio Vicino        |
-| Eternity                        | Eternità                       |       | gu Spazio Vicino        |
-| Sea of Glass                    | Mare di Vetro                  |       | gu Spazio Vicino        |
-| Midnight Trenches               | Midnight Trenches              |       | gu Spazio Vicino        |
-| Ice Wells                       | Pozzi di Ghiaccio              |       | gu Spazio Vicino        |
-| Shefis                          | Shefis                         | us    | ????                    |
-| Asana                           | Asana                          |       | gu Spazio Vicino        |
-| Queensrock                      | Queensrock                     |       | gu Il Tempio dei Dodici |
-| Ukulam                          | Ukulam                         |       | gu Spazio Vicino        |
+| en                              | it                                 | da    | note     |
+| ------------------------------- | ---------------------------------- | ----- | -------- |
+| line of sight                   | linea di vista                     | gu pf |          |
+| line of effect                  | linea di effetto                   | gu pf |          |
+| Daily Preparations              | Preparativi Giornalieri            | gu pf |          |
+| Level                           | Livello                            | gu pf |          |
+| Rank                            | Grado                              | gu pf | remaster |
+| Netherworld                     | Aldilà                             | gu pf | remaster |
+| Perception Expertise            | Percezione Esperta                 | gu pf | remaster |
+| Fortitude Expertise             | Tempra Esperta                     | gu pf | remaster |
+| Reflex Expertise                | Riflessi Esperti                   | gu pf | remaster |
+| Perception Mastery              | Percezione Magistrale              | gu pf | remaster |
+| Reflex Mastery                  | Riflessi Magistrali                | gu pf | remaster |
+| Envoy                           | Emissario                          | gu sf |          |
+| &nbsp; Leadership Style         | Stile di Leadership                | us    |          |
+| Mystic                          | Mistico                            | gu sf |          |
+| &nbsp; Connection               | Connessione                        | gu sf |          |
+| &nbsp; Bond                     | Legame                             | us    |          |
+| &nbsp; Harmony                  | Armonia                            | us    |          |
+| &nbsp; Epiphany                 | Epifania                           | us    |          |
+| Operative                       | Operativo                          | gu sf |          |
+| &nbsp; Specialization           | Specializzazione                   | gu sf |          |
+| &nbsp; Sharpshooter             | Tiratore Scelto                    | us    |          |
+| &nbsp; Focused                  | Concentrato                        | us    |          |
+| Witchwarper                     | Stregone del Velo                  | gu sf |          |
+| Commercial                      | Commerciale                        | us    |          |
+| Tactical                        | Tattico                            | us    |          |
+| Advanced                        | Avanzato                           | us    |          |
+| Superior                        | Superiore                          | us    |          |
+| Elite                           | D'Élite                            | us    |          |
+| Ultimate                        | Definitivo                         | us    |          |
+| Paragon                         | Ineguagliabile                     | us    |          |
+| Desna's Path                    | Sentiero di Desna                  | us    |          |
+| The Gap                         | L'Intervallo                       | gu sf |          |
+| Pact Worlds                     | Mondi del Patto                    | gu sf |          |
+| The Drift                       | La Deriva                          | gu sf |          |
+| Near Space                      | Spazio Vicino                      | gu sf |          |
+| The Vast                        | L'Immensità                        | gu sf |          |
+| Magitech                        | Tecnomagico                        | gu sf |          |
+| Drift beacon                    | Faro di Deriva                     | gu sf |          |
+| Drift engine                    | Motore Deriva                      | gu sf |          |
+| Drift lane                      | Corsia di Deriva                   | us    | ????     |
+| Drift Crisis                    | Crisi della Deriva                 | us    | ????     |
+| Gelid Edge                      | Margine Gelido                     | us    | ????     |
+| Marixah Republic                | Repubblica di Marixah              | gu sf |          |
+| Gideron Authority               | Autorità di Gideron                | gu sf |          |
+| Szandite Collective             | Collettivo Szandita                | gu sf |          |
+| Kreiholm Freehold               | Libero Dominio di Kreiholm         | us    | ????     |
+| Scoured Stars                   | Stelle Abbandonate                 | gu sf |          |
+| Azlanti Star Empire             | Impero Stellare Azlanti            | gu sf |          |
+| Kazmurg's Absurdity             | Assurdità di Kazmurg               | us    | ????     |
+| Ghost Levels                    | Livelli Spettrali                  | us    | ????     |
+| Bluerise Tower                  | Torre Azzurrovertice               | us    | ????     |
+| Cosmonastery of the Empty Orbit | Cosmonastero dell’Orbita Vuota     | gu sf |          |
+| Horse Eye Orbital Plate         | Piattaforma Orbitale Occhio Equino | gu sf |          |
+| Automatrix                      | Automatrix                         | gu sf |          |
+| Eternity                        | Eternità                           | gu sf |          |
+| Sea of Glass                    | Mare di Vetro                      | gu sf |          |
+| Midnight Trenches               | Fosse di Mezzanotte                | gu sf |          |
+| Ice Wells                       | Pozzi Ghiacciati                   | gu sf |          |
+| Shefis                          | Shefis                             | us    | ????     |
+| Asana                           | Asana                              | gu sf |          |
+| Queensrock                      | Roccia delle Regine                | gu sf |          |
+| Ukulam                          | Ukulam                             | gu sf |          |
+| Sloughscar Hills                | Colline Sfregiopantano             | us    | ????     |
+| Wreck of the Returned           | Relitto dei Ritornati              | us    |          |
 
 ### Abilità
 
