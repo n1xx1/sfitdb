@@ -432,6 +432,7 @@
 | Seeker Rifle           | Fucile a Ricerca              | gu sf |      |
 | Semi-Auto Pistol       | Pistola Semiautomatica        | us    |      |
 | Shock Truncheon        | Manganello Elettrico          | gu sf |      |
+| Singing Coil           | Bobina Corale                 | us    |      |
 | Singing Spear          | Lancia Corale                 | gu sf |      |
 |                        |                               |       |      |
 | Painglaive             | Dolorfalcione                 | us    | ???? |
