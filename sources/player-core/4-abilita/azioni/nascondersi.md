@@ -7,7 +7,8 @@ original-srd: https://2e.aonsrd.com/actions/101-hide
 
 # Nascondersi :a:
 
-Ti nascondi dietro una [copertura](/regole/TODO-cover) o una copertura
+Ti nascondi dietro una
+[copertura](/regole/player-core/8-giocare/movimento#copertura) o una copertura
 superiore, oppure sfrutti l’[occultamento](/condizioni/occultato) per diventare
 [nascosto](/condizioni/nascosto) e non essere più
 [osservato](/condizioni/osservato). Il GM effettua la tua prova di Furtività in

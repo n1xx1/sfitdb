@@ -18,10 +18,11 @@ Alla fine del tuo movimento, il GM effettua la tua prova di Furtività in segret
 e ne confronta il risultato con la CD di Percezione di ciascuna delle creature
 dalle quali eri [nascosto](/condizioni/nascosto) o
 [non individuato](/condizioni/non-individuato) all’inizio del tuo movimento. Se,
-mentre Avanzi, hai [copertura](/regole/TODO-cover) o copertura superiore da
-quella creatura, ottieni bonus di circostanza +2 per la copertura (o +4 per la
-copertura superiore) alla tua prova di Furtività. Poiché ti stai muovendo,
-l’incremento di bonus dovuto
+mentre Avanzi, hai
+[copertura](/regole/player-core/8-giocare/movimento#copertura) o copertura
+superiore da quella creatura, ottieni bonus di circostanza +2 per la copertura
+(o +4 per la copertura superiore) alla tua prova di Furtività. Poiché ti stai
+muovendo, l’incremento di bonus dovuto
 all’[Andare in Copertura](/azioni/andare-in-copertura) non si applica. Non devi
 effettuare una prova contro una creatura se, alla fine del tuo movimento, non
 sei [occultato](/condizioni/occultato) da essa né hai copertura o copertura
