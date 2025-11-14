@@ -139,7 +139,7 @@
 | Unfriendly  | Maldisposto     | gu pf |      |
 | Unnoticed   | Inosservato     | gu pf |      |
 | Untethered  | Sganciato       | us    | ???? |
-| Wounded     | Ferito          | us    | ???? |
+| Wounded     | Ferito          | gu pf |      |
 
 ### Tratti
 
@@ -282,6 +282,7 @@
 | Clairvoyance            | Chiaroveggenza             | gu pf |                           |
 | Cloying Shadow          | Ombra Stucchevole          | us    |                           |
 | Confusion               | Confusione                 | gu pf |                           |
+| Corrosive Haze          | Foschia Corrosiva          | gu sf |                           |
 |                         |                            |       |                           |
 | Data Drain              | Drenaggio Dati             | us    |                           |
 | Daze                    | Frastornare                | gu pf |                           |
@@ -331,12 +332,15 @@
 |                         |                            |       |                           |
 | Noise Blast             | Frastuono                  | gu pf |                           |
 |                         |                            |       |                           |
+| Overload Systems        | Sovraccaricare Sistemi     | gu sf |                           |
+|                         |                            |       |                           |
 | Parallel Forms          | Forme Parallele            | us    |                           |
 | Personal Gravity        | Gravità Personale          | gu sf |                           |
 | Phantasmagoria          | Fantasmagoria              | gu pf |                           |
 | Phantasmal Calamity     | Allucinazione Catastrofica | gu pf |                           |
 | Phantasmal Fleet        | Flotta Fantasma            | us    |                           |
 | Planar Palace           | Palazzo Planare            | gu pf |                           |
+| Pocket Vacuum           | Sottovuoto Portatile       | us    | ????                      |
 | Promession              | Promessione                | us    |                           |
 |                         |                            |       |                           |
 | Quantum Analysis        | Analisi Quantistica        | us    |                           |
@@ -360,6 +364,7 @@
 | Silver Tongue           | Parlantina Sciolta         | us    |                           |
 | Slice Reality           | Fendere la Realtà          | gu sf |                           |
 | Slow                    | Lentezza                   | gu pf |                           |
+| Sonic Scream            | Urlo Sonico                | us    |                           |
 | Stabilize               | Stabilizzare               | gu pf |                           |
 | Stumble                 | Inciampare                 | us    |                           |
 | Subjective Reality      | Realtà Soggettiva          | gu sf |                           |
@@ -425,6 +430,7 @@
 | Medpatch               | Cerotto Medico                | gu sf |      |
 |                        |                               |       |      |
 | Seeker Rifle           | Fucile a Ricerca              | gu sf |      |
+| Semi-Auto Pistol       | Pistola Semiautomatica        | us    |      |
 | Shock Truncheon        | Manganello Elettrico          | gu sf |      |
 | Singing Spear          | Lancia Corale                 | gu sf |      |
 |                        |                               |       |      |
@@ -459,6 +465,8 @@
 | en              | it                    | da    | note |
 | --------------- | --------------------- | ----- | ---- |
 |                 |                       |       |      |
+| Cloud Ray       | Razza delle Nuvole    | us    | ???? |
+| Crest-Eater     | Mangia-Creste         | gu sf |      |
 | Hardlight Scamp | Mefite di Luce Solida | us    |      |
 | Shotalashu      | Shotalashu            | gu sf |      |
 | Squox           | Volpiattolo           | gu sf |      |

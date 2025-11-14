@@ -34,6 +34,12 @@
 {{- if not (hasPrefix $page "/") -}}
   {{- $page = path.Join .Page.Path $page -}}
 {{- end -}}
+{{- if not $template -}}
+  {{- $blockquoteMatch := (index (findRE `(?m)(^> +)?(\{\{<[\s\S]*?>\}\}|\{\{%[\s\S]*?%\}\})` .Page.RawContent) .Ordinal) -}}
+  {{- if hasPrefix $blockquoteMatch ">" -}}
+    {{- $template = "blockquote" -}}
+  {{- end -}}
+{{- end -}}
 {{- with .Site.GetPage $page -}}
   {{- partial "shortcodes/include" (dict
     "page" .
@@ -45,7 +51,6 @@
   -}}
 {{- else -}}
   <div class="p-2 my-4 bg-red-300 dark:bg-red-900">
-    missing page:
-    {{ $page }}
+    {{- printf "missing page: %s" $page -}}
   </div>
 {{- end -}}

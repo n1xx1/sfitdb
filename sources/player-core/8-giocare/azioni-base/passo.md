@@ -16,5 +16,6 @@ movimento, il Passo non innesca reazioni che possono essere innescate da azioni
 di movimento o quando si entra o esce da un quadretto, come Colpo Reattivo.
 
 Non puoi fare un Passo su un
-[terreno difficile](/regile/TODO-difficult-terrain), e non puoi fare un Passo
-usando una Velocità diversa dalla tua Velocità sul terreno.
+[terreno difficile](/regole/player-core/8-giocare/movimento#terreno-difficile),
+e non puoi fare un Passo usando una Velocità diversa dalla tua Velocità sul
+terreno.

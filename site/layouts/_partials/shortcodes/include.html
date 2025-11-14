@@ -65,7 +65,7 @@
 {{ end }}
 
 {{ $isStatblock := partialCached "pf/isStatblock" .page.Type .page.Type }}
-{{ if $isStatblock }}
+{{ if and $isStatblock (not .template) }}
   {{ $content = printf "<div class=\"prose sf-prose px-4 py-4 bg-card my-5\">\n\n%s\n\n</div>" $content }}
 {{ end }}
 
