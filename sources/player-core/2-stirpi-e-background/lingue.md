@@ -52,13 +52,13 @@ descrizioni. Le lingue rare o segrete possono essere scoperta solo giocando.
 | ------------- | ------------------------------------------------------------------------------ |
 | Akitoniano    | Akiton (shobhad e [ysoki](/stirpi/ysoki))                                      |
 | Brethedano    | Bretheda, Liavara e relative lune ([barathu](/stirpi/barathu), kalo, maraquoi) |
-| Castroveliano | Castrovel (lashunta e formian)                                                 |
+| Castroveliano | Castrovel ([lashunta](/stirpi/lashunta) e formian)                             |
 | Diasporano    | Diaspora (sarcesiani)                                                          |
 | Draconico     | Triaxus (draghi, draconici, ryphoriani)                                        |
 | Eoxiano       | Eox (elebriani)                                                                |
-| Trinario      | Aballon (anaciti, androidi)                                                    |
+| Trinario      | Aballon (anaciti, [androidi](/stirpi/androide))                                |
 | Vercita       | Verces (verthani)                                                              |
-| Vesk          | Pulonis, il Veskarium (pahtra, vesk)                                           |
+| Vesk          | Pulonis, il Veskarium ([pahtra](/stirpi/pahtra), [vesk](/stirpi/vesk))         |
 
 ### Lingue Non Comuni Extraplanari
 
