@@ -16,10 +16,11 @@ sub-features:
 # Lanciare Incantesimi da Stregone del Velo
 
 Il tuo paradosso ti concede potere magico. Puoi lanciare incantesimi tramite
-l'attività [Lanciare un Incantesimo](/azioni/lanciare-un-incantesimo). Dato che
-sei uno stregone del velo, quando lanci incantesimi potresti descrivere ad alta
-voce le tue rivelazioni su altre realtà, accompagnandole con gesti eleganti
-mentre equazioni arcane o simboli occulti ardono intorno a te.
+l'attività
+[Lanciare un Incantesimo](/regole/player-core/7-incantesimi#lanciare-incantesimi).
+Dato che sei uno stregone del velo, quando lanci incantesimi potresti descrivere
+ad alta voce le tue rivelazioni su altre realtà, accompagnandole con gesti
+eleganti mentre equazioni arcane o simboli occulti ardono intorno a te.
 
 Puoi lanciare fino a tre incantesimi di 1° grado al giorno. Devi conoscere gli
 incantesimi per lanciarli e puoi impararli grazie al privilegio di classe

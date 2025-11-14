@@ -10,11 +10,11 @@ navigation-hide: true
 
 Canalizzi il tuo incantesimo per manifestarlo da uno dei tuoi alleati invece che
 da te. Se la prossima azione che usi è
-[Lanciare un Incantesimo](/azioni/lanciare-un-incantesimo) con area, gittata o
-bersaglio, l’incantesimo si manifesta da uno dei tuoi alleati legati anziché da
-te. Usa lo spazio dell’alleato per determinare l'origine, la gittata e l’area di
-effetto, ma linea di vista e linea di effetto devono essere rispettate sia da te
-che dall’alleato al momento del lancio.
+[Lanciare un Incantesimo](/regole/player-core/7-incantesimi#lanciare-incantesimi)
+con area, gittata o bersaglio, l’incantesimo si manifesta da uno dei tuoi
+alleati legati anziché da te. Usa lo spazio dell’alleato per determinare
+l'origine, la gittata e l’area di effetto, ma linea di vista e linea di effetto
+devono essere rispettate sia da te che dall’alleato al momento del lancio.
 
 Questo può ingannare chi vede solo l’alleato, ma a meno che tu non sia nascosto
 o l’incantesimo non abbia il tratto [sottile](/tratti/sottile), qualsiasi

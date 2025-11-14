@@ -14,7 +14,8 @@ Intimidazione contro la CD di Volontà della creatura, modificata dalle
 circostanze secondo il giudizio del GM. Gli atteggiamenti ai quali si fa
 riferimento negli effetti qui sotto sono riassunti nel riquadro laterale
 [Cambiare Atteggiamenti](/abilita/diplomazia#cambiare-atteggiamenti) e descritti
-estensivamente nell’[Appendice delle Condizioni](/condizioni).
+estensivamente
+nell’[Appendice Condizioni](/regole/player-core/appendice-condizioni).
 
 **Successo Critico** Il bersaglio ti dà le informazioni che cerchi o esegue i
 tuoi ordini, a patto che facendolo non rischi di essere danneggiato in alcun

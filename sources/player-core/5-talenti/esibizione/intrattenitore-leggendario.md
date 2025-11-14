@@ -23,8 +23,7 @@ atteggiamento esigente, le creature potrebbe essere intimidite da te, anziché
 amichevoli nei tuoi confronti. Quando [Guadagni](/azioni/guadagnare) tenendo
 un'Esibizione, puoi attirare spettatori di livello più alto di quelli
 disponibili nel luogo in cui ti trovi; le persone si radunano da ogni parte per
-vederti. Ad esempio, esponenti dall'alta società e spectra potrebbero viaggiare
-bar malfamato in un porto sperduto per assistere alla tua esibizione.
-Solitamente, questo talento aumenta il livello degli spettatori disponibili
-portandolo al tuo livello o aumentandolo di due livelli, quale dei due risulti
-nel livello più alto.
+vederti. Ad esempio, mondani e spectra potrebbero viaggiare bar malfamato in un
+porto sperduto per assistere alla tua esibizione. Solitamente, questo talento
+aumenta il livello degli spettatori disponibili portandolo al tuo livello o
+aumentandolo di due livelli, quale dei due risulti nel livello più alto.

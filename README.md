@@ -214,50 +214,51 @@
 
 ### Talenti
 
-| en                  | it                             | da    | note                  |
-| ------------------- | ------------------------------ | ----- | --------------------- |
-| Additional Lore     | Sapienza Aggiuntiva            | gu pf |                       |
-| Assurance           | Garanzia                       | gu pf |                       |
-| Augmented Body      | Corpo Impiantato               | us    | ???                   |
-|                     |                                |       |                       |
-| Barricade           | Barricare                      | us    |                       |
-|                     |                                |       |                       |
-| Continual Recovery  | Guarigione Ininterrotta        | gu pf |                       |
-|                     |                                |       |                       |
-| Deadlift            | Stacco                         | us    | forse Stacco da Terra |
-| Double Tap          | Doppio Colpo                   | us    | sembra 2 Strike       |
-|                     |                                |       |                       |
-| Experienced Tracker | Segugio Esperto                | gu pf |                       |
-|                     |                                |       |                       |
-| Face in the Crowd   | Volto tra la Folla             | us    |                       |
-| Feather Step        | Passo Morbido                  | gu pf |                       |
-|                     |                                |       |                       |
-| Hologram Skeptic    | Scettico sugli Ologrammi       | us    |                       |
-|                     |                                |       |                       |
-| Intimidating Shot   | Sparo Intimidatorio            | us    |                       |
-|                     |                                |       |                       |
-| Just Kidding!       | Stava Scherzando!              | us    |                       |
-|                     |                                |       |                       |
-| Machine Magic       | Magia delle Macchine           |       | playtest              |
-| Magical Crafting    | Fabbricare Oggetti Magici      | gu pf |                       |
-| Management Material | Stoffa da Dirigente            | us    |                       |
-| Multilingual        | Poliglotta                     | gu pf |                       |
-|                     |                                |       |                       |
-| Quick Install       | Installazione Rapida           | us    |                       |
-| Quick Jump          | Salto Rapido                   | gu pf |                       |
-|                     |                                |       |                       |
-| Religious Talisman  | Talismano Religioso            | us    |                       |
-|                     |                                |       |                       |
-| Serum Crafting      | Fabbricare Sieri               | us    |                       |
-| Shield Block        | Parare con lo Scudo            | gu pf |                       |
-| Streetwise          | Scaltrezza Urbana              | gu pf |                       |
-|                     |                                |       |                       |
-| Tech Crafting       | Fabbricare Oggetti Tecnologici | us    |                       |
-| Titan Wrestler      | Lottatore Titanico             | gu pf |                       |
-|                     |                                |       |                       |
-| Ward Medic          | Medico di Reparto              | gu pf |                       |
-| Without a Trace     | Senza Lasciare Traccia         | us    |                       |
-|                     |                                |       |                       |
+| en                      | it                             | da    | note                  |
+| ----------------------- | ------------------------------ | ----- | --------------------- |
+| Additional Lore         | Sapienza Aggiuntiva            | gu pf |                       |
+| Assurance               | Garanzia                       | gu pf |                       |
+| Augmented Body          | Corpo Impiantato               | us    | ????                  |
+| Augmentation Specialist | Specialista degli Impianti     | us    | ????                  |
+|                         |                                |       |                       |
+| Barricade               | Barricare                      | us    |                       |
+|                         |                                |       |                       |
+| Continual Recovery      | Guarigione Ininterrotta        | gu pf |                       |
+|                         |                                |       |                       |
+| Deadlift                | Stacco                         | us    | forse Stacco da Terra |
+| Double Tap              | Doppio Colpo                   | us    | sembra 2 Strike       |
+|                         |                                |       |                       |
+| Experienced Tracker     | Segugio Esperto                | gu pf |                       |
+|                         |                                |       |                       |
+| Face in the Crowd       | Volto tra la Folla             | us    |                       |
+| Feather Step            | Passo Morbido                  | gu pf |                       |
+|                         |                                |       |                       |
+| Hologram Skeptic        | Scettico sugli Ologrammi       | us    |                       |
+|                         |                                |       |                       |
+| Intimidating Shot       | Sparo Intimidatorio            | us    |                       |
+|                         |                                |       |                       |
+| Just Kidding!           | Stava Scherzando!              | us    |                       |
+|                         |                                |       |                       |
+| Machine Magic           | Magia delle Macchine           |       | playtest              |
+| Magical Crafting        | Fabbricare Oggetti Magici      | gu pf |                       |
+| Management Material     | Stoffa da Dirigente            | us    |                       |
+| Multilingual            | Poliglotta                     | gu pf |                       |
+|                         |                                |       |                       |
+| Quick Install           | Installazione Rapida           | us    |                       |
+| Quick Jump              | Salto Rapido                   | gu pf |                       |
+|                         |                                |       |                       |
+| Religious Talisman      | Talismano Religioso            | us    |                       |
+|                         |                                |       |                       |
+| Serum Crafting          | Fabbricare Sieri               | us    |                       |
+| Shield Block            | Parare con lo Scudo            | gu pf |                       |
+| Streetwise              | Scaltrezza Urbana              | gu pf |                       |
+|                         |                                |       |                       |
+| Tech Crafting           | Fabbricare Oggetti Tecnologici | us    |                       |
+| Titan Wrestler          | Lottatore Titanico             | gu pf |                       |
+|                         |                                |       |                       |
+| Ward Medic              | Medico di Reparto              | gu pf |                       |
+| Without a Trace         | Senza Lasciare Traccia         | us    |                       |
+|                         |                                |       |                       |
 
 ### Incantesimi
 
@@ -372,6 +373,7 @@
 | Supercharge Weapon      | Sovraccaricare Arma        | gu sf |                           |
 | Synaptic Pulse          | Impulso Sinaptico          | gu sf |                           |
 |                         |                            |       |                           |
+| Telekinetic Tantrum     | Scenata Telecinetica       | us    |                           |
 | Temporal Bullets        | Proiettili Temporali       | us    |                           |
 | Time's Edge             | Lama del Tempo             | us    |                           |
 | Time Loop               | Loop Temporale             | us    |                           |
@@ -420,6 +422,8 @@
 | Doshko                 | Doshko                        | gu sf |      |
 | Dueling Sword          | Spada da Duello               | us    |      |
 |                        |                               |       |      |
+| Flaming Module         | Modulo Infuocato              | us    | ???? |
+| Fangblade              | Lama-Zanna                    | gu sf |      |
 | Flight Suit            | Tuta da Volo                  | gu sf |      |
 |                        |                               |       |      |
 | Ghost Killer           | Sterminaspettri               | gu sf |      |
@@ -427,6 +431,7 @@
 | Laser Rifle            | Fucile Laser                  | gu sf |      |
 |                        |                               |       |      |
 | Machine Gun            | Mitragliatrice                | gu sf |      |
+| Medkit                 | Kit Medico                    | gu pf |      |
 | Medpatch               | Cerotto Medico                | gu sf |      |
 |                        |                               |       |      |
 | Seeker Rifle           | Fucile a Ricerca              | gu sf |      |
@@ -441,6 +446,7 @@
 |                        |                               |       |      |
 | Retinal Reflectors     | Riflettori Retinali           | gu sf |      |
 |                        |                               |       |      |
+| Uniclamp               | Moschettone Universale        | gu sf |      |
 
 ### Domini
 

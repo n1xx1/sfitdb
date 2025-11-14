@@ -3,7 +3,6 @@ source: Player Core (Eng), pag. 412
 original-name: Movement
 original-srd: https://2e.aonsrd.com/rules/393-movement
 navigation-order: 8
-TODO: finire link
 ---
 
 # Movimento
@@ -209,8 +208,8 @@ che effettui in un turno conta come 1,5 metri, il secondo conta come 3 metri, e
 da quel momento in poi alterni fra i due. Ad esempio, muovendoti in diagonale
 per 4 quadretti conteresti 1,5 metri, poi 3, poi 1,5 e poi 3, per un totale di 9
 metri. Durante il tuo turno devi tenere il conto del tuo movimento diagonale
-totale, ma il conto si azzera alla fine del tuo turno. Il diagramma a pag. 415
-ti mostra un esempio.
+totale, ma il conto si azzera alla fine del tuo turno. Il diagramma mostra un
+esempio.
 
 #### Movimento Tridimensionale
 
@@ -261,15 +260,15 @@ più grande, e, se hanno portata 0 metri, devono farlo per poter attaccare.
 > ### Reazioni al Movimento
 >
 > Alcune reazioni e azioni gratuite sono innescate da una creatura che compie
-> un’azione con il tratto movimento. L’esempio principale Colpo Reattivo
-> (riprodotto sotto). Le azioni con il tratto movimento possono innescare
-> reazioni o azioni gratuite per tutta la distanza percorsa. Ogni volta che esci
-> da un quadretto entro la portata di una creatura, il tuo movimento innesca
-> quelle reazioni e azioni gratuite (anche se non più di una volta per ogni
-> azione di movimento per una data creatura). Se usi un’azione di movimento ma
-> non esci da un quadretto, l’innesco avviene alla fine di quell’azione o
-> capacità. Alcune azioni, come Passo, specificano che non innescano reazioni o
-> azioni gratuite basate sul movimento.
+> un’azione con il tratto movimento. L’esempio principale
+> [Colpo Reattivo](/azioni/colpo-reattivo) (riprodotto sotto). Le azioni con il
+> tratto movimento possono innescare reazioni o azioni gratuite per tutta la
+> distanza percorsa. Ogni volta che esci da un quadretto entro la portata di una
+> creatura, il tuo movimento innesca quelle reazioni e azioni gratuite (anche se
+> non più di una volta per ogni azione di movimento per una data creatura). Se
+> usi un’azione di movimento ma non esci da un quadretto, l’innesco avviene alla
+> fine di quell’azione o capacità. Alcune azioni, come Passo, specificano che
+> non innescano reazioni o azioni gratuite basate sul movimento.
 >
 > {{% include page="../azioni-altro/colpo-reattivo" level=3 %}}
 

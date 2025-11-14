@@ -3,7 +3,6 @@ source: Player Core (Eng), pag. 405
 original-name: Hero Points
 original-srd: https://2e.aonsrd.com/rules/381-hero-points
 navigation-order: 6
-TODO: finire link
 ---
 
 # Punti Eroe
@@ -30,9 +29,10 @@ favore di un tuo famiglio o compagno animale.
   che non puoi spendere più di 1 Punto Eroe per una prova).
 - **Spendi tutti i tuoi Punti Eroe (minimo 1) per evitare la morte.** Puoi farlo
   all’aumentare della condizione morente. Perdi la condizione morente e ti
-  stabilizzi con 0 Punti Ferita. Non ottieni la condizione ferito né aumenti il
-  suo valore per aver perso la condizione morente, ma, se l’avevi già, non la
-  perdi né diminuisci il suo valore.
+  stabilizzi con 0 Punti Ferita. Non ottieni la condizione
+  [ferito](/condizioni/ferito) né aumenti il suo valore per aver perso la
+  condizione morente, ma, se l’avevi già, non la perdi né diminuisci il suo
+  valore.
 
 ## Descrivere Azioni Eroiche
 

@@ -13,7 +13,8 @@ original-srd: https://2e.aonsrd.com/actions/13-step
 
 Ti muovi prudentemente di 1,5 metri. A differenza di gran parte dei tipi di
 movimento, il Passo non innesca reazioni che possono essere innescate da azioni
-di movimento o quando si entra o esce da un quadretto, come Colpo Reattivo.
+di movimento o quando si entra o esce da un quadretto, come
+[Colpo Reattivo](/azioni/colpo-reattivo).
 
 Non puoi fare un Passo su un
 [terreno difficile](/regole/player-core/8-giocare/movimento#terreno-difficile),

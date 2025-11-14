@@ -16,12 +16,12 @@ sub-features:
 # Lanciare Incantesimi da Mistico
 
 Sei un incantatore e puoi lanciare incantesimi tramite l'attività
-[Lanciare un Incantesimo](/azioni/lanciare-un-incantesimo). Dato che sei un
-mistico, quando lanci incantesimi potresti intonare una preghiera o canticchiare
-un motivo ispirato dalle tue epifanie; potresti compiere gesti o danze che
-seguono il flusso della rete della tua connessione; e potresti accompagnare il
-lancio dei tuoi incantesimi con filamenti di energia che scorrono tra te e i
-tuoi alleati legati.
+[Lanciare un Incantesimo](/regole/player-core/7-incantesimi#lanciare-incantesimi).
+Dato che sei un mistico, quando lanci incantesimi potresti intonare una
+preghiera o canticchiare un motivo ispirato dalle tue epifanie; potresti
+compiere gesti o danze che seguono il flusso della rete della tua connessione; e
+potresti accompagnare il lancio dei tuoi incantesimi con filamenti di energia
+che scorrono tra te e i tuoi alleati legati.
 
 Puoi lanciare fino a tre incantesimi di 1° grado al giorno. Devi conoscere gli
 incantesimi per lanciarli e puoi impararli grazie al privilegio di classe

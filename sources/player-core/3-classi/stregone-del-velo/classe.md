@@ -83,10 +83,10 @@ intraprendere tali viaggi accidentalmente.
 > azioni provengono da talenti magimorfici. Devi usare un'azione magimorfica
 > subito prima dell'incantesimo che vuoi alterare. Se usi una qualsiasi azione
 > (incluse azioni gratuite e reazioni) oltre all'azione
-> [Lanciare un Incantesimo](/azioni/lanciare-un-incantesimo) subito dopo, perdi
-> i vantaggi dell'azione magimorfica. Qualsiasi effetto aggiuntivo apportato da
-> un'azione magimorfica è parte dell'effetto dell'incantesimo e non dell'azione
-> magimorfica stessa.
+> [Lanciare un Incantesimo](/regole/player-core/7-incantesimi#lanciare-incantesimi)
+> subito dopo, perdi i vantaggi dell'azione magimorfica. Qualsiasi effetto
+> aggiuntivo apportato da un'azione magimorfica è parte dell'effetto
+> dell'incantesimo e non dell'azione magimorfica stessa.
 >
 > [**Zona**](/tratti/zona)**:** Queste azioni applicano un effetto aggiuntivo al
 > tuo campo quantico. Puoi applicare gli effetti di una zona solo a un campo

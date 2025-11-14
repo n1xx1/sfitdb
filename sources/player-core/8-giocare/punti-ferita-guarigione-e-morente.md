@@ -63,7 +63,7 @@ bisogna in genere attaccarlo direttamente, cosa che può essere difficile a caus
 di Durezza e immunità. Di solito non puoi attaccare un oggetto custodito (che si
 trovi addosso a una creatura).
 
-# Fuori Combattimento
+## Fuori Combattimento
 
 Le creature non possono essere ridotte a meno di 0 Punti Ferita. In genere,
 quando raggiungono 0 Punti Ferita, muoiono e vengono rimosse dal gioco a meno

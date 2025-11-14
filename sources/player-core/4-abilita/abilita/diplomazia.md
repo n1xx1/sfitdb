@@ -23,7 +23,8 @@ chiacchierando amichevolmente.
 > sfumature aggiuntive in base al passato e alle credenze dei personaggi con i
 > quali stai interagendo, e gli atteggiamenti possono cambiare in base allo
 > sviluppo della storia. Gli atteggiamenti sono descritti in dettaglio
-> nell’Appendice delle Condizioni e sono riassunti qui.
+> nell’[Appendice Condizioni](/regole/player-core/appendice-condizioni) e sono
+> riassunti qui.
 >
 > - [**Collaborativo**](/condizioni/collaborativo)**:** Disponibile ad aiutarti,
 >   risponde favorevolmente alle tue richieste.

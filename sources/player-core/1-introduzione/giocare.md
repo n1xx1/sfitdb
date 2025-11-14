@@ -263,8 +263,9 @@ obiettivi.
 >
 > Un effetto continuo che cambia il modo in cui è possibile agire o altera
 > alcune delle tue statistiche è chiamato condizione. Le regole delle principali
-> condizioni utilizzate nel gioco compaiono nell’Appendice Condizioni, alla fine
-> del libro.
+> condizioni utilizzate nel gioco compaiono
+> nell’[Appendice Condizioni](/regole/player-core/appendice-condizioni), alla
+> fine del libro.
 >
 > ### Game Master (GM)
 >

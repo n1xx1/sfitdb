@@ -293,8 +293,8 @@ usi per quel Colpo: sarebbe penalità -10 con la spada plasma e penalità -8 con
 il guanto da battaglia, a prescindere dall’arma usata per i Colpi precedenti.
 
 La penalità da attacchi multipli si applica solo durante il tuo turno, quindi
-ignorala se puoi compiere un Colpo Reattivo o una simile reazione che ti
-consente di sferrare un Colpo nel turno di qualcun altro.
+ignorala se puoi compiere un [Colpo Reattivo](/azioni/colpo-reattivo) o una
+simile reazione che ti consente di sferrare un Colpo nel turno di qualcun altro.
 
 ### Penalità da Gittata
 
@@ -498,6 +498,17 @@ imbattersi in penalità di oggetto o senza tipo per Percezione.
 Molte capacità vengono confrontate con la tua **CD di Percezione** per
 determinare se hanno successo. La tua CD di Percezione equivale a 10 + il tuo
 modificatore totale di Percezione.
+
+### Percezione per Iniziativa
+
+Spesso tirerai una prova di Percezione per determinare il tuo ordine di
+iniziativa. In tal caso, anziché confrontare il risultato contro una CD, il GM
+dispone i risultati di tutti i partecipanti dell’incontro in ordine. La creatura
+con il risultato maggiore agisce per prima, quella con il secondo risultato
+maggiore per seconda e così via. A volte ti sarà richiesto di tirare una prova
+di abilità per l’iniziativa, ma confronti i risultati come se avessi tirato
+Percezione. Le regole complete per l’iniziativa si trovano nella
+[modalità incontro](/regole/player-core/8-giocare/modalita-incontro).
 
 ## Prove di Abilità
 

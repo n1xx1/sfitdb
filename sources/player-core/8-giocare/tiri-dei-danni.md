@@ -3,7 +3,6 @@ source: Player Core (Eng), pag. 398
 original-name: Damage Rolls
 original-srd: https://2e.aonsrd.com/rules/349-damage-rolls
 navigation-order: 3
-TODO: finire link
 ---
 
 # Tiri dei Danni
@@ -15,24 +14,25 @@ che possono uccidere le creature e distruggere gli oggetti.
 
 I danni diminuiscono i Punti Ferita (PF) di una creatura con un rapporto 1:1
 (quindi una creatura che subisce 6 danni perde 6 Punti Ferita). Le regole
-complete su perdere PF si trovano nella sezione Punti Ferita, Guarigione e
-Morente a pag. 422.
+complete su perdere PF si trovano nella sezione
+[Punti Ferita, Guarigione e Morente](/regole/player-core/8-giocare/punti-ferita-guarigione-e-morente).
 
 I danni sono indicati talvolta con un numero fisso, ma di solito dovrai
-effettuare un tiro dei danni per determinare quanti danni infliggi. Un tiro dei
-danni utilizza in genere un numero e tipo di dadi determinato dall’arma o
+effettuare un **tiro dei danni** per determinare quanti danni infliggi. Un tiro
+dei danni utilizza in genere un numero e tipo di dadi determinato dall’arma o
 dall’attacco senz’armi usato o dall’incantesimo lanciato, e spesso è influenzato
 da vari modificatori, bonus e penalità. Come le prove, un tiro dei danni
 (specialmente con un’arma da mischia) è spesso influenzato da svariati
 modificatori, penalità e bonus. Quando effettui un tiro dei danni svolgi i passi
 illustrati in dettaglio di seguito.
 
-1. Tira i dadi di danno indicati dall’arma, attacco senz’armi o incantesimo e
-   applica i modificatori, bonus e penalità che si applicano al risultato del
+1. **Tira i dadi di danno** indicati dall’arma, attacco senz’armi o incantesimo
+   e applica i modificatori, bonus e penalità che si applicano al risultato del
    tiro.
-2. Determina il tipo di danni.
-3. Applica ai danni le immunità, debolezze e resistenze del bersaglio.
-4. Se restano danni, riduci i Punti Ferita del bersaglio di quell’ammontare.
+2. Determina il **tipo di danni**.
+3. Applica ai danni le **immunità**, **debolezze** e **resistenze** del
+   bersaglio.
+4. Se restano danni, **riduci i Punti Ferita** del bersaglio di quell’ammontare.
 
 ## Passo 1: Tira i Dadi di Danno
 
@@ -103,13 +103,13 @@ arma più di una volta.
 
 ### Danni Persistenti
 
-I danni persistenti sono una condizione che fa sì che i danni si ripetano dopo
-il loro effetto originale. Come i danni normali, possono essere raddoppiati o
-dimezzati in base al risultato di un tiro per colpire o TS. A differenza dei
-danni normali, quando sei soggetto a danni persistenti non li subisci subito:
-subisci i danni specificati alla fine del turno, dopodiché effettui una prova
-semplice con CD 15 per determinare se recuperi dai danni persistenti. Vedi pag.
-457 per le regole complete sulla condizione danni persistenti.
+I [danni persistenti](/condizioni/danno-persistente) sono una condizione che fa
+sì che i danni si ripetano dopo il loro effetto originale. Come i danni normali,
+possono essere raddoppiati o dimezzati in base al risultato di un tiro per
+colpire o TS. A differenza dei danni normali, quando sei soggetto a danni
+persistenti non li subisci subito: subisci i danni specificati alla fine del
+turno, dopodiché effettui una prova semplice con CD 15 per determinare se
+recuperi dai danni persistenti.
 
 ### Raddoppiare e Dimezzare i Danni
 
@@ -125,7 +125,7 @@ raddoppiare modificatori, bonus e penalità anziché raddoppiare il risultato, m
 ciò funziona meglio per attacchi a bersaglio singolo o incantesimi ai bassi
 livelli, quando hai da tirare una modesta quantità di dadi. I benefici che
 ottieni da un colpo critico, come il dado di danno aggiuntivo del tratto delle
-armi fatale, non vengono raddoppiati.
+armi [fatale](/tratti/fatale), non vengono raddoppiati.
 
 ## Passo 2: Tipo di Danni
 
@@ -134,28 +134,36 @@ tipo. Il colpo di un fucile laser infligge danni da fuoco. La puntura di un
 incantesimo [colpo entropico](/incantesimi/colpo-entropico) infligge danni da
 vuoto. A volte potresti applicare danni di precisione, che infliggono più danni
 per aver colpito una creatura in un punto debole o quando il bersaglio è in
-qualche modo vulnerabile. I tipi di danni sono descritti a pag. 421.
+qualche modo vulnerabile. I tipi di danni sono descritti
+[qua](/regole/player-core/8-giocare/immunita-debolezza-e-resistenza#tipi-di-danno).
 
 ## Passo 3: Applica Immunità, Debolezze e Resistenze
 
 Le difese contro certi tipi di danni o effetti si chiamano immunità o
 resistenze, mentre le vulnerabilità sono chiamate debolezze. Applica prima le
-immunità, poi le debolezze e infine le resistenze. Vedi pag. 420.
+[immunità](/regole/player-core/8-giocare/immunita-debolezza-e-resistenza#immunita),
+poi le
+[debolezze](/regole/player-core/8-giocare/immunita-debolezza-e-resistenza#debolezza)
+e infine le
+[resistenze](/regole/player-core/8-giocare/immunita-debolezza-e-resistenza#resistenza).
 
 ## Passo 4: Riduci i Punti Ferita
 
 Qualsiasi danno rimanente riduce i Punti Ferita del bersaglio in rapporto 1:1.
-Puoi trovare maggiori informazioni nella sezione Punti Ferita, Guarigione e
-Morente a pag. 422.
+Puoi trovare maggiori informazioni nella sezione
+[Punti Ferita, Guarigione e Morente](/regole/player-core/8-giocare/punti-ferita-guarigione-e-morente).
 
 ### Attacchi Non Letali
 
 Puoi effettuare un attacco non letale nel tentativo di mettere qualcuno fuori
-combattimento anziché ucciderlo (vedi Fuori Combattimento e Morente a pag. 422).
-Le armi con il tratto non letale (pugni inclusi) lo fanno automaticamente.
-Quando effettui un attacco non letale con un’arma che non possiede il tratto non
-letale, subisci penalità di circostanza -2 al tiro per colpire. Subisci questa
-penalità anche quando effettui un attacco letale usando un’arma non letale.
-Incantesimi ed altri effetti con il tratto non letale che riducono una creatura
-a 0 o meno Punti Ferita mettono fuori combattimento la creatura invece di
-ucciderla.
+combattimento anziché ucciderlo (vedi
+[Fuori Combattimento](/regole/player-core/8-giocare/punti-ferita-guarigione-e-morente#fuori-combattimento)
+e
+[Morente](/regole/player-core/8-giocare/punti-ferita-guarigione-e-morente#morente)).
+Le armi con il tratto [non letale](/tratti/non-letale) (pugni inclusi) lo fanno
+automaticamente. Quando effettui un attacco non letale con un’arma che non
+possiede il tratto non letale, subisci penalità di circostanza -2 al tiro per
+colpire. Subisci questa penalità anche quando effettui un attacco letale usando
+un’arma non letale. Incantesimi ed altri effetti con il tratto non letale che
+riducono una creatura a 0 o meno Punti Ferita mettono fuori combattimento la
+creatura invece di ucciderla.

@@ -3,7 +3,6 @@ source: Player Core (Eng), pag. 418
 original-name: Effects
 original-srd: https://2e.aonsrd.com/rules/425-effects
 navigation-order: 9
-TODO: finire link
 ---
 
 # Effetti
@@ -149,7 +148,8 @@ lato basta a mantenere una linea di vista; il GM ha comunque l’ultima parola.
 > cambia in qualche modo il tuo stato. Le condizioni sono persistenti e durano
 > finché la durata indicata finisce, finché la condizione viene rimossa o finché
 > i termini dettati dalla condizione la fanno terminare. Le regole complete sono
-> presentate nell’[Appendice delle Condizioni](/condizioni).
+> presentate
+> nell’[Appendice Condizioni](/regole/player-core/appendice-condizioni).
 >
 > [**Abbagliato**](/condizioni/abbagliato)**:** Ogni cosa è occultata per te.
 >

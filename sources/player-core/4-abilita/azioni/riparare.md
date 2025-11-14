@@ -8,15 +8,15 @@ original-srd: https://2e.aonsrd.com/actions/75-repair
 # Riparare
 
 **Requisiti** Stai tenendo o indossando un
-[kit da riparazione](/equipaggiamento/kit-da-riparazione)
+[kit di strumenti di riparazione](/equipaggiamento/kit-di-strumenti-di-riparazione)
 
 ---
 
 Spendi 10 minuti cercando di riparare un oggetto danneggiato, appoggiandolo su
-una superficie stabile e usando il kit da riparazione con entrambe le mani.
-Effettua una prova di Artigianato. La CD è stabilita dal GM, ma solitamente è
-simile a quella per [Fabbricare](/azioni/fabbricare) l’oggetto stesso. Non puoi
-Riparare un oggetto distrutto.
+una superficie stabile e usando il kit di strumenti di riparazione con entrambe
+le mani. Effettua una prova di Artigianato. La CD è stabilita dal GM, ma
+solitamente è simile a quella per [Fabbricare](/azioni/fabbricare) l’oggetto
+stesso. Non puoi Riparare un oggetto distrutto.
 
 **Successo Critico** L’oggetto recupera 10 Punti Ferita, più 10 Punti Ferita
 aggiuntivi per ogni grado di competenza che hai in Artigianato (20 PF se sei

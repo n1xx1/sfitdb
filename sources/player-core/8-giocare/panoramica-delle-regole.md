@@ -55,14 +55,16 @@ di conoscerle finché non ne se ne presenta la necessità.
 [**Parlare**](/regole/player-core/8-giocare/azioni#parlare) normalmente non
 richiede un’azione.
 
-**Correlato:** attività (426), interrompere azioni (427)
+**Correlato:** [Attività](/regole/player-core/8-giocare/azioni#attivita),
+[interrompere le azioni](/regole/player-core/8-giocare/azioni#interrompere-le-azioni)
 
 ## Tirare le Prove
 
-Un’azione che ha possibilità di fallire richiede di tirare una prova (pag. 412).
-Tira un d20 (un dado a 20 facce) e determina i modificatori, i bonus e le
-penalità che si applicano alla prova. Poi, calcola il risultato, comparalo con
-la CD (il tuo numero bersaglio) e determina il grado di successo e l’effetto.
+Un’azione che ha possibilità di fallire richiede di tirare una
+[prova](/regole/player-core/8-giocare/prove). Tira un d20 (un dado a 20 facce) e
+determina i modificatori, i bonus e le penalità che si applicano alla prova.
+Poi, calcola il risultato, comparalo con la CD (il tuo numero bersaglio) e
+determina il grado di successo e l’effetto.
 
 La maggioranza delle prove vengono modificate dal tuo **modificatore di
 attributo** (Forza, Destrezza, Costituzione, Intelligenza, Saggezza o Carisma) e
@@ -70,72 +72,98 @@ il tuo **modificatore di competenza** (non addestrato, addestrato, esperto,
 maestro o leggendario) per le statistiche. Potresti avere anche **bonus** o
 **penalità** di **circostanza**, **oggetto** o **status**.
 
-**I gradi di successo** (pag. 413) sono successo critico, successo, fallimento,
-fallimento critico. Ottieni un successo se raggiungi o superi la CD, o un
-successo critico se superi la CD di 10 o più. Se il tuo risultato è inferiore
-alla CD, ottieni un fallimento, oppure un fallimento critico se hai fallito di
-10 o più.
+[**I gradi di successo**](/regole/player-core/8-giocare/prove#passo-4-grado-di-successo)
+sono successo critico, successo, fallimento, fallimento critico. Ottieni un
+successo se raggiungi o superi la CD, o un successo critico se superi la CD di
+10 o più. Se il tuo risultato è inferiore alla CD, ottieni un fallimento, oppure
+un fallimento critico se hai fallito di 10 o più.
 
-**Correlato:** fortuna e sfortuna (413), prove segrete (417), prove semplici
-(417)
+**Correlato:**
+[fortuna e sfortuna](/regole/player-core/8-giocare/prove#fortuna-e-sfortuna),
+[prove segrete](/regole/player-core/8-giocare/prove#prove-segrete),
+[prove semplici](/regole/player-core/8-giocare/prove#prove-semplici)
 
 ## Effetti
 
 Un effetto è il termine usato nelle regole per qualsiasi cosa avvenga nel mondo
-di gioco. Gli effetti potrebbero avere una **gittata** limitata (pag. 438) e
-potresti dover designare dei **bersagli** (pag. 438) o creare delle **aree**
-(pag. 438) per i tuoi effetti. Le aree includono esplosioni da un singolo punto,
-coni che si propagano a partire da te, emanazioni che circondano te o un’altra
-creatura, e linee rette.
+di gioco. Gli effetti potrebbero avere una
+[**Gittata**](/regole/player-core/8-giocare/effetti#gittata-e-portata) limitata
+e potresti dover designare dei
+[**Bersagli**](/regole/player-core/8-giocare/effetti#bersagli) o creare delle
+[**Aree**](/regole/player-core/8-giocare/area) per i tuoi effetti. Le aree
+includono esplosioni da un singolo punto, coni che si propagano a partire da te,
+emanazioni che circondano te o un’altra creatura, e linee rette.
 
-Gli effetti che durano per un certo periodo di tempo indicano una **durata**
-(pag. 438). Questi possono durare per un certo incremento temporale o possono
-terminare se alcune condizioni vengono soddisfatte. Molti effetti applicano
-delle **condizioni** (pag. 454), che misurano vantaggi o impedimenti come
-l’essere accecati, invisibili o spaventati.
+Gli effetti che durano per un certo periodo di tempo indicano una
+[**Durata**](/regole/player-core/8-giocare/effetti#durata) (pag. 438). Questi
+possono durare per un certo incremento temporale o possono terminare se alcune
+condizioni vengono soddisfatte. Molti effetti applicano delle
+[**condizioni**](/regole/player-core/appendice-condizioni), che misurano
+vantaggi o impedimenti come l’essere [accecati](/condizioni/accecato),
+[invisibili](/condizioni/invisibile) o [spaventati](/condizioni/spaventato).
 
 ## Movimento
 
-La tua **Velocità** (pag. 432) determina quanta distanza puoi coprire
-muovendoti. **Avanzare** (pag. 428) è un’azione con il tratto movimento e ti
-permette di muoverti di un massimo di metri pari alla tua Velocità. Potresti
-aver bisogno di Avanzare più volte in un turno! Le azioni di movimento spesso
-innescano reazioni o azioni gratuite; tuttavia, a differenze delle altre azioni,
-un’azione di movimento può **innescare reazioni** non solo quando usi l’azione,
-ma anche per ogni 1,5 metri di cui ti muovi durante quell’azione (pag. 434).
-L’azione **Passo** (pag. 429) ti permette di muoverti senza innescare reazioni,
-ma solo di 1,5 metri. Altre azioni base col tratto movimento sono **Alzarsi**,
-**Andare Carponi** e **Cadere a Terra** (pag. 428).
+La tua [**Velocità**](/regole/player-core/8-giocare/movimento#velocita)
+determina quanta distanza puoi coprire muovendoti.
+[**Avanzare**](/azioni/avanzare) è un’azione con il tratto
+[movimento](/tratti/movimento) e ti permette di muoverti di un massimo di metri
+pari alla tua Velocità. Potresti aver bisogno di Avanzare più volte in un turno!
+Le azioni di movimento spesso innescano reazioni o azioni gratuite; tuttavia, a
+differenze delle altre azioni, un’azione di movimento può
+[**Innescare**](/regole/player-core/8-giocare/azioni#azioni-con-inneschi)
+reazioni non solo quando usi l’azione, ma anche per ogni 1,5 metri di cui ti
+muovi durante quell’azione. L’azione [**Passo**](/azioni/passo) ti permette di
+muoverti senza innescare reazioni, ma solo di 1,5 metri. Altre azioni base col
+tratto movimento sono [**Alzarsi**](/azioni/alzarsi),
+[**Andare Carponi**](/azioni/andare-carponi) e
+[**Cadere a Terra**](/azioni/cadere-a-terra).
 
-Questo gioco misura il **movimento su una griglia** (pag. 433). Il **terreno
-difficile** e altri tipi di terreno (pag. 435) potrebbero ostacolare il tuo
-movimento.
+Questo gioco misura il **movimento** su una
+[griglia](/regole/player-core/8-giocare/movimento#movimento-sulla-griglia). Il
+[**terreno difficile**](/regole/player-core/8-giocare/movimento#terreno-difficile)
+e altri tipi di terreno potrebbero ostacolare il tuo movimento.
 
 Le creature possono ottenere dei vantaggi tattici posizionandosi in maniera
-accorta: i più comuni sono l’utilizzo della **copertura** offerta dal terreno e
-da altre creature per aumentare la tua CA (pag. 436) e **attaccare ai fianchi**
-(pag. 437), che richiede che tu e un alleato vi troviate sui lati opposti di un
-nemico per ridurne la CA.
+accorta: i più comuni sono l’utilizzo della
+[**copertura**](/regole/player-core/8-giocare/movimento#copertura) offerta dal
+terreno e da altre creature per aumentare la tua CA e
+[**attaccare ai fianchi**](/regole/player-core/8-giocare/movimento#attaccare-ai-fianchi),
+che richiede che tu e un alleato vi troviate sui lati opposti di un nemico per
+ridurne la CA.
 
-**Correlato:** cadere (432), modalità di movimento speciali (nuotare, scalare,
-scavare e volare; 432), movimento forzato (434), muoversi attraverso le creature
-(434), sfuggire dall’essere afferrato o trattenuto (430), velocità di viaggio al
-di fuori degli incontri (450), sganciato
+**Correlato:** [cadere](/regole/player-core/8-giocare/movimento#cadere),
+modalità di movimento speciali
+([nuotare](/regole/player-core/8-giocare/movimento#velocita-di-nuotare),
+[scalare](/regole/player-core/8-giocare/movimento#velocita-di-scalare),
+[scavare](/regole/player-core/8-giocare/movimento#velocita-di-scavare) e
+[volare](/regole/player-core/8-giocare/movimento#velocita-di-volare)),
+[movimento forzato](/regole/player-core/8-giocare/movimento#movimento-forzato),
+[muoversi attraverso le creature](/regole/player-core/8-giocare/movimento#muoversi-attraverso-lo-spazio-di-una-creatura),
+[Sfuggire](/azioni/sfuggire) dall’essere [afferrato](/condizioni/afferrato) o
+[trattenuto](/condizioni/trattenuto),
+[velocità di viaggio](/regole/player-core/8-giocare/modalita-esplorazione#velocita-di-viaggio)
+al di fuori degli incontri, [sganciato](/condizioni/sganciato)
 
 ## Attaccare
 
-Le azioni **Colpire** (pag. 428) hanno il tratto attacco e ti permettono di
-attaccare con un’arma che stai impugnando o con un attacco senz’armi (ad esempio
-con un pugno). Se stai usando un’arma da mischia o un attacco senz’armi, il tuo
-bersaglio deve trovarsi entro la tua **portata** (pag. 438); se stai attaccando
-con un’arma a distanza, il tuo bersaglio deve trovarsi entro la tua **gittata**
-(pag. 438). Le armi a distanza si fanno meno efficaci man mano che ne eccedi gli
-**incrementi di gittata** (pag. 415). Colpire più volte in un turno diventa
+Le azioni [**Colpire**](/azioni/colpire) hanno il tratto
+[attacco](/tratti/attacco) e ti permettono di attaccare con un’arma che stai
+impugnando o con un attacco senz’armi (ad esempio con un pugno). Se stai usando
+un’arma da mischia o un attacco senz’armi, il tuo bersaglio deve trovarsi entro
+la tua [**portata**](/regole/player-core/8-giocare/effetti#gittata-e-portata);
+se stai attaccando con un’arma a distanza, il tuo bersaglio deve trovarsi entro
+la tua [**Gittata**](/regole/player-core/8-giocare/effetti#gittata-e-portata).
+Le armi a distanza si fanno meno efficaci man mano che ne eccedi gli
+**incrementi di gittata**. Colpire più volte in un turno diventa
 progressivamente più difficile: a ogni attacco successivo al primo si applica
-una **penalità da attacchi multipli** (pag. 414).
+una
+[**penalità da attacchi multipli**](/regole/player-core/8-giocare/prove#penalita-da-attacchi-multipli).
 
-**Correlato:** attaccare ai fianchi i nemici (437), bersagliare creature (426),
-copertura (436), tiri per colpire con incantesimo (415).
+**Correlato:**
+[attaccare ai fianchi i nemici](/regole/player-core/8-giocare/movimento#attaccare-ai-fianchi),
+bersagliare creature (426), copertura (436), tiri per colpire con incantesimo
+(415).
 
 ## Difese
 

@@ -3,7 +3,6 @@ source: Player Core (Eng), pag. 400
 original-name: Immunity, Weakness, and Resistance
 original-srd: https://2e.aonsrd.com/rules/360-immunity-weakness-and-resistance
 navigation-order: 4
-TODO: finire link
 ---
 
 # Immunità, Debolezza e Resistenza
@@ -41,12 +40,12 @@ aggiuntivi non si applicano.
 
 ### Immunità ai Danni Non Letali
 
-Un’altra eccezione è l’immunità agli attacchi non letali. Se sei immune agli
-attacchi non letali, sei immune a tutti i danni di attacchi con il tratto non
-letale, a prescindere dagli altri tipi di danno. Ad esempio, un costrutto di
-solito ha immunità agli attacchi non letali: non importa quanto forti siano i
-tuoi pugni, non gli farai nulla. Tuttavia, puoi subire una penalità per
-rimuovere il tratto non letale dal tuo pugno (pag. 282) e alcune capacità ti
+Un’altra eccezione è l’immunità agli attacchi [non letali](/tratti/non-letale).
+Se sei immune agli attacchi non letali, sei immune a tutti i danni di attacchi
+con il tratto non letale, a prescindere dagli altri tipi di danno. Ad esempio,
+un costrutto di solito ha immunità agli attacchi non letali: non importa quanto
+forti siano i tuoi pugni, non gli farai nulla. Tuttavia, puoi subire una
+penalità per rimuovere il tratto non letale dal tuo pugno e alcune capacità ti
 conferiscono attacchi senz’armi privi del tratto non letale.
 
 ### Immunità Temporanea
@@ -136,49 +135,55 @@ nega interamente i danni da fuoco.
 > da energia vengono inflitti anche da effetti ambientali, come il freddo
 > pungente di una tormenta o un incendio in una foresta. I principali tipi di
 > danni da energia sono da acido, da elettricità, da freddo, da fuoco e sonori.
-> I danni da **acido** possono essere inflitti da gas, liquidi e alcuni solidi
-> che dissolvono la carne, e a volte materiali più duri. I danni da
-> **elettricità** provengono dalla scarica di potenti fulmini e scintille. I
-> danni da **freddo** congelano il materiale tramite contatto con gas
-> refrigeranti e ghiaccio. I danni da **fuoco** bruciano tramite calore e
-> combustione. I danni **sonori** assalgono la materia con vibrazioni ad alta
+> I danni da [**acido**](/tratti/acido) possono essere inflitti da gas, liquidi
+> e alcuni solidi che dissolvono la carne, e a volte materiali più duri. I danni
+> da [**elettricità**](/tratti/elettricita) provengono dalla scarica di potenti
+> fulmini e scintille. I danni da [**freddo**](/tratti/freddo) congelano il
+> materiale tramite contatto con gas refrigeranti e ghiaccio. I danni da
+> [**fuoco**](/tratti/fuoco) bruciano tramite calore e combustione. I danni
+> [**sonori**](/tratti/sonoro) assalgono la materia con vibrazioni ad alta
 > frequenza e onde sonore. Molte volte infliggerai danni da energia lanciando
 > incantesimi o attaccando con armi specifiche, cosa spesso utile contro
 > creature con immunità o resistenze ai danni fisici.
 >
 > Due tipi speciali di danni da energia danneggiano specificamente i vivi e i
-> non morti. I danni da **vitalità** danneggiano solo le creature non morte,
-> facendone avvizzire i corpi e disgregando i non morti incorporei. I danni da
-> **vuoto** risucchiano la vita, danneggiando solo le creature viventi.
+> non morti. I danni da [**vitalità**](/tratti/vitalita) danneggiano solo le
+> creature non morte, facendone avvizzire i corpi e disgregando i non morti
+> incorporei. I danni da [**vuoto**](/tratti/vuoto) risucchiano la vita,
+> danneggiando solo le creature viventi.
 >
-> L’energia magica pura può manifestarsi come danni da **forza**. Quasi nulla
-> può resistere a questo tipo di danni, nemmeno le creature incorporee come
-> fantasmi e wraith.
+> L’energia magica pura può manifestarsi come danni da
+> [**forza**](/tratti/forza). Quasi nulla può resistere a questo tipo di danni,
+> nemmeno le creature incorporee come i fantasmi.
 >
 > ### Danni Spirituali
 >
 > Intaccando direttamente l’essenza spirituale di una creatura, i danni
-> **spirituali** possono danneggiare un bersaglio proiettandone all’esterno la
-> consapevolezza o possedendo un’altra creatura anche se il corpo del bersaglio
-> è altrove. La creatura posseduta non viene ferita dall’esplosione. I danni
-> spirituali non danneggiano le creature prive di spirito, come i costrutti.
-> Molti effetti che infliggono danni spirituali hanno anche il tratto sacrilego,
-> sacro o santificato, tutti descritti nel riquadro di pag. 36 e a pag. 476.
+> [**spirituali**](/tratti/spirito) possono danneggiare un bersaglio
+> proiettandone all’esterno la consapevolezza o possedendo un’altra creatura
+> anche se il corpo del bersaglio è altrove. La creatura posseduta non viene
+> ferita dall’esplosione. I danni spirituali non danneggiano le creature prive
+> di spirito, come i costrutti. Molti effetti che infliggono danni spirituali
+> hanno anche il tratto [sacrilego](/tratti/sacrilego), [sacro](/tratti/sacro) o
+> [santificato](/tratti/santificato).
 >
 > ### Danni Mentali
 >
 > A volte un effetto può colpire la mente con forza psichica sufficiente a
-> infliggere danni alla creatura. In questo caso, infligge danni **mentali**. Le
-> creature prive di intelletto e quelle con un’intelligenza programmata o
-> rudimentale sono spesso immuni ai danni e agli effetti mentali.
+> infliggere danni alla creatura. In questo caso, infligge danni
+> [**mentali**](/tratti/mentale). Le creature
+> [prive di intelletto](/tratti/privo-di-intelletto) e quelle con
+> un’intelligenza programmata o rudimentale sono spesso immuni ai danni e agli
+> effetti mentali.
 >
 > ### Danni da Veleno
 >
-> Veleni, tossine e simili possono infliggere danni da **veleno**, che
-> influenzano le creature tramite contatto, ingestione, inalazione o ferita.
-> Oltre a provenire da attacchi di mostri, oggetti alchemici e incantesimi, i
-> danni da veleno sono spesso causati da afflizioni in atto, che seguono regole
-> speciali descritte a pag. 442.
+> Veleni, tossine e simili possono infliggere danni da
+> [**veleno**](/tratti/veleno), che influenzano le creature tramite contatto,
+> ingestione, inalazione o ferita. Oltre a provenire da attacchi di mostri,
+> oggetti alchemici e incantesimi, i danni da veleno sono spesso causati da
+> afflizioni in atto, che seguono regole speciali descritte
+> [qua](/regole/player-core/8-giocare/afflizioni).
 >
 > ### Danni da Sanguinamento
 >
@@ -196,8 +201,8 @@ nega interamente i danni da fuoco.
 > precisione, aumenti i danni indicati per l’attacco usando lo stesso tipo di
 > danni, anziché doverne tenere il conto separatamente. Ad esempio, il Colpo di
 > un [fucile a ricerca](/equipaggiamento/fucile-a-ricerca) che infligge 1d4
-> danni di precisione per la Mira dell'operativo aumenta i danni perforanti di
-> 1d6.
+> danni di precisione per la [Mira](/azioni/mirare)
+> dell'[operativo](/classi/operativo) aumenta i danni perforanti di 1d6.
 >
 > Alcune creature sono immuni ai danni di precisione, a prescindere dal tipo.
 > Una creatura immune ai danni di precisione ignorerebbe i 1d4 danni di

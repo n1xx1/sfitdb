@@ -8,7 +8,7 @@ original-srd: https://2e.aonsrd.com/actions/76-craft
 # Fabbricare
 
 **Requisiti** Stai tenendo o indossando un
-[kit da riparazione](/equipaggiamento/kit-da-riparazione)
+[kit di strumenti di riparazione](/equipaggiamento/kit-di-strumenti-di-riparazione)
 
 ---
 

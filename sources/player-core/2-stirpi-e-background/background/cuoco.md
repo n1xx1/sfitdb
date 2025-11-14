@@ -1,10 +1,10 @@
 ---
 source: Player Core (Eng) pag. 93
-original-name: Comedian
-original-srd: https://2e.aonsrd.com/backgrounds/7-comedian
+original-name: Cook
+original-srd: https://2e.aonsrd.com/backgrounds/8-cook
 ---
 
-# Comico - Background
+# Cuoco - Background
 
 Sei cresciuto nelle cucine di una taverna o di un altro locale e lì hai dato il
 meglio di te, diventando un cuoco eccezionale. I tuoi amici sono stati pentole e
