@@ -14,7 +14,7 @@
 {{- end -}}
 
 {{- $included := not (.PageInner.Eq .Page) }}
-{{- $isTitle := or (eq .Attributes.title 1) (eq $index 0) -}}
+{{- $isTitle := or .Attributes.title (eq $index 0) -}}
 {{- $isStatblock := partialCached "pf/isStatblock" .PageInner.Type .PageInner.Type -}}
 {{- $isInnerStatblock := eq .PageInner.Type "pfmonster" -}}
 
@@ -23,7 +23,12 @@
 {{- $appendSource := and (or (not $included) $isStatblock) $isTitle -}}
 {{- $appendTraits := cond $isInnerStatblock (eq $originalLevel 2) $isTitle -}}
 
-{{- $sbHeading := cond $isStatblock $isTitle (cond $isInnerStatblock (eq $originalLevel 2) false) -}}
+{{- $sbHeading := or .Attributes.statblock (cond $isStatblock $isTitle (cond $isInnerStatblock (eq $originalLevel 2) false)) -}}
+
+{{- $traits := .PageInner.Params.traits -}}
+{{- with .Attributes.traits -}}
+  {{- $traits = transform.Unmarshal (dict "format" "yaml") .Attributes.traits -}}
+{{- end -}}
 
 {{- if and $included $isTitle -}}
   {{- $parentContents := .Page.RawContent | replaceRE `^---\r?\n\s*([\s\S]*?)\s*\r?\n---\r?\n\s*` "" }}

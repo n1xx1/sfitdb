@@ -274,6 +274,7 @@
 | Alternate Outcome       | Esito Alternativo          | us    |                           |
 | Analyze Target          | Analizza Bersaglio         | us    |                           |
 | Anthem                  | Inno                       | us    |                           |
+| Atomic Blast            | Esplosione Atomica         | us    |                           |
 |                         |                            |       |                           |
 | Battle Sonata           | Melodia di Battaglia       | us    |                           |
 | Breath of Life          | Respiro di Vita            | gu pf |                           |
