@@ -21,7 +21,9 @@
       <tr>
         <td>
           <a href="#{{ $anchor }}">
-            {{- $title.name | partial "icons" -}}
+            {{- $title.name | partial "icons" -}}{{- if in .Params.traits "non comune" -}}
+              ^N^
+            {{- end -}}
           </a>
         </td>
         <td class="text-center">{{ $title.level }}</td>

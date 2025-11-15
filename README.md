@@ -239,6 +239,8 @@
 |                         |                                |       |                       |
 | Just Kidding!           | Stava Scherzando!              | us    |                       |
 |                         |                                |       |                       |
+| Kiss It Better          | Bacino Curativo                | us    | ????                  |
+|                         |                                |       |                       |
 | Machine Magic           | Magia delle Macchine           |       | playtest              |
 | Magical Crafting        | Fabbricare Oggetti Magici      | gu pf |                       |
 | Management Material     | Stoffa da Dirigente            | us    |                       |
@@ -428,6 +430,8 @@
 | Flight Suit            | Tuta da Volo                  | gu sf |      |
 |                        |                               |       |      |
 | Ghost Killer           | Sterminaspettri               | gu sf |      |
+|                        |                               |       |      |
+| Holoskin               | Olopelle                      | gu sf |      |
 |                        |                               |       |      |
 | Laser Rifle            | Fucile Laser                  | gu sf |      |
 |                        |                               |       |      |
