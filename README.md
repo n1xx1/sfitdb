@@ -68,6 +68,7 @@
 | Ukulam                          | Ukulam                             | gu sf |          |
 | Sloughscar Hills                | Colline Sfregiopantano             | us    | ????     |
 | Wreck of the Returned           | Relitto dei Ritornati              | us    |          |
+| Expend                          | Dispendio                          | us    | ????     |
 
 ### Abilità
 
