@@ -159,6 +159,7 @@
 | Shadow    | Ombra           | gu pf |      |
 | Tech      | Tecnologico     | us    |      |
 | Teleport  | Teletrasporto   | gu pf |      |
+| Tracing   | Tracciante      | us    |      |
 | Traversal | Attraversamento | us    |      |
 | Visual    | Visivo          | gu pf |      |
 | Volley    | Parabola        | gu pf |      |
@@ -423,6 +424,7 @@
 | Compact Shield         | Scudo Compatto                | us    | ???? |
 | Crossbolter            | Fucile Balestra               | gu sf |      |
 |                        |                               |       |      |
+| Defiance Series        | Serie Sprezzo                 | gu sf |      |
 | Doshko                 | Doshko                        | gu sf |      |
 | Dueling Sword          | Spada da Duello               | us    |      |
 |                        |                               |       |      |
@@ -445,6 +447,7 @@
 | Shock Truncheon        | Manganello Elettrico          | gu sf |      |
 | Singing Coil           | Bobina Corale                 | us    |      |
 | Singing Spear          | Lancia Corale                 | gu sf |      |
+| Spell Gem              | Gemma dell'Incantesimo        | gu sf |      |
 |                        |                               |       |      |
 | Painglaive             | Dolorfalcione                 | us    | ???? |
 | Plasma Doshko          | Doshko Plasma                 | gu sf |      |

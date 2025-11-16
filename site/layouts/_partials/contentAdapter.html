@@ -47,6 +47,11 @@
   {{ $rawFrontmatter := (index (index $splitContent 0) 1) }}
   {{ $content := (index (index $splitContent 0) 2) }}
 
+  {{ $content = $content
+    | replaceRE "(?m)^`(\\{.*\\})`$" `$1`
+    | replaceRE `\|\r?\n(\r?\n)\{` `|$1{`
+  }}
+
   {{ $frontmatter := transform.Unmarshal (dict "format" "yaml") $rawFrontmatter }}
 
   {{ $config := (partialCached "config" "") }}

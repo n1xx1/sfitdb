@@ -1,0 +1,56 @@
+{{- $attributes := "" -}}
+{{- range $k, $v := .Attributes -}}
+  {{- if and $v (ne $k "caption") (ne $k "footnote") -}}
+    {{- $attributes = add $attributes (printf " %s=%q" $k $v) -}}
+  {{- end -}}
+{{- end -}}
+<table {{ $attributes | safeHTMLAttr -}}>
+  {{- with .Attributes.caption }}
+    <caption>
+      {{ . | $.Page.RenderString }}
+    </caption>
+  {{- end }}
+  <thead>
+    {{- range .THead -}}
+      <tr>
+        {{- range . -}}
+          {{- $class := "" -}}
+          {{- if eq .Alignment "left" -}}
+            {{- $class = "text-left" -}}
+          {{- else if eq .Alignment "right" -}}
+            {{- $class = "text-right" -}}
+          {{- end -}}
+          <th class="{{ $class }}">
+            {{- .Text -}}
+          </th>
+        {{- end -}}
+      </tr>
+    {{- end -}}
+  </thead>
+  <tbody>
+    {{- range .TBody -}}
+      <tr>
+        {{- range . -}}
+          {{- $class := "" -}}
+          {{- if eq .Alignment "left" -}}
+            {{- $class = "text-left" -}}
+          {{- else if eq .Alignment "right" -}}
+            {{- $class = "text-right" -}}
+          {{- end -}}
+          <td class="{{ $class }}">
+            {{- .Text -}}
+          </td>
+        {{- end -}}
+      </tr>
+    {{- end -}}
+  </tbody>
+  {{- with .Attributes.footnote -}}
+    <tfoot>
+      <tr>
+        <td colspan="{{ len (index $.THead 0) }}">
+          {{- . | $.Page.RenderString -}}
+        </td>
+      </tr>
+    </tfoot>
+  {{- end -}}
+</table>

@@ -195,6 +195,10 @@ html {
     @apply prose-h3:font-bold prose-h3:text-[1.5em] prose-h3:mt-[0.75em] prose-h3:mb-[0.5em];
     @apply prose-h4:font-normal prose-h4:text-[1.4em] prose-h4:mt-[0.6em] prose-h4:mb-[0.4em];
 
+    /* :where(caption):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+      @apply text-left text-[1.4em] uppercase;
+    } */
+
     :where(.prose.sf-prose > :first-child):not(
       :where([class~="not-prose"], [class~="not-prose"] *)
     ) {
