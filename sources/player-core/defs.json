@@ -7,7 +7,6 @@
     "3-classi/archetipi/{emissario,mistico,operativo,solarian,soldato,stregone-del-velo}"
   ],
   "action": [
-    "2-stirpi-e-background/stirpi/*/azioni/*",
     "3-classi/{emissario,mistico,operativo,solarian,soldato,stregone-del-velo}/azioni/*",
     "4-abilita/azioni/*",
     "8-giocare/azioni-*/*"

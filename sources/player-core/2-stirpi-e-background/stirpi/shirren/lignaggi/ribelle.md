@@ -15,4 +15,9 @@ Sciame, ottieni invece un successo critico. Ottieni questi benefici anche contro
 qualsiasi creatura soggetta a un incantesimo o effetto che la controlla.
 Inoltre, ottieni l’azione [Sfida Ribelle](/azioni/sfida-ribelle).
 
-{{% include page="/azioni/sfida-ribelle" %}}
+**Provocazione Ribelle** :a: ([mentale](/tratti/mentale)) **Frequenza** una
+volta al giorno; **Effetto** Indichi un nemico entro 30 metri che puoi vedere
+come un tiranno o un malvagio e ti prepari a sfidarlo, anche a costo della vita.
+Ottieni un bonus di circostanza +1 ai tiri per colpire contro questo nemico e un
+bonus di circostanza +1 ai tiri salvezza contro i suoi attacchi, incantesimi ed
+effetti. Questi benefici durano 1 minuto.
