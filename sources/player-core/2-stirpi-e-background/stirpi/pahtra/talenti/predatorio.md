@@ -10,7 +10,7 @@ original-srd: https://2e.aonsrd.com/feats/331-predatory
 La battaglia è una danza, e hai affinato il tuo corpo rendendolo uno strumento
 tanto elegante quanto letale. Quando selezioni questo talento, ottieni a tua
 scelta un attacco senz’armi con gli artigli o un attacco senz’armi con le fauci.
-Entrambi questi attacchi appartengono al gruppo di armi da lotta.
+Entrambi questi attacchi appartengono al gruppo rissa.
 
 Un attacco senz’armi con gli artigli infligge 1d6 danni taglienti e ha i tratti
 [accurato](/tratti/accurato), [agile](/tratti/agile),

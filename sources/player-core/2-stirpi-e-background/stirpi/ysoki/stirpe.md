@@ -54,7 +54,7 @@ ignori la condizione [occultato](/condizioni/occultato) dovuta alla luce fioca.
 **Denti Affilati**  
 I tuoi incisivi prominenti offrono un’alternativa ai pugni che altri umanoidi
 portano in combattimento. Possiedi un attacco senz’armi con le fauci che
-infligge 1d4 danni perforanti, appartiene al gruppo da lotta e ha i tratti
+infligge 1d4 danni perforanti, appartiene al gruppo rissa e ha i tratti
 [agile](/tratti/agile) e [accurato](/tratti/accurato).
 
 ---
