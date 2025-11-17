@@ -19,6 +19,8 @@
             {{- $class = "text-left" -}}
           {{- else if eq .Alignment "right" -}}
             {{- $class = "text-right" -}}
+          {{- else if eq .Alignment "center" -}}
+            {{- $class = "text-center" -}}
           {{- end -}}
           <th class="{{ $class }}">
             {{- .Text -}}
@@ -36,6 +38,8 @@
             {{- $class = "text-left" -}}
           {{- else if eq .Alignment "right" -}}
             {{- $class = "text-right" -}}
+          {{- else if eq .Alignment "center" -}}
+            {{- $class = "text-center" -}}
           {{- end -}}
           <td class="{{ $class }}">
             {{- .Text -}}

@@ -37,6 +37,10 @@ types:
     italic: true
   equipment:
     path: "/equipaggiamento/{{ .base }}"
+    statblock: true
+  subequipment:
+    path: "/equipaggiamento/{{ .params.itemBase }}/{{ .base }}"
+    statblock: true
   skill:
     path: "/abilita/{{ .base }}"
   planet:

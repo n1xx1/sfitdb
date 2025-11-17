@@ -117,7 +117,8 @@ più comodo e sicuro per portare con sé valuta, i PBU hanno il vantaggio
 dell’utilità diretta e della non tracciabilità.
 
 I personaggi possono usare le PBU al posto dei crediti per creare oggetti usando
-i kit dei fabbricanti; di fatto, sono necessarie per l’uso di certi strumenti.
+il kit di strumenti da creatore; di fatto, sono necessarie per l’uso di certi
+strumenti.
 
 ## Livello dell’Oggetto
 
@@ -401,3 +402,129 @@ non sei in grado di Fabbricare oggetti di quel livello.
 > usarla al grado raggiunto nel processo di Fabbricazione, tenendo traccia degli
 > PBU investiti fino a quel momento per futuri tentativi di Fabbricare anche se
 > l’arma viene danneggiata durante l’interruzione.
+
+## Danno agli Oggetti
+
+Un oggetto può essere rotto o distrutto se subisce abbastanza danni. Ogni
+oggetto possiede un valore di **Durezza**. Ogni volta che un oggetto subisce
+danni, riduci quei danni del valore di Durezza dell’oggetto. I danni restanti
+riducono i Punti Ferita dell’oggetto. Di solito un oggetto subisce danno solo
+quando una creatura lo sta attaccando direttamente; solitamente gli oggetti
+bersagliati includono porte e trappole. Una creatura che ti attacca, in genere,
+non danneggia la tua armatura o altri equipaggiamenti, anche se ti colpisce.
+Tuttavia, la reazione [Parare con lo Scudo](/azioni/parare-con-lo-scudo) può far
+subire danni al tuo scudo dato che lo usi per prevenire danni a te stesso,
+inoltre alcuni mostri possiedono delle capacità eccezionali che possono
+danneggiare i tuoi oggetti.
+
+Un oggetto che subisce danni può diventare [**rotto**](/condizioni/rotto) e alla
+fine distrutto. L’oggetto diventa rotto quando i suoi Punti Ferita sono pari o
+inferiori alla sua **Soglia di Rottura (SR)**; una volta che i suoi Punti Ferita
+sono ridotti a 0, l’oggetto è distrutto. Un oggetto rotto si trova nella
+condizione rotto finché non è [Riparato](/azioni/riparare) oltre la sua Soglia
+di Rottura. Qualsiasi cosa che in automatico rende un oggetto rotto
+immediatamente riduce i suoi Punti Ferita alla sua Soglia di Rottura se
+l’oggetto possiede più Punti Ferita di essa quando l’effetto si verifica. Se un
+oggetto non ha una Soglia di Rottura, allora non presenterà cambiamenti
+rilevanti alle sue funzionalità dovuti all’essere rotto, ma verrà comunque
+distrutto a 0 Punti Ferita. Un oggetto distrutto non può essere Riparato.
+
+La Durezza, i Punti Ferita e la Soglia di Rottura di un oggetto dipendono, di
+solito, dai materiali con cui è costruito. Queste informazioni vengono
+presentate nel _Starfinder GM Core_.
+
+### Immunità degli Oggetti
+
+Gli oggetti inanimati e i pericoli sono immuni ad attacchi non letali, effetti
+di morte, effetti mentali, guarigione, malattia, sanguinamento, spirito, veleno,
+vitalità e vuoto, come anche alle condizioni
+[affaticato](/condizioni/affaticato), [condannato](/condizioni/condannato),
+[nauseato](/condizioni/nauseato), [paralizzato](/condizioni/paralizzato),
+[privo di sensi](/condizioni/privo-di-sensi) e
+[risucchiato](/condizioni/risucchiato). Un oggetto dotato di una mente non è
+immune agli effetti mentali. Molti oggetti sono immuni ad altre condizioni, a
+discrezione del GM. Per esempio, una spada non può muoversi, quindi non può
+subire penalità alla sua
+[Velocità](/regole/player-core/8-giocare/movimento#velocita), però un effetto
+che provoca una penalità alla Velocità potrebbe funzionare su una trappola con
+lame mobili.
+
+> ### Rotto
+>
+> Rotto è una condizione che influenza gli oggetti. Un oggetto è rotto quando il
+> danno ha ridotto i suoi Punti Ferita al di sotto della sua Soglia di Rottura.
+> Un oggetto rotto non può essere usato per le sue normali funzioni e neppure ti
+> concede bonus, ad eccezione delle armature. Un’armatura rotta continua a
+> concedere i suoi bonus di oggetto alla CA, però impone anche penalità alla CA
+> in base alla sua categoria: -1 per le armature leggere rotte, -2 per le
+> armature medie rotte e infine -3 per le armature pesanti rotte. Un oggetto
+> rotto impone comunque penalità e limitazioni che di norma sono causate dal
+> portarlo, tenerlo o impugnarlo. Se un effetto rende un oggetto rotto in
+> automatico e l’oggetto ha più PF della sua SR, quell’effetto riduce anche i PF
+> attuali dell’oggetto alla sua Soglia di Rottura.
+
+## Oggetti Scadenti
+
+Improvvisati o di dubbia fattura, gli oggetti scadenti non sono mai disponibili
+per l’acquisto se non nelle comunità più disperate. Quando è disponibile, un
+oggetto scadente di solito costa la metà del Prezzo di un oggetto normale,
+sebbene tu non possa mai venderne uno, in nessun caso.
+
+Gli attacchi e le prove che interessano gli oggetti scadenti subiscono penalità
+di oggetto -2. Questa penalità si applica anche alle CD a cui gli oggetti
+scadenti si applicano (ad esempio alla CA per chi indossa un’armatura scadente o
+alla CD per liberarsi da manette scadenti). Un’armatura scadente inoltre
+peggiora di 2 la penalità alle prove dell’armatura. I PF e la SR di un oggetto
+scadente sono la metà rispetto a un oggetto normale del suo stesso tipo.
+
+## Formule
+
+Le formule sono istruzioni formalizzate per creare oggetti. La loro finalità
+principale consiste nel ridurre il tempo richiesto per cominciare l’attività
+Fabbricare, il che può tornare utile per gli oggetti che crei frequentemente. Di
+solito puoi leggere una formula fintanto che sai leggere la lingua in cui è
+scritta, anche se potresti non avere l’abilità per Fabbricare l’oggetto. Alcune
+aziende usano la crittografia per proteggere le loro formule. Se ottieni una
+formula di un oggetto non comune o più raro, hai accesso a quell’oggetto e puoi
+quindi Fabbricarlo. Queste formule possono essere significativamente più
+preziose… ammesso tu riesca a trovarle!
+
+Al Prezzo indicato nella tabella puoi comprare delle formule comuni oppure
+pagare un PNG che ti lasci copiare la sua formula. Una formula acquistata è un
+file virtuale scaricato su un computer che contiene gli schemi e i modelli 3D
+pronti per la stampa. Le formule cartacee possono essere trovate per alcuni
+oggetti, queste hanno Volume leggero e non hanno il tratto virtuale.
+
+Se possiedi una formula, puoi [Fabbricarne](/azioni/fabbricare) una copia usando
+l’abilità [Artigianato](/abilita/artigianato). Puoi anche Fabbricare una formula
+sottoponendo un oggetto che possiedi a ingegneria inversa: usa il Prezzo della
+forma e la CD per Fabbricare dell’oggetto. Devi soddisfare tutti i requisiti
+necessari a Fabbricare l’oggetto, ma non hai bisogno di avere accesso
+all’oggetto o soddisfare i Requisiti di Fabbricazione speciali indicati nel
+blocco statistiche dell’oggetto, a meno che il GM non stabilisca diversamente.
+
+| Livello dell’Oggetto | Prezzo della Formula |
+| -------------------- | -------------------- |
+| 0\*                  | 5 crediti            |
+| 1                    | 10 crediti           |
+| 2                    | 20 crediti           |
+| 3                    | 30 crediti           |
+| 4                    | 50 crediti           |
+| 5                    | 80 crediti           |
+| 6                    | 130 crediti          |
+| 7                    | 180 crediti          |
+| 8                    | 250 crediti          |
+| 9                    | 350 crediti          |
+| 10                   | 500 crediti          |
+| 11                   | 700 crediti          |
+| 12                   | 1,000 crediti        |
+| 13                   | 1,500 crediti        |
+| 14                   | 2,250 crediti        |
+| 15                   | 3,250 crediti        |
+| 16                   | 5,000 crediti        |
+| 17                   | 7,500 crediti        |
+| 18                   | 12,000 crediti       |
+| 19                   | 20,000 crediti       |
+| 20                   | 35,000 crediti       |
+
+`{caption="Formule" footnote="\* Le formule per tutti gli oggetti comuni di livello 0 appartenenti a questo capitolo possono essere comprate in blocco in un'[app per creatori](/equipaggiamento/app-per-creatori)."}`

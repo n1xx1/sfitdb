@@ -412,50 +412,59 @@
 
 ### Equipaggiamento
 
-| en                     | it                            | da    | note |
-| ---------------------- | ----------------------------- | ----- | ---- |
-| Abadarcorp Travel Suit | Vestito da Viaggio AbadarCorp | gu sf |      |
-| Aucturnite             | Aucturnite                    | us    |      |
-|                        |                               |       |      |
-| Battleglove            | Guanto da Battaglia           | gu sf |      |
-| Breaching Gun          | Fucile da Breccia             | gu sf |      |
-|                        |                               |       |      |
-| Comm Unit              | Unità di Comunicazione        | gu sf |      |
-| Compact Shield         | Scudo Compatto                | us    | ???? |
-| Crossbolter            | Fucile Balestra               | gu sf |      |
-|                        |                               |       |      |
-| Defiance Series        | Serie Sprezzo                 | gu sf |      |
-| Doshko                 | Doshko                        | gu sf |      |
-| Dueling Sword          | Spada da Duello               | us    |      |
-|                        |                               |       |      |
-| Flaming Module         | Modulo Infuocato              | us    | ???? |
-| Fangblade              | Lama-Zanna                    | gu sf |      |
-| Flight Suit            | Tuta da Volo                  | gu sf |      |
-|                        |                               |       |      |
-| Ghost Killer           | Sterminaspettri               | gu sf |      |
-|                        |                               |       |      |
-| Holoskin               | Olopelle                      | gu sf |      |
-|                        |                               |       |      |
-| Laser Rifle            | Fucile Laser                  | gu sf |      |
-|                        |                               |       |      |
-| Machine Gun            | Mitragliatrice                | gu sf |      |
-| Medkit                 | Kit Medico                    | gu pf |      |
-| Medpatch               | Cerotto Medico                | gu sf |      |
-|                        |                               |       |      |
-| Seeker Rifle           | Fucile a Ricerca              | gu sf |      |
-| Semi-Auto Pistol       | Pistola Semiautomatica        | us    |      |
-| Shock Truncheon        | Manganello Elettrico          | gu sf |      |
-| Singing Coil           | Bobina Corale                 | us    |      |
-| Singing Spear          | Lancia Corale                 | gu sf |      |
-| Spell Gem              | Gemma dell'Incantesimo        | gu sf |      |
-|                        |                               |       |      |
-| Painglaive             | Dolorfalcione                 | us    | ???? |
-| Plasma Doshko          | Doshko Plasma                 | gu sf |      |
-| Plasma Sword           | Spada Plasma                  | gu sf |      |
-|                        |                               |       |      |
-| Retinal Reflectors     | Riflettori Retinali           | gu sf |      |
-|                        |                               |       |      |
-| Uniclamp               | Moschettone Universale        | gu sf |      |
+| en                        | it                                      | da    | note |
+| ------------------------- | --------------------------------------- | ----- | ---- |
+| Abadarcorp Travel Suit    | Vestito da Viaggio AbadarCorp           | gu sf |      |
+| Aucturnite                | Aucturnite                              | us    |      |
+|                           |                                         |       |      |
+| Battleglove               | Guanto da Battaglia                     | gu sf |      |
+| Breaching Gun             | Fucile da Breccia                       | gu sf |      |
+|                           |                                         |       |      |
+| Cable Line                | Cavo                                    | gu sf |      |
+| Chemalyzer                | Chemioanalizzatore                      | gu sf |      |
+| Comm Unit                 | Unità di Comunicazione                  | gu sf |      |
+| Compact Shield            | Scudo Compatto                          | us    | ???? |
+| Crossbolter               | Fucile Balestra                         | gu sf |      |
+|                           |                                         |       |      |
+| Datapad                   | Datapad                                 | gu sf |      |
+| Defiance Series           | Serie Sprezzo                           | gu sf |      |
+| Doshko                    | Doshko                                  | gu sf |      |
+| Dueling Sword             | Spada da Duello                         | us    |      |
+|                           |                                         |       |      |
+| Field Scientist’s Toolkit | Kit di Strumenti da Scienziato da Campo |       |      |
+| Flaming Module            | Modulo Infuocato                        | us    | ???? |
+| Fangblade                 | Lama-Zanna                              | gu sf |      |
+| Flight Suit               | Tuta da Volo                            | gu sf |      |
+|                           |                                         |       |      |
+| Ghost Killer              | Sterminaspettri                         | gu sf |      |
+|                           |                                         |       |      |
+| Hacking Toolkit           | Kit di Strumenti di Hackeraggio         | us    |      |
+| Holoskin                  | Olopelle                                | gu sf |      |
+|                           |                                         |       |      |
+| Infiltrator’s Toolkit     | Kit di Strumenti da Infiltrato          | us    |      |
+|                           |                                         |       |      |
+| Laser Rifle               | Fucile Laser                            | gu sf |      |
+|                           |                                         |       |      |
+| Machine Gun               | Mitragliatrice                          | gu sf |      |
+| Maker's App               | App per Creatori                        | us    | ???? |
+| Maker's Toolkit           | Kit di Strumenti da Creatore            | us    | ???? |
+| Medkit                    | Kit Medico                              | gu pf |      |
+| Medpatch                  | Cerotto Medico                          | gu sf |      |
+|                           |                                         |       |      |
+| Seeker Rifle              | Fucile a Ricerca                        | gu sf |      |
+| Semi-Auto Pistol          | Pistola Semiautomatica                  | us    |      |
+| Shock Truncheon           | Manganello Elettrico                    | gu sf |      |
+| Singing Coil              | Bobina Corale                           | us    |      |
+| Singing Spear             | Lancia Corale                           | gu sf |      |
+| Spell Gem                 | Gemma dell'Incantesimo                  | gu sf |      |
+|                           |                                         |       |      |
+| Painglaive                | Dolorfalcione                           | us    | ???? |
+| Plasma Doshko             | Doshko Plasma                           | gu sf |      |
+| Plasma Sword              | Spada Plasma                            | gu sf |      |
+|                           |                                         |       |      |
+| Retinal Reflectors        | Riflettori Retinali                     | gu sf |      |
+|                           |                                         |       |      |
+| Uniclamp                  | Moschettone Universale                  | gu sf |      |
 
 ### Domini
 
