@@ -34,7 +34,7 @@
     {{ $i = add $i 1 }}
   {{ end }}
 
-  {{ $searchFirstTitle := printf "((?:\n|^)(?:> )?%s )(.+?)(?: \\{(.+)\\})?(\n\\s*)" $h1 }}
+  {{ $searchFirstTitle := printf `((?:\n|^)(?:> )?%s )(.+?)(?: \{(.+)\})?(\n\s*)` $h1 }}
 
   {{ if eq $.template "inlinetitle" }}
     {{ $url := .Params.canonicalURL | default .RelPermalink | replaceRE "/$" "" }}
@@ -57,8 +57,14 @@
       "templateDate" dict
       )
     }}
-    {{ $content = replaceRE "(\\{\\{__hugo_ctx/\\}\\}\\s*$|$)\\n?"
+    {{ $content = replaceRE `(\{\{__hugo_ctx/\}\}\s*$|$)`
       (printf "\n\n%s\n\n$0" $appendContent)
+      $content
+    }}
+  {{ else if eq $.template "subequipment" }}
+    {{ $searchReplaceContent := printf `%s([\s\S]+---\n\s*)?([\s\S]+?)(\s*\{\{__hugo_ctx/\}\}\s*$|\s*$)` $searchFirstTitle }}
+    {{ $content = replaceRE $searchReplaceContent
+      (printf "${1}${2} {${3} }${4}${5}%s\n${7}" (.Params.subItemDesc | default ""))
       $content
     }}
   {{ end }}

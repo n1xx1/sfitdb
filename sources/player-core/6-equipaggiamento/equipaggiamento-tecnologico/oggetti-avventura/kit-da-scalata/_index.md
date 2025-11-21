@@ -2,6 +2,8 @@
 source: Player Core (Eng), pag. 241
 original-name: Climbing Kit
 original-srd: https://2e.aonsrd.com/treasure/6-climbing-kit
+navigation-disable: true
+navigation-sub-hide: true
 ---
 
 # Kit da Scalata - Oggetto 0+
@@ -18,6 +20,6 @@ volta che fallisci criticamente per evitare una caduta. Un singolo kit ha
 materiali sufficienti per un solo scalatore; ogni scalatore necessita del
 proprio kit.
 
-{{% include page="/equipaggiamento/kit-da-scalata/commerciale" %}}
+{{% include page="/equipaggiamento/kit-da-scalata/commerciale" template="subequipment" %}}
 
-{{% include page="/equipaggiamento/kit-da-scalata/tattico" %}}
+{{% include page="/equipaggiamento/kit-da-scalata/tattico" template="subequipment" %}}

@@ -1,6 +1,7 @@
 ---
+traits: [tecnologico]
 source: Player Core (Eng), pag. 241
-original-name: Field Scientist's Toolkit (Commercial)
+original-name: Field Scientist's Toolkit (Tattico)
 original-srd: https://2e.aonsrd.com/treasure/13-field-scientists-toolkit
 itemBase: kit-di-strumenti-da-scienziato-da-campo
 subItemDesc:

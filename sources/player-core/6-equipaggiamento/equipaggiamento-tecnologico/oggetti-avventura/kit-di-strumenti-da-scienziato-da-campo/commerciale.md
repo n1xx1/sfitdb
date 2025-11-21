@@ -1,4 +1,5 @@
 ---
+traits: [tecnologico]
 source: Player Core (Eng), pag. 241
 original-name: Field Scientist's Toolkit (Commercial)
 original-srd: https://2e.aonsrd.com/treasure/13-field-scientists-toolkit

@@ -252,15 +252,16 @@ solito è necessario un'olopelle per creare un travestimento al fine di
 [Inganno](/abilita/inganno). Un'olopelle tattica fornisce un bonus oggetto di +1
 ai tiri rilevanti.
 
-[**Oloscintilla**](/equipaggiamento/)**:** Questo minuscolo oloproiettore è
-spesso camuffato come orecchino, spilla o ciondolo. Conserva una semplice
-proiezione visiva di stile personale, come un nimbo o delle ali, accompagnata da
-un breve audio, come un estratto di una canzone popolare o un effetto sonoro. La
-tua oloscintilla può essere programmata con un computer, come quello presente
-nella tua [unità di comunicazione](/equipaggiamento/unita-di-comunicazione).
+[**Oloscintilla**](/equipaggiamento/oloscintilla)**:** Questo minuscolo
+oloproiettore è spesso camuffato come orecchino, spilla o ciondolo. Conserva una
+semplice proiezione visiva di stile personale, come un nimbo o delle ali,
+accompagnata da un breve audio, come un estratto di una canzone popolare o un
+effetto sonoro. La tua oloscintilla può essere programmata con un computer, come
+quello presente nella tua
+[unità di comunicazione](/equipaggiamento/unita-di-comunicazione).
 
 [**Rilevatore di Radiazioni**](/equipaggiamento/rilevatore-di-radiazioni)**:**
-Questo dispositivo portatile è in grado di rilevare radiazioni entro 36 metri.
+Questo dispositivo palmare è in grado di rilevare radiazioni entro 36 metri.
 Quando interagisci con il dispositivo, esso emette segnali acustici di toni
 diversi per indicare la presenza di radiazioni basse, medie, alte o gravi.
 Mostra inoltre le aree irradiate su uno schermo semplice. Aggiorna
@@ -357,37 +358,37 @@ bloccare o attenuare la luce. Attivare i filtri richiede un’azione
 | [Kit di strumenti da infiltrato tattico](/equipaggiamento/kit-di-strumenti-da-infiltrato/tattico)                              |    3    |  500   |   L    |    2    |
 | [Kit di strumenti da scienziato da campo commerciale](/equipaggiamento/kit-di-strumenti-da-scienziato-da-campo/commerciale)^T^ |    0    |  175   |   —    | 1 o 2\* |
 | [Kit di strumenti da scienziato da campo tattico](/equipaggiamento/kit-di-strumenti-da-scienziato-da-campo/tattico)^T^         |    3    |  350   |   —    | 1 o 2\* |
-| Kit di strumenti di hackeraggio commerciale^T^                                                                                 |    0    |   20   |   L    | 1 o 2\* |
-| Kit di strumenti di hackeraggio tattico^T^                                                                                     |    3    |  500   |   L    | 1 o 2\* |
-| Kit di strumenti di hackeraggio avanzato^T^                                                                                    |    5    |  700   |   L    | 1 o 2\* |
-| Kit di strumenti di riparazione commerciale                                                                                    |    0    |   20   |   1    |    2    |
-| Kit di strumenti di riparazione tattico                                                                                        |    3    |  250   |   1    |    2    |
-| Kit medico commerciale                                                                                                         |    1    |   50   |   1    | 1 o 2\* |
-| Kit medico tattico                                                                                                             |    3    |  500   |   1    | 1 o 2\* |
-| Kit per l'igiene                                                                                                               |    0    |   2    |   L    |    2    |
-| Lucchetto commerciale^T^                                                                                                       |    0    |   2    |   —    |    2    |
-| Lucchetto tattico^T^                                                                                                           |    1    |   20   |   —    |    2    |
-| Lucchetto avanzato^T^                                                                                                          |    3    |  150   |   —    |    2    |
-| Lucchetto superiore^T^                                                                                                         |    9    | 2.000  |   —    |    2    |
-| Lucchetto d'élite^T^                                                                                                           |   17    | 45.000 |   —    |    2    |
-| Mazzo dell'infinito                                                                                                            |    0    |   2    |   —    |    1    |
-| Micro-Occhiali^T^                                                                                                              |    2    |  250   |   L    |    —    |
-| Microfono^T^                                                                                                                   |    0    |   8    |   L    |    1    |
-| Occhiali da sole commerciale                                                                                                   |    0    |   2    |   —    |    —    |
-| Occhiali da sole tattico                                                                                                       |    3    |  450   |   —    |    —    |
-| Olopelle commerciale^T^                                                                                                        |    0    |   20   |   L    |    —    |
-| Olopelle tattica^T^                                                                                                            |    3    |  400   |   L    |    —    |
-| Oloscintilla^T^                                                                                                                |    0    |   3    |   L    |    —    |
-| Rilevatore di radiazioni^T^                                                                                                    |    2    |  350   |   1    |    1    |
-| Sedia a Rotelle                                                                                                                |    0    |   1    |   2    |    —    |
-| Stivali Magnetici^T^                                                                                                           |    2    |  350   |   1    |    —    |
-| Strumento musicale commerciale (portatile)                                                                                     |    0    |   8    |   1    |    2    |
-| Strumento musicale tattico (portatile)                                                                                         |    3    |  500   |   1    |    2    |
-| Strumento musicale commerciale (pesante)                                                                                       |    0    |   20   |   16   |    2    |
-| Strumento musicale tattico (pesante)                                                                                           |    3    | 1.000  |   16   |    2    |
-| Unità di comunicazione^T^                                                                                                      |    1    |   7    |   L    |    1    |
-| Testo arcaico                                                                                                                  |    0    |   10   |   L    |    1    |
-| Torcia commerciale^T^                                                                                                          |    0    |   1    |   1    |    1    |
-| Torcia tattica^T^                                                                                                              |    0    |   15   |   L    |    1    |
+| [Kit di strumenti di hackeraggio commerciale](/equipaggiamento/kit-di-strumenti-di-hackeraggio/commerciale)^T^                 |    0    |   20   |   L    | 1 o 2\* |
+| [Kit di strumenti di hackeraggio tattico](/equipaggiamento/kit-di-strumenti-di-hackeraggio/tattico)^T^                         |    3    |  500   |   L    | 1 o 2\* |
+| [Kit di strumenti di hackeraggio avanzato](/equipaggiamento/kit-di-strumenti-di-hackeraggio/avanzato)^T^                       |    5    |  700   |   L    | 1 o 2\* |
+| [Kit di strumenti di riparazione commerciale](/equipaggiamento/kit-di-strumenti-di-riparazione/commerciale)                    |    0    |   20   |   1    |    2    |
+| [Kit di strumenti di riparazione tattico](/equipaggiamento/kit-di-strumenti-di-riparazione/tattico)                            |    3    |  250   |   1    |    2    |
+| [Kit medico commerciale](/equipaggiamento/kit-medico/commerciale)                                                              |    1    |   50   |   1    | 1 o 2\* |
+| [Kit medico tattico](/equipaggiamento/kit-medico/tattico)                                                                      |    3    |  500   |   1    | 1 o 2\* |
+| [Kit per l'igiene](/equipaggiamento/kit-per-l'igiene)                                                                          |    0    |   2    |   L    |    2    |
+| [Lucchetto commerciale](/equipaggiamento/lucchetto/commerciale)^T^                                                             |    0    |   2    |   —    |    2    |
+| [Lucchetto tattico](/equipaggiamento/lucchetto/tattico)^T^                                                                     |    1    |   20   |   —    |    2    |
+| [Lucchetto avanzato](/equipaggiamento/lucchetto/avanzato)^T^                                                                   |    3    |  150   |   —    |    2    |
+| [Lucchetto superiore](/equipaggiamento/lucchetto/superiore)^T^                                                                 |    9    | 2.000  |   —    |    2    |
+| [Lucchetto d'élite](/equipaggiamento/lucchetto/d-elite)^T^                                                                     |   17    | 45.000 |   —    |    2    |
+| [Mazzo dell'infinito](/equipaggiamento/mazzo-dell-infinito)                                                                    |    0    |   2    |   —    |    1    |
+| [Micro-occhiali](/equiaggiamento/micro-occhiali)^T^                                                                            |    2    |  250   |   L    |    —    |
+| [Microfono](/equipaggiamento/microfono)^T^                                                                                     |    0    |   8    |   L    |    1    |
+| [Occhiali da sole commerciali](/equipaggiamento/occhiali-da-sole/commerciali)                                                  |    0    |   2    |   —    |    —    |
+| [Occhiali da sole tattici](/equipaggiamento/occhiali-da-sole/tattici)                                                          |    3    |  450   |   —    |    —    |
+| [Olopelle commerciale](/equipaggiamento/olopelle/commerciale)^T^                                                               |    0    |   20   |   L    |    —    |
+| [Olopelle tattica](/equipaggiamento/olopelle/tattica)^T^                                                                       |    3    |  400   |   L    |    —    |
+| [Oloscintilla](/equipaggiamento/oloscintilla)^T^                                                                               |    0    |   3    |   L    |    —    |
+| [Rilevatore di radiazioni](/equipaggiamento/rilevatore-di-radiazioni)^T^                                                       |    2    |  350   |   1    |    1    |
+| [Sedia a rotelle](/equipaggiamento/sedia-a-rotelle)                                                                            |    0    |   1    |   2    |    —    |
+| [Stivali magnetici](/equipaggiamento/stivali-magnetici)^T^                                                                     |    2    |  350   |   1    |    —    |
+| [Strumento musicale portatile commerciale](/equipaggiamento/strumento-musicale-portatile-commerciale)                          |    0    |   8    |   1    |    2    |
+| [Strumento musicale portatile tattico](/equipaggiamento/strumento-musicale-portatile-tattico)                                  |    3    |  500   |   1    |    2    |
+| [Strumento musicale pesante commerciale](/equipaggiamento/strumento-musicale-pesante-commerciale)                              |    0    |   20   |   16   |    2    |
+| [Strumento musicale pesante tattico](/equipaggiamento/strumento-musicale-pesante-tattico)                                      |    3    | 1.000  |   16   |    2    |
+| [Unità di comunicazione](/equipaggiamento/unita-di-comunicazione)^T^                                                           |    1    |   7    |   L    |    1    |
+| [Testo arcaico](/equipaggiamento/testo-arcaico)                                                                                |    0    |   10   |   L    |    1    |
+| [Torcia commerciale](/equipaggiamento/torcia/commerciale)^T^                                                                   |    0    |   1    |   1    |    1    |
+| [Torcia tattica](/equipaggiamento/torcia/tattica)^T^                                                                           |    0    |   15   |   L    |    1    |
 
 `{caption="Equipaggiamento da Avventura" footnote="\*Puoi usare un kit di strumenti con 1 mano se lo stai indossando o con 2 se lo stai tenendo. ^T^ Questo oggetto ha il tratto [tecnologico](/tratti/tecnologico)."}`
