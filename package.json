@@ -9,7 +9,7 @@
     "build:helper": "node --experimental-strip-types ./scripts/dev-helper.ts --js-watch",
     "build:db": "node --experimental-strip-types ./scripts/dev-helper.ts --db-build",
     "build:hugo": "rm -rf public/* && hugo --minify --gc --ignoreCache  && npm run build:db",
-    "build": "concurrently --kill-others \"npm run build:helper\" \"npm run build:hugo\"",
+    "build": "concurrently --success first --kill-others \"npm run build:helper\" \"npm run build:hugo\"",
     "vercel": "vercel"
   },
   "devDependencies": {
