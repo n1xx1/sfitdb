@@ -144,28 +144,29 @@
 
 ### Tratti
 
-| en        | it              | da    | note |
-| --------- | --------------- | ----- | ---- |
-| Air       | Aria            | gu pf |      |
-| Area      | Area            | us    | ???? |
-| Auditory  | Uditivo         | gu pf |      |
-| Automatic | Automatico      | us    | ???? |
-| Bulwark   | Baluardo        | gu pf |      |
-| Earth     | Terra           | gu pf |      |
-| Exposed   | Esposto         | us    | ???? |
-| Fire      | Fuoco           | gu pf |      |
-| Flourish  | Ostentazione    | gu pf |      |
-| Metal     | Metallo         | gu pf |      |
-| Shadow    | Ombra           | gu pf |      |
-| Tech      | Tecnologico     | us    |      |
-| Teleport  | Teletrasporto   | gu pf |      |
-| Tracing   | Tracciante      | us    |      |
-| Traversal | Attraversamento | us    |      |
-| Visual    | Visivo          | gu pf |      |
-| Volley    | Parabola        | gu pf |      |
-| Water     | Acqua           | gu pf |      |
-| Wood      | Legno           | gu pf |      |
-| Unwieldy  | Ingombrante     | gu sf |      |
+| en         | it              | da    | note |
+| ---------- | --------------- | ----- | ---- |
+| Air        | Aria            | gu pf |      |
+| Area       | Area            | us    | ???? |
+| Auditory   | Uditivo         | gu pf |      |
+| Automatic  | Automatico      | us    | ???? |
+| Bulwark    | Baluardo        | gu pf |      |
+| Consumable | Monouso         | gu pf |      |
+| Earth      | Terra           | gu pf |      |
+| Exposed    | Esposto         | us    | ???? |
+| Fire       | Fuoco           | gu pf |      |
+| Flourish   | Ostentazione    | gu pf |      |
+| Metal      | Metallo         | gu pf |      |
+| Shadow     | Ombra           | gu pf |      |
+| Tech       | Tecnologico     | us    |      |
+| Teleport   | Teletrasporto   | gu pf |      |
+| Tracing    | Tracciante      | us    |      |
+| Traversal  | Attraversamento | us    |      |
+| Visual     | Visivo          | gu pf |      |
+| Volley     | Parabola        | gu pf |      |
+| Water      | Acqua           | gu pf |      |
+| Wood       | Legno           | gu pf |      |
+| Unwieldy   | Ingombrante     | gu sf |      |
 
 ### Gruppi Armi
 

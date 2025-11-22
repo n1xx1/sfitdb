@@ -3,7 +3,7 @@ source: Player Core (Eng), pag. 241
 original-name: Musical Instrument (Commercial Heavy)
 original-srd: https://2e.aonsrd.com/treasure/29-musical-instrument
 itemBase: strumento-musicale
-subItemDesc:
+subItemDesc: >
   Uno strumento tattico fornisce un bonus di oggetto +1 alle prove di
   [Esibizione](/abilita/esibizione) effettuate usando quello strumento.
 ---

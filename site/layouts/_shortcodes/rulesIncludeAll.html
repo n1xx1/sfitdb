@@ -22,7 +22,10 @@
   {{- $template = .Params.template -}}
 {{- end -}}
 
-{{- $originalPage := index (.Page.Store.Get "includeContext") 0 | default .Page }}
+{{- $originalPage := .Page }}
+{{- with index (.Page.Store.Get "includeContext") 0 -}}
+  {{- $originalPage = .page -}}
+{{- end -}}
 
 {{- if hasPrefix $originalPage.Path "/regole" -}}
   {{- if $rulesSource -}}

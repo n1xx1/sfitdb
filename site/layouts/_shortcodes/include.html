@@ -7,7 +7,7 @@
   {{- with .Get "page" -}}
     {{- $page = . -}}
   {{- else -}}
-    {{- errorf "missing value for param 'page': %s" .Position -}}
+    {{- errorf "missing value for param 'page': %s (%v)" .Position $.Page -}}
   {{- end -}}
   {{- if isset .Params "level" -}}
     {{- $level = .Get "level" -}}

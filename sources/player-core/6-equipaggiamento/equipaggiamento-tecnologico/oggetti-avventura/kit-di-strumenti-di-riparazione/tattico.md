@@ -3,7 +3,7 @@ source: Player Core (Eng), pag. 241
 original-name: Repair Toolkit (Tattico)
 original-srd: https://2e.aonsrd.com/treasure/32-repair-toolkit
 itemBase: kit-di-strumenti-di-riparazione
-subItemDesc:
+subItemDesc: >
   Un kit di strumenti di riparazione tattico fornisce un bonus di oggetto +1
   alla prova.
 ---

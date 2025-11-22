@@ -8,7 +8,7 @@ navigation-sub-hide: true
 
 # Torcia - Oggetto 0+
 
-**Mani** 1; **Volume** L
+**Mani** 1
 
 ---
 

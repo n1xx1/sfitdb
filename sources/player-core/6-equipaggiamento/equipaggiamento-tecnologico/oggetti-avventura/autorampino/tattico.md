@@ -4,7 +4,7 @@ source: Player Core (Eng), pag. 241
 original-name: Autograppler (Tactical)
 original-srd: https://2e.aonsrd.com/treasure/2-autograppler
 itemBase: autorampino
-subItemDesc:
+subItemDesc: >
   Un autorampino tattico ha un sensore per rilevare se ha una presa salda,
   facendolo ritrarre automaticamente se fallisci criticamente il tiro d’attacco
   per agganciarlo.

@@ -4,7 +4,7 @@ source: Player Core (Eng), pag. 241
 original-name: Field Scientist's Toolkit (Tattico)
 original-srd: https://2e.aonsrd.com/treasure/13-field-scientists-toolkit
 itemBase: kit-di-strumenti-da-scienziato-da-campo
-subItemDesc:
+subItemDesc: >
   Un kit di strumeti da scienziato da campo tattico fornisce un bonus oggetto +1
   alle prove di [Ricordare Conoscenze](/azioni/ricordare-conoscenze) usando
   [Natura](/abilita/natura) o un'abilità di [Sapienza](/abilita/sapienza)

@@ -3,7 +3,7 @@ source: Player Core (Eng), pag. 241
 original-name: Infiltrator's Toolkit (Tactical)
 original-srd: https://2e.aonsrd.com/treasure/20-infiltrators-toolkit
 itemBase: kit-di-strumenti-da-infiltrato
-subItemDesc:
+subItemDesc: >
   Un kit di strumenti da infiltrato tattico aggiunge un bonus di oggetto di +1
   ai tiri per Scassinare una Serratura o Disattivare un Congegno.
 ---

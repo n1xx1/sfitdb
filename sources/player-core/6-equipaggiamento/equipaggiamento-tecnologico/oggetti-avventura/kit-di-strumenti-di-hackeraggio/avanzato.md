@@ -4,7 +4,7 @@ source: Player Core (Eng), pag. 241
 original-name: Hacking Toolkit (Advanced)
 original-srd: https://2e.aonsrd.com/treasure/16-hacking-toolkit
 itemBase: kit-di-strumenti-di-hackeraggio
-subItemDesc:
+subItemDesc: >
   Un kit di sturmenti di hackeraggio avanzato fornisce un bonus oggetto +1 e ti
   consente di accedere ai computer a una distanza di 9 metri, a meno che tu non
   sia in un ambiente radioattivo.

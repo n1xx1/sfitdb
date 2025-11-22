@@ -10,7 +10,7 @@ itemBase: torcia
 
 **Prezzo** 1 credito
 
-**Mani** 1; **Volume** L
+**Mani** 1; **Volume** 1
 
 ---
 

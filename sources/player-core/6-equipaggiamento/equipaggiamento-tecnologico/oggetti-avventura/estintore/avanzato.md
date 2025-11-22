@@ -4,7 +4,7 @@ source: Player Core (Eng), pag. 241
 original-name: Fire Extinguisher (Advanced)
 original-srd: https://2e.aonsrd.com/treasure/14-fire-extinguisher
 itemBase: estintore
-subItemDesc:
+subItemDesc: >
   Un estintore avanzato contrasta i fuochi magici di 6° grado con un
   modificatore +19.
 ---

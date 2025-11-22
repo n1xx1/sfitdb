@@ -392,3 +392,98 @@ bloccare o attenuare la luce. Attivare i filtri richiede un’azione
 | [Torcia tattica](/equipaggiamento/torcia/tattica)^T^                                                                           |    0    |   15   |   L    |    1    |
 
 `{caption="Equipaggiamento da Avventura" footnote="\*Puoi usare un kit di strumenti con 1 mano se lo stai indossando o con 2 se lo stai tenendo. ^T^ Questo oggetto ha il tratto [tecnologico](/tratti/tecnologico)."}`
+
+## Oggetti Medici
+
+Gli oggetti elencati nella tabella seguente sono i materiali medici più
+ampiamente disponibili nei Mondi del Patto. Gli oggetti medici non sono magici.
+Sfruttano invece le proprietà delle sostanze chimiche e i più recenti progressi
+nelle biotecnologie. Di conseguenza, gli oggetti medici non emanano aure magiche
+e non possono essere interrotti o influenzati da
+[dissolvi magie](/incantesimi/dissolvi-magie). I loro effetti durano per un
+periodo di tempo stabilito o finché non vengono contrastati in qualche modo, di
+solito fisicamente.
+
+Alcuni oggetti medici hanno il tratto [tecnologico](/tratti/tecnologico). Alcuni
+presentano anche il tratto [monouso](/tratti/monouso), il che significa che
+l’oggetto si esaurisce una volta attivato. Le regole per creare oggetti medici
+si trovano nell’attività [Fabbricare](/azioni/fabbricare), e devi possedere il
+talento di abilità [Fabbricare Sieri](/talenti/fabbricare-sieri) per Fabbricare
+oggetti medici.
+
+### Cerotti Medici
+
+I cerotti medici sono delle bende sterili a uso singolo progettate per essere
+applicate rapidamente su una ferita o un’area problematica (come una parte del
+corpo chiaramente malata o avvelenata) richiedendo poca abilità. Puoi applicare
+un cerotto medico solo a una creatura entro la tua portata ed è generalmente
+impossibile applicarlo a un bersaglio non consenziente a meno che il bersaglio
+non sia [paralizzato](/condizioni/paralizzato),
+[pietrificato](/condizioni/pietrificato) o
+[privo di sensi](/condizioni/privo-di-sensi).
+
+{{% include page="/equipaggiamento/cerotto-medico" level=3 %}}
+
+### Ipopenne
+
+Ogni ipopenna ha diversi possibili effetti e le ipopenne di livello superiore
+possono essere utilizzate per produrre gli effetti di quelle di livello
+inferiore. Di solito attivi un’ipopenna mentre la inietti in te stesso o in
+un’altra creatura. Puoi iniettare un’ipopenna solo se una creatura è entro la
+tua portata ed è consenziente o incapace di impedirlo. Di solito ti basta una
+sola mano per iniettare un’ipopenna.
+
+{{% include page="/equipaggiamento/ipopenna" %}}
+
+### Sieri
+
+Questi sono sieri farmaceutici; sono tecnologici, o in alcuni casi ibridi, ma
+possono essere fabbricati usando un laboratorio e non incorporano magia
+significativa. Puoi attivare un siero con un’azione Interagire mentre lo bevi o
+lo somministri a un’altra creatura. Puoi somministrare un siero solo a una
+creatura entro la tua portata e consenziente o così indifesa da non poter
+resistere. Di solito ti basta un solo arto per attivare un siero.
+
+{{% include page="/equipaggiamento/siero-da-celebrita" %}}
+
+{{% include page="/equipaggiamento/siero-da-commando" %}}
+
+{{% include page="/equipaggiamento/siero-da-infiltrato" %}}
+
+{{% include page="/equipaggiamento/siero-da-tiratore-scelto" %}}
+
+{{% include page="/equipaggiamento/siero-di-ossa" %}}
+
+{{% include page="/equipaggiamento/siero-di-scintillite" %}}
+
+### Altri Oggetti Monouso
+
+Sebbene molti oggetti monouso siano raggruppati in categorie specifiche, come i
+sieri e le ipopenne, alcuni oggetti non rientrano in tali categorie.
+
+{{% include page="/equipaggiamento/pelle-spray" %}}
+
+| Oggetto                                                                                       | Livello | Prezzo | Volume | Mani |
+| --------------------------------------------------------------------------------------------- | :-----: | :----: | :----: | :--: |
+| [Siero da celebrità](/equipaggiamento/siero-da-celebrità)                                     |    1    |   30   |   L    |  —   |
+| [Ipopenna commerciale](/equipaggiamento/ipopenna/commerciale)                                 |    1    |   40   |   L    |  —   |
+| [Cerotto medico commerciale](/equipaggiamento/cerotto-medico/commerciale)                     |    1    |   30   |   L    |  1   |
+| [Pelle spray](/equipaggiamento/pelle-spray)                                                   |    1    |   30   |   L    |  1   |
+| [Siero di ossa](/equipaggiamento/siero-di-ossa)                                               |    2    |   50   |   L    |  1   |
+| [Siero da infiltrato](/equipaggiamento/siero-da-infiltrato)                                   |    2    |   50   |   L    |  1   |
+| [Siero di scintillite](/equipaggiamento/siero-di-scintillite)                                 |    2    |   50   |   L    |  1   |
+| [Siero da commando](/equipaggiamento/siero-da-commando)                                       |    3    |  100   |   L    |  1   |
+| [Ipopenna tattica](/equipaggiamento/ipopenna/tattica)                                         |    3    |  120   |   L    |  1   |
+| [Siaro da tiratore scelto commerciale](/equipaggiamento/siaro-da-tiratore-scelto/commerciale) |    4    |  140   |   L    |  1   |
+| [Cerotto medico tattico](/equipaggiamento/cerotto-medico/tattico)                             |    5    |  300   |   L    |  1   |
+| [Ipopenna avanzata](/equipaggiamento/ipopenna/avanzata)                                       |    6    |  500   |   L    |  1   |
+| [Cerotto medico avanzato](/equipaggiamento/cerotto-medico-avanzato)                           |    9    | 1.500  |   L    |  1   |
+| [Ipopenna superiore](/equipaggiamento/ipopenna/superiore)                                     |   10    | 2.000  |   L    |  1   |
+| [Cerotto medico superiore](/equipaggiamento/cerotto-medico/superiore)                         |   13    | 6.000  |   L    |  1   |
+| [Ipopenna d'élite](/equipaggiamento/ipopenna/d-elite)                                         |   12    | 3.500  |   L    |  1   |
+| [Ipopenna definitivo](/equipaggiamento/ipopenna/definitivo)                                   |   14    | 7.000  |   L    |  1   |
+| [Siaro da tiratore scelto tattico](/equipaggiamento/siaro-da-tiratore-scelto/tattico)         |   14    | 7.000  |   L    |  1   |
+| [Cerotto medico d'élite](/equipaggiamento/cerotto-medico/d-elite)                             |   15    | 13.000 |   L    |  1   |
+| [Cerotto medico definitivo](/equipaggiamento/cerotto-medico/definitivo)                       |   19    | 80.000 |   L    |  1   |
+
+`{caption="Oggetti Medici"}`

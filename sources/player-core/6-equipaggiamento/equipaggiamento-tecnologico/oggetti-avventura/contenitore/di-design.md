@@ -3,7 +3,7 @@ source: Player Core (Eng), pag. 241
 original-name: Container (Designer)
 original-srd: https://2e.aonsrd.com/treasure/8-container
 itemBase: contenitore
-subItemDesc:
+subItemDesc: >
   Ottieni un bonus oggetto +1 alle prove per
   [Impressionare](/azioni/impressionare) su individui dell’alta società mentre
   porti un contenitore di design, come una borsa firmata.

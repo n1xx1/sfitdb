@@ -1,0 +1,10 @@
+{{- $invert := .Get 0 | default false -}}
+{{- $isSubItem := false -}}
+{{- with .Page.Store.Get "includeContext" -}}
+  {{- with index . (sub (len .) 1) -}}
+    {{- $isSubItem = eq .page.Type "pfequipment" -}}
+  {{- end -}}
+{{- end -}}
+{{- if eq $invert $isSubItem -}}
+  {{- .InnerDeindent -}}
+{{- end -}}

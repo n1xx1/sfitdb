@@ -1,1 +1,5 @@
+{{- $prevIncludeContext := .Store.Get "includeContext" -}}
+{{- $newIncludeContext := slice -}}
+{{- .Store.Set "includeContext" $newIncludeContext -}}
 {{- .Content | partial "icons" | safeHTML -}}
+{{- .Store.Set "includeContext" $prevIncludeContext -}}

@@ -4,7 +4,7 @@ source: Player Core (Eng), pag. 241
 original-name: Maker's Toolkit (Commercial)
 original-srd: https://2e.aonsrd.com/treasure/25-makers-toolkit
 itemBase: kit-di-strumenti-da-creatore
-subItemDesc:
+subItemDesc: >
   Un kit di strumenti da creatore tattico ti fornisce un bonus di oggetto +1
   alla prova.
 ---

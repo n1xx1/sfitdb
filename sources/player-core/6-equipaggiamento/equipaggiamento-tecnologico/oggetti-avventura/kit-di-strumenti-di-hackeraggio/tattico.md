@@ -4,7 +4,7 @@ source: Player Core (Eng), pag. 241
 original-name: Hacking Toolkit (Tactical)
 original-srd: https://2e.aonsrd.com/treasure/16-hacking-toolkit
 itemBase: kit-di-strumenti-di-hackeraggio
-subItemDesc:
+subItemDesc: >
   Un kit di strumenti di hackeraggio tattico fornisce un bonus oggetto +1 alle
   prove effettuate con esso.
 ---

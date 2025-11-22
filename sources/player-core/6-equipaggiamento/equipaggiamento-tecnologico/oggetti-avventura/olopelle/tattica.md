@@ -4,7 +4,7 @@ source: Player Core (Eng), pag. 241
 original-name: Holoskin (Tactical)
 original-srd: https://2e.aonsrd.com/treasure/17-holoskin
 itemBase: olopelle
-subItemDesc:
+subItemDesc: >
   Un'olopelle tattica fornisce un bonus oggetto di +1 ai tiri rilevanti.
 ---
 

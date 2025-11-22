@@ -3,7 +3,7 @@ source: Player Core (Eng), pag. 241
 original-name: Climbing Kit (Tactical)
 original-srd: https://2e.aonsrd.com/treasure/6-climbing-kit
 itemBase: kit-da-scalata
-subItemDesc:
+subItemDesc: >
   Ottieni un bonus oggetto +1 alle prove di [Atletica](/abilita/atletica) per
   [Scalare](/azioni/scalare) usando un kit da scalata tattico.
 ---

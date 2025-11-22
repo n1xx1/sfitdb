@@ -3,7 +3,7 @@ source: Player Core (Eng), pag. 241
 original-name: Medkit (Tactical)
 original-srd: https://2e.aonsrd.com/treasure/26-medkit
 itemBase: kit-medico
-subItemDesc:
+subItemDesc: >
   I kit medici tattici forniscono un bonus di oggetto +1 a tali prove. Un kit
   medico è un kit di strumenti.
 ---
