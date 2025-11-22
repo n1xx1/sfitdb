@@ -219,15 +219,26 @@ async function exec(
 }
 
 const argv = yargs(hideBin(process.argv))
-  .option("watch", {
+  .option("db-build", {
     type: "boolean",
-    description: "Enable watch mode",
+    description: "Build db",
+  })
+  .option("db-watch", {
+    type: "boolean",
+    description: "Enable watch mode for the db",
+  })
+  .option("js-watch", {
+    type: "boolean",
+    description: "Enable js compiler service",
   })
   .parseSync();
 
-if (argv.watch) {
+if (argv.dbWatch) {
   startWatcher();
-  startJsCompiler();
-} else {
+}
+if (argv.dbBuild) {
   rebuildDatabase();
+}
+if (argv.jsWatch) {
+  startJsCompiler();
 }

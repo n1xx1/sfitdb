@@ -3,10 +3,13 @@
   "type": "module",
   "scripts": {
     "dev:all": "concurrently --kill-others \"npm run dev:helper\" \"cross-env PORT=$PORT HUGO_CACHEDIR=$PWD/.cache npm run dev:hugo\"",
-    "dev:helper": "node --experimental-strip-types ./scripts/dev-helper.ts --watch",
+    "dev:helper": "node --experimental-strip-types ./scripts/dev-helper.ts --db-watch --js-watch",
     "dev:hugo": "cross-env-shell \"hugo server -D -w -p $PORT\"",
     "perf": "hugo --templateMetrics --templateMetricsHints",
-    "build": "chmod a+x ./scripts/build.sh && ./scripts/build.sh",
+    "build:helper": "node --experimental-strip-types ./scripts/dev-helper.ts --js-watch",
+    "build:db": "node --experimental-strip-types ./scripts/dev-helper.ts --db-build",
+    "build:hugo": "rm -rf public/* && hugo --minify --gc --ignoreCache  && npm run build:db",
+    "build": "concurrently --kill-others \"npm run build:helper\" \"npm run build:hugo\"",
     "vercel": "vercel"
   },
   "devDependencies": {

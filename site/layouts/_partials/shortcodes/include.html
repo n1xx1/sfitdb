@@ -12,13 +12,14 @@
   {{ $newIncludeElement := dict "page" $.context "template" $.template }}
   {{ $newIncludeContext := slice | append $includeContext | append (slice $newIncludeElement) }}
 
-  {{ .Store.Set "includeContext" $newIncludeContext }}
-
-  {{/* {{ $content = .RenderShortcodes }} */}}
   {{ $content = .RawContent | replaceRE `^---\r?\n\s*([\s\S]*?)\s*\r?\n---\r?\n\s*` "" }}
+  {{ .Store.Set "includeContext" $newIncludeContext }}
   {{ $content = (printf "~~~\n%s~~~" .RawContent) | .RenderString | htmlUnescape }}
-  {{ $content = $content | replaceRE "^<pre.*?><code>|</code></pre>$" "" }}
   {{ .Store.Set "includeContext" $prevIncludeContext }}
+  {{ $content = $content | replaceRE "^<pre.*?><code>|</code></pre>$" "" }}
+
+  {{ $pid := int (index (printf "%#v" . | findRESubmatch `pid:(0x[a-f0-9]+)`) 0 1) }}
+  {{ $content = print "{" "{__hugo_ctx pid=" $pid "}" "}\n" $content "\n{" "{__hugo_ctx/}" "}\n" }}
 
   {{ if $.title }}
     {{ $content = $content | replaceRE "((?:\n|^)# ).+?([ \n]\\{.+\\})?(\\s*)" (printf `${1}%s${2}` $.title) }}
