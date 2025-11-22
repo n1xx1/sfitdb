@@ -14,9 +14,10 @@
 
   {{ .Store.Set "includeContext" $newIncludeContext }}
 
-  {{ $content = .RenderShortcodes }}
-  {{/* {{ $content = (printf "~~~\n%s~~~" .RawContent) | .Page.RenderString | htmlUnescape }}
-  {{ $content = $content | replaceRE "^<pre.*?><code>|</code></pre>$" "" }} */}}
+  {{/* {{ $content = .RenderShortcodes }} */}}
+  {{ $content = .RawContent | replaceRE `^---\r?\n\s*([\s\S]*?)\s*\r?\n---\r?\n\s*` "" }}
+  {{ $content = (printf "~~~\n%s~~~" .RawContent) | .RenderString | htmlUnescape }}
+  {{ $content = $content | replaceRE "^<pre.*?><code>|</code></pre>$" "" }}
   {{ .Store.Set "includeContext" $prevIncludeContext }}
 
   {{ if $.title }}
