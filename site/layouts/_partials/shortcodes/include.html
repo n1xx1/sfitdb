@@ -12,14 +12,16 @@
   {{ $newIncludeElement := dict "page" $.context "template" $.template }}
   {{ $newIncludeContext := slice | append $includeContext | append (slice $newIncludeElement) }}
 
+  {{/* we need to trigger .RenderShortcodes to tell hugo that this page is a dependency */}}
+  {{ .RenderShortcodes }}
+
   {{ $content = .RawContent | replaceRE `^---\r?\n\s*([\s\S]*?)\s*\r?\n---\r?\n\s*` "" }}
+  {{ $pid := int (.Key | replaceRE "^page-" "") }}
+  {{ $content = print "\n{" "{__hugo_ctx pid=" $pid "}" "}\n\n" $content "\n\n{" "{__hugo_ctx/}" "}\n" }}
   {{ .Store.Set "includeContext" $newIncludeContext }}
-  {{ $content = (printf "~~~\n%s~~~" .RawContent) | .RenderString | htmlUnescape }}
+  {{ $content = (printf "~~~\n%s~~~" $content) | .RenderString | htmlUnescape }}
   {{ .Store.Set "includeContext" $prevIncludeContext }}
   {{ $content = $content | replaceRE "^<pre.*?><code>|</code></pre>$" "" }}
-
-  {{ $pid := int (index (printf "%#v" . | findRESubmatch `pid:(0x[a-f0-9]+)`) 0 1) }}
-  {{ $content = print "{" "{__hugo_ctx pid=" $pid "}" "}\n" $content "\n{" "{__hugo_ctx/}" "}\n" }}
 
   {{ if $.title }}
     {{ $content = $content | replaceRE "((?:\n|^)# ).+?([ \n]\\{.+\\})?(\\s*)" (printf `${1}%s${2}` $.title) }}

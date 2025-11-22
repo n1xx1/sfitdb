@@ -342,8 +342,8 @@ bloccare o attenuare la luce. Attivare i filtri richiede un’azione
 | [Cavo tattico (10 metri)](/equipaggiamento/cavo/tattico)                                                                       |    2    |  150   |   L    |    —    |
 | [Chemioanalizzatore](/equipaggiamento/chemioanalizzatore)^T^                                                                   |    1    |  150   |   L    |    1    |
 | [Chip dati](/equipaggiamento/chip-dati)^T^                                                                                     |    0    |   2    |   —    |    —    |
-| [Contenitore ordinario](/equipaggiamento/contenitore-ordinario)                                                                |    0    |   1    |   —    |    —    |
-| [Contenitore di design](/equipaggiamento/contenitore-di-design)                                                                |    3    |  100   |   —    |    —    |
+| [Contenitore ordinario](/equipaggiamento/contenitore/ordinario)                                                                |    0    |   1    |   —    |    —    |
+| [Contenitore di design](/equipaggiamento/contenitore/di-design)                                                                |    3    |  100   |   —    |    —    |
 | [Datapad](/equipaggiamento/datapad)^T^                                                                                         |    2    |  250   |   —    |    —    |
 | [Estintore commerciale](/equipaggiamento/estintore/commerciale)^T^                                                             |    3    |   40   |   L    |    1    |
 | [Estintore tattico](/equipaggiamento/estintore/tattico)^T^                                                                     |    8    |  800   |   L    |    1    |
@@ -365,14 +365,14 @@ bloccare o attenuare la luce. Attivare i filtri richiede un’azione
 | [Kit di strumenti di riparazione tattico](/equipaggiamento/kit-di-strumenti-di-riparazione/tattico)                            |    3    |  250   |   1    |    2    |
 | [Kit medico commerciale](/equipaggiamento/kit-medico/commerciale)                                                              |    1    |   50   |   1    | 1 o 2\* |
 | [Kit medico tattico](/equipaggiamento/kit-medico/tattico)                                                                      |    3    |  500   |   1    | 1 o 2\* |
-| [Kit per l'igiene](/equipaggiamento/kit-per-l'igiene)                                                                          |    0    |   2    |   L    |    2    |
+| [Kit per l'igiene](/equipaggiamento/kit-per-l-igiene)                                                                          |    0    |   2    |   L    |    2    |
 | [Lucchetto commerciale](/equipaggiamento/lucchetto/commerciale)^T^                                                             |    0    |   2    |   —    |    2    |
 | [Lucchetto tattico](/equipaggiamento/lucchetto/tattico)^T^                                                                     |    1    |   20   |   —    |    2    |
 | [Lucchetto avanzato](/equipaggiamento/lucchetto/avanzato)^T^                                                                   |    3    |  150   |   —    |    2    |
 | [Lucchetto superiore](/equipaggiamento/lucchetto/superiore)^T^                                                                 |    9    | 2.000  |   —    |    2    |
 | [Lucchetto d'élite](/equipaggiamento/lucchetto/d-elite)^T^                                                                     |   17    | 45.000 |   —    |    2    |
 | [Mazzo dell'infinito](/equipaggiamento/mazzo-dell-infinito)                                                                    |    0    |   2    |   —    |    1    |
-| [Micro-occhiali](/equiaggiamento/micro-occhiali)^T^                                                                            |    2    |  250   |   L    |    —    |
+| [Micro-occhiali](/equipaggiamento/micro-occhiali)^T^                                                                           |    2    |  250   |   L    |    —    |
 | [Microfono](/equipaggiamento/microfono)^T^                                                                                     |    0    |   8    |   L    |    1    |
 | [Occhiali da sole commerciali](/equipaggiamento/occhiali-da-sole/commerciali)                                                  |    0    |   2    |   —    |    —    |
 | [Occhiali da sole tattici](/equipaggiamento/occhiali-da-sole/tattici)                                                          |    3    |  450   |   —    |    —    |
@@ -382,10 +382,10 @@ bloccare o attenuare la luce. Attivare i filtri richiede un’azione
 | [Rilevatore di radiazioni](/equipaggiamento/rilevatore-di-radiazioni)^T^                                                       |    2    |  350   |   1    |    1    |
 | [Sedia a rotelle](/equipaggiamento/sedia-a-rotelle)                                                                            |    0    |   1    |   2    |    —    |
 | [Stivali magnetici](/equipaggiamento/stivali-magnetici)^T^                                                                     |    2    |  350   |   1    |    —    |
-| [Strumento musicale portatile commerciale](/equipaggiamento/strumento-musicale-portatile-commerciale)                          |    0    |   8    |   1    |    2    |
-| [Strumento musicale portatile tattico](/equipaggiamento/strumento-musicale-portatile-tattico)                                  |    3    |  500   |   1    |    2    |
-| [Strumento musicale pesante commerciale](/equipaggiamento/strumento-musicale-pesante-commerciale)                              |    0    |   20   |   16   |    2    |
-| [Strumento musicale pesante tattico](/equipaggiamento/strumento-musicale-pesante-tattico)                                      |    3    | 1.000  |   16   |    2    |
+| [Strumento musicale portatile commerciale](/equipaggiamento/strumento-musicale/portatile-commerciale)                          |    0    |   8    |   1    |    2    |
+| [Strumento musicale portatile tattico](/equipaggiamento/strumento-musicale/portatile-tattico)                                  |    3    |  500   |   1    |    2    |
+| [Strumento musicale pesante commerciale](/equipaggiamento/strumento-musicale/pesante-commerciale)                              |    0    |   20   |   16   |    2    |
+| [Strumento musicale pesante tattico](/equipaggiamento/strumento-musicale/pesante-tattico)                                      |    3    | 1.000  |   16   |    2    |
 | [Unità di comunicazione](/equipaggiamento/unita-di-comunicazione)^T^                                                           |    1    |   7    |   L    |    1    |
 | [Testo arcaico](/equipaggiamento/testo-arcaico)                                                                                |    0    |   10   |   L    |    1    |
 | [Torcia commerciale](/equipaggiamento/torcia/commerciale)^T^                                                                   |    0    |   1    |   1    |    1    |

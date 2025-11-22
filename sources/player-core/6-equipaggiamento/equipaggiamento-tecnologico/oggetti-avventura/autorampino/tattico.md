@@ -14,11 +14,15 @@ subItemDesc: >
 
 **Prezzo** 250 crediti
 
+{{% subItemHide %}}
+
 **Volume** L
+
+{{% /subItemHide %}}
 
 ---
 
-Puoi collegare questo dispositivo di ancoraggio a una
+{{% subItemHide %}}Puoi collegare questo dispositivo di ancoraggio a una
 [cavo](/equipaggiamento/cavo) con un’azione Interagire. Le pinze scorrono
 automaticamente dalla base dell’autorampino lungo il cavo collegato, permettendo
 di arrampicarsi come su una corda annodata. Puoi lanciare l’autorampino per
@@ -27,6 +31,6 @@ usando la tua competenza con le armi semplici contro una CD dipendente dal
 bersaglio, tipicamente almeno CD 20. Questo attacco ha il tratto
 [segreto](/tratti/segreto). Con successo, il tuo autorampino si fissa
 saldamente, ma con un fallimento critico sembra reggere ma si stacca mentre sei
-a metà salita. Un autorampino tattico ha un sensore per rilevare se ha una presa
-salda, facendolo ritrarre automaticamente se fallisci criticamente il tiro
-d’attacco per agganciarlo.
+a metà salita.{{% /subItemHide %}} Un autorampino tattico ha un sensore per
+rilevare se ha una presa salda, facendolo ritrarre automaticamente se fallisci
+criticamente il tiro d’attacco per agganciarlo.

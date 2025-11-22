@@ -9,6 +9,8 @@ itemBase: autorampino
 
 **Prezzo** 10 crediti
 
+{{% subItemHide %}}
+
 **Volume** L
 
 ---
@@ -23,3 +25,5 @@ bersaglio, tipicamente almeno CD 20. Questo attacco ha il tratto
 [segreto](/tratti/segreto). Con successo, il tuo autorampino si fissa
 saldamente, ma con un fallimento critico sembra reggere ma si stacca mentre sei
 a metà salita.
+
+{{% /subItemHide %}}

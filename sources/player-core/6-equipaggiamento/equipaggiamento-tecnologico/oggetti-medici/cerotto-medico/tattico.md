@@ -1,5 +1,5 @@
 ---
-traits: [tecnologico]
+traits: [guarigione, monouso, tecnologico]
 source: Player Core (Eng), pag. 241
 original-name: Medpatch (Tactical)
 original-srd: https://2e.aonsrd.com/treasure/35-medpatch

@@ -23,6 +23,6 @@ bersaglio, tipicamente almeno CD 20. Questo attacco ha il tratto
 saldamente, ma con un fallimento critico sembra reggere ma si stacca mentre sei
 a metà salita.
 
-{{% include page="/equipaggiamento/autorampino/commerciale" template="subequipment" %}}
+{{% include page="/equipaggiamento/autorampino/commerciale" %}}
 
-{{% include page="/equipaggiamento/autorampino/tattico" template="subequipment" %}}
+{{% include page="/equipaggiamento/autorampino/tattico" %}}
