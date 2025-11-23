@@ -20,6 +20,6 @@ volta che fallisci criticamente per evitare una caduta. Un singolo kit ha
 materiali sufficienti per un solo scalatore; ogni scalatore necessita del
 proprio kit.
 
-{{% include page="/equipaggiamento/kit-da-scalata/commerciale" template="subequipment" %}}
+{{% include page="/equipaggiamento/kit-da-scalata/commerciale" %}}
 
-{{% include page="/equipaggiamento/kit-da-scalata/tattico" template="subequipment" %}}
+{{% include page="/equipaggiamento/kit-da-scalata/tattico" %}}

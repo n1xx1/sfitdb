@@ -15,6 +15,6 @@ navigation-sub-hide: true
 Questo cavo industriale è solitamente fatto di plastica ad alta resistenza
 rivestita in metallo.
 
-{{% include page="/equipaggiamento/cavo/commerciale" template="subequipment" %}}
+{{% include page="/equipaggiamento/cavo/commerciale" %}}
 
-{{% include page="/equipaggiamento/cavo/tattico" template="subequipment" %}}
+{{% include page="/equipaggiamento/cavo/tattico" %}}

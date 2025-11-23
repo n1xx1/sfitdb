@@ -17,6 +17,6 @@ Hai bisogno di un kit di strumenti da infiltrato per
 [Disattivare un Congegno](/azioni/disattivare-un-congegno) (di alcuni tipi)
 usando l’abilità [Furtività](/abilita/furtivita).
 
-{{% include page="/equipaggiamento/kit-di-strumenti-da-infiltrato/commerciale" template="subequipment" %}}
+{{% include page="/equipaggiamento/kit-di-strumenti-da-infiltrato/commerciale" %}}
 
-{{% include page="/equipaggiamento/kit-di-strumenti-da-infiltrato/tattico" template="subequipment" %}}
+{{% include page="/equipaggiamento/kit-di-strumenti-da-infiltrato/tattico" %}}

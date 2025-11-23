@@ -10,9 +10,13 @@ itemBase: kit-di-strumenti-da-creatore
 
 **Prezzo** 40 crediti
 
+{{% subItemHide %}}
+
 **Mani** 2; **Volume** 2
 
 ---
 
 Hai bisogno di un kit di strumenti da creatore per creare oggetti a partire da
 PBU usando l’abilità [Artigianato](/abilita/artigianato).
+
+{{% /subItemHide %}}

@@ -10,6 +10,8 @@ itemBase: kit-di-strumenti-da-scienziato-da-campo
 
 **Prezzo** 175 crediti
 
+{{% subItemHide %}}
+
 **Mani** 1 o 2; **Volume** —
 
 ---
@@ -17,3 +19,5 @@ itemBase: kit-di-strumenti-da-scienziato-da-campo
 Un kit di strumenti da scienziato da campo contiene un
 [chemioanalizzatore](/equipaggiamento/chemioanalizzatore), un microscopio,
 strumenti di registrazione e sacchetti per campioni.
+
+{{% /subItemHide %}}

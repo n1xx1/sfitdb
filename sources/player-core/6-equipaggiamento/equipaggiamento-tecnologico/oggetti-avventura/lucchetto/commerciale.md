@@ -9,7 +9,11 @@ itemBase: lucchetto
 
 **Prezzo** 2 crediti
 
+{{% subItemHide %}}
+
 **Mani** 2; **Volume** L
+
+{{% /subItemHide %}}
 
 ---
 

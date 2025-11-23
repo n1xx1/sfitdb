@@ -10,9 +10,14 @@ subItemDesc: Un cavo tattico è rivestito in lega di adamantio.
 
 **Prezzo** 150 crediti (10 metri)
 
+{{% subItemHide %}}
+
 **Volume** L
+
+{{% /subItemHide %}}
 
 ---
 
-Questo cavo industriale è solitamente fatto di plastica ad alta resistenza
-rivestita in metallo. Un cavo tattico è rivestito in lega di adamantio.
+{{% subItemHide %}}Questo cavo industriale è solitamente fatto di plastica ad
+alta resistenza rivestita in metallo.{{% /subItemHide %}} Un cavo tattico è
+rivestito in lega di adamantio.

@@ -10,6 +10,8 @@ itemBase: kit-di-strumenti-di-hackeraggio
 
 **Prezzo** 20 crediti
 
+{{% subItemHide %}}
+
 **Mani** 1 o 2; **Volume** L
 
 ---
@@ -19,3 +21,5 @@ Kit di strumenti di hackeraggio è necessario per le prove di
 Puoi usare un kit di strumenti di hackeraggio per accedere a un computer senza
 utilizzare un’interfaccia utente, ma ciò richiede il contatto fisico con il
 computer oppure un contatto tramite l’infosfera o una rete collegata simile.
+
+{{% /subItemHide %}}

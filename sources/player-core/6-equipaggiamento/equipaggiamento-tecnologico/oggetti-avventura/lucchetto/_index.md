@@ -12,15 +12,12 @@ navigation-sub-hide: true
 
 ---
 
-[Scassinare](/azioni/scassinare-una-serratura) un lucchetto commerciale richiede
-due successi alle prove di [Furto](/abilita/furto) con CD 15.
+{{% include page="/equipaggiamento/lucchetto/commerciale" %}}
 
-{{% include page="/equipaggiamento/lucchetto/commerciale" template="subequipment" %}}
+{{% include page="/equipaggiamento/lucchetto/tattico" %}}
 
-{{% include page="/equipaggiamento/lucchetto/tattico" template="subequipment" %}}
+{{% include page="/equipaggiamento/lucchetto/avanzato" %}}
 
-{{% include page="/equipaggiamento/lucchetto/avanzato" template="subequipment" %}}
+{{% include page="/equipaggiamento/lucchetto/superiore" %}}
 
-{{% include page="/equipaggiamento/lucchetto/superiore" template="subequipment" %}}
-
-{{% include page="/equipaggiamento/lucchetto/d-elite" template="subequipment" %}}
+{{% include page="/equipaggiamento/lucchetto/d-elite" %}}

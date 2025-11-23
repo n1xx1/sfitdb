@@ -9,6 +9,8 @@ itemBase: kit-da-scalata
 
 **Prezzo** 5 crediti
 
+{{% subItemHide %}}
+
 **Mani** 2; **Volume** L
 
 ---
@@ -20,3 +22,5 @@ legarti alla parete che stai Scalando, muovendoti a metà della velocità normal
 volta che fallisci criticamente per evitare una caduta. Un singolo kit ha
 materiali sufficienti per un solo scalatore; ogni scalatore necessita del
 proprio kit.
+
+{{% /subItemHide %}}

@@ -10,9 +10,14 @@ subItemDesc: Un cavo tattico è rivestito in lega di titanio.
 
 **Prezzo** 2 crediti (10 metri)
 
+{{% subItemHide %}}
+
 **Volume** L
+
+{{% /subItemHide %}}
 
 ---
 
-Questo cavo industriale è solitamente fatto di plastica ad alta resistenza
-rivestita in metallo. Un cavo commerciale è rivestito in lega di titanio.
+{{% subItemHide %}}Questo cavo industriale è solitamente fatto di plastica ad
+alta resistenza rivestita in metallo.{{% /subItemHide %}} Un cavo commerciale è
+rivestito in lega di titanio.

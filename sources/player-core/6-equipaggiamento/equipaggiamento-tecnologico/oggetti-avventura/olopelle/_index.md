@@ -21,6 +21,6 @@ viene influenzato. Di solito è necessario un'olopelle per creare un
 travestimento al fine di [Impersonare](/azioni/impersonare) qualcuno usando
 l’abilità [Inganno](/abilita/inganno).
 
-{{% include page="/equipaggiamento/olopelle/commerciale" template="subequipment" %}}
+{{% include page="/equipaggiamento/olopelle/commerciale" %}}
 
-{{% include page="/equipaggiamento/olopelle/tattico" template="subequipment" %}}
+{{% include page="/equipaggiamento/olopelle/tattico" %}}

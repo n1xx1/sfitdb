@@ -9,6 +9,8 @@ itemBase: contenitore
 
 **Prezzo** 1 credito
 
+{{% subItemHide %}}
+
 **Volume** L
 
 ---
@@ -17,3 +19,5 @@ I contenitori includono zaini, ventiquattrore, borsoni e trolley. Un contenitore
 contiene fino a 4 Volumi e i primi 2 Volumi non contano contro i tuoi limiti di
 Volume. Se trasporti o riponi il contenitore invece di indossarlo, il suo Volume
 è leggero invece che trascurabile.
+
+{{% /subItemHide %}}

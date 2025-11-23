@@ -19,8 +19,8 @@ chimica ogni volta che viene utilizzato e usa un
 [serbatoio chimico](/equipaggiamento/serbatoio-chimico) dello stesso grado
 dell’estintore (commerciale, tattico o avanzato).
 
-{{% include page="/equipaggiamento/estintore/commerciale" template="subequipment" %}}
+{{% include page="/equipaggiamento/estintore/commerciale" %}}
 
-{{% include page="/equipaggiamento/estintore/tattico" template="subequipment" %}}
+{{% include page="/equipaggiamento/estintore/tattico" %}}
 
-{{% include page="/equipaggiamento/estintore/avanzato" template="subequipment" %}}
+{{% include page="/equipaggiamento/estintore/avanzato" %}}

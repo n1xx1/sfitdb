@@ -9,8 +9,12 @@ itemBase: occhiali-da-sole
 
 **Prezzo** 2 crediti
 
+{{% subItemHide %}}
+
 **Volume** L
 
 ---
 
 Gli occhiali da sole rendono tutti più fighi.
+
+{{% /subItemHide %}}

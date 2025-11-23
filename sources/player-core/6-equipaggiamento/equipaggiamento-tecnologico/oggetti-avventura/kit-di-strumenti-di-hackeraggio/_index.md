@@ -18,8 +18,8 @@ Puoi usare un kit di strumenti di hackeraggio per accedere a un computer senza
 utilizzare un’interfaccia utente, ma ciò richiede il contatto fisico con il
 computer oppure un contatto tramite l’infosfera o una rete collegata simile.
 
-{{% include page="/equipaggiamento/kit-di-strumenti-di-hackeraggio/commerciale" template="subequipment" %}}
+{{% include page="/equipaggiamento/kit-di-strumenti-di-hackeraggio/commerciale" %}}
 
-{{% include page="/equipaggiamento/kit-di-strumenti-di-hackeraggio/tattico" template="subequipment" %}}
+{{% include page="/equipaggiamento/kit-di-strumenti-di-hackeraggio/tattico" %}}
 
-{{% include page="/equipaggiamento/kit-di-strumenti-di-hackeraggio/avanzato" template="subequipment" %}}
+{{% include page="/equipaggiamento/kit-di-strumenti-di-hackeraggio/avanzato" %}}

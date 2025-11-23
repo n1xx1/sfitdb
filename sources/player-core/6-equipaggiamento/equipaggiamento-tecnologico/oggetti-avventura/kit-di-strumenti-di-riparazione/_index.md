@@ -19,6 +19,6 @@ oggetti usando l’abilità [Artigianato](/abilita/artigianato). Puoi estrarre e
 riporre un kit di strumenti di riparazione indossato come parte dell’azione che
 lo utilizza.
 
-{{% include page="/equipaggiamento/kit-di-strumenti-di-riparazione/commerciale" template="subequipment" %}}
+{{% include page="/equipaggiamento/kit-di-strumenti-di-riparazione/commerciale" %}}
 
-{{% include page="/equipaggiamento/kit-di-strumenti-di-riparazione/tattico" template="subequipment" %}}
+{{% include page="/equipaggiamento/kit-di-strumenti-di-riparazione/tattico" %}}

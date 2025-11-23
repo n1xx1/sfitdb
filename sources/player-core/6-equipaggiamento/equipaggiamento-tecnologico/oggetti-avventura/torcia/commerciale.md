@@ -10,9 +10,10 @@ itemBase: torcia
 
 **Prezzo** 1 credito
 
-**Mani** 1; **Volume** 1
+{{% subItemHide %}}**Mani** 1; {{% /subItemHide %}}**Volume** 1
 
 ---
 
-Una torcia emette luce intensa. Una torcia commerciale emette luce in
-un'emanazione di 9 metri (e luce fioca nei successivi 9 metri).
+{{% subItemHide %}}Una torcia emette luce intensa.{{% /subItemHide %}} Una
+torcia commerciale emette luce in un'emanazione di 9 metri (e luce fioca nei
+successivi 9 metri).

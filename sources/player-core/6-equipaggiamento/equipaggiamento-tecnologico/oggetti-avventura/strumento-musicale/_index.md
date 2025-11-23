@@ -21,10 +21,10 @@ maggiore. Gli strumenti pesanti, come drum deck e theremin, sono meno portatili
 e in genere devono restare fissi mentre vengono suonati. Alcuni strumenti
 possiedono il tratto [tecnologico](/tratti/tecnologico).
 
-{{% include page="/equipaggiamento/strumento-musicale/portatile-commerciale" template="subequipment" %}}
+{{% include page="/equipaggiamento/strumento-musicale/portatile-commerciale" %}}
 
-{{% include page="/equipaggiamento/strumento-musicale/portatile-tattico" template="subequipment" %}}
+{{% include page="/equipaggiamento/strumento-musicale/portatile-tattico" %}}
 
-{{% include page="/equipaggiamento/strumento-musicale/pesante-commerciale" template="subequipment" %}}
+{{% include page="/equipaggiamento/strumento-musicale/pesante-commerciale" %}}
 
-{{% include page="/equipaggiamento/strumento-musicale/pesante-tattico" template="subequipment" %}}
+{{% include page="/equipaggiamento/strumento-musicale/pesante-tattico" %}}

@@ -9,6 +9,8 @@ itemBase: kit-di-strumenti-di-riparazione
 
 **Prezzo** 20 crediti
 
+{{% subItemHide %}}
+
 **Mani** 2; **Volume** 1
 
 ---
@@ -19,3 +21,5 @@ Puoi usare un kit di strumenti di riparazione per [Riparare](/azioni/riprare)
 oggetti usando l’abilità [Artigianato](/abilita/artigianato). Puoi estrarre e
 riporre un kit di strumenti di riparazione indossato come parte dell’azione che
 lo utilizza.
+
+{{% /subItemHide %}}

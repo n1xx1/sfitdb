@@ -3,23 +3,25 @@ source: Player Core (Eng), pag. 241
 original-name: Repair Toolkit (Tattico)
 original-srd: https://2e.aonsrd.com/treasure/32-repair-toolkit
 itemBase: kit-di-strumenti-di-riparazione
-subItemDesc: >
-  Un kit di strumenti di riparazione tattico fornisce un bonus di oggetto +1
-  alla prova.
 ---
 
 # Kit di Strumenti di Riparazione Tattico - Oggetto 3
 
 **Prezzo** 250 crediti
 
+{{% subItemHide %}}
+
 **Mani** 2; **Volume** 1
+
+{{% /subItemHide %}}
 
 ---
 
-Un kit di strumenti di riparazione contiene una varietà di strumenti delicati e
-materiali che ti permettono di effettuare semplici riparazioni mentre viaggi.
-Puoi usare un kit di strumenti di riparazione per [Riparare](/azioni/riprare)
-oggetti usando l’abilità [Artigianato](/abilita/artigianato). Un kit di
-strumenti di riparazione tattico fornisce un bonus di oggetto +1 alla prova.
-Puoi estrarre e riporre un kit di strumenti di riparazione indossato come parte
-dell’azione che lo utilizza.
+{{% subItemHide %}}Un kit di strumenti di riparazione contiene una varietà di
+strumenti delicati e materiali che ti permettono di effettuare semplici
+riparazioni mentre viaggi. Puoi usare un kit di strumenti di riparazione per
+[Riparare](/azioni/riprare) oggetti usando l’abilità
+[Artigianato](/abilita/artigianato).{{% /subItemHide %}} Un kit di strumenti di
+riparazione tattico fornisce un bonus di oggetto +1 alla prova. Puoi estrarre e
+riporre un kit di strumenti di riparazione indossato come parte dell’azione che
+lo utilizza.

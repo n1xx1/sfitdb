@@ -12,9 +12,8 @@ navigation-sub-hide: true
 
 ---
 
-Una torcia emette luce intensa. Una torcia commerciale emette luce in
-un'emanazione di 9 metri (e luce fioca nei successivi 9 metri).
+Una torcia emette luce intensa.
 
-{{% include page="/equipaggiamento/torcia/commerciale" template="subequipment" %}}
+{{% include page="/equipaggiamento/torcia/commerciale" %}}
 
-{{% include page="/equipaggiamento/torcia/tattica" template="subequipment" %}}
+{{% include page="/equipaggiamento/torcia/tattica" %}}

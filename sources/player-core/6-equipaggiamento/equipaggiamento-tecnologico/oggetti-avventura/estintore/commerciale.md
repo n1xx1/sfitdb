@@ -10,6 +10,8 @@ itemBase: estintore
 
 **Prezzo** 40 crediti
 
+{{% subItemHide %}}
+
 **Mani** 1; **Volume** L
 
 ---
@@ -19,3 +21,5 @@ i fuochi non magici e tentando di contrastare qualsiasi effetto di fuoco magico
 di 2° grado con un modificatore di contrasto +7. Un estintore commerciale
 consuma una carica chimica ogni volta che viene utilizzato e usa un
 [serbatoio chimico commerciale](/equipaggiamento/serbatoio-chimico-commerciale).
+
+{{% /subItemHide %}}

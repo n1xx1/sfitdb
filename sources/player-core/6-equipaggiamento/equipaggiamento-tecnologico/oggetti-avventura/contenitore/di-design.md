@@ -13,13 +13,18 @@ subItemDesc: >
 
 **Prezzo** 100 credito
 
+{{% subItemHide %}}
+
 **Volume** L
+
+{{% /subItemHide %}}
 
 ---
 
-I contenitori includono zaini, ventiquattrore, borsoni e trolley. Un contenitore
-contiene fino a 4 Volumi e i primi 2 Volumi non contano contro i tuoi limiti di
-Volume. Se trasporti o riponi il contenitore invece di indossarlo, il suo Volume
-è leggero invece che trascurabile. Ottieni un bonus oggetto +1 alle prove per
+{{% subItemHide %}}I contenitori includono zaini, ventiquattrore, borsoni e
+trolley. Un contenitore contiene fino a 4 Volumi e i primi 2 Volumi non contano
+contro i tuoi limiti di Volume. Se trasporti o riponi il contenitore invece di
+indossarlo, il suo Volume è leggero invece che trascurabile.{{% /subItemHide %}}
+Ottieni un bonus oggetto +1 alle prove per
 [Impressionare](/azioni/impressionare) su individui dell’alta società mentre
 porti un contenitore di design, come una borsa firmata.

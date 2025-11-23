@@ -15,6 +15,6 @@ navigation-sub-hide: true
 Hai bisogno di un kit di strumenti da creatore per creare oggetti a partire da
 PBU usando l’abilità [Artigianato](/abilita/artigianato).
 
-{{% include page="/equipaggiamento/kit-di-strumenti-da-creatore/commerciale" template="subequipment" %}}
+{{% include page="/equipaggiamento/kit-di-strumenti-da-creatore/commerciale" %}}
 
-{{% include page="/equipaggiamento/kit-di-strumenti-da-creatore/tattico" template="subequipment" %}}
+{{% include page="/equipaggiamento/kit-di-strumenti-da-creatore/tattico" %}}

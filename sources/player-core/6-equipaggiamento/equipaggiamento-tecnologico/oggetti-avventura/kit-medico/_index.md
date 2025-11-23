@@ -19,6 +19,6 @@ necessari per le prove di [Medicina](/abilita/medicina) per
 [Curare Malattie](/azioni/curare-malattie) o
 [Curare Veleno](/azioni/curare-veleno).
 
-{{% include page="/equipaggiamento/kit-medico/commerciale" template="subequipment" %}}
+{{% include page="/equipaggiamento/kit-medico/commerciale" %}}
 
-{{% include page="/equipaggiamento/kit-medico/tattico" template="subequipment" %}}
+{{% include page="/equipaggiamento/kit-medico/tattico" %}}

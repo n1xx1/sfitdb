@@ -9,7 +9,9 @@ itemBase: strumento-musicale
 
 **Prezzo** 20 crediti
 
-**Mani** 2; **Volume** 16
+{{% subItemHide %}}**Mani** 2; {{% /subItemHide %}}**Volume** 16
+
+{{% subItemHide %}}
 
 ---
 
@@ -21,3 +23,5 @@ stabilire che uno strumento portatile particolarmente grande abbia un Volume
 maggiore. Gli strumenti pesanti, come drum deck e theremin, sono meno portatili
 e in genere devono restare fissi mentre vengono suonati. Alcuni strumenti
 possiedono il tratto [tecnologico](/tratti/tecnologico).
+
+{{% /subItemHide %}}

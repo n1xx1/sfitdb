@@ -10,6 +10,8 @@ itemBase: olopelle
 
 **Prezzo** 20 crediti
 
+{{% subItemHide %}}
+
 **Volume** L
 
 ---
@@ -22,3 +24,5 @@ voce, l’odore o le manierismi. L’aspetto degli oggetti tenuti o indossati no
 viene influenzato. Di solito è necessario un'olopelle per creare un
 travestimento al fine di [Impersonare](/azioni/impersonare) qualcuno usando
 l’abilità [Inganno](/abilita/inganno).
+
+{{% /subItemHide %}}

@@ -9,6 +9,8 @@ itemBase: kit-medico
 
 **Prezzo** 50 crediti
 
+{{% subItemHide %}}
+
 **Mani** 1 o 2; **Volume** 1
 
 ---
@@ -19,3 +21,5 @@ necessari per le prove di [Medicina](/abilita/medicina) per
 [Curare Ferite](/azioni/curare-ferite),
 [Curare Malattie](/azioni/curare-malattie) o
 [Curare Veleno](/azioni/curare-veleno).
+
+{{% /subItemHide %}}

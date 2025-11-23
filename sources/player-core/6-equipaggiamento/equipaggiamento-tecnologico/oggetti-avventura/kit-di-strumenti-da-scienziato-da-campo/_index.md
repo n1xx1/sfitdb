@@ -16,6 +16,6 @@ Un kit di strumenti da scienziato da campo contiene un
 [chemioanalizzatore](/equipaggiamento/chemioanalizzatore), un microscopio,
 strumenti di registrazione e sacchetti per campioni.
 
-{{% include page="/equipaggiamento/kit-di-strumenti-da-scienziato-da-campo/commerciale" template="subequipment" %}}
+{{% include page="/equipaggiamento/kit-di-strumenti-da-scienziato-da-campo/commerciale" %}}
 
-{{% include page="/equipaggiamento/kit-di-strumenti-da-scienziato-da-campo/tattico" template="subequipment" %}}
+{{% include page="/equipaggiamento/kit-di-strumenti-da-scienziato-da-campo/tattico" %}}

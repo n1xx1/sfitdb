@@ -13,11 +13,15 @@ subItemDesc: >
 
 **Prezzo** 2 crediti
 
+{{% subItemHide %}}
+
 **Volume** L
+
+{{% /subItemHide %}}
 
 ---
 
-Gli occhiali da sole rendono tutti più fighi. Ottieni un bonus di oggetto +1 ai
-tiri salvezza contro effetti che causano le condizioni
-[accecato](/condizioni/accecato) o [abbagliato](/condizioni/abbagliato) mentre
-indossi occhiali da sole tattici.
+{{% subItemHide %}}Gli occhiali da sole rendono tutti più
+fighi.{{% /subItemHide %}} Ottieni un bonus di oggetto +1 ai tiri salvezza
+contro effetti che causano le condizioni [accecato](/condizioni/accecato) o
+[abbagliato](/condizioni/abbagliato) mentre indossi occhiali da sole tattici.

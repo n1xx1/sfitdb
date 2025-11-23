@@ -14,6 +14,6 @@ navigation-sub-hide: true
 
 Gli occhiali da sole rendono tutti più fighi.
 
-{{% include page="/equipaggiamento/occhiali-da-sole/commerciale" template="subequipment" %}}
+{{% include page="/equipaggiamento/occhiali-da-sole/commerciale" %}}
 
-{{% include page="/equipaggiamento/occhiali-da-sole/tattico" template="subequipment" %}}
+{{% include page="/equipaggiamento/occhiali-da-sole/tattico" %}}

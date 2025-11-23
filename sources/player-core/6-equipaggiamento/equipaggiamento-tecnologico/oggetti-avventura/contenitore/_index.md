@@ -17,6 +17,6 @@ contiene fino a 4 Volumi e i primi 2 Volumi non contano contro i tuoi limiti di
 Volume. Se trasporti o riponi il contenitore invece di indossarlo, il suo Volume
 è leggero invece che trascurabile.
 
-{{% include page="/equipaggiamento/contenitore/ordinario" template="subequipment" %}}
+{{% include page="/equipaggiamento/contenitore/ordinario" %}}
 
-{{% include page="/equipaggiamento/contenitore/di-design" template="subequipment" %}}
+{{% include page="/equipaggiamento/contenitore/di-design" %}}
