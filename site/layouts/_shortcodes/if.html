@@ -1,0 +1,23 @@
+{{- $what := strings.Split (.Get 0) "." -}}
+{{- $whatFirst := index $what 0 -}}
+{{- $whatRest := last (sub (len $what) 1) $what -}}
+{{- $eq := .Get 1 }}
+{{- $value := default nil nil -}}
+
+{{- if eq $whatFirst "type" -}}
+  {{- $value = cond (hasPrefix .Page.Type "pf") (.Page.Type | replaceRE "^pf" "") "rule" -}}
+{{- else if eq $whatFirst "params" -}}
+  {{- $value = .Page.Params -}}
+{{- end -}}
+
+{{- if $whatRest -}}
+  {{- $value = index $value $whatRest -}}
+{{- end -}}
+
+{{- if $eq -}}
+  {{- if eq $value $eq -}}
+    {{- .InnerDeindent -}}
+  {{- end -}}
+{{- else if $value -}}
+  {{- .InnerDeindent -}}
+{{- end -}}

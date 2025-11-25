@@ -1,0 +1,7 @@
+{{ $what := strings.Split (.what) "." }}
+{{ $format := .format }}
+{{ $value := index .page.Params $what }}
+{{ if eq $format "number" }}
+  {{ $value = $value | lang.FormatNumber 0 }}
+{{ end }}
+{{ return $value }}
