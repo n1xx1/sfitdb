@@ -5,7 +5,7 @@
 >
   {{- partial "layout/head" . -}}
   <body>
-    {{- partial "layout/navbar" . -}}
+    {{- partialCached "layout/navbar" . "global" -}}
     {{- template "main" . -}}
   </body>
 </html>

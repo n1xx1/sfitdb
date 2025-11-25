@@ -2,7 +2,7 @@
 {{- if . -}}
   <div class="flex flex-wrap gap-2">
     {{- $traits := partialCached "pf/getTraitsData" . . -}}
-    {{- range $traits -}}
+    {{- range sort $traits "name" "asc" -}}
       {{- $url := .url | default (printf "/pagina-mancante#/tratti/%s" .id) -}}
       <a
         href="{{ $url | safeURL }}"

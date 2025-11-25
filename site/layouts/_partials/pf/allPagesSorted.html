@@ -6,17 +6,40 @@
   {{ if eq (len $stack) 0 }}
     {{ break }}
   {{ end }}
-  {{ $cur := index (last 1 $stack) 0 }}
+  {{ $cur := index $stack (sub (len $stack) 1) }}
   {{ $stack = first (sub (len $stack) 1) $stack }}
 
   {{ if not (or (index $cur.Params "navigation-hide") (and $cur.Parent (index $cur.Parent.Params "navigation-sub-hide"))) }}
     {{ $result = $result | append $cur }}
   {{ end }}
 
-  {{ $pages := partialCached "pf/getPages" (merge (dict "section" $cur) $opts) $cur $opts }}
+  {{ $pages := partial "pf/allPagesSorted/getPages" $cur }}
   {{ if gt (len $pages) 0 }}
     {{ $stack = $stack | append (collections.Reverse $pages) }}
   {{ end }}
 {{ end }}
 
 {{ return $result }}
+
+{{ define "partials/pf/allPagesSorted/getPages" }}
+  {{ $pages := .Pages }}
+
+  {{ $pagesFiltered := slice }}
+  {{ range $pages }}
+    {{ $title := partialCached "utils/title" . .Path }}
+    {{ if not $title.name }}
+      {{ continue }}
+    {{ end }}
+    {{ $navigation := index .Params "navigation-order" | default 0 | int }}
+    {{ $sorter := printf "%04d__%s" $navigation $title.name }}
+    {{ $el := dict "page" . "sorter" $sorter }}
+    {{ $pagesFiltered = $pagesFiltered | append $el }}
+  {{ end }}
+
+  {{ $returned := slice }}
+  {{ range sort $pagesFiltered "sorter" "asc" }}
+    {{ $returned = $returned | append .page }}
+  {{ end }}
+
+  {{ return $returned }}
+{{ end }}
