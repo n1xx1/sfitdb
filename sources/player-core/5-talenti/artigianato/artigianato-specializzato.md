@@ -20,7 +20,7 @@ sei maestro in Artigianato, il bonus aumenta a +2. Se la possibilità di
 applicare la specialità è incerta, sarà il GM a decidere. Alcune
 specializzazioni potrebbero essere applicabili solo in parte. Per esempio, se
 stai costruendo un
-[vestito da viaggio AbadarCorp](/equipaggiamento/vestito-da-viaggio-abadarcorp)
+[vestito da viaggio Abadarcorp](/equipaggiamento/vestito-da-viaggio-abadarcorp)
 e sei specializzato in tessuti, il GM potrebbe conferire metà del bonus, in
 quanto la fabbricazione dell'oggetto richiede sia lavorazione armature che la
 tessuti.

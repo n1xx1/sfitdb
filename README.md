@@ -415,34 +415,45 @@
 
 | en                        | it                                      | da    | note |
 | ------------------------- | --------------------------------------- | ----- | ---- |
-| Abadarcorp Travel Suit    | Vestito da Viaggio AbadarCorp           | gu sf |      |
+| Abadarcorp Travel Suit    | Vestito da Viaggio Abadarcorp           | gu sf |      |
+| Aegis Series              | Serie Egida                             | gu sf |      |
+| Armored Coat              | Cappotto Corazzato                      | us    |      |
 | Aucturnite                | Aucturnite                              | us    |      |
 |                           |                                         |       |      |
 | Battleglove               | Guanto da Battaglia                     | gu sf |      |
 | Breaching Gun             | Fucile da Breccia                       | gu sf |      |
 |                           |                                         |       |      |
 | Cable Line                | Cavo                                    | gu sf |      |
+| Carbon Skin               | Pelle di Carbonio                       | gu sf |      |
 | Chemalyzer                | Chemioanalizzatore                      | gu sf |      |
 | Comm Unit                 | Unità di Comunicazione                  | gu sf |      |
 | Compact Shield            | Scudo Compatto                          | us    | ???? |
 | Crossbolter               | Fucile Balestra                         | gu sf |      |
 |                           |                                         |       |      |
 | Datapad                   | Datapad                                 | gu sf |      |
+| Defrex Hide               | Pelle di Defrex                         | gu sf |      |
 | Defiance Series           | Serie Sprezzo                           | gu sf |      |
 | Doshko                    | Doshko                                  | gu sf |      |
 | Dueling Sword             | Spada da Duello                         | us    |      |
 |                           |                                         |       |      |
+| Estex Suit                | Tuta di Estex                           | gu sf |      |
+|                           |                                         |       |      |
+| Fangblade                 | Lama-Zanna                              | gu sf |      |
 | Field Scientist’s Toolkit | Kit di Strumenti da Scienziato da Campo |       |      |
 | Flaming Module            | Modulo Infuocato                        | us    | ???? |
-| Fangblade                 | Lama-Zanna                              | gu sf |      |
 | Flight Suit               | Tuta da Volo                            | gu sf |      |
+| Freebooter Armor          | Armatura da Corsaro                     | gu sf |      |
 |                           |                                         |       |      |
 | Ghost Killer              | Sterminaspettri                         | gu sf |      |
 |                           |                                         |       |      |
 | Hacking Toolkit           | Kit di Strumenti di Hackeraggio         | us    |      |
+| Hardlight Series          | Serie Luce Solida                       | us    |      |
+| Hidden Soldier Armor      | Armatura del Soldato Nascosto           | gu sf |      |
 | Holoskin                  | Olopelle                                | gu sf |      |
 |                           |                                         |       |      |
 | Infiltrator’s Toolkit     | Kit di Strumenti da Infiltrato          | us    |      |
+|                           |                                         |       |      |
+| Kyokor Plating            | Piastre Kyokor                          | gu sf |      |
 |                           |                                         |       |      |
 | Laser Rifle               | Fucile Laser                            | gu sf |      |
 |                           |                                         |       |      |
@@ -451,19 +462,31 @@
 | Maker's Toolkit           | Kit di Strumenti da Creatore            | us    | ???? |
 | Medkit                    | Kit Medico                              | gu pf |      |
 | Medpatch                  | Cerotto Medico                          | gu sf |      |
+| Microcord Armor           | Armatura in Microtessuto                | us    |      |
 |                           |                                         |       |      |
+| Quilted Armor             | Armatura Trapuntata                     | us    |      |
+|                           |                                         |       |      |
+| Second Skin               | Seconda Pelle                           | gu sf |      |
 | Seeker Rifle              | Fucile a Ricerca                        | gu sf |      |
 | Semi-Auto Pistol          | Pistola Semiautomatica                  | us    |      |
 | Shock Truncheon           | Manganello Elettrico                    | gu sf |      |
+| Shotalashu Armor          | Armatura Shotalashu                     | gu sf |      |
 | Singing Coil              | Bobina Corale                           | us    |      |
 | Singing Spear             | Lancia Corale                           | gu sf |      |
+| Skyfire Armor             | Armatura Fuoco Celeste                  | gu sf |      |
 | Spell Gem                 | Gemma dell'Incantesimo                  | gu sf |      |
+| Swarmsuit                 | Tuta dello Sciame                       | gu sf |      |
 |                           |                                         |       |      |
 | Painglaive                | Dolorfalcione                           | us    | ???? |
 | Plasma Doshko             | Doshko Plasma                           | gu sf |      |
 | Plasma Sword              | Spada Plasma                            | gu sf |      |
 |                           |                                         |       |      |
 | Retinal Reflectors        | Riflettori Retinali                     | gu sf |      |
+|                           |                                         |       |      |
+| Tempweave                 | Tessuto Termico                         | gu sf |      |
+| Thinplate                 | Piastra Sottile                         | gu sf |      |
+|                           |                                         |       |      |
+| Veskarium Imperial Plate  | Armatura Veskariana Imperiale           | us    |      |
 |                           |                                         |       |      |
 | Uniclamp                  | Moschettone Universale                  | gu sf |      |
 
