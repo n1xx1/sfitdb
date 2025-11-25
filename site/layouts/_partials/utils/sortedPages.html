@@ -8,7 +8,10 @@
     {{- continue -}}
   {{- end -}}
   {{- $order := add (.Param "navigation-order" | default 0) 50000 -}}
-  {{- $level := add ($title.level | default 0) 500 -}}
+  {{- $level := 0 -}}
+  {{- if findRE `^\d+$` $title.level -}}
+    {{- $level = add $title.level 500 -}}
+  {{- end -}}
   {{- $weight := printf "%05d__%03d__%s" $order $level $title.name -}}
   {{- $pages = $pages | append (dict "page" . "weight" $weight) -}}
 {{- end -}}

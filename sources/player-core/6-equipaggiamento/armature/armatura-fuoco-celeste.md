@@ -10,7 +10,7 @@ itemCategories: [base-armor]
 
 **Categoria** Media; **Prezzo** 60 crediti
 
-**Bonus CA** +3; **Des Massimo** +2; **Pen. Prove** —2; **Pen. Velocità** —1,5
+**Bonus CA** +3; **Des Massimo** +2; **Pen. Prove** -2; **Pen. Velocità** -1,5
 m.
 
 **Forza** +1; **Volume** 1; **Migliorie** 0

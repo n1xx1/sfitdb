@@ -40,6 +40,10 @@
 {{ $addedResources := collections.NewScratch }}
 
 {{ range resources.Match "sources/**/*.md" }}
+  {{ if strings.Contains .String "~" }}
+    {{ continue }}
+  {{ end }}
+
   {{ $path := .String | replaceRE `(\.md$|/_index\.md$)` "" | replaceRE `^/sources/` "regole/" }}
   {{ $book := index (index (findRESubmatch `^regole/([a-z\-]+)/` $path 1) 0) 1 }}
 
@@ -52,7 +56,7 @@
     | replaceRE `\|\r?\n(\r?\n)\{` `|$1{`
   }}
 
-  {{ $frontmatter := transform.Unmarshal (dict "format" "yaml") $rawFrontmatter }}
+  {{ $frontmatter := transform.Unmarshal (dict "format" "yaml" "targetType" (print math.Counter)) $rawFrontmatter }}
 
   {{ $config := (partialCached "config" "") }}
   {{ $editURL := printf "%s/blob/%s" $config.repoURL $config.repoBranch }}
@@ -142,18 +146,59 @@
 
 {{ range $k, $v := $addedResources.Values }}
   {{ with index $v 0 }}
-    {{ $content := .content }}
+    {{ $thisPage := . }}
 
     {{ partial "contentAdapter/addPage" (dict
       "context" $
       "addedPages" $addedPages
-      "content" $content
+      "content" $thisPage.content
       "kind" .kind
       "type" (print "pf" .type)
-      "path" .path
-      "params" .params
+      "path" $thisPage.path
+      "params" $thisPage.params
       )
     }}
+
+    {{ if .params.subItems }}
+      {{ range $subSlug, $overrides := .params.subItems }}
+        {{ $base := replaceRE `^.*/([a-z\-]+)$` "$1" $thisPage.path }}
+        {{ $subPagePath := path.Join $thisPage.path $subSlug }}
+        {{ $newName := $overrides.name }}
+        {{ $newParams := merge (partial "utils/clone" $thisPage.params) (dict "subItems" nil "itemBase" $base "title" $newName) }}
+
+        {{ if $overrides.params }}
+          {{ range $id, $override := $overrides.params }}
+            {{ if $override.set }}
+              {{ partial "utils/modifyDict" (dict "dict" $newParams "action" "set"
+                "key" $id "value" $override.set) }}
+            {{ else if $override.add }}
+              {{ $val := partial "utils/modifyDict" (dict "dict" $newParams "action" "get"
+                "key" $id) }}
+              {{ $val = add $val $override.add }}
+              {{ partial "utils/modifyDict" (dict "dict" $newParams "action" "set"
+                "key" $id "value" $val) }}
+            {{ else if $override.append }}
+              {{ $val := partial "utils/modifyDict" (dict "dict" $newParams "action" "get"
+                "key" $id) }}
+              {{ $val = append $override.append $val }}
+              {{ partial "utils/modifyDict" (dict "dict" $newParams "action" "set"
+                "key" $id "value" $val) }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+
+        {{ partial "contentAdapter/addPage" (dict
+          "context" $
+          "addedPages" $addedPages
+          "content" $thisPage.content
+          "kind" "section"
+          "type" "pfsubequipment"
+          "path" $subPagePath
+          "params" $newParams
+          )
+        }}
+      {{ end }}
+    {{ end }}
 
     {{ if eq .type "class" }}
       {{ $featsPagePath := path.Join .original.path "talenti" }}

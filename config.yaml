@@ -1,6 +1,12 @@
 baseURL: http://sfitdb.n1xx1.me/
-languageCode: it-it
+languageCode: it-IT
 title: Starfinder Italian Database
+languages:
+  it:
+    languageCode: it-IT
+    languageDirection: ltr
+    languageName: Italian
+    weight: 1
 menus:
   main: []
   sidebar:

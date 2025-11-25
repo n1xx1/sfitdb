@@ -10,7 +10,7 @@ itemCategories: [base-armor]
 
 **Categoria** Leggera; **Prezzo** 20 crediti
 
-**Bonus CA** +2; **Des Massimo** +2; **Pen. Prove** —1; **Pen. Velocità** —
+**Bonus CA** +2; **Des Massimo** +2; **Pen. Prove** -1; **Pen. Velocità** —
 
 **Forza** +2; **Volume** 1; **Migliorie** 1
 

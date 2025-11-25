@@ -2,6 +2,10 @@
 {{ $format := .format }}
 {{ $value := index .page.Params $what }}
 {{ if eq $format "number" }}
-  {{ $value = $value | lang.FormatNumber 0 }}
+  {{ $default := cond (eq .default nil) 0 .default }}
+  {{ $value = cond (eq $value nil) $default $value | lang.FormatNumber 0 }}
+{{ else }}
+  {{ $default := cond (eq .default nil) "" .default }}
+  {{ $value = cond (eq $value nil) $default $value }}
 {{ end }}
 {{ return $value }}

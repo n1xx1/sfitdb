@@ -10,7 +10,7 @@ itemCategories: [base-armor]
 
 **Categoria** Pesante; **Prezzo** 200 crediti
 
-**Bonus CA** +5; **Des Massimo** +1; **Pen. Prove** —3; **Pen. Velocità** —3 m.
+**Bonus CA** +5; **Des Massimo** +1; **Pen. Prove** -3; **Pen. Velocità** -3 m.
 
 **Forza** +3; **Volume** 3; **Migliorie** 1
 

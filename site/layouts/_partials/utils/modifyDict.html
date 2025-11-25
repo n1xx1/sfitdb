@@ -1,0 +1,40 @@
+{{ $dict := default nil nil }}
+{{ $action := default nil nil }}
+{{ $key := default nil nil }}
+{{ $value := default nil nil }}
+{{ if reflect.IsSlice . }}
+  {{ $dict = index . 0 }}
+  {{ $action = index . 1 }}
+  {{ $key = index . 2 }}
+  {{ $value = index . 3 }}
+{{ else }}
+  {{ $dict = .dict }}
+  {{ $action = .action }}
+  {{ $key = .key }}
+  {{ $value = .value }}
+{{ end }}
+
+{{ $ret := $dict }}
+
+{{ if strings.Contains $key "." }}
+  {{ $keyParts := strings.Split $key "." }}
+  {{ range seq 0 (sub (len $keyParts) 2) }}
+    {{ $dict = index $dict (index $keyParts .) }}
+  {{ end }}
+  {{ $key = index $keyParts (sub (len $keyParts) 1) }}
+{{ end }}
+
+{{ if eq $action "set" }}
+  {{ $s := collections.NewScratch }}
+  {{ $s.Set "value" $dict }}
+  {{ $s.SetInMap "value" $key $value }}
+{{ else if eq $action "del" }}
+  {{ $s := collections.NewScratch }}
+  {{ $s.Set "value" $dict }}
+  {{ $s.DeleteInMap "value" $key }}
+{{ else if eq $action "get" }}
+  {{ $ret = index $dict $key }}
+{{ else }}
+  {{ errorf "modifyDict: invalid action %q" $action }}
+{{ end }}
+{{ return $ret }}

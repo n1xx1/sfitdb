@@ -1,0 +1,22 @@
+{{ $value := . }}
+{{ if reflect.IsMap $value }}
+  {{ $value = merge . dict }}
+  {{ range $k, $v := $value }}
+    {{ if or (reflect.IsMap $v) (reflect.IsSlice $v) }}
+      {{ $newVal := partial "utils/clone" $v }}
+      {{ $s := collections.NewScratch }}
+      {{ $s.Set "value" $value }}
+      {{ $s.SetInMap "value" $k $newVal }}
+    {{ end }}
+  {{ end }}
+{{ else if reflect.IsSlice $value }}
+  {{ $newValue := slice }}
+  {{ range $value }}
+    {{ $newValueElement := . }}
+    {{ if or (reflect.IsMap .) (reflect.IsSlice .) }}
+      {{ $newValueElement = partial "utils/clone" . }}
+    {{ end }}
+    {{ $newValue = $newValue | append $newValueElement }}
+  {{ end }}
+{{ end }}
+{{ return $value }}

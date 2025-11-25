@@ -17,6 +17,7 @@
 {{- $isTitle := or .Attributes.title (eq $index 0) -}}
 {{- $isStatblock := partialCached "pf/isStatblock" .PageInner.Type .PageInner.Type -}}
 {{- $isInnerStatblock := eq .PageInner.Type "pfmonster" -}}
+{{- $isLink := and $isTitle $included -}}
 
 {{- $originalLevel := .Attributes.level | default .Level | int -}}
 
@@ -56,12 +57,12 @@
 <h{{ .Level }} class="{{ $class }}">
   <span class="absolute -mt-20" id="{{ $anchor }}"></span>
   <span class="flex items-center flex-1">
-    {{- if and $isTitle $included -}}
+    {{- if $isLink -}}
       {{- $url := .PageInner.Params.canonicalURL | default .PageInner.RelPermalink | replaceRE "/$" "" -}}
       <a href="{{ $url }}" class="no-underline hover:underline{{ if not $sbHeading }} font-[weight:inherit]!{{ end }}">
     {{- end -}}
     <span>{{- (index $text 0) | safeHTML -}}</span>
-    {{- if eq .Level 1 -}}
+    {{- if $isLink -}}
       </a>
     {{- end -}}
     <a href="#{{ $anchor }}" class="not-prose heading-anchor"></a>
