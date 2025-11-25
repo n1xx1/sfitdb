@@ -24,8 +24,13 @@
 {{- end -}}
 
 {{- $level := (default nil nil) -}}
-{{- if $levelText -}}
+{{- if .overrideLevel -}}
+  {{- $level = .overrideLevel -}}
+{{- else if $levelText -}}
   {{- $level = int $levelText -}}
+{{- end -}}
+
+{{- if $level -}}
   {{- if $type -}}
     {{- $typeWithLevel = printf "%s %d" $type $level -}}
   {{- else -}}
