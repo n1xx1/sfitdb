@@ -1,7 +1,7 @@
 {{ $result := slice }}
 {{ range . }}
   {{ $trait := . }}
-  {{ $traitNameParts := split (replace $trait " " "-" | replaceRE `^(.*?)(?:-(\d+))?$` "$1;$2") ";" }}
+  {{ $traitNameParts := split (replace $trait " " "-" | replaceRE `^(.*?)(?:-(\+?\d+))?$` "$1;$2") ";" }}
   {{ $traitName := index $traitNameParts 0 }}
   {{ $number := index $traitNameParts 1 }}
 
@@ -51,7 +51,7 @@
     {{ $entry = $entry | merge (dict "url" $url) }}
   {{ end }}
   {{ if $number }}
-    {{ $entry = $entry | merge (dict "number" ($number | int)) }}
+    {{ $entry = $entry | merge (dict "number" $number) }}
   {{ end }}
   {{ if $isSize }}
     {{ $entry = $entry | merge (dict "size" true) }}
