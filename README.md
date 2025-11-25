@@ -451,6 +451,7 @@
 | Hidden Soldier Armor      | Armatura del Soldato Nascosto           | gu sf |      |
 | Holoskin                  | Olopelle                                | gu sf |      |
 |                           |                                         |       |      |
+| Irising Shield            | Scudo dell'Iride                        | gu sf |      |
 | Infiltrator’s Toolkit     | Kit di Strumenti da Infiltrato          | us    |      |
 |                           |                                         |       |      |
 | Kyokor Plating            | Piastre Kyokor                          | gu sf |      |
@@ -478,10 +479,12 @@
 | Swarmsuit                 | Tuta dello Sciame                       | gu sf |      |
 |                           |                                         |       |      |
 | Painglaive                | Dolorfalcione                           | us    | ???? |
+| Phase Shield              | Scudo Fasico                            | gu sf |      |
 | Plasma Doshko             | Doshko Plasma                           | gu sf |      |
 | Plasma Sword              | Spada Plasma                            | gu sf |      |
 |                           |                                         |       |      |
 | Retinal Reflectors        | Riflettori Retinali                     | gu sf |      |
+| Riot Sield                | Scudo Antisommossa                      | gu sf |      |
 |                           |                                         |       |      |
 | Tempweave                 | Tessuto Termico                         | gu sf |      |
 | Thinplate                 | Piastra Sottile                         | gu sf |      |

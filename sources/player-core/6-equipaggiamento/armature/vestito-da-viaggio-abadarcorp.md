@@ -27,11 +27,11 @@ un’etichetta di design.
 | Grado                                        | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
 | -------------------------------------------- | ------- | -------------------- | --------------- | --------- | -------- | ---------- |
 | Vestito Da Viaggio Abadarcorp Commerciale    | 0       | —                    | 10 crediti      | 2         | +1       | —          |
-| Vestito Da Viaggio Abadarcorp Tattica        | 5       | +1.600 crediti       | 1.600 crediti   | 3         | +2       | —          |
-| Vestito Da Viaggio Abadarcorp Avanzata       | 8       | +3.400 crediti       | 5.000 crediti   | 3         | +2       | +1         |
-| Vestito Da Viaggio Abadarcorp Superiore      | 11      | +9.000 crediti       | 14.000 crediti  | 4         | +3       | +1         |
-| Vestito Da Viaggio Abadarcorp D'Élite        | 14      | +31.000 crediti      | 45.000 crediti  | 4         | +3       | +2         |
-| Vestito Da Viaggio Abadarcorp Definitiva     | 18      | +195.000 crediti     | 240.000 crediti | 5         | +4       | +2         |
-| Vestito Da Viaggio Abadarcorp Ineguagliabile | 20      | +460.000 crediti     | 700.000 crediti | 5         | +4       | +3         |
+| Vestito Da Viaggio Abadarcorp Tattica        | 5       | +1.600 crediti       | 1.610 crediti   | 3         | +2       | —          |
+| Vestito Da Viaggio Abadarcorp Avanzata       | 8       | +3.400 crediti       | 5.010 crediti   | 3         | +2       | +1         |
+| Vestito Da Viaggio Abadarcorp Superiore      | 11      | +9.000 crediti       | 14.010 crediti  | 4         | +3       | +1         |
+| Vestito Da Viaggio Abadarcorp D'Élite        | 14      | +31.000 crediti      | 45.010 crediti  | 4         | +3       | +2         |
+| Vestito Da Viaggio Abadarcorp Definitiva     | 18      | +195.000 crediti     | 240.010 crediti | 5         | +4       | +2         |
+| Vestito Da Viaggio Abadarcorp Ineguagliabile | 20      | +460.000 crediti     | 700.010 crediti | 5         | +4       | +3         |
 
 `{caption="Potenziamenti"}`

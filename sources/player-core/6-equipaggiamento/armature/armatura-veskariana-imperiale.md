@@ -25,11 +25,11 @@ sono elementi standard di questa armatura.
 | Grado                                        | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
 | -------------------------------------------- | ------- | -------------------- | --------------- | --------- | -------- | ---------- |
 | Armatura Veskariana Imperiale Commerciale    | 0       | —                    | 325 crediti     | 1         | +6       | —          |
-| Armatura Veskariana Imperiale Tattica        | 5       | +1.600 crediti       | 1.600 crediti   | 2         | +7       | —          |
-| Armatura Veskariana Imperiale Avanzata       | 8       | +3.400 crediti       | 5.000 crediti   | 2         | +7       | +1         |
-| Armatura Veskariana Imperiale Superiore      | 11      | +9.000 crediti       | 14.000 crediti  | 3         | +8       | +1         |
-| Armatura Veskariana Imperiale D'Élite        | 14      | +31.000 crediti      | 45.000 crediti  | 3         | +8       | +2         |
-| Armatura Veskariana Imperiale Definitiva     | 18      | +195.000 crediti     | 240.000 crediti | 4         | +9       | +2         |
-| Armatura Veskariana Imperiale Ineguagliabile | 20      | +460.000 crediti     | 700.000 crediti | 4         | +9       | +3         |
+| Armatura Veskariana Imperiale Tattica        | 5       | +1.600 crediti       | 1.925 crediti   | 2         | +7       | —          |
+| Armatura Veskariana Imperiale Avanzata       | 8       | +3.400 crediti       | 5.325 crediti   | 2         | +7       | +1         |
+| Armatura Veskariana Imperiale Superiore      | 11      | +9.000 crediti       | 14.325 crediti  | 3         | +8       | +1         |
+| Armatura Veskariana Imperiale D'Élite        | 14      | +31.000 crediti      | 45.325 crediti  | 3         | +8       | +2         |
+| Armatura Veskariana Imperiale Definitiva     | 18      | +195.000 crediti     | 240.325 crediti | 4         | +9       | +2         |
+| Armatura Veskariana Imperiale Ineguagliabile | 20      | +460.000 crediti     | 700.325 crediti | 4         | +9       | +3         |
 
 `{caption="Potenziamenti"}`

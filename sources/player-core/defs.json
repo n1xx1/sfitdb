@@ -33,6 +33,9 @@
   "trait": ["glossario-e-indice/tratti/*"],
   "skill": ["4-abilita/abilita/*"],
   "planet": ["1-introduzione/esplorare-la-galassia/pianeti/*"],
-  "equipment": ["6-equipaggiamento/*/oggetti-*/*"],
+  "equipment": [
+    "6-equipaggiamento/*/oggetti-*/*",
+    "6-equipaggiamento/armature/*"
+  ],
   "subequipment": ["6-equipaggiamento/*/oggetti-*/*/*"]
 }

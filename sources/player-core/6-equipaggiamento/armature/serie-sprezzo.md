@@ -24,11 +24,11 @@ con elmo e visiera retrattile.
 | Grado                        | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
 | ---------------------------- | ------- | -------------------- | --------------- | --------- | -------- | ---------- |
 | Serie Sprezzo Commerciale    | 0       | —                    | 200 crediti     | 1         | +5       | —          |
-| Serie Sprezzo Tattica        | 5       | +1.600 crediti       | 1.600 crediti   | 2         | +6       | —          |
-| Serie Sprezzo Avanzata       | 8       | +3.400 crediti       | 5.000 crediti   | 2         | +6       | +1         |
-| Serie Sprezzo Superiore      | 11      | +9.000 crediti       | 14.000 crediti  | 3         | +7       | +1         |
-| Serie Sprezzo D'Élite        | 14      | +31.000 crediti      | 45.000 crediti  | 3         | +7       | +2         |
-| Serie Sprezzo Definitiva     | 18      | +195.000 crediti     | 240.000 crediti | 4         | +8       | +2         |
-| Serie Sprezzo Ineguagliabile | 20      | +460.000 crediti     | 700.000 crediti | 4         | +8       | +3         |
+| Serie Sprezzo Tattica        | 5       | +1.600 crediti       | 1.800 crediti   | 2         | +6       | —          |
+| Serie Sprezzo Avanzata       | 8       | +3.400 crediti       | 5.200 crediti   | 2         | +6       | +1         |
+| Serie Sprezzo Superiore      | 11      | +9.000 crediti       | 14.200 crediti  | 3         | +7       | +1         |
+| Serie Sprezzo D'Élite        | 14      | +31.000 crediti      | 45.200 crediti  | 3         | +7       | +2         |
+| Serie Sprezzo Definitiva     | 18      | +195.000 crediti     | 240.200 crediti | 4         | +8       | +2         |
+| Serie Sprezzo Ineguagliabile | 20      | +460.000 crediti     | 700.200 crediti | 4         | +8       | +3         |
 
 `{caption="Potenziamenti"}`

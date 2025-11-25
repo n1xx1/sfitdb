@@ -27,11 +27,11 @@ un’armatura egida è scomodo, ma potente.
 | Grado                      | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
 | -------------------------- | ------- | -------------------- | --------------- | --------- | -------- | ---------- |
 | Serie Egida Commerciale    | 0       | —                    | 300 crediti     | 0         | +6       | —          |
-| Serie Egida Tattica        | 5       | +1.600 crediti       | 1.600 crediti   | 1         | +7       | —          |
-| Serie Egida Avanzata       | 8       | +3.400 crediti       | 5.000 crediti   | 1         | +7       | +1         |
-| Serie Egida Superiore      | 11      | +9.000 crediti       | 14.000 crediti  | 2         | +8       | +1         |
-| Serie Egida D'Élite        | 14      | +31.000 crediti      | 45.000 crediti  | 2         | +8       | +2         |
-| Serie Egida Definitiva     | 18      | +195.000 crediti     | 240.000 crediti | 3         | +9       | +2         |
-| Serie Egida Ineguagliabile | 20      | +460.000 crediti     | 700.000 crediti | 3         | +9       | +3         |
+| Serie Egida Tattica        | 5       | +1.600 crediti       | 1.900 crediti   | 1         | +7       | —          |
+| Serie Egida Avanzata       | 8       | +3.400 crediti       | 5.300 crediti   | 1         | +7       | +1         |
+| Serie Egida Superiore      | 11      | +9.000 crediti       | 14.300 crediti  | 2         | +8       | +1         |
+| Serie Egida D'Élite        | 14      | +31.000 crediti      | 45.300 crediti  | 2         | +8       | +2         |
+| Serie Egida Definitiva     | 18      | +195.000 crediti     | 240.300 crediti | 3         | +9       | +2         |
+| Serie Egida Ineguagliabile | 20      | +460.000 crediti     | 700.300 crediti | 3         | +9       | +3         |
 
 `{caption="Potenziamenti"}`

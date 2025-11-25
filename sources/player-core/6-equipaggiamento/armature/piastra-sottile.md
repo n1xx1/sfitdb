@@ -25,11 +25,11 @@ indossata sotto abiti larghi.
 | Grado                          | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
 | ------------------------------ | ------- | -------------------- | --------------- | --------- | -------- | ---------- |
 | Piastra Sottile Commerciale    | 0       | —                    | 275 crediti     | 1         | +5       | —          |
-| Piastra Sottile Tattica        | 5       | +1.600 crediti       | 1.600 crediti   | 2         | +6       | —          |
-| Piastra Sottile Avanzata       | 8       | +3.400 crediti       | 5.000 crediti   | 2         | +6       | +1         |
-| Piastra Sottile Superiore      | 11      | +9.000 crediti       | 14.000 crediti  | 3         | +7       | +1         |
-| Piastra Sottile D'Élite        | 14      | +31.000 crediti      | 45.000 crediti  | 3         | +7       | +2         |
-| Piastra Sottile Definitiva     | 18      | +195.000 crediti     | 240.000 crediti | 4         | +8       | +2         |
-| Piastra Sottile Ineguagliabile | 20      | +460.000 crediti     | 700.000 crediti | 4         | +8       | +3         |
+| Piastra Sottile Tattica        | 5       | +1.600 crediti       | 1.875 crediti   | 2         | +6       | —          |
+| Piastra Sottile Avanzata       | 8       | +3.400 crediti       | 5.275 crediti   | 2         | +6       | +1         |
+| Piastra Sottile Superiore      | 11      | +9.000 crediti       | 14.275 crediti  | 3         | +7       | +1         |
+| Piastra Sottile D'Élite        | 14      | +31.000 crediti      | 45.275 crediti  | 3         | +7       | +2         |
+| Piastra Sottile Definitiva     | 18      | +195.000 crediti     | 240.275 crediti | 4         | +8       | +2         |
+| Piastra Sottile Ineguagliabile | 20      | +460.000 crediti     | 700.275 crediti | 4         | +8       | +3         |
 
 `{caption="Potenziamenti"}`

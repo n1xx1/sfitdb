@@ -26,11 +26,11 @@ ufficiali militari come parte dell’uniforme.
 | Grado                             | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
 | --------------------------------- | ------- | -------------------- | --------------- | --------- | -------- | ---------- |
 | Cappotto Corazzato Commerciale    | 0       | —                    | 20 crediti      | 1         | +2       | —          |
-| Cappotto Corazzato Tattica        | 5       | +1.600 crediti       | 1.600 crediti   | 2         | +3       | —          |
-| Cappotto Corazzato Avanzata       | 8       | +3.400 crediti       | 5.000 crediti   | 2         | +3       | +1         |
-| Cappotto Corazzato Superiore      | 11      | +9.000 crediti       | 14.000 crediti  | 3         | +4       | +1         |
-| Cappotto Corazzato D'Élite        | 14      | +31.000 crediti      | 45.000 crediti  | 3         | +4       | +2         |
-| Cappotto Corazzato Definitiva     | 18      | +195.000 crediti     | 240.000 crediti | 4         | +5       | +2         |
-| Cappotto Corazzato Ineguagliabile | 20      | +460.000 crediti     | 700.000 crediti | 4         | +5       | +3         |
+| Cappotto Corazzato Tattica        | 5       | +1.600 crediti       | 1.620 crediti   | 2         | +3       | —          |
+| Cappotto Corazzato Avanzata       | 8       | +3.400 crediti       | 5.020 crediti   | 2         | +3       | +1         |
+| Cappotto Corazzato Superiore      | 11      | +9.000 crediti       | 14.020 crediti  | 3         | +4       | +1         |
+| Cappotto Corazzato D'Élite        | 14      | +31.000 crediti      | 45.020 crediti  | 3         | +4       | +2         |
+| Cappotto Corazzato Definitiva     | 18      | +195.000 crediti     | 240.020 crediti | 4         | +5       | +2         |
+| Cappotto Corazzato Ineguagliabile | 20      | +460.000 crediti     | 700.020 crediti | 4         | +5       | +3         |
 
 `{caption="Potenziamenti"}`

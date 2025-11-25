@@ -25,11 +25,11 @@ comunemente indossata sotto abiti casual.
 | Grado                        | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
 | ---------------------------- | ------- | -------------------- | --------------- | --------- | -------- | ---------- |
 | Seconda Pelle Commerciale    | 0       | —                    | 20 crediti      | 0         | +1       | —          |
-| Seconda Pelle Tattica        | 5       | +1.600 crediti       | 1.600 crediti   | 1         | +2       | —          |
-| Seconda Pelle Avanzata       | 8       | +3.400 crediti       | 5.000 crediti   | 1         | +2       | +1         |
-| Seconda Pelle Superiore      | 11      | +9.000 crediti       | 14.000 crediti  | 2         | +3       | +1         |
-| Seconda Pelle D'Élite        | 14      | +31.000 crediti      | 45.000 crediti  | 2         | +3       | +2         |
-| Seconda Pelle Definitiva     | 18      | +195.000 crediti     | 240.000 crediti | 3         | +4       | +2         |
-| Seconda Pelle Ineguagliabile | 20      | +460.000 crediti     | 700.000 crediti | 3         | +4       | +3         |
+| Seconda Pelle Tattica        | 5       | +1.600 crediti       | 1.620 crediti   | 1         | +2       | —          |
+| Seconda Pelle Avanzata       | 8       | +3.400 crediti       | 5.020 crediti   | 1         | +2       | +1         |
+| Seconda Pelle Superiore      | 11      | +9.000 crediti       | 14.020 crediti  | 2         | +3       | +1         |
+| Seconda Pelle D'Élite        | 14      | +31.000 crediti      | 45.020 crediti  | 2         | +3       | +2         |
+| Seconda Pelle Definitiva     | 18      | +195.000 crediti     | 240.020 crediti | 3         | +4       | +2         |
+| Seconda Pelle Ineguagliabile | 20      | +460.000 crediti     | 700.020 crediti | 3         | +4       | +3         |
 
 `{caption="Potenziamenti"}`

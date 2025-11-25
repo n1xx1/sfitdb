@@ -25,11 +25,11 @@ preferite o squadre sportive.
 | Grado                       | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
 | --------------------------- | ------- | -------------------- | --------------- | --------- | -------- | ---------- |
 | Tuta da Volo Commerciale    | 0       | —                    | 10 crediti      | 0         | +0       | —          |
-| Tuta da Volo Tattica        | 5       | +1.600 crediti       | 1.600 crediti   | 1         | +1       | —          |
-| Tuta da Volo Avanzata       | 8       | +3.400 crediti       | 5.000 crediti   | 1         | +1       | +1         |
-| Tuta da Volo Superiore      | 11      | +9.000 crediti       | 14.000 crediti  | 2         | +2       | +1         |
-| Tuta da Volo D'Élite        | 14      | +31.000 crediti      | 45.000 crediti  | 2         | +2       | +2         |
-| Tuta da Volo Definitiva     | 18      | +195.000 crediti     | 240.000 crediti | 3         | +3       | +2         |
-| Tuta da Volo Ineguagliabile | 20      | +460.000 crediti     | 700.000 crediti | 3         | +3       | +3         |
+| Tuta da Volo Tattica        | 5       | +1.600 crediti       | 1.610 crediti   | 1         | +1       | —          |
+| Tuta da Volo Avanzata       | 8       | +3.400 crediti       | 5.010 crediti   | 1         | +1       | +1         |
+| Tuta da Volo Superiore      | 11      | +9.000 crediti       | 14.010 crediti  | 2         | +2       | +1         |
+| Tuta da Volo D'Élite        | 14      | +31.000 crediti      | 45.010 crediti  | 2         | +2       | +2         |
+| Tuta da Volo Definitiva     | 18      | +195.000 crediti     | 240.010 crediti | 3         | +3       | +2         |
+| Tuta da Volo Ineguagliabile | 20      | +460.000 crediti     | 700.010 crediti | 3         | +3       | +3         |
 
 `{caption="Potenziamenti"}`

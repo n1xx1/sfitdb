@@ -29,11 +29,11 @@ in alcune parti di Castrovel.
 | Grado                              | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
 | ---------------------------------- | ------- | -------------------- | --------------- | --------- | -------- | ---------- |
 | Armatura Shotalashu Commerciale    | 0       | —                    | 40 crediti      | 1         | +3       | —          |
-| Armatura Shotalashu Tattica        | 5       | +1.600 crediti       | 1.600 crediti   | 2         | +4       | —          |
-| Armatura Shotalashu Avanzata       | 8       | +3.400 crediti       | 5.000 crediti   | 2         | +4       | +1         |
-| Armatura Shotalashu Superiore      | 11      | +9.000 crediti       | 14.000 crediti  | 3         | +5       | +1         |
-| Armatura Shotalashu D'Élite        | 14      | +31.000 crediti      | 45.000 crediti  | 3         | +5       | +2         |
-| Armatura Shotalashu Definitiva     | 18      | +195.000 crediti     | 240.000 crediti | 4         | +6       | +2         |
-| Armatura Shotalashu Ineguagliabile | 20      | +460.000 crediti     | 700.000 crediti | 4         | +6       | +3         |
+| Armatura Shotalashu Tattica        | 5       | +1.600 crediti       | 1.640 crediti   | 2         | +4       | —          |
+| Armatura Shotalashu Avanzata       | 8       | +3.400 crediti       | 5.040 crediti   | 2         | +4       | +1         |
+| Armatura Shotalashu Superiore      | 11      | +9.000 crediti       | 14.040 crediti  | 3         | +5       | +1         |
+| Armatura Shotalashu D'Élite        | 14      | +31.000 crediti      | 45.040 crediti  | 3         | +5       | +2         |
+| Armatura Shotalashu Definitiva     | 18      | +195.000 crediti     | 240.040 crediti | 4         | +6       | +2         |
+| Armatura Shotalashu Ineguagliabile | 20      | +460.000 crediti     | 700.040 crediti | 4         | +6       | +3         |
 
 `{caption="Potenziamenti"}`

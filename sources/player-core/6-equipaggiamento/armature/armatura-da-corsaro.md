@@ -27,11 +27,11 @@ armi.
 | Grado                              | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
 | ---------------------------------- | ------- | -------------------- | --------------- | --------- | -------- | ---------- |
 | Armatura da Corsaro Commerciale    | 0       | —                    | 65 crediti      | 1         | +4       | —          |
-| Armatura da Corsaro Tattica        | 5       | +1.600 crediti       | 1.600 crediti   | 2         | +5       | —          |
-| Armatura da Corsaro Avanzata       | 8       | +3.400 crediti       | 5.000 crediti   | 2         | +5       | +1         |
-| Armatura da Corsaro Superiore      | 11      | +9.000 crediti       | 14.000 crediti  | 3         | +6       | +1         |
-| Armatura da Corsaro D'Élite        | 14      | +31.000 crediti      | 45.000 crediti  | 3         | +6       | +2         |
-| Armatura da Corsaro Definitiva     | 18      | +195.000 crediti     | 240.000 crediti | 4         | +7       | +2         |
-| Armatura da Corsaro Ineguagliabile | 20      | +460.000 crediti     | 700.000 crediti | 4         | +7       | +3         |
+| Armatura da Corsaro Tattica        | 5       | +1.600 crediti       | 1.665 crediti   | 2         | +5       | —          |
+| Armatura da Corsaro Avanzata       | 8       | +3.400 crediti       | 5.065 crediti   | 2         | +5       | +1         |
+| Armatura da Corsaro Superiore      | 11      | +9.000 crediti       | 14.065 crediti  | 3         | +6       | +1         |
+| Armatura da Corsaro D'Élite        | 14      | +31.000 crediti      | 45.065 crediti  | 3         | +6       | +2         |
+| Armatura da Corsaro Definitiva     | 18      | +195.000 crediti     | 240.065 crediti | 4         | +7       | +2         |
+| Armatura da Corsaro Ineguagliabile | 20      | +460.000 crediti     | 700.065 crediti | 4         | +7       | +3         |
 
 `{caption="Potenziamenti"}`
