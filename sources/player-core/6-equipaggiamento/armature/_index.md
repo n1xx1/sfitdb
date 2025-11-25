@@ -421,14 +421,14 @@ un’etichetta di design.
 
 `{caption="Armatura Pesante"}`
 
-| Grado          | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Incremento Bonus CA | Tratti                              |
-| -------------- | ------- | -------------------- | --------------- | --------- | ------------------- | ----------------------------------- |
-| Commerciale    | 0       | —                    | —               | —         | +0                  | —                                   |
-| Tattica        | 5       | +1.600 crediti       | 1.600 crediti   | +1        | +1                  | —                                   |
-| Avanzata       | 8       | +3.400 crediti       | 5.000 crediti   | +1        | +1                  | [Resiliente](/tratti/resiliente) +1 |
-| Superiore      | 11      | +9.000 crediti       | 14.000 crediti  | +2        | +2                  | [Resiliente](/tratti/resiliente) +1 |
-| D'Élite        | 14      | +31.000 crediti      | 45.000 crediti  | +2        | +2                  | [Resiliente](/tratti/resiliente) +2 |
-| Definitiva     | 18      | +195.000 crediti     | 240.000 crediti | +3        | +3                  | [Resiliente](/tratti/resiliente) +2 |
-| Ineguagliabile | 20      | +460.000 crediti     | 700.000 crediti | +3        | +3                  | [Resiliente](/tratti/resiliente) +3 |
+| Grado          | Livello | Prezzo Potenziamento | Valore Totale^1^ | Migliorie | Incremento Bonus CA | Tratti                              |
+| -------------- | ------- | -------------------- | ---------------- | --------- | ------------------- | ----------------------------------- |
+| Commerciale    | 0       | —                    | —                | —         | +0                  | —                                   |
+| Tattica        | 5       | +1.600 crediti       | 1.600 crediti    | +1        | +1                  | —                                   |
+| Avanzata       | 8       | +3.400 crediti       | 5.000 crediti    | +1        | +1                  | [Resiliente](/tratti/resiliente) +1 |
+| Superiore      | 11      | +9.000 crediti       | 14.000 crediti   | +2        | +2                  | [Resiliente](/tratti/resiliente) +1 |
+| D'Élite        | 14      | +31.000 crediti      | 45.000 crediti   | +2        | +2                  | [Resiliente](/tratti/resiliente) +2 |
+| Definitiva     | 18      | +195.000 crediti     | 240.000 crediti  | +3        | +3                  | [Resiliente](/tratti/resiliente) +2 |
+| Ineguagliabile | 20      | +460.000 crediti     | 700.000 crediti  | +3        | +3                  | [Resiliente](/tratti/resiliente) +3 |
 
-`{caption="Potenziamenti Armatura"}`
+`{caption="Potenziamenti Armatura" footnote="^1^ Il Valore Totale non include il prezzo dell'armatura commerciale base."}`

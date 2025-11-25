@@ -391,7 +391,7 @@ bloccare o attenuare la luce. Attivare i filtri richiede un’azione
 | [Torcia commerciale](/equipaggiamento/torcia/commerciale)^T^                                                                   |    0    |   1    |   1    |    1    |
 | [Torcia tattica](/equipaggiamento/torcia/tattica)^T^                                                                           |    0    |   15   |   L    |    1    |
 
-`{caption="Equipaggiamento da Avventura" footnote="\*Puoi usare un kit di strumenti con 1 mano se lo stai indossando o con 2 se lo stai tenendo. ^T^ Questo oggetto ha il tratto [tecnologico](/tratti/tecnologico)."}`
+`{caption="Equipaggiamento da Avventura" footnote="\* Puoi usare un kit di strumenti con 1 mano se lo stai indossando o con 2 se lo stai tenendo. ^T^ Questo oggetto ha il tratto [tecnologico](/tratti/tecnologico)."}`
 
 ## Oggetti Medici
 
@@ -523,4 +523,4 @@ nella tabella.
 |        8°         | 7.200 crediti  |
 |        9°         | 18.000 crediti |
 
-`{caption="Incantesimi a Pagamento" footnote="\*Più qualsiasi costo richiesto per lanciare l’incantesimo specifico."}`
+`{caption="Incantesimi a Pagamento" footnote="\* Più qualsiasi costo richiesto per lanciare l’incantesimo specifico."}`
