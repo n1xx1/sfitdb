@@ -29,6 +29,30 @@
   {{ end }}
 {{ end }}
 
+{{ $macros := dict }}
+{{ $macrosHelper := collections.NewScratch }}
+{{ $macrosHelper.Set "v" $macros }}
+{{ range resources.Match "sources/{macro.yaml,*/macro.yaml,**/macro.yaml}" }}
+  {{ range $id, $macro := (transform.Unmarshal .) }}
+    {{ $params := slice }}
+    {{ range $macro.params }}
+      {{ $param := default nil nil }}
+      {{ if reflect.IsMap . }}
+        {{ $param = . }}
+      {{ else }}
+        {{ $param = dict "name" . "default" "" }}
+      {{ end }}
+      {{ $params = $params | append $param }}
+    {{ end }}
+    {{ $processedMacro := dict
+      "regex" (printf `#\[\[%s\s+([\s\S]*?)\]\]` $id)
+      "params" $params
+      "body" $macro.body
+    }}
+    {{ $macrosHelper.SetInMap "v" $id $processedMacro }}
+  {{ end }}
+{{ end }}
+
 {{/* {{ range $globs }}
   {{ warnf "%s:" .type }}
   {{ range .globs }}
@@ -47,7 +71,25 @@
   {{ $path := .String | replaceRE `(\.md$|/_index\.md$)` "" | replaceRE `^/sources/` "regole/" }}
   {{ $book := index (index (findRESubmatch `^regole/([a-z\-]+)/` $path 1) 0) 1 }}
 
-  {{ $splitContent := findRESubmatch `^(?:---\r?\n\s*([\s\S]*?)\s*\r?\n---\r?\n)?\s*([\s\S]*)$` .Content 1 }}
+  {{ $rawContent := .Content }}
+
+  {{ if strings.Contains $rawContent "#[[" }}
+    {{ range $macro := $macros}}
+      {{ range findRESubmatch $macro.regex $rawContent }}
+        {{ $match := index . 0 }}
+        {{ $args := index . 1 | printf "[%s]" | transform.Unmarshal (dict "format" "yaml") }}
+        {{ $replacement := $macro.body }}
+        {{ range $i, $param := $macro.params }}
+          {{ $paramKey := printf "$%s" $param.name }}
+          {{ $paramValue := index $args $i | default $param.default }}
+          {{ $replacement = replace $replacement $paramKey $paramValue }}
+        {{ end }}
+        {{ $rawContent = replace $rawContent $match $replacement }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ $splitContent := findRESubmatch `^(?:---\r?\n\s*([\s\S]*?)\s*\r?\n---\r?\n)?\s*([\s\S]*)$` $rawContent 1 }}
   {{ $rawFrontmatter := (index (index $splitContent 0) 1) }}
   {{ $content := (index (index $splitContent 0) 2) }}
 
