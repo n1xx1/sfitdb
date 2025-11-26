@@ -4,16 +4,24 @@ source: Player Core (Eng), pag. 248
 original-name: Swarmsuit
 original-srd: https://2e.aonsrd.com/equipment/armor/16-swarmsuit
 itemCategories: [base-armor]
+navigation-disable: true
+title: Tuta dello Sciame
+level: "0+"
+itemArmor:
+  price: 75
+  ac: 4
+  upgrades: 1
+#[[armorSubItems Tuta dello Sciame, Swarmsuit]]
 ---
 
-# Tuta dello Sciame - Oggetto 0
+# {{% get "title" %}} - Oggetto {{% get "level" %}}
 
-**Categoria** Media; **Prezzo** 75 crediti
+**Categoria** Media; **Prezzo** {{% get "itemArmor.price" "number" %}} crediti
 
-**Bonus CA** +4; **Des Massimo** +1; **Pen. Prove** -2; **Pen. Velocità** -1,5
-m.
+**Bonus CA** +{{% get "itemArmor.ac" %}}; **Des Massimo** +1; **Pen. Prove** -2;
+**Pen. Velocità** -1,5 m.
 
-**Forza** +3; **Volume** 2; **Migliorie** 1
+**Forza** +3; **Volume** 2; **Migliorie** {{% get "itemArmor.upgrades" %}}
 
 **Gruppo** Maglia
 
@@ -22,14 +30,18 @@ m.
 Naniti specializzati formano una tuta a rete che si adatta a portatori con
 fisiologie uniche o trasformabili.
 
-| Grado                            | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
-| -------------------------------- | ------- | -------------------- | --------------- | --------- | -------- | ---------- |
-| Tuta dello Sciame Commerciale    | 0       | —                    | 75 crediti      | 1         | +4       | —          |
-| Tuta dello Sciame Tattica        | 5       | +1.600 crediti       | 1.675 crediti   | 2         | +5       | —          |
-| Tuta dello Sciame Avanzata       | 8       | +3.400 crediti       | 5.075 crediti   | 2         | +5       | +1         |
-| Tuta dello Sciame Superiore      | 11      | +9.000 crediti       | 14.075 crediti  | 3         | +6       | +1         |
-| Tuta dello Sciame D'Élite        | 14      | +31.000 crediti      | 45.075 crediti  | 3         | +6       | +2         |
-| Tuta dello Sciame Definitiva     | 18      | +195.000 crediti     | 240.075 crediti | 4         | +7       | +2         |
-| Tuta dello Sciame Ineguagliabile | 20      | +460.000 crediti     | 700.075 crediti | 4         | +7       | +3         |
+{{% if "type" "equipment" %}}
+
+| Grado                                                                                 | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
+| ------------------------------------------------------------------------------------- | ------- | -------------------- | --------------- | --------- | -------- | ---------- |
+| [Tuta dello Sciame Commerciale](/equipaggiamento/tuta-dello-sciame/commerciale)       | 0       | —                    | 75 crediti      | 1         | +4       | —          |
+| [Tuta dello Sciame Tattica](/equipaggiamento/tuta-dello-sciame/tattica)               | 5       | +1.600 crediti       | 1.675 crediti   | 2         | +5       | —          |
+| [Tuta dello Sciame Avanzata](/equipaggiamento/tuta-dello-sciame/avanzata)             | 8       | +3.400 crediti       | 5.075 crediti   | 2         | +5       | +1         |
+| [Tuta dello Sciame Superiore](/equipaggiamento/tuta-dello-sciame/superiore)           | 11      | +9.000 crediti       | 14.075 crediti  | 3         | +6       | +1         |
+| [Tuta dello Sciame D'Élite](/equipaggiamento/tuta-dello-sciame/d-elite)               | 14      | +31.000 crediti      | 45.075 crediti  | 3         | +6       | +2         |
+| [Tuta dello Sciame Definitiva](/equipaggiamento/tuta-dello-sciame/definitiva)         | 18      | +195.000 crediti     | 240.075 crediti | 4         | +7       | +2         |
+| [Tuta dello Sciame Ineguagliabile](/equipaggiamento/tuta-dello-sciame/ineguagliabile) | 20      | +460.000 crediti     | 700.075 crediti | 4         | +7       | +3         |
 
 `{caption="Potenziamenti"}`
+
+{{% /if %}}
