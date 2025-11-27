@@ -3,6 +3,9 @@
   <div class="flex flex-wrap gap-2">
     {{- $traits := partialCached "pf/getTraitsData" . . -}}
     {{- range sort $traits "name" "asc" -}}
+      {{ if not .url }}
+        {{- partial "debug/unresolvedLink" (dict "page" nil "target" (printf "/tratti/%s" .id)) -}}
+      {{ end }}
       {{- $url := .url | default (printf "/pagina-mancante#/tratti/%s" .id) -}}
       <a
         href="{{ $url | safeURL }}"

@@ -1,5 +1,8 @@
 {{- $traits := partialCached "pf/getTraitsData" (slice .) (slice .) -}}
 {{- with index $traits 0 -}}
+  {{ if not .url }}
+    {{- partial "debug/unresolvedLink" (dict "page" nil "target" (printf "/tratti/%s" .id)) -}}
+  {{ end }}
   {{- $url := .url | default (printf "/pagina-mancante#/tratti/%s" .id) -}}
   <a
     href="{{ $url | safeURL }}"
