@@ -25,4 +25,8 @@ navigation-order: 1
 
 {{< card link="/regole/player-core/8-giocare" title="Capitolo 8: Giocare" />}}
 
+{{< card link="/regole/player-core/appendice-condizioni" title="Appendice Condizioni" />}}
+
+{{< card link="/regole/player-core/glossario-e-indice" title="Glossario e Indice" />}}
+
 {{< /cards >}}

@@ -69,6 +69,7 @@
 | Sloughscar Hills                | Colline Sfregiopantano             | us    | ????     |
 | Wreck of the Returned           | Relitto dei Ritornati              | us    |          |
 | Expend                          | Dispendio                          | us    | ????     |
+| Chem                            | Carica Chimica                     | us    | ????     |
 
 ### Abilità
 
@@ -477,7 +478,7 @@
 |                           |                                         |       |      |
 | Second Skin               | Seconda Pelle                           | gu sf |      |
 | Seeker Rifle              | Fucile a Ricerca                        | gu sf |      |
-| Semi-Auto Pistol          | Pistola Semiautomatica                  | us    |      |
+| Semi-Auto Pistol          | Pistola Semiautomatica                  | gu sf |      |
 | Shock Truncheon           | Manganello Elettrico                    | gu sf |      |
 | Shotalashu Armor          | Armatura Shotalashu                     | gu sf |      |
 | Singing Coil              | Bobina Corale                           | us    |      |
