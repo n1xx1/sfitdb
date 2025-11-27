@@ -440,9 +440,13 @@
 | en                        | it                                      | da    | note |
 | ------------------------- | --------------------------------------- | ----- | ---- |
 | Abadarcorp Travel Suit    | Vestito da Viaggio Abadarcorp           | gu sf |      |
+| Acid Dart Rifle           | Fucile a Dardi Acidi                    | gu sf |      |
 | Aegis Series              | Serie Egida                             | gu sf |      |
+| Arc Pistol                | Pistola ad Arco                         | gu sf |      |
+| Arc Rifle                 | Fucile ad Arco                          | gu sf |      |
 | Armored Coat              | Cappotto Corazzato                      | us    |      |
 | Aucturnite                | Aucturnite                              | us    |      |
+| Autotarget Rifle          | Fucile Automirante                      | gu sf |      |
 |                           |                                         |       |      |
 | Battleglove               | Guanto da Battaglia                     | gu sf |      |
 | Breaching Gun             | Fucile da Breccia                       | gu sf |      |
@@ -482,6 +486,7 @@
 |                           |                                         |       |      |
 | Kyokor Plating            | Piastre Kyokor                          | gu sf |      |
 |                           |                                         |       |      |
+| Laser Pistol              | Pistola Laser                           | gu sf |      |
 | Laser Rifle               | Fucile Laser                            | gu sf |      |
 |                           |                                         |       |      |
 | Machine Gun               | Mitragliatrice                          | gu sf |      |
@@ -496,14 +501,17 @@
 |                           |                                         |       |      |
 | Quilted Armor             | Armatura Trapuntata                     | us    |      |
 |                           |                                         |       |      |
+| Scattergun                | Fucile a Dispersione                    | gu sf |      |
 | Second Skin               | Seconda Pelle                           | gu sf |      |
 | Seeker Rifle              | Fucile a Ricerca                        | gu sf |      |
 | Semi-Auto Pistol          | Pistola Semiautomatica                  | gu sf |      |
+| Shock Pad                 | Piastra a Corrente                      | gu sf |      |
 | Shock Truncheon           | Manganello Elettrico                    | gu sf |      |
 | Shotalashu Armor          | Armatura Shotalashu                     | gu sf |      |
 | Singing Coil              | Bobina Corale                           | us    |      |
 | Singing Spear             | Lancia Corale                           | gu sf |      |
 | Skyfire Armor             | Armatura Fuoco Celeste                  | gu sf |      |
+| Sonic Rifle               | Fucile Sonico                           | gu sf |      |
 | Spell Gem                 | Gemma dell'Incantesimo                  | gu sf |      |
 | Spell Ampoule             | Fiala dell'Incantesimo                  | gu sf |      |
 | Swarmsuit                 | Tuta dello Sciame                       | gu sf |      |
@@ -512,7 +520,10 @@
 | Phase Shield              | Scudo Fasico                            | gu sf |      |
 | Plasma Doshko             | Doshko Plasma                           | gu sf |      |
 | Plasma Sword              | Spada Plasma                            | gu sf |      |
+| Pulsecaster Pistol        | Pistola a Impulsi                       | gu sf |      |
+| Puzzleblade               | Lama Composta                           | gu sf |      |
 |                           |                                         |       |      |
+| Reaction Breacher         | Cannone Reattivo d’Assalto              | us    | ???? |
 | Retinal Reflectors        | Riflettori Retinali                     | gu sf |      |
 | Riot Sield                | Scudo Antisommossa                      | gu sf |      |
 |                           |                                         |       |      |
@@ -522,6 +533,9 @@
 | Veskarium Imperial Plate  | Armatura Veskariana Imperiale           | us    |      |
 |                           |                                         |       |      |
 | Uniclamp                  | Moschettone Universale                  | gu sf |      |
+|                           |                                         |       |      |
+| Zero Knife                | Coltello Zero                           | gu sf |      |
+| Zero Pistol               | Pistola Zero                            | gu sf |      |
 
 ### Domini
 
