@@ -18,6 +18,6 @@ vista di quell’occhio come un’azione singola per
 [Individuare](/azioni/individuare) una creatura specifica con un bonus di
 circostanza +2 alla tua prova di Percezione, oppure per Individuare, in un
 quadretto di 10 piedi fino a 100 piedi di distanza, creature o oggetti
-[non individuati](/condizioni/non-individuati) o
-[nascosti](/condizioni/nascosti). Non subisci penalità per un oggetto o una
+[non individuati](/condizioni/non-individuato) o
+[nascosti](/condizioni/nascosto). Non subisci penalità per un oggetto o una
 creatura troppo lontani a meno che non siano oltre 2 miglia da te.

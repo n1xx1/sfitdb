@@ -186,8 +186,8 @@ lato basta a mantenere una linea di vista; il GM ha comunque l’ultima parola.
 > [**Danno Persistente**](/condizioni/danno-persistente)**:** Continui a subire
 > danni a ogni round.
 >
-> [**Difettoso**](/condizioni/difettoso)**:** Tu o la tua attrezzatura
-> tecnologica si sta bloccando o funzionando male.
+> [**Difettoso**](/condizioni/difettoso)**:** Tu o il tuo equipaggiamento
+> tecnologico si sta bloccando o funzionando male.
 >
 > [**Ferito**](/condizioni/ferito)**:** Sei stato in punto di morte; sei fuori
 > pericolo ma non ti sei ancora del tutto ripreso.

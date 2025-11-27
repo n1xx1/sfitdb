@@ -122,7 +122,7 @@ un’attività da due azioni, a meno che il tuo punteggio di Forza non sia pari 
 superiore al numero indicato dal tratto.
 
 [**Tecnologico**](/tratti/tecnologico)**:** Questo scudo incorpora elettronica,
-sistemi informatici, fonti di energia integrate e un’unità di comunicazione.
+sistemi informatici e fonti di energia integrate.
 
 [**Retrattile**](/tratti/retrattile)**:** Questo scudo può collassare in una
 forma più piccola collegata a un bracciale, a un guanto d’arme, a un guanto o a
