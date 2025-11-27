@@ -144,6 +144,10 @@
     {{ $params = merge $params (dict "canonicalURL" $canonicalPath) }}
   {{ end }}
 
+  {{ if eq $params.canonical false }}
+    {{ $canonicalPath = "" }}
+  {{ end }}
+
   {{/* if $pftype }}
     {{ warnf "%s %s" $path $canonicalPath }}
   {{ end */}}
