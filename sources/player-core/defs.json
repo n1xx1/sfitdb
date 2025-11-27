@@ -39,5 +39,7 @@
     "6-equipaggiamento/scudi/*",
     "6-equipaggiamento/armi/*"
   ],
-  "subequipment": ["6-equipaggiamento/*/oggetti-*/*/*"]
+  "subequipment": ["6-equipaggiamento/*/oggetti-*/*/*"],
+  "weapongroup": ["6-equipaggiamento/armi/gruppo-armi/*"],
+  "condition": ["appendice-condizioni/condizioni/*"]
 }

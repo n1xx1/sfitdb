@@ -41,10 +41,14 @@ types:
   subequipment:
     path: "/equipaggiamento/{{ .params.itemBase }}/{{ .base }}"
     statblock: true
+  weapongroup:
+    path: "/gruppi-armi/{{ .base }}"
   skill:
     path: "/abilita/{{ .base }}"
   planet:
     path: "/pianeti/{{ .base }}"
+  condition:
+    path: "/condizioni/{{ .base }}"
 
 repoURL: https://github.com/n1xx1/sfitdb
 repoBranch: main

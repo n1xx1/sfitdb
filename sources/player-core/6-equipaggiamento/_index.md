@@ -355,9 +355,9 @@ Armature, scudi e armi ottengono più slot miglioria man mano che vengono
 potenziati. I gradi più alti delle armature aggiungono più CA e acquisiscono il
 tratto resiliente, migliorando i tiri salvezza del loro portatore del valore
 indicato. I gradi più alti delle armi hanno dadi di danno migliorati e
-acquisiscono il tratto tracciante, migliorando i loro tiri per colpire del
-valore indicato. I gradi più alti degli scudi hanno aumentata Durezza, Punti
-Ferita e SR.
+acquisiscono il tratto [tracciante](/tratti/tracciante), migliorando i loro tiri
+per colpire del valore indicato. I gradi più alti degli scudi hanno aumentata
+Durezza, Punti Ferita e SR.
 
 ### Migliorare l’Equipaggiamento
 
