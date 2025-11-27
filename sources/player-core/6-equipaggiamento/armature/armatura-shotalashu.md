@@ -34,7 +34,7 @@ della propria cavalcatura, o più raramente dalla pelle di una cavalcatura
 caduta, per onorarla nelle battaglie future. Imitazioni sintetiche sono di moda
 in alcune parti di Castrovel.
 
-{{% if "type" "equipment" %}}
+{{% if `eq .type "equipment"` %}}
 
 | Grado                                                                                     | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
 | ----------------------------------------------------------------------------------------- | ------- | -------------------- | --------------- | --------- | -------- | ---------- |

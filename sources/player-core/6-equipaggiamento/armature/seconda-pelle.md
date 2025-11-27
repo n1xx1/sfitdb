@@ -22,6 +22,8 @@ Un tessuto morbido ma resistente si adatta perfettamente al corpo del portatore,
 offrendo una protezione di base senza sacrificare il comfort. La seconda pelle è
 comunemente indossata sotto abiti casual.
 
+{{% if `eq .type "equipment"` %}}
+
 | Grado                                                                         | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
 | ----------------------------------------------------------------------------- | ------- | -------------------- | --------------- | --------- | -------- | ---------- |
 | [Seconda Pelle Commerciale](/equipaggiamento/seconda-pelle/commerciale)       | 0       | —                    | 20 crediti      | 0         | +1       | —          |
@@ -33,3 +35,5 @@ comunemente indossata sotto abiti casual.
 | [Seconda Pelle Ineguagliabile](/equipaggiamento/seconda-pelle/ineguagliabile) | 20      | +460.000 crediti     | 700.020 crediti | 3         | +4       | +3         |
 
 `{caption="Potenziamenti"}`
+
+{{% /if %}}

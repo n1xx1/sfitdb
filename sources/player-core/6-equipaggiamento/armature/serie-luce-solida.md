@@ -23,6 +23,8 @@ dell’utilizzatore in questo scintillante guscio di luce solida. Le armature di
 luce solida di uso militare seguono uno standard prevedibile, mentre gli utenti
 privati possono scegliere tra numerose opzioni estetiche personalizzabili.
 
+{{% if `eq .type "equipment"` %}}
+
 | Grado                                                                                 | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
 | ------------------------------------------------------------------------------------- | ------- | -------------------- | --------------- | --------- | -------- | ---------- |
 | [Serie Luce Solida Commerciale](/equipaggiamento/serie-luce-solida/commerciale)       | 0       | —                    | 50 crediti      | 1         | +2       | —          |
@@ -34,3 +36,5 @@ privati possono scegliere tra numerose opzioni estetiche personalizzabili.
 | [Serie Luce Solida Ineguagliabile](/equipaggiamento/serie-luce-solida/ineguagliabile) | 20      | +460.000 crediti     | 700.050 crediti | 4         | +5       | +3         |
 
 `{caption="Potenziamenti"}`
+
+{{% /if %}}

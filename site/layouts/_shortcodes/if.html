@@ -1,23 +1,21 @@
-{{- $what := strings.Split (.Get 0) "." -}}
-{{- $whatFirst := index $what 0 -}}
-{{- $whatRest := last (sub (len $what) 1) $what -}}
-{{- $eq := .Get 1 }}
-{{- $value := default nil nil -}}
-
-{{- if eq $whatFirst "type" -}}
-  {{- $value = cond (hasPrefix .Page.Type "pf") (.Page.Type | replaceRE "^pf" "") "rule" -}}
-{{- else if eq $whatFirst "params" -}}
-  {{- $value = .Page.Params -}}
+{{- $included := false -}}
+{{- with .Page.Store.Get "includeContext" -}}
+  {{- $included = gt (len .) 0 -}}
 {{- end -}}
-
-{{- if $whatRest -}}
-  {{- $value = index $value $whatRest -}}
+{{- $type := "rule" -}}
+{{- if hasPrefix .Page.Type "pf" -}}
+  {{- $type = strings.Substr .Page.Type 2 -}}
 {{- end -}}
-
-{{- if $eq -}}
-  {{- if eq $value $eq -}}
-    {{- .InnerDeindent -}}
-  {{- end -}}
-{{- else if $value -}}
+{{- $data := dict
+  "type" $type
+  "included" $included
+  "params" .Page.Params
+  "page" .Page
+-}}
+{{- $tpl := print "{" "{ cond (" (.Get 0) ") `1` `0` }" "}" -}}
+{{- $key := xxhash (print $tpl .Page.Path math.Counter $included) }}
+{{- $r := resources.FromString $key $tpl -}}
+{{- $r = $r | resources.ExecuteAsTemplate $key $data -}}
+{{- if eq $r.Content "1" -}}
   {{- .InnerDeindent -}}
 {{- end -}}

@@ -21,6 +21,8 @@ itemCategories: [base-armor]
 Questa armatura da squadra è un guscio modellato in policarbonato rinforzato,
 con elmo e visiera retrattile.
 
+{{% if `eq .type "equipment"` %}}
+
 | Grado                                                                         | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
 | ----------------------------------------------------------------------------- | ------- | -------------------- | --------------- | --------- | -------- | ---------- |
 | [Serie Sprezzo Commerciale](/equipaggiamento/serie-sprezzo/commerciale)       | 0       | —                    | 200 crediti     | 1         | +5       | —          |
@@ -32,3 +34,5 @@ con elmo e visiera retrattile.
 | [Serie Sprezzo Ineguagliabile](/equipaggiamento/serie-sprezzo/ineguagliabile) | 20      | +460.000 crediti     | 700.200 crediti | 4         | +8       | +3         |
 
 `{caption="Potenziamenti"}`
+
+{{% /if %}}

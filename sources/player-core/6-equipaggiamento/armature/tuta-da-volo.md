@@ -32,7 +32,7 @@ Questa comoda tuta intera è fatta di tessuto termico leggero ed è spesso
 decorata con toppe che mostrano stemmi personali, grado militare o persino band
 preferite o squadre sportive.
 
-{{% if "type" "equipment" %}}
+{{% if `eq .type "equipment"` %}}
 
 | Grado                                                                       | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
 | --------------------------------------------------------------------------- | ------- | -------------------- | --------------- | --------- | -------- | ---------- |

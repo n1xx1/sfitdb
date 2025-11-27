@@ -31,7 +31,7 @@ Questa armatura pesante presenta un elmo fessurato che rivela solo gli occhi del
 portatore. Questa tuta ceramica hi-tech comprende pettorale, spallacci,
 bracciali e schinieri che si flettono con i movimenti del corpo.
 
-{{% if "type" "equipment" %}}
+{{% if `eq .type "equipment"` %}}
 
 | Grado                                                                                                         | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
 | ------------------------------------------------------------------------------------------------------------- | ------- | -------------------- | --------------- | --------- | -------- | ---------- |

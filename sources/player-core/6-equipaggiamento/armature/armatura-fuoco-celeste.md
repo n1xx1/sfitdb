@@ -32,7 +32,7 @@ stilizzate ed emblemi draconici sul retro e sul petto della corazza. L’armatur
 fuoco celeste è spesso placcata in oro o altri metalli ornamentali, sacrificando
 spazio per le migliorie in favore dello stile.
 
-{{% if "type" "equipment" %}}
+{{% if `eq .type "equipment"` %}}
 
 | Grado                                                                                           | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
 | ----------------------------------------------------------------------------------------------- | ------- | -------------------- | --------------- | --------- | -------- | ---------- |

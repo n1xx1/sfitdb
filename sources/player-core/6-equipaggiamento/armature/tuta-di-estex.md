@@ -30,7 +30,7 @@ itemArmor:
 Questa ingombrante tuta da volo è rinforzata con sottili pannelli di
 policarbonato cuciti tra strati di tessuto tattico.
 
-{{% if "type" "equipment" %}}
+{{% if `eq .type "equipment"` %}}
 
 | Grado                                                                         | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
 | ----------------------------------------------------------------------------- | ------- | -------------------- | --------------- | --------- | -------- | ---------- |

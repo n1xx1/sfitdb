@@ -32,7 +32,7 @@ corazzate. I cappotti corazzati sono spesso realizzati su misura per abbinarsi
 allo stile personale del portatore. Le versioni standard sono assegnate agli
 ufficiali militari come parte dell’uniforme.
 
-{{% if "type" "equipment" %}}
+{{% if `eq .type "equipment"` %}}
 
 | Grado                                                                                 | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
 | ------------------------------------------------------------------------------------- | ------- | -------------------- | --------------- | --------- | -------- | ---------- |

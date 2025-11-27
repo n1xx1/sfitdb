@@ -23,6 +23,8 @@ costellata di portelli e alloggiamenti e rivestita con piastre provenienti dagli
 infami colossi di Daimalko. Le l'armatura di piastre kyokor include stivali,
 guanti e un elmo con visiera trasparente.
 
+{{% if `eq .type "equipment"` %}}
+
 | Grado                                                                           | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
 | ------------------------------------------------------------------------------- | ------- | -------------------- | --------------- | --------- | -------- | ---------- |
 | [Piastre Kyokor Commerciale](/equipaggiamento/piastre-kyokor/commerciale)       | 0       | —                    | 250 crediti     | 1         | +6       | —          |
@@ -34,3 +36,5 @@ guanti e un elmo con visiera trasparente.
 | [Piastre Kyokor Ineguagliabile](/equipaggiamento/piastre-kyokor/ineguagliabile) | 20      | +460.000 crediti     | 700.250 crediti | 4         | +9       | +3         |
 
 `{caption="Potenziamenti"}`
+
+{{% /if %}}

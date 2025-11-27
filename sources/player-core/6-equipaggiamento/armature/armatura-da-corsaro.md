@@ -32,7 +32,7 @@ indossano. Di solito consiste in un pettorale sotto una giacca o tuta da volo,
 stivali e guanti pesanti, un elmo e cinghie e fondine nascoste per occultare
 armi.
 
-{{% if "type" "equipment" %}}
+{{% if `eq .type "equipment"` %}}
 
 | Grado                                                                                     | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
 | ----------------------------------------------------------------------------------------- | ------- | -------------------- | --------------- | --------- | -------- | ---------- |

@@ -22,6 +22,8 @@ Questa armatura a piastre elegante ma rigida è spesso costruita con materiali
 traslucidi per mettere in mostra la circuiteria dermica del portatore e viene
 indossata sotto abiti larghi.
 
+{{% if `eq .type "equipment"` %}}
+
 | Grado                                                                             | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
 | --------------------------------------------------------------------------------- | ------- | -------------------- | --------------- | --------- | -------- | ---------- |
 | [Piastra Sottile Commerciale](/equipaggiamento/piastra-sottile/commerciale)       | 0       | —                    | 275 crediti     | 1         | +5       | —          |
@@ -33,3 +35,5 @@ indossata sotto abiti larghi.
 | [Piastra Sottile Ineguagliabile](/equipaggiamento/piastra-sottile/ineguagliabile) | 20      | +460.000 crediti     | 700.275 crediti | 4         | +8       | +3         |
 
 `{caption="Potenziamenti"}`
+
+{{% /if %}}

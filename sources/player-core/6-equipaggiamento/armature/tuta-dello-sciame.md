@@ -30,7 +30,7 @@ itemArmor:
 Naniti specializzati formano una tuta a rete che si adatta a portatori con
 fisiologie uniche o trasformabili.
 
-{{% if "type" "equipment" %}}
+{{% if `eq .type "equipment"` %}}
 
 | Grado                                                                                 | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
 | ------------------------------------------------------------------------------------- | ------- | -------------------- | --------------- | --------- | -------- | ---------- |

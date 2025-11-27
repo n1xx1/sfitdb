@@ -37,7 +37,7 @@ rinvigorire il proprio spirito combattivo in situazioni critiche.
 ^1^ Per ottenere un bonus di circostanza dello scudo alla CA devi usare l’azione
 [Alzare lo Scudo](/azioni/alzare-lo-scudo).
 
-{{% if "type" "equipment" %}}
+{{% if `eq .type "equipment"` %}}
 
 | Grado                                                                       | Livello | Prezzo Potenziamento |  Prezzo Totale  | Durezza | PF  | SR  |
 | --------------------------------------------------------------------------- | ------- | :------------------: | :-------------: | :-----: | :-: | :-: |

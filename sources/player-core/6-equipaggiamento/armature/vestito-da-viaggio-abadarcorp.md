@@ -33,7 +33,7 @@ di forza contingenti e piastre nascoste proteggono chi li indossa in situazioni
 ostili. I modelli di grado superiore offrono maggiore protezione, insieme a
 un’etichetta di design.
 
-{{% if "type" "equipment" %}}
+{{% if `eq .type "equipment"` %}}
 
 | Grado                                                                                                         | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
 | ------------------------------------------------------------------------------------------------------------- | ------- | -------------------- | --------------- | --------- | -------- | ---------- |

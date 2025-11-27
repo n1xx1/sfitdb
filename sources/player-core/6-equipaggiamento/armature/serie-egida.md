@@ -24,6 +24,8 @@ stile personalizzato. Sensori integrati trasmettono informazioni sensoriali
 all’utilizzatore, mentre arti potenziati assistono nelle manovre. Muoversi in
 un’armatura egida è scomodo, ma potente.
 
+{{% if `eq .type "equipment"` %}}
+
 | Grado                                                                     | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
 | ------------------------------------------------------------------------- | ------- | -------------------- | --------------- | --------- | -------- | ---------- |
 | [Serie Egida Commerciale](/equipaggiamento/serie-egida/commerciale)       | 0       | —                    | 300 crediti     | 0         | +6       | —          |
@@ -35,3 +37,5 @@ un’armatura egida è scomodo, ma potente.
 | [Serie Egida Ineguagliabile](/equipaggiamento/serie-egida/ineguagliabile) | 20      | +460.000 crediti     | 700.300 crediti | 3         | +9       | +3         |
 
 `{caption="Potenziamenti"}`
+
+{{% /if %}}

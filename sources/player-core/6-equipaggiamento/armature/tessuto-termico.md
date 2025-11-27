@@ -31,7 +31,7 @@ Le tute in tessuto termico sono capi rinforzati con cappuccio, intrecciate con
 materiale termico e fili di ventilazione, comunemente indossati per viaggi in
 climi umidi come le giungle di Castrovel o di Pulonis.
 
-{{% if "type" "equipment" %}}
+{{% if `eq .type "equipment"` %}}
 
 | Grado                                                                             | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
 | --------------------------------------------------------------------------------- | ------- | -------------------- | --------------- | --------- | -------- | ---------- |

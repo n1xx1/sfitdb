@@ -24,6 +24,8 @@ armatura media è particolarmente popolare tra i vesk. Lastre conciate della
 spessa pelle della creatura sono cucite insieme con fili metallici, e le
 giunture sono rinforzate da borchie o scaglie metalliche.
 
+{{% if `eq .type "equipment"` %}}
+
 | Grado                                                                             | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
 | --------------------------------------------------------------------------------- | ------- | -------------------- | --------------- | --------- | -------- | ---------- |
 | [Pelle di Defrex Commerciale](/equipaggiamento/pelle-di-defrex/commerciale)       | 0       | —                    | 25 crediti      | 1         | +3       | —          |
@@ -35,3 +37,5 @@ giunture sono rinforzate da borchie o scaglie metalliche.
 | [Pelle di Defrex Ineguagliabile](/equipaggiamento/pelle-di-defrex/ineguagliabile) | 20      | +460.000 crediti     | 700.025 crediti | 4         | +6       | +3         |
 
 `{caption="Potenziamenti"}`
+
+{{% /if %}}

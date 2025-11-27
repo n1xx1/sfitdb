@@ -31,7 +31,7 @@ Questa armatura è composta da strati di tessuti cuciti insieme ed è popolare t
 i saccheggiatori. Su Akiton, alcune armature trapuntate sono in realtà costruite
 con coperte e indumenti ereditari riutilizzati come protezione.
 
-{{% if "type" "equipment" %}}
+{{% if `eq .type "equipment"` %}}
 
 | Grado                                                                                     | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
 | ----------------------------------------------------------------------------------------- | ------- | -------------------- | --------------- | --------- | -------- | ---------- |

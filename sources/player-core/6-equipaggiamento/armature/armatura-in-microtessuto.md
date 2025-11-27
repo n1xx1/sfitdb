@@ -30,7 +30,7 @@ itemArmor:
 Questa armatura leggera è intrecciata con fibre ultraleggere che si flettono con
 i movimenti del portatore ma diventano dure come l’acciaio all’impatto.
 
-{{% if "type" "equipment" %}}
+{{% if `eq .type "equipment"` %}}
 
 | Grado                                                                                               | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
 | --------------------------------------------------------------------------------------------------- | ------- | -------------------- | --------------- | --------- | -------- | ---------- |
