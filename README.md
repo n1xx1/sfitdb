@@ -144,29 +144,34 @@
 
 ### Tratti
 
-| en         | it              | da    | note |
-| ---------- | --------------- | ----- | ---- |
-| Air        | Aria            | gu pf |      |
-| Area       | Area            | us    | ???? |
-| Auditory   | Uditivo         | gu pf |      |
-| Automatic  | Automatico      | us    | ???? |
-| Bulwark    | Baluardo        | gu pf |      |
-| Consumable | Monouso         | gu pf |      |
-| Earth      | Terra           | gu pf |      |
-| Exposed    | Esposto         | us    | ???? |
-| Fire       | Fuoco           | gu pf |      |
-| Flourish   | Ostentazione    | gu pf |      |
-| Metal      | Metallo         | gu pf |      |
-| Shadow     | Ombra           | gu pf |      |
-| Tech       | Tecnologico     | us    |      |
-| Teleport   | Teletrasporto   | gu pf |      |
-| Tracing    | Tracciante      | us    |      |
-| Traversal  | Attraversamento | us    |      |
-| Visual     | Visivo          | gu pf |      |
-| Volley     | Parabola        | gu pf |      |
-| Water      | Acqua           | gu pf |      |
-| Wood       | Legno           | gu pf |      |
-| Unwieldy   | Ingombrante     | gu sf |      |
+| en          | it              | da    | note |
+| ----------- | --------------- | ----- | ---- |
+| Air         | Aria            | gu pf |      |
+| Analog      | Analogico       | us    |      |
+| Archaic     | Arcaico         | us    |      |
+| Area        | Area            | us    |      |
+| Auditory    | Uditivo         | gu pf |      |
+| Automatic   | Automatico      | us    |      |
+| Bulwark     | Baluardo        | gu pf |      |
+| Compact     | Compatto        | us    |      |
+| Consumable  | Monouso         | gu pf |      |
+| Earth       | Terra           | gu pf |      |
+| Exposed     | Esposto         | us    | ???? |
+| Fire        | Fuoco           | gu pf |      |
+| Flourish    | Ostentazione    | gu pf |      |
+| Installed   | Installato      | us    |      |
+| Metal       | Metallo         | gu pf |      |
+| Shadow      | Ombra           | gu pf |      |
+| Retractable | Retrattile      | us    |      |
+| Tech        | Tecnologico     | us    |      |
+| Teleport    | Teletrasporto   | gu pf |      |
+| Tracing     | Tracciante      | us    |      |
+| Traversal   | Attraversamento | us    |      |
+| Visual      | Visivo          | gu pf |      |
+| Volley      | Parabola        | gu pf |      |
+| Water       | Acqua           | gu pf |      |
+| Wood        | Legno           | gu pf |      |
+| Unwieldy    | Ingombrante     | gu sf |      |
 
 ### Gruppi Armi
 
@@ -424,6 +429,7 @@
 | Breaching Gun             | Fucile da Breccia                       | gu sf |      |
 |                           |                                         |       |      |
 | Cable Line                | Cavo                                    | gu sf |      |
+| Carbon Shield             | Scudo in Carbonio                       | us    |      |
 | Carbon Skin               | Pelle di Carbonio                       | gu sf |      |
 | Chemalyzer                | Chemioanalizzatore                      | gu sf |      |
 | Comm Unit                 | Unità di Comunicazione                  | gu sf |      |
@@ -433,6 +439,7 @@
 | Datapad                   | Datapad                                 | gu sf |      |
 | Defrex Hide               | Pelle di Defrex                         | gu sf |      |
 | Defiance Series           | Serie Sprezzo                           | gu sf |      |
+| Deflecting Field          | Campo Deflettente                       | us    | ???? |
 | Doshko                    | Doshko                                  | gu sf |      |
 | Dueling Sword             | Spada da Duello                         | us    |      |
 |                           |                                         |       |      |
@@ -464,6 +471,7 @@
 | Medkit                    | Kit Medico                              | gu pf |      |
 | Medpatch                  | Cerotto Medico                          | gu sf |      |
 | Microcord Armor           | Armatura in Microtessuto                | us    |      |
+| Mobile Bulwark            | Baluardo Mobile                         | us    |      |
 |                           |                                         |       |      |
 | Quilted Armor             | Armatura Trapuntata                     | us    |      |
 |                           |                                         |       |      |

@@ -35,7 +35,9 @@
   "planet": ["1-introduzione/esplorare-la-galassia/pianeti/*"],
   "equipment": [
     "6-equipaggiamento/*/oggetti-*/*",
-    "6-equipaggiamento/armature/*"
+    "6-equipaggiamento/armature/*",
+    "6-equipaggiamento/scudi/*",
+    "6-equipaggiamento/armi/*"
   ],
   "subequipment": ["6-equipaggiamento/*/oggetti-*/*/*"]
 }

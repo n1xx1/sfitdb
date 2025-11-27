@@ -172,7 +172,7 @@ riferimento ai gruppi di armature, generalmente per concedere effetti di
 I tratti di ogni armatura sono presenti a questa voce. Un’armatura può avere i
 tratti seguenti.
 
-[**Analogica**](/tratti/analogico)**:** Sebbene questa armatura eviti
+[**Analogica**](/tratti/analogico)**:** Sebbene questa armatura non incorpora
 elettronica avanzata, sistemi informatici e fonti di energia elettrica, è stata
 comunque prodotta e calibrata utilizzando tecnologie avanzate e materiali
 moderni. Questa armatura è immune alle capacità che prendono di mira la
@@ -380,55 +380,55 @@ ostili. I modelli di grado superiore offrono maggiore protezione, insieme a
 un’etichetta di design.
 
 | Armatura                                              | Livello | Prezzo | Bonus CA | Des Massimo | Pen. Prove | Pen. Velocità | Volume | Migliorie | Gruppo | Tratti dell’Armatura                                                 |
-| ----------------------------------------------------- | ------- | ------ | -------- | ----------- | ---------- | ------------- | ------ | --------- | ------ | -------------------------------------------------------------------- |
-| [Nessuna armatura](/equipaggiamento/nessuna-armatura) | —       | —      | +0       | —           | —          | —             | —      | —         | —      | [Esposta](/tratti/esposto)                                           |
-| [Tuta da Volo](/equipaggiamento/tuta-da-volo)         | 1       | 10     | +0       | +5          | —          | —             | L      | 0         | Stoffa | [Analogica](/tratti/analogico), [confortevole](/tratti/confortevole) |
+| ----------------------------------------------------- | :-----: | :----: | :------: | :---------: | :--------: | :-----------: | :----: | :-------: | ------ | -------------------------------------------------------------------- |
+| [Nessuna armatura](/equipaggiamento/nessuna-armatura) |    —    |   —    |    +0    |      —      |     —      |       —       |   —    |     —     | —      | [Esposta](/tratti/esposto)                                           |
+| [Tuta da Volo](/equipaggiamento/tuta-da-volo)         |    1    |   10   |    +0    |     +5      |     —      |       —       |   L    |     0     | Stoffa | [Analogica](/tratti/analogico), [confortevole](/tratti/confortevole) |
 
 `{caption="Difesa Senz’Armatura"}`
 
 | Armatura (Commerciale)                                                          | Livello | Prezzo | Bonus CA | Des Massimo | Pen. Prove | Pen. Velocità | Forza | Volume | Migliorie | Gruppo    | Tratti dell’Armatura                                                                                       |
-| ------------------------------------------------------------------------------- | ------- | ------ | -------- | ----------- | ---------- | ------------- | ----- | ------ | --------- | --------- | ---------------------------------------------------------------------------------------------------------- |
-| [Armatura in Microtessuto](/equipaggiamento/armatura-in-microtessuto)           | 0       | 25     | +2       | +3          | –1         | —             | +1    | 1      | 1         | Polimeri  | [Tecnologica](/tratti/tecnologico)                                                                         |
-| [Armatura Trapuntata](/equipaggiamento/armatura-trapuntata)                     | 0       | 15     | +2       | +2          | –1         | —             | +1    | 1      | 1         | Stoffa    | [Confortevole](/tratti/confortevole), [tecnologica](/tratti/tecnologico)                                   |
-| [Cappotto Corazzato](/equipaggiamento/cappotto-corazzato)                       | 0       | 20     | +2       | +2          | –1         | —             | +2    | 1      | 1         | Cuoio     | [Confortevole](/tratti/confortevole), [flessibile](/tratti/flessibile), [tecnologica](/tratti/tecnologico) |
-| [Pelle di Carbonio](/equipaggiamento/pelle-di-carbonio)                         | 0       | 30     | +1       | +4          | –1         | —             | +0    | 1      | 1         | Polimeri  | [Tecnologica](/tratti/tecnologico)                                                                         |
-| [Seconda Pelle](/equipaggiamento/seconda-pelle)                                 | 0       | 20     | +1       | +4          | –1         | —             | +0    | L      | 0         | Polimeri  | [Confortevole](/tratti/confortevole), [flessibile](/tratti/flessibile), [tecnologica](/tratti/tecnologico) |
-| [Serie Luce Solida](/equipaggiamento/serie-luce-solida)                         | 0       | 50     | +2       | +3          | –1         | —             | +1    | 1      | 1         | Maglia    | [Flessibile](/tratti/flessibile), [tecnologica](/tratti/tecnologico), [rumorosa](/tratti/rumoroso)         |
-| [Tessuto Termico](/equipaggiamento/tessuto-termico)                             | 0       | 45     | +1       | +4          | –1         | —             | +0    | 1      | 1         | Composita | [Tecnologica](/tratti/tecnologico)                                                                         |
-| [Tuta di Estex](/equipaggiamento/tuta-di-estex)                                 | 0       | 30     | +1       | +3          | –1         | —             | +1    | L      | 1         | Stoffa    | [Confortevole](/tratti/confortevole), [flessibile](/tratti/flessibile), [tecnologica](/tratti/tecnologico) |
-| [Vestito da Viaggio Abadarcorp](/equipaggiamento/vestito-da-viaggio-abadarcorp) | 0       | 10     | +1       | +3          | —          | —             | +0    | L      | 2         | Stoffa    | [Esposta](/tratti/esposto), [tecnologica](/tratti/tecnologico)                                             |
+| ------------------------------------------------------------------------------- | :-----: | :----: | :------: | :---------: | :--------: | :-----------: | :---: | :----: | :-------: | --------- | ---------------------------------------------------------------------------------------------------------- |
+| [Armatura in Microtessuto](/equipaggiamento/armatura-in-microtessuto)           |    0    |   25   |    +2    |     +3      |     –1     |       —       |  +1   |   1    |     1     | Polimeri  | [Tecnologica](/tratti/tecnologico)                                                                         |
+| [Armatura Trapuntata](/equipaggiamento/armatura-trapuntata)                     |    0    |   15   |    +2    |     +2      |     –1     |       —       |  +1   |   1    |     1     | Stoffa    | [Confortevole](/tratti/confortevole), [tecnologica](/tratti/tecnologico)                                   |
+| [Cappotto Corazzato](/equipaggiamento/cappotto-corazzato)                       |    0    |   20   |    +2    |     +2      |     –1     |       —       |  +2   |   1    |     1     | Cuoio     | [Confortevole](/tratti/confortevole), [flessibile](/tratti/flessibile), [tecnologica](/tratti/tecnologico) |
+| [Pelle di Carbonio](/equipaggiamento/pelle-di-carbonio)                         |    0    |   30   |    +1    |     +4      |     –1     |       —       |  +0   |   1    |     1     | Polimeri  | [Tecnologica](/tratti/tecnologico)                                                                         |
+| [Seconda Pelle](/equipaggiamento/seconda-pelle)                                 |    0    |   20   |    +1    |     +4      |     –1     |       —       |  +0   |   L    |     0     | Polimeri  | [Confortevole](/tratti/confortevole), [flessibile](/tratti/flessibile), [tecnologica](/tratti/tecnologico) |
+| [Serie Luce Solida](/equipaggiamento/serie-luce-solida)                         |    0    |   50   |    +2    |     +3      |     –1     |       —       |  +1   |   1    |     1     | Maglia    | [Flessibile](/tratti/flessibile), [tecnologica](/tratti/tecnologico), [rumorosa](/tratti/rumoroso)         |
+| [Tessuto Termico](/equipaggiamento/tessuto-termico)                             |    0    |   45   |    +1    |     +4      |     –1     |       —       |  +0   |   1    |     1     | Composita | [Tecnologica](/tratti/tecnologico)                                                                         |
+| [Tuta di Estex](/equipaggiamento/tuta-di-estex)                                 |    0    |   30   |    +1    |     +3      |     –1     |       —       |  +1   |   L    |     1     | Stoffa    | [Confortevole](/tratti/confortevole), [flessibile](/tratti/flessibile), [tecnologica](/tratti/tecnologico) |
+| [Vestito da Viaggio Abadarcorp](/equipaggiamento/vestito-da-viaggio-abadarcorp) |    0    |   10   |    +1    |     +3      |     —      |       —       |  +0   |   L    |     2     | Stoffa    | [Esposta](/tratti/esposto), [tecnologica](/tratti/tecnologico)                                             |
 
 `{caption="Armatura Leggera"}`
 
 | Armatura (Commerciale)                                            | Livello | Prezzo | Bonus CA | Des Massimo | Pen. Prove | Pen. Velocità | Forza | Volume | Migliorie | Gruppo    | Tratti dell’Armatura                                                                               |
-| ----------------------------------------------------------------- | ------- | ------ | -------- | ----------- | ---------- | ------------- | ----- | ------ | --------- | --------- | -------------------------------------------------------------------------------------------------- |
-| [Armatura da Corsaro](/equipaggiamento/armatura-da-corsaro)       | 0       | 65     | +4       | +1          | –2         | –1,5          | +3    | 2      | 1         | Piastre   | [Tecnologica](/tratti/tecnologico)                                                                 |
-| [Armatura Shotalashu](/equipaggiamento/armatura-shotalashu)       | 0       | 40     | +3       | +2          | –2         | –1,5          | +2    | 2      | 1         | Composita | [Tecnologica](/tratti/tecnologico)                                                                 |
-| [Armatura Fuoco Celeste](/equipaggiamento/armatura-fuoco-celeste) | 0       | 60     | +3       | +2          | –2         | –1,5          | +1    | 1      | 0         | Ceramica  | [Flessibile](/tratti/flessibile), [tecnologica](/tratti/tecnologico)                               |
-| [Pelle di Defrex](/equipaggiamento/pelle-di-defrex)               | 0       | 25     | +3       | +2          | –2         | –1,5          | +2    | 2      | 1         | Cuoio     | [Tecnologica](/tratti/tecnologico)                                                                 |
-| [Tuta dello Sciame](/equipaggiamento/tuta-dello-sciame)           | 0       | 75     | +4       | +1          | –2         | –1,5          | +3    | 2      | 1         | Maglia    | [Flessibile](/tratti/flessibile), [tecnologica](/tratti/tecnologico), [rumorosa](/tratti/rumoroso) |
+| ----------------------------------------------------------------- | :-----: | :----: | :------: | :---------: | :--------: | :-----------: | :---: | :----: | :-------: | --------- | -------------------------------------------------------------------------------------------------- |
+| [Armatura da Corsaro](/equipaggiamento/armatura-da-corsaro)       |    0    |   65   |    +4    |     +1      |     –2     |     –1,5      |  +3   |   2    |     1     | Piastre   | [Tecnologica](/tratti/tecnologico)                                                                 |
+| [Armatura Shotalashu](/equipaggiamento/armatura-shotalashu)       |    0    |   40   |    +3    |     +2      |     –2     |     –1,5      |  +2   |   2    |     1     | Composita | [Tecnologica](/tratti/tecnologico)                                                                 |
+| [Armatura Fuoco Celeste](/equipaggiamento/armatura-fuoco-celeste) |    0    |   60   |    +3    |     +2      |     –2     |     –1,5      |  +1   |   1    |     0     | Ceramica  | [Flessibile](/tratti/flessibile), [tecnologica](/tratti/tecnologico)                               |
+| [Pelle di Defrex](/equipaggiamento/pelle-di-defrex)               |    0    |   25   |    +3    |     +2      |     –2     |     –1,5      |  +2   |   2    |     1     | Cuoio     | [Tecnologica](/tratti/tecnologico)                                                                 |
+| [Tuta dello Sciame](/equipaggiamento/tuta-dello-sciame)           |    0    |   75   |    +4    |     +1      |     –2     |     –1,5      |  +3   |   2    |     1     | Maglia    | [Flessibile](/tratti/flessibile), [tecnologica](/tratti/tecnologico), [rumorosa](/tratti/rumoroso) |
 
 `{caption="Armatura Media"}`
 
 | Armatura (Commerciale)                                                          | Livello | Prezzo | Bonus CA | Des Massimo | Pen. Prove | Pen. Velocità | Forza | Volume | Migliorie | Gruppo    | Tratti dell’Armatura                                             |
-| ------------------------------------------------------------------------------- | ------- | ------ | -------- | ----------- | ---------- | ------------- | ----- | ------ | --------- | --------- | ---------------------------------------------------------------- |
-| [Armatura del Soldato Nascosto](/equipaggiamento/armatura-del-soldato-nascosto) | 0       | 285    | +5       | +1          | –3         | –3            | +4    | 3      | 1         | Ceramica  | [Baluardo](/tratti/baluardo), [tecnologica](/tratti/tecnologico) |
-| [Armatura Veskariana Imperiale](/equipaggiamento/armatura-veskariana-imperiale) | 0       | 325    | +6       | +0          | –3         | –3            | +4    | 5      | 1         | Composita | [Baluardo](/tratti/baluardo), [tecnologica](/tratti/tecnologico) |
-| [Piastre Kyokor](/equipaggiamento/piastre-kyokor)                               | 0       | 250    | +6       | +0          | –3         | –3            | +4    | 4      | 1         | Piastre   | [Baluardo](/tratti/baluardo), [tecnologica](/tratti/tecnologico) |
-| [Piastra Sottile](/equipaggiamento/piastra-sottile)                             | 0       | 275    | +5       | +1          | –3         | –3            | +3    | 3      | 1         | Composita | [Tecnologica](/tratti/tecnologico)                               |
-| [Serie Egida](/equipaggiamento/serie-egida)                                     | 0       | 300    | +6       | +0          | –3         | –3            | +3    | 3      | 0         | Piastre   | [Baluardo](/tratti/baluardo), [tecnologica](/tratti/tecnologico) |
-| [Serie Sprezzo](/equipaggiamento/serie-sprezzo)                                 | 0       | 200    | +5       | +1          | –3         | –3            | +3    | 3      | 1         | Piastre   | [Tecnologica](/tratti/tecnologico)                               |
+| ------------------------------------------------------------------------------- | :-----: | :----: | :------: | :---------: | :--------: | :-----------: | :---: | :----: | :-------: | --------- | ---------------------------------------------------------------- |
+| [Armatura del Soldato Nascosto](/equipaggiamento/armatura-del-soldato-nascosto) |    0    |  285   |    +5    |     +1      |     –3     |      –3       |  +4   |   3    |     1     | Ceramica  | [Baluardo](/tratti/baluardo), [tecnologica](/tratti/tecnologico) |
+| [Armatura Veskariana Imperiale](/equipaggiamento/armatura-veskariana-imperiale) |    0    |  325   |    +6    |     +0      |     –3     |      –3       |  +4   |   5    |     1     | Composita | [Baluardo](/tratti/baluardo), [tecnologica](/tratti/tecnologico) |
+| [Piastre Kyokor](/equipaggiamento/piastre-kyokor)                               |    0    |  250   |    +6    |     +0      |     –3     |      –3       |  +4   |   4    |     1     | Piastre   | [Baluardo](/tratti/baluardo), [tecnologica](/tratti/tecnologico) |
+| [Piastra Sottile](/equipaggiamento/piastra-sottile)                             |    0    |  275   |    +5    |     +1      |     –3     |      –3       |  +3   |   3    |     1     | Composita | [Tecnologica](/tratti/tecnologico)                               |
+| [Serie Egida](/equipaggiamento/serie-egida)                                     |    0    |  300   |    +6    |     +0      |     –3     |      –3       |  +3   |   3    |     0     | Piastre   | [Baluardo](/tratti/baluardo), [tecnologica](/tratti/tecnologico) |
+| [Serie Sprezzo](/equipaggiamento/serie-sprezzo)                                 |    0    |  200   |    +5    |     +1      |     –3     |      –3       |  +3   |   3    |     1     | Piastre   | [Tecnologica](/tratti/tecnologico)                               |
 
 `{caption="Armatura Pesante"}`
 
 | Grado          | Livello | Prezzo Potenziamento | Valore Totale^1^ | Migliorie | Incremento Bonus CA | Tratti                              |
-| -------------- | ------- | -------------------- | ---------------- | --------- | ------------------- | ----------------------------------- |
-| Commerciale    | 0       | —                    | —                | —         | +0                  | —                                   |
-| Tattica        | 5       | +1.600 crediti       | 1.600 crediti    | +1        | +1                  | —                                   |
-| Avanzata       | 8       | +3.400 crediti       | 5.000 crediti    | +1        | +1                  | [Resiliente](/tratti/resiliente) +1 |
-| Superiore      | 11      | +9.000 crediti       | 14.000 crediti   | +2        | +2                  | [Resiliente](/tratti/resiliente) +1 |
-| D'Élite        | 14      | +31.000 crediti      | 45.000 crediti   | +2        | +2                  | [Resiliente](/tratti/resiliente) +2 |
-| Definitiva     | 18      | +195.000 crediti     | 240.000 crediti  | +3        | +3                  | [Resiliente](/tratti/resiliente) +2 |
-| Ineguagliabile | 20      | +460.000 crediti     | 700.000 crediti  | +3        | +3                  | [Resiliente](/tratti/resiliente) +3 |
+| -------------- | :-----: | :------------------: | :--------------: | :-------: | :-----------------: | ----------------------------------- |
+| Commerciale    |    0    |          —           |        —         |     —     |         +0          | —                                   |
+| Tattica        |    5    |    +1.600 crediti    |  1.600 crediti   |    +1     |         +1          | —                                   |
+| Avanzata       |    8    |    +3.400 crediti    |  5.000 crediti   |    +1     |         +1          | [Resiliente](/tratti/resiliente) +1 |
+| Superiore      |   11    |    +9.000 crediti    |  14.000 crediti  |    +2     |         +2          | [Resiliente](/tratti/resiliente) +1 |
+| D'Élite        |   14    |   +31.000 crediti    |  45.000 crediti  |    +2     |         +2          | [Resiliente](/tratti/resiliente) +2 |
+| Definitiva     |   18    |   +195.000 crediti   | 240.000 crediti  |    +3     |         +3          | [Resiliente](/tratti/resiliente) +2 |
+| Ineguagliabile |   20    |   +460.000 crediti   | 700.000 crediti  |    +3     |         +3          | [Resiliente](/tratti/resiliente) +3 |
 
 `{caption="Potenziamenti Armatura" footnote="^1^ Il Valore Totale non include il prezzo dell'armatura commerciale base."}`
