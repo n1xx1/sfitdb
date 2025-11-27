@@ -264,6 +264,8 @@ a un attacco senz’armi che possiede il tratto [disarmato](/tratti/disarmato).
 Le armi e gli attacchi senz’armi con tratti delle armi possono avere i tratti
 seguenti.
 
+{{% includeAll source="./tratti" template="inlinetitle" %}}
+
 ## Specializzazione del Critico
 
 Alcuni talenti, privilegi di classe, fusioni d'arma e altri effetti possono

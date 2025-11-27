@@ -54,6 +54,19 @@ menus:
       pageRef: /regole
       weight: 10
 
+    - name: Tutte le Regole
+      pageRef: /regole
+      parent: Regole
+      weight: 1
+    - name: Azioni e Attività
+      pageRef: /azioni
+      parent: Regole
+      weight: 2
+    - name: Condizioni
+      pageRef: /condizioni
+      parent: Regole
+      weight: 2
+
 build:
   buildStats:
     enable: true

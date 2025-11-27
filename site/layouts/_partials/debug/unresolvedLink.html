@@ -1,3 +1,7 @@
-{{- if false -}}
-  {{- warnf "MISSING LINK %q (in page %v)" .target .page.Path -}}
+{{- if true -}}
+  {{- $append := "" -}}
+  {{- with .page -}}
+    {{- $append = printf " (in page %s)" .Path -}}
+  {{- end -}}
+  {{- warnf "MISSING LINK %q%s" .target $append -}}
 {{- end -}}

@@ -27,6 +27,7 @@
 | &nbsp; Sharpshooter             | Tiratore Scelto                    | us    |          |
 | &nbsp; Focused                  | Concentrato                        | us    |          |
 | Witchwarper                     | Stregone del Velo                  | gu sf |          |
+| Grade                           | Qualità                            | us    |          |
 | Commercial                      | Commerciale                        | us    |          |
 | Tactical                        | Tattico                            | us    |          |
 | Advanced                        | Avanzato                           | us    |          |
@@ -147,31 +148,48 @@
 
 | en          | it              | da    | note |
 | ----------- | --------------- | ----- | ---- |
+| Aeon        | Eoni            | gu sf |      |
 | Air         | Aria            | gu pf |      |
 | Analog      | Analogico       | us    |      |
 | Archaic     | Arcaico         | us    |      |
 | Area        | Area            | us    |      |
 | Auditory    | Uditivo         | gu pf |      |
 | Automatic   | Automatico      | us    |      |
+|             |                 |       |      |
+| Boost       | Incremento      | gu sf | ???? |
 | Bulwark     | Baluardo        | gu pf |      |
+|             |                 |       |      |
 | Compact     | Compatto        | us    |      |
 | Consumable  | Monouso         | gu pf |      |
+|             |                 |       |      |
 | Earth       | Terra           | gu pf |      |
 | Exposed     | Esposto         | us    | ???? |
+|             |                 |       |      |
 | Fire        | Fuoco           | gu pf |      |
 | Flourish    | Ostentazione    | gu pf |      |
+|             |                 |       |      |
 | Installed   | Installato      | us    |      |
+|             |                 |       |      |
 | Metal       | Metallo         | gu pf |      |
+|             |                 |       |      |
+| Powered     | Alimentato      | us    |      |
+|             |                 |       |      |
+| Breakdown   | Scomponibile    |       |      |
 | Shadow      | Ombra           | gu pf |      |
+|             |                 |       |      |
 | Retractable | Retrattile      | us    |      |
+|             |                 |       |      |
 | Tech        | Tecnologico     | us    |      |
 | Teleport    | Teletrasporto   | gu pf |      |
-| Tracing     | Tracciante      | us    |      |
+| Tracking    | Tracciante      | us    |      |
 | Traversal   | Attraversamento | us    |      |
+|             |                 |       |      |
 | Visual      | Visivo          | gu pf |      |
 | Volley      | Parabola        | gu pf |      |
+|             |                 |       |      |
 | Water       | Acqua           | gu pf |      |
 | Wood        | Legno           | gu pf |      |
+|             |                 |       |      |
 | Unwieldy    | Ingombrante     | gu sf |      |
 
 ### Gruppi Armi
@@ -474,6 +492,8 @@
 | Microcord Armor           | Armatura in Microtessuto                | us    |      |
 | Mobile Bulwark            | Baluardo Mobile                         | us    |      |
 |                           |                                         |       |      |
+| Nano-Edge Rapier          | Spada da Lato a Nano-Lama               | us    | ???? |
+|                           |                                         |       |      |
 | Quilted Armor             | Armatura Trapuntata                     | us    |      |
 |                           |                                         |       |      |
 | Second Skin               | Seconda Pelle                           | gu sf |      |
@@ -485,6 +505,7 @@
 | Singing Spear             | Lancia Corale                           | gu sf |      |
 | Skyfire Armor             | Armatura Fuoco Celeste                  | gu sf |      |
 | Spell Gem                 | Gemma dell'Incantesimo                  | gu sf |      |
+| Spell Ampoule             | Fiala dell'Incantesimo                  | gu sf |      |
 | Swarmsuit                 | Tuta dello Sciame                       | gu sf |      |
 |                           |                                         |       |      |
 | Painglaive                | Dolorfalcione                           | us    | ???? |
