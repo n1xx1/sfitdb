@@ -43,6 +43,8 @@ types:
     statblock: true
   weapongroup:
     path: "/gruppi-armi/{{ .base }}"
+  armorgroup:
+    path: "/gruppi-armature/{{ .base }}"
   skill:
     path: "/abilita/{{ .base }}"
   planet:

@@ -30,16 +30,12 @@
     "3-classi/stregone-del-velo/ancore",
     "3-classi/stregone-del-velo/paradossi"
   ],
-  "trait": ["glossario-e-indice/tratti/*", "6-equipaggiamento/armi/tratti/*"],
+  "trait": ["glossario-e-indice/tratti/*", "6-equipaggiamento/*/tratti/*"],
   "skill": ["4-abilita/abilita/*"],
   "planet": ["1-introduzione/esplorare-la-galassia/pianeti/*"],
-  "equipment": [
-    "6-equipaggiamento/*/oggetti-*/*",
-    "6-equipaggiamento/armature/*",
-    "6-equipaggiamento/scudi/*",
-    "6-equipaggiamento/armi/armi/*"
-  ],
+  "equipment": ["6-equipaggiamento/*/oggetti-*/*"],
   "subequipment": ["6-equipaggiamento/*/oggetti-*/*/*"],
-  "weapongroup": ["6-equipaggiamento/armi/gruppo-armi/*"],
+  "weapongroup": ["6-equipaggiamento/armi/gruppi-armi/*"],
+  "armorgroup": ["6-equipaggiamento/armature/gruppi-armature/*"],
   "condition": ["appendice-condizioni/condizioni/*"]
 }

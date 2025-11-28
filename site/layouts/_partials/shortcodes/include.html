@@ -16,8 +16,6 @@
   {{ .RenderShortcodes }}
 
   {{ $content = .RawContent | replaceRE `^---\r?\n\s*([\s\S]*?)\s*\r?\n---\r?\n\s*` "" }}
-  {{ $pid := int (.Key | replaceRE "^page-" "") }}
-  {{ $content = print "\n{" "{__hugo_ctx pid=" $pid "}" "}\n\n" $content "\n\n{" "{__hugo_ctx/}" "}\n" }}
   {{ .Store.Set "includeContext" $newIncludeContext }}
   {{ $content = (printf "~~~\n%s~~~" $content) | .RenderString | htmlUnescape }}
   {{ .Store.Set "includeContext" $prevIncludeContext }}
@@ -42,14 +40,16 @@
     {{ $i = add $i 1 }}
   {{ end }}
 
-  {{ $searchFirstTitle := printf `((?:\n|^)(?:> )?%s )(.+?)(?: \{(.+)\})?(\n\s*)` $h1 }}
-
   {{ if eq $.template "inlinetitle" }}
     {{ $url := .Params.canonicalURL | default .RelPermalink | replaceRE "/$" "" }}
-    {{ $replacement := printf "\n[**${2}**](%s)**:** " $url }}
-    {{ $content = replaceRE $searchFirstTitle $replacement $content 1 }}
+    {{ $regexTitleAndBody := printf `(?:\n|^)(?:> )?%s (.+?)(?: -.*)?\s*(?:\{.*\})?\n\s*(?:\*\*[\s\S]+?\n---\n\s*)?([\s\S]+?)\s*(?:\n---\n|$)` $h1 }}
+    {{ $match := findRESubmatch $regexTitleAndBody $content 1 }}
+    {{ $title := index (index $match 0) 1 }}
+    {{ $body := index (index $match 0) 2 }}
+    {{ $content = printf "\n[**%s**](%s)**:** %s" $title $url $body }}
   {{ else if eq $.template "notitle" }}
-    {{ $content = replaceRE $searchFirstTitle "" $content 1 }}
+    {{ $regexTitle := printf `((?:\n|^)(?:> )?%s )(.+?)(?: - (?:(\d+)[°+]?|(.+?)(?: (\d+))?))?(?: \{(.+)\})?(\n\s*)` $h1 }}
+    {{ $content = replaceRE $regexTitle "" $content 1 }}
   {{ else if eq $.template "blockquote" }}
     {{ $content = replaceRE "(\\n|^)([^\\n]*)" "${1}> ${2}" $content }}
   {{ else if eq $.template "monsterfamily" }}
@@ -57,7 +57,7 @@
     {{ $appendContent := partial "shortcodes/includeAll" (dict
       "context" $.context
       "source" $.templateData.source
-      "filter" (dict "params" (dict "monsterFamily" (dict "$contains" $monsterFamily)))
+      "filter" (dict "params" (dict "monsterFamily" (dict "$in" $monsterFamily)))
       "sort" slice
       "level" 1
       "space" false
@@ -69,18 +69,15 @@
       (printf "\n\n%s\n\n$0" $appendContent)
       $content
     }}
-  {{ else if eq $.template "subequipment" }}
-    {{ $searchReplaceContent := printf `%s([\s\S]+---\n\s*)?([\s\S]+?)(\s*\{\{__hugo_ctx/\}\}\s*$|\s*$)` $searchFirstTitle }}
-    {{ $content = replaceRE $searchReplaceContent
-      (printf "${1}${2} {${3} }${4}${5}%s\n${7}" (.Params.subItemDesc | default ""))
-      $content
-    }}
   {{ end }}
-{{ end }}
 
-{{ $isStatblock := partialCached "pf/isStatblock" .page.Type .page.Type }}
-{{ if and $isStatblock (not .template) }}
-  {{ $content = printf "<div class=\"prose sf-prose px-4 py-4 bg-black/3 dark:bg-white/3 my-5\">\n\n%s\n\n</div>" $content }}
+  {{ $pid := int (.Key | replaceRE "^page-" "") }}
+  {{ $content = print "\n{" "{__hugo_ctx pid=" $pid "}" "}\n\n" $content "\n\n{" "{__hugo_ctx/}" "}\n" }}
+
+  {{ $isStatblock := partialCached "pf/isStatblock" .Type .Type }}
+  {{ if and $isStatblock (not $.template) }}
+    {{ $content = printf "<div class=\"prose sf-prose px-4 py-4 bg-black/3 dark:bg-white/3 my-5\">\n\n%s\n\n</div>" $content }}
+  {{ end }}
 {{ end }}
 
 {{ return ($content | safeHTML) }}

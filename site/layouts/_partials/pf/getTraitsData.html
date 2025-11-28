@@ -2,10 +2,12 @@
 {{ range . }}
   {{ $trait := . }}
   {{ $traitOverrideName := split $trait ":" }}
+
   {{ $trait = index $traitOverrideName 0 }}
-  {{ $traitNameParts := split (replace $trait " " "-" | replaceRE `^(.*?)(?:-(\+?\d+))?$` "$1;$2") ";" }}
-  {{ $traitName := index $traitNameParts 0 }}
-  {{ $number := index $traitNameParts 1 }}
+
+  {{ $traitParts := index (findRESubmatch `^(.*?)(?:\s+(\+?\d+|\[.*\]))?$` $trait) 0 }}
+  {{ $traitName := replace (index $traitParts 1) " " "-" }}
+  {{ $traitInfo := index $traitParts 2 | replaceRE `^\[(.*)\]$` "$1" }}
 
   {{ $isSize := false }}
   {{ $isRarity := false }}
@@ -17,13 +19,14 @@
   {{ with site.GetPage $traitPath }}
     {{ $title := partialCached "utils/title" . .Path }}
     {{ $displayName = $title.name }}
-    {{- if $number -}}
-      {{- $displayName = printf "%s %s" $displayName $number -}}
+    {{- if $traitInfo -}}
+      {{- $displayName = printf "%s %s" $displayName $traitInfo -}}
     {{- end -}}
     {{ $url = .RelPermalink | replaceRE "/$" "" }}
   {{ else }}
     {{ $displayName = strings.FirstUpper $trait }}
   {{ end }}
+
   {{ if gt (len $traitOverrideName) 1 }}
     {{ $displayName = strings.FirstUpper (index $traitOverrideName 1) }}
   {{ end }}
@@ -55,8 +58,8 @@
   {{ if $url }}
     {{ $entry = $entry | merge (dict "url" $url) }}
   {{ end }}
-  {{ if $number }}
-    {{ $entry = $entry | merge (dict "number" $number) }}
+  {{ if $traitInfo }}
+    {{ $entry = $entry | merge (dict "info" $traitInfo) }}
   {{ end }}
   {{ if $isSize }}
     {{ $entry = $entry | merge (dict "size" true) }}

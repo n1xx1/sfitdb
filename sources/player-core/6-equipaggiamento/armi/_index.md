@@ -275,7 +275,7 @@ specializzazione del critico. L’effetto esatto dipende dal gruppo delle armi a
 cui la tua arma appartiene, come indicato di seguito. Puoi sempre decidere di
 non aggiungere l’effetto di specializzazione del critico della tua arma.
 
-{{% includeAll source="./gruppo-armi" template="inlinetitle" %}}
+{{% includeAll source="./gruppi-armi" template="inlinetitle" %}}
 
 ## Descrizione delle Armi
 
@@ -283,24 +283,7 @@ Di seguito è descritto più nel dettaglio ogni tipo di arma.
 
 ### Armi da Mischia Semplici
 
-[**Sfollagente**](/equipaggiamento/sfollagente)**:** Questa asta rinforzata è
-comunemente realizzata con leghe metalliche ed è progettata per colpire e parare
-i colpi in arrivo.
-
-[**Guanto da Battaglia**](/equipaggiamento/guanto-da-battaglia)**:** Questi
-guanti resistenti si adattano alle mani (o ad altre appendici) dell’utilizzatore
-e presentano placche appesantite o spuntoni sulle nocche.
-
-[**Coltello**](/equipaggiamento/coltello)**:** Inestimabili sia come armi che
-come utensili, i coltelli esistono in una varietà di forme, stili e materiali
-che vanno dai metalli stellari alla ceramica.
-
-[**Lama Composta**](/equipaggiamento/lama-composta)**:** Questa spada
-[kasatha](/stirpi/kasatha) si smonta in pezzi interconnessi per conservarla e
-trasportata. I tradizionalisti praticano l’arte di assemblare ritualisticamente
-le lame composte, con diversi pezzi che simboleggiano le virtù kasatha di
-convinzione, devozione, moderazione e tradizione. Criminali e contrabbandieri
-apprezzano la lama composta per il suo design discreto.
+{{% includeAll source="./oggetti-mischia-semplici" template="inlinetitle" %}}
 
 [**Piastra a Corrente**](/equipaggiamento/piastra-a-corrente)**:** Questo
 circuito flessibile in nanocarbonio può essere installato come miglioria in

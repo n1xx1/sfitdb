@@ -66,7 +66,7 @@ radiazioni, puoi installare potenziamenti per armature negli slot di
 miglioramento della tua armatura.
 
 **Protezioni dell’Armatura:** Tutte le armature, eccetto quelle con il tratto
-[esposto](/tratti/esposto), ti permettono di respirare e sopravvivere in
+[esposto](/tratti/esposta), ti permettono di respirare e sopravvivere in
 un’atmosfera densa o rarefatta, in un vuoto o in ambienti subacquei non
 pericolosi. Questo non impedisce a tossine inalate o effetti simili di penetrare
 nei sistemi della tua armatura. Le stirpi come i kalo, che richiedono condizioni
@@ -172,55 +172,7 @@ riferimento ai gruppi di armature, generalmente per concedere effetti di
 I tratti di ogni armatura sono presenti a questa voce. Un’armatura può avere i
 tratti seguenti.
 
-[**Analogica**](/tratti/analogico)**:** Sebbene questa armatura non incorpora
-elettronica avanzata, sistemi informatici e fonti di energia elettrica, è stata
-comunque prodotta e calibrata utilizzando tecnologie avanzate e materiali
-moderni. Questa armatura è immune alle capacità che prendono di mira la
-tecnologia. Le rune dell’armatura (_Pathfinder GM Core_ 226) non funzionano su
-questa armatura a meno che essa non abbia anche il tratto
-[arcaico](/tratti/arcaico). Le armature analogiche hanno solitamente il tratto
-[esposto](/tratti/esposto).
-
-[**Arcaica**](/tratti/arcaico)**:** Questa armatura è realizzata utilizzando
-metodi e materiali tradizionali. Tutte le armature di Pathfinder hanno il tratto
-arcaico. Le rune dell’armatura (_Pathfinder GM Core_ 226) funzionano normalmente
-con un’armatura arcaica.
-
-[**Baluardo**](/tratti/baluardo)**:** L’armatura ti copre in modo così completo
-da fornirti dei benefici contro alcuni effetti che infliggono danni. Ai TS su
-Riflessi per evitare un effetto che infligge danni, come ad esempio una palla di
-fuoco, aggiungi un modificatore di +3 invece del tuo modificatore di Destrezza.
-
-[**Confortevole**](/tratti/confortevole)**:** L’armatura è talmente comoda che
-puoi riposare normalmente mentre la stai indossando.
-
-[**Esposta**](/tratti/esposto)**:** Questa armatura non è dotata di protezioni
-ambientali. Tutte le armature [arcaiche](/tratti/arcaico) hanno il tratto
-esposto.
-
-[**Flessibile**](/tratti/flessibile): L’armatura è abbastanza flessibile da non
-ostacolare la maggior parte delle azioni. Non applichi la sua penalità alle
-prove per le prove di Acrobazia o Atletica.
-
-[**Ponderosa**](/tratti/ponderoso)**:** L’armatura ha parti mobili o altri
-elementi completi che rallentano il tempo di reazione di chi la indossa. Mentre
-indossi l’armatura subisci penalità -1 alle prove di iniziativa. Se non soddisfi
-il requisito del punteggio di Forza dell’armatura, questa penalità incrementa
-fino alla penalità alle prove dell’armatura, se è peggiore.
-
-[**Resiliente**](/tratti/resiliente)**:** Questa armatura è stata sviluppata con
-diversi sistemi integrati di ricalibrazione e difesa. Mentre indossi
-quest’armatura, ottieni un bonus oggetto ai tiri salvezza pari al valore
-indicato.
-
-[**Rumorosa**](/tratti/rumoroso): Quest’armatura è rumorosa ed è probabile che
-allerti gli altri della tua presenza. La penalità alle prove dell’armatura si
-applica alle prove di Furtività anche se soddisfi il punteggio di Forza
-richiesto.
-
-[**Tecnologica**](/tratti/tecnologico)**:** Questa armatura incorpora
-elettronica, sistemi informatici, fonti di energia integrate e un’unità di
-comunicazione.
+{{% includeAll source="./tratti" template="inlinetitle" %}}
 
 ## Effetti di Specializzazione dell’Armatura
 
@@ -229,159 +181,18 @@ armature, e questo è detto effetto di specializzazione dell’armatura. L’eff
 esatto dipende dal gruppo di armature al quale appartiene la tua armatura, come
 elencato di seguito.
 
-**Ceramica:** Delicate ma robuste, le piastre in ceramica trattata sono comuni
-nelle tute spaziali. Resistono al calore e ad altri pericoli ambientali e sono
-abbastanza leggere da essere indossate agevolmente. Ottieni resistenza ai danni
-da acido, freddo, fuoco ed elettricità pari a 1 + il valore di resiliente
-dell’armatura per un’armatura media, oppure 2 + il valore di resiliente
-dell’armatura per un’armatura pesante.
-
-**Composita:** Le numerose parti sovrapposte di quest’armatura ti proteggono
-dagli attacchi perforanti. Ottieni resistenza ai danni perforanti pari a 1 + il
-valore di resiliente dell'armatura per le armature medie, oppure 2 + il valore
-di resiliente dell’armatura per quelle pesanti.
-
-**Cuoio:** Lo spesso secondo strato dell’armatura disperde la forza dell’impatto
-per ridurre il danno contundente. Ottieni resistenza ai danni contundenti pari a
-1 + il valore di resiliente dell'armatura per le armature medie, oppure 2 + il
-valore di resiliente dell’armatura per quelle pesanti.
-
-**Maglia:** L’armatura è così flessibile che può piegarsi subendo un colpo
-critico e assorbirne parte dell’impatto. Riduci il danno da colpi critici di 4 +
-il valore di resiliente dell’armatura per le armature medie, oppure di 6 + il
-valore di resiliente dell’armatura per quelle pesanti. Questo non può ridurre il
-danno a un valore inferiore al danno tirato per il colpo prima di raddoppiare
-per un colpo critico.
-
-**Piastre:** Le robuste piastre deflettono le lame taglienti. Ottieni resistenza
-ai danni taglienti pari a 1 + il valore di resiliente dell'armatura per le
-armature medie, oppure 2 + il valore di resiliente dell’armatura per quelle
-pesanti.
-
-**Polimeri:** Questa armatura flessibile ti protegge dal calore e dalla forza
-disperza. Ottieni resistenza ai danni ad area pari a 1 + il valore di resiliente
-dell’armatura per un’armatura media, oppure 2 + il valore di resiliente
-dell’armatura per un’armatura pesante.
+{{% includeAll source="./gruppi-armature" template="inlinetitle" %}}
 
 ## Descrizioni delle Armature
 
 Di seguito è descritto più nel dettaglio ogni tipo di armatura.
 
-[**Armatura da Corsaro**](/equipaggiamento/armatura-da-corsaro)**:** L’armatura
-da crosaro prende il nome dai pirati e fuorilegge che spesso la indossano. Di
-solito consiste in un pettorale sotto una giacca o tuta da volo, stivali e
-guanti pesanti, un elmo e cinghie e fondine nascoste per occultare armi.
-
-[**Armatura del Soldato Nascosto**](/equipaggiamento/armatura-del-soldato-nascosto)**:**
-Questa armatura pesante presenta un elmo fessurato che rivela solo gli occhi del
-portatore. Questa tuta ceramica hi-tech comprende pettorale, spallacci,
-bracciali e schinieri che si flettono con i movimenti del corpo.
-
-[**Armatura Fuoco Celeste**](/equipaggiamento/armatura-fuoco-celeste)**:**
-Questo indumento decorativo di armatura media presenta spallacci esagerati, ali
-di drago stilizzate ed emblemi draconici sul retro e sul petto della corazza.
-L’armatura fuoco celeste è spesso placcata in oro o altri metalli ornamentali,
-sacrificando spazio per le migliorie in favore dello stile.
-
-[**Armatura in Microtessuto**](/equipaggiamento/armatura-in-microtessuto)**:**
-Questa armatura leggera è intrecciata con fibre ultraleggere che si flettono con
-i movimenti del portatore ma diventano dure come l’acciaio all’impatto.
-
-[**Armatura Shotalashu**](/equipaggiamento/armatura-shotalashu)**:** Questa
-armatura tradizionale indossata dalla cavalleria lashunta su Castrovel è formata
-da piastre flessibili ma robuste sovrapposte. Anticamente, un membro della
-cavalleria shotalashu forgiava la propria armatura dalla pelle mutata della
-propria cavalcatura, o più raramente dalla pelle di una cavalcatura caduta, per
-onorarla nelle battaglie future. Imitazioni sintetiche sono di moda in alcune
-parti di Castrovel.
-
-[**Armatura Trapuntata**](/equipaggiamento/armatura-trapuntata)**:** Questa
-armatura è composta da strati di tessuti cuciti insieme ed è popolare tra i
-saccheggiatori. Su Akiton, alcune armature trapuntate sono in realtà costruite
-con coperte e indumenti ereditari riutilizzati come protezione.
-
-[**Armatura Veskariana Imperiale**](/equipaggiamento/armatura-veskariana-imperiale)**:**
-Questa armatura pesante è composta da piastre metalliche interconnesse modellate
-sul corpo del portatore con un motivo squamato. Paracoda e guanti artigliati
-sono elementi standard di questa armatura.
-
-[**Cappotto Corazzato**](/equipaggiamento/cappotto-corazzato)**:** Questo
-soprabito è realizzato in pelle vera o sintetica e rinforzato con piastre
-corazzate. I cappotti corazzati sono spesso realizzati su misura per abbinarsi
-allo stile personale del portatore. Le versioni standard sono assegnate agli
-ufficiali militari come parte dell’uniforme.
-
-[**Pelle di Carbonio**](/equipaggiamento/pelle-di-carbonio)**:** Questa tuta
-aderente in fibra di carbonio avvolge il corpo. La maggior parte sono di color
-grigio opaco, indumenti funzionali, mentre i modelli più costosi e su misura
-brillano come diamanti.
-
-[**Pelle di Defrex**](/equipaggiamento/pelle-di-defrex)**:** Realizzata dalla
-pelle di un feroce mammifero originario di Vesk-2, questa armatura media è
-particolarmente popolare tra i vesk. Lastre conciate della spessa pelle della
-creatura sono cucite insieme con fili metallici, e le giunture sono rinforzate
-da borchie o scaglie metalliche.
-
-[**Piastre Kyokor**](/equipaggiamento/piastre-kyokor)**:** Questa armatura
-incorpora una tuta in policarbonato a copertura totale, costellata di portelli e
-alloggiamenti e rivestita con piastre provenienti dagli infami colossi di
-Daimalko. Le l'armatura di piastre kyokor include stivali, guanti e un elmo con
-visiera trasparente.
-
-[**Piastra Sottile**](/equipaggiamento/piastra-sottile)**:** Questa armatura a
-piastre elegante ma rigida è spesso costruita con materiali traslucidi per
-mettere in mostra la circuiteria dermica del portatore e viene indossata sotto
-abiti larghi.
-
-[**Seconda Pelle**](/equipaggiamento/seconda-pelle)**:** Un tessuto morbido ma
-resistente si adatta perfettamente al corpo del portatore, offrendo una
-protezione di base senza sacrificare il comfort. La seconda pelle è comunemente
-indossata sotto abiti casual.
-
-[**Serie Egida**](/equipaggiamento/serie-egida)**:** Le armature egida sono
-gusci infusi di metallo stellare che racchiudono completamente il portatore,
-incluso un elmo senza visiera spesso scolpito in uno stile personalizzato.
-Sensori integrati trasmettono informazioni sensoriali all’utilizzatore, mentre
-arti potenziati assistono nelle manovre. Muoversi in un’armatura egida è
-scomodo, ma potente.
-
-[**Serie Luce Solida**](/equipaggiamento/serie-luce-solida)**:** Un proiettore
-fissato alla cintura o al bavero avvolge il corpo dell’utilizzatore in questo
-scintillante guscio di luce solida. Le armature di luce solida di uso militare
-seguono uno standard prevedibile, mentre gli utenti privati possono scegliere
-tra numerose opzioni estetiche personalizzabili.
-
-[**Serie Sprezzo**](/equipaggiamento/serie-sprezzo)**:** Questa armatura da
-squadra è un guscio modellato in policarbonato rinforzato, con elmo e visiera
-retrattile.
-
-[**Tessuto Termico**](/equipaggiamento/tessuto-termico)**:** Le tute in tessuto
-termico sono capi rinforzati con cappuccio, intrecciate con materiale termico e
-fili di ventilazione, comunemente indossati per viaggi in climi umidi come le
-giungle di Castrovel o di Pulonis.
-
-[**Tuta di Estex**](/equipaggiamento/tuta-di-estex)**:** Questa ingombrante tuta
-da volo è rinforzata con sottili pannelli di policarbonato cuciti tra strati di
-tessuto tattico.
-
-[**Tuta da Volo**](/equipaggiamento/tuta-da-volo)**:** Questa comoda tuta intera
-è fatta di tessuto termico leggero ed è spesso decorata con toppe che mostrano
-stemmi personali, grado militare o persino band preferite o squadre sportive.
-
-[**Tuta dello Sciame**](/equipaggiamento/tuta-dello-sciame)**:** Naniti
-specializzati formano una tuta a rete che si adatta a portatori con fisiologie
-uniche o trasformabili.
-
-[**Vestito da Viaggio Abadarcorp**](/equipaggiamento/vestito-da-viaggio-abadarcorp)**:**
-I dirigenti di AbadarCorp hanno reso popolari questi completi d’affari
-corazzati, adatti tanto alle sale riunioni quanto al campo di battaglia. Campi
-di forza contingenti e piastre nascoste proteggono chi li indossa in situazioni
-ostili. I modelli di grado superiore offrono maggiore protezione, insieme a
-un’etichetta di design.
+{{% includeAll source="./oggetti-armature" template="inlinetitle" filter=`{params: {slug: {$not: nessuna-armatura}}}`
+%}}
 
 | Armatura                                              | Livello | Prezzo | Bonus CA | Des Massimo | Pen. Prove | Pen. Velocità | Volume | Migliorie | Gruppo | Tratti dell’Armatura                                                 |
 | ----------------------------------------------------- | :-----: | :----: | :------: | :---------: | :--------: | :-----------: | :----: | :-------: | ------ | -------------------------------------------------------------------- |
-| [Nessuna armatura](/equipaggiamento/nessuna-armatura) |    —    |   —    |    +0    |      —      |     —      |       —       |   —    |     —     | —      | [Esposta](/tratti/esposto)                                           |
+| [Nessuna armatura](/equipaggiamento/nessuna-armatura) |    —    |   —    |    +0    |      —      |     —      |       —       |   —    |     —     | —      | [Esposta](/tratti/esposta)                                           |
 | [Tuta da Volo](/equipaggiamento/tuta-da-volo)         |    1    |   10   |    +0    |     +5      |     —      |       —       |   L    |     0     | Stoffa | [Analogica](/tratti/analogico), [confortevole](/tratti/confortevole) |
 
 `{caption="Difesa Senz’Armatura"}`
@@ -393,10 +204,10 @@ un’etichetta di design.
 | [Cappotto Corazzato](/equipaggiamento/cappotto-corazzato)                       |    0    |   20   |    +2    |     +2      |     –1     |       —       |  +2   |   1    |     1     | Cuoio     | [Confortevole](/tratti/confortevole), [flessibile](/tratti/flessibile), [tecnologica](/tratti/tecnologico) |
 | [Pelle di Carbonio](/equipaggiamento/pelle-di-carbonio)                         |    0    |   30   |    +1    |     +4      |     –1     |       —       |  +0   |   1    |     1     | Polimeri  | [Tecnologica](/tratti/tecnologico)                                                                         |
 | [Seconda Pelle](/equipaggiamento/seconda-pelle)                                 |    0    |   20   |    +1    |     +4      |     –1     |       —       |  +0   |   L    |     0     | Polimeri  | [Confortevole](/tratti/confortevole), [flessibile](/tratti/flessibile), [tecnologica](/tratti/tecnologico) |
-| [Serie Luce Solida](/equipaggiamento/serie-luce-solida)                         |    0    |   50   |    +2    |     +3      |     –1     |       —       |  +1   |   1    |     1     | Maglia    | [Flessibile](/tratti/flessibile), [tecnologica](/tratti/tecnologico), [rumorosa](/tratti/rumoroso)         |
+| [Serie Luce Solida](/equipaggiamento/serie-luce-solida)                         |    0    |   50   |    +2    |     +3      |     –1     |       —       |  +1   |   1    |     1     | Maglia    | [Flessibile](/tratti/flessibile), [tecnologica](/tratti/tecnologico), [rumorosa](/tratti/rumorosa)         |
 | [Tessuto Termico](/equipaggiamento/tessuto-termico)                             |    0    |   45   |    +1    |     +4      |     –1     |       —       |  +0   |   1    |     1     | Composita | [Tecnologica](/tratti/tecnologico)                                                                         |
 | [Tuta di Estex](/equipaggiamento/tuta-di-estex)                                 |    0    |   30   |    +1    |     +3      |     –1     |       —       |  +1   |   L    |     1     | Stoffa    | [Confortevole](/tratti/confortevole), [flessibile](/tratti/flessibile), [tecnologica](/tratti/tecnologico) |
-| [Vestito da Viaggio Abadarcorp](/equipaggiamento/vestito-da-viaggio-abadarcorp) |    0    |   10   |    +1    |     +3      |     —      |       —       |  +0   |   L    |     2     | Stoffa    | [Esposta](/tratti/esposto), [tecnologica](/tratti/tecnologico)                                             |
+| [Vestito da Viaggio Abadarcorp](/equipaggiamento/vestito-da-viaggio-abadarcorp) |    0    |   10   |    +1    |     +3      |     —      |       —       |  +0   |   L    |     2     | Stoffa    | [Esposta](/tratti/esposta), [tecnologica](/tratti/tecnologico)                                             |
 
 `{caption="Armatura Leggera"}`
 
@@ -406,7 +217,7 @@ un’etichetta di design.
 | [Armatura Shotalashu](/equipaggiamento/armatura-shotalashu)       |    0    |   40   |    +3    |     +2      |     –2     |     –1,5      |  +2   |   2    |     1     | Composita | [Tecnologica](/tratti/tecnologico)                                                                 |
 | [Armatura Fuoco Celeste](/equipaggiamento/armatura-fuoco-celeste) |    0    |   60   |    +3    |     +2      |     –2     |     –1,5      |  +1   |   1    |     0     | Ceramica  | [Flessibile](/tratti/flessibile), [tecnologica](/tratti/tecnologico)                               |
 | [Pelle di Defrex](/equipaggiamento/pelle-di-defrex)               |    0    |   25   |    +3    |     +2      |     –2     |     –1,5      |  +2   |   2    |     1     | Cuoio     | [Tecnologica](/tratti/tecnologico)                                                                 |
-| [Tuta dello Sciame](/equipaggiamento/tuta-dello-sciame)           |    0    |   75   |    +4    |     +1      |     –2     |     –1,5      |  +3   |   2    |     1     | Maglia    | [Flessibile](/tratti/flessibile), [tecnologica](/tratti/tecnologico), [rumorosa](/tratti/rumoroso) |
+| [Tuta dello Sciame](/equipaggiamento/tuta-dello-sciame)           |    0    |   75   |    +4    |     +1      |     –2     |     –1,5      |  +3   |   2    |     1     | Maglia    | [Flessibile](/tratti/flessibile), [tecnologica](/tratti/tecnologico), [rumorosa](/tratti/rumorosa) |
 
 `{caption="Armatura Media"}`
 

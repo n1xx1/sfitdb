@@ -59,7 +59,14 @@
 {{ $filterLevel := default nil nil }}
 {{ $filterHasTitle := false }}
 {{ $filterNavigable := false }}
-{{ $filterParams := default nil nil }}
+{{ $filterParamsEq := slice }}
+{{ $filterParamsIn := slice }}
+{{ $filterParamsHas := slice }}
+{{ $filterParamsContains := slice }}
+{{ $filterParamsNotEq := slice }}
+{{ $filterParamsNotIn := slice }}
+{{ $filterParamsNotHas := slice }}
+{{ $filterParamsNotContains := slice }}
 {{ $filterTitleType := "" }}
 
 {{ with .filter }}
@@ -85,7 +92,45 @@
     {{ $filterNavigable = true }}
   {{ end }}
   {{ if isset . "params" }}
-    {{ $filterParams = .params }}
+    {{ range $key, $value := .params }}
+      {{ $keyPath := strings.Split $key "." }}
+      {{ if and (reflect.IsMap $value) (isset $value "$in") }}
+        {{ $filterParamsIn = $filterParamsIn | append
+          (dict "key" $keyPath "value" (index $value "$in"))
+        }}
+      {{ else if and (reflect.IsMap $value) (isset $value "$contains") }}
+        {{ $filterParamsContains = $filterParamsContains | append
+          (dict "key" $keyPath "value" (index $value "$contains"))
+        }}
+      {{ else if and (reflect.IsMap $value) (isset $value "$has") }}
+        {{ $filterParamsHas = $filterParamsHas | append
+          (dict "key" $keyPath "value" (index $value "$has"))
+        }}
+      {{ else if and (reflect.IsMap $value) (isset $value "$not") }}
+        {{ $value1 := index $value "$not" }}
+        {{ if and (reflect.IsMap $value1) (isset $value1 "$in") }}
+          {{ $filterParamsNotIn = $filterParamsNotIn | append
+            (dict "key" $keyPath "value" (index $value1 "$in"))
+          }}
+        {{ else if and (reflect.IsMap $value1) (isset $value1 "$contains") }}
+          {{ $filterParamsNotContains = $filterParamsNotContains | append
+            (dict "key" $keyPath "value" (index $value1 "$contains"))
+          }}
+        {{ else if and (reflect.IsMap $value1) (isset $value1 "$has") }}
+          {{ $filterParamsNotHas = $filterParamsNotHas | append
+            (dict "key" $keyPath "value" (index $value1 "$has"))
+          }}
+        {{ else }}
+          {{ $filterParamsNotEq = $filterParamsNotEq | append
+            (dict "key" $keyPath "value" $value1)
+          }}
+        {{ end }}
+      {{ else }}
+        {{ $filterParamsEq = $filterParamsEq | append
+          (dict "key" $keyPath "value" $value)
+        }}
+      {{ end }}
+    {{ end }}
   {{ end }}
   {{ $filterTitleType = .titleType | default "" }}
 {{ end }}
@@ -174,36 +219,111 @@
     {{ continue }}
   {{ end }}
 
-  {{ if $filterParams }}
+  {{ if $filterParamsEq }}
     {{ $failed := false }}
-    {{ range $key, $value := merge (dict) $filterParams }}
-      {{ $keyPath := strings.Split $key "." }}
-      {{ $param := index $page.Params $keyPath }}
+    {{ range $filterParamsEq }}
+      {{ $param := index $page.Params .key }}
+      {{ if ne $param .value }}
+        {{ $failed = true }}
+        {{ break }}
+      {{ end }}
+    {{ end }}
+    {{ if $failed }}
+      {{ continue }}
+    {{ end }}
+  {{ end }}
 
-      {{ if and (reflect.IsMap $value) (isset $value "$or") }}
-        {{ $values := index $value "$or" }}
-        {{ $found := false }}
-        {{ range $v := $values }}
-          {{ if eq $param $v }}
-            {{ $found = true }}
-            {{ break }}
-          {{ end }}
-        {{ end }}
-        {{ if not $found }}
-          {{ $failed = true }}
-          {{ break }}
-        {{ end }}
-      {{ else if and (reflect.IsMap $value) (isset $value "$contains") }}
-        {{ $contained := index $value "$contains" }}
-        {{ if not (collections.In $param $contained) }}
-          {{ $failed = true }}
-          {{ break }}
-        {{ end }}
-      {{ else }}
-        {{ if ne $param $value }}
-          {{ $failed = true }}
-          {{ break }}
-        {{ end }}
+  {{ if $filterParamsIn }}
+    {{ $failed := false }}
+    {{ range $filterParamsNotIn }}
+      {{ $param := index $page.Params .key }}
+      {{ if not (collections.In .value $param) }}
+        {{ $failed = true }}
+        {{ break }}
+      {{ end }}
+    {{ end }}
+    {{ if $failed }}
+      {{ continue }}
+    {{ end }}
+  {{ end }}
+
+  {{ if $filterParamsHas }}
+    {{ $failed := false }}
+    {{ range $filterParamsHas }}
+      {{ $param := index $page.Params .key }}
+      {{ if not (collections.In $param .value) }}
+        {{ $failed = true }}
+        {{ break }}
+      {{ end }}
+    {{ end }}
+    {{ if $failed }}
+      {{ continue }}
+    {{ end }}
+  {{ end }}
+
+  {{ if $filterParamsContains }}
+    {{ $failed := false }}
+    {{ range $filterParamsContains }}
+      {{ $param := index $page.Params .key }}
+      {{ if not (strings.Contains $param .) }}
+        {{ $failed = true }}
+        {{ break }}
+      {{ end }}
+    {{ end }}
+    {{ if $failed }}
+      {{ continue }}
+    {{ end }}
+  {{ end }}
+
+  {{ if $filterParamsNotEq }}
+    {{ $failed := false }}
+    {{ range $filterParamsNotEq }}
+      {{ $param := index $page.Params .key }}
+      {{ if eq $param .value }}
+        {{ $failed = true }}
+        {{ break }}
+      {{ end }}
+    {{ end }}
+    {{ if $failed }}
+      {{ continue }}
+    {{ end }}
+  {{ end }}
+
+  {{ if $filterParamsNotIn }}
+    {{ $failed := false }}
+    {{ range $filterParamsNotIn }}
+      {{ $param := index $page.Params .key }}
+      {{ if collections.In . $param }}
+        {{ $failed = true }}
+        {{ break }}
+      {{ end }}
+    {{ end }}
+    {{ if $failed }}
+      {{ continue }}
+    {{ end }}
+  {{ end }}
+
+  {{ if $filterParamsNotHas }}
+    {{ $failed := false }}
+    {{ range $filterParamsNotHas }}
+      {{ $param := index $page.Params .key }}
+      {{ if collections.In $param .value }}
+        {{ $failed = true }}
+        {{ break }}
+      {{ end }}
+    {{ end }}
+    {{ if $failed }}
+      {{ continue }}
+    {{ end }}
+  {{ end }}
+
+  {{ if $filterParamsNotContains }}
+    {{ $failed := false }}
+    {{ range $filterParamsNotContains }}
+      {{ $param := index $page.Params .key }}
+      {{ if strings.Contains $param . }}
+        {{ $failed = true }}
+        {{ break }}
       {{ end }}
     {{ end }}
     {{ if $failed }}

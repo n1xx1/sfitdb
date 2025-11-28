@@ -135,12 +135,14 @@
     {{ end }}
   {{ end }}
 
-  {{ $canonicalPath := partial "contentAdapterPathByType" (dict "path" $path "type" $pftype "params" $params) }}
+  {{ $base := replaceRE `^.*/([a-z\-]+)$` "$1" $path }}
+  {{ if isset $params "slug" }}
+    {{ $base = $params.slug }}
+  {{ else }}
+    {{ $params = merge $params (dict "slug" $base) }}
+  {{ end }}
+  {{ $canonicalPath := partial "contentAdapterPathByType" (dict "base" $base "path" $path "type" $pftype "params" $params) }}
   {{ if $canonicalPath }}
-    {{ if isset $params "slug" }}
-      {{ $pathDir := path.Dir $canonicalPath }}
-      {{ $canonicalPath = path.Join $pathDir $params.slug }}
-    {{ end }}
     {{ $params = merge $params (dict "canonicalURL" $canonicalPath) }}
   {{ end }}
 
@@ -324,7 +326,7 @@
 {{ end }}
 
 {{ define "partials/contentAdapterPathByType" }}
-  {{ $base := replaceRE `^.*/([a-z\-]+)$` "$1" .path }}
+  {{ $base := .base }}
   {{ $path := "" }}
   {{ if .type }}
     {{ $pathTemplate := (index (partialCached "config" "").types .type).path }}
@@ -333,7 +335,7 @@
     {{ end }}
 
     {{ $context := (dict "base" $base "params" .params) }}
-    {{ $pathExecuted := printf "%s/%s.txt" .path .type }}
+    {{ $pathExecuted := printf "path-by-type-%s/%s.txt" .path .type }}
     {{ $path = (resources.FromString .type $pathTemplate | resources.ExecuteAsTemplate $pathExecuted $context).Content }}
   {{ end }}
   {{ return $path }}

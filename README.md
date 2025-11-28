@@ -363,6 +363,7 @@
 |                         |                            |       |                           |
 | Noise Blast             | Frastuono                  | gu pf |                           |
 |                         |                            |       |                           |
+| Overheat                | Surriscaldare              | gu sf |                           |
 | Overload Systems        | Sovraccaricare Sistemi     | gu sf |                           |
 |                         |                            |       |                           |
 | Parallel Forms          | Forme Parallele            | us    |                           |
@@ -472,6 +473,7 @@
 | Field Scientist’s Toolkit | Kit di Strumenti da Scienziato da Campo |       |      |
 | Flaming Module            | Modulo Infuocato                        | us    | ???? |
 | Flight Suit               | Tuta da Volo                            | gu sf |      |
+| Frag Grenade              | Granata a Frammentazione                | gu sf |      |
 | Freebooter Armor          | Armatura da Corsaro                     | gu sf |      |
 |                           |                                         |       |      |
 | Ghost Killer              | Sterminaspettri                         | gu sf |      |
