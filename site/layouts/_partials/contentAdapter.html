@@ -32,7 +32,7 @@
 {{ $macros := dict }}
 {{ $macrosHelper := collections.NewScratch }}
 {{ $macrosHelper.Set "v" $macros }}
-{{ range resources.Match "sources/{macro.yaml,*/macro.yaml,**/macro.yaml}" }}
+{{ range resources.Match "sources/{*.macro.yaml,*/*.macro.yaml,**/*.macro.yaml}" }}
   {{ range $id, $macro := (transform.Unmarshal .) }}
     {{ $params := slice }}
     {{ range $macro.params }}
@@ -64,7 +64,7 @@
 {{ $addedResources := collections.NewScratch }}
 
 {{ range resources.Match "sources/**/*.md" }}
-  {{ if strings.Contains .String "~" }}
+  {{ if findRE `(^|/)\.[^/]+(/$)|~` .String 1 }}
     {{ continue }}
   {{ end }}
 
