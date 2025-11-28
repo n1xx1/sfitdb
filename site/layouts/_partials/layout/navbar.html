@@ -11,20 +11,21 @@
       class="flex items-center hover:opacity-75 ltr:mr-auto rtl:ml-auto"
       href="{{ .Site.Home.RelPermalink }}"
     >
-      <div class="relative">
-        {{- $logo := resources.Get "images/sf2.png" -}}
+      <div class="relative flex flex-row">
+        {{- $logo := resources.Get "images/sfitdb.png" -}}
         <img
-          class="h-14 w-auto max-w-none"
+          class="h-10 w-auto max-w-none drop-shadow-sm drop-shadow-white"
           src="{{ $logo.RelPermalink }}"
           width="{{ $logo.Width }}"
           height="{{ $logo.Height }}"
           alt="Starfinder"
         />
-        <span
-          class="absolute bottom-0 -right-3 text-sm font-extrabold select-none"
+        <div
+          class="relative -left-2 font-bold select-none flex flex-col justify-center"
         >
-          Italian Database
-        </span>
+          <div class="text-lg leading-none">Starfinder 2e</div>
+          <div class="text-sm leading-none">Italian Database</div>
+        </div>
       </div>
     </a>
     {{- $currentPage := . -}}
