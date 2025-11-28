@@ -15,14 +15,14 @@ itemShield:
 #[[shieldSubItems Campo Deflettente, Deflecting Field]]
 ---
 
-# {{% get "title" %}} - Oggetto {{% get "level" %}}
+# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
 
-**Prezzo** {{% get "itemShield.price" "number" %}} crediti
+**Prezzo** {{% get `.params.itemShield.price | lang.FormatNumber 0` %}} crediti
 
 **Bonus CA**^1^ +1; **Pen. Velocità** —; **Volume** —
 
-**Durezza** {{% get "itemShield.hardness" %}}; **PF (SR)**
-{{% get "itemShield.hp" %}} ({{% get "itemShield.bt" %}})
+**Durezza** {{% get `.params.itemShield.hardness` %}}; **PF (SR)**
+{{% get `.params.itemShield.hp` %}} ({{% get `.params.itemShield.bt` %}})
 
 ---
 
@@ -46,6 +46,6 @@ quando attivato.
 | [Campo Deflettente Definitivo](/equipaggiamento/campo-deflettente/definitivo)         | 18      |   +55.000 crediti    | 80.010 crediti  |    8    | 104 | 52  |
 | [Campo Deflettente Ineguagliabile](/equipaggiamento/campo-deflettente/ineguagliabile) | 20      |   +240.000 crediti   | 320.010 crediti |    9    | 124 | 62  |
 
-`{caption="Potenziamenti"}`
+`{caption="Miglioramenti"}`
 
 {{% /if %}}

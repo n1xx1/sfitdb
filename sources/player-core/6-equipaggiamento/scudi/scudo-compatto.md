@@ -15,14 +15,14 @@ itemShield:
 #[[shieldSubItems Scudo Compatto, Compact Shield]]
 ---
 
-# {{% get "title" %}} - Oggetto {{% get "level" %}}
+# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
 
-**Prezzo** {{% get "itemShield.price" "number" %}} crediti
+**Prezzo** {{% get `.params.itemShield.price | lang.FormatNumber 0` %}} crediti
 
 **Bonus CA**^1^ +1; **Pen. Velocità** —; **Volume** L
 
-**Durezza** {{% get "itemShield.hardness" %}}; **PF (SR)**
-{{% get "itemShield.hp" %}} ({{% get "itemShield.bt" %}})
+**Durezza** {{% get `.params.itemShield.hardness` %}}; **PF (SR)**
+{{% get `.params.itemShield.hp` %}} ({{% get `.params.itemShield.bt` %}})
 
 ---
 
@@ -45,6 +45,6 @@ perfettamente a un avambraccio o a un altro arto.
 | [Scudo Compatto Definitivo](/equipaggiamento/scudo-compatto/definitivo)         | 18      |   +55.000 crediti    | 80.015 crediti  |   10    | 108 | 54  |
 | [Scudo Compatto Ineguagliabile](/equipaggiamento/scudo-compatto/ineguagliabile) | 20      |   +240.000 crediti   | 320.015 crediti |   11    | 128 | 64  |
 
-`{caption="Potenziamenti"}`
+`{caption="Miglioramenti"}`
 
 {{% /if %}}

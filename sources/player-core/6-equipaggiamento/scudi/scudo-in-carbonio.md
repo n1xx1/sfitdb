@@ -15,14 +15,14 @@ itemShield:
 #[[shieldSubItems Scudo in Carbonio, Carbon Shield]]
 ---
 
-# {{% get "title" %}} - Oggetto {{% get "level" %}}
+# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
 
-**Prezzo** {{% get "itemShield.price" "number" %}} crediti
+**Prezzo** {{% get `.params.itemShield.price | lang.FormatNumber 0` %}} crediti
 
 **Bonus CA**^1^ +2; **Pen. Velocità** —; **Volume** 1
 
-**Durezza** {{% get "itemShield.hardness" %}}; **PF (SR)**
-{{% get "itemShield.hp" %}} ({{% get "itemShield.bt" %}})
+**Durezza** {{% get `.params.itemShield.hardness` %}}; **PF (SR)**
+{{% get `.params.itemShield.hp` %}} ({{% get `.params.itemShield.bt` %}})
 
 ---
 
@@ -45,6 +45,6 @@ insegne personali o i colori e simboli di un’organizzazione.
 | [Scudo in Carbonio Definitivo](/equipaggiamento/scudo-in-carbonio/definitivo)         | 18      |   +55.000 crediti    | 80.020 crediti  |   11    | 120 | 60  |
 | [Scudo in Carbonio Ineguagliabile](/equipaggiamento/scudo-in-carbonio/ineguagliabile) | 20      |   +240.000 crediti   | 320.020 crediti |   12    | 150 | 70  |
 
-`{caption="Potenziamenti"}`
+`{caption="Miglioramenti"}`
 
 {{% /if %}}

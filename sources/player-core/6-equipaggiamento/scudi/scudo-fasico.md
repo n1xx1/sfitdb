@@ -15,14 +15,14 @@ itemShield:
 #[[shieldSubItems Scudo Fasico, Phase Shield]]
 ---
 
-# {{% get "title" %}} - Oggetto {{% get "level" %}}
+# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
 
-**Prezzo** {{% get "itemShield.price" "number" %}} crediti
+**Prezzo** {{% get `.params.itemShield.price | lang.FormatNumber 0` %}} crediti
 
 **Bonus CA**^1^ +2; **Pen. Velocità** —; **Volume** —
 
-**Durezza** {{% get "itemShield.hardness" %}}; **PF (SR)**
-{{% get "itemShield.hp" %}} ({{% get "itemShield.bt" %}})
+**Durezza** {{% get `.params.itemShield.hardness` %}}; **PF (SR)**
+{{% get `.params.itemShield.hp` %}} ({{% get `.params.itemShield.bt` %}})
 
 ---
 
@@ -49,6 +49,6 @@ rinvigorire il proprio spirito combattivo in situazioni critiche.
 | [Scudo Fasico Definitivo](/equipaggiamento/scudo-fasico/definitivo)         | 18      |   +55.000 crediti    | 80.020 crediti  |   11    | 110 | 55  |
 | [Scudo Fasico Ineguagliabile](/equipaggiamento/scudo-fasico/ineguagliabile) | 20      |   +240.000 crediti   | 320.020 crediti |   12    | 130 | 65  |
 
-`{caption="Potenziamenti"}`
+`{caption="Miglioramenti"}`
 
 {{% /if %}}

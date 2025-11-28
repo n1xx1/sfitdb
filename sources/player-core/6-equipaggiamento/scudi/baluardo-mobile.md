@@ -15,14 +15,14 @@ itemShield:
 #[[shieldSubItems Baluardo Mobile, Mobile Bulwark]]
 ---
 
-# {{% get "title" %}} - Oggetto {{% get "level" %}}
+# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
 
-**Prezzo** {{% get "itemShield.price" "number" %}} crediti
+**Prezzo** {{% get `.params.itemShield.price | lang.FormatNumber 0` %}} crediti
 
 **Bonus CA**^1^ +3/+4^2^; **Pen. Velocità** -3 m.; **Volume** 4
 
-**Durezza** {{% get "itemShield.hardness" %}}; **PF (SR)**
-{{% get "itemShield.hp" %}} ({{% get "itemShield.bt" %}})
+**Durezza** {{% get `.params.itemShield.hardness` %}}; **PF (SR)**
+{{% get `.params.itemShield.hp` %}} ({{% get `.params.itemShield.bt` %}})
 
 ---
 
@@ -48,6 +48,6 @@ armi.
 | [Baluardo Mobile Definitivo](/equipaggiamento/baluardo-mobile/definitivo)         | 18      |   +55.000 crediti    | 80.200 crediti  |   12    | 124 | 62  |
 | [Baluardo Mobile Ineguagliabile](/equipaggiamento/baluardo-mobile/ineguagliabile) | 20      |   +240.000 crediti   | 320.200 crediti |   13    | 144 | 72  |
 
-`{caption="Potenziamenti"}`
+`{caption="Miglioramenti"}`
 
 {{% /if %}}

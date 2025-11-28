@@ -15,14 +15,14 @@ itemShield:
 #[[shieldSubItems Scudo Antisommossa, Riot Shield]]
 ---
 
-# {{% get "title" %}} - Oggetto {{% get "level" %}}
+# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
 
-**Prezzo** {{% get "itemShield.price" "number" %}} crediti
+**Prezzo** {{% get `.params.itemShield.price | lang.FormatNumber 0` %}} crediti
 
 **Bonus CA**^1^ +2/+4^2^; **Pen. Velocità** -1,5 m.; **Volume** 2
 
-**Durezza** {{% get "itemShield.hardness" %}}; **PF (SR)**
-{{% get "itemShield.hp" %}} ({{% get "itemShield.bt" %}})
+**Durezza** {{% get `.params.itemShield.hardness` %}}; **PF (SR)**
+{{% get `.params.itemShield.hp` %}} ({{% get `.params.itemShield.bt` %}})
 
 ---
 
@@ -53,6 +53,6 @@ rendendo impossibile vedere attraverso di esso.
 | [Scudo Antisommossa Definitivo](/equipaggiamento/scudo-antisommossa/definitivo)         | 18      |   +55.000 crediti    | 80.100 crediti  |   11    | 120 | 60  |
 | [Scudo Antisommossa Ineguagliabile](/equipaggiamento/scudo-antisommossa/ineguagliabile) | 20      |   +240.000 crediti   | 320.100 crediti |   12    | 140 | 70  |
 
-`{caption="Potenziamenti"}`
+`{caption="Miglioramenti"}`
 
 {{% /if %}}

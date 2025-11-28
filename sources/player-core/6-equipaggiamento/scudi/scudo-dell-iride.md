@@ -15,14 +15,14 @@ itemShield:
 #[[shieldSubItems Scudo dell'Iride, Irising Shield]]
 ---
 
-# {{% get "title" %}} - Oggetto {{% get "level" %}}
+# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
 
-**Prezzo** {{% get "itemShield.price" "number" %}} crediti
+**Prezzo** {{% get `.params.itemShield.price | lang.FormatNumber 0` %}} crediti
 
 **Bonus CA**^1^ +1; **Pen. Velocità** —; **Volume** L
 
-**Durezza** {{% get "itemShield.hardness" %}}; **PF (SR)**
-{{% get "itemShield.hp" %}} ({{% get "itemShield.bt" %}})
+**Durezza** {{% get `.params.itemShield.hardness` %}}; **PF (SR)**
+{{% get `.params.itemShield.hp` %}} ({{% get `.params.itemShield.bt` %}})
 
 ---
 
@@ -46,6 +46,6 @@ si aprono formando un piccolo scudo circolare.
 | [Scudo dell'Iride Definitivo](/equipaggiamento/scudo-dell-iride/definitivo)         | 18      |   +55.000 crediti    | 80.010 crediti  |    9    | 106 | 53  |
 | [Scudo dell'Iride Ineguagliabile](/equipaggiamento/scudo-dell-iride/ineguagliabile) | 20      |   +240.000 crediti   | 320.010 crediti |   10    | 126 | 63  |
 
-`{caption="Potenziamenti"}`
+`{caption="Miglioramenti"}`
 
 {{% /if %}}
