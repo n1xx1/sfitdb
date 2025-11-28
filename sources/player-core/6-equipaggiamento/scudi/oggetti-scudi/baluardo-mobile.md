@@ -15,14 +15,14 @@ itemShield:
 #[[shieldSubItems Baluardo Mobile, Mobile Bulwark]]
 ---
 
-# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
+# {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get `.params.itemShield.price | lang.FormatNumber 0` %}} crediti
+**Prezzo** {{% get/param `#itemShield.price` %}} crediti
 
 **Bonus CA**^1^ +3/+4^2^; **Pen. Velocità** -3 m.; **Volume** 4
 
-**Durezza** {{% get `.params.itemShield.hardness` %}}; **PF (SR)**
-{{% get `.params.itemShield.hp` %}} ({{% get `.params.itemShield.bt` %}})
+**Durezza** {{% get/param `itemShield.hardness` %}}; **PF (SR)**
+{{% get/param `itemShield.hp` %}} ({{% get/param `itemShield.bt` %}})
 
 ---
 

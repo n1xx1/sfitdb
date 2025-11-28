@@ -1,0 +1,17 @@
+{{- $match := index (.Get 0 | findRESubmatch `^(#?)\s*([\w\.]+)\s*(\+\s*[\w\.]+)?$`) 0 -}}
+{{- $transform := index $match 1 -}}
+{{- $index := index $match 2 -}}
+{{- $op := index $match 3 -}}
+
+{{- $value := index .Page.Params (split $index ".") -}}
+
+{{- if hasPrefix $op "+" -}}
+  {{- $add := substr $op 1 | strings.TrimSpace | int -}}
+  {{- $value = add $value $add -}}
+{{- end -}}
+
+{{- if eq $transform "#" -}}
+  {{- $value = lang.FormatNumber 0 $value -}}
+{{- end -}}
+
+{{- $value -}}

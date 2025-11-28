@@ -14,16 +14,15 @@ itemArmor:
 #[[armorSubItems Tuta da Volo, Flight Suit]]
 ---
 
-# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
+# {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Categoria** Senz'Armatura; **Prezzo**
-{{% get `.params.itemArmor.price | lang.FormatNumber 0` %}} crediti
+**Categoria** Senz'Armatura; **Prezzo** {{% get/param `#itemArmor.price` %}}
+crediti
 
-**Bonus CA** +{{% get `.params.itemArmor.ac` %}}; **Des Massimo** +5; **Pen.
+**Bonus CA** +{{% get/param `itemArmor.ac` %}}; **Des Massimo** +5; **Pen.
 Prove** —; **Pen. Velocità** —
 
-**Forza** —; **Volume** L; **Migliorie**
-{{% get `.params.itemArmor.upgrades` %}}
+**Forza** —; **Volume** L; **Migliorie** {{% get/param `itemArmor.upgrades` %}}
 
 **Gruppo** Stoffa
 

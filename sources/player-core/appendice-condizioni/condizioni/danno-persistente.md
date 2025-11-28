@@ -16,8 +16,8 @@ Dopo aver subito il danno persistente, effettua una prova semplice con CD 15 per
 determinare se guarisci dal danno persistente. Se la superi, la condizione
 termina.
 
-{{% if `not .included` %}}
+{{% if/incl "!" %}}
 
 > {{% include page="/regole/player-core/appendice-condizioni/regole-per-danno-persistente" %}}
 
-{{% /if %}}
+{{% /if/incl %}}

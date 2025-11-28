@@ -14,16 +14,14 @@ itemArmor:
 #[[armorSubItems Piastre Kyokor, Kyokor Plating]]
 ---
 
-# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
+# {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Categoria** Pesante; **Prezzo**
-{{% get `.params.itemArmor.price | lang.FormatNumber 0` %}} crediti
+**Categoria** Pesante; **Prezzo** {{% get/param `#itemArmor.price` %}} crediti
 
-**Bonus CA** +{{% get `.params.itemArmor.ac` %}}; **Des Massimo** +0; **Pen.
+**Bonus CA** +{{% get/param `itemArmor.ac` %}}; **Des Massimo** +0; **Pen.
 Prove** -3; **Pen. Velocità** -3 m.
 
-**Forza** +4; **Volume** 4; **Migliorie**
-{{% get `.params.itemArmor.upgrades` %}}
+**Forza** +4; **Volume** 4; **Migliorie** {{% get/param `itemArmor.upgrades` %}}
 
 **Gruppo** Piastre
 

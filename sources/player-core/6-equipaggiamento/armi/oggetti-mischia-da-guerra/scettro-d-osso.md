@@ -14,17 +14,17 @@ itemWeapon:
 #[[weaponSubItems Scettro d'Osso, Bone Scepter]]
 ---
 
-# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
+# {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get `.params.itemWeapon.price | lang.FormatNumber 0` %}} crediti;
-**Danni** {{% get `.params.itemWeapon.dice` %}}d6 Modulare; **Volume** L
+**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
+{{% get/param `itemWeapon.dice` %}}d6 Modulare; **Volume** L
 
 **Mani** 1
 
 **Tipo** Mischia; **Categoria** Da Guerra; **Gruppo**
 [Randello](/gruppi-armi/randello)
 
-**Migliorie** {{% get `.params.itemWeapon.upgrades` %}}
+**Migliorie** {{% get/param `itemWeapon.upgrades` %}}
 
 ---
 

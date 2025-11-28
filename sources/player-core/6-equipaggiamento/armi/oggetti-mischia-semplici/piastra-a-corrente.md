@@ -14,17 +14,17 @@ itemWeapon:
 #[[weaponSubItems Piastra a Corrente, Shock Pad, a]]
 ---
 
-# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
+# {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get `.params.itemWeapon.price | lang.FormatNumber 0` %}} crediti;
-**Danni** {{% get `.params.itemWeapon.dice` %}}d4 E; **Volume** —
+**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
+{{% get/param `itemWeapon.dice` %}}d4 E; **Volume** —
 
 **Mani** 1
 
 **Tipo** Mischia; **Categoria** Semplice; **Gruppo**
 [Scossa](/gruppi-armi/scossa)
 
-**Migliorie** {{% get `.params.itemWeapon.upgrades` %}}
+**Migliorie** {{% get/param `itemWeapon.upgrades` %}}
 
 ---
 

@@ -79,20 +79,20 @@ armorUpgradeTable:
     - name: SUFFIX
       default: a
   body: |
-    {{% if `eq .type "equipment"` %}}
+    {{% if/type "equipment" %}}
 
     ---
 
-    | Grado                                                             | Livello | Prezzo Milgioramento |                                 Valore Totale                                  |                   Migliorie                    |                 Bonus CA                  | Resiliente |
-    | ----------------------------------------------------------------- | :-----: | :------------------: | :----------------------------------------------------------------------------: | :--------------------------------------------: | :---------------------------------------: | :--------: |
-    | [$NAME Commerciale](/equipaggiamento/$SLUG/commerciale)           |    0    |          —           |      {{% get `lang.FormatNumber 0 (.params.itemArmor.price)` %}} crediti       |    {{% get `.params.itemArmor.upgrades` %}}    |    +{{% get `.params.itemArmor.ac` %}}    |     —      |
-    | [$NAME Tattic$SUFFIX](/equipaggiamento/$SLUG/tattic$SUFFIX)       |    5    |    +1.600 crediti    |  {{% get `lang.FormatNumber 0 (add .params.itemArmor.price 1600)` %}} crediti  | {{% get `add .params.itemArmor.upgrades 1` %}} | +{{% get `add .params.itemArmor.ac 1` %}} |     —      |
-    | [$NAME Avanzat$SUFFIX](/equipaggiamento/$SLUG/avanzat$SUFFIX)     |    8    |    +3.400 crediti    |  {{% get `lang.FormatNumber 0 (add .params.itemArmor.price 3400)` %}} crediti  | {{% get `add .params.itemArmor.upgrades 1` %}} | +{{% get `add .params.itemArmor.ac 1` %}} |     +1     |
-    | [$NAME Superiore](/equipaggiamento/$SLUG/superiore)               |   11    |    +9.000 crediti    |  {{% get `lang.FormatNumber 0 (add .params.itemArmor.price 9000)` %}} crediti  | {{% get `add .params.itemArmor.upgrades 2` %}} | +{{% get `add .params.itemArmor.ac 2` %}} |     +1     |
-    | [$NAME D'Élite](/equipaggiamento/$SLUG/d-elite)                   |   14    |   +31.000 crediti    | {{% get `lang.FormatNumber 0 (add .params.itemArmor.price 31000)` %}} crediti  | {{% get `add .params.itemArmor.upgrades 2` %}} | +{{% get `add .params.itemArmor.ac 2` %}} |     +2     |
-    | [$NAME Definitiv$SUFFIX](/equipaggiamento/$SLUG/definitiv$SUFFIX) |   18    |   +195.000 crediti   | {{% get `lang.FormatNumber 0 (add .params.itemArmor.price 195000)` %}} crediti | {{% get `add .params.itemArmor.upgrades 3` %}} | +{{% get `add .params.itemArmor.ac 3` %}} |     +2     |
-    | [$NAME Ineguagliabile](/equipaggiamento/$SLUG/ineguagliabile)     |   20    |   +460.000 crediti   | {{% get `lang.FormatNumber 0 (add .params.itemArmor.price 460000)` %}} crediti | {{% get `add .params.itemArmor.upgrades 3` %}} | +{{% get `add .params.itemArmor.ac 3` %}} |     +3     |
+    | Grado                                                             | Livello | Prezzo Milgioramento |                     Valore Totale                     |                Migliorie                 |              Bonus CA               | Resiliente |
+    | ----------------------------------------------------------------- | :-----: | :------------------: | :---------------------------------------------------: | :--------------------------------------: | :---------------------------------: | :--------: |
+    | [$NAME Commerciale](/equipaggiamento/$SLUG/commerciale)           |    0    |          —           |     {{% get/param `#itemArmor.price` %}} crediti      |  {{% get/param `itemArmor.upgrades` %}}  |  +{{% get/param `itemArmor.ac` %}}  |     —      |
+    | [$NAME Tattic$SUFFIX](/equipaggiamento/$SLUG/tattic$SUFFIX)       |    5    |    +1.600 crediti    |  {{% get/param `#itemArmor.price + 1600` %}} crediti  | {{% get/param `itemArmor.upgrades+1` %}} | +{{% get/param `itemArmor.ac+1` %}} |     —      |
+    | [$NAME Avanzat$SUFFIX](/equipaggiamento/$SLUG/avanzat$SUFFIX)     |    8    |    +3.400 crediti    |  {{% get/param `#itemArmor.price + 3400` %}} crediti  | {{% get/param `itemArmor.upgrades+1` %}} | +{{% get/param `itemArmor.ac+1` %}} |     +1     |
+    | [$NAME Superiore](/equipaggiamento/$SLUG/superiore)               |   11    |    +9.000 crediti    |  {{% get/param `#itemArmor.price + 9000` %}} crediti  | {{% get/param `itemArmor.upgrades+2` %}} | +{{% get/param `itemArmor.ac+2` %}} |     +1     |
+    | [$NAME D'Élite](/equipaggiamento/$SLUG/d-elite)                   |   14    |   +31.000 crediti    | {{% get/param `#itemArmor.price + 31000` %}} crediti  | {{% get/param `itemArmor.upgrades+2` %}} | +{{% get/param `itemArmor.ac+2` %}} |     +2     |
+    | [$NAME Definitiv$SUFFIX](/equipaggiamento/$SLUG/definitiv$SUFFIX) |   18    |   +195.000 crediti   | {{% get/param `#itemArmor.price + 195000` %}} crediti | {{% get/param `itemArmor.upgrades+3` %}} | +{{% get/param `itemArmor.ac+3` %}} |     +2     |
+    | [$NAME Ineguagliabile](/equipaggiamento/$SLUG/ineguagliabile)     |   20    |   +460.000 crediti   | {{% get/param `#itemArmor.price + 460000` %}} crediti | {{% get/param `itemArmor.upgrades+3` %}} | +{{% get/param `itemArmor.ac+3` %}} |     +3     |
 
     `{caption="Miglioramenti"}`
 
-    {{% /if %}}
+    {{% /if/type %}}

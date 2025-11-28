@@ -13,8 +13,8 @@ l’azione aggiuntiva per qualsiasi azione singola concessa da uno qualsiasi deg
 effetti che ti rendono accelerato. Dato che accelerato ha effetto all’inizio del
 tuo turno, non ottieni subito azioni se diventi accelerato durante il tuo turno.
 
-{{% if `not .included` %}}
+{{% if/incl "!" %}}
 
 > {{% include page="/regole/player-core/appendice-condizioni/ottenere-e-perdere-azioni" %}}
 
-{{% /if %}}
+{{% /if/incl %}}

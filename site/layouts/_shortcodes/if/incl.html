@@ -1,0 +1,23 @@
+{{- $value := .Get 0 | default "" -}}
+{{- $inverted := false }}
+{{- if hasPrefix $value "!" -}}
+  {{- $inverted = true -}}
+  {{- $value = substr $value 1 -}}
+{{- end -}}
+
+{{- $cond := false }}
+
+{{- if eq $value "inlinetitle" -}}
+  {{- with .Page.Store.Get "includeContext" -}}
+    {{- $parent := index . (sub (len .) 1) -}}
+    {{- $cond = eq $parent.template "inlinetitle" }}
+  {{- end -}}
+{{- else -}}
+  {{- if .Page.Store.Get "includeContext" -}}
+    {{- $cond = true }}
+  {{- end -}}
+{{- end -}}
+
+{{- if ne $inverted $cond -}}
+  {{- .InnerDeindent -}}
+{{- end -}}

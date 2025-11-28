@@ -14,17 +14,17 @@ itemWeapon:
 #[[weaponSubItems Nastro da Combattimento, Battle Ribbon]]
 ---
 
-# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
+# {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get `.params.itemWeapon.price | lang.FormatNumber 0` %}} crediti;
-**Danni** {{% get `.params.itemWeapon.dice` %}}d4 T; **Volume** L
+**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
+{{% get/param `itemWeapon.dice` %}}d4 T; **Volume** L
 
 **Mani** 1
 
 **Tipo** Mischia; **Categoria** Da Guerra; **Gruppo**
 [Mazzafrusto](/gruppi-armi/mazzafrusto)
 
-**Migliorie** {{% get `.params.itemWeapon.upgrades` %}}
+**Migliorie** {{% get/param `itemWeapon.upgrades` %}}
 
 ---
 

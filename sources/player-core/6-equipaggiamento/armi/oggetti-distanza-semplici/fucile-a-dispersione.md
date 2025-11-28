@@ -14,17 +14,17 @@ itemWeapon:
 #[[weaponSubItems Fucile a Dispersione, Scattergun]]
 ---
 
-# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
+# {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get `.params.itemWeapon.price | lang.FormatNumber 0` %}} crediti;
-**Danni** {{% get `.params.itemWeapon.dice` %}}d8 P; **Volume** 1
+**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
+{{% get/param `itemWeapon.dice` %}}d8 P; **Volume** 1
 
 **Mani** 2; **Gittata** 4,5 m.; **Ricarica** 1
 
 **Tipo** Distanza; **Categoria** Semplice; **Gruppo**
 [Proiettile](/gruppi-armi/proiettile)
 
-**Migliorie** {{% get `.params.itemWeapon.upgrades` %}}; **Caricatore** 4
+**Migliorie** {{% get/param `itemWeapon.upgrades` %}}; **Caricatore** 4
 [proiettili](/equipaggiamento/munizione-proiettile); **Dispendio** 1
 
 ---

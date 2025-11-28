@@ -14,16 +14,14 @@ itemArmor:
 #[[armorSubItems Seconda Pelle, Second Skin]]
 ---
 
-# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
+# {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Categoria** Leggera; **Prezzo**
-{{% get `.params.itemArmor.price | lang.FormatNumber 0` %}} crediti
+**Categoria** Leggera; **Prezzo** {{% get/param `#itemArmor.price` %}} crediti
 
-**Bonus CA** +{{% get `.params.itemArmor.ac` %}}; **Des Massimo** +4; **Pen.
+**Bonus CA** +{{% get/param `itemArmor.ac` %}}; **Des Massimo** +4; **Pen.
 Prove** —; **Pen. Velocità** —
 
-**Forza** +0; **Volume** L; **Migliorie**
-{{% get `.params.itemArmor.upgrades` %}}
+**Forza** +0; **Volume** L; **Migliorie** {{% get/param `itemArmor.upgrades` %}}
 
 **Gruppo** Polimeri
 

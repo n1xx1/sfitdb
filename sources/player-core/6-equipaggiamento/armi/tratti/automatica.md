@@ -9,13 +9,13 @@ original-srd: https://2e.aonsrd.com/traits/29-automatic
 In aggiunta a i normali [Colpi](/azioni/colpire), puoi far fuoco con quest'arma
 usando l'azione [Fuoco Automatico](/azioni/fuoco-automatico).
 
-{{% if `not (and .parent (eq .parent.template "inlinetitle"))` %}}
+{{% if/incl "!inlinetitle" %}}
 
 {{% include page="/azioni/fuoco-automatico" %}}
 
-{{% /if %}}
+{{% /if/incl %}}
 
-{{% if `and .parent (eq .parent.template "inlinetitle")` %}}
+{{% if/incl "inlinetitle" %}}
 
 <div class="pl-5">
 
@@ -32,4 +32,4 @@ una quantità di munizioni pari al numero di bersagli nell’area × 2.
 
 </div>
 
-{{% /if %}}
+{{% /if/incl %}}

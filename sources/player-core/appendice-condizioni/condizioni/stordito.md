@@ -24,8 +24,8 @@ Dunque, se sei stordito 1 e rallentato 2 all’inizio del tuo turno, perdi 1
 azione per stordito e poi 1 azione per rallentato, rimanendo con 1 azione da
 usare in quel turno.
 
-{{% if `not .included` %}}
+{{% if/incl "!" %}}
 
 > {{% include page="/regole/player-core/appendice-condizioni/ottenere-e-perdere-azioni" %}}
 
-{{% /if %}}
+{{% /if/incl %}}

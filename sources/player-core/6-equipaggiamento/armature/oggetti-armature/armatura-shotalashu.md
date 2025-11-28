@@ -14,16 +14,14 @@ itemArmor:
 #[[armorSubItems Armatura Shotalashu, Shotalashu Armor]]
 ---
 
-# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
+# {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Categoria** Media; **Prezzo**
-{{% get `.params.itemArmor.price | lang.FormatNumber 0` %}} crediti
+**Categoria** Media; **Prezzo** {{% get/param `#itemArmor.price` %}} crediti
 
-**Bonus CA** +{{% get `.params.itemArmor.ac` %}}; **Des Massimo** +2; **Pen.
+**Bonus CA** +{{% get/param `itemArmor.ac` %}}; **Des Massimo** +2; **Pen.
 Prove** -2; **Pen. Velocità** -1,5 m.
 
-**Forza** +2; **Volume** 2; **Migliorie**
-{{% get `.params.itemArmor.upgrades` %}}
+**Forza** +2; **Volume** 2; **Migliorie** {{% get/param `itemArmor.upgrades` %}}
 
 **Gruppo** Composita
 

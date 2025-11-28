@@ -42,8 +42,8 @@ cause seguenti.
 - Se sei soltanto addormentato, il GM decide che ti svegli perché hai riposato
   abbastanza o perché qualcosa ti ha disturbato.
 
-{{% if `not .included` %}}
+{{% if/incl "!" %}}
 
 > {{% include page="/regole/player-core/appendice-condizioni/regole-per-morte-e-morente" %}}
 
-{{% /if %}}
+{{% /if/incl %}}

@@ -14,16 +14,16 @@ itemWeapon:
 #[[weaponSubItems Lama Composta, Puzzleblade, a]]
 ---
 
-# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
+# {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get `.params.itemWeapon.price | lang.FormatNumber 0` %}} crediti;
-**Danni** {{% get `.params.itemWeapon.dice` %}}d8 S; **Volume** 1
+**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
+{{% get/param `itemWeapon.dice` %}}d8 S; **Volume** 1
 
 **Mani** 2
 
 **Tipo** Mischia; **Categoria** Semplice; **Gruppo** [Spada](/gruppi-armi/spada)
 
-**Migliorie** {{% get `.params.itemWeapon.upgrades` %}}
+**Migliorie** {{% get/param `itemWeapon.upgrades` %}}
 
 ---
 

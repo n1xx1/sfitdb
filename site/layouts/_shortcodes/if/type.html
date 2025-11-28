@@ -1,0 +1,14 @@
+{{- $value := .Get 0 -}}
+{{- $type := "rule" -}}
+{{- if hasPrefix .Page.Type "pf" -}}
+  {{- $type = strings.Substr .Page.Type 2 -}}
+{{- end -}}
+{{- if hasPrefix $value "!" -}}
+  {{- if ne (substr $value 1) $type -}}
+    {{- .InnerDeindent -}}
+  {{- end -}}
+{{- else -}}
+  {{- if eq $value $type -}}
+    {{- .InnerDeindent -}}
+  {{- end -}}
+{{- end -}}

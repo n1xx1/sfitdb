@@ -22,8 +22,8 @@ morente e ti svegli. Ogni volta che perdi la condizione morente ottieni la
 condizione [ferito](/condizioni/ferito) 1, o aumenti di 1 il tuo valore di
 ferito se ce l’hai già.
 
-{{% if `not .included` %}}
+{{% if/incl "!" %}}
 
 > {{% include page="/regole/player-core/appendice-condizioni/regole-per-morte-e-morente" %}}
 
-{{% /if %}}
+{{% /if/incl %}}

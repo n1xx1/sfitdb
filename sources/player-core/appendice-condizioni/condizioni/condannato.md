@@ -13,8 +13,8 @@ riduce a 0, muori all’istante. Quando muori, non sei più condannato.
 
 Il tuo valore di condannato diminuisce di 1 a ogni notte completa di riposo.
 
-{{% if `not .included` %}}
+{{% if/incl "!" %}}
 
 > {{% include page="/regole/player-core/appendice-condizioni/regole-per-morte-e-morente" %}}
 
-{{% /if %}}
+{{% /if/incl %}}

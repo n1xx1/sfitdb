@@ -15,14 +15,14 @@ itemShield:
 #[[shieldSubItems Scudo Compatto, Compact Shield]]
 ---
 
-# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
+# {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get `.params.itemShield.price | lang.FormatNumber 0` %}} crediti
+**Prezzo** {{% get/param `#itemShield.price` %}} crediti
 
 **Bonus CA**^1^ +1; **Pen. Velocità** —; **Volume** L
 
-**Durezza** {{% get `.params.itemShield.hardness` %}}; **PF (SR)**
-{{% get `.params.itemShield.hp` %}} ({{% get `.params.itemShield.bt` %}})
+**Durezza** {{% get/param `itemShield.hardness` %}}; **PF (SR)**
+{{% get/param `itemShield.hp` %}} ({{% get/param `itemShield.bt` %}})
 
 ---
 

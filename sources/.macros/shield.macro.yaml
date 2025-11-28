@@ -80,18 +80,18 @@ shieldUpgradeTable:
     - name: SUFFIX
       default: o
   body: |
-    {{% if `eq .type "equipment"` %}}
+    {{% if/type "equipment" %}}
 
-    | Grado                                                             | Livello | Prezzo Milgioramento |                                  Valore Totale                                  |                     Durezza                     |                     PF                      |                     SR                     |
-    | ----------------------------------------------------------------- | :-----: | :------------------: | :-----------------------------------------------------------------------------: | :---------------------------------------------: | :-----------------------------------------: | :----------------------------------------: |
-    | [$NAME Commerciale](/equipaggiamento/$SLUG/commerciale)           |    0    |          —           |       {{% get `lang.FormatNumber 0 .params.itemShield.price` %}} crediti        |    {{% get `.params.itemShield.hardness` %}}    |     {{% get `.params.itemShield.hp` %}}     |    {{% get `.params.itemShield.bt` %}}     |
-    | [$NAME Tattic$SUFFIX](/equipaggiamento/$SLUG/tattic$SUFFIX)       |    5    |     +750 crediti     |  {{% get `lang.FormatNumber 0 (add .params.itemShield.price 750)` %}} crediti   | {{% get `add .params.itemShield.hardness 3` %}} | {{% get `add .params.itemShield.hp 46` %}}  | {{% get `add .params.itemShield.bt 23` %}} |
-    | [$NAME Avanzat$SUFFIX](/equipaggiamento/$SLUG/avanzat$SUFFIX)     |    8    |    +2.250 crediti    |  {{% get `lang.FormatNumber 0 (add .params.itemShield.price 3000)` %}} crediti  | {{% get `add .params.itemShield.hardness 3` %}} | {{% get `add .params.itemShield.hp 56` %}}  | {{% get `add .params.itemShield.bt 28` %}} |
-    | [$NAME Superiore](/equipaggiamento/$SLUG/superiore)               |   11    |    +6.000 crediti    |  {{% get `lang.FormatNumber 0 (add .params.itemShield.price 9000)` %}} crediti  | {{% get `add .params.itemShield.hardness 3` %}} | {{% get `add .params.itemShield.hp 68` %}}  | {{% get `add .params.itemShield.bt 34` %}} |
-    | [$NAME D'Élite](/equipaggiamento/$SLUG/d-elite)                   |   14    |   +16.000 crediti    | {{% get `lang.FormatNumber 0 (add .params.itemShield.price 25000)` %}} crediti  | {{% get `add .params.itemShield.hardness 5` %}} | {{% get `add .params.itemShield.hp 80` %}}  | {{% get `add .params.itemShield.bt 40` %}} |
-    | [$NAME Definitiv$SUFFIX](/equipaggiamento/$SLUG/definitiv$SUFFIX) |   18    |   +55.000 crediti    | {{% get `lang.FormatNumber 0 (add .params.itemShield.price 80000)` %}} crediti  | {{% get `add .params.itemShield.hardness 6` %}} | {{% get `add .params.itemShield.hp 100` %}} | {{% get `add .params.itemShield.bt 50` %}} |
-    | [$NAME Ineguagliabile](/equipaggiamento/$SLUG/ineguagliabile)     |   20    |   +240.000 crediti   | {{% get `lang.FormatNumber 0 (add .params.itemShield.price 320000)` %}} crediti | {{% get `add .params.itemShield.hardness 7` %}} | {{% get `add .params.itemShield.hp 120` %}} | {{% get `add .params.itemShield.bt 60` %}} |
+    | Grado                                                             | Livello | Prezzo Milgioramento |                     Valore Totale                      |                  Durezza                  |                  PF                   |                  SR                  |
+    | ----------------------------------------------------------------- | :-----: | :------------------: | :----------------------------------------------------: | :---------------------------------------: | :-----------------------------------: | :----------------------------------: |
+    | [$NAME Commerciale](/equipaggiamento/$SLUG/commerciale)           |    0    |          —           |     {{% get/param `#itemShield.price` %}} crediti      |  {{% get/param `itemShield.hardness` %}}  |   {{% get/param `itemShield.hp` %}}   |  {{% get/param `itemShield.bt` %}}   |
+    | [$NAME Tattic$SUFFIX](/equipaggiamento/$SLUG/tattic$SUFFIX)       |    5    |     +750 crediti     |  {{% get/param `#itemShield.price + 750` %}} crediti   | {{% get/param `itemShield.hardness+3` %}} | {{% get/param `itemShield.hp+46` %}}  | {{% get/param `itemShield.bt+23` %}} |
+    | [$NAME Avanzat$SUFFIX](/equipaggiamento/$SLUG/avanzat$SUFFIX)     |    8    |    +2.250 crediti    |  {{% get/param `#itemShield.price + 3000` %}} crediti  | {{% get/param `itemShield.hardness+3` %}} | {{% get/param `itemShield.hp+56` %}}  | {{% get/param `itemShield.bt+28` %}} |
+    | [$NAME Superiore](/equipaggiamento/$SLUG/superiore)               |   11    |    +6.000 crediti    |  {{% get/param `#itemShield.price + 9000` %}} crediti  | {{% get/param `itemShield.hardness+3` %}} | {{% get/param `itemShield.hp+68` %}}  | {{% get/param `itemShield.bt+34` %}} |
+    | [$NAME D'Élite](/equipaggiamento/$SLUG/d-elite)                   |   14    |   +16.000 crediti    | {{% get/param `#itemShield.price + 25000` %}} crediti  | {{% get/param `itemShield.hardness+5` %}} | {{% get/param `itemShield.hp+80` %}}  | {{% get/param `itemShield.bt+40` %}} |
+    | [$NAME Definitiv$SUFFIX](/equipaggiamento/$SLUG/definitiv$SUFFIX) |   18    |   +55.000 crediti    | {{% get/param `#itemShield.price + 80000` %}} crediti  | {{% get/param `itemShield.hardness+6` %}} | {{% get/param `itemShield.hp+100` %}} | {{% get/param `itemShield.bt+50` %}} |
+    | [$NAME Ineguagliabile](/equipaggiamento/$SLUG/ineguagliabile)     |   20    |   +240.000 crediti   | {{% get/param `#itemShield.price + 320000` %}} crediti | {{% get/param `itemShield.hardness+7` %}} | {{% get/param `itemShield.hp+120` %}} | {{% get/param `itemShield.bt+60` %}} |
 
     `{caption="Miglioramenti"}`
 
-    {{% /if %}}
+    {{% /if/type %}}

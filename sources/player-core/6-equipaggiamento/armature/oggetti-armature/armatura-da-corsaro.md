@@ -14,16 +14,16 @@ itemArmor:
 #[[armorSubItems Armatura da Corsaro, Freebooter Armor]]
 ---
 
-# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
+# {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
 **Categoria** Media; **Prezzo**
-{{% get `.params.itemArmor.price | lang.FormatNumber 0` %}} crediti
+{{% get/param `#itemArmor.price` %}} crediti
 
-**Bonus CA** +{{% get `.params.itemArmor.ac` %}}; **Des Massimo** +1; **Pen.
+**Bonus CA** +{{% get/param `itemArmor.ac` %}}; **Des Massimo** +1; **Pen.
 Prove** -2; **Pen. Velocità** -1,5 m.
 
 **Forza** +3; **Volume** 2; **Migliorie**
-{{% get `.params.itemArmor.upgrades` %}}
+{{% get/param `itemArmor.upgrades` %}}
 
 **Gruppo** Piastre
 

@@ -17,8 +17,8 @@ La condizione ferito termina se qualcuno ti fa recuperare con successo Punti
 Ferita con [Curare Ferite](/azioni/curare-ferite), o se vieni riportato al tuo
 massimo di Punti Ferita e riposi per 10 minuti.
 
-{{% if `not .included` %}}
+{{% if/incl "!" %}}
 
 > {{% include page="/regole/player-core/appendice-condizioni/regole-per-morte-e-morente" %}}
 
-{{% /if %}}
+{{% /if/incl %}}

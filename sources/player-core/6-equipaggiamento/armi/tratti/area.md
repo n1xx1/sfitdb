@@ -5,18 +5,18 @@ original-srd: https://2e.aonsrd.com/traits/25-area
 title: Area
 ---
 
-# Area{{% if `and .parent (eq .parent.template "inlinetitle")` %}} (cono, esplosione, linea){{% /if %}}
+# Area{{% if/incl "inlinetitle" %}} (cono, esplosione, linea){{% /if/incl %}}
 
 Le armi con questo tratto possono far fuoco solo con l'azione
 [Fuoco ad Area](/azioni/fuoco-ad-area).
 
-{{% if `not (and .parent (eq .parent.template "inlinetitle"))` %}}
+{{% if/incl "!inlinetitle" %}}
 
 {{% include page="/azioni/fuoco-ad-area" %}}
 
-{{% /if %}}
+{{% /if/incl %}}
 
-{{% if `and .parent (eq .parent.template "inlinetitle")` %}}
+{{% if/incl "inlinetitle" %}}
 
 <div class="pl-5">
 
@@ -36,4 +36,4 @@ di dispendio indicato sull’arma.
 
 </div>
 
-{{% /if %}}
+{{% /if/incl %}}

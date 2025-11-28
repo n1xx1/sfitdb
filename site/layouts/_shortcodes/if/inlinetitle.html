@@ -1,0 +1,9 @@
+{{- $inlinetitle := false }}
+{{- with .Page.Store.Get "includeContext" -}}
+  {{- $inlinetitle = eq (index . (sub (len .) 1)).template "inlinetitle" -}}
+{{- end -}}
+
+{{- $invert := eq (.Get 0) "!" -}}
+{{- if ne $invert $inlinetitle -}}
+  {{- .InnerDeindent -}}
+{{- end -}}

@@ -23,17 +23,17 @@ itemWeapon:
 #[[weaponSubItems Ago di Forza, Force Needle]]
 ---
 
-# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
+# {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get `.params.itemWeapon.price | lang.FormatNumber 0` %}} crediti;
-**Danni** {{% get `.params.itemWeapon.dice` %}}d4 P; **Volume** 1
+**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
+{{% get/param `itemWeapon.dice` %}}d4 P; **Volume** 1
 
 **Mani** 1
 
 **Tipo** Mischia; **Categoria** Da Guerra; **Gruppo**
 [Dardo](/gruppi-armi/dardo)
 
-**Migliorie** {{% get `.params.itemWeapon.upgrades` %}}
+**Migliorie** {{% get/param `itemWeapon.upgrades` %}}
 
 ---
 

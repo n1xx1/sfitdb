@@ -14,17 +14,17 @@ itemWeapon:
 #[[weaponSubItems Fucile a Ricerca, Seeker Rifle]]
 ---
 
-# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
+# {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get `.params.itemWeapon.price | lang.FormatNumber 0` %}} crediti;
-**Danni** {{% get `.params.itemWeapon.dice` %}}d8 P; **Volume** 2
+**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
+{{% get/param `itemWeapon.dice` %}}d8 P; **Volume** 2
 
 **Mani** 2; **Gittata** 36 m.; **Ricarica** 1
 
 **Tipo** Distanza; **Categoria** Semplice; **Gruppo**
 [Cecchino](/gruppi-armi/cecchino)
 
-**Migliorie** {{% get `.params.itemWeapon.upgrades` %}}; **Caricatore** 1
+**Migliorie** {{% get/param `itemWeapon.upgrades` %}}; **Caricatore** 1
 [proiettile](/equipaggiamento/munizione-proiettile); **Dispendio** 1
 
 ---

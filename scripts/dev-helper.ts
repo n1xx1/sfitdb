@@ -61,7 +61,7 @@ function startWatcher() {
   });
 
   watcher.on("error", (error) => {
-    console.error("Watcher error:", error);
+    console.warn("Watcher error:", error);
   });
 
   process.on("SIGINT", () => {

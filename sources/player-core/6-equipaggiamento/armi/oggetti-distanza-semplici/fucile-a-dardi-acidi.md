@@ -14,17 +14,17 @@ itemWeapon:
 #[[weaponSubItems Fucile a Dardi Acidi, Acid Dart Rifle]]
 ---
 
-# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
+# {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get `.params.itemWeapon.price | lang.FormatNumber 0` %}} crediti;
-**Danni** {{% get `.params.itemWeapon.dice` %}}d4 A; **Volume** 1
+**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
+{{% get/param `itemWeapon.dice` %}}d4 A; **Volume** 1
 
 **Mani** 2; **Gittata** 24 m.; **Ricarica** 1
 
 **Tipo** Distanza; **Categoria** Semplice; **Gruppo**
 [Corrosione](/gruppi-armi/corrosione)
 
-**Migliorie** {{% get `.params.itemWeapon.upgrades` %}}; **Caricatore** 5
+**Migliorie** {{% get/param `itemWeapon.upgrades` %}}; **Caricatore** 5
 [proiettili](/equipaggiamento/munizione-proiettile); **Dispendio** 1
 
 ---

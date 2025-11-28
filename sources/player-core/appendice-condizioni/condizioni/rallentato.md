@@ -11,8 +11,8 @@ azioni all’inizio del tuo turno, riduci quel numero di azioni del tuo valore d
 rallentato. Poiché rallentato ha effetto all’inizio del turno, se diventi
 rallentato durante il tuo turno, non perdi nessun’azione nell’immediato.
 
-{{% if `not .included` %}}
+{{% if/incl "!" %}}
 
 > {{% include page="/regole/player-core/appendice-condizioni/ottenere-e-perdere-azioni" %}}
 
-{{% /if %}}
+{{% /if/incl %}}
