@@ -4,15 +4,26 @@ source: Player Core (Eng), pag. 248
 original-name: Second Skin
 original-srd: https://2e.aonsrd.com/equipment/armor/10-second-skin
 itemCategories: [base-armor]
+navigation-disable: true
+title: Seconda Pelle
+level: "0+"
+itemArmor:
+  price: 20
+  ac: 1
+  upgrades: 0
+#[[armorSubItems Seconda Pelle, Second Skin]]
 ---
 
-# Seconda Pelle - Oggetto 0
+# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
 
-**Categoria** Leggera; **Prezzo** 20 crediti
+**Categoria** Leggera; **Prezzo**
+{{% get `.params.itemArmor.price | lang.FormatNumber 0` %}} crediti
 
-**Bonus CA** +1; **Des Massimo** +4; **Pen. Prove** —; **Pen. Velocità** —
+**Bonus CA** +{{% get `.params.itemArmor.ac` %}}; **Des Massimo** +4; **Pen.
+Prove** —; **Pen. Velocità** —
 
-**Forza** +0; **Volume** L; **Migliorie** 0
+**Forza** +0; **Volume** L; **Migliorie**
+{{% get `.params.itemArmor.upgrades` %}}
 
 **Gruppo** Polimeri
 
@@ -34,6 +45,6 @@ comunemente indossata sotto abiti casual.
 | [Seconda Pelle Definitiva](/equipaggiamento/seconda-pelle/definitiva)         | 18      | +195.000 crediti     | 240.020 crediti | 3         | +4       | +2         |
 | [Seconda Pelle Ineguagliabile](/equipaggiamento/seconda-pelle/ineguagliabile) | 20      | +460.000 crediti     | 700.020 crediti | 3         | +4       | +3         |
 
-`{caption="Potenziamenti"}`
+`{caption="Miglioramenti"}`
 
 {{% /if %}}

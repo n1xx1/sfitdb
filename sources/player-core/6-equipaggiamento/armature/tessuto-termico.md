@@ -14,14 +14,16 @@ itemArmor:
 #[[armorSubItems Tessuto Termico, Tempweave, o]]
 ---
 
-# {{% get "title" %}} - Oggetto {{% get "level" %}}
+# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
 
-**Categoria** Leggera; **Prezzo** {{% get "itemArmor.price" "number" %}} crediti
+**Categoria** Leggera; **Prezzo**
+{{% get `.params.itemArmor.price | lang.FormatNumber 0` %}} crediti
 
-**Bonus CA** +{{% get "itemArmor.ac" %}}; **Des Massimo** +4; **Pen. Prove** -1;
-**Pen. Velocità** —
+**Bonus CA** +{{% get `.params.itemArmor.ac` %}}; **Des Massimo** +4; **Pen.
+Prove** -1; **Pen. Velocità** —
 
-**Forza** +0; **Volume** 1; **Migliorie** {{% get "itemArmor.upgrades" %}}
+**Forza** +0; **Volume** 1; **Migliorie**
+{{% get `.params.itemArmor.upgrades` %}}
 
 **Gruppo** Composita
 
@@ -43,6 +45,6 @@ climi umidi come le giungle di Castrovel o di Pulonis.
 | [Tessuto Termico Definitivo](/equipaggiamento/tessuto-termico/definitivo)         | 18      | +195.000 crediti     | 240.045 crediti | 4         | +4       | +2         |
 | [Tessuto Termico Ineguagliabile](/equipaggiamento/tessuto-termico/ineguagliabile) | 20      | +460.000 crediti     | 700.045 crediti | 4         | +4       | +3         |
 
-`{caption="Potenziamenti"}`
+`{caption="Miglioramenti"}`
 
 {{% /if %}}

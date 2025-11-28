@@ -14,14 +14,16 @@ itemArmor:
 #[[armorSubItems Vestito Da Viaggio Abadarcorp, Abadarcorp Travel Suit, o]]
 ---
 
-# {{% get "title" %}} - Oggetto {{% get "level" %}}
+# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
 
-**Categoria** Leggera; **Prezzo** {{% get "itemArmor.price" "number" %}} crediti
+**Categoria** Leggera; **Prezzo**
+{{% get `.params.itemArmor.price | lang.FormatNumber 0` %}} crediti
 
-**Bonus CA** +{{% get "itemArmor.ac" %}}; **Des Massimo** +3; **Pen. Prove** —;
-**Pen. Velocità** —
+**Bonus CA** +{{% get `.params.itemArmor.ac` %}}; **Des Massimo** +3; **Pen.
+Prove** —; **Pen. Velocità** —
 
-**Forza** +0; **Volume** L; **Migliorie** {{% get "itemArmor.upgrades" %}}
+**Forza** +0; **Volume** L; **Migliorie**
+{{% get `.params.itemArmor.upgrades` %}}
 
 **Gruppo** Stoffa
 
@@ -45,6 +47,6 @@ un’etichetta di design.
 | [Vestito Da Viaggio Abadarcorp Definitivo](/equipaggiamento/vestito-da-viaggio-abadarcorp/definitivo)         | 18      | +195.000 crediti     | 240.010 crediti | 5         | +4       | +2         |
 | [Vestito Da Viaggio Abadarcorp Ineguagliabile](/equipaggiamento/vestito-da-viaggio-abadarcorp/ineguagliabile) | 20      | +460.000 crediti     | 700.010 crediti | 5         | +4       | +3         |
 
-`{caption="Potenziamenti"}`
+`{caption="Miglioramenti"}`
 
 {{% /if %}}

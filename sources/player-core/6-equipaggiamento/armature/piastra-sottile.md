@@ -4,15 +4,26 @@ source: Player Core (Eng), pag. 248
 original-name: Thinplate
 original-srd: https://2e.aonsrd.com/equipment/armor/21-thinplate
 itemCategories: [base-armor]
+navigation-disable: true
+title: Piastra Sottile
+level: "0+"
+itemArmor:
+  price: 275
+  ac: 5
+  upgrades: 1
+#[[armorSubItems Piastra Sottile, Thinplate]]
 ---
 
-# Piastra Sottile - Oggetto 0
+# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
 
-**Categoria** Pesante; **Prezzo** 275 crediti
+**Categoria** Pesante; **Prezzo**
+{{% get `.params.itemArmor.price | lang.FormatNumber 0` %}} crediti
 
-**Bonus CA** +5; **Des Massimo** +1; **Pen. Prove** -3; **Pen. Velocità** -3 m.
+**Bonus CA** +{{% get `.params.itemArmor.ac` %}}; **Des Massimo** +1; **Pen.
+Prove** -3; **Pen. Velocità** -3 m.
 
-**Forza** +3; **Volume** 3; **Migliorie** 1
+**Forza** +3; **Volume** 3; **Migliorie**
+{{% get `.params.itemArmor.upgrades` %}}
 
 **Gruppo** Composita
 
@@ -34,6 +45,6 @@ indossata sotto abiti larghi.
 | [Piastra Sottile Definitiva](/equipaggiamento/piastra-sottile/definitiva)         | 18      | +195.000 crediti     | 240.275 crediti | 4         | +8       | +2         |
 | [Piastra Sottile Ineguagliabile](/equipaggiamento/piastra-sottile/ineguagliabile) | 20      | +460.000 crediti     | 700.275 crediti | 4         | +8       | +3         |
 
-`{caption="Potenziamenti"}`
+`{caption="Miglioramenti"}`
 
 {{% /if %}}

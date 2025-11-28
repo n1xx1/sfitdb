@@ -14,14 +14,16 @@ itemArmor:
 #[[armorSubItems Armatura Trapuntata, Quilted Armor]]
 ---
 
-# {{% get "title" %}} - Oggetto {{% get "level" %}}
+# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
 
-**Categoria** Leggera; **Prezzo** {{% get "itemArmor.price" "number" %}} crediti
+**Categoria** Leggera; **Prezzo**
+{{% get `.params.itemArmor.price | lang.FormatNumber 0` %}} crediti
 
-**Bonus CA** +{{% get "itemArmor.ac" %}}; **Des Massimo** +2; **Pen. Prove** -1;
-**Pen. Velocità** —
+**Bonus CA** +{{% get `.params.itemArmor.ac` %}}; **Des Massimo** +2; **Pen.
+Prove** -1; **Pen. Velocità** —
 
-**Forza** +1; **Volume** 1; **Migliorie** {{% get "itemArmor.upgrades" %}}
+**Forza** +1; **Volume** 1; **Migliorie**
+{{% get `.params.itemArmor.upgrades` %}}
 
 **Gruppo** Stoffa
 
@@ -43,6 +45,6 @@ con coperte e indumenti ereditari riutilizzati come protezione.
 | [Armatura Trapuntata Definitiva](/equipaggiamento/armatura-trapuntata/definitiva)         | 18      | +195.000 crediti     | 240.015 crediti | 4         | +5       | +2         |
 | [Armatura Trapuntata Ineguagliabile](/equipaggiamento/armatura-trapuntata/ineguagliabile) | 20      | +460.000 crediti     | 700.015 crediti | 4         | +5       | +3         |
 
-`{caption="Potenziamenti"}`
+`{caption="Miglioramenti"}`
 
 {{% /if %}}

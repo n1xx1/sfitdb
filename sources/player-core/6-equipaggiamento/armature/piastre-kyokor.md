@@ -4,15 +4,26 @@ source: Player Core (Eng), pag. 248
 original-name: Kyokor Plating
 original-srd: https://2e.aonsrd.com/equipment/armor/20-kyokor-plating
 itemCategories: [base-armor]
+navigation-disable: true
+title: Piastre Kyokor
+level: "0+"
+itemArmor:
+  price: 250
+  ac: 6
+  upgrades: 1
+#[[armorSubItems Piastre Kyokor, Kyokor Plating]]
 ---
 
-# Piastre Kyokor - Oggetto 0
+# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
 
-**Categoria** Pesante; **Prezzo** 250 crediti
+**Categoria** Pesante; **Prezzo**
+{{% get `.params.itemArmor.price | lang.FormatNumber 0` %}} crediti
 
-**Bonus CA** +6; **Des Massimo** +0; **Pen. Prove** -3; **Pen. Velocità** -3 m.
+**Bonus CA** +{{% get `.params.itemArmor.ac` %}}; **Des Massimo** +0; **Pen.
+Prove** -3; **Pen. Velocità** -3 m.
 
-**Forza** +4; **Volume** 4; **Migliorie** 1
+**Forza** +4; **Volume** 4; **Migliorie**
+{{% get `.params.itemArmor.upgrades` %}}
 
 **Gruppo** Piastre
 
@@ -35,6 +46,6 @@ guanti e un elmo con visiera trasparente.
 | [Piastre Kyokor Definitiva](/equipaggiamento/piastre-kyokor/definitiva)         | 18      | +195.000 crediti     | 240.250 crediti | 4         | +9       | +2         |
 | [Piastre Kyokor Ineguagliabile](/equipaggiamento/piastre-kyokor/ineguagliabile) | 20      | +460.000 crediti     | 700.250 crediti | 4         | +9       | +3         |
 
-`{caption="Potenziamenti"}`
+`{caption="Miglioramenti"}`
 
 {{% /if %}}

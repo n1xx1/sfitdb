@@ -14,14 +14,16 @@ itemArmor:
 #[[armorSubItems Armatura Shotalashu, Shotalashu Armor]]
 ---
 
-# {{% get "title" %}} - Oggetto {{% get "level" %}}
+# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
 
-**Categoria** Media; **Prezzo** {{% get "itemArmor.price" "number" %}} crediti
+**Categoria** Media; **Prezzo**
+{{% get `.params.itemArmor.price | lang.FormatNumber 0` %}} crediti
 
-**Bonus CA** +{{% get "itemArmor.ac" %}}; **Des Massimo** +2; **Pen. Prove** -2;
-**Pen. Velocità** -1,5 m.
+**Bonus CA** +{{% get `.params.itemArmor.ac` %}}; **Des Massimo** +2; **Pen.
+Prove** -2; **Pen. Velocità** -1,5 m.
 
-**Forza** +2; **Volume** 2; **Migliorie** {{% get "itemArmor.upgrades" %}}
+**Forza** +2; **Volume** 2; **Migliorie**
+{{% get `.params.itemArmor.upgrades` %}}
 
 **Gruppo** Composita
 
@@ -46,6 +48,6 @@ in alcune parti di Castrovel.
 | [Armatura Shotalashu Definitiva](/equipaggiamento/armatura-shotalashu/definitiva)         | 18      | +195.000 crediti     | 240.040 crediti | 4         | +6       | +2         |
 | [Armatura Shotalashu Ineguagliabile](/equipaggiamento/armatura-shotalashu/ineguagliabile) | 20      | +460.000 crediti     | 700.040 crediti | 4         | +6       | +3         |
 
-`{caption="Potenziamenti"}`
+`{caption="Miglioramenti"}`
 
 {{% /if %}}

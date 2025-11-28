@@ -4,16 +4,26 @@ source: Player Core (Eng), pag. 248
 original-name: Defrex Hide
 original-srd: https://2e.aonsrd.com/equipment/armor/12-defrex-hide
 itemCategories: [base-armor]
+navigation-disable: true
+title: Pelle di Defrex
+level: "0+"
+itemArmor:
+  price: 25
+  ac: 3
+  upgrades: 1
+#[[armorSubItems Pelle di Defrex, Defrex Hide]]
 ---
 
-# Pelle di Defrex - Oggetto 0
+# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
 
-**Categoria** Media; **Prezzo** 25 crediti
+**Categoria** Media; **Prezzo**
+{{% get `.params.itemArmor.price | lang.FormatNumber 0` %}} crediti
 
-**Bonus CA** +3; **Des Massimo** +2; **Pen. Prove** -2; **Pen. Velocità** -1,5
-m.
+**Bonus CA** +{{% get `.params.itemArmor.ac` %}}; **Des Massimo** +2; **Pen.
+Prove** -2; **Pen. Velocità** -1,5 m.
 
-**Forza** +2; **Volume** 2; **Migliorie** 1
+**Forza** +2; **Volume** 2; **Migliorie**
+{{% get `.params.itemArmor.upgrades` %}}
 
 **Gruppo** Cuoio
 
@@ -36,6 +46,6 @@ giunture sono rinforzate da borchie o scaglie metalliche.
 | [Pelle di Defrex Definitiva](/equipaggiamento/pelle-di-defrex/definitiva)         | 18      | +195.000 crediti     | 240.025 crediti | 4         | +6       | +2         |
 | [Pelle di Defrex Ineguagliabile](/equipaggiamento/pelle-di-defrex/ineguagliabile) | 20      | +460.000 crediti     | 700.025 crediti | 4         | +6       | +3         |
 
-`{caption="Potenziamenti"}`
+`{caption="Miglioramenti"}`
 
 {{% /if %}}

@@ -14,14 +14,16 @@ itemArmor:
 #[[armorSubItems Tuta di Estex, Estex Suit]]
 ---
 
-# {{% get "title" %}} - Oggetto {{% get "level" %}}
+# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
 
-**Categoria** Leggera; **Prezzo** {{% get "itemArmor.price" "number" %}} crediti
+**Categoria** Leggera; **Prezzo**
+{{% get `.params.itemArmor.price | lang.FormatNumber 0` %}} crediti
 
-**Bonus CA** +{{% get "itemArmor.ac" %}}; **Des Massimo** +3; **Pen. Prove** -1;
-**Pen. Velocità** —
+**Bonus CA** +{{% get `.params.itemArmor.ac` %}}; **Des Massimo** +3; **Pen.
+Prove** -1; **Pen. Velocità** —
 
-**Forza** +1; **Volume** L; **Migliorie** {{% get "itemArmor.upgrades" %}}
+**Forza** +1; **Volume** L; **Migliorie**
+{{% get `.params.itemArmor.upgrades` %}}
 
 **Gruppo** Stoffa
 
@@ -42,6 +44,6 @@ policarbonato cuciti tra strati di tessuto tattico.
 | [Tuta di Estex Definitiva](/equipaggiamento/tuta-di-estex/definitiva)         | 18      | +195.000 crediti     | 240.030 crediti | 4         | +4       | +2         |
 | [Tuta di Estex Ineguagliabile](/equipaggiamento/tuta-di-estex/ineguagliabile) | 20      | +460.000 crediti     | 700.030 crediti | 4         | +4       | +3         |
 
-`{caption="Potenziamenti"}`
+`{caption="Miglioramenti"}`
 
 {{% /if %}}

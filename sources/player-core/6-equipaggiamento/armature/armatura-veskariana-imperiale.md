@@ -14,14 +14,16 @@ itemArmor:
 #[[armorSubItems Armatura Veskariana Imperiale, Veskarium Imperial Plate]]
 ---
 
-# {{% get "title" %}} - Oggetto {{% get "level" %}}
+# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
 
-**Categoria** Pesante; **Prezzo** {{% get "itemArmor.price" "number" %}} crediti
+**Categoria** Pesante; **Prezzo**
+{{% get `.params.itemArmor.price | lang.FormatNumber 0` %}} crediti
 
-**Bonus CA** +{{% get "itemArmor.ac" %}}; **Des Massimo** +0; **Pen. Prove** -3;
-**Pen. Velocità** -3 m.
+**Bonus CA** +{{% get `.params.itemArmor.ac` %}}; **Des Massimo** +0; **Pen.
+Prove** -3; **Pen. Velocità** -3 m.
 
-**Forza** +4; **Volume** 5; **Migliorie** {{% get "itemArmor.upgrades" %}}
+**Forza** +4; **Volume** 5; **Migliorie**
+{{% get `.params.itemArmor.upgrades` %}}
 
 **Gruppo** Composita
 
@@ -43,6 +45,6 @@ sono elementi standard di questa armatura.
 | [Armatura Veskariana Imperiale Definitiva](/equipaggiamento/armatura-veskariana-imperiale/definitiva)         | 18      | +195.000 crediti     | 240.325 crediti | 4         | +9       | +2         |
 | [Armatura Veskariana Imperiale Ineguagliabile](/equipaggiamento/armatura-veskariana-imperiale/ineguagliabile) | 20      | +460.000 crediti     | 700.325 crediti | 4         | +9       | +3         |
 
-`{caption="Potenziamenti"}`
+`{caption="Miglioramenti"}`
 
 {{% /if %}}

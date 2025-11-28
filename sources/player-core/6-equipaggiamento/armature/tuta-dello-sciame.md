@@ -14,14 +14,16 @@ itemArmor:
 #[[armorSubItems Tuta dello Sciame, Swarmsuit]]
 ---
 
-# {{% get "title" %}} - Oggetto {{% get "level" %}}
+# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
 
-**Categoria** Media; **Prezzo** {{% get "itemArmor.price" "number" %}} crediti
+**Categoria** Media; **Prezzo**
+{{% get `.params.itemArmor.price | lang.FormatNumber 0` %}} crediti
 
-**Bonus CA** +{{% get "itemArmor.ac" %}}; **Des Massimo** +1; **Pen. Prove** -2;
-**Pen. Velocità** -1,5 m.
+**Bonus CA** +{{% get `.params.itemArmor.ac` %}}; **Des Massimo** +1; **Pen.
+Prove** -2; **Pen. Velocità** -1,5 m.
 
-**Forza** +3; **Volume** 2; **Migliorie** {{% get "itemArmor.upgrades" %}}
+**Forza** +3; **Volume** 2; **Migliorie**
+{{% get `.params.itemArmor.upgrades` %}}
 
 **Gruppo** Maglia
 
@@ -42,6 +44,6 @@ fisiologie uniche o trasformabili.
 | [Tuta dello Sciame Definitiva](/equipaggiamento/tuta-dello-sciame/definitiva)         | 18      | +195.000 crediti     | 240.075 crediti | 4         | +7       | +2         |
 | [Tuta dello Sciame Ineguagliabile](/equipaggiamento/tuta-dello-sciame/ineguagliabile) | 20      | +460.000 crediti     | 700.075 crediti | 4         | +7       | +3         |
 
-`{caption="Potenziamenti"}`
+`{caption="Miglioramenti"}`
 
 {{% /if %}}

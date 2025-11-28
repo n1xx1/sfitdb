@@ -14,14 +14,16 @@ itemArmor:
 #[[armorSubItems Pelle di Carbonio, Carbon Skin]]
 ---
 
-# {{% get "title" %}} - Oggetto {{% get "level" %}}
+# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
 
-**Categoria** Leggera; **Prezzo** {{% get "itemArmor.price" "number" %}} crediti
+**Categoria** Leggera; **Prezzo**
+{{% get `.params.itemArmor.price | lang.FormatNumber 0` %}} crediti
 
-**Bonus CA** +{{% get "itemArmor.ac" %}}; **Des Massimo** +4; **Pen. Prove** -1;
-**Pen. Velocità** —
+**Bonus CA** +{{% get `.params.itemArmor.ac` %}}; **Des Massimo** +4; **Pen.
+Prove** -1; **Pen. Velocità** —
 
-**Forza** +0; **Volume** 1; **Migliorie** {{% get "itemArmor.upgrades" %}}
+**Forza** +0; **Volume** 1; **Migliorie**
+{{% get `.params.itemArmor.upgrades` %}}
 
 **Gruppo** Polimeri
 
@@ -44,6 +46,6 @@ ufficiali militari come parte dell’uniforme.
 | [Pelle di Carbonio Definitiva](/equipaggiamento/pelle-di-carbonio/definitiva)         | 18      | +195.000 crediti     | 240.030 crediti | 4         | +4       | +2         |
 | [Pelle di Carbonio Ineguagliabile](/equipaggiamento/pelle-di-carbonio/ineguagliabile) | 20      | +460.000 crediti     | 700.030 crediti | 4         | +4       | +3         |
 
-`{caption="Potenziamenti"}`
+`{caption="Miglioramenti"}`
 
 {{% /if %}}

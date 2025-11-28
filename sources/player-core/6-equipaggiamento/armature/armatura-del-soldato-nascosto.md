@@ -14,14 +14,16 @@ itemArmor:
 #[[armorSubItems Armatura del Soldato Nascosto, Hidden Soldier Armor]]
 ---
 
-# {{% get "title" %}} - Oggetto {{% get "level" %}}
+# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
 
-**Categoria** Pesante; **Prezzo** {{% get "itemArmor.price" "number" %}} crediti
+**Categoria** Pesante; **Prezzo**
+{{% get `.params.itemArmor.price | lang.FormatNumber 0` %}} crediti
 
-**Bonus CA** +{{% get "itemArmor.ac" %}}; **Des Massimo** +1; **Pen. Prove** -3;
-**Pen. Velocità** -3 m.
+**Bonus CA** +{{% get `.params.itemArmor.ac` %}}; **Des Massimo** +1; **Pen.
+Prove** -3; **Pen. Velocità** -3 m.
 
-**Forza** +4; **Volume** 3; **Migliorie** {{% get "itemArmor.upgrades" %}}
+**Forza** +4; **Volume** 3; **Migliorie**
+{{% get `.params.itemArmor.upgrades` %}}
 
 **Gruppo** Ceramica
 
@@ -43,6 +45,6 @@ bracciali e schinieri che si flettono con i movimenti del corpo.
 | [Armatura del Soldato Nascosto Definitiva](/equipaggiamento/armatura-del-soldato-nascosto/definitiva)         | 18      | +195.000 crediti     | 240.285 crediti | 4         | +8       | +2         |
 | [Armatura del Soldato Nascosto Ineguagliabile](/equipaggiamento/armatura-del-soldato-nascosto/ineguagliabile) | 20      | +460.000 crediti     | 700.285 crediti | 4         | +8       | +3         |
 
-`{caption="Potenziamenti"}`
+`{caption="Miglioramenti"}`
 
 {{% /if %}}

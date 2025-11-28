@@ -14,14 +14,16 @@ itemArmor:
 #[[armorSubItems Armatura in Microtessuto, Microcord Armor]]
 ---
 
-# {{% get "title" %}} - Oggetto {{% get "level" %}}
+# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
 
-**Categoria** Leggera; **Prezzo** {{% get "itemArmor.price" "number" %}} crediti
+**Categoria** Leggera; **Prezzo**
+{{% get `.params.itemArmor.price | lang.FormatNumber 0` %}} crediti
 
-**Bonus CA** +{{% get "itemArmor.ac" %}}; **Des Massimo** +3; **Pen. Prove** -1;
-**Pen. Velocità** —
+**Bonus CA** +{{% get `.params.itemArmor.ac` %}}; **Des Massimo** +3; **Pen.
+Prove** -1; **Pen. Velocità** —
 
-**Forza** +1; **Volume** 1; **Migliorie** {{% get "itemArmor.upgrades" %}}
+**Forza** +1; **Volume** 1; **Migliorie**
+{{% get `.params.itemArmor.upgrades` %}}
 
 **Gruppo** Polimeri
 
@@ -42,6 +44,6 @@ i movimenti del portatore ma diventano dure come l’acciaio all’impatto.
 | [Armatura in Microtessuto Definitiva](/equipaggiamento/armatura-in-microtessuto/definitiva)         | 18      | +195.000 crediti     | 240.025 crediti | 4         | +5       | +2         |
 | [Armatura in Microtessuto Ineguagliabile](/equipaggiamento/armatura-in-microtessuto/ineguagliabile) | 20      | +460.000 crediti     | 700.025 crediti | 4         | +5       | +3         |
 
-`{caption="Potenziamenti"}`
+`{caption="Miglioramenti"}`
 
 {{% /if %}}

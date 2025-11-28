@@ -14,14 +14,16 @@ itemArmor:
 #[[armorSubItems Armatura Fuoco Celeste, Skyfire Armor]]
 ---
 
-# {{% get "title" %}} - Oggetto {{% get "level" %}}
+# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
 
-**Categoria** Media; **Prezzo** {{% get "itemArmor.price" "number" %}} crediti
+**Categoria** Media; **Prezzo**
+{{% get `.params.itemArmor.price | lang.FormatNumber 0` %}} crediti
 
-**Bonus CA** +{{% get "itemArmor.ac" %}}; **Des Massimo** +2; **Pen. Prove** -2;
-**Pen. Velocità** -1,5 m.
+**Bonus CA** +{{% get `.params.itemArmor.ac` %}}; **Des Massimo** +2; **Pen.
+Prove** -2; **Pen. Velocità** -1,5 m.
 
-**Forza** +1; **Volume** 1; **Migliorie** {{% get "itemArmor.upgrades" %}}
+**Forza** +1; **Volume** 1; **Migliorie**
+{{% get `.params.itemArmor.upgrades` %}}
 
 **Gruppo** Ceramica
 
@@ -44,6 +46,6 @@ spazio per le migliorie in favore dello stile.
 | [Armatura Fuoco Celeste Definitiva](/equipaggiamento/armatura-fuoco-celeste/definitiva)         | 18      | +195.000 crediti     | 240.060 crediti | 3         | +6       | +2         |
 | [Armatura Fuoco Celeste Ineguagliabile](/equipaggiamento/armatura-fuoco-celeste/ineguagliabile) | 20      | +460.000 crediti     | 700.060 crediti | 3         | +6       | +3         |
 
-`{caption="Potenziamenti"}`
+`{caption="Miglioramenti"}`
 
 {{% /if %}}

@@ -14,15 +14,16 @@ itemArmor:
 #[[armorSubItems Tuta da Volo, Flight Suit]]
 ---
 
-# {{% get "title" %}} - Oggetto {{% get "level" %}}
+# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
 
-**Categoria** Senz'Armatura; **Prezzo** {{% get "itemArmor.price" "number" %}}
-crediti
+**Categoria** Senz'Armatura; **Prezzo**
+{{% get `.params.itemArmor.price | lang.FormatNumber 0` %}} crediti
 
-**Bonus CA** +{{% get "itemArmor.ac" %}}; **Des Massimo** +5; **Pen. Prove** —;
-**Pen. Velocità** —
+**Bonus CA** +{{% get `.params.itemArmor.ac` %}}; **Des Massimo** +5; **Pen.
+Prove** —; **Pen. Velocità** —
 
-**Forza** —; **Volume** L; **Migliorie** {{% get "itemArmor.upgrades" %}}
+**Forza** —; **Volume** L; **Migliorie**
+{{% get `.params.itemArmor.upgrades` %}}
 
 **Gruppo** Stoffa
 
@@ -44,6 +45,6 @@ preferite o squadre sportive.
 | [Tuta da Volo Definitiva](/equipaggiamento/tuta-da-volo/definitiva)         | 18      | +195.000 crediti     | 240.010 crediti | 3         | +3       | +2         |
 | [Tuta da Volo Ineguagliabile](/equipaggiamento/tuta-da-volo/ineguagliabile) | 20      | +460.000 crediti     | 700.010 crediti | 3         | +3       | +3         |
 
-`{caption="Potenziamenti"}`
+`{caption="Miglioramenti"}`
 
 {{% /if %}}

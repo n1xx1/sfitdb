@@ -14,14 +14,16 @@ itemArmor:
 #[[armorSubItems Cappotto Corazzato, Armored Coat, o]]
 ---
 
-# {{% get "title" %}} - Oggetto {{% get "level" %}}
+# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
 
-**Categoria** Leggera; **Prezzo** {{% get "itemArmor.price" "number" %}} crediti
+**Categoria** Leggera; **Prezzo**
+{{% get `.params.itemArmor.price | lang.FormatNumber 0` %}} crediti
 
-**Bonus CA** +{{% get "itemArmor.ac" %}}; **Des Massimo** +2; **Pen. Prove** -1;
-**Pen. Velocità** —
+**Bonus CA** +{{% get `.params.itemArmor.ac` %}}; **Des Massimo** +2; **Pen.
+Prove** -1; **Pen. Velocità** —
 
-**Forza** +2; **Volume** 1; **Migliorie** {{% get "itemArmor.upgrades" %}}
+**Forza** +2; **Volume** 1; **Migliorie**
+{{% get `.params.itemArmor.upgrades` %}}
 
 **Gruppo** Cuoio
 
@@ -44,6 +46,6 @@ ufficiali militari come parte dell’uniforme.
 | [Cappotto Corazzato Definitivo](/equipaggiamento/cappotto-corazzato/definitivo)         | 18      | +195.000 crediti     | 240.020 crediti | 4         | +5       | +2         |
 | [Cappotto Corazzato Ineguagliabile](/equipaggiamento/cappotto-corazzato/ineguagliabile) | 20      | +460.000 crediti     | 700.020 crediti | 4         | +5       | +3         |
 
-`{caption="Potenziamenti"}`
+`{caption="Miglioramenti"}`
 
 {{% /if %}}

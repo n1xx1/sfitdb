@@ -4,15 +4,26 @@ source: Player Core (Eng), pag. 248
 original-name: Hardlight Series
 original-srd: https://2e.aonsrd.com/equipment/armor/7-hardlight-series
 itemCategories: [base-armor]
+navigation-disable: true
+title: Serie Luce Solida
+level: "0+"
+itemArmor:
+  price: 50
+  ac: 2
+  upgrades: 1
+#[[armorSubItems Serie Luce Solida, Hardlight Series]]
 ---
 
-# Serie Luce Solida - Oggetto 0
+# {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
 
-**Categoria** Leggera; **Prezzo** 50 crediti
+**Categoria** Leggera; **Prezzo**
+{{% get `.params.itemArmor.price | lang.FormatNumber 0` %}} crediti
 
-**Bonus CA** +2; **Des Massimo** +3; **Pen. Prove** -1; **Pen. Velocità** —
+**Bonus CA** +{{% get `.params.itemArmor.ac` %}}; **Des Massimo** +3; **Pen.
+Prove** -1; **Pen. Velocità** —
 
-**Forza** +1; **Volume** 1; **Migliorie** 1
+**Forza** +1; **Volume** 1; **Migliorie**
+{{% get `.params.itemArmor.upgrades` %}}
 
 **Gruppo** Maglia
 
@@ -35,6 +46,6 @@ privati possono scegliere tra numerose opzioni estetiche personalizzabili.
 | [Serie Luce Solida Definitiva](/equipaggiamento/serie-luce-solida/definitiva)         | 18      | +195.000 crediti     | 240.050 crediti | 4         | +5       | +2         |
 | [Serie Luce Solida Ineguagliabile](/equipaggiamento/serie-luce-solida/ineguagliabile) | 20      | +460.000 crediti     | 700.050 crediti | 4         | +5       | +3         |
 
-`{caption="Potenziamenti"}`
+`{caption="Miglioramenti"}`
 
 {{% /if %}}
