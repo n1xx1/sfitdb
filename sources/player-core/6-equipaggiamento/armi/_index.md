@@ -281,6 +281,25 @@ non aggiungere l’effetto di specializzazione del critico della tua arma.
 
 Di seguito è descritto più nel dettaglio ogni tipo di arma.
 
+> ### Scelta delle Armi
+>
+> I personaggi che si concentrano sul combattimento devono valutare con
+> attenzione la scelta delle armi, considerando se desiderano combattere a
+> distanza o in mischia, il potenziale danno delle armi e le caratteristiche
+> speciali delle varie opzioni. Anche i personaggi che principalmente lanciano
+> incantesimi dovrebbero scegliere un’arma di riserva nella migliore categoria
+> in cui possiedono addestramento o superiore. È consigliabile avere almeno
+> un’arma a distanza di riserva affidabile in uno scontro a fuoco, poiché molti
+> incontri coinvolgono combattimenti a distanza.
+>
+> Quando scegli le armi, inizia identificando i tipi di arma in cui possiedi
+> addestramento o superiore. Dovresti poi confrontare le armi all’interno di
+> questi tipi per determinare con quali otterrai il modificatore più alto ai
+> tiri per colpire in mischia o a distanza. Generalmente è buona prassi
+> selezionare sia un’arma da mischia sia un’arma a distanza durante la creazione
+> del personaggio per poter affrontare una gamma più ampia di avversari e
+> situazioni.
+
 ### Armi da Mischia Semplici
 
 {{% includeAll source="./oggetti-mischia-semplici" template="inlinetitle" %}}
@@ -288,6 +307,22 @@ Di seguito è descritto più nel dettaglio ogni tipo di arma.
 ### Armi a Distanza Semplici
 
 {{% includeAll source="./oggetti-distanza-semplici" template="inlinetitle" %}}
+
+### Armi da Mischia Da Guerra
+
+{{% includeAll source="./oggetti-mischia-da-guerra" template="inlinetitle" %}}
+
+### Armi a Distanza Da Guerra
+
+{{% includeAll source="./oggetti-distanza-da-guerra" template="inlinetitle" %}}
+
+### Armi da Mischia Avanzate
+
+{{% includeAll source="./oggetti-mischia-avanzate" template="inlinetitle" %}}
+
+### Armi a Distanza Avanzate
+
+{{% includeAll source="./oggetti-distanza-avanzate" template="inlinetitle" %}}
 
 | Grado          | Livello | Prezzo Miglioramento | Valore Totale^1^ | Migliorie | Dadi di Danno |               Tratti                |
 | -------------- | :-----: | :------------------: | :--------------: | :-------: | :-----------: | :---------------------------------: |
