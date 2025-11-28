@@ -1,0 +1,73 @@
+armorSubItems:
+  params:
+    - NAME
+    - ORIGINAL_NAME
+    - name: SUFFIX
+      default: a
+  body: |
+    subItems:
+      commerciale:
+        name: $NAME Commerciale
+        params:
+          "original-name": { set: "Commercial $ORIGINAL_NAME" }
+          "navigation-order": { set: 1 }
+          level: { set: 0 }
+      tattic$SUFFIX:
+        name: $NAME Tattic$SUFFIX
+        params:
+          "original-name": { set: "Tactical $ORIGINAL_NAME" }
+          "navigation-order": { set: 2 }
+          level: { set: 5 }
+          itemArmor.price: { add: 1600 }
+          itemArmor.ac: { add: 1 }
+          itemArmor.upgrades: { add: 1 }
+      avanzat$SUFFIX:
+        name: $NAME Avanzat$SUFFIX
+        params:
+          "original-name": { set: "Advanced $ORIGINAL_NAME" }
+          "navigation-order": { set: 3 }
+          level: { set: 8 }
+          itemArmor.price: { add: 5000 }
+          itemArmor.ac: { add: 1 }
+          itemArmor.upgrades: { add: 1 }
+          traits: { append: "resilente +1" }
+      superiore:
+        name: $NAME Superiore
+        params:
+          "original-name": { set: "Superior $ORIGINAL_NAME" }
+          "navigation-order": { set: 4 }
+          level: { set: 11 }
+          itemArmor.price: { add: 14000 }
+          itemArmor.ac: { add: 2 }
+          itemArmor.upgrades: { add: 2 }
+          traits: { append: "resilente +1" }
+      d-elite:
+        name: $NAME D'Élite
+        params:
+          "original-name": { set: "Elite $ORIGINAL_NAME" }
+          "navigation-order": { set: 5 }
+          level: { set: 14 }
+          itemArmor.price: { add: 14000 }
+          itemArmor.ac: { add: 2 }
+          itemArmor.upgrades: { add: 2 }
+          traits: { append: "resilente +2" }
+      definitiv$SUFFIX:
+        name: $NAME Definitiv$SUFFIX
+        params:
+          "original-name": { set: "Ultimate $ORIGINAL_NAME" }
+          "navigation-order": { set: 6 }
+          level: { set: 18 }
+          itemArmor.price: { add: 240000 }
+          itemArmor.ac: { add: 3 }
+          itemArmor.upgrades: { add: 3 }
+          traits: { append: "resilente +2" }
+      ineguagliabile:
+        name: $NAME Ineguagliabile
+        params:
+          "original-name": { set: "Paragon $ORIGINAL_NAME" }
+          "navigation-order": { set: 7 }
+          level: { set: 20 }
+          itemArmor.price: { add: 700000 }
+          itemArmor.ac: { add: 3 }
+          itemArmor.upgrades: { add: 3 }
+          traits: { append: "resilente +3" }

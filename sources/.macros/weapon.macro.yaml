@@ -1,0 +1,95 @@
+weaponSubItems:
+  params:
+    - NAME
+    - ORIGINAL_NAME
+    - name: SUFFIX
+      default: o
+  body: |
+    subItems:
+      commerciale:
+        name: $NAME Commerciale
+        params:
+          "original-name": { set: "Commercial $ORIGINAL_NAME" }
+          "navigation-order": { set: 1 }
+      tattic$SUFFIX:
+        name: $NAME Tattic$SUFFIX
+        params:
+          "original-name": { set: "Tactical $ORIGINAL_NAME" }
+          "navigation-order": { set: 2 }
+          level: { set: 2 }
+          itemWeapon.price: { add: 350 }
+          traits: { append: "tracciante +1" }
+      avanzat$SUFFIX:
+        name: $NAME Avanzat$SUFFIX
+        params:
+          "original-name": { set: "Advanced $ORIGINAL_NAME" }
+          "navigation-order": { set: 3 }
+          level: { set: 4 }
+          itemWeapon.price: { add: 1000 }
+          itemWeapon.upgrades: { add: 1 }
+          itemWeapon.dice: { set: 2 }
+          traits: { append: "tracciante +1" }
+      superiore:
+        name: $NAME Superiore
+        params:
+          "original-name": { set: "Superior $ORIGINAL_NAME" }
+          "navigation-order": { set: 4 }
+          level: { set: 10 }
+          itemWeapon.price: { add: 10000 }
+          itemWeapon.upgrades: { add: 1 }
+          itemWeapon.dice: { set: 2 }
+          traits: { append: "tracciante +2" }
+      d-elite:
+        name: $NAME D'Élite
+        params:
+          "original-name": { set: "Elite $ORIGINAL_NAME" }
+          "navigation-order": { set: 5 }
+          level: { set: 12 }
+          itemWeapon.price: { add: 20000 }
+          itemWeapon.upgrades: { add: 2 }
+          itemWeapon.dice: { set: 3 }
+          traits: { append: "tracciante +2" }
+      definitiv$SUFFIX:
+        name: $NAME Definitiv$SUFFIX
+        params:
+          "original-name": { set: "Ultimate $ORIGINAL_NAME" }
+          "navigation-order": { set: 6 }
+          level: { set: 16 }
+          itemWeapon.price: { add: 20000 }
+          itemWeapon.upgrades: { add: 2 }
+          itemWeapon.dice: { set: 3 }
+          traits: { append: "tracciante +3" }
+      ineguagliabile:
+        name: $NAME Ineguagliabile
+        params:
+          "original-name": { set: "Paragon $ORIGINAL_NAME" }
+          "navigation-order": { set: 7 }
+          level: { set: 19 }
+          itemWeapon.price: { add: 20000 }
+          itemWeapon.upgrades: { add: 3 }
+          itemWeapon.dice: { set: 4 }
+          traits: { append: "tracciante +3" }
+weaponUpgradeTable:
+  params:
+    - NAME
+    - SLUG
+    - name: SUFFIX
+      default: o
+  body: |
+    {{% if `eq .type "equipment"` %}}
+
+    ---
+
+    | Grado                                                              | Livello | Prezzo Potenziamento | Prezzo Totale                                                                   |                    Migliorie                    | Dadi di Danno | Tracciante |
+    | ------------------------------------------------------------------ | :-----: | :------------------: | ------------------------------------------------------------------------------- | :---------------------------------------------: | :-----------: | :--------: |
+    | [$NAME Commerciale](/equipaggiamento/$SLUG/commerciale)            |    0    |          —           | {{% get `lang.FormatNumber 0 (.params.itemWeapon.price)` %}} crediti            |    {{% get `.params.itemWeapon.upgrades` %}}    |       1       |     —      |
+    | [$NAME Tattic$SUFFIX](/equipaggiamento/$SLUG/tattic$SUFFIX)        |    2    |     +350 crediti     | {{% get `lang.FormatNumber 0 (add .params.itemWeapon.price 350)` %}} crediti    |    {{% get `.params.itemWeapon.upgrades` %}}    |       1       |     +1     |
+    | [$NAME Avanzat$SUFFIX](/equipaggiamento/$SLUG/avanzat$SUFFIX)      |    4    |     +650 crediti     | {{% get `lang.FormatNumber 0 (add .params.itemWeapon.price 1000)` %}} crediti   | {{% get `add .params.itemWeapon.upgrades 1` %}} |       2       |     +1     |
+    | [$NAME Superiore](/equipaggiamento/$SLUG/superiore)                |   10    |    +9.000 crediti    | {{% get `lang.FormatNumber 0 (add .params.itemWeapon.price 10000)` %}} crediti  | {{% get `add .params.itemWeapon.upgrades 1` %}} |       2       |     +2     |
+    | [$NAME D'Élite](/equipaggiamento/$SLUG/d-elite)                    |   12    |   +10.000 crediti    | {{% get `lang.FormatNumber 0 (add .params.itemWeapon.price 20000)` %}} crediti  | {{% get `add .params.itemWeapon.upgrades 2` %}} |       3       |     +2     |
+    | [$NAME Definitiv$SUFFIX](/equipaggiamento/$SLUG/definitiv$SUFFIX)  |   16    |   +80.000 crediti    | {{% get `lang.FormatNumber 0 (add .params.itemWeapon.price 100000)` %}} crediti | {{% get `add .params.itemWeapon.upgrades 2` %}} |       3       |     +3     |
+    | [$NAME Ineguagliabile](/equipaggiamento/$SLUG/ineguagliabile)      |   19    |   +300.000 crediti   | {{% get `lang.FormatNumber 0 (add .params.itemWeapon.price 400000)` %}} crediti | {{% get `add .params.itemWeapon.upgrades 3` %}} |       4       |     +3     |
+
+    `{caption="Miglioramenti"}`
+
+    {{% /if %}}
