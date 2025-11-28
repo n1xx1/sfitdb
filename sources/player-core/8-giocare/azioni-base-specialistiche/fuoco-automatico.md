@@ -8,7 +8,7 @@ original-srd: https://2e.aonsrd.com/actions/19-auto-fire
 # Fuoco Automatico :aa:
 
 **Requisiti** Stai impugnando un’arma con il tratto
-[automatico](/tratti/automatico).
+[automatica](/tratti/automatica).
 
 ---
 

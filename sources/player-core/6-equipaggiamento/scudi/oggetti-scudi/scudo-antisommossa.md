@@ -43,18 +43,4 @@ rendendo impossibile vedere attraverso di esso.
 ^2^ Per ottenere il bonus più alto dello scudo devi usare l’azione
 [Andare in Copertura](/azioni/andare-in-copertura) mentre hai lo scudo alzato.
 
-{{% if `eq .type "equipment"` %}}
-
-| Grado                                                                                   | Livello | Prezzo Potenziamento |  Prezzo Totale  | Durezza | PF  | SR  |
-| --------------------------------------------------------------------------------------- | ------- | :------------------: | :-------------: | :-----: | :-: | :-: |
-| [Scudo Antisommossa Commerciale](/equipaggiamento/scudo-antisommossa/commerciale)       | 0       |          —           |   100 crediti   |    5    | 20  | 10  |
-| [Scudo Antisommossa Tattico](/equipaggiamento/scudo-antisommossa/tattico)               | 5       |     +750 crediti     |   850 crediti   |    8    | 66  | 33  |
-| [Scudo Antisommossa Avanzato](/equipaggiamento/scudo-antisommossa/avanzato)             | 8       |    +2.250 crediti    |  3.100 crediti  |    8    | 76  | 38  |
-| [Scudo Antisommossa Superiore](/equipaggiamento/scudo-antisommossa/superiore)           | 11      |    +6.000 crediti    |  9.100 crediti  |    8    | 88  | 44  |
-| [Scudo Antisommossa D'Élite](/equipaggiamento/scudo-antisommossa/d-elite)               | 14      |   +16.000 crediti    | 25.100 crediti  |   10    | 100 | 50  |
-| [Scudo Antisommossa Definitivo](/equipaggiamento/scudo-antisommossa/definitivo)         | 18      |   +55.000 crediti    | 80.100 crediti  |   11    | 120 | 60  |
-| [Scudo Antisommossa Ineguagliabile](/equipaggiamento/scudo-antisommossa/ineguagliabile) | 20      |   +240.000 crediti   | 320.100 crediti |   12    | 140 | 70  |
-
-`{caption="Miglioramenti"}`
-
-{{% /if %}}
+#[[shieldUpgradeTable Scudo Antisommossa, scudo-antisommossa]]

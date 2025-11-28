@@ -35,20 +35,4 @@ di forza contingenti e piastre nascoste proteggono chi li indossa in situazioni
 ostili. I modelli di grado superiore offrono maggiore protezione, insieme a
 un’etichetta di design.
 
-{{% if `eq .type "equipment"` %}}
-
----
-
-| Grado                                                                                                         | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
-| ------------------------------------------------------------------------------------------------------------- | ------- | -------------------- | --------------- | --------- | -------- | ---------- |
-| [Vestito Da Viaggio Abadarcorp Commerciale](/equipaggiamento/vestito-da-viaggio-abadarcorp/commerciale)       | 0       | —                    | 10 crediti      | 2         | +1       | —          |
-| [Vestito Da Viaggio Abadarcorp Tattico](/equipaggiamento/vestito-da-viaggio-abadarcorp/tattico)               | 5       | +1.600 crediti       | 1.610 crediti   | 3         | +2       | —          |
-| [Vestito Da Viaggio Abadarcorp Avanzato](/equipaggiamento/vestito-da-viaggio-abadarcorp/avanzato)             | 8       | +3.400 crediti       | 5.010 crediti   | 3         | +2       | +1         |
-| [Vestito Da Viaggio Abadarcorp Superiore](/equipaggiamento/vestito-da-viaggio-abadarcorp/superiore)           | 11      | +9.000 crediti       | 14.010 crediti  | 4         | +3       | +1         |
-| [Vestito Da Viaggio Abadarcorp D'Élite](/equipaggiamento/vestito-da-viaggio-abadarcorp/d-elite)               | 14      | +31.000 crediti      | 45.010 crediti  | 4         | +3       | +2         |
-| [Vestito Da Viaggio Abadarcorp Definitivo](/equipaggiamento/vestito-da-viaggio-abadarcorp/definitivo)         | 18      | +195.000 crediti     | 240.010 crediti | 5         | +4       | +2         |
-| [Vestito Da Viaggio Abadarcorp Ineguagliabile](/equipaggiamento/vestito-da-viaggio-abadarcorp/ineguagliabile) | 20      | +460.000 crediti     | 700.010 crediti | 5         | +4       | +3         |
-
-`{caption="Miglioramenti"}`
-
-{{% /if %}}
+#[[armorUpgradeTable Vestito Da Viaggio Abadarcorp, vestito-da-viaggio-abadarcorp, o]]

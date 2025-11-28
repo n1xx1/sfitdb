@@ -36,18 +36,4 @@ quando attivato.
 ^1^ Per ottenere un bonus di circostanza dello scudo alla CA devi usare l’azione
 [Alzare lo Scudo](/azioni/alzare-lo-scudo).
 
-{{% if `eq .type "equipment"` %}}
-
-| Grado                                                                                 | Livello | Prezzo Potenziamento |  Prezzo Totale  | Durezza | PF  | SR  |
-| ------------------------------------------------------------------------------------- | ------- | :------------------: | :-------------: | :-----: | :-: | :-: |
-| [Campo Deflettente Commerciale](/equipaggiamento/campo-deflettente/commerciale)       | 0       |          —           |   10 crediti    |    2    |  4  |  2  |
-| [Campo Deflettente Tattico](/equipaggiamento/campo-deflettente/tattico)               | 5       |     +750 crediti     |   760 crediti   |    5    | 50  | 25  |
-| [Campo Deflettente Avanzato](/equipaggiamento/campo-deflettente/avanzato)             | 8       |    +2.250 crediti    |  3.010 crediti  |    5    | 60  | 30  |
-| [Campo Deflettente Superiore](/equipaggiamento/campo-deflettente/superiore)           | 11      |    +6.000 crediti    |  9.010 crediti  |    5    | 72  | 36  |
-| [Campo Deflettente D'Élite](/equipaggiamento/campo-deflettente/d-elite)               | 14      |   +16.000 crediti    | 25.010 crediti  |    7    | 84  | 42  |
-| [Campo Deflettente Definitivo](/equipaggiamento/campo-deflettente/definitivo)         | 18      |   +55.000 crediti    | 80.010 crediti  |    8    | 104 | 52  |
-| [Campo Deflettente Ineguagliabile](/equipaggiamento/campo-deflettente/ineguagliabile) | 20      |   +240.000 crediti   | 320.010 crediti |    9    | 124 | 62  |
-
-`{caption="Miglioramenti"}`
-
-{{% /if %}}
+#[[shieldUpgradeTable Campo Deflettente, campo-deflettente]]

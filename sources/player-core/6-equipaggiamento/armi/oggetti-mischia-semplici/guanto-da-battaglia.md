@@ -3,7 +3,7 @@ traits: [agile, analogico:Analogica, mano libera]
 source: Player Core (Eng), pag. 264
 original-name: Battleglove
 original-srd: https://2e.aonsrd.com/equipment/weapons/3-battleglove
-itemCategories: [base-armor]
+itemCategories: [base-weapon]
 navigation-disable: true
 title: Guanto da Battaglia
 level: "0+"

@@ -32,20 +32,4 @@ Prove** -3; **Pen. Velocità** -3 m.
 Questa armatura da squadra è un guscio modellato in policarbonato rinforzato,
 con elmo e visiera retrattile.
 
-{{% if `eq .type "equipment"` %}}
-
----
-
-| Grado                                                                         | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
-| ----------------------------------------------------------------------------- | ------- | -------------------- | --------------- | --------- | -------- | ---------- |
-| [Serie Sprezzo Commerciale](/equipaggiamento/serie-sprezzo/commerciale)       | 0       | —                    | 200 crediti     | 1         | +5       | —          |
-| [Serie Sprezzo Tattica](/equipaggiamento/serie-sprezzo/tattica)               | 5       | +1.600 crediti       | 1.800 crediti   | 2         | +6       | —          |
-| [Serie Sprezzo Avanzata](/equipaggiamento/serie-sprezzo/avanzata)             | 8       | +3.400 crediti       | 5.200 crediti   | 2         | +6       | +1         |
-| [Serie Sprezzo Superiore](/equipaggiamento/serie-sprezzo/superiore)           | 11      | +9.000 crediti       | 14.200 crediti  | 3         | +7       | +1         |
-| [Serie Sprezzo D'Élite](/equipaggiamento/serie-sprezzo/d-elite)               | 14      | +31.000 crediti      | 45.200 crediti  | 3         | +7       | +2         |
-| [Serie Sprezzo Definitiva](/equipaggiamento/serie-sprezzo/definitiva)         | 18      | +195.000 crediti     | 240.200 crediti | 4         | +8       | +2         |
-| [Serie Sprezzo Ineguagliabile](/equipaggiamento/serie-sprezzo/ineguagliabile) | 20      | +460.000 crediti     | 700.200 crediti | 4         | +8       | +3         |
-
-`{caption="Miglioramenti"}`
-
-{{% /if %}}
+#[[armorUpgradeTable Serie Sprezzo, serie-sprezzo]]

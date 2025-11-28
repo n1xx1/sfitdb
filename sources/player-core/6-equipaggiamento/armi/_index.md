@@ -123,8 +123,8 @@ statistiche.
 
 Questa statistica riporta il dado di danno dell’arma e il tipo di danni
 inflitto: C per contundente, P per perforante e T per tagliente. Alcune armi
-infliggono altri tipi di danni: A per acido, Fr per freddo, F per fuoco, M per
-mentale, S per sonico, Ve per veleno e V per vuoto.
+infliggono altri tipi di danni: A per acido, E per elettricità, Fr per freddo, F
+per fuoco, M per mentale, S per sonico, Ve per veleno e V per vuoto.
 
 > ### Dado di Danno
 >
@@ -285,85 +285,18 @@ Di seguito è descritto più nel dettaglio ogni tipo di arma.
 
 {{% includeAll source="./oggetti-mischia-semplici" template="inlinetitle" %}}
 
-[**Piastra a Corrente**](/equipaggiamento/piastra-a-corrente)**:** Questo
-circuito flessibile in nanocarbonio può essere installato come miglioria in
-guanti, ginocchiere o protezioni per appendici simili per emettere una potente
-scossa elettrica quando applicato con forza su un bersaglio.
-
-[**Coltello Zero**](/equipaggiamento/coltello-zero)**:** Aprendosi come un
-coltello a scatto, una camera super-raffreddata all’interno di quest’arma forma
-istantaneamente una lama di ghiaccio.
-
 ### Armi a Distanza Semplici
 
-[**Fucile a Dardi Acidi**](/equipaggiamento/fucile-a-dardi-acidi)**:** Questo
-fucile utilizza aria compressa per sparare minuscoli dardi camerati, caricati
-con componenti di un composto altamente corrosivo che rimangono separati fino al
-momento del lancio, consentendo una durata di conservazione quasi illimitata con
-rischio minimo di esposizione accidentale.
+{{% includeAll source="./oggetti-distanza-semplici" template="inlinetitle" %}}
 
-[**Pistola ad Arco**](/equipaggiamento/pistola-ad-arco)**:** Invece di munizioni
-tradizionali, questa ingombrante pistola contiene un condensatore che genera
-archi elettrici. Il suo calcio è realizzato in policarbonato o altri isolanti
-sintetici, spesso di un giallo brillante e inciso con il simbolo universale del
-fulmine per indicare l’alta tensione.
+| Grado          | Livello | Prezzo Miglioramento | Valore Totale^1^ | Migliorie | Dadi di Danno |               Tratti                |
+| -------------- | :-----: | :------------------: | :--------------: | :-------: | :-----------: | :---------------------------------: |
+| Commerciale    |    0    |          —           |        —         |    +0     |       1       |                  —                  |
+| Tattico        |    2    |     +350 crediti     |   350 crediti    |    +0     |       1       | [tracciante](/tratti/tracciante) +1 |
+| Avanzato       |    4    |     +650 crediti     |   1000 crediti   |    +1     |       2       | [tracciante](/tratti/tracciante) +1 |
+| Superiore      |   10    |    +9.000 crediti    |  10000 crediti   |    +1     |       2       | [tracciante](/tratti/tracciante) +2 |
+| D'Élite        |   12    |   +10.000 crediti    |  20000 crediti   |    +2     |       3       | [tracciante](/tratti/tracciante) +2 |
+| Definitivo     |   16    |   +80.000 crediti    |  100000 crediti  |    +2     |       3       | [tracciante](/tratti/tracciante) +3 |
+| Ineguagliabile |   19    |   +300.000 crediti   |  400000 crediti  |    +3     |       4       | [tracciante](/tratti/tracciante) +3 |
 
-[**Fucile ad Arco**](/equipaggiamento/fucile-ad-arco)**:** Il corpo
-sovradimensionato di questo fucile contiene una versione più grande del
-condensatore di una pistola ad arco, con una canna corta e un calcio in
-policarbonato progettati per isolare l’utilizzatore dall’alta tensione. Il
-condensatore più grande del fucile ad arco gli permette di generare una carica
-con potenza sufficiente a neutralizzare un renkroda furioso.
-
-[**Fucile Automirante**](/equipaggiamento/fucile-automirante)**:** Questo fucile
-d’assalto corto e ingombrante incorpora un sistema a pistone che permette
-all’utilizzatore di passare al fuoco automatico e svuotare un caricatore con una
-singola pressione del grilletto.
-
-[**Fucile Balestra**](/equipaggiamento/fucile-balestra): Questa balestra ad alta
-tecnologia utilizza una serie di pistoni per spingere i dardi lungo la canna.
-Queste armi semiautomatiche e silenziose sono popolari negli insediamenti ad
-alta densità, dove gli spari potrebbero causare panico.
-
-[**Pistola Laser**](/equipaggiamento/pistola-laser)**:** Questa pistola compatta
-è l’arma laterale più diffusa nei Mondi del Patto grazie alla sua affidabilità,
-resistenza e convenienza. Le pistole laser più comuni hanno un corpo leggero in
-policarbonato che termina in una canna lunga e sottile.
-
-[**Fucile Laser**](/equipaggiamento/fucile-laser)**:** Questi affidabili fucili
-prodotti in massa sparano fasci concentrati di energia da canne di forma
-quadrata. Il modello standard universale dei Mondi del Patto è altamente
-modificabile e progettato per funzionare con una varietà di accessori e
-migliorie, con gli utilizzatori che adattano il fucile laser alle proprie
-preferenze e arrivano perfino a trasformarlo in un’arma quasi irriconoscibile.
-
-[**Pistola a Impulsi**](/equipaggiamento/pistola-a-impulsi)**:** Questa
-imponente pistola spara una scarica di elettricità paralizzante dalla sua canna.
-Le cariche rimanenti sono visibili come linee luminose di energia che si
-irradiano lungo il corpo dell’arma. Le pistole a impulsi sono spesso utilizzate
-da cacciatori di taglie e forze dell’ordine che devono mantenere in vita i loro
-bersagli.
-
-[**Cannone Reattivo d’Assalto**](/equipaggiamento/cannone-reattivo-d-assalto)**:**
-Questo cannone a reazione portatile lancia schegge da mini-missili a grappolo
-che squarciano una struttura fortificata e chiunque abbia la sfortuna di
-trovarsi all’interno.
-
-[**Fucile a Dispersione**](/equipaggiamento/fucile-a-dispersione)**:** Un fucile
-a dispersione è un’arma da fuoco a canna lunga che spara numerosi proiettili
-sferici per colpire bersagli multipli.
-
-[**Fucile a Ricerca**](/equipaggiamento/fucile-a-ricerca)**:** Questo fucile da
-cecchino a colpo singolo è una delle armi più popolari nell'Immensità grazie
-alla sua stabilità e affidabilità con una manutenzione minima.
-
-[**Pistola Semiautomatica**](/equipaggiamento/pistola-semiautomatica)**:**
-Questa pistola espelle automaticamente i bossoli usati e carica nuove munizioni
-dopo ogni colpo sparato.
-
-[**Fucile Sonico**](/equipaggiamento/fucile-sonico)**:** Un fucile sonico crea
-un fascio stretto di ultrasuoni che trasforma efficacemente qualsiasi cosa
-colpisca in un altoparlante, frantumando i bersagli con vibrazioni ipersoniche.
-
-[**Pistola Zero**](/equipaggiamento/pistola-zero)**:** Le pistole zero
-utilizzano come munizioni contenitori trasparenti di liquido super-raffreddato.
+`{caption="Miglioramenti Armi" footnote="^1^ Il Valore Totale non include il prezzo dell'arma commerciale base."}`

@@ -62,8 +62,8 @@ riserva d’aria e filtrare l’ambiente circostante entrando in modalità a bas
 potenza. Questo permette all’armatura di conservare energia e aria per emergenze
 inaspettate e garantisce che i suoi delicati sistemi funzionino sempre alla
 massima efficienza. Per proteggerti da altri pericoli ambientali, come
-radiazioni, puoi installare potenziamenti per armature negli slot di
-miglioramento della tua armatura.
+radiazioni, puoi installare migliorie d'armature negli slot migliorie della tua
+armatura.
 
 **Protezioni dell’Armatura:** Tutte le armature, eccetto quelle con il tratto
 [esposto](/tratti/esposta), ti permettono di respirare e sopravvivere in
@@ -232,7 +232,7 @@ Di seguito è descritto più nel dettaglio ogni tipo di armatura.
 
 `{caption="Armatura Pesante"}`
 
-| Grado          | Livello | Prezzo Potenziamento | Valore Totale^1^ | Migliorie | Incremento Bonus CA | Tratti                              |
+| Grado          | Livello | Prezzo Miglioramento | Valore Totale^1^ | Migliorie | Incremento Bonus CA | Tratti                              |
 | -------------- | :-----: | :------------------: | :--------------: | :-------: | :-----------------: | ----------------------------------- |
 | Commerciale    |    0    |          —           |        —         |     —     |         +0          | —                                   |
 | Tattica        |    5    |    +1.600 crediti    |  1.600 crediti   |    +1     |         +1          | —                                   |
@@ -242,4 +242,4 @@ Di seguito è descritto più nel dettaglio ogni tipo di armatura.
 | Definitiva     |   18    |   +195.000 crediti   | 240.000 crediti  |    +3     |         +3          | [Resiliente](/tratti/resiliente) +2 |
 | Ineguagliabile |   20    |   +460.000 crediti   | 700.000 crediti  |    +3     |         +3          | [Resiliente](/tratti/resiliente) +3 |
 
-`{caption="Potenziamenti Armatura" footnote="^1^ Il Valore Totale non include il prezzo dell'armatura commerciale base."}`
+`{caption="Miglioramenti Armatura" footnote="^1^ Il Valore Totale non include il prezzo dell'armatura commerciale base."}`

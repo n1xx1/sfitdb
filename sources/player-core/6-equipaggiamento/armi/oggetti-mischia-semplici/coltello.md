@@ -3,7 +3,7 @@ traits: [accurata, agile, analogico:Analogica, "lancio [3 m.]", "versatile [T]"]
 source: Player Core (Eng), pag. 264
 original-name: Knife
 original-srd: https://2e.aonsrd.com/equipment/weapons/4-knife
-itemCategories: [base-armor]
+itemCategories: [base-weapon]
 navigation-disable: true
 title: Coltello
 level: "0+"

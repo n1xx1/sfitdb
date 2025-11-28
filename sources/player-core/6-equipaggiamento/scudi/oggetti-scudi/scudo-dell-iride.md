@@ -36,18 +36,4 @@ si aprono formando un piccolo scudo circolare.
 ^1^ Per ottenere un bonus di circostanza dello scudo alla CA devi usare l’azione
 [Alzare lo Scudo](/azioni/alzare-lo-scudo).
 
-{{% if `eq .type "equipment"` %}}
-
-| Grado                                                                               | Livello | Prezzo Potenziamento |  Prezzo Totale  | Durezza | PF  | SR  |
-| ----------------------------------------------------------------------------------- | ------- | :------------------: | :-------------: | :-----: | :-: | :-: |
-| [Scudo dell'Iride Commerciale](/equipaggiamento/scudo-dell-iride/commerciale)       | 0       |          —           |   10 crediti    |    3    |  6  |  3  |
-| [Scudo dell'Iride Tattico](/equipaggiamento/scudo-dell-iride/tattico)               | 5       |     +750 crediti     |   760 crediti   |    6    | 52  | 26  |
-| [Scudo dell'Iride Avanzato](/equipaggiamento/scudo-dell-iride/avanzato)             | 8       |    +2.250 crediti    |  3.010 crediti  |    6    | 62  | 31  |
-| [Scudo dell'Iride Superiore](/equipaggiamento/scudo-dell-iride/superiore)           | 11      |    +6.000 crediti    |  9.010 crediti  |    6    | 74  | 37  |
-| [Scudo dell'Iride D'Élite](/equipaggiamento/scudo-dell-iride/d-elite)               | 14      |   +16.000 crediti    | 25.010 crediti  |    8    | 86  | 43  |
-| [Scudo dell'Iride Definitivo](/equipaggiamento/scudo-dell-iride/definitivo)         | 18      |   +55.000 crediti    | 80.010 crediti  |    9    | 106 | 53  |
-| [Scudo dell'Iride Ineguagliabile](/equipaggiamento/scudo-dell-iride/ineguagliabile) | 20      |   +240.000 crediti   | 320.010 crediti |   10    | 126 | 63  |
-
-`{caption="Miglioramenti"}`
-
-{{% /if %}}
+#[[shieldUpgradeTable Scudo dell'Iride, scudo-dell-iride]]

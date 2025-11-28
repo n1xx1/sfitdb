@@ -11,4 +11,4 @@ polverizzare i nemici e sfruttare al meglio gli attacchi ad area. Il tuo grado
 di competenza con le armi semplici e da guerra e con gli attacchi senz’armi
 aumenta a esperto. Hai accesso agli effetti di specializzazione del critico
 delle armi con il tratto [area](/tratti/area) o
-[automatico](/tratti/automatico).
+[automatica](/tratti/automatica).

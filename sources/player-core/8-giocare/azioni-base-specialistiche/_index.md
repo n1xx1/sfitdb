@@ -13,7 +13,7 @@ Queste azioni sono utili in circostanze specifiche. Le azioni Arrestare una
 Caduta, Scavare e Volare richiedono che tu abbia un
 [tipo di movimento speciale](/regole/TODO-movement-type). Fuoco ad Area e Fuoco
 Automatico richiedono l’uso di un’arma con i tratti [area](/tratti/area) o
-[automatico](/tratti/automatico). Le Velocità di nuotare e scalare usano le
+[automatica](/tratti/automatica). Le Velocità di nuotare e scalare usano le
 corrispondenti azioni dell’abilità [Atletica](/abilita/atletica).
 
 {{% includeAll %}}

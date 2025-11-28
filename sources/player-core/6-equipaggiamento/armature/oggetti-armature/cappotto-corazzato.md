@@ -34,20 +34,4 @@ corazzate. I cappotti corazzati sono spesso realizzati su misura per abbinarsi
 allo stile personale del portatore. Le versioni standard sono assegnate agli
 ufficiali militari come parte dell’uniforme.
 
-{{% if `eq .type "equipment"` %}}
-
----
-
-| Grado                                                                                   | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
-| --------------------------------------------------------------------------------------- | ------- | -------------------- | --------------- | --------- | -------- | ---------- |
-| [Cappotto Corazzato Commerciale](/equipaggiamento/cappotto-corazzato/commerciale)       | 0       | —                    | 20 crediti      | 1         | +2       | —          |
-| [Cappotto Corazzato Tattico](/equipaggiamento/cappotto-corazzato/tattico)               | 5       | +1.600 crediti       | 1.620 crediti   | 2         | +3       | —          |
-| [Cappotto Corazzato Avanzato](/equipaggiamento/cappotto-corazzato/avanzato)             | 8       | +3.400 crediti       | 5.020 crediti   | 2         | +3       | +1         |
-| [Cappotto Corazzato Superiore](/equipaggiamento/cappotto-corazzato/superiore)           | 11      | +9.000 crediti       | 14.020 crediti  | 3         | +4       | +1         |
-| [Cappotto Corazzato D'Élite](/equipaggiamento/cappotto-corazzato/d-elite)               | 14      | +31.000 crediti      | 45.020 crediti  | 3         | +4       | +2         |
-| [Cappotto Corazzato Definitivo](/equipaggiamento/cappotto-corazzato/definitivo)         | 18      | +195.000 crediti     | 240.020 crediti | 4         | +5       | +2         |
-| [Cappotto Corazzato Ineguagliabile](/equipaggiamento/cappotto-corazzato/ineguagliabile) | 20      | +460.000 crediti     | 700.020 crediti | 4         | +5       | +3         |
-
-`{caption="Miglioramenti"}`
-
-{{% /if %}}
+#[[armorUpgradeTable Cappotto Corazzato, cappotto-corazzato, o]]

@@ -113,7 +113,7 @@ personalizzate e scudi antisommossa decorati.
 
 `{caption="Scudi" footnote="^1^ Per ottenere un bonus di circostanza dello scudo alla CA devi usare l’azione [Alzare lo Scudo](/azioni/alzare-lo-scudo).<br>^2^ Per ottenere il bonus più alto dello scudo devi usare l’azione [Andare in Copertura](/azioni/andare-in-copertura) mentre hai lo scudo alzato."}`
 
-| Grado          | Livello | Prezzo Potenziamento | Valore Totale^1^ | Durezza |  PF  | SR  |
+| Grado          | Livello | Prezzo Miglioramento | Valore Totale^1^ | Durezza |  PF  | SR  |
 | -------------- | :-----: | :------------------: | :--------------: | :-----: | :--: | :-: |
 | Commerciale    |    0    |          —           |        —         |    —    |  —   |  —  |
 | Tattico        |    5    |     +750 crediti     |   750 crediti    |   +3    | +46  | +23 |
@@ -123,4 +123,4 @@ personalizzate e scudi antisommossa decorati.
 | Definitivo     |   18    |   +55.000 crediti    |  80.000 crediti  |   +6    | +100 | +50 |
 | Ineguagliabile |   20    |   +240.000 crediti   | 320.000 crediti  |   +7    | +120 | +60 |
 
-`{caption="Potenziamenti Scudo" footnote="^1^ Il Valore Totale non include il prezzo dello scudo commerciale base."}`
+`{caption="Miglioramenti Scudo" footnote="^1^ Il Valore Totale non include il prezzo dello scudo commerciale base."}`

@@ -38,9 +38,9 @@ potresti applicare difetti di attributo per ridurne altri. Per maggiori
 informazioni sugli aumenti e difetti degli attributi, vedi pagina 23.
 
 **Aumenti di Stirpe Alternativi**: Per via dell'ampia varietà di individui
-all’interno di qualsiasi stirpe, puoi sempre scegliere di applicare due
-potenziamenti liberi per rappresentare il tuo personaggio, anche se la stirpe
-normalmente prevede tre aumenti e un difetto.
+all’interno di qualsiasi stirpe, puoi sempre scegliere di applicare due aumenti
+liberi per rappresentare il tuo personaggio, anche se la stirpe normalmente
+prevede tre aumenti e un difetto.
 
 ## Lingue
 

@@ -33,20 +33,4 @@ Questa armatura pesante è composta da piastre metalliche interconnesse modellat
 sul corpo del portatore con un motivo squamato. Paracoda e guanti artigliati
 sono elementi standard di questa armatura.
 
-{{% if `eq .type "equipment"` %}}
-
----
-
-| Grado                                                                                                         | Livello | Prezzo Potenziamento | Prezzo Totale   | Migliorie | Bonus CA | Resiliente |
-| ------------------------------------------------------------------------------------------------------------- | ------- | -------------------- | --------------- | --------- | -------- | ---------- |
-| [Armatura Veskariana Imperiale Commerciale](/equipaggiamento/armatura-veskariana-imperiale/commerciale)       | 0       | —                    | 325 crediti     | 1         | +6       | —          |
-| [Armatura Veskariana Imperiale Tattica](/equipaggiamento/armatura-veskariana-imperiale/tattica)               | 5       | +1.600 crediti       | 1.925 crediti   | 2         | +7       | —          |
-| [Armatura Veskariana Imperiale Avanzata](/equipaggiamento/armatura-veskariana-imperiale/avanzata)             | 8       | +3.400 crediti       | 5.325 crediti   | 2         | +7       | +1         |
-| [Armatura Veskariana Imperiale Superiore](/equipaggiamento/armatura-veskariana-imperiale/superiore)           | 11      | +9.000 crediti       | 14.325 crediti  | 3         | +8       | +1         |
-| [Armatura Veskariana Imperiale D'Élite](/equipaggiamento/armatura-veskariana-imperiale/d-elite)               | 14      | +31.000 crediti      | 45.325 crediti  | 3         | +8       | +2         |
-| [Armatura Veskariana Imperiale Definitiva](/equipaggiamento/armatura-veskariana-imperiale/definitiva)         | 18      | +195.000 crediti     | 240.325 crediti | 4         | +9       | +2         |
-| [Armatura Veskariana Imperiale Ineguagliabile](/equipaggiamento/armatura-veskariana-imperiale/ineguagliabile) | 20      | +460.000 crediti     | 700.325 crediti | 4         | +9       | +3         |
-
-`{caption="Miglioramenti"}`
-
-{{% /if %}}
+#[[armorUpgradeTable Armatura Veskariana Imperiale, armatura-veskariana-imperiale]]

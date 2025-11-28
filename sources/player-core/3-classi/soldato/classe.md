@@ -57,7 +57,7 @@ ai tuoi compagni.
 Potresti arruolarti in un esercito, svolgere lavori fisici o accettare incarichi
 da mercenario quando hai bisogno di crediti. Probabilmente trascorri il tempo
 allenandoti in palestra o trafficando con le tue armi, cercando nuove munizioni
-e potenziamenti.
+e migliorie.
 
 ### Probabilmente...
 
@@ -83,7 +83,7 @@ e potenziamenti.
 >
 > [**Fuoco Automatico**](/azioni/fuoco-automatico)**:** Questa è un’azione
 > speciale solitamente eseguita con armi che possiedono il tratto
-> [automatico](/tratti/automatico). Questo tipo di azione serve per sparare in
+> [automatica](/tratti/automatico). Questo tipo di azione serve per sparare in
 > rapida successione, colpendo tutti i nemici in un ampio cono.
 >
 > [**Soppresso**](/condizioni/soppresso)**:** Soppresso è una condizione spesso

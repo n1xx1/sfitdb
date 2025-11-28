@@ -3,7 +3,7 @@ traits: [analogico:Analogica, kasatha, scomponibile]
 source: Player Core (Eng), pag. 264
 original-name: Puzzleblade
 original-srd: https://2e.aonsrd.com/equipment/weapons/5-puzzleblade
-itemCategories: [base-armor]
+itemCategories: [base-weapon]
 navigation-disable: true
 title: Lama Composta
 level: "0+"
@@ -11,7 +11,7 @@ itemWeapon:
   price: 15
   dice: 1
   upgrades: 1
-#[[weaponSubItems Lama Composta, Puzzleblade]]
+#[[weaponSubItems Lama Composta, Puzzleblade, a]]
 ---
 
 # {{% get `.params.title` %}} - Oggetto {{% get `.params.level` %}}
@@ -33,4 +33,4 @@ ritualisticamente le lame composte, con diversi pezzi che simboleggiano le virt√
 kasatha di convinzione, devozione, moderazione e tradizione. Criminali e
 contrabbandieri apprezzano la lama composta per il suo design discreto.
 
-#[[weaponUpgradeTable Lama Composta, lama-composta]]
+#[[weaponUpgradeTable Lama Composta, lama-composta, a]]
