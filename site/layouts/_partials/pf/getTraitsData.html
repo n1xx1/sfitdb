@@ -1,6 +1,8 @@
 {{ $result := slice }}
 {{ range . }}
   {{ $trait := . }}
+  {{ $traitOverrideName := split $trait ":" }}
+  {{ $trait = index $traitOverrideName 0 }}
   {{ $traitNameParts := split (replace $trait " " "-" | replaceRE `^(.*?)(?:-(\+?\d+))?$` "$1;$2") ";" }}
   {{ $traitName := index $traitNameParts 0 }}
   {{ $number := index $traitNameParts 1 }}
@@ -21,6 +23,9 @@
     {{ $url = .RelPermalink | replaceRE "/$" "" }}
   {{ else }}
     {{ $displayName = strings.FirstUpper $trait }}
+  {{ end }}
+  {{ if gt (len $traitOverrideName) 1 }}
+    {{ $displayName = strings.FirstUpper (index $traitOverrideName 1) }}
   {{ end }}
 
   {{ $color := "bg-gray-300 dark:bg-gray-600" }}
