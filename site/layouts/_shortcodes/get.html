@@ -1,1 +1,24 @@
-{{- partial "shortcodes/get" (dict "what" (.Get 0) "format" (.Get 1) "default" (.Get 2) "page" .Page) -}}
+{{- $parentContext := default nil nil -}}
+{{- $included := false -}}
+{{- with .Page.Store.Get "includeContext" -}}
+  {{- $included = gt (len .) 0 -}}
+  {{- if $included -}}
+    {{- $parentContext = index . (sub (len .) 1) -}}
+  {{- end -}}
+{{- end -}}
+{{- $type := "rule" -}}
+{{- if hasPrefix .Page.Type "pf" -}}
+  {{- $type = strings.Substr .Page.Type 2 -}}
+{{- end -}}
+{{- $data := dict
+  "type" $type
+  "included" $included
+  "parent" $parentContext
+  "params" .Page.Params
+  "page" .Page
+-}}
+{{- $tpl := print "{" "{ " (.Get 0) " }" "}" -}}
+{{- $key := xxhash (print $tpl .Page.Path math.Counter $included) }}
+{{- $r := resources.FromString $key $tpl -}}
+{{- $r = $r | resources.ExecuteAsTemplate $key $data -}}
+{{- $r.Content -}}
