@@ -28,7 +28,12 @@
 
 {{- $traits := .PageInner.Params.traits -}}
 {{- with .Attributes.traits -}}
-  {{- $traits = transform.Unmarshal (dict "format" "yaml") .Attributes.traits -}}
+  {{- if not (reflect.IsSlice .) -}}
+    {{- $traits = transform.Unmarshal (dict "format" "yaml") . -}}
+  {{- else -}}
+    {{- $traits = . -}}
+  {{- end -}}
+  {{- $appendTraits = true -}}
 {{- end -}}
 
 {{- if and $included $isTitle -}}
@@ -75,8 +80,8 @@
 
 {{- if $appendTraits -}}
   <div class="title-traits">
-    {{- if .PageInner.Params.traits -}}
-      {{- partialCached "traits" .PageInner.Params.traits .PageInner.Params.traits -}}
+    {{- if $traits -}}
+      {{- partialCached "traits" $traits $traits -}}
     {{- end -}}
   </div>
 {{- end -}}

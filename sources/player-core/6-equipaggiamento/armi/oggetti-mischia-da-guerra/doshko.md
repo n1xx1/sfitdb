@@ -28,8 +28,7 @@ itemWeapon:
 
 ---
 
-L’arma tradizionale del Veskarium, questa alabarda alimentata presenta da una a
-tre lame triangolari forgiate sia per ampi colpi dall’alto sia per parate
-tattiche.
+L’arma tradizionale del Veskarium, quest'azza alimentata presenta da una a tre
+lame triangolari forgiate sia per ampi colpi dall’alto sia per parate tattiche.
 
 #[[weaponUpgradeTable Doshko, doshko]]

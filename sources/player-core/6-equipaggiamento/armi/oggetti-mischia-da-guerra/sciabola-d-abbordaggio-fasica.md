@@ -32,4 +32,16 @@ Una sciabola d'abbordaggio fasica assomiglia a una tradizionale sciabola finché
 non viene attivata. Allora la sua lama si trasforma in un vuoto scintillante,
 con una minuscola stella per ogni vita alla quale ha posto fine.
 
+---
+
+## Modalità 1 {statblock=1,traits="[analogica:Analogica, spazzare]"}
+
+**Danni** {{% get/param `itemWeapon.dice` %}}d6 T
+
+---
+
+## Modalità 2 {statblock=1,traits="[alimentata, spazzare, tecnologico:Tecnologica]"}
+
+**Danni** {{% get/param `itemWeapon.dice` %}}d6 V
+
 #[[weaponUpgradeTable Sciabola d'Abbordaggio Fasica, sciabola-d-abbordaggio-fasica]]

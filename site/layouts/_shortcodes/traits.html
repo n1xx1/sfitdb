@@ -1,1 +1,5 @@
-{{- partialCached "traits" .Params.traits .Params.traits -}}
+{{- $traits := .Page.Params.traits -}}
+{{- with .Get 0 -}}
+  {{- $traits = transform.Unmarshal (dict "format" "yaml") . -}}
+{{- end -}}
+{{- partialCached "traits" $traits $traits -}}

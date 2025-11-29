@@ -1,7 +1,7 @@
 ---
 traits:
   [
-    "modulare [(Fr, Critica (Criogenesi), Alimentata e Tecnologica, oppure P e
+    "modulare [(Fr, Alimentata, Critica (Criogenesi) e Tecnologica, oppure P e
     Analogica)]",
     portata,
   ]
@@ -36,5 +36,17 @@ itemWeapon:
 L’asta di quest’arma inastata contiene un gas super-raffreddato che circola
 rapidamente, condensando e convogliando energia endotermica in una lama
 criogenica.
+
+---
+
+## Modalità 1 {statblock=1,traits="[alimentata, \"critica [(Criogenesi)]\", tecnologico:Tecnologica]"}
+
+**Danni** {{% get/param `itemWeapon.dice` %}}d6 Fr
+
+---
+
+## Modalità 2 {statblock=1,traits="[analogico:Analogica]"}
+
+**Danni** {{% get/param `itemWeapon.dice` %}}d6 P
 
 #[[weaponUpgradeTable Criopicca, criopicca]]

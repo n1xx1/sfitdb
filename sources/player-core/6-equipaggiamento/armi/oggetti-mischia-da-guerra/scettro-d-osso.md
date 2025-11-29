@@ -31,4 +31,16 @@ itemWeapon:
 Questo randello inciso di osso massiccio è temprato usando materiale proveniente
 dal Vuoto capace di drenare l’energia vitale.
 
+---
+
+## Modalità 1 {statblock=1,traits="[analogico:Analogica, spingere]"}
+
+**Danni** {{% get/param `itemWeapon.dice` %}}d6 Fr
+
+---
+
+## Modalità 2 {statblock=1,traits="[analogico:Analogica]"}
+
+**Danni** {{% get/param `itemWeapon.dice` %}}d6 V
+
 #[[weaponUpgradeTable Scettro d'Osso, scettro-d-osso]]
