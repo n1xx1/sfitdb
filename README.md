@@ -525,7 +525,7 @@
 | Pulsecaster Pistol        | Pistola a Impulsi                       | gu sf |      |
 | Puzzleblade               | Lama Composta                           | gu sf |      |
 |                           |                                         |       |      |
-| Reaction Breacher         | Cannone Reattivo d’Assalto              | us    | ???? |
+| Reaction Breacher         | Aprivarco a Reazione                    | us    | ???? |
 | Retinal Reflectors        | Riflettori Retinali                     | gu sf |      |
 | Riot Sield                | Scudo Antisommossa                      | gu sf |      |
 |                           |                                         |       |      |

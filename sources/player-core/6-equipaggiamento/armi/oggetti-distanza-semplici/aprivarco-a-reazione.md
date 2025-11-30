@@ -5,13 +5,13 @@ original-name: Reaction Breacher
 original-srd: https://2e.aonsrd.com/equipment/weapons/43-reaction-breacher
 itemCategories: [base-weapon]
 navigation-disable: true
-title: Cannone Reattivo d’Assalto
+title: Aprivarco a Reazione
 level: "0+"
 itemWeapon:
   price: 45
   dice: 1
   upgrades: 1
-#[[weaponSubItems Cannone Reattivo d’Assalto, Reaction Breacher]]
+#[[weaponSubItems Aprivarco a Reazione, Reaction Breacher]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
@@ -29,8 +29,8 @@ itemWeapon:
 
 ---
 
-Questo cannone reattivo portatile lancia schegge da mini-missili a grappolo che
-squarciano una struttura fortificata e chiunque abbia la sfortuna di trovarsi
-all’interno.
+Questo aprivarco a reazione portatile lancia schegge da mini-missili a grappolo
+che squarciano una struttura fortificata e chiunque abbia la sfortuna di
+trovarsi all’interno.
 
-#[[weaponUpgradeTable Cannone Reattivo d’Assalto, cannone-reattivo-d-assalto]]
+#[[weaponUpgradeTable Aprivarco a Reazione, cannone-reattivo-d-assalto]]
