@@ -7,7 +7,9 @@ original-srd: https://2e.aonsrd.com/actions/31-analyze-environment
 
 # Analizzare l'Ambiente
 
-**Requisiti** Hai [protezioni ambientali](/regole/TODO) sulla tua armatura o un
+**Requisiti** Hai
+[protezioni ambientali](/regole/player-core/6-equipaggiamento/armature#protezione-ambientale)
+sulla tua armatura o un
 [kit di strumenti da scienziato da campo](/equipaggiamento/kit-di-strumenti-da-scienziato-da-campo)
 
 ---

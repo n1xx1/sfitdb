@@ -59,7 +59,7 @@ ignori la condizione [occultato](/condizioni/occultato) dovuta alla luce fioca.
 Il tuo corpo sintetico resiste ai malanni meglio di quelli degli organismi
 puramente biologici. Ottieni bonus di circostanza +1 ai tiri salvezza contro
 malattie, veleni e radiazioni. Hai sempre
-[protezioni ambientali base](/regole/TODO).
+[protezioni ambientali base](/regole/player-core/6-equipaggiamento/armature#protezione-ambientale).
 
 ---
 
