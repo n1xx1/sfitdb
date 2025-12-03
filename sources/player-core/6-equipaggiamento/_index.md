@@ -203,6 +203,8 @@ di una creatura basato sulla sua taglia, però il GM potrebbe modificare questi
 valori. Costrutti o molte creature con il tratto
 [tecnologico](/tratti/tecnologico) pesano di più
 
+##### Tabella: Volume delle Creature
+
 | Taglia della Creatura | Volume |
 | --------------------- | ------ |
 | Minuscola             | 1      |
@@ -211,8 +213,6 @@ valori. Costrutti o molte creature con il tratto
 | Grande                | 12     |
 | Enorme                | 24     |
 | Mastodontica          | 48     |
-
-`{caption="Volume delle Creature"}`
 
 #### Trascinare
 
@@ -257,6 +257,8 @@ gli oggetti di Volume 1 come trascurabili, quindi può trasportare qualsiasi
 numero di oggetti con Volume 1. Una creatura Minuscola non tratta nessun oggetto
 come se avesse Volume trascurabile.
 
+#### Tabella: Conversioni di Volume
+
 | Taglia della Creatura | Limite di Volume | Considera come Leggero | Considera come Trascurabile |
 | --------------------- | ---------------- | ---------------------- | --------------------------- |
 | Minuscola             | Metà             | —                      | nulla                       |
@@ -265,14 +267,14 @@ come se avesse Volume trascurabile.
 | Enorme                | x4               | Volume 2               | Volume 1                    |
 | Mastodontica          | x8               | Volume 4               | Volume 2                    |
 
-`{caption="Conversioni di Volume"}`
-
 ### Oggetti di Taglie Diverse
 
 Le creature di taglia diversa da Piccola o Media hanno bisogno di oggetti adatti
 alla loro taglia. Questi oggetti hanno un Volume diverso ed eventualmente un
 prezzo diverso. La tabella Oggetti di Taglie Diverse fornisce la conversione di
 Prezzo e Volume per questi oggetti.
+
+#### Tabella: Oggetti di Taglie Diverse
 
 | Taglia della Creatura | Prezzo   | Volume   | Leggero Diventa | Trascurabile Diventa |
 | --------------------- | -------- | -------- | --------------- | -------------------- |
@@ -282,7 +284,7 @@ Prezzo e Volume per questi oggetti.
 | Enorme                | x4       | x4       | Volume 2        | Volume 1             |
 | Mastodontica          | x8       | x8       | Volume 4        | Volume 2             |
 
-`{caption="Oggetti di Taglie Diverse" footnote="\* Un oggetto il cui Volume verrebbe ridotto a meno di 1 ha Volume leggero."}`
+`{footnote="\* Un oggetto il cui Volume verrebbe ridotto a meno di 1 ha Volume leggero."}`
 
 Per esempio, una doshko di taglia adatta per una creatura Media ha un prezzo di
 20 crediti e Volume 1, quindi una creata per una creatura Enorme costa 4 mo e ha
@@ -309,6 +311,8 @@ soltanto portando con te: sei pronto a usarlo. Altre capacità potrebbero
 richiederti semplicemente di portare un oggetto o possederlo; queste si
 applicano fintanto che hai l’oggetto con te, non devi impugnarlo.
 
+#### Tabella: Cambiare Equipaggiamento
+
 | Cambiamento                                                                                            | Mani  | Azione     |
 | ------------------------------------------------------------------------------------------------------ | ----- | ---------- |
 | Estrarre o riporre un oggetto indossato, scambiare un oggetto con un'altro o raccogliere un oggetto^1^ | 1 o 2 | Interagire |
@@ -319,7 +323,7 @@ applicano fintanto che hai l’oggetto con te, non devi impugnarlo.
 | Cambiare l’impugnatura aggiungendo una mano all’oggetto                                                | 2     | Interagire |
 | Recuperare un oggetto da uno zaino^3^ o una borsa a tracolla                                           | 2     | Interagire |
 
-`{caption="Cambiare Equipaggiamento" footnote="^1^ Se recuperi un oggetto a due mani con una mano sola, devi comunque cambiare l’impugnatura prima di poterlo impugnare o usare.<br>^2^ Una creatura deve avere una mano libera affinché qualcuno le passi un oggetto, e poi potrebbe dover cambiare l’impugnatura se riceve un oggetto che richiede due mani per essere impugnato o usato.<br>^3^ Recuperare un oggetto riposto nel proprio zaino richiede prima di togliersi lo zaino con un’azione Interagire separata."}`
+`{footnote="^1^ Se recuperi un oggetto a due mani con una mano sola, devi comunque cambiare l’impugnatura prima di poterlo impugnare o usare.<br>^2^ Una creatura deve avere una mano libera affinché qualcuno le passi un oggetto, e poi potrebbe dover cambiare l’impugnatura se riceve un oggetto che richiede due mani per essere impugnato o usato.<br>^3^ Recuperare un oggetto riposto nel proprio zaino richiede prima di togliersi lo zaino con un’azione Interagire separata."}`
 
 ## Migliorare l’Equipaggiamento
 
@@ -503,6 +507,8 @@ necessari a Fabbricare l’oggetto, ma non hai bisogno di avere accesso
 all’oggetto o soddisfare i Requisiti di Fabbricazione speciali indicati nel
 blocco statistiche dell’oggetto, a meno che il GM non stabilisca diversamente.
 
+### Tabella: Formule
+
 | Livello dell’Oggetto | Prezzo della Formula |
 | -------------------- | -------------------- |
 | 0\*                  | 5 crediti            |
@@ -527,4 +533,4 @@ blocco statistiche dell’oggetto, a meno che il GM non stabilisca diversamente.
 | 19                   | 20,000 crediti       |
 | 20                   | 35,000 crediti       |
 
-`{caption="Formule" footnote="\* Le formule per tutti gli oggetti comuni di livello 0 appartenenti a questo capitolo possono essere comprate in blocco in un'[app per creatori](/equipaggiamento/app-per-creatori)."}`
+`{footnote="\* Le formule per tutti gli oggetti comuni di livello 0 appartenenti a questo capitolo possono essere comprate in blocco in un'[app per creatori](/equipaggiamento/app-per-creatori)."}`

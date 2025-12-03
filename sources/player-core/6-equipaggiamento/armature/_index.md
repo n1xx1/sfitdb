@@ -190,12 +190,14 @@ Di seguito è descritto più nel dettaglio ogni tipo di armatura.
 {{% includeAll source="./oggetti-armature" template="inlinetitle" filter=`{params: {slug: {$not: nessuna-armatura}}}`
 %}}
 
+## Tabella: Senz’Armatura
+
 | Armatura                                              | Livello | Prezzo | Bonus CA | Des Massimo | Pen. Prove | Pen. Velocità | Volume | Migliorie | Gruppo | Tratti dell’Armatura                                                 |
 | ----------------------------------------------------- | :-----: | :----: | :------: | :---------: | :--------: | :-----------: | :----: | :-------: | ------ | -------------------------------------------------------------------- |
 | [Nessuna armatura](/equipaggiamento/nessuna-armatura) |    —    |   —    |    +0    |      —      |     —      |       —       |   —    |     —     | —      | [Esposta](/tratti/esposta)                                           |
 | [Tuta da Volo](/equipaggiamento/tuta-da-volo)         |    1    |   10   |    +0    |     +5      |     —      |       —       |   L    |     0     | Stoffa | [Analogica](/tratti/analogico), [confortevole](/tratti/confortevole) |
 
-`{caption="Difesa Senz’Armatura"}`
+## Tabella: Armatura Leggera
 
 | Armatura (Commerciale)                                                          | Livello | Prezzo | Bonus CA | Des Massimo | Pen. Prove | Pen. Velocità | Forza | Volume | Migliorie | Gruppo    | Tratti dell’Armatura                                                                                       |
 | ------------------------------------------------------------------------------- | :-----: | :----: | :------: | :---------: | :--------: | :-----------: | :---: | :----: | :-------: | --------- | ---------------------------------------------------------------------------------------------------------- |
@@ -209,7 +211,7 @@ Di seguito è descritto più nel dettaglio ogni tipo di armatura.
 | [Tuta di Estex](/equipaggiamento/tuta-di-estex)                                 |    0    |   30   |    +1    |     +3      |     –1     |       —       |  +1   |   L    |     1     | Stoffa    | [Confortevole](/tratti/confortevole), [flessibile](/tratti/flessibile), [tecnologica](/tratti/tecnologico) |
 | [Vestito da Viaggio Abadarcorp](/equipaggiamento/vestito-da-viaggio-abadarcorp) |    0    |   10   |    +1    |     +3      |     —      |       —       |  +0   |   L    |     2     | Stoffa    | [Esposta](/tratti/esposta), [tecnologica](/tratti/tecnologico)                                             |
 
-`{caption="Armatura Leggera"}`
+## Tabella: Armatura Media
 
 | Armatura (Commerciale)                                            | Livello | Prezzo | Bonus CA | Des Massimo | Pen. Prove | Pen. Velocità | Forza | Volume | Migliorie | Gruppo    | Tratti dell’Armatura                                                                               |
 | ----------------------------------------------------------------- | :-----: | :----: | :------: | :---------: | :--------: | :-----------: | :---: | :----: | :-------: | --------- | -------------------------------------------------------------------------------------------------- |
@@ -219,7 +221,7 @@ Di seguito è descritto più nel dettaglio ogni tipo di armatura.
 | [Pelle di Defrex](/equipaggiamento/pelle-di-defrex)               |    0    |   25   |    +3    |     +2      |     –2     |     –1,5      |  +2   |   2    |     1     | Cuoio     | [Tecnologica](/tratti/tecnologico)                                                                 |
 | [Tuta dello Sciame](/equipaggiamento/tuta-dello-sciame)           |    0    |   75   |    +4    |     +1      |     –2     |     –1,5      |  +3   |   2    |     1     | Maglia    | [Flessibile](/tratti/flessibile), [tecnologica](/tratti/tecnologico), [rumorosa](/tratti/rumorosa) |
 
-`{caption="Armatura Media"}`
+## Tabella: Armatura Pesante
 
 | Armatura (Commerciale)                                                          | Livello | Prezzo | Bonus CA | Des Massimo | Pen. Prove | Pen. Velocità | Forza | Volume | Migliorie | Gruppo    | Tratti dell’Armatura                                             |
 | ------------------------------------------------------------------------------- | :-----: | :----: | :------: | :---------: | :--------: | :-----------: | :---: | :----: | :-------: | --------- | ---------------------------------------------------------------- |
@@ -230,7 +232,7 @@ Di seguito è descritto più nel dettaglio ogni tipo di armatura.
 | [Serie Egida](/equipaggiamento/serie-egida)                                     |    0    |  300   |    +6    |     +0      |     –3     |      –3       |  +3   |   3    |     0     | Piastre   | [Baluardo](/tratti/baluardo), [tecnologica](/tratti/tecnologico) |
 | [Serie Sprezzo](/equipaggiamento/serie-sprezzo)                                 |    0    |  200   |    +5    |     +1      |     –3     |      –3       |  +3   |   3    |     1     | Piastre   | [Tecnologica](/tratti/tecnologico)                               |
 
-`{caption="Armatura Pesante"}`
+## Tabella: Miglioramenti Armatura
 
 | Grado          | Livello | Prezzo Miglioramento | Valore Totale^1^ | Migliorie | Incremento Bonus CA | Tratti                              |
 | -------------- | :-----: | :------------------: | :--------------: | :-------: | :-----------------: | ----------------------------------- |
@@ -242,4 +244,4 @@ Di seguito è descritto più nel dettaglio ogni tipo di armatura.
 | Definitiva     |   18    |   +195.000 crediti   | 240.000 crediti  |    +3     |         +3          | [Resiliente](/tratti/resiliente) +2 |
 | Ineguagliabile |   20    |   +460.000 crediti   | 700.000 crediti  |    +3     |         +3          | [Resiliente](/tratti/resiliente) +3 |
 
-`{caption="Miglioramenti Armatura" footnote="^1^ Il Valore Totale non include il prezzo dell'armatura commerciale base."}`
+`{footnote="^1^ Il Valore Totale non include il prezzo dell'armatura commerciale base."}`

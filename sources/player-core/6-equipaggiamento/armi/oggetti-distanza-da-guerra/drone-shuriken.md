@@ -10,25 +10,25 @@ level: "0+"
 itemWeapon:
   price: 5
   dice: 1
+  diceSize: 4
+  damage: P
+  bulk: L
+  hands: 1
+  range: 12
+  reload: 0
+  category: Da Guerra
+  group: dardo
   upgrades: 1
 #[[weaponSubItems Drone Shuriken, Shuriken Drone]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d4 P; **Volume** L
-
-**Mani** 1; **Gittata** 12 m.; **Ricarica** 0
-
-**Tipo** Distanza; **Categoria** Da Guerra; **Gruppo**
-[Dardo](/gruppi-armi/dardo)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}
+{{% pf/weapons/rangedAttributes  %}}
 
 ---
 
 Quest’arma a forma di stella racchiude un minuscolo drone a rotore singolo
 progettato per tornare al lanciatore se non colpisce il bersaglio.
 
-#[[weaponUpgradeTable Drone Shuriken, fucile-occhio-di-shirren]]
+{{% pf/weapons/tableUpgrades %}}

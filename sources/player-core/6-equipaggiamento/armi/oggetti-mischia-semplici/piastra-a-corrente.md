@@ -10,21 +10,19 @@ level: "0+"
 itemWeapon:
   price: 10
   dice: 1
+  diceSize: 4
+  damage: E
+  bulk: —
+  hands: 1
+  category: Semplice
+  group: scossa
   upgrades: 1
 #[[weaponSubItems Piastra a Corrente, Shock Pad, a]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d4 E; **Volume** —
-
-**Mani** 1
-
-**Tipo** Mischia; **Categoria** Semplice; **Gruppo**
-[Scossa](/gruppi-armi/scossa)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}
+{{% pf/weapons/meleeAttributes %}}
 
 ---
 
@@ -32,4 +30,4 @@ Questo circuito flessibile in nanocarbonio può essere installato come miglioria
 in guanti, ginocchiere o protezioni per appendici simili per emettere una
 potente scossa elettrica quando applicato con forza su un bersaglio.
 
-#[[weaponUpgradeTable Piastra a Corrente, piastra-a-corrente, a]]
+{{% pf/weapons/tableUpgrades true %}}

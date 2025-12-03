@@ -10,22 +10,25 @@ level: "0+"
 itemWeapon:
   price: 30
   dice: 1
+  diceSize: 6
+  damage: E
+  bulk: 1
+  hands: 1
+  range: 9
+  reload: 1
+  category: Semplice
+  group: scossa
   upgrades: 1
+  magazineSize: 10
+  ammoName: cariche
+  ammo: batteria
+  expend: 2
 #[[weaponSubItems Pistola a Impulsi, Pulsecaster Pistol]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d6 E; **Volume** 1
-
-**Mani** 1; **Gittata** 9 m.; **Ricarica** 1
-
-**Tipo** Distanza; **Categoria** Semplice; **Gruppo**
-[Scossa](/gruppi-armi/scossa)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}; **Caricatore** 10
-[cariche](/equipaggiamento/batteria); **Dispendio** 2
+{{% pf/weapons/rangedAttributes %}}
 
 ---
 
@@ -35,4 +38,4 @@ irradiano lungo il corpo dell’arma. Le pistole a impulsi sono spesso utilizzat
 da cacciatori di taglie e forze dell’ordine che devono mantenere in vita i loro
 bersagli.
 
-#[[weaponUpgradeTable Pistola a Impulsi, pistola-a-impulsi]]
+{{% pf/weapons/tableUpgrades %}}

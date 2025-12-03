@@ -10,22 +10,25 @@ level: "0+"
 itemWeapon:
   price: 25
   dice: 1
+  diceSize: 4
+  damage: E
+  bulk: 1
+  hands: 1
+  range: 9
+  reload: 1
+  category: Semplice
+  group: scossa
   upgrades: 1
+  magazineSize: 10
+  ammoName: cariche
+  ammo: batteria
+  expend: 2
 #[[weaponSubItems Pistola ad Arco, Arc Pistol]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d4 E; **Volume** 1
-
-**Mani** 1; **Gittata** 9 m.; **Ricarica** 1
-
-**Tipo** Distanza; **Categoria** Semplice; **Gruppo**
-[Scossa](/gruppi-armi/scossa)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}; **Caricatore** 10
-[cariche](/equipaggiamento/batteria); **Dispendio** 2
+{{% pf/weapons/rangedAttributes %}}
 
 ---
 
@@ -34,4 +37,4 @@ condensatore che genera archi elettrici. Il suo calcio è realizzato in
 policarbonato o altri isolanti sintetici, spesso di un giallo brillante e inciso
 con il simbolo universale del fulmine per indicare l’alta tensione.
 
-#[[weaponUpgradeTable Pistola ad Arco, pistola-ad-arco]]
+{{% pf/weapons/tableUpgrades %}}

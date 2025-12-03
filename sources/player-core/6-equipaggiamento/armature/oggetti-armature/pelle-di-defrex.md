@@ -32,4 +32,4 @@ armatura media è particolarmente popolare tra i vesk. Lastre conciate della
 spessa pelle della creatura sono cucite insieme con fili metallici, e le
 giunture sono rinforzate da borchie o scaglie metalliche.
 
-#[[armorUpgradeTable Pelle di Defrex, pelle-di-defrex]]
+{{% pf/armor/tableUpgrades %}}

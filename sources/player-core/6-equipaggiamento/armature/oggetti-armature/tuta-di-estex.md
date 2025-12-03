@@ -30,4 +30,4 @@ Prove** -1; **Pen. Velocità** —
 Questa ingombrante tuta da volo è rinforzata con sottili pannelli di
 policarbonato cuciti tra strati di tessuto tattico.
 
-#[[armorUpgradeTable Tuta di Estex, tuta-di-estex]]
+{{% pf/armor/tableUpgrades %}}

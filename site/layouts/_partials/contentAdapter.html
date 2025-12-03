@@ -45,7 +45,7 @@
       {{ $params = $params | append $param }}
     {{ end }}
     {{ $processedMacro := dict
-      "regex" (printf `#\[\[%s\s+([\s\S]*?)\]\]` $id)
+      "regex" (printf `#\[\[%s(?:\s+([\s\S]*?))?\]\]` $id)
       "params" $params
       "body" $macro.body
     }}

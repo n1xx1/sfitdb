@@ -33,4 +33,4 @@ stile personalizzato. Sensori integrati trasmettono informazioni sensoriali
 all’utilizzatore, mentre arti potenziati assistono nelle manovre. Muoversi in
 un’armatura egida è scomodo, ma potente.
 
-#[[armorUpgradeTable Serie Egida, serie-egida]]
+{{% pf/armor/tableUpgrades %}}

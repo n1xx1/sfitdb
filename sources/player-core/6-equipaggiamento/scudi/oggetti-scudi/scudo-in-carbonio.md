@@ -35,4 +35,4 @@ insegne personali o i colori e simboli di un’organizzazione.
 ^1^ Per ottenere un bonus di circostanza dello scudo alla CA devi usare l’azione
 [Alzare lo Scudo](/azioni/alzare-lo-scudo).
 
-#[[shieldUpgradeTable Scudo in Carbonio, scudo-in-carbonio]]
+{{% pf/shield/tableUpgrades %}}

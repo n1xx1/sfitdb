@@ -38,4 +38,4 @@ armi.
 ^2^ Per ottenere il bonus più alto dello scudo devi usare l’azione
 [Andare in Copertura](/azioni/andare-in-copertura) mentre hai lo scudo alzato.
 
-#[[shieldUpgradeTable Baluardo Mobile, baluardo-mobile]]
+{{% pf/shield/tableUpgrades %}}

@@ -3,7 +3,7 @@ traits:
   [
     accurata,
     agile,
-    "modulare [(A, Critica (Corrosione), Tecnologica, oppure T e Analogica)]",
+    "modulare [(A, Critica (corrosione), Tecnologica, oppure T e Analogica)]",
   ]
 source: Player Core (Eng), pag. 264
 original-name: Talon
@@ -15,21 +15,19 @@ level: "0+"
 itemWeapon:
   price: 20
   dice: 1
+  diceSize: 6
+  damage: Modulare
+  bulk: —
+  hands: 1
+  category: Da Guerra
+  group: coltello
   upgrades: 1
 #[[weaponSubItems Artiglio, Talon]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d6 Modulare; **Volume** —
-
-**Mani** 1
-
-**Tipo** Mischia; **Categoria** Da Guerra; **Gruppo**
-[Coltello](/gruppi-armi/coltello)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}
+{{% pf/weapons/meleeAttributes %}}
 
 ---
 
@@ -39,14 +37,14 @@ sciolgono l’armatura evoluti da diverse specie dello Sciame.
 
 ---
 
-## Modalità 1 {statblock=1,traits="[accurata, agile, \"critica [(Corrosione)]\", tecnologico:Tecnologica]"}
+## Modalità 1 {statblock=1,traits="[accurata, agile, \"critica [(corrosione)]\", tecnologico:Tecnologica]"}
 
-**Danni** {{% get/param `itemWeapon.dice` %}}d6 A
+**Danni** {{% get/param `itemWeapon.dice` %}}d6 {{% damage A %}}
 
 ---
 
 ## Modalità 2 {statblock=1,traits="[accurata, agile, analogico:Analogica]"}
 
-**Danni** {{% get/param `itemWeapon.dice` %}}d6 T
+**Danni** {{% get/param `itemWeapon.dice` %}}d6 {{% damage T %}}
 
-#[[weaponUpgradeTable Artiglio, artiglio]]
+{{% pf/weapons/tableUpgrades %}}

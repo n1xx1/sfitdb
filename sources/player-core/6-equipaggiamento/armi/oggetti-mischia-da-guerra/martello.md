@@ -10,21 +10,19 @@ level: "0+"
 itemWeapon:
   price: 15
   dice: 1
+  diceSize: 8
+  damage: C
+  bulk: 1
+  hands: 2
+  category: Da Guerra
+  group: martello
   upgrades: 1
 #[[weaponSubItems Martello, Hammer]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d8 C; **Volume** 1
-
-**Mani** 2
-
-**Tipo** Mischia; **Categoria** Da Guerra; **Gruppo**
-[Martello](/gruppi-armi/martello)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}
+{{% pf/weapons/meleeAttributes %}}
 
 ---
 
@@ -32,4 +30,4 @@ Apprezzato sia come strumento da creazione sia come arma efficace, questo
 martello utilizza teste e impugnature con pesi speciali per infliggere la
 massima forza a ogni colpo.
 
-#[[weaponUpgradeTable Martello, martello]]
+{{% pf/weapons/tableUpgrades %}}

@@ -31,4 +31,4 @@ Le tute in tessuto termico sono capi rinforzati con cappuccio, intrecciate con
 materiale termico e fili di ventilazione, comunemente indossati per viaggi in
 climi umidi come le giungle di Castrovel o di Pulonis.
 
-#[[armorUpgradeTable Tessuto Termico, tessuto-termico, o]]
+{{% pf/armor/tableUpgrades "m" %}}

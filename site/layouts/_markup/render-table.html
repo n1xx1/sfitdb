@@ -4,57 +4,60 @@
     {{- $attributes = add $attributes (printf " %s=%q" $k $v) -}}
   {{- end -}}
 {{- end -}}
-<table {{ $attributes | safeHTMLAttr -}}>
-  {{- with .Attributes.caption }}
-    <caption>
-      {{ . | $.Page.RenderString }}
-    </caption>
-  {{- end }}
-  <thead>
-    {{- range .THead -}}
-      <tr>
-        {{- range . -}}
-          {{- $class := "" -}}
-          {{- if eq .Alignment "left" -}}
-            {{- $class = "text-left" -}}
-          {{- else if eq .Alignment "right" -}}
-            {{- $class = "text-right" -}}
-          {{- else if eq .Alignment "center" -}}
-            {{- $class = "text-center" -}}
+<div class="table-wrapper">
+  <table {{ $attributes | safeHTMLAttr -}}>
+    {{- with .Attributes.caption }}
+      {{- $caption := . | $.Page.RenderString }}
+      <caption id="tabella-{{ anchorize $caption }}">
+        {{ $caption }}
+      </caption>
+    {{- end }}
+    <thead>
+      {{- range .THead -}}
+        <tr>
+          {{- range . -}}
+            {{- $class := "" -}}
+            {{- if eq .Alignment "left" -}}
+              {{- $class = "text-left" -}}
+            {{- else if eq .Alignment "right" -}}
+              {{- $class = "text-right" -}}
+            {{- else if eq .Alignment "center" -}}
+              {{- $class = "text-center" -}}
+            {{- end -}}
+            <th class="{{ $class }}">
+              {{- .Text -}}
+            </th>
           {{- end -}}
-          <th class="{{ $class }}">
-            {{- .Text -}}
-          </th>
-        {{- end -}}
-      </tr>
-    {{- end -}}
-  </thead>
-  <tbody>
-    {{- range .TBody -}}
-      <tr>
-        {{- range . -}}
-          {{- $class := "" -}}
-          {{- if eq .Alignment "left" -}}
-            {{- $class = "text-left" -}}
-          {{- else if eq .Alignment "right" -}}
-            {{- $class = "text-right" -}}
-          {{- else if eq .Alignment "center" -}}
-            {{- $class = "text-center" -}}
+        </tr>
+      {{- end -}}
+    </thead>
+    <tbody>
+      {{- range .TBody -}}
+        <tr>
+          {{- range . -}}
+            {{- $class := "" -}}
+            {{- if eq .Alignment "left" -}}
+              {{- $class = "text-left" -}}
+            {{- else if eq .Alignment "right" -}}
+              {{- $class = "text-right" -}}
+            {{- else if eq .Alignment "center" -}}
+              {{- $class = "text-center" -}}
+            {{- end -}}
+            <td class="{{ $class }}">
+              {{- .Text -}}
+            </td>
           {{- end -}}
-          <td class="{{ $class }}">
-            {{- .Text -}}
+        </tr>
+      {{- end -}}
+    </tbody>
+    {{- with .Attributes.footnote -}}
+      <tfoot>
+        <tr>
+          <td colspan="{{ len (index $.THead 0) }}">
+            {{- . | $.Page.RenderString -}}
           </td>
-        {{- end -}}
-      </tr>
+        </tr>
+      </tfoot>
     {{- end -}}
-  </tbody>
-  {{- with .Attributes.footnote -}}
-    <tfoot>
-      <tr>
-        <td colspan="{{ len (index $.THead 0) }}">
-          {{- . | $.Page.RenderString -}}
-        </td>
-      </tr>
-    </tfoot>
-  {{- end -}}
-</table>
+  </table>
+</div>

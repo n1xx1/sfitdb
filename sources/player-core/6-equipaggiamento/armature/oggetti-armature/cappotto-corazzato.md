@@ -32,4 +32,4 @@ corazzate. I cappotti corazzati sono spesso realizzati su misura per abbinarsi
 allo stile personale del portatore. Le versioni standard sono assegnate agli
 ufficiali militari come parte dell’uniforme.
 
-#[[armorUpgradeTable Cappotto Corazzato, cappotto-corazzato, o]]
+{{% pf/armor/tableUpgrades "m" %}}

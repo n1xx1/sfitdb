@@ -18,22 +18,25 @@ level: "0+"
 itemWeapon:
   price: 100
   dice: 1
+  diceSize: 10
+  damage: P
+  bulk: 1
+  hands: 2
+  range: 36
+  reload: 1
+  category: Da Guerra
+  group: cecchino
   upgrades: 1
+  magazineSize: 1
+  ammoName: proiettile
+  ammo: munizione-proiettile
+  expend: 1
 #[[weaponSubItems Fucile Assassino, Assassin Rifle]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d10 P; **Volume** 1
-
-**Mani** 2; **Gittata** 6 m.; **Ricarica** 1
-
-**Tipo** Distanza; **Categoria** Da Guerra; **Gruppo**
-[Cecchino](/gruppi-armi/cecchino)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}; **Caricatore** 1
-[proiettile](/equipaggiamento/munizione-proiettile); **Dispendio** 1
+{{% pf/weapons/rangedAttributes %}}
 
 ---
 
@@ -41,4 +44,4 @@ Questo fucile da cecchino può essere smontato in piccole parti, permettendo al
 suo utilizzatore di contrabbandarlo senza attirare attenzione. La maggior parte
 dei fucili d’assassino è dotata di potenti mirini e ottiche digitali.
 
-#[[weaponUpgradeTable Fucile Assassino, fucile-assassino]]
+{{% pf/weapons/tableUpgrades %}}

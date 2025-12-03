@@ -10,22 +10,25 @@ level: "0+"
 itemWeapon:
   price: 45
   dice: 1
+  diceSize: 8
+  damage: C
+  bulk: 2
+  hands: 2
+  range: 30
+  reload: 1
+  category: Semplice
+  group: proiettile
   upgrades: 1
+  magazineSize: 3
+  ammoName: proiettili
+  ammo: munizione-proiettile
+  expend: 1
 #[[weaponSubItems Aprivarco a Reazione, Reaction Breacher]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d8 C; **Volume** 2
-
-**Mani** 2; **Gittata** 30 m.; **Ricarica** 1
-
-**Tipo** Distanza; **Categoria** Semplice; **Gruppo**
-[Proiettile](/gruppi-armi/proiettile)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}; **Caricatore** 3
-[proiettili](/equipaggiamento/munizione-proiettile); **Dispendio** 1
+{{% pf/weapons/rangedAttributes %}}
 
 ---
 
@@ -33,4 +36,4 @@ Questo aprivarco a reazione portatile lancia schegge da mini-missili a grappolo
 che squarciano una struttura fortificata e chiunque abbia la sfortuna di
 trovarsi all’interno.
 
-#[[weaponUpgradeTable Aprivarco a Reazione, cannone-reattivo-d-assalto]]
+{{% pf/weapons/tableUpgrades %}}

@@ -10,22 +10,25 @@ level: "0+"
 itemWeapon:
   price: 75
   dice: 1
+  diceSize: 10
+  damage: F
+  bulk: 2
+  hands: 2
+  range: 4.5
+  reload: 1
+  category: Da Guerra
+  group: fiamma
   upgrades: 1
+  magazineSize: 10
+  ammoName: cariche chimiche
+  ammo: bombola-cariche-chimiche
+  expend: 2
 #[[weaponSubItems Lanciafiamme, Flamethrower]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d10 F; **Volume** 2
-
-**Mani** 2; **Gittata** 4.5 m.; **Ricarica** 1
-
-**Tipo** Distanza; **Categoria** Da Guerra; **Gruppo**
-[Fiamma](/gruppi-armi/fiamma)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}; **Caricatore** 10
-[cariche chimiche](/equipaggiamento/bombola-cariche-chimiche); **Dispendio** 2
+{{% pf/weapons/rangedAttributes %}}
 
 ---
 
@@ -33,4 +36,4 @@ Quest’arma ingombrante a forma di fucile sputa fiamme utilizzando un serbatoio
 di sostanze chimiche altamente combustibili e pressurizzate alloggiato nel suo
 calcio.
 
-#[[weaponUpgradeTable Lanciafiamme, lanciafiamme]]
+{{% pf/weapons/tableUpgrades %}}

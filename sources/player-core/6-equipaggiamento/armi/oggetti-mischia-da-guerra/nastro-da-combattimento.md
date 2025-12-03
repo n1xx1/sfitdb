@@ -10,21 +10,19 @@ level: "0+"
 itemWeapon:
   price: 5
   dice: 1
+  diceSize: 4
+  damage: T
+  bulk: L
+  hands: 1
+  category: Da Guerra
+  group: mazzafrusto
   upgrades: 1
 #[[weaponSubItems Nastro da Combattimento, Battle Ribbon]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d4 T; **Volume** L
-
-**Mani** 1
-
-**Tipo** Mischia; **Categoria** Da Guerra; **Gruppo**
-[Mazzafrusto](/gruppi-armi/mazzafrusto)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}
+{{% pf/weapons/meleeAttributes %}}
 
 ---
 
@@ -32,4 +30,4 @@ Questo nastro di nanocarbonio impalpabile è abbastanza affilato da tagliare la
 carne senza interrompere le tradizionali danze di battaglia che rendono famosa
 quest’arma.
 
-#[[weaponUpgradeTable Nastro da Combattimento, nastro-da-combattimento]]
+{{% pf/weapons/tableUpgrades %}}

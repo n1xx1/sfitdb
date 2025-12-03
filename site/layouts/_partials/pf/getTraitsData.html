@@ -14,22 +14,24 @@
   {{ $isNotFound := false }}
 
   {{ $traitPath := path.Join "tratti" $traitName }}
-  {{ $displayName := $trait }}
+  {{ $name := $trait }}
   {{ $url := "" }}
   {{ with site.GetPage $traitPath }}
     {{ $title := partialCached "utils/title" . .Path }}
-    {{ $displayName = $title.name }}
-    {{- if $traitInfo -}}
-      {{- $displayName = printf "%s %s" $displayName $traitInfo -}}
-    {{- end -}}
+    {{ $name = $title.name }}
     {{ $url = .RelPermalink | replaceRE "/$" "" }}
   {{ else }}
-    {{ $displayName = strings.FirstUpper $trait }}
+    {{ $name = strings.FirstUpper $name }}
   {{ end }}
 
   {{ if gt (len $traitOverrideName) 1 }}
-    {{ $displayName = strings.FirstUpper (index $traitOverrideName 1) }}
+    {{ $name = strings.FirstUpper (index $traitOverrideName 1) }}
   {{ end }}
+
+  {{- $displayName := $name -}}
+  {{- if $traitInfo -}}
+    {{- $displayName = printf "%s %s" $displayName $traitInfo -}}
+  {{- end -}}
 
   {{ $color := "bg-gray-300 dark:bg-gray-600" }}
   {{ if eq $trait "minuscola" "piccola" "media" "grande" "enorme" "mastodontica" }}
@@ -52,7 +54,8 @@
   {{ $entry := dict
     "trait" $trait
     "id" $traitName
-    "name" $displayName
+    "name" $name
+    "displayName" $displayName
     "color" $color
   }}
   {{ if $url }}

@@ -11,22 +11,25 @@ level: "0+"
 itemWeapon:
   price: 30
   dice: 1
+  diceSize: 10
+  damage: P
+  bulk: 1
+  hands: 2
+  range: 4.5
+  reload: 1
+  category: Da Guerra
+  group: proiettile
   upgrades: 1
+  magazineSize: 3
+  ammoName: proiettili
+  ammo: munizione-proiettile
+  expend: 1
 #[[weaponSubItems Fucile da Breccia, Breaching Gun]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d10 P; **Volume** 1
-
-**Mani** 2; **Gittata** 4,5 m.; **Ricarica** 1
-
-**Tipo** Distanza; **Categoria** Da Guerra; **Gruppo**
-[Proiettile](/gruppi-armi/proiettile)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}; **Caricatore** 3
-[proiettili](/equipaggiamento/munizione-proiettile); **Dispendio** 1
+{{% pf/weapons/rangedAttributes %}}
 
 ---
 
@@ -34,4 +37,4 @@ Questo fucile a canna corta è comunemente usato per sfondare porte e muri. Più
 piccolo di un [aprivarco a reazione](/equipaggiamento/aprivarco-a-reazione),
 questo fucile a dispersione è tristemente noto per il suo poderoso rinculo.
 
-#[[weaponUpgradeTable Fucile da Breccia, fucile-da-breccia]]
+{{% pf/weapons/tableUpgrades %}}

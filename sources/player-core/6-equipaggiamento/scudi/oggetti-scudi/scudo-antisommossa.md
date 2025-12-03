@@ -43,4 +43,4 @@ rendendo impossibile vedere attraverso di esso.
 ^2^ Per ottenere il bonus più alto dello scudo devi usare l’azione
 [Andare in Copertura](/azioni/andare-in-copertura) mentre hai lo scudo alzato.
 
-#[[shieldUpgradeTable Scudo Antisommossa, scudo-antisommossa]]
+{{% pf/shield/tableUpgrades %}}

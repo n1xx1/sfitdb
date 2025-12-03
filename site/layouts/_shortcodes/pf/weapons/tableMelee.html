@@ -1,0 +1,89 @@
+{{- $tables := transform.Unmarshal (dict "format" "yaml") .Params.tables -}}
+<div class="table-wrapper">
+  <table>
+    {{- range $tables -}}
+      {{- $pages := partialCached "pf/getPages" (dict
+        "context" $.Page
+        "source" .source
+        "filter" dict
+        "sort" slice
+        ) .Page.Path .source dict slice
+      -}}
+      <thead>
+        {{- if .title -}}
+          <tr class="border-b border-(--tw-prose-th-borders)">
+            <th colspan="9">{{- .title -}}</th>
+          </tr>
+        {{- end -}}
+        <tr>
+          <th>{{- .name | default "Arma (Commerciale)" -}}</th>
+          <th class="text-center">Livello Oggetto</th>
+          <th class="text-center">Prezzo</th>
+          <th class="text-center">Danni</th>
+          <th class="text-center">Volume</th>
+          <th class="text-center">Mani</th>
+          <th class="text-center">Migliorie</th>
+          <th class="text-center">Gruppo</th>
+          <th>Tratti</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{- range $pages -}}
+          {{- $title := partialCached "utils/title" . .Path -}}
+          {{- $p := .Params -}}
+          {{- $pageLink := .RelPermalink | replaceRE "/$" "" -}}
+          {{- $groupLink := path.Join "/gruppi-armi" $p.itemWeapon.group -}}
+          {{- $groupPage := site.GetPage $groupLink -}}
+          {{- $groupName := (partialCached "utils/title" $groupPage $groupPage.Path).name -}}
+          <tr>
+            <td>
+              {{- partialCached "markup/link" (dict "dest" $pageLink "text" $title.name) $pageLink nil $title.name | safeHTML -}}
+            </td>
+            <td class="text-center">
+              {{- $title.level | string | replaceRE "\\+$" "" -}}
+            </td>
+            <td class="text-center">
+              {{- if $p.itemWeapon.price -}}
+                {{- printf "%v crediti" ($p.itemWeapon.price | lang.FormatNumber 0) -}}
+              {{- else -}}
+                —
+              {{- end -}}
+            </td>
+            <td class="text-center">
+              {{- printf "%vd%v %v"
+                $p.itemWeapon.dice
+                $p.itemWeapon.diceSize
+                (partialCached "inline/shortcode/damage.html" $p.itemWeapon.damage $p.itemWeapon.damage)
+                | safeHTML
+              -}}
+            </td>
+            <td class="text-center">{{- $p.itemWeapon.bulk -}}</td>
+            <td class="text-center">{{- $p.itemWeapon.hands -}}</td>
+            <td class="text-center">{{- $p.itemWeapon.upgrades -}}</td>
+            <td class="text-center">
+              {{- partialCached "markup/link" (dict "dest" $groupLink "text" $groupName) $groupLink nil $groupName | safeHTML -}}
+            </td>
+            <td>
+              {{ $traits := partialCached "pf/getTraitsData" .Params.traits .Params.traits }}
+              {{- range $i, $trait := $traits -}}
+                {{- $traitLink := $trait.url | default (printf "/tratti/%s" $trait.id) -}}
+                {{- $traitName := $trait.name | lower -}}
+                {{- if eq $i 0 -}}
+                  {{- $traitName = strings.FirstUpper $traitName -}}
+                {{- else -}}
+                  {{- ", " -}}
+                {{- end -}}
+                {{- if $trait.info -}}
+                  {{- $traitName = printf "%s %s" $traitName $trait.info -}}
+                {{- end -}}
+                {{- partialCached "markup/link" (dict "dest" $traitLink "text" $traitName) $traitLink nil $traitName | safeHTML -}}
+              {{- else -}}
+                {{- "—" -}}
+              {{- end -}}
+            </td>
+          </tr>
+        {{- end -}}
+      </tbody>
+    {{- end -}}
+  </table>
+</div>

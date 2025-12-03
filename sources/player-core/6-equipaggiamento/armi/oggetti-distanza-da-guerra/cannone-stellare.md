@@ -10,22 +10,25 @@ level: "0+"
 itemWeapon:
   price: 40
   dice: 1
+  diceSize: 10
+  damage: P
+  bulk: 2
+  hands: 2
+  range: 15
+  reload: 1
+  category: Da Guerra
+  group: proiettile
   upgrades: 1
+  magazineSize: 8
+  ammoName: proiettili
+  ammo: munizione-proiettile
+  expend: 1
 #[[weaponSubItems Cannone Stellare, Stellar Cannon]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d10 P; **Volume** 2
-
-**Mani** 2; **Gittata** 15 m.; **Ricarica** 1
-
-**Tipo** Distanza; **Categoria** Da Guerra; **Gruppo**
-[Proiettile](/gruppi-armi/proiettile)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}; **Caricatore** 8
-[proiettili](/equipaggiamento/munizione-proiettile); **Dispendio** 1
+{{% pf/weapons/rangedAttributes %}}
 
 ---
 
@@ -33,4 +36,4 @@ Le munizioni di questo cannone portatile sono caricate con mini-missili
 accuratamente posizionati e pieni di schegge che fanno a brandelli chiunque sia
 troppo vicino all’esplosione.
 
-#[[weaponUpgradeTable Cannone Stellare, cannone-stellare]]
+{{% pf/weapons/tableUpgrades %}}

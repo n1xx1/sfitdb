@@ -10,14 +10,26 @@ level: "0+"
 itemWeapon:
   price: 50
   dice: 1
+  diceSize: 6
+  damage: E
+  bulk: 2
+  hands: 2
+  range: 15
+  reload: 1
+  category: Semplice
+  group: scossa
   upgrades: 1
+  magazineSize: 10
+  ammoName: cariche
+  ammo: batteria
+  expend: 2
 #[[weaponSubItems Fucile ad Arco, Arc Rifle]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
 **Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d6 E; **Volume** 2
+{{% get/param `itemWeapon.dice` %}}d6 {{% damage E %}}; **Volume** 2
 
 **Mani** 2; **Gittata** 15 m.; **Ricarica** 1
 
@@ -35,4 +47,4 @@ policarbonato progettati per isolare l’utilizzatore dall’alta tensione. Il
 condensatore più grande del fucile ad arco gli permette di generare una carica
 con potenza sufficiente a neutralizzare un renkroda furioso.
 
-#[[weaponUpgradeTable Fucile ad Arco, fucile-ad-arco]]
+{{% pf/weapons/tableUpgrades %}}

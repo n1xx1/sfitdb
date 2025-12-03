@@ -10,26 +10,29 @@ level: "0+"
 itemWeapon:
   price: 95
   dice: 1
+  diceSize: 8
+  damage: E
+  bulk: 1
+  hands: 2
+  range: 6
+  reload: 1
+  category: Da Guerra
+  group: scossa
   upgrades: 1
+  magazineSize: 10
+  ammoName: cariche
+  ammo: batteria
+  expend: 2
 #[[weaponSubItems Proiettore ad Arco, Arc Emitter]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d8 E; **Volume** 1
-
-**Mani** 2; **Gittata** 6 m.; **Ricarica** 1
-
-**Tipo** Distanza; **Categoria** Da Guerra; **Gruppo**
-[Scossa](/gruppi-armi/scossa)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}; **Caricatore** 10
-[cariche](/equipaggiamento/batteria); **Dispendio** 2
+{{% pf/weapons/rangedAttributes %}}
 
 ---
 
 Quest'arma, composta da due binari estensibili lunghi un metro, spara archi di
 elettricità verso i bersagli, emessi in modo sicuro lontano dal portatore.
 
-#[[weaponUpgradeTable Proiettore ad Arco, proiettore-ad-arco]]
+{{% pf/weapons/tableUpgrades %}}

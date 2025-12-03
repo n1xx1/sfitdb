@@ -38,33 +38,35 @@
   -}}
   {{- $pages = $pages | append $el -}}
 {{- end -}}
-<table>
-  <thead>
-    <tr>
-      <th>Nome</th>
-      <th>Origine</th>
-      <th>Rarità</th>
-      <th>Tratti</th>
-      <th>Livello</th>
-    </tr>
-  </thead>
-  <tbody>
-    {{- range sort $pages "sorter" "asc" -}}
+<div class="table-wrapper">
+  <table>
+    <thead>
       <tr>
-        <td>
-          <a href="{{- .page.RelPermalink | replaceRE `/$` `` -}}">
-            {{- .title.name -}}
-          </a>
-        </td>
-        <td>{{ .page.Params.source }}</td>
-        <td>
-          {{- partialCached "trait" .traits.rarity .traits.rarity -}}
-        </td>
-        <td>
-          {{- partialCached "traits" .traits.traits .traits.traits -}}
-        </td>
-        <td>{{ .title.level }}</td>
+        <th>Nome</th>
+        <th>Origine</th>
+        <th>Rarità</th>
+        <th>Tratti</th>
+        <th>Livello</th>
       </tr>
-    {{- end -}}
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      {{- range sort $pages "sorter" "asc" -}}
+        <tr>
+          <td>
+            <a href="{{- .page.RelPermalink | replaceRE `/$` `` -}}">
+              {{- .title.name -}}
+            </a>
+          </td>
+          <td>{{ .page.Params.source }}</td>
+          <td>
+            {{- partialCached "trait" .traits.rarity .traits.rarity -}}
+          </td>
+          <td>
+            {{- partialCached "traits" .traits.traits .traits.traits -}}
+          </td>
+          <td>{{ .title.level }}</td>
+        </tr>
+      {{- end -}}
+    </tbody>
+  </table>
+</div>

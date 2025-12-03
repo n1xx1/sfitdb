@@ -10,22 +10,25 @@ level: "0+"
 itemWeapon:
   price: 60
   dice: 1
+  diceSize: 8
+  damage: P
+  bulk: 2
+  hands: 2
+  range: 36
+  reload: 1
+  category: Semplice
+  group: cecchino
   upgrades: 1
+  magazineSize: 1
+  ammoName: proiettile
+  ammo: munizione-proiettile
+  expend: 1
 #[[weaponSubItems Fucile a Ricerca, Seeker Rifle]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d8 P; **Volume** 2
-
-**Mani** 2; **Gittata** 36 m.; **Ricarica** 1
-
-**Tipo** Distanza; **Categoria** Semplice; **Gruppo**
-[Cecchino](/gruppi-armi/cecchino)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}; **Caricatore** 1
-[proiettile](/equipaggiamento/munizione-proiettile); **Dispendio** 1
+{{% pf/weapons/rangedAttributes %}}
 
 ---
 
@@ -33,4 +36,4 @@ Questo fucile da cecchino a colpo singolo è una delle armi più popolari
 nell'Immensità grazie alla sua stabilità e affidabilità con una manutenzione
 minima.
 
-#[[weaponUpgradeTable Fucile a Ricerca, fucile-a-ricerca]]
+{{% pf/weapons/tableUpgrades %}}

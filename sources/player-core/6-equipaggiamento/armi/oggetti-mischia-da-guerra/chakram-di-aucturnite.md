@@ -10,21 +10,19 @@ level: "0+"
 itemWeapon:
   price: 15
   dice: 1
+  diceSize: 6
+  damage: T
+  bulk: L
+  hands: 1
+  category: Da Guerra
+  group: coltello
   upgrades: 1
 #[[weaponSubItems Chakram di Aucturnite, Aucturnite Chakram]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d6 T; **Volume** L
-
-**Mani** 1
-
-**Tipo** Mischia; **Categoria** Da Guerra; **Gruppo**
-[Coltello](/gruppi-armi/coltello)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}
+{{% pf/weapons/meleeAttributes %}}
 
 ---
 
@@ -32,4 +30,4 @@ Questo cerchio affilato è scolpito da un frammento di aucturnite e modellato pe
 assomigliare all’anello di un pianeta. Questo materiale è misteriosamente
 apparso a anni luce dall’orbita originaria di Aucturn.
 
-#[[weaponUpgradeTable Chakram di Aucturnite, chakram-di-aucturnite]]
+{{% pf/weapons/tableUpgrades %}}

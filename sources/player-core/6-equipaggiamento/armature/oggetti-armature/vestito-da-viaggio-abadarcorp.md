@@ -33,4 +33,4 @@ di forza contingenti e piastre nascoste proteggono chi li indossa in situazioni
 ostili. I modelli di grado superiore offrono maggiore protezione, insieme a
 un’etichetta di design.
 
-#[[armorUpgradeTable Vestito Da Viaggio Abadarcorp, vestito-da-viaggio-abadarcorp, o]]
+{{% pf/armor/tableUpgrades "m" %}}

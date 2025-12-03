@@ -10,22 +10,25 @@ level: "0+"
 itemWeapon:
   price: 30
   dice: 1
+  diceSize: 6
+  damage: F
+  bulk: 1
+  hands: 1
+  range: 12
+  reload: 1
+  category: Semplice
+  group: laser
   upgrades: 1
+  magazineSize: 10
+  ammoName: cariche
+  ammo: batteria
+  expend: 2
 #[[weaponSubItems Pistola Laser, Laser Pistol]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d6 F; **Volume** 1
-
-**Mani** 1; **Gittata** 12 m.; **Ricarica** 1
-
-**Tipo** Distanza; **Categoria** Semplice; **Gruppo**
-[Laser](/gruppi-armi/laser)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}; **Caricatore** 10
-[cariche](/equipaggiamento/batteria); **Dispendio** 2
+{{% pf/weapons/rangedAttributes %}}
 
 ---
 
@@ -34,4 +37,4 @@ grazie alla sua affidabilità, resistenza e convenienza. Le pistole laser più
 comuni hanno un corpo leggero in policarbonato che termina in una canna lunga e
 sottile.
 
-#[[weaponUpgradeTable Pistola Laser, pistola-laser]]
+{{% pf/weapons/tableUpgrades %}}

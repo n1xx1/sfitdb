@@ -10,20 +10,19 @@ level: "0+"
 itemWeapon:
   price: 15
   dice: 1
+  diceSize: 8
+  damage: S
+  bulk: 1
+  hands: 2
+  category: Semplice
+  group: spada
   upgrades: 1
 #[[weaponSubItems Lama Composta, Puzzleblade, a]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d8 S; **Volume** 1
-
-**Mani** 2
-
-**Tipo** Mischia; **Categoria** Semplice; **Gruppo** [Spada](/gruppi-armi/spada)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}
+{{% pf/weapons/meleeAttributes %}}
 
 ---
 
@@ -33,4 +32,4 @@ ritualisticamente le lame composte, con diversi pezzi che simboleggiano le virt√
 kasatha di convinzione, devozione, moderazione e tradizione. Criminali e
 contrabbandieri apprezzano la lama composta per il suo design discreto.
 
-#[[weaponUpgradeTable Lama Composta, lama-composta, a]]
+{{% pf/weapons/tableUpgrades true %}}

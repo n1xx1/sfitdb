@@ -31,4 +31,4 @@ Questa armatura pesante è composta da piastre metalliche interconnesse modellat
 sul corpo del portatore con un motivo squamato. Paracoda e guanti artigliati
 sono elementi standard di questa armatura.
 
-#[[armorUpgradeTable Armatura Veskariana Imperiale, armatura-veskariana-imperiale]]
+{{% pf/armor/tableUpgrades %}}

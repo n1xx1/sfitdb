@@ -31,4 +31,4 @@ Questa armatura a piastre elegante ma rigida è spesso costruita con materiali
 traslucidi per mettere in mostra la circuiteria dermica del portatore e viene
 indossata sotto abiti larghi.
 
-#[[armorUpgradeTable Piastra Sottile, piastra-sottile]]
+{{% pf/armor/tableUpgrades %}}

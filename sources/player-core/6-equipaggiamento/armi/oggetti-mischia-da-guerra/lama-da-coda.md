@@ -10,25 +10,23 @@ level: "0+"
 itemWeapon:
   price: 10
   dice: 1
+  diceSize: 4
+  damage: S
+  bulk: —
+  hands: 0
+  category: Da Guerra
+  group: coltello
   upgrades: 1
 #[[weaponSubItems Lama da Coda, Tailblade]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d4 S; **Volume** —
-
-**Mani** 0
-
-**Tipo** Mischia; **Categoria** Da Guerra; **Gruppo**
-[Coltello](/gruppi-armi/coltello)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}
+{{% pf/weapons/meleeAttributes %}}
 
 ---
 
 Fasce regolabili fissano questa lama leggera a una coda, un tentacolo o
 un’appendice simile.
 
-#[[weaponUpgradeTable Lama da Coda, lama-da-coda]]
+{{% pf/weapons/tableUpgrades %}}

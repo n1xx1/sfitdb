@@ -204,6 +204,14 @@ html {
     ) {
       @apply mt-0;
     }
+
+    .table-title {
+      @apply -mb-6 mt-4 text-lg uppercase font-medium;
+    }
+
+    .table-wrapper {
+      @apply overflow-x-auto;
+    }
   }
 }
 

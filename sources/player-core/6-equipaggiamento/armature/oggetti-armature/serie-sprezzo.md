@@ -30,4 +30,4 @@ Prove** -3; **Pen. Velocità** -3 m.
 Questa armatura da squadra è un guscio modellato in policarbonato rinforzato,
 con elmo e visiera retrattile.
 
-#[[armorUpgradeTable Serie Sprezzo, serie-sprezzo]]
+{{% pf/armor/tableUpgrades %}}

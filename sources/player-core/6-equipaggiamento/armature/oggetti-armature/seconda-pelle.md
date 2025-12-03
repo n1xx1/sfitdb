@@ -31,4 +31,4 @@ Un tessuto morbido ma resistente si adatta perfettamente al corpo del portatore,
 offrendo una protezione di base senza sacrificare il comfort. La seconda pelle è
 comunemente indossata sotto abiti casual.
 
-#[[armorUpgradeTable Seconda Pelle, seconda-pelle]]
+{{% pf/armor/tableUpgrades %}}

@@ -10,21 +10,19 @@ level: "0+"
 itemWeapon:
   price: 15
   dice: 1
+  diceSize: 8
+  damage: F
+  bulk: L
+  hands: 1
+  category: Da Guerra
+  group: spada
   upgrades: 1
 #[[weaponSubItems Spada Plasma, Plasma Sword]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d8 F; **Volume** L
-
-**Mani** 1
-
-**Tipo** Mischia; **Categoria** Da Guerra; **Gruppo**
-[Spada](/gruppi-armi/spada)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}
+{{% pf/weapons/meleeAttributes %}}
 
 ---
 
@@ -32,4 +30,4 @@ Questa spada genera un fascio concentrato di plasma attorno a un campo di forza
 localizzato alimentato da un generatore nell’elsa. Il fascio si accende solo
 quando la spada è alimentata.
 
-#[[weaponUpgradeTable Spada Plasma, spada-plasma]]
+{{% pf/weapons/tableUpgrades %}}

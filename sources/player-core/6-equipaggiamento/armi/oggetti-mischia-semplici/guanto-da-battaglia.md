@@ -10,24 +10,22 @@ level: "0+"
 itemWeapon:
   price: 3
   dice: 1
+  diceSize: 4
+  damage: C
+  bulk: —
+  hands: 1
+  group: rissa
   upgrades: 1
 #[[weaponSubItems Guanto da Battaglia, Battleglove]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d4 B; **Volume** —
-
-**Mani** 1
-
-**Tipo** Mischia; **Categoria** Semplice; **Gruppo** [Rissa](/gruppi-armi/rissa)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}
+{{% pf/weapons/meleeAttributes %}}
 
 ---
 
 Questi guanti resistenti si adattano alle mani (o ad altre appendici)
 dell’utilizzatore e presentano placche appesantite o spuntoni sulle nocche.
 
-#[[weaponUpgradeTable Guanto da Battaglia, guanto-da-battaglia]]
+{{% pf/weapons/tableUpgrades %}}

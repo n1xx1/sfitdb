@@ -39,4 +39,4 @@ rinvigorire il proprio spirito combattivo in situazioni critiche.
 ^1^ Per ottenere un bonus di circostanza dello scudo alla CA devi usare l’azione
 [Alzare lo Scudo](/azioni/alzare-lo-scudo).
 
-#[[shieldUpgradeTable Scudo Fasico, scudo-fasico]]
+{{% pf/shield/tableUpgrades %}}

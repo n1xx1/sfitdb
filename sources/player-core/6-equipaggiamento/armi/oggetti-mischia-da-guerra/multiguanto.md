@@ -11,21 +11,19 @@ level: "0+"
 itemWeapon:
   price: 20
   dice: 1
+  diceSize: 6
+  damage: E
+  bulk: L
+  hands: 1
+  category: Da Guerra
+  group: scossa
   upgrades: 1
 #[[weaponSubItems Multiguanto, Polyglove]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d6 E; **Volume** L
-
-**Mani** 1
-
-**Tipo** Mischia; **Categoria** Da Guerra; **Gruppo**
-[Scossa](/gruppi-armi/scossa)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}
+{{% pf/weapons/meleeAttributes %}}
 
 ---
 
@@ -34,4 +32,4 @@ computer e altri oggetti tecnologici, richiedendo un’intera mano (o un’appen
 adeguata) per maneggiarli. Sovraccaricare i componenti del multiguanto genera un
 voltaggio tra le dita di chi lo impugna.
 
-#[[weaponUpgradeTable Multiguanto, multiguanto]]
+{{% pf/weapons/tableUpgrades %}}

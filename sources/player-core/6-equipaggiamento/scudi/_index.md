@@ -101,6 +101,8 @@ personalizzate e scudi antisommossa decorati.
 
 {{% includeAll source="./oggetti-scudi" template="inlinetitle" %}}
 
+## Tabella: Scudi
+
 | Scudo (Commerciale)                                       | Livello | Prezzo | Bonus CA^1^ | Pen. Velocità | Volume | Durezza | PF (SR) | Tratti                                                               |
 | --------------------------------------------------------- | :-----: | :----: | :---------: | :-----------: | :----: | :-----: | :-----: | -------------------------------------------------------------------- |
 | [Baluardo mobile](/equipaggiamento/baluardo-mobile)       |    0    |  200   |  +3/+4^2^   |     –3 m.     |   1    |    5    | 24 (12) | [Analogico](/tratti/analogico), [massiccio](/tratti/massiccio) +2    |
@@ -111,7 +113,9 @@ personalizzate e scudi antisommossa decorati.
 | [Scudo fasico](/equipaggiamento/scudo-fasico)             |    0    |   20   |     +2      |       —       |   —    |    5    | 10 (5)  | [Retrattile](/tratti/retrattile), [tecnologico](/tratti/tecnologico) |
 | [Scudo in carbonio](/equipaggiamento/scudo-in-carbonio)   |    0    |   25   |     +2      |       —       |   1    |    5    | 20 (5)  | [Analogico](/tratti/analogico)                                       |
 
-`{caption="Scudi" footnote="^1^ Per ottenere un bonus di circostanza dello scudo alla CA devi usare l’azione [Alzare lo Scudo](/azioni/alzare-lo-scudo).<br>^2^ Per ottenere il bonus più alto dello scudo devi usare l’azione [Andare in Copertura](/azioni/andare-in-copertura) mentre hai lo scudo alzato."}`
+`{footnote="^1^ Per ottenere un bonus di circostanza dello scudo alla CA devi usare l’azione [Alzare lo Scudo](/azioni/alzare-lo-scudo).<br>^2^ Per ottenere il bonus più alto dello scudo devi usare l’azione [Andare in Copertura](/azioni/andare-in-copertura) mentre hai lo scudo alzato."}`
+
+## Tabella: Miglioramenti Scudo
 
 | Grado          | Livello | Prezzo Miglioramento | Valore Totale^1^ | Durezza |  PF  | SR  |
 | -------------- | :-----: | :------------------: | :--------------: | :-----: | :--: | :-: |
@@ -123,4 +127,4 @@ personalizzate e scudi antisommossa decorati.
 | Definitivo     |   18    |   +55.000 crediti    |  80.000 crediti  |   +6    | +100 | +50 |
 | Ineguagliabile |   20    |   +240.000 crediti   | 320.000 crediti  |   +7    | +120 | +60 |
 
-`{caption="Miglioramenti Scudo" footnote="^1^ Il Valore Totale non include il prezzo dello scudo commerciale base."}`
+`{footnote="^1^ Il Valore Totale non include il prezzo dello scudo commerciale base."}`

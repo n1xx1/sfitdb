@@ -10,21 +10,19 @@ level: "0+"
 itemWeapon:
   price: 30
   dice: 1
+  diceSize: 10
+  damage: T
+  bulk: 1
+  hands: 2
+  category: Da Guerra
+  group: arma-inastata
   upgrades: 1
 #[[weaponSubItems Dolorfalcione, Painglaive]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d10 T; **Volume** 1
-
-**Mani** 2
-
-**Tipo** Mischia; **Categoria** Da Guerra; **Gruppo**
-[Arma Inastata](/gruppi-armi/arma-inastata)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}
+{{% pf/weapons/meleeAttributes %}}
 
 ---
 
@@ -32,4 +30,4 @@ Quest’arma inastata è feroce ma apparentemente elegante, e fa a pezzi i nemic
 con una lama-zanna motorizzata. Un interruttore a pulsazione regolabile permette
 al portatore di incanalare ulteriore dolore attraverso l’arma.
 
-#[[weaponUpgradeTable Dolorfalcione, dolorfalcione]]
+{{% pf/weapons/tableUpgrades %}}

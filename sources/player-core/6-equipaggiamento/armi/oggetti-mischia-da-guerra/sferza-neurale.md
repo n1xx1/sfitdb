@@ -11,21 +11,19 @@ level: "0+"
 itemWeapon:
   price: 10
   dice: 1
+  diceSize: 8
+  damage: M
+  bulk: L
+  hands: 1
+  category: Da Guerra
+  group: mazzafrusto
   upgrades: 1
 #[[weaponSubItems Sferza Neurale, Neural Lash]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d8 M; **Volume** L
-
-**Mani** 1
-
-**Tipo** Mischia; **Categoria** Da Guerra; **Gruppo**
-[Mazzafrusto](/gruppi-armi/mazzafrusto)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}
+{{% pf/weapons/meleeAttributes %}}
 
 ---
 
@@ -33,4 +31,4 @@ Questo viticcio simile a una frusta, fatto di elettricità, risponde lievemente
 ai segnali psichici. I telepati che impugnano una sferza neurale calibrata
 correttamente la considerano un’estensione del loro corpo.
 
-#[[weaponUpgradeTable Sferza Neurale, sferza-neurale]]
+{{% pf/weapons/tableUpgrades %}}

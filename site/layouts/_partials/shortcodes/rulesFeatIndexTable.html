@@ -5,31 +5,33 @@
   "sort" .sort
   ) .context.Path .source .filter .sort
 -}}
-<table>
-  <thead>
-    <tr>
-      <th>{{ .title }}</th>
-      <th class="text-center">Liv.</th>
-      <th>Prerequisiti</th>
-      <th>Benefici</th>
-    </tr>
-  </thead>
-  <tbody>
-    {{- range $pages -}}
-      {{- $title := partialCached "utils/title" . .Path -}}
-      {{- $anchor := $title.full | anchorize | replaceRE `---.*?(-\d+)?$` "$1" | safeURL }}
+<div class="table-wrapper">
+  <table>
+    <thead>
       <tr>
-        <td>
-          <a href="#{{ $anchor }}">
-            {{- $title.name | partial "icons" -}}{{- if in .Params.traits "non comune" -}}
-              ^N^
-            {{- end -}}
-          </a>
-        </td>
-        <td class="text-center">{{ $title.level }}</td>
-        <td>{{ .Params.featPrerequisites }}</td>
-        <td>{{ .Params.shortDescription }}</td>
+        <th>{{ .title }}</th>
+        <th class="text-center">Liv.</th>
+        <th>Prerequisiti</th>
+        <th>Benefici</th>
       </tr>
-    {{- end -}}
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      {{- range $pages -}}
+        {{- $title := partialCached "utils/title" . .Path -}}
+        {{- $anchor := $title.full | anchorize | replaceRE `---.*?(-\d+)?$` "$1" | safeURL }}
+        <tr>
+          <td>
+            <a href="#{{ $anchor }}">
+              {{- $title.name | partial "icons" -}}{{- if in .Params.traits "non comune" -}}
+                ^N^
+              {{- end -}}
+            </a>
+          </td>
+          <td class="text-center">{{ $title.level }}</td>
+          <td>{{ .Params.featPrerequisites }}</td>
+          <td>{{ .Params.shortDescription }}</td>
+        </tr>
+      {{- end -}}
+    </tbody>
+  </table>
+</div>

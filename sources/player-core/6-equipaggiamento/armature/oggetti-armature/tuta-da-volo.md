@@ -32,4 +32,4 @@ Questa comoda tuta intera è fatta di tessuto termico leggero ed è spesso
 decorata con toppe che mostrano stemmi personali, grado militare o persino band
 preferite o squadre sportive.
 
-#[[armorUpgradeTable Tuta da Volo, tuta-da-volo]]
+{{% pf/armor/tableUpgrades %}}

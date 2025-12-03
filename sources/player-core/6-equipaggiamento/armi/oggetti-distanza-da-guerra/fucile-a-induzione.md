@@ -17,26 +17,29 @@ level: "0+"
 itemWeapon:
   price: 100
   dice: 1
+  diceSize: 10
+  damage: P
+  bulk: 1
+  hands: 2
+  range: 36
+  reload: 1
+  category: Da Guerra
+  group: cecchino
   upgrades: 1
+  magazineSize: 1
+  ammoName: proiettile
+  ammo: munizione-proiettile
+  expend: 1
 #[[weaponSubItems Fucile a Induzione, Coil Rifle]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d10 P; **Volume** 1
-
-**Mani** 2; **Gittata** 36 m.; **Ricarica** 1
-
-**Tipo** Distanza; **Categoria** Da Guerra; **Gruppo**
-[Cecchino](/gruppi-armi/cecchino)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}; **Caricatore** 1
-[proiettili](/equipaggiamento/munizione-proiettile); **Dispendio** 1
+{{% pf/weapons/rangedAttributes %}}
 
 ---
 
 La canna di questo fucile è circondata da una bobina che accelera le munizioni
 con potenza e precisione tramite campi magnetici accuratamente allineati.
 
-#[[weaponUpgradeTable Fucile a Induzione, fucile-a-induzione]]
+{{% pf/weapons/tableUpgrades %}}

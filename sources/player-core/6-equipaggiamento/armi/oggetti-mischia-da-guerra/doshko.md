@@ -10,25 +10,23 @@ level: "0+"
 itemWeapon:
   price: 20
   dice: 1
+  diceSize: 12
+  damage: P
+  bulk: 1
+  hands: 2
+  category: Da Guerra
+  group: ascia
   upgrades: 1
 #[[weaponSubItems Doshko, Doshko]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d12 P; **Volume** 1
-
-**Mani** 2
-
-**Tipo** Mischia; **Categoria** Da Guerra; **Gruppo**
-[Ascia](/gruppi-armi/ascia)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}
+{{% pf/weapons/meleeAttributes %}}
 
 ---
 
 L’arma tradizionale del Veskarium, quest'azza alimentata presenta da una a tre
 lame triangolari forgiate sia per ampi colpi dall’alto sia per parate tattiche.
 
-#[[weaponUpgradeTable Doshko, doshko]]
+{{% pf/weapons/tableUpgrades %}}

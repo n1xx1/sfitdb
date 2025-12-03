@@ -10,22 +10,25 @@ level: "0+"
 itemWeapon:
   price: 30
   dice: 1
+  diceSize: 6
+  damage: P
+  bulk: L
+  hands: 1
+  range: 18
+  reload: 1
+  category: Da Guerra
+  group: proiettile
   upgrades: 1
+  magazineSize: 6
+  ammoName: proiettili
+  ammo: munizione-proiettile
+  expend: 1
 #[[weaponSubItems Pistola Rotante, Rotating Pistol]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d6 P; **Volume** L
-
-**Mani** 1; **Gittata** 18 m.; **Ricarica** 1
-
-**Tipo** Distanza; **Categoria** Da Guerra; **Gruppo**
-[Proiettile](/gruppi-armi/proiettile)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}; **Caricatore** 6
-[proiettili](/equipaggiamento/munizione-proiettile); **Dispendio** 1
+{{% pf/weapons/rangedAttributes %}}
 
 ---
 
@@ -33,4 +36,4 @@ Un modello collaudato nel tempo e apprezzato dai pistoleri tradizionali, le più
 canne di questa pistola ruotano meccanicamente durante lo sparo, riducendo la
 probabilità di malfunzionamenti.
 
-#[[weaponUpgradeTable Pistola Rotante, pistola-rotante]]
+{{% pf/weapons/tableUpgrades %}}

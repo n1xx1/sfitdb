@@ -10,25 +10,23 @@ level: "0+"
 itemWeapon:
   price: 10
   dice: 1
+  diceSize: 8
+  damage: T
+  bulk: 1
+  hands: 1
+  category: Da Guerra
+  group: spada
   upgrades: 1
 #[[weaponSubItems Spada da Duello, Dueling Sword]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d8 T; **Volume** 1
-
-**Mani** 1
-
-**Tipo** Mischia; **Categoria** Da Guerra; **Gruppo**
-[Spada](/gruppi-armi/spada)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}
+{{% pf/weapons/meleeAttributes %}}
 
 ---
 
 Disponibili in una varietà di stili, queste armi tradizionali e collaudate sono
 state perfezionate con tecniche di forgiatura avanzate e materiali moderni.
 
-#[[weaponUpgradeTable Spada da Duello, spada-da-duello]]
+{{% pf/weapons/tableUpgrades %}}

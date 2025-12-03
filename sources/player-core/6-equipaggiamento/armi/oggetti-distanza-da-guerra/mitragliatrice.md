@@ -10,22 +10,25 @@ level: "0+"
 itemWeapon:
   price: 85
   dice: 1
+  diceSize: 8
+  damage: P
+  bulk: 2
+  hands: 2
+  range: 12
+  reload: 2
+  category: Da Guerra
+  group: proiettile
   upgrades: 1
+  magazineSize: 20
+  ammoName: proiettili
+  ammo: munizione-proiettile
+  expend: 1
 #[[weaponSubItems Mitragliatrice, Machine Gun]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d8 P; **Volume** 2
-
-**Mani** 2; **Gittata** 12 m.; **Ricarica** 2
-
-**Tipo** Distanza; **Categoria** Da Guerra; **Gruppo**
-[Proiettile](/gruppi-armi/proiettile)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}; **Caricatore** 20
-[proiettili](/equipaggiamento/munizioni-proiettile); **Dispendio** 1
+{{% pf/weapons/rangedAttributes %}}
 
 ---
 
@@ -33,4 +36,4 @@ Queste armi automatiche provate e affidabili sono in grado di sparare raffiche
 brevi o svuotare completamente i loro caricatori per ripulire un campo di
 battaglia.
 
-#[[weaponUpgradeTable Mitragliatrice, mitragliatrice]]
+{{% pf/weapons/tableUpgrades %}}

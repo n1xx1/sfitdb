@@ -10,22 +10,25 @@ level: "0+"
 itemWeapon:
   price: 40
   dice: 1
+  diceSize: 4
+  damage: A
+  bulk: 1
+  hands: 2
+  range: 24
+  reload: 1
+  category: Semplice
+  group: corrosione
   upgrades: 1
+  magazineSize: 5
+  ammoName: proiettili
+  ammo: munizione-proiettile
+  expend: 1
 #[[weaponSubItems Fucile a Dardi Acidi, Acid Dart Rifle]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d4 A; **Volume** 1
-
-**Mani** 2; **Gittata** 24 m.; **Ricarica** 1
-
-**Tipo** Distanza; **Categoria** Semplice; **Gruppo**
-[Corrosione](/gruppi-armi/corrosione)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}; **Caricatore** 5
-[proiettili](/equipaggiamento/munizione-proiettile); **Dispendio** 1
+{{% pf/weapons/rangedAttributes %}}
 
 ---
 
@@ -34,4 +37,4 @@ caricati con componenti di un composto altamente corrosivo che rimangono
 separati fino al momento del lancio, consentendo una durata di conservazione
 quasi illimitata con rischio minimo di esposizione accidentale.
 
-#[[weaponUpgradeTable Fucile a Dardi Acidi, fucile-a-dardi-acidi]]
+{{% pf/weapons/tableUpgrades %}}

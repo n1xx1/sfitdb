@@ -10,25 +10,22 @@ level: "0+"
 itemWeapon:
   price: 2
   dice: 1
+  diceSize: 6
+  damage: C
+  bulk: L
+  hands: 1
+  group: randello
   upgrades: 1
 #[[weaponSubItems Sfollagente, Baton]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d6 B; **Volume** L
-
-**Mani** 1
-
-**Tipo** Mischia; **Categoria** Semplice; **Gruppo**
-[Randello](/gruppi-armi/randello)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}
+{{% pf/weapons/meleeAttributes %}}
 
 ---
 
 Questa asta rinforzata è comunemente realizzata con leghe metalliche ed è
 progettata per colpire e parare i colpi in arrivo.
 
-#[[weaponUpgradeTable Sfollagente, sfollagente]]
+{{% pf/weapons/tableUpgrades %}}

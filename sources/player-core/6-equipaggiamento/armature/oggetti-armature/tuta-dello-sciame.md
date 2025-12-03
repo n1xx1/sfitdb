@@ -30,4 +30,4 @@ Prove** -2; **Pen. Velocità** -1,5 m.
 Naniti specializzati formano una tuta a rete che si adatta a portatori con
 fisiologie uniche o trasformabili.
 
-#[[armorUpgradeTable Tuta dello Sciame, tuta-dello-sciame]]
+{{% pf/armor/tableUpgrades %}}

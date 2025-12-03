@@ -15,21 +15,19 @@ level: "0+"
 itemWeapon:
   price: 20
   dice: 1
+  diceSize: 6
+  damage: Modulare
+  bulk: 1
+  hands: 2
+  category: Da Guerra
+  group: arma-inastata
   upgrades: 1
 #[[weaponSubItems Criopicca, Cryopike]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d6 Modulare; **Volume** 1
-
-**Mani** 2
-
-**Tipo** Mischia; **Categoria** Da Guerra; **Gruppo**
-[Arma Inastata](/gruppi-armi/arma-inastata)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}
+{{% pf/weapons/meleeAttributes %}}
 
 ---
 
@@ -39,14 +37,14 @@ criogenica.
 
 ---
 
-## Modalità 1 {statblock=1,traits="[alimentata, \"critica [(Criogenesi)]\", tecnologico:Tecnologica]"}
+## Modalità 1 {statblock=1,traits="[alimentata, \"critica [(criogenesi)]\", tecnologico:Tecnologica]"}
 
-**Danni** {{% get/param `itemWeapon.dice` %}}d6 Fr
+**Danni** {{% get/param `itemWeapon.dice` %}}d6 {{% damage Fr %}}
 
 ---
 
 ## Modalità 2 {statblock=1,traits="[analogico:Analogica]"}
 
-**Danni** {{% get/param `itemWeapon.dice` %}}d6 P
+**Danni** {{% get/param `itemWeapon.dice` %}}d6 {{% damage P %}}
 
-#[[weaponUpgradeTable Criopicca, criopicca]]
+{{% pf/weapons/tableUpgrades %}}

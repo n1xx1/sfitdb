@@ -10,22 +10,25 @@ level: "0+"
 itemWeapon:
   price: 45
   dice: 1
+  diceSize: 8
+  damage: F
+  bulk: 2
+  hands: 2
+  range: 30
+  reload: 1
+  category: Semplice
+  group: laser
   upgrades: 1
+  magazineSize: 10
+  ammoName: cariche
+  ammo: batteria
+  expend: 2
 #[[weaponSubItems Fucile Laser, Laser Rifle]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d8 F; **Volume** 2
-
-**Mani** 2; **Gittata** 30 m.; **Ricarica** 1
-
-**Tipo** Distanza; **Categoria** Semplice; **Gruppo**
-[Laser](/gruppi-armi/laser)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}; **Caricatore** 10
-[cariche](/equipaggiamento/batteria); **Dispendio** 2
+{{% pf/weapons/rangedAttributes %}}
 
 ---
 
@@ -35,4 +38,4 @@ altamente modificabile e progettato per funzionare con una varietà di accessori
 e migliorie, con gli utilizzatori che adattano il fucile laser alle proprie
 preferenze e arrivano perfino a trasformarlo in un’arma quasi irriconoscibile.
 
-#[[weaponUpgradeTable Fucile Laser, fucile-laser]]
+{{% pf/weapons/tableUpgrades %}}

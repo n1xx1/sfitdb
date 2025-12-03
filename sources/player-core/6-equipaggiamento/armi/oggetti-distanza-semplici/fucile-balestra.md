@@ -10,22 +10,25 @@ level: "0+"
 itemWeapon:
   price: 25
   dice: 1
+  diceSize: 10
+  damage: P
+  bulk: 2
+  hands: 2
+  range: 30
+  reload: 1
+  category: Semplice
+  group: balestra
   upgrades: 1
+  magazineSize: 1
+  ammoName: proiettile
+  ammo: munizione-proiettile
+  expend: 1
 #[[weaponSubItems Fucile Balestra, Crossbolter]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d10 P; **Volume** 2
-
-**Mani** 2; **Gittata** 30 m.; **Ricarica** 1
-
-**Tipo** Distanza; **Categoria** Semplice; **Gruppo**
-[Balestra](/gruppi-armi/balestra)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}; **Caricatore** 1
-[proiettile](/equipaggiamento/munizione-proiettile); **Dispendio** 1
+{{% pf/weapons/rangedAttributes %}}
 
 ---
 
@@ -33,4 +36,4 @@ Questa balestra ad alta tecnologia utilizza una serie di pistoni per spingere i
 dardi lungo la canna. Queste armi semiautomatiche e silenziose sono popolari
 negli insediamenti ad alta densità, dove gli spari potrebbero causare panico.
 
-#[[weaponUpgradeTable Fucile Balestra, fucile-balestra]]
+{{% pf/weapons/tableUpgrades %}}

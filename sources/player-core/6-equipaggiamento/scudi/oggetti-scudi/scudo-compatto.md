@@ -35,4 +35,4 @@ perfettamente a un avambraccio o a un altro arto.
 ^1^ Per ottenere un bonus di circostanza dello scudo alla CA devi usare l’azione
 [Alzare lo Scudo](/azioni/alzare-lo-scudo).
 
-#[[shieldUpgradeTable Scudo Compatto, scudo-compatto]]
+{{% pf/shield/tableUpgrades %}}

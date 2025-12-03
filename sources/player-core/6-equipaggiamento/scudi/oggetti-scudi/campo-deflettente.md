@@ -36,4 +36,4 @@ quando attivato.
 ^1^ Per ottenere un bonus di circostanza dello scudo alla CA devi usare l’azione
 [Alzare lo Scudo](/azioni/alzare-lo-scudo).
 
-#[[shieldUpgradeTable Campo Deflettente, campo-deflettente]]
+{{% pf/shield/tableUpgrades %}}

@@ -10,22 +10,25 @@ level: "0+"
 itemWeapon:
   price: 80
   dice: 1
+  diceSize: 10
+  damage: Fr
+  bulk: 2
+  hands: 2
+  range: 12
+  reload: 1
+  category: Da Guerra
+  group: criogenesi
   upgrades: 1
+  magazineSize: 10
+  ammoName: cariche chimiche
+  ammo: bombola-cariche-chimiche
+  expend: 2
 #[[weaponSubItems Cannone Zero, Zero Cannon]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d10 Fr; **Volume** 2
-
-**Mani** 2; **Gittata** 12 m.; **Ricarica** 1
-
-**Tipo** Distanza; **Categoria** Da Guerra; **Gruppo**
-[Criogenesi](/gruppi-armi/criogenesi)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}; **Caricatore** 10
-[cariche chimiche](/equipaggiamento/bombola-cariche-chimiche); **Dispendio** 2
+{{% pf/weapons/rangedAttributes %}}
 
 ---
 
@@ -34,4 +37,4 @@ circolare un refrigerante in un getto di energia endotermica. Quando è
 alimentata, la brina ricopre la canna e il calcio dell’arma, costringendo i
 tiratori esperti a indossare guanti termici.
 
-#[[weaponUpgradeTable Cannone Zero, cannone-zero]]
+{{% pf/weapons/tableUpgrades %}}

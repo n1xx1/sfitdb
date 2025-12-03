@@ -324,6 +324,28 @@ Di seguito è descritto più nel dettaglio ogni tipo di arma.
 
 {{% includeAll source="./oggetti-distanza-avanzate" template="inlinetitle" %}}
 
+## Tabella: Attacchi Senz'Armi
+
+{{< pf/weapons/tableMelee tables=`[{ source: ./oggetti-pugno, name: "Attacco Senz'Armi" }]` >}}
+
+## Tabella: Armi da Mischia
+
+{{< pf/weapons/tableMelee tables=`[
+  { title: Armi da Mischia Semplici, source: ./oggetti-mischia-semplici },
+  { title: Armi da Mischia Da Guerra, source: [./oggetti-mischia-da-guerra, ./oggetti-scudo] },
+  { title: Armi da Mischia Avanzate, source: ./oggetti-mischia-avanzate },
+]` >}}
+
+## Tabella: Armi a Distanza
+
+{{< pf/weapons/tableRanged tables=`[
+  { title: Armi a Distanza Semplici, source: ./oggetti-distanza-semplici },
+  { title: Armi a Distanza Da Guerra, source: ./oggetti-distanza-da-guerra },
+  { title: Armi a Distanza Avanzate, source: ./oggetti-distanza-avanzate },
+]` >}}
+
+## Tabella: Miglioramenti Armi
+
 | Grado          | Livello | Prezzo Miglioramento | Valore Totale^1^ | Migliorie | Dadi di Danno |               Tratti                |
 | -------------- | :-----: | :------------------: | :--------------: | :-------: | :-----------: | :---------------------------------: |
 | Commerciale    |    0    |          —           |        —         |    +0     |       1       |                  —                  |
@@ -334,4 +356,4 @@ Di seguito è descritto più nel dettaglio ogni tipo di arma.
 | Definitivo     |   16    |   +80.000 crediti    |  100000 crediti  |    +2     |       3       | [tracciante](/tratti/tracciante) +3 |
 | Ineguagliabile |   19    |   +300.000 crediti   |  400000 crediti  |    +3     |       4       | [tracciante](/tratti/tracciante) +3 |
 
-`{caption="Miglioramenti Armi" footnote="^1^ Il Valore Totale non include il prezzo dell'arma commerciale base."}`
+`{footnote="^1^ Il Valore Totale non include il prezzo dell'arma commerciale base."}`

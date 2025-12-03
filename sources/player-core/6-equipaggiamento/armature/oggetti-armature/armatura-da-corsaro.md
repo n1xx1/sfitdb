@@ -16,14 +16,12 @@ itemArmor:
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Categoria** Media; **Prezzo**
-{{% get/param `#itemArmor.price` %}} crediti
+**Categoria** Media; **Prezzo** {{% get/param `#itemArmor.price` %}} crediti
 
 **Bonus CA** +{{% get/param `itemArmor.ac` %}}; **Des Massimo** +1; **Pen.
 Prove** -2; **Pen. Velocità** -1,5 m.
 
-**Forza** +3; **Volume** 2; **Migliorie**
-{{% get/param `itemArmor.upgrades` %}}
+**Forza** +3; **Volume** 2; **Migliorie** {{% get/param `itemArmor.upgrades` %}}
 
 **Gruppo** Piastre
 
@@ -34,4 +32,4 @@ indossano. Di solito consiste in un pettorale sotto una giacca o tuta da volo,
 stivali e guanti pesanti, un elmo e cinghie e fondine nascoste per occultare
 armi.
 
-#[[armorUpgradeTable Armatura da Corsaro, armatura-da-corsaro]]
+{{% pf/armor/tableUpgrades %}}

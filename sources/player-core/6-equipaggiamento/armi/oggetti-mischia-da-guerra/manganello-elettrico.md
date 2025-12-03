@@ -16,21 +16,19 @@ level: "0+"
 itemWeapon:
   price: 16
   dice: 1
+  diceSize: 6
+  damage: E
+  bulk: L
+  hands: 1
+  category: Da Guerra
+  group: randello
   upgrades: 1
 #[[weaponSubItems Manganello Elettrico, Shock Truncheon]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d6 E; **Volume** L
-
-**Mani** 1
-
-**Tipo** Mischia; **Categoria** Da Guerra; **Gruppo**
-[Randello](/gruppi-armi/randello)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}
+{{% pf/weapons/meleeAttributes %}}
 
 ---
 
@@ -43,12 +41,12 @@ completamente carico.
 
 ## Modalità 1 {statblock=1,traits="[arco, alimentata, disarmare, tecnologico:Tecnologica]"}
 
-**Danni** {{% get/param `itemWeapon.dice` %}}d6 E
+**Danni** {{% get/param `itemWeapon.dice` %}}d6 {{% damage E %}}
 
 ---
 
 ## Modalità 2 {statblock=1,traits="[alimentata, disarmare, non letale, tecnologico:Tecnologica]"}
 
-**Danni** {{% get/param `itemWeapon.dice` %}}d6 E
+**Danni** {{% get/param `itemWeapon.dice` %}}d6 {{% damage E %}}
 
-#[[weaponUpgradeTable Manganello Elettrico, manganello-elettrico]]
+{{% pf/weapons/tableUpgrades %}}

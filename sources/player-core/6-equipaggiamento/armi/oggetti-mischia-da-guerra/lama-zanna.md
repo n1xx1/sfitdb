@@ -10,25 +10,23 @@ level: "0+"
 itemWeapon:
   price: 27
   dice: 1
+  diceSize: 10
+  damage: T
+  bulk: 1
+  hands: 2
+  category: Da Guerra
+  group: ascia
   upgrades: 1
 #[[weaponSubItems Lama-Zanna, Fangblade]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d10 T; **Volume** 1
-
-**Mani** 2
-
-**Tipo** Mischia; **Categoria** Da Guerra; **Gruppo**
-[Ascia](/gruppi-armi/ascia)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}
+{{% pf/weapons/meleeAttributes %}}
 
 ---
 
 Denti resistenti rivestono i bordi di questa spada motorizzata e ruotano con la
 forza di una motosega industriale.
 
-#[[weaponUpgradeTable Lama-Zanna, lama-zanna]]
+{{% pf/weapons/tableUpgrades %}}

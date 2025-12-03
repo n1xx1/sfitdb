@@ -32,4 +32,4 @@ costellata di portelli e alloggiamenti e rivestita con piastre provenienti dagli
 infami colossi di Daimalko. Le l'armatura di piastre kyokor include stivali,
 guanti e un elmo con visiera trasparente.
 
-#[[armorUpgradeTable Piastre Kyokor, piastre-kyokor]]
+{{% pf/armor/tableUpgrades %}}

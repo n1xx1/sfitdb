@@ -36,4 +36,4 @@ si aprono formando un piccolo scudo circolare.
 ^1^ Per ottenere un bonus di circostanza dello scudo alla CA devi usare l’azione
 [Alzare lo Scudo](/azioni/alzare-lo-scudo).
 
-#[[shieldUpgradeTable Scudo dell'Iride, scudo-dell-iride]]
+{{% pf/shield/tableUpgrades %}}

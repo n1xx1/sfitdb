@@ -1,4 +1,4 @@
-{{- $match := index (.Get 0 | findRESubmatch `^(#?)\s*([\w\.]+)\s*(\+\s*[\w\.]+)?$`) 0 -}}
+{{- $match := index (.Get 0 | findRESubmatch `^(#|D:|L:.*?:)?\s*([\w\.]+)\s*(\+\s*[\w\.]+)?$`) 0 -}}
 {{- $transform := index $match 1 -}}
 {{- $index := index $match 2 -}}
 {{- $op := index $match 3 -}}
@@ -11,7 +11,40 @@
 {{- end -}}
 
 {{- if eq $transform "#" -}}
-  {{- $value = lang.FormatNumber 0 $value -}}
+  {{- if findRE `^\d+$` (string $value) -}}
+    {{- $value = lang.FormatNumber 0 $value -}}
+  {{- end -}}
+{{- else if eq $transform "D:" }}
+  {{- $damageFull := $value -}}
+  {{- if eq $value "C" -}}
+    {{- $damageFull = "Contundente" -}}
+  {{- else if eq $value "P" -}}
+    {{- $damageFull = "Perforante" -}}
+  {{- else if eq $value "T" -}}
+    {{- $damageFull = "Tagliente" -}}
+  {{- else if eq $value "A" -}}
+    {{- $damageFull = "Acido" -}}
+  {{- else if eq $value "E" -}}
+    {{- $damageFull = "Elettricità" -}}
+  {{- else if eq $value "Fr" -}}
+    {{- $damageFull = "Freddo" -}}
+  {{- else if eq $value "F" -}}
+    {{- $damageFull = "Fuoco" -}}
+  {{- else if eq $value "M" -}}
+    {{- $damageFull = "Mentale" -}}
+  {{- else if eq $value "S" -}}
+    {{- $damageFull = "Sonico" -}}
+  {{- else if eq $value "Ve" -}}
+    {{- $damageFull = "Veleno" -}}
+  {{- else if eq $value "V" -}}
+    {{- $damageFull = "Vuoto" -}}
+  {{- end -}}
+  {{ $value = printf `<abbr title="%v">%v</abbr>` $damageFull $value | safeHTML }}
+{{- else if hasPrefix $transform "L:" }}
+  {{- $prefix := replaceRE `^L:(.*):$` "$1" $transform -}}
+  {{- $page := site.GetPage (path.Join $prefix $value) -}}
+  {{- $title := partialCached "utils/title" $page $page.Path -}}
+  {{- $value = printf "[%v](%v)" $title.name ($page.RelPermalink | replaceRE "/$" "") -}}
 {{- end -}}
 
 {{- $value -}}

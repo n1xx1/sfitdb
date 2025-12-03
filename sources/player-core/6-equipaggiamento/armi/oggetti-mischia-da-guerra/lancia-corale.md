@@ -14,21 +14,19 @@ level: "0+"
 itemWeapon:
   price: 20
   dice: 1
+  diceSize: 6
+  damage: Modulare
+  bulk: 1
+  hands: 2
+  category: Da Guerra
+  group: lancia
   upgrades: 1
 #[[weaponSubItems Lancia Corale, Singing Spear]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d6 Modulare; **Volume** 1
-
-**Mani** 2
-
-**Tipo** Mischia; **Categoria** Da Guerra; **Gruppo**
-[Lancia](/gruppi-armi/lancia)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}
+{{% pf/weapons/meleeAttributes %}}
 
 ---
 
@@ -40,12 +38,12 @@ battaglia.
 
 ## Modalità 1 {statblock=1,traits="[analogico:Analogica, \"lancio [6 m.]\"]"}
 
-**Danni** {{% get/param `itemWeapon.dice` %}}d6 P
+**Danni** {{% get/param `itemWeapon.dice` %}}d6 {{% damage P %}}
 
 ---
 
-## Modalità 2 {statblock=1,traits="[alimentata, \"incremento [1d10]\", \"critica [(Sonico)]\", tecnologico:Tecnologica]"}
+## Modalità 2 {statblock=1,traits="[alimentata, \"incremento [1d10]\", \"critica [(sonico)]\", tecnologico:Tecnologica]"}
 
-**Danni** {{% get/param `itemWeapon.dice` %}}d6 S
+**Danni** {{% get/param `itemWeapon.dice` %}}d6 {{% damage S %}}
 
-#[[weaponUpgradeTable Lancia Corale, lancia-corale]]
+{{% pf/weapons/tableUpgrades %}}

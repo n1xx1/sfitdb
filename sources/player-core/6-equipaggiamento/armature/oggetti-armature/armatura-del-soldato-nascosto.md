@@ -31,4 +31,4 @@ Questa armatura pesante presenta un elmo fessurato che rivela solo gli occhi del
 portatore. Questa tuta ceramica hi-tech comprende pettorale, spallacci,
 bracciali e schinieri che si flettono con i movimenti del corpo.
 
-#[[armorUpgradeTable Armatura del Soldato Nascosto, armatura-del-soldato-nascosto]]
+{{% pf/armor/tableUpgrades %}}

@@ -11,21 +11,19 @@ level: "0+"
 itemWeapon:
   price: 30
   dice: 1
+  diceSize: 10
+  damage: F
+  bulk: 1
+  hands: 2
+  category: Da Guerra
+  group: ascia
   upgrades: 1
 #[[weaponSubItems Doshko Plasma, Plasma Doshko]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d10 F; **Volume** 1
-
-**Mani** 2
-
-**Tipo** Mischia; **Categoria** Da Guerra; **Gruppo**
-[Ascia](/gruppi-armi/ascia)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}
+{{% pf/weapons/meleeAttributes %}}
 
 ---
 
@@ -33,4 +31,4 @@ A differenza di un [doshko](/equipaggiamento/doshko) tradizionale, quest'azza
 utilizza lame di plasma stabilizzato magneticamente che ruotano per fendere con
 facilità più nemici.
 
-#[[weaponUpgradeTable Doshko Plasma, doshko-plasma]]
+{{% pf/weapons/tableUpgrades %}}

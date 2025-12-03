@@ -1,0 +1,31 @@
+{{- $key := .Get 0 -}}
+{{- partialCached "inline/shortcode/damage.html" $key $key -}}
+
+{{- define "_partials/inline/shortcode/damage.html" -}}
+  {{- $damage := . -}}
+  {{- $damageFull := $damage -}}
+  {{- if eq $damage "C" -}}
+    {{- $damageFull = "Contundente" -}}
+  {{- else if eq $damage "P" -}}
+    {{- $damageFull = "Perforante" -}}
+  {{- else if eq $damage "T" -}}
+    {{- $damageFull = "Tagliente" -}}
+  {{- else if eq $damage "A" -}}
+    {{- $damageFull = "Acido" -}}
+  {{- else if eq $damage "E" -}}
+    {{- $damageFull = "Elettricità" -}}
+  {{- else if eq $damage "Fr" -}}
+    {{- $damageFull = "Freddo" -}}
+  {{- else if eq $damage "F" -}}
+    {{- $damageFull = "Fuoco" -}}
+  {{- else if eq $damage "M" -}}
+    {{- $damageFull = "Mentale" -}}
+  {{- else if eq $damage "S" -}}
+    {{- $damageFull = "Sonico" -}}
+  {{- else if eq $damage "Ve" -}}
+    {{- $damageFull = "Veleno" -}}
+  {{- else if eq $damage "V" -}}
+    {{- $damageFull = "Vuoto" -}}
+  {{- end -}}
+  <abbr title="{{ $damageFull }}">{{ $damage }}</abbr>
+{{- end -}}

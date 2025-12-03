@@ -10,25 +10,23 @@ level: "0+"
 itemWeapon:
   price: 2
   dice: 1
+  diceSize: 4
+  damage: P
+  bulk: L
+  hands: 1
+  category: Semplice
+  group: coltello
   upgrades: 1
 #[[weaponSubItems Coltello, Knife]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d4 P; **Volume** L
-
-**Mani** 1
-
-**Tipo** Mischia; **Categoria** Semplice; **Gruppo**
-[Coltello](/gruppi-armi/coltello)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}
+{{% pf/weapons/meleeAttributes %}}
 
 ---
 
 Inestimabili sia come armi che come utensili, i coltelli esistono in una varietà
 di forme, stili e materiali che vanno dai metalli stellari alla ceramica.
 
-#[[weaponUpgradeTable Coltello, coltello]]
+{{% pf/weapons/tableUpgrades %}}

@@ -331,6 +331,8 @@ luce fioca nei successivi 18 metri) ed è dotata di filtri, che puoi chiudere pe
 bloccare o attenuare la luce. Attivare i filtri richiede un’azione
 [Interagire](/azioni/interagire).
 
+### Tabella: Equipaggiamento da Avventura
+
 | Oggetto                                                                                                                        | Livello | Prezzo | Volume |  Mani   |
 | ------------------------------------------------------------------------------------------------------------------------------ | :-----: | :----: | :----: | :-----: |
 | [Amplificatore portatile](/equipaggiamento/amplificatore-portatile)^T^                                                         |    1    |   50   |   L    |    1    |
@@ -391,7 +393,7 @@ bloccare o attenuare la luce. Attivare i filtri richiede un’azione
 | [Torcia commerciale](/equipaggiamento/torcia/commerciale)^T^                                                                   |    0    |   1    |   1    |    1    |
 | [Torcia tattica](/equipaggiamento/torcia/tattica)^T^                                                                           |    0    |   15   |   L    |    1    |
 
-`{caption="Equipaggiamento da Avventura" footnote="\* Puoi usare un kit di strumenti con 1 mano se lo stai indossando o con 2 se lo stai tenendo. ^T^ Questo oggetto ha il tratto [tecnologico](/tratti/tecnologico)."}`
+`{footnote="\* Puoi usare un kit di strumenti con 1 mano se lo stai indossando o con 2 se lo stai tenendo. ^T^ Questo oggetto ha il tratto [tecnologico](/tratti/tecnologico)."}`
 
 ## Oggetti Medici
 
@@ -463,6 +465,8 @@ sieri e le ipopenne, alcuni oggetti non rientrano in tali categorie.
 
 {{% include page="/equipaggiamento/pelle-spray" level=3 %}}
 
+### Tabella: Oggetti Medici
+
 | Oggetto                                                                                       | Livello | Prezzo | Volume | Mani |
 | --------------------------------------------------------------------------------------------- | :-----: | :----: | :----: | :--: |
 | [Siero da celebrità](/equipaggiamento/siero-da-celebrità)                                     |    1    |   30   |   L    |  —   |
@@ -486,12 +490,12 @@ sieri e le ipopenne, alcuni oggetti non rientrano in tali categorie.
 | [Cerotto medico d'élite](/equipaggiamento/cerotto-medico/d-elite)                             |   15    | 13.000 |   L    |  1   |
 | [Cerotto medico definitivo](/equipaggiamento/cerotto-medico/definitivo)                       |   19    | 80.000 |   L    |  1   |
 
-`{caption="Oggetti Medici"}`
-
 ## Servizi
 
 I seguenti rappresentano servizi base e specializzati disponibili nella maggior
 parte degli insediamenti.
+
+### Tabella: Costo della Vita
 
 | Stile di Vita |   Settimana   |     Mese      |      Anno      |
 | :-----------: | :-----------: | :-----------: | :------------: |
@@ -500,9 +504,7 @@ parte degli insediamenti.
 |    Agiato     |  300 crediti  | 1.300 crediti | 16.000 crediti |
 |   Sontuoso    | 1.000 crediti | 4.300 crediti | 52.000 crediti |
 
-`{caption="Costo della Vita"}`
-
-### Incantesimi
+## Incantesimi
 
 È difficile trovare qualcuno che possa lanciare incantesimi di gradi più alti, e
 gli incantesimi non comuni di solito costano almeno il 100% in più, sempre che
@@ -510,6 +512,8 @@ tu riesca a trovare qualcuno che li conosca. Gli incantesimi che richiedono un
 tempo lungo per essere lanciati (oltre 1 minuto) costano di norma il 25% in più.
 Devi pagare qualsiasi costo indicato nell’incantesimo in aggiunta al Prezzo
 nella tabella.
+
+### Tabella: Incantesimi a Pagamento
 
 | Grado Incantesimo |    Prezzo\*    |
 | :---------------: | :------------: |
@@ -523,4 +527,4 @@ nella tabella.
 |        8°         | 7.200 crediti  |
 |        9°         | 18.000 crediti |
 
-`{caption="Incantesimi a Pagamento" footnote="\* Più qualsiasi costo richiesto per lanciare l’incantesimo specifico."}`
+`{footnote="\* Più qualsiasi costo richiesto per lanciare l’incantesimo specifico."}`

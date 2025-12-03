@@ -32,4 +32,4 @@ dell’utilizzatore in questo scintillante guscio di luce solida. Le armature di
 luce solida di uso militare seguono uno standard prevedibile, mentre gli utenti
 privati possono scegliere tra numerose opzioni estetiche personalizzabili.
 
-#[[armorUpgradeTable Serie Luce Solida, serie-luce-solida]]
+{{% pf/armor/tableUpgrades %}}

@@ -18,6 +18,7 @@
 {{- $isStatblock := partialCached "pf/isStatblock" .PageInner.Type .PageInner.Type -}}
 {{- $isInnerStatblock := eq .PageInner.Type "pfmonster" -}}
 {{- $isLink := and $isTitle $included -}}
+{{- $isTable := hasPrefix .Text "Tabella: " -}}
 
 {{- $originalLevel := .Attributes.level | default .Level | int -}}
 
@@ -57,6 +58,9 @@
 {{- end -}}
 {{- with .Attributes.class -}}
   {{- $class = add $class " " . -}}
+{{- end -}}
+{{- if $isTable -}}
+  {{- $class = add $class " table-title" -}}
 {{- end -}}
 
 <h{{ .Level }} class="{{ $class }}">

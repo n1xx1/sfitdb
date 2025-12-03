@@ -55,6 +55,7 @@ interface SearchData {
     trait: string;
     id: string;
     name: string;
+    displayName: string;
     color: string;
     url?: string;
     number?: number;
@@ -172,13 +173,13 @@ function FeatsImpl() {
                 if (!url) {
                   return (
                     <span key={t.id} className={className}>
-                      {t.name}
+                      {t.displayName}
                     </span>
                   );
                 }
                 return (
                   <a key={t.id} className={className} href={url}>
-                    {t.name}
+                    {t.displayName}
                   </a>
                 );
               })}

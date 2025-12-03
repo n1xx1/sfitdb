@@ -10,26 +10,29 @@ level: "0+"
 itemWeapon:
   price: 30
   dice: 1
+  diceSize: 6
+  damage: Fr
+  bulk: L
+  hands: 1
+  range: 9
+  reload: 1
+  category: Semplice
+  group: criogenesi
   upgrades: 1
+  magazineSize: 10
+  ammoName: cariche chimiche
+  ammo: bombola-cariche-chimiche
+  expend: 2
 #[[weaponSubItems Pistola Zero, Zero Pistol]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d6 Fr; **Volume** L
-
-**Mani** 1; **Gittata** 9 m.; **Ricarica** 1
-
-**Tipo** Distanza; **Categoria** Semplice; **Gruppo**
-[Criogenesi](/gruppi-armi/criogenesi)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}; **Caricatore** 10
-[cariche chimiche](/equipaggiamento/bombola-cariche-chimiche); **Dispendio** 2
+{{% pf/weapons/rangedAttributes %}}
 
 ---
 
 Le pistole zero utilizzano come munizioni contenitori trasparenti di liquido
 super-raffreddato.
 
-#[[weaponUpgradeTable Pistola Zero, pistola-zero]]
+{{% pf/weapons/tableUpgrades %}}

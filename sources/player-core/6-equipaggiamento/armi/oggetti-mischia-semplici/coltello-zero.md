@@ -10,21 +10,19 @@ level: "0+"
 itemWeapon:
   price: 12
   dice: 1
+  diceSize: 4
+  damage: Fr
+  bulk: L
+  hands: 1
+  category: Semplice
+  group: criogenesi
   upgrades: 1
 #[[weaponSubItems Coltello Zero, Zero Knife]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d4 Fr; **Volume** L
-
-**Mani** 1
-
-**Tipo** Mischia; **Categoria** Semplice; **Gruppo**
-[Criogenesi](/gruppi-armi/criogenesi)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}
+{{% pf/weapons/meleeAttributes %}}
 
 ---
 
@@ -32,4 +30,4 @@ Questo circuito flessibile in nanocarbonio può essere installato come miglioria
 in guanti, ginocchiere o protezioni per appendici simili per emettere una
 potente scossa elettrica quando applicato con forza su un bersaglio.
 
-#[[weaponUpgradeTable Coltello Zero, coltello-zero]]
+{{% pf/weapons/tableUpgrades  %}}

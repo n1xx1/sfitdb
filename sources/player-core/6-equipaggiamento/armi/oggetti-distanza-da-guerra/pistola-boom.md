@@ -10,26 +10,29 @@ level: "0+"
 itemWeapon:
   price: 30
   dice: 1
+  diceSize: 6
+  damage: S
+  bulk: 1
+  hands: 1
+  range: 12
+  reload: 1
+  category: Da Guerra
+  group: sonico
   upgrades: 1
+  magazineSize: 10
+  ammoName: cariche
+  ammo: batteria
+  expend: 2
 #[[weaponSubItems Pistola Boom, Boom Pistol]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d6 S; **Volume** 1
-
-**Mani** 1; **Gittata** 12 m.; **Ricarica** 1
-
-**Tipo** Distanza; **Categoria** Da Guerra; **Gruppo**
-[Sonico](/gruppi-armi/sonico)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}; **Caricatore** 10
-[cariche](/equipaggiamento/batteria); **Dispendio** 2
+{{% pf/weapons/rangedAttributes %}}
 
 ---
 
 Una pistola boom somiglia a un megafono con un grilletto, emettendo improvvisi
 scoppi sonori in grado di frantumare vetri antiproiettile o lacerare organi.
 
-#[[weaponUpgradeTable Pistola Boom, pistola-boom]]
+{{% pf/weapons/tableUpgrades %}}

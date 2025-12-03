@@ -1,0 +1,40 @@
+{{- $match := index (.Get 0 | findRESubmatch `^(\!)?\s*([\w\.]+)\s*(\=\s*[\w\.]+|\sisset)?$`) 0 -}}
+{{- $transform := index $match 1 -}}
+{{- $index := split (index $match 2) "." -}}
+{{- $op := index $match 3 | strings.TrimSpace -}}
+
+{{- $value := index .Page.Params $index -}}
+
+{{- if hasPrefix $op "=" -}}
+  {{- $value2 := substr $op 1 | strings.TrimSpace -}}
+  {{- $value = eq $value $value2 -}}
+{{- else if hasPrefix $op ">=" -}}
+  {{- $value2 := substr $op 1 | strings.TrimSpace -}}
+  {{- $value = ge $value $value2 -}}
+{{- else if hasPrefix $op "<=" -}}
+  {{- $value2 := substr $op 1 | strings.TrimSpace -}}
+  {{- $value = le $value $value2 -}}
+{{- else if hasPrefix $op ">" -}}
+  {{- $value2 := substr $op 1 | strings.TrimSpace -}}
+  {{- $value = gt $value $value2 -}}
+{{- else if hasPrefix $op "<" -}}
+  {{- $value2 := substr $op 1 | strings.TrimSpace -}}
+  {{- $value = lt $value $value2 -}}
+{{- else if eq $op "isset" }}
+  {{- if gt (len $index) 1 -}}
+    {{- $value = isset .Page.Params (index $index 0) -}}
+  {{- else -}}
+    {{- $last := (sub (len $index) 1) -}}
+    {{- $parentIndex := first $last $index -}}
+    {{- $key := index $index $last }}
+    {{- $value = isset (index .Page.Params $parentIndex) $key -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if eq $transform "!" -}}
+  {{- $value = cond $value false true -}}
+{{- end -}}
+
+{{- if $value -}}
+  {{- .InnerDeindent -}}
+{{- end -}}

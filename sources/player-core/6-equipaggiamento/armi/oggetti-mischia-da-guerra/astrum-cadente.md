@@ -18,21 +18,19 @@ level: "0+"
 itemWeapon:
   price: 17
   dice: 1
+  diceSize: 4
+  damage: P
+  bulk: L
+  hands: 1
+  category: Da Guerra
+  group: coltello
   upgrades: 1
 #[[weaponSubItems Astrum Cadente, Starknife]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d4 P; **Volume** L
-
-**Mani** 1
-
-**Tipo** Mischia; **Categoria** Da Guerra; **Gruppo**
-[Coltello](/gruppi-armi/coltello)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}
+{{% pf/weapons/meleeAttributes %}}
 
 ---
 
@@ -41,4 +39,4 @@ forgiata in acciaio al carbonio rinforzato e trattata con sostanze chimiche che
 creano una lucentezza iridescente. Quando bilanciato e affilato correttamente,
 un astrum cadente canta mentre fende l’aria.
 
-#[[weaponUpgradeTable Astrum Cadente, astrum-cadente]]
+{{% pf/weapons/tableUpgrades %}}

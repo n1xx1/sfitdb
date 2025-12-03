@@ -10,26 +10,29 @@ level: "0+"
 itemWeapon:
   price: 40
   dice: 1
+  diceSize: 8
+  damage: P
+  bulk: 1
+  hands: 2
+  range: 4.5
+  reload: 1
+  category: Semplice
+  group: proiettile
   upgrades: 1
+  magazineSize: 4
+  ammoName: proiettili
+  ammo: munizione-proiettile
+  expend: 1
 #[[weaponSubItems Fucile a Dispersione, Scattergun]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d8 P; **Volume** 1
-
-**Mani** 2; **Gittata** 4,5 m.; **Ricarica** 1
-
-**Tipo** Distanza; **Categoria** Semplice; **Gruppo**
-[Proiettile](/gruppi-armi/proiettile)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}; **Caricatore** 4
-[proiettili](/equipaggiamento/munizione-proiettile); **Dispendio** 1
+{{% pf/weapons/rangedAttributes %}}
 
 ---
 
 Un fucile a dispersione è un’arma da fuoco a canna lunga che spara numerosi
 proiettili sferici per colpire bersagli multipli.
 
-#[[weaponUpgradeTable Fucile a Dispersione, fucile-a-dispersione]]
+{{% pf/weapons/tableUpgrades %}}

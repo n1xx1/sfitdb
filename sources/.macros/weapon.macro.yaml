@@ -69,28 +69,3 @@ weaponSubItems:
           itemWeapon.upgrades: { add: 3 }
           itemWeapon.dice: { set: 4 }
           traits: { append: "tracciante +3" }
-
-weaponUpgradeTable:
-  params:
-    - NAME
-    - SLUG
-    - name: SUFFIX
-      default: o
-  body: |
-    {{% if/type "equipment" %}}
-
-    ---
-
-    | Grado                                                              | Livello | Prezzo Miglioramento |                     Valore Totale                      |                 Migliorie                 | Dadi di Danno | Tracciante |
-    | ------------------------------------------------------------------ | :-----: | :------------------: | :----------------------------------------------------: | :---------------------------------------: | :-----------: | :--------: |
-    | [$NAME Commerciale](/equipaggiamento/$SLUG/commerciale)            |    0    |          —           |     {{% get/param `#itemWeapon.price` %}} crediti      |  {{% get/param `itemWeapon.upgrades` %}}  |       1       |     —      |
-    | [$NAME Tattic$SUFFIX](/equipaggiamento/$SLUG/tattic$SUFFIX)        |    2    |     +350 crediti     |  {{% get/param `#itemWeapon.price + 350` %}} crediti   |  {{% get/param `itemWeapon.upgrades` %}}  |       1       |     +1     |
-    | [$NAME Avanzat$SUFFIX](/equipaggiamento/$SLUG/avanzat$SUFFIX)      |    4    |     +650 crediti     |  {{% get/param `#itemWeapon.price + 1000` %}} crediti  | {{% get/param `itemWeapon.upgrades+1` %}} |       2       |     +1     |
-    | [$NAME Superiore](/equipaggiamento/$SLUG/superiore)                |   10    |    +9.000 crediti    | {{% get/param `#itemWeapon.price + 10000` %}} crediti  | {{% get/param `itemWeapon.upgrades+1` %}} |       2       |     +2     |
-    | [$NAME D'Élite](/equipaggiamento/$SLUG/d-elite)                    |   12    |   +10.000 crediti    | {{% get/param `#itemWeapon.price + 20000` %}} crediti  | {{% get/param `itemWeapon.upgrades+2` %}} |       3       |     +2     |
-    | [$NAME Definitiv$SUFFIX](/equipaggiamento/$SLUG/definitiv$SUFFIX)  |   16    |   +80.000 crediti    | {{% get/param `#itemWeapon.price + 100000` %}} crediti | {{% get/param `itemWeapon.upgrades+2` %}} |       3       |     +3     |
-    | [$NAME Ineguagliabile](/equipaggiamento/$SLUG/ineguagliabile)      |   19    |   +300.000 crediti   | {{% get/param `#itemWeapon.price + 400000` %}} crediti | {{% get/param `itemWeapon.upgrades+3` %}} |       4       |     +3     |
-
-    `{caption="Miglioramenti"}`
-
-    {{% /if/type %}}

@@ -10,22 +10,25 @@ level: "0+"
 itemWeapon:
   price: 40
   dice: 1
+  diceSize: 6
+  damage: S
+  bulk: 1
+  hands: 2
+  range: 12
+  reload: 1
+  category: Semplice
+  group: sonico
   upgrades: 1
+  magazineSize: 10
+  ammoName: cariche
+  ammo: batteria
+  expend: 2
 #[[weaponSubItems Fucile Sonico, Sonic Rifle]]
 ---
 
 # {{% get/param `title` %}} - Oggetto {{% get/param `level` %}}
 
-**Prezzo** {{% get/param `#itemWeapon.price` %}} crediti; **Danni**
-{{% get/param `itemWeapon.dice` %}}d6 S; **Volume** 1
-
-**Mani** 2; **Gittata** 12 m.; **Ricarica** 1
-
-**Tipo** Distanza; **Categoria** Semplice; **Gruppo**
-[Sonico](/gruppi-armi/sonico)
-
-**Migliorie** {{% get/param `itemWeapon.upgrades` %}}; **Caricatore** 10
-[cariche](/equipaggiamento/batteria); **Dispendio** 2
+{{% pf/weapons/rangedAttributes %}}
 
 ---
 
@@ -33,4 +36,4 @@ Un fucile sonico crea un fascio stretto di ultrasuoni che trasforma
 efficacemente qualsiasi cosa colpisca in un altoparlante, frantumando i bersagli
 con vibrazioni ipersoniche.
 
-#[[weaponUpgradeTable Fucile Sonico, fucile-sonico]]
+{{% pf/weapons/tableUpgrades %}}

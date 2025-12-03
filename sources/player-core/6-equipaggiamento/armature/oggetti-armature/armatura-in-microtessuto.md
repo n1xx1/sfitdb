@@ -30,4 +30,4 @@ Prove** -1; **Pen. Velocità** —
 Questa armatura leggera è intrecciata con fibre ultraleggere che si flettono con
 i movimenti del portatore ma diventano dure come l’acciaio all’impatto.
 
-#[[armorUpgradeTable Armatura in Microtessuto, armatura-in-microtessuto]]
+{{% pf/armor/tableUpgrades %}}

@@ -32,4 +32,4 @@ stilizzate ed emblemi draconici sul retro e sul petto della corazza. L’armatur
 fuoco celeste è spesso placcata in oro o altri metalli ornamentali, sacrificando
 spazio per le migliorie in favore dello stile.
 
-#[[armorUpgradeTable Armatura Fuoco Celeste, armatura-fuoco-celeste]]
+{{% pf/armor/tableUpgrades %}}

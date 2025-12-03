@@ -34,4 +34,4 @@ della propria cavalcatura, o più raramente dalla pelle di una cavalcatura
 caduta, per onorarla nelle battaglie future. Imitazioni sintetiche sono di moda
 in alcune parti di Castrovel.
 
-#[[armorUpgradeTable Armatura Shotalashu, armatura-shotalashu]]
+{{% pf/armor/tableUpgrades %}}
