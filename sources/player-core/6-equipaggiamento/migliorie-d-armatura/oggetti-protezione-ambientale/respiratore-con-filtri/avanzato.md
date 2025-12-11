@@ -20,4 +20,5 @@ itemBase: respiratore-con-filtri
 
 {{% subItemHide %}}Ottieni un bonus di status +2 ai TS su Tempra contro gli
 effetti [inalati](/tratto/inalato).{{% /subItemHide %}}
+
 {{% subItemHide true %}}Il bonus di status è +2.{{% /subItemHide %}}

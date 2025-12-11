@@ -46,9 +46,10 @@ Lingue aggiuntive pari al tuo modificatore di Intelligenza (se è positivo).
 Scegli dalla lista delle lingue comuni e qualsiasi altra lingua a cui hai
 accesso (per esempio le lingue prevalenti nel tuo pianeta natale).
 
-**Visione Crepuscolare**  
-Riesci a vedere in condizioni di luce fioca come se fosse luce intensa, per cui
-ignori la condizione [occultato](/condizioni/occultato) dovuta alla luce fioca.
+[**Visione Crepuscolare**](/regole/player-core/8-giocare/percezione-e-individuazione#scurovisione)  
+Riesci
+a vedere in condizioni di luce fioca come se fosse luce intensa, per cui ignori
+la condizione [occultato](/condizioni/occultato) dovuta alla luce fioca.
 
 ---
 

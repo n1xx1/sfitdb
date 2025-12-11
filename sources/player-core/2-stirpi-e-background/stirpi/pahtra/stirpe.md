@@ -46,10 +46,10 @@ Lingue aggiuntive pari al tuo modificatore di Intelligenza (se è positivo).
 Scegli dalla lista delle lingue comuni e qualsiasi altra lingua a cui hai
 accesso (per esempio le lingue prevalenti nel tuo pianeta natale).
 
-**Scurovisione**
-
-Riesci a vedere nell’oscurità e in condizioni di luce fioca come se fosse luce
-intensa, anche se nell’oscurità la tua visione è in bianco e nero.
+[**Scurovisione**](/regole/player-core/8-giocare/percezione-e-individuazione#scurovisione)  
+Riesci
+a vedere nell’oscurità e in condizioni di luce fioca come se fosse luce intensa,
+anche se nell’oscurità la tua visione è in bianco e nero.
 
 ---
 

@@ -9,4 +9,5 @@ ancestry: frenetimandra
 
 Sei cresciuto nel regno ipogeo di Gadraveech o in un ambiente simile, pericoloso
 e sotterraneo. Hai una pelliccia sottile e pallida, un corpo snello e grandi
-occhi luminosi. Ottieni [scurovisione](/regole/TODO).
+occhi luminosi. Ottieni
+[scurovisione](/regole/player-core/8-giocare/percezione-e-individuazione#scurovisione).

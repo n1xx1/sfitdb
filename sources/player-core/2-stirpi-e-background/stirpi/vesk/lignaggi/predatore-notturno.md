@@ -9,4 +9,5 @@ ancestry: vesk
 
 Ti sei adattato a vivere nell’oscurità, forse per aver vissuto sottoterra, nei
 corridoi poco illuminati di un’astronave, sotto cieli coperti di fumo o su un
-pianeta lontano dal proprio sole. Ottieni [scurovisione](/regole/TODO).
+pianeta lontano dal proprio sole. Ottieni
+[scurovisione](/regole/player-core/8-giocare/percezione-e-individuazione#scurovisione).

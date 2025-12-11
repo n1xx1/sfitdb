@@ -8,4 +8,5 @@ ancestry: ysoki
 # Ysoki delle Profondità
 
 Sei abituato a vivere in luoghi oscuri, come condotti di manutenzione, asteroidi
-e su lune e planetoidi lontani dal sole. Ottieni [scurovisione](/regole/TODO).
+e su lune e planetoidi lontani dal sole. Ottieni
+[scurovisione](/regole/player-core/8-giocare/percezione-e-individuazione#scurovisione).
