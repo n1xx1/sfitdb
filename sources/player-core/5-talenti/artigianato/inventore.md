@@ -26,5 +26,5 @@ tuo formulario.
 
 Il GM potrebbe permetterti di inventare formule non comuni o rare, solitamente
 con una CD aumentata. Devi avere il talento
-[Magia delle Macchine](/talenti/magia-delle-macchine) per inventare oggetti
-ibridi e il talento [Fabbricare Oggetti Magici] per inventare formule magiche.
+[Fabbricare Oggetti Magici](/talenti/fabbricare-oggetti-magici) per inventare
+formule ibride o magiche.

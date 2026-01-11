@@ -268,7 +268,6 @@
 |                         |                                |       |                       |
 | Kiss It Better          | Bacino Curativo                | us    | ????                  |
 |                         |                                |       |                       |
-| Machine Magic           | Magia delle Macchine           |       | playtest              |
 | Magical Crafting        | Fabbricare Oggetti Magici      | gu pf |                       |
 | Management Material     | Stoffa da Dirigente            | us    |                       |
 | Multilingual            | Poliglotta                     | gu pf |                       |
@@ -568,3 +567,207 @@
 | Hardlight Scamp | Mefite di Luce Solida | us    |      |
 | Shotalashu      | Shotalashu            | gu sf |      |
 | Squox           | Volpiattolo           | gu sf |      |
+
+# Player Core Errata
+
+- [ ] Damoritosh's 3rd-rank cleric spell (page 35) is haste.
+- [ ] Replace the void domain in The Devourer, Ibra, The Newborn, and Triune
+      (page 36-38) with the nothingness domain (Pathfinder Lost Omens: Divine
+      Mysteries).
+- [ ] Ibra's favored weapon (page 36) is the plasma caster.
+- [ ] Meyel's cleric spells (page 37) are as follows: 1st: sonic scream, 3rd:
+      lightning bolt, 6th: chain lightning
+- [ ] Lao Shu Po's cleric spells (page 37) are as follows: 1st: summon animal
+      (rodents only), 2nd: knock, 3rd: veil of privacy
+- [ ] Pharasma's cleric spells (page 37) are as follows: 1st: mindlink, 3rd:
+      ghostly weapon, 4th: vision of death
+- [ ] Urgathoa's cleric spells (page 38) are as follows: 1st: goblin pox, 2nd:
+      false vitality, 7th: mask of terror
+- [ ] The All Hands on Deck skittermander ancestry feat (page 57) has a
+      frequency of "once per day".
+- [ ] The Battle Saint vesk ancestry feat (page 77) grants rocket dash and haste
+      as innate spells.
+- [ ] The Damoritosh's Claw vesk ancestry feat (page 77) is a level 13 feat.
+- [ ] Replace the second sentence of the Menacing Snarl vesk ancestry feat
+      (page 77) with "Increase the value of the frightened condition by 1
+      (maximum 3)".
+- [ ] Replace the second sentence of the Deadly Arms ability (page 105) with
+      "You and all allies within 30 feet can Interact to draw, Switch Hands, or
+      swap weapons as a free action."
+- [ ] Replace the Lead by Example of the envoy's Dance Partner action (page 105)
+      with: "If you used two actions, enemies are flat-footed to your Strikes if
+      within reach of your selected ally, and vice-versa, until the start of
+      your next turn. Your ally becomes concealed against ranged Strikes made by
+      creatures within 10 feet until the start of your next turn or the ally
+      moves, whichever comes first."
+- [ ] Change the text of the Silver Tongue envoy class feature (page 108) to:
+      "Your savvy and skill are unparalleled. Your proficiency rank for your
+      envoy class DC increases to master. You gain the following action:"
+- [ ] Change all circumstance penalties in the Not In The Face envoy feat
+      (page 110) to status penalties.
+- [ ] The Influencer envoy feat (page 110) has the fortune trait.
+- [ ] Replace the second sentence of the Effortless Influencer envoy feat
+      (page 112) with "You gain the Assurance skill feat three times for
+      Deception, Diplomacy, and Intimidation."
+- [ ] Replace the text of the Transcendence mystic feature (page 119) to read:
+      "You're an embodiment of your connection and manifest your transcendence
+      with miraculous spells. Add two common 10th-rank spells of your tradition
+      to your repertoire. You gain a single 10th-rank spell slot you can use to
+      cast these spells, using mystic spellcasting. Unlike other spell slots,
+      you don’t gain more 10th-rank spells as you level up, and they can’t be
+      used for abilities that let you cast spells without expending spell slots
+      or abilities that give you more spell slots. You can take the Transcended
+      Existence mystic feat (page 125) to gain a second slot."
+- [ ] The Rhythm connection's advanced epiphany (page 120) spell is shuffle
+      repeat.
+- [ ] Add an asterisk to the absolute zero entry of the elemental mystic's
+      connection spells (page 120).
+- [ ] Replace the second and third sentences of the Vitality Shield mystic feat
+      (page 123) with: "The triggering attack reduces your vitality network's
+      Hit Points instead of your own, up to twice your level. Any remaining
+      damage after your Vitality Network is reduced to 0 Hit Points is dealt to
+      you instead."
+- [ ] The Greater Epiphany mystic feat (page 124) is level 12.
+- [ ] Change the first two sentences of the Aim operative action (page 128) to
+      read: "You take careful aim at a single creature that you’re aware of,
+      designating it as your mark until your next turn. Your ranged Strikes
+      against your mark using the required ranged weapon deal an additional 1d4
+      precision damage and reduce the circumstance bonus to AC your mark gains
+      from cover by 1. "
+- [ ] Change the enhanced exploit of the Sniper operative specialization
+      (page 129) to read: "Your first failed ranged Strike against your mark
+      using a sniper weapon doesn't count toward your multiple attack penatly.
+      You can Reload your sniper weapon as a free action once per turn."
+- [ ] Replace the third sentence of the Master Gunner operative feature
+      (page 130) with "You gain access to the critical specialization effect for
+      all weapons for which you have expert proficiency."
+- [ ] Replace the second sentence of the Focused operative feature (page 130)
+      with: "When you roll a success on a Reflex or Will save against your mark,
+      you get a critical success instead."
+- [ ] The Explosive Deflection operative feat (page 136) is a reaction and
+      should have the reaction symbol.
+- [ ] Change the text of the graviton attuned solar flare (page 140) to read:
+      "1d8 bludgeoning, range increment 15 feet. On a critical success, you can
+      attempt to Trip the target as a free action, ignoring range and multiple
+      attack penalty, even if you don't have a free hand."
+- [ ] Change the third sentence of the Meditative Analysis solarian feat
+      (page 143) to read: "On a success, you gain a +1 circumstance bonus to
+      your next Strike with a solar weapon against the target this round."
+- [ ] The Stellar Shield Collapse solarian feat (page 148) is a free action, not
+      a reaction.
+- [ ] Replace the second sentence in the Suppressing Fire soldier feature
+      (page 152) with: "When you make an attack with the area trait (such as
+      Area Fire or Auto-Fire), you use it in a manner that suppresses your
+      targets."
+- [ ] Change the first sentence of the Armor Storm soldier fighting style
+      (page 152) to say: "You can choose to not count as being in the area of a
+      ranged weapon you've made an attack with."
+- [ ] Change the second sentence of the second paragraph of the Close Quarters
+      soldier fighting style (page 153) to: "When using a soldier feat, you can
+      treat any two-handed melee weapon you're wielding as having the area
+      (burst 5 feet), allowing you to area fire with the weapon centering the
+      burst on a corner of a square you occupy, and you are unaffected by
+      attacks with that weapon."
+- [ ] Replace the second sentence of the Ready Reload soldier feat (page 155)
+      with: "You Interact to reload your weapon twice."
+- [ ] The Overwhelming Assault soldier feat (page 156) should say "(–6 with an
+      agile weapon)" instead of "(–7 with an agile weapon)".
+- [ ] Change the Offensive Defense soldier feat (page 158) to exclude yourself
+      from the blast by adding "(excluding yourself)" to the second sentence
+      after the word burst.
+- [ ] The Scattering Fire soldier feat (page 160) provides a benefit to another
+      action and should not have any action symbol.
+- [ ] Replace the second sentence of the Soothing Anchor witchwarper feat
+      (page 170) with "You gain temporary Hit Points equal to your character
+      level that last for 1 round."
+- [ ] Replace the third sentence of the Radiant Zone witchwarper feat (page 172)
+      with "creatures who begin their turn in your quantum field must attempt a
+      Fortitude save against your class DC; creatures with light blindness treat
+      their result as one step worse".
+- [ ] The Greater Warp witchwarper feat (page 172) is a 12th level feat.
+- [ ] The sentence at the top of page 172 should be at the end of the Predict
+      Outcome witchwarper feat (page 171).
+- [ ] Replace the third and fourth sentences of the Twisted Dark Zone
+      witchwarper feat (page 172) with: "Creatures that begin their turn in the
+      area must succeed at a Will save against your class DC or become confused
+      for 1 round (this is an incapacitation effect). The creature then becomes
+      immune for 24 hours."
+- [ ] Change the second sentence of the Solarian Dedication multiclass
+      dedication feat (page 178) to read: "You become trained in solar flare,
+      solar weapon, and solarian class DC."
+- [ ] Change the Solar Manifestation Expert solarian archetype feat (page 178)
+      to read: "Your proficiency ranks for solar flare, solar weapon, and your
+      solarian class DC increases to expert."
+- [ ] The prerequisites for the the Witchwarper Dedication multiclass feat
+      (page 180) is "Intelligence +2 or Charisma +2". Your key spellcasting
+      attribute for witchwarper archetype spells is your choice of Intelligence
+      or Charisma.
+- [ ] The Starfinder Field Agent Dedication archetype feat (page 181) does not
+      have the multiclass trait.
+- [ ] Revise the Combat Hack skill feat (page 217) by removing "for 1 round" on
+      the success and critical success outcomes.
+- [x] Replace the last sentence of the Inventor skill feat (page 222) with: "You
+      need the Magical Crafting feat to invent hybrid and magical formula."
+- [ ] Replace the effects of the Boost trait (page 255) with "You can boost this
+      weapon with an Interact action to add an additional damage die of the
+      listed size to the next damaging attack you make with the weapon until the
+      end of your next turn. The damage from this trait increases to 2 dice for
+      advanced-grade and superior-grade weapons, 3 dice for elite-grade and
+      ultimate-grade weapons, and 4 dice for paragon-grade weapons. On a
+      critical hit, roll these after doubling the weapon's damage. Multiple
+      boosts have no effect."
+- [ ] The phase cutlass (page 264) has the agile and finesse traits instead of
+      the deadly d6 trait.
+- [ ] The battle ribbon (page 264) has the disarm trait.
+- [ ] The default magazine size for the flamethrower, zero cannon, and zero
+      pistol (pages 265-266) is 8 chem.
+- [ ] The shirren eye rifle (page 266) deals 1d8 piercing damage and has the
+      analog, fatal d10, kickback, unwieldy, and volley (30 ft) traits.
+- [ ] The assassin's rifle (page 266) has the analog, backstabber, breakdown,
+      deadly d10, kickback, unwieldy, and volley (30 ft) traits.
+- [ ] The rotating pistol (page 266) deals 1d6 P damage.
+- [ ] A commercial filtered rebreather (page 268) is a level 0 item.
+- [ ] The paragon frag grenade (page 280) deals 14d8 piercing damage, not 4d8.
+- [ ] The tactical and advanced akashic lens (page 283) casts akashic download
+      as a 4th-rank spell.
+- [ ] Replace the first paragraph of Implantation under Augmentations (page 288)
+      with "Installing an Augmentation requires the services of a professional
+      augmentation surgeon or character with master proficiency in Medicine.
+      Install Augmentation takes 1 hour per 2 item levels of the augmentation
+      (minimum 1 hour). The price of such implantations includes the cost of
+      Installing an Augmentation. Most major settlements are home to reputable
+      augmentation clinics. Verces is an especially popular destination for
+      cybernetics, while Bretheda is a beacon for biotech advancements."
+- [ ] The analyze target spell (page 314-315) provides a status bonus at every
+      spell rank.
+- [ ] In the atomic blast spell (page 316), replace "All targets" with "All
+      creatures".
+- [ ] The cairn form spell (page 318) should be two-actions.
+- [ ] Remove the Defense Will entry from the detect thoughts spell (page 325).
+- [ ] The dream of home spell (page 327) should have the subtle trait.
+- [ ] Replace "ghost touch" in the Phantasmal Minion's statblock (page 350) with
+      "ghost killer".
+- [ ] Remove the attack trait from the weight of ages spell (page 374).
+- [ ] The data drain spell (page 375) deals 10d6 mental damage.
+- [ ] Replace the text of the shadow snap spell (page 376) with the following:
+      "With a snap of your fingers, you beckon the target’s shadow to obey you.
+      When you Cast this Spell and the first time you Sustain it each turn on
+      subsequent rounds, you can choose to either attack or stalk the target
+      with its shadow. If you choose to attack, attempt a spell attack roll
+      against the target’s AC, dealing 1d10 cold damage on a hit (or double
+      damage on a critical hit). This attack uses and contributes to your
+      multiple attack penalty.
+- If you stalk, attempt a spell attack roll against the target’s AC the first
+  time the target uses a manipulate action or a move action, makes a ranged
+  attack, or leaves a square during a move action it’s using until the end of
+  your next turn; dealing 1d10 cold damage on a hit. If the attack is a critical
+  hit, the shadow disrupts that action."
+- [ ] The vitality nova spell (page 376) has the healing trait.
+- [ ] The vital rebirth spell (page 376) has the healing trait.
+- [ ] The reality wipe spell (page 379) deals 10d6 spirit damage and has
+      heighten (+1) This spell does an additional 2d6 spirit damage.
+- [ ] The forge drift beacon ritual (page 385) has 2 secondary casters.
+- [ ] On the Counteract Table in the Counteracting sidebar (page 423), switch
+      "Critical Success" and "Success".
+- [ ] Remove the words "with no remaining charges" from the requirements of the
+      Recharge exploration activity (page 432).

@@ -14,7 +14,7 @@ itemBase: ipopenna
 
 **Uso** tenuto in 1 mano; **Bulk** L
 
-**Activate** :a: (maneggiare)
+**Attivazione** :a: (maneggiare)
 
 {{% /subItemHide %}}
 
