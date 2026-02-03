@@ -5,7 +5,7 @@ original-srd: https://2e.aonsrd.com/ancestries/13-shirren/heritages/57-iridescen
 ancestry: shirren
 ---
 
-# Shirren Ribelle
+# Shirren Irridescente
 
 Discendi da shirren che furono originariamente programmati come esche per lo
 Sciame vorace. La tua chitina è iridescente e crea motivi cangianti che
